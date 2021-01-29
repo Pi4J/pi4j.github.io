@@ -1,0 +1,2 @@
+deb https://test.pi4j.com/ppa/raspbian/stable ./
+#deb https://test.pi4j.com/ppa/raspbian/beta ./

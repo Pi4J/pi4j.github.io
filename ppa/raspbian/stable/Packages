@@ -1,0 +1,74 @@
+Package: pi4j
+Version: 0.0.5
+Architecture: all
+Maintainer: Pi4J Support <support@pi4j.com>
+Installed-Size: 645
+Filename: ./pi4j-0.0.5.deb
+Size: 465878
+MD5sum: 294dbdc272c92db474ec1c8cdea22c89
+SHA1: b17c89cbd51ea433d8c5eafd7e45b21d5c7c1150
+SHA256: 2ef2d7b1e636ccccbd40b323e1338e44cd60f0d1af63520f88a37f6f7d2e234e
+Section: misc
+Priority: optional
+Description: Java library for IO access on the Raspberry Pi platform
+
+Package: pi4j
+Version: 1.0
+Architecture: all
+Maintainer: Pi4J Support <support@pi4j.com>
+Installed-Size: 897
+Filename: ./pi4j-1.0.deb
+Size: 616120
+MD5sum: c59899b061ff6f828834145e0de37a7c
+SHA1: f3858b68a7ec356cec62a3bcc413a228df04b5e5
+SHA256: 0c510e973e5f5d903046845b8e0d299b4a9e46f307f9de716d144943b649964f
+Section: misc
+Priority: optional
+Homepage: http://www.pi4j.com/pi4j-distribution
+Description: Java library for IO access on the Raspberry Pi platform
+
+Package: pi4j
+Version: 1.1
+Architecture: all
+Maintainer: Pi4J Support <support@pi4j.com>
+Installed-Size: 2072
+Filename: ./pi4j-1.1.deb
+Size: 1393692
+MD5sum: 35dbd41704219ded74ee368ce3fc1e7e
+SHA1: d0651e21bd6370f89a3c4c094bda6c84f35f0567
+SHA256: c076c0a2249ef0ebf3c15eafb5c340243bd1f23d500e1c7efcdd988489df93be
+Section: misc
+Priority: optional
+Homepage: http://www.pi4j.com/pi4j-distribution
+Description: Java library for IO access on the Raspberry Pi platform
+
+Package: pi4j
+Version: 1.2
+Architecture: all
+Maintainer: Pi4J Support <support@pi4j.com>
+Installed-Size: 2482
+Filename: ./pi4j-1.2.deb
+Size: 1702988
+MD5sum: 62ba6b08ace9f46019e9d70312d7bd1a
+SHA1: 67a8c24129209650f3ea84228a219925e31b7682
+SHA256: 7d0fd5dfcc3d3e1ab9356270749bb3b0e17053247503663d97e67d2764e6bf2f
+Section: misc
+Priority: optional
+Homepage: http://www.pi4j.com/pi4j-distribution
+Description: Java library for IO access on the Raspberry Pi platform
+
+Package: pi4j
+Version: 1.3
+Architecture: all
+Maintainer: Pi4J Support <support@pi4j.com>
+Installed-Size: 2508
+Filename: ./pi4j-1.3.deb
+Size: 1755440
+MD5sum: 76987be2e4a5142e62d69268879f34f1
+SHA1: 2a2be7af3b58b120ee20d3a3a0ae68aec98719eb
+SHA256: ccbf8993fd3577edf57f562423e94f0c948d0a9489243416f0f740f99aa4fe8e
+Section: misc
+Priority: optional
+Homepage: https://www.pi4j.com/pi4j-distribution
+Description: Java library for IO access on the Raspberry Pi platform
+
