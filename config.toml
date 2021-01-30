@@ -2,6 +2,7 @@ baseURL = "https://test.pi4j.com/"
 languageCode = "en-us"
 title = "Pi4J"
 theme = "hugo-geekdoc"
+publishDir = "docs"
 
 # Geekdoc required configuration
 pygmentsUseClasses = true
