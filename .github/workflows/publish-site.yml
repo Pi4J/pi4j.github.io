@@ -22,14 +22,14 @@ jobs:
       - name: See directory
         run: ls -lR
         
-     # - name: Commit the generated website and push to git repository
-     #   run: |
-     #     git config --global user.email "team@pi4j.com"
-     #     git config --global user.name "Pi4J Build"
-     #     git status
-     #     git add dists/.
-     #     git commit -am "[AUTO] new version of website"
-     #     git push
+      - name: Commit the generated website and push to git repository
+        run: |
+          git config --global user.email "team@pi4j.com"
+          git config --global user.name "Pi4J Build"
+          git status
+          git add public/.
+          git commit -am "[AUTO] New version of website"
+          git push
 
      # - name: Deploy
      #   uses: peaceiris/actions-gh-pages@v3
