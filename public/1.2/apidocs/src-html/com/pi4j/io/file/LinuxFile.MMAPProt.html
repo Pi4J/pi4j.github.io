@@ -1,0 +1,480 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+<title>Source code</title>
+<link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<div class="sourceContainer">
+<pre><span class="sourceLineNo">001</span>package com.pi4j.io.file;<a name="line.1"></a>
+<span class="sourceLineNo">002</span><a name="line.2"></a>
+<span class="sourceLineNo">003</span>/*-<a name="line.3"></a>
+<span class="sourceLineNo">004</span> * #%L<a name="line.4"></a>
+<span class="sourceLineNo">005</span> * **********************************************************************<a name="line.5"></a>
+<span class="sourceLineNo">006</span> * ORGANIZATION  :  Pi4J<a name="line.6"></a>
+<span class="sourceLineNo">007</span> * PROJECT       :  Pi4J :: Java Library (Core)<a name="line.7"></a>
+<span class="sourceLineNo">008</span> * FILENAME      :  LinuxFile.java<a name="line.8"></a>
+<span class="sourceLineNo">009</span> *<a name="line.9"></a>
+<span class="sourceLineNo">010</span> * This file is part of the Pi4J project. More information about<a name="line.10"></a>
+<span class="sourceLineNo">011</span> * this project can be found here:  https://www.pi4j.com/<a name="line.11"></a>
+<span class="sourceLineNo">012</span> * **********************************************************************<a name="line.12"></a>
+<span class="sourceLineNo">013</span> * %%<a name="line.13"></a>
+<span class="sourceLineNo">014</span> * Copyright (C) 2012 - 2019 Pi4J<a name="line.14"></a>
+<span class="sourceLineNo">015</span> * %%<a name="line.15"></a>
+<span class="sourceLineNo">016</span> * This program is free software: you can redistribute it and/or modify<a name="line.16"></a>
+<span class="sourceLineNo">017</span> * it under the terms of the GNU Lesser General Public License as<a name="line.17"></a>
+<span class="sourceLineNo">018</span> * published by the Free Software Foundation, either version 3 of the<a name="line.18"></a>
+<span class="sourceLineNo">019</span> * License, or (at your option) any later version.<a name="line.19"></a>
+<span class="sourceLineNo">020</span> *<a name="line.20"></a>
+<span class="sourceLineNo">021</span> * This program is distributed in the hope that it will be useful,<a name="line.21"></a>
+<span class="sourceLineNo">022</span> * but WITHOUT ANY WARRANTY; without even the implied warranty of<a name="line.22"></a>
+<span class="sourceLineNo">023</span> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the<a name="line.23"></a>
+<span class="sourceLineNo">024</span> * GNU General Lesser Public License for more details.<a name="line.24"></a>
+<span class="sourceLineNo">025</span> *<a name="line.25"></a>
+<span class="sourceLineNo">026</span> * You should have received a copy of the GNU General Lesser Public<a name="line.26"></a>
+<span class="sourceLineNo">027</span> * License along with this program.  If not, see<a name="line.27"></a>
+<span class="sourceLineNo">028</span> * &lt;http://www.gnu.org/licenses/lgpl-3.0.html&gt;.<a name="line.28"></a>
+<span class="sourceLineNo">029</span> * #L%<a name="line.29"></a>
+<span class="sourceLineNo">030</span> */<a name="line.30"></a>
+<span class="sourceLineNo">031</span><a name="line.31"></a>
+<span class="sourceLineNo">032</span>import com.pi4j.util.NativeLibraryLoader;<a name="line.32"></a>
+<span class="sourceLineNo">033</span><a name="line.33"></a>
+<span class="sourceLineNo">034</span>import sun.misc.Cleaner;<a name="line.34"></a>
+<span class="sourceLineNo">035</span>import sun.misc.SharedSecrets;<a name="line.35"></a>
+<span class="sourceLineNo">036</span><a name="line.36"></a>
+<span class="sourceLineNo">037</span>import java.io.FileDescriptor;<a name="line.37"></a>
+<span class="sourceLineNo">038</span>import java.io.FileNotFoundException;<a name="line.38"></a>
+<span class="sourceLineNo">039</span>import java.io.IOException;<a name="line.39"></a>
+<span class="sourceLineNo">040</span>import java.io.RandomAccessFile;<a name="line.40"></a>
+<span class="sourceLineNo">041</span><a name="line.41"></a>
+<span class="sourceLineNo">042</span>import java.lang.reflect.Constructor;<a name="line.42"></a>
+<span class="sourceLineNo">043</span>import java.lang.reflect.Field;<a name="line.43"></a>
+<span class="sourceLineNo">044</span>import java.lang.reflect.InvocationTargetException;<a name="line.44"></a>
+<span class="sourceLineNo">045</span><a name="line.45"></a>
+<span class="sourceLineNo">046</span>import java.nio.*;<a name="line.46"></a>
+<span class="sourceLineNo">047</span><a name="line.47"></a>
+<span class="sourceLineNo">048</span>/**<a name="line.48"></a>
+<span class="sourceLineNo">049</span> * Extends RandomAccessFile to provide access to Linux ioctl.<a name="line.49"></a>
+<span class="sourceLineNo">050</span> */<a name="line.50"></a>
+<span class="sourceLineNo">051</span>@SuppressWarnings("restriction")<a name="line.51"></a>
+<span class="sourceLineNo">052</span>public class LinuxFile extends RandomAccessFile {<a name="line.52"></a>
+<span class="sourceLineNo">053</span>    public LinuxFile(String name, String mode) throws FileNotFoundException {<a name="line.53"></a>
+<span class="sourceLineNo">054</span>        super(name, mode);<a name="line.54"></a>
+<span class="sourceLineNo">055</span>    }<a name="line.55"></a>
+<span class="sourceLineNo">056</span><a name="line.56"></a>
+<span class="sourceLineNo">057</span>    public static final int wordSize = getWordSize();<a name="line.57"></a>
+<span class="sourceLineNo">058</span>    public static final int localBufferSize = 2048; //about 1 page<a name="line.58"></a>
+<span class="sourceLineNo">059</span><a name="line.59"></a>
+<span class="sourceLineNo">060</span>    public static final ThreadLocal&lt;ByteBuffer&gt; localDataBuffer = new ThreadLocal&lt;&gt;();<a name="line.60"></a>
+<span class="sourceLineNo">061</span>    public static final ThreadLocal&lt;IntBuffer&gt; localOffsetsBuffer = new ThreadLocal&lt;&gt;();<a name="line.61"></a>
+<span class="sourceLineNo">062</span><a name="line.62"></a>
+<span class="sourceLineNo">063</span>    private static final Constructor&lt;?&gt; directByteBufferConstructor;<a name="line.63"></a>
+<span class="sourceLineNo">064</span><a name="line.64"></a>
+<span class="sourceLineNo">065</span>    private static final Field addressField;<a name="line.65"></a>
+<span class="sourceLineNo">066</span>    private static final Field capacityField;<a name="line.66"></a>
+<span class="sourceLineNo">067</span>    private static final Field cleanerField;<a name="line.67"></a>
+<span class="sourceLineNo">068</span><a name="line.68"></a>
+<span class="sourceLineNo">069</span>    static {<a name="line.69"></a>
+<span class="sourceLineNo">070</span>        try {<a name="line.70"></a>
+<span class="sourceLineNo">071</span>            // Load the platform library<a name="line.71"></a>
+<span class="sourceLineNo">072</span>            NativeLibraryLoader.load("libpi4j.so");<a name="line.72"></a>
+<span class="sourceLineNo">073</span><a name="line.73"></a>
+<span class="sourceLineNo">074</span>            Class&lt;?&gt; dbb = Class.forName("java.nio.DirectByteBuffer");<a name="line.74"></a>
+<span class="sourceLineNo">075</span><a name="line.75"></a>
+<span class="sourceLineNo">076</span>            addressField = Buffer.class.getDeclaredField("address");<a name="line.76"></a>
+<span class="sourceLineNo">077</span>            capacityField = Buffer.class.getDeclaredField("capacity");<a name="line.77"></a>
+<span class="sourceLineNo">078</span>            cleanerField = dbb.getDeclaredField("cleaner");<a name="line.78"></a>
+<span class="sourceLineNo">079</span>            directByteBufferConstructor = dbb.getDeclaredConstructor(<a name="line.79"></a>
+<span class="sourceLineNo">080</span>                    new Class[] { int.class, long.class, FileDescriptor.class, Runnable.class });<a name="line.80"></a>
+<span class="sourceLineNo">081</span><a name="line.81"></a>
+<span class="sourceLineNo">082</span>            addressField.setAccessible(true);<a name="line.82"></a>
+<span class="sourceLineNo">083</span>            capacityField.setAccessible(true);<a name="line.83"></a>
+<span class="sourceLineNo">084</span>            cleanerField.setAccessible(true);<a name="line.84"></a>
+<span class="sourceLineNo">085</span>            directByteBufferConstructor.setAccessible(true);<a name="line.85"></a>
+<span class="sourceLineNo">086</span>        } catch (NoSuchFieldException e) {<a name="line.86"></a>
+<span class="sourceLineNo">087</span>            throw new InternalError(e.getMessage());<a name="line.87"></a>
+<span class="sourceLineNo">088</span>        } catch (ClassNotFoundException e) {<a name="line.88"></a>
+<span class="sourceLineNo">089</span>            throw new InternalError(e.getMessage());<a name="line.89"></a>
+<span class="sourceLineNo">090</span>        } catch (NoSuchMethodException e) {<a name="line.90"></a>
+<span class="sourceLineNo">091</span>            throw new InternalError(e.getMessage());<a name="line.91"></a>
+<span class="sourceLineNo">092</span>        }<a name="line.92"></a>
+<span class="sourceLineNo">093</span>    }<a name="line.93"></a>
+<span class="sourceLineNo">094</span><a name="line.94"></a>
+<span class="sourceLineNo">095</span>    /**<a name="line.95"></a>
+<span class="sourceLineNo">096</span>     * Runs an ioctl value command on a file descriptor.<a name="line.96"></a>
+<span class="sourceLineNo">097</span>     *<a name="line.97"></a>
+<span class="sourceLineNo">098</span>     * @param command ioctl command<a name="line.98"></a>
+<span class="sourceLineNo">099</span>     * @param value int ioctl value<a name="line.99"></a>
+<span class="sourceLineNo">100</span>     * @return result of operation. Zero if everything is OK, less than zero if there was an error.<a name="line.100"></a>
+<span class="sourceLineNo">101</span>     */<a name="line.101"></a>
+<span class="sourceLineNo">102</span>    public void ioctl(long command, int value) throws IOException {<a name="line.102"></a>
+<span class="sourceLineNo">103</span>        final int response = directIOCTL(getFileDescriptor(), command, value);<a name="line.103"></a>
+<span class="sourceLineNo">104</span><a name="line.104"></a>
+<span class="sourceLineNo">105</span>        if(response &lt; 0)<a name="line.105"></a>
+<span class="sourceLineNo">106</span>            throw new LinuxFileException();<a name="line.106"></a>
+<span class="sourceLineNo">107</span>    }<a name="line.107"></a>
+<span class="sourceLineNo">108</span><a name="line.108"></a>
+<span class="sourceLineNo">109</span>    /**<a name="line.109"></a>
+<span class="sourceLineNo">110</span>     * Runs an ioctl on a file descriptor. Uses special offset buffer to produce real C-like structures<a name="line.110"></a>
+<span class="sourceLineNo">111</span>     * with pointers. Advanced use only! Must be able to produce byte-perfect data structures just as<a name="line.111"></a>
+<span class="sourceLineNo">112</span>     * gcc would on this system, including struct padding and pointer size.<a name="line.112"></a>
+<span class="sourceLineNo">113</span>     *<a name="line.113"></a>
+<span class="sourceLineNo">114</span>     * The data ByteBuffer uses the current position to determine the head point of data<a name="line.114"></a>
+<span class="sourceLineNo">115</span>     * passed to the ioctl. This is useful for appending entry-point data structures<a name="line.115"></a>
+<span class="sourceLineNo">116</span>     * at the end of the buffer, while referring to other structures/data that come before<a name="line.116"></a>
+<span class="sourceLineNo">117</span>     * them in the buffer.<a name="line.117"></a>
+<span class="sourceLineNo">118</span>     *<a name="line.118"></a>
+<span class="sourceLineNo">119</span>     * &lt;I NEED A BETTER EXPL OF BUFFERS HERE&gt;<a name="line.119"></a>
+<span class="sourceLineNo">120</span>     *<a name="line.120"></a>
+<span class="sourceLineNo">121</span>     * When assembling the structured data, use {@link LinuxFile#wordSize} to determine the size<a name="line.121"></a>
+<span class="sourceLineNo">122</span>     * in bytes needed for a pointer. Also be sure to consider GCC padding and structure alignment.<a name="line.122"></a>
+<span class="sourceLineNo">123</span>     * GCC will try a field to its word size (32b ints align at 4-byte, etc), and will align the<a name="line.123"></a>
+<span class="sourceLineNo">124</span>     * structure size with the native word size (4-byte for 32b, 8-byte for 64b).<a name="line.124"></a>
+<span class="sourceLineNo">125</span>     *<a name="line.125"></a>
+<span class="sourceLineNo">126</span>     * Provided IntBuffer offsets must use native byte order (endianness).<a name="line.126"></a>
+<span class="sourceLineNo">127</span>     *<a name="line.127"></a>
+<span class="sourceLineNo">128</span>     * &lt;pre&gt;<a name="line.128"></a>
+<span class="sourceLineNo">129</span>     * {@code<a name="line.129"></a>
+<span class="sourceLineNo">130</span>     *    &lt;NEED BETTER EXAMPLE HERE&gt;<a name="line.130"></a>
+<span class="sourceLineNo">131</span>     * }<a name="line.131"></a>
+<span class="sourceLineNo">132</span>     * &lt;/pre&gt;<a name="line.132"></a>
+<span class="sourceLineNo">133</span>     *<a name="line.133"></a>
+<span class="sourceLineNo">134</span>     * DANGER: check your buffer length! The possible length varies depending on the ioctl call.<a name="line.134"></a>
+<span class="sourceLineNo">135</span>     * Overruns are very possible. ioctl tries to determine EFAULTs, but sometimes<a name="line.135"></a>
+<span class="sourceLineNo">136</span>     * you might trample JVM data if you are not careful.<a name="line.136"></a>
+<span class="sourceLineNo">137</span>     *<a name="line.137"></a>
+<span class="sourceLineNo">138</span>     * @param command ioctl command<a name="line.138"></a>
+<span class="sourceLineNo">139</span>     * @param data values in bytes for all structures, with 4 or 8 byte size holes for pointers<a name="line.139"></a>
+<span class="sourceLineNo">140</span>     * @param offsets byte offsets of pointer at given index<a name="line.140"></a>
+<span class="sourceLineNo">141</span>     * @throws IOException<a name="line.141"></a>
+<span class="sourceLineNo">142</span>     */<a name="line.142"></a>
+<span class="sourceLineNo">143</span>    public void ioctl(final long command, ByteBuffer data, IntBuffer offsets) throws IOException {<a name="line.143"></a>
+<span class="sourceLineNo">144</span>        ByteBuffer originalData = data;<a name="line.144"></a>
+<span class="sourceLineNo">145</span><a name="line.145"></a>
+<span class="sourceLineNo">146</span>        if(data == null || offsets == null)<a name="line.146"></a>
+<span class="sourceLineNo">147</span>            throw new NullPointerException("data and offsets required!");<a name="line.147"></a>
+<span class="sourceLineNo">148</span><a name="line.148"></a>
+<span class="sourceLineNo">149</span>        if(offsets.order() != ByteOrder.nativeOrder())<a name="line.149"></a>
+<span class="sourceLineNo">150</span>            throw new IllegalArgumentException("provided IntBuffer offsets ByteOrder must be native!");<a name="line.150"></a>
+<span class="sourceLineNo">151</span><a name="line.151"></a>
+<span class="sourceLineNo">152</span>        //buffers must be direct<a name="line.152"></a>
+<span class="sourceLineNo">153</span>        try {<a name="line.153"></a>
+<span class="sourceLineNo">154</span>            if(!data.isDirect()) {<a name="line.154"></a>
+<span class="sourceLineNo">155</span>                ByteBuffer newBuf = getDataBuffer(data.limit());<a name="line.155"></a>
+<span class="sourceLineNo">156</span>                int pos = data.position(); //keep position<a name="line.156"></a>
+<span class="sourceLineNo">157</span><a name="line.157"></a>
+<span class="sourceLineNo">158</span>                data.rewind();<a name="line.158"></a>
+<span class="sourceLineNo">159</span>                newBuf.clear();<a name="line.159"></a>
+<span class="sourceLineNo">160</span>                newBuf.put(data);<a name="line.160"></a>
+<span class="sourceLineNo">161</span>                newBuf.position(pos); //restore position<a name="line.161"></a>
+<span class="sourceLineNo">162</span><a name="line.162"></a>
+<span class="sourceLineNo">163</span>                data = newBuf;<a name="line.163"></a>
+<span class="sourceLineNo">164</span>            }<a name="line.164"></a>
+<span class="sourceLineNo">165</span><a name="line.165"></a>
+<span class="sourceLineNo">166</span>            if(!offsets.isDirect()) {<a name="line.166"></a>
+<span class="sourceLineNo">167</span>                IntBuffer newBuf = getOffsetsBuffer(offsets.remaining());<a name="line.167"></a>
+<span class="sourceLineNo">168</span><a name="line.168"></a>
+<span class="sourceLineNo">169</span>                newBuf.clear();<a name="line.169"></a>
+<span class="sourceLineNo">170</span>                newBuf.put(offsets);<a name="line.170"></a>
+<span class="sourceLineNo">171</span>                newBuf.flip();<a name="line.171"></a>
+<span class="sourceLineNo">172</span><a name="line.172"></a>
+<span class="sourceLineNo">173</span>                offsets = newBuf;<a name="line.173"></a>
+<span class="sourceLineNo">174</span>            }<a name="line.174"></a>
+<span class="sourceLineNo">175</span>        } catch (BufferOverflowException e) {<a name="line.175"></a>
+<span class="sourceLineNo">176</span>            throw new ScratchBufferOverrun();<a name="line.176"></a>
+<span class="sourceLineNo">177</span>        }<a name="line.177"></a>
+<span class="sourceLineNo">178</span><a name="line.178"></a>
+<span class="sourceLineNo">179</span>        if((offsets.remaining() &amp; 1) != 0)<a name="line.179"></a>
+<span class="sourceLineNo">180</span>            throw new IllegalArgumentException("offset buffer must be even length!");<a name="line.180"></a>
+<span class="sourceLineNo">181</span><a name="line.181"></a>
+<span class="sourceLineNo">182</span>        for(int i = offsets.position() ; i &lt; offsets.limit() ; i += 2) {<a name="line.182"></a>
+<span class="sourceLineNo">183</span>            final int ptrOffset = offsets.get(i);<a name="line.183"></a>
+<span class="sourceLineNo">184</span>            final int dataOffset = offsets.get(i + 1);<a name="line.184"></a>
+<span class="sourceLineNo">185</span><a name="line.185"></a>
+<span class="sourceLineNo">186</span>            if(dataOffset &gt;= data.capacity() || dataOffset &lt; 0)<a name="line.186"></a>
+<span class="sourceLineNo">187</span>                throw new IndexOutOfBoundsException("invalid data offset specified in buffer: " + dataOffset);<a name="line.187"></a>
+<span class="sourceLineNo">188</span><a name="line.188"></a>
+<span class="sourceLineNo">189</span>            if((ptrOffset + wordSize) &gt; data.capacity() || ptrOffset &lt; 0)<a name="line.189"></a>
+<span class="sourceLineNo">190</span>                throw new IndexOutOfBoundsException("invalid pointer offset specified in buffer: " + ptrOffset);<a name="line.190"></a>
+<span class="sourceLineNo">191</span>        }<a name="line.191"></a>
+<span class="sourceLineNo">192</span><a name="line.192"></a>
+<span class="sourceLineNo">193</span>        final int response = directIOCTLStructure(getFileDescriptor(), command, data,<a name="line.193"></a>
+<span class="sourceLineNo">194</span>                data.position(), offsets, offsets.position(), offsets.remaining());<a name="line.194"></a>
+<span class="sourceLineNo">195</span><a name="line.195"></a>
+<span class="sourceLineNo">196</span>        if(response &lt; 0)<a name="line.196"></a>
+<span class="sourceLineNo">197</span>            throw new LinuxFileException();<a name="line.197"></a>
+<span class="sourceLineNo">198</span><a name="line.198"></a>
+<span class="sourceLineNo">199</span>        //fast forward positions<a name="line.199"></a>
+<span class="sourceLineNo">200</span>        offsets.position(offsets.limit());<a name="line.200"></a>
+<span class="sourceLineNo">201</span>        data.rewind();<a name="line.201"></a>
+<span class="sourceLineNo">202</span><a name="line.202"></a>
+<span class="sourceLineNo">203</span>        //if original data wasnt direct, copy it back in.<a name="line.203"></a>
+<span class="sourceLineNo">204</span>        if(originalData != data) {<a name="line.204"></a>
+<span class="sourceLineNo">205</span>            originalData.rewind();<a name="line.205"></a>
+<span class="sourceLineNo">206</span>            originalData.put(data);<a name="line.206"></a>
+<span class="sourceLineNo">207</span>            originalData.rewind();<a name="line.207"></a>
+<span class="sourceLineNo">208</span>        }<a name="line.208"></a>
+<span class="sourceLineNo">209</span>    }<a name="line.209"></a>
+<span class="sourceLineNo">210</span><a name="line.210"></a>
+<span class="sourceLineNo">211</span>    /**<a name="line.211"></a>
+<span class="sourceLineNo">212</span>     * Gets the real POSIX file descriptor for use by custom jni calls.<a name="line.212"></a>
+<span class="sourceLineNo">213</span>     */<a name="line.213"></a>
+<span class="sourceLineNo">214</span>    private int getFileDescriptor() throws IOException {<a name="line.214"></a>
+<span class="sourceLineNo">215</span>                final int fd = SharedSecrets.getJavaIOFileDescriptorAccess().get(getFD());<a name="line.215"></a>
+<span class="sourceLineNo">216</span><a name="line.216"></a>
+<span class="sourceLineNo">217</span>        if(fd &lt; 1)<a name="line.217"></a>
+<span class="sourceLineNo">218</span>            throw new IOException("failed to get POSIX file descriptor!");<a name="line.218"></a>
+<span class="sourceLineNo">219</span><a name="line.219"></a>
+<span class="sourceLineNo">220</span>        return fd;<a name="line.220"></a>
+<span class="sourceLineNo">221</span>    }<a name="line.221"></a>
+<span class="sourceLineNo">222</span><a name="line.222"></a>
+<span class="sourceLineNo">223</span>    private static int getWordSize() {<a name="line.223"></a>
+<span class="sourceLineNo">224</span>        //TODO: there has to be a better way...<a name="line.224"></a>
+<span class="sourceLineNo">225</span>        final String archDataModel = System.getProperty("sun.arch.data.model");<a name="line.225"></a>
+<span class="sourceLineNo">226</span>        return "64".equals(archDataModel) ? 8 : 4;<a name="line.226"></a>
+<span class="sourceLineNo">227</span>    }<a name="line.227"></a>
+<span class="sourceLineNo">228</span><a name="line.228"></a>
+<span class="sourceLineNo">229</span>    @Override<a name="line.229"></a>
+<span class="sourceLineNo">230</span>    protected void finalize() throws Throwable {<a name="line.230"></a>
+<span class="sourceLineNo">231</span>        close();<a name="line.231"></a>
+<span class="sourceLineNo">232</span><a name="line.232"></a>
+<span class="sourceLineNo">233</span>        super.finalize();<a name="line.233"></a>
+<span class="sourceLineNo">234</span>    }<a name="line.234"></a>
+<span class="sourceLineNo">235</span><a name="line.235"></a>
+<span class="sourceLineNo">236</span>    private synchronized IntBuffer getOffsetsBuffer(int size) {<a name="line.236"></a>
+<span class="sourceLineNo">237</span>        final int byteSize = size * 4;<a name="line.237"></a>
+<span class="sourceLineNo">238</span>        IntBuffer buf = localOffsetsBuffer.get();<a name="line.238"></a>
+<span class="sourceLineNo">239</span><a name="line.239"></a>
+<span class="sourceLineNo">240</span>        if(byteSize &gt; localBufferSize)<a name="line.240"></a>
+<span class="sourceLineNo">241</span>            throw new ScratchBufferOverrun();<a name="line.241"></a>
+<span class="sourceLineNo">242</span><a name="line.242"></a>
+<span class="sourceLineNo">243</span>        if(buf == null) {<a name="line.243"></a>
+<span class="sourceLineNo">244</span>            ByteBuffer bb = ByteBuffer.allocateDirect(localBufferSize);<a name="line.244"></a>
+<span class="sourceLineNo">245</span><a name="line.245"></a>
+<span class="sourceLineNo">246</span>            //keep native order, set before cast to IntBuffer<a name="line.246"></a>
+<span class="sourceLineNo">247</span>            bb.order(ByteOrder.nativeOrder());<a name="line.247"></a>
+<span class="sourceLineNo">248</span><a name="line.248"></a>
+<span class="sourceLineNo">249</span>            buf = bb.asIntBuffer();<a name="line.249"></a>
+<span class="sourceLineNo">250</span>            localOffsetsBuffer.set(buf);<a name="line.250"></a>
+<span class="sourceLineNo">251</span>        }<a name="line.251"></a>
+<span class="sourceLineNo">252</span><a name="line.252"></a>
+<span class="sourceLineNo">253</span>        return buf;<a name="line.253"></a>
+<span class="sourceLineNo">254</span>    }<a name="line.254"></a>
+<span class="sourceLineNo">255</span><a name="line.255"></a>
+<span class="sourceLineNo">256</span>    private synchronized ByteBuffer getDataBuffer(int size) {<a name="line.256"></a>
+<span class="sourceLineNo">257</span>        ByteBuffer buf = localDataBuffer.get();<a name="line.257"></a>
+<span class="sourceLineNo">258</span><a name="line.258"></a>
+<span class="sourceLineNo">259</span>        if(size &gt; localBufferSize)<a name="line.259"></a>
+<span class="sourceLineNo">260</span>            throw new ScratchBufferOverrun();<a name="line.260"></a>
+<span class="sourceLineNo">261</span><a name="line.261"></a>
+<span class="sourceLineNo">262</span>        if(buf == null) {<a name="line.262"></a>
+<span class="sourceLineNo">263</span>            buf = ByteBuffer.allocateDirect(localBufferSize);<a name="line.263"></a>
+<span class="sourceLineNo">264</span>            localDataBuffer.set(buf);<a name="line.264"></a>
+<span class="sourceLineNo">265</span>        }<a name="line.265"></a>
+<span class="sourceLineNo">266</span><a name="line.266"></a>
+<span class="sourceLineNo">267</span>        return buf;<a name="line.267"></a>
+<span class="sourceLineNo">268</span>    }<a name="line.268"></a>
+<span class="sourceLineNo">269</span><a name="line.269"></a>
+<span class="sourceLineNo">270</span>    /**<a name="line.270"></a>
+<span class="sourceLineNo">271</span>     * Direct memory mapping from a file descriptor.<a name="line.271"></a>
+<span class="sourceLineNo">272</span>     * This is normally possible through the local FileChannel,<a name="line.272"></a>
+<span class="sourceLineNo">273</span>     * but NIO will try to truncate files if they don't report<a name="line.273"></a>
+<span class="sourceLineNo">274</span>     * a correct size. This will avoid that.<a name="line.274"></a>
+<span class="sourceLineNo">275</span>     *<a name="line.275"></a>
+<span class="sourceLineNo">276</span>     *<a name="line.276"></a>
+<span class="sourceLineNo">277</span>     * @param length length of desired mapping<a name="line.277"></a>
+<span class="sourceLineNo">278</span>     * @param prot protocol used for mapping<a name="line.278"></a>
+<span class="sourceLineNo">279</span>     * @param flags flags for mapping<a name="line.279"></a>
+<span class="sourceLineNo">280</span>     * @param offset offset in file for mapping<a name="line.280"></a>
+<span class="sourceLineNo">281</span>     * @return direct mapped ByteBuffer<a name="line.281"></a>
+<span class="sourceLineNo">282</span>     * @throws IOException<a name="line.282"></a>
+<span class="sourceLineNo">283</span>     */<a name="line.283"></a>
+<span class="sourceLineNo">284</span>    public ByteBuffer mmap(int length, MMAPProt prot, MMAPFlags flags, int offset) throws IOException {<a name="line.284"></a>
+<span class="sourceLineNo">285</span>        long pointer = mmap(getFileDescriptor(), length, prot.flag, flags.flag, offset);<a name="line.285"></a>
+<span class="sourceLineNo">286</span><a name="line.286"></a>
+<span class="sourceLineNo">287</span>        if(pointer == -1)<a name="line.287"></a>
+<span class="sourceLineNo">288</span>            throw new LinuxFileException();<a name="line.288"></a>
+<span class="sourceLineNo">289</span><a name="line.289"></a>
+<span class="sourceLineNo">290</span>        return newMappedByteBuffer(length, pointer, () -&gt; {<a name="line.290"></a>
+<span class="sourceLineNo">291</span>            munmapDirect(pointer, length);<a name="line.291"></a>
+<span class="sourceLineNo">292</span>        });<a name="line.292"></a>
+<span class="sourceLineNo">293</span>    }<a name="line.293"></a>
+<span class="sourceLineNo">294</span><a name="line.294"></a>
+<span class="sourceLineNo">295</span>    public static void munmap(ByteBuffer mappedBuffer) throws IOException {<a name="line.295"></a>
+<span class="sourceLineNo">296</span>        if(!mappedBuffer.isDirect())<a name="line.296"></a>
+<span class="sourceLineNo">297</span>            throw new IllegalArgumentException("Must be a mapped direct buffer");<a name="line.297"></a>
+<span class="sourceLineNo">298</span><a name="line.298"></a>
+<span class="sourceLineNo">299</span>        try {<a name="line.299"></a>
+<span class="sourceLineNo">300</span>            long address = addressField.getLong(mappedBuffer);<a name="line.300"></a>
+<span class="sourceLineNo">301</span>            int capacity = capacityField.getInt(mappedBuffer);<a name="line.301"></a>
+<span class="sourceLineNo">302</span><a name="line.302"></a>
+<span class="sourceLineNo">303</span>            if(address == 0 || capacity == 0) return;<a name="line.303"></a>
+<span class="sourceLineNo">304</span><a name="line.304"></a>
+<span class="sourceLineNo">305</span>            //reset address field first<a name="line.305"></a>
+<span class="sourceLineNo">306</span>            addressField.setLong(mappedBuffer, 0);<a name="line.306"></a>
+<span class="sourceLineNo">307</span>            capacityField.setInt(mappedBuffer, 0);<a name="line.307"></a>
+<span class="sourceLineNo">308</span><a name="line.308"></a>
+<span class="sourceLineNo">309</span>            //reset mark and position to new 0 capacity<a name="line.309"></a>
+<span class="sourceLineNo">310</span>            mappedBuffer.clear();<a name="line.310"></a>
+<span class="sourceLineNo">311</span><a name="line.311"></a>
+<span class="sourceLineNo">312</span>            //clean object so it doesnt clean on collection<a name="line.312"></a>
+<span class="sourceLineNo">313</span>            ((Cleaner)cleanerField.get(mappedBuffer)).clean();<a name="line.313"></a>
+<span class="sourceLineNo">314</span>        } catch (IllegalAccessException e) {<a name="line.314"></a>
+<span class="sourceLineNo">315</span>            e.printStackTrace();<a name="line.315"></a>
+<span class="sourceLineNo">316</span>            throw new InternalError(e.getMessage());<a name="line.316"></a>
+<span class="sourceLineNo">317</span>        }<a name="line.317"></a>
+<span class="sourceLineNo">318</span>    }<a name="line.318"></a>
+<span class="sourceLineNo">319</span><a name="line.319"></a>
+<span class="sourceLineNo">320</span>    private MappedByteBuffer newMappedByteBuffer(int size, long addr, Runnable unmapper) throws IOException<a name="line.320"></a>
+<span class="sourceLineNo">321</span>    {<a name="line.321"></a>
+<span class="sourceLineNo">322</span>        MappedByteBuffer dbb;<a name="line.322"></a>
+<span class="sourceLineNo">323</span>        try {<a name="line.323"></a>
+<span class="sourceLineNo">324</span>            dbb = (MappedByteBuffer)directByteBufferConstructor.newInstance(<a name="line.324"></a>
+<span class="sourceLineNo">325</span>                    new Object[] { new Integer(size), new Long(addr), this.getFD(), unmapper });<a name="line.325"></a>
+<span class="sourceLineNo">326</span>        } catch (InstantiationException e) {<a name="line.326"></a>
+<span class="sourceLineNo">327</span>            throw new InternalError(e.getMessage());<a name="line.327"></a>
+<span class="sourceLineNo">328</span>        } catch (IllegalAccessException e) {<a name="line.328"></a>
+<span class="sourceLineNo">329</span>            throw new InternalError(e.getMessage());<a name="line.329"></a>
+<span class="sourceLineNo">330</span>        } catch (InvocationTargetException e) {<a name="line.330"></a>
+<span class="sourceLineNo">331</span>            throw new InternalError(e.getMessage());<a name="line.331"></a>
+<span class="sourceLineNo">332</span>        }<a name="line.332"></a>
+<span class="sourceLineNo">333</span>        return dbb;<a name="line.333"></a>
+<span class="sourceLineNo">334</span>    }<a name="line.334"></a>
+<span class="sourceLineNo">335</span><a name="line.335"></a>
+<span class="sourceLineNo">336</span>    public static class ScratchBufferOverrun extends IllegalArgumentException {<a name="line.336"></a>
+<span class="sourceLineNo">337</span>                private static final long serialVersionUID = -418203522640826177L;<a name="line.337"></a>
+<span class="sourceLineNo">338</span><a name="line.338"></a>
+<span class="sourceLineNo">339</span>                public ScratchBufferOverrun() {<a name="line.339"></a>
+<span class="sourceLineNo">340</span>            super("Scratch buffer overrun! Provide direct ByteBuffer for data larger than " + localBufferSize + " bytes");<a name="line.340"></a>
+<span class="sourceLineNo">341</span>        }<a name="line.341"></a>
+<span class="sourceLineNo">342</span>    }<a name="line.342"></a>
+<span class="sourceLineNo">343</span><a name="line.343"></a>
+<span class="sourceLineNo">344</span>    public static class LinuxFileException extends IOException {<a name="line.344"></a>
+<span class="sourceLineNo">345</span>                private static final long serialVersionUID = -2581606746434701394L;<a name="line.345"></a>
+<span class="sourceLineNo">346</span>                int code;<a name="line.346"></a>
+<span class="sourceLineNo">347</span><a name="line.347"></a>
+<span class="sourceLineNo">348</span>        public LinuxFileException() {<a name="line.348"></a>
+<span class="sourceLineNo">349</span>            this(errno());<a name="line.349"></a>
+<span class="sourceLineNo">350</span>        }<a name="line.350"></a>
+<span class="sourceLineNo">351</span><a name="line.351"></a>
+<span class="sourceLineNo">352</span>        LinuxFileException(int code) {<a name="line.352"></a>
+<span class="sourceLineNo">353</span>            super(strerror(code));<a name="line.353"></a>
+<span class="sourceLineNo">354</span><a name="line.354"></a>
+<span class="sourceLineNo">355</span>            this.code = code;<a name="line.355"></a>
+<span class="sourceLineNo">356</span>        }<a name="line.356"></a>
+<span class="sourceLineNo">357</span><a name="line.357"></a>
+<span class="sourceLineNo">358</span>        /**<a name="line.358"></a>
+<span class="sourceLineNo">359</span>         * Gets the POSIX code associated with this IO error<a name="line.359"></a>
+<span class="sourceLineNo">360</span>         *<a name="line.360"></a>
+<span class="sourceLineNo">361</span>         * @return POSIX error code<a name="line.361"></a>
+<span class="sourceLineNo">362</span>         */<a name="line.362"></a>
+<span class="sourceLineNo">363</span>        public int getCode() {<a name="line.363"></a>
+<span class="sourceLineNo">364</span>            return code;<a name="line.364"></a>
+<span class="sourceLineNo">365</span>        }<a name="line.365"></a>
+<span class="sourceLineNo">366</span>    }<a name="line.366"></a>
+<span class="sourceLineNo">367</span><a name="line.367"></a>
+<span class="sourceLineNo">368</span>    public enum MMAPProt {<a name="line.368"></a>
+<span class="sourceLineNo">369</span>        NONE(0),<a name="line.369"></a>
+<span class="sourceLineNo">370</span>        READ(1),<a name="line.370"></a>
+<span class="sourceLineNo">371</span>        WRITE(2),<a name="line.371"></a>
+<span class="sourceLineNo">372</span>        EXEC(4),<a name="line.372"></a>
+<span class="sourceLineNo">373</span>        RW(READ.flag | WRITE.flag),<a name="line.373"></a>
+<span class="sourceLineNo">374</span>        RX(READ.flag | EXEC.flag),<a name="line.374"></a>
+<span class="sourceLineNo">375</span>        RWX(READ.flag | WRITE.flag | EXEC.flag),<a name="line.375"></a>
+<span class="sourceLineNo">376</span>        WX(WRITE.flag | EXEC.flag);<a name="line.376"></a>
+<span class="sourceLineNo">377</span><a name="line.377"></a>
+<span class="sourceLineNo">378</span>        public final int flag;<a name="line.378"></a>
+<span class="sourceLineNo">379</span><a name="line.379"></a>
+<span class="sourceLineNo">380</span>        MMAPProt(int flag) {<a name="line.380"></a>
+<span class="sourceLineNo">381</span>            this.flag = flag;<a name="line.381"></a>
+<span class="sourceLineNo">382</span>        }<a name="line.382"></a>
+<span class="sourceLineNo">383</span>    }<a name="line.383"></a>
+<span class="sourceLineNo">384</span><a name="line.384"></a>
+<span class="sourceLineNo">385</span>    public enum MMAPFlags {<a name="line.385"></a>
+<span class="sourceLineNo">386</span>        SHARED(1),<a name="line.386"></a>
+<span class="sourceLineNo">387</span>        PRIVATE(2),<a name="line.387"></a>
+<span class="sourceLineNo">388</span>        SHARED_PRIVATE(SHARED.flag | PRIVATE.flag);<a name="line.388"></a>
+<span class="sourceLineNo">389</span><a name="line.389"></a>
+<span class="sourceLineNo">390</span>        public final int flag;<a name="line.390"></a>
+<span class="sourceLineNo">391</span><a name="line.391"></a>
+<span class="sourceLineNo">392</span>        MMAPFlags(int flag) {<a name="line.392"></a>
+<span class="sourceLineNo">393</span>            this.flag = flag;<a name="line.393"></a>
+<span class="sourceLineNo">394</span>        }<a name="line.394"></a>
+<span class="sourceLineNo">395</span>    }<a name="line.395"></a>
+<span class="sourceLineNo">396</span><a name="line.396"></a>
+<span class="sourceLineNo">397</span>    public static native int errno();<a name="line.397"></a>
+<span class="sourceLineNo">398</span><a name="line.398"></a>
+<span class="sourceLineNo">399</span>    public static native String strerror(int code);<a name="line.399"></a>
+<span class="sourceLineNo">400</span><a name="line.400"></a>
+<span class="sourceLineNo">401</span>    protected static native int directIOCTL(int fd, long command, int value);<a name="line.401"></a>
+<span class="sourceLineNo">402</span><a name="line.402"></a>
+<span class="sourceLineNo">403</span>    protected static native long mmap(int fd, int length, int prot, int flags, int offset);<a name="line.403"></a>
+<span class="sourceLineNo">404</span><a name="line.404"></a>
+<span class="sourceLineNo">405</span>    protected static native int munmapDirect(long address, long capacity);<a name="line.405"></a>
+<span class="sourceLineNo">406</span><a name="line.406"></a>
+<span class="sourceLineNo">407</span>    protected static native int directIOCTLStructure(int fd, long command, ByteBuffer data, int dataOffset, IntBuffer offsetMap, int offsetMapOffset, int offsetCapacity);<a name="line.407"></a>
+<span class="sourceLineNo">408</span>}<a name="line.408"></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</pre>
+</div>
+</body>
+</html>

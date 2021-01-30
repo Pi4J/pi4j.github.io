@@ -1,0 +1,174 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+<title>Source code</title>
+<link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<div class="sourceContainer">
+<pre><span class="sourceLineNo">001</span>package com.pi4j.io.gpio;<a name="line.1"></a>
+<span class="sourceLineNo">002</span><a name="line.2"></a>
+<span class="sourceLineNo">003</span>/*<a name="line.3"></a>
+<span class="sourceLineNo">004</span> * #%L<a name="line.4"></a>
+<span class="sourceLineNo">005</span> * **********************************************************************<a name="line.5"></a>
+<span class="sourceLineNo">006</span> * ORGANIZATION  :  Pi4J<a name="line.6"></a>
+<span class="sourceLineNo">007</span> * PROJECT       :  Pi4J :: Java Library (Core)<a name="line.7"></a>
+<span class="sourceLineNo">008</span> * FILENAME      :  OdroidXU4Pin.java<a name="line.8"></a>
+<span class="sourceLineNo">009</span> *<a name="line.9"></a>
+<span class="sourceLineNo">010</span> * This file is part of the Pi4J project. More information about<a name="line.10"></a>
+<span class="sourceLineNo">011</span> * this project can be found here:  http://www.pi4j.com/<a name="line.11"></a>
+<span class="sourceLineNo">012</span> * **********************************************************************<a name="line.12"></a>
+<span class="sourceLineNo">013</span> * %%<a name="line.13"></a>
+<span class="sourceLineNo">014</span> * Copyright (C) 2012 - 2016 Pi4J<a name="line.14"></a>
+<span class="sourceLineNo">015</span> * %%<a name="line.15"></a>
+<span class="sourceLineNo">016</span> * This program is free software: you can redistribute it and/or modify<a name="line.16"></a>
+<span class="sourceLineNo">017</span> * it under the terms of the GNU Lesser General Public License as<a name="line.17"></a>
+<span class="sourceLineNo">018</span> * published by the Free Software Foundation, either version 3 of the<a name="line.18"></a>
+<span class="sourceLineNo">019</span> * License, or (at your option) any later version.<a name="line.19"></a>
+<span class="sourceLineNo">020</span> *<a name="line.20"></a>
+<span class="sourceLineNo">021</span> * This program is distributed in the hope that it will be useful,<a name="line.21"></a>
+<span class="sourceLineNo">022</span> * but WITHOUT ANY WARRANTY; without even the implied warranty of<a name="line.22"></a>
+<span class="sourceLineNo">023</span> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the<a name="line.23"></a>
+<span class="sourceLineNo">024</span> * GNU General Lesser Public License for more details.<a name="line.24"></a>
+<span class="sourceLineNo">025</span> *<a name="line.25"></a>
+<span class="sourceLineNo">026</span> * You should have received a copy of the GNU General Lesser Public<a name="line.26"></a>
+<span class="sourceLineNo">027</span> * License along with this program.  If not, see<a name="line.27"></a>
+<span class="sourceLineNo">028</span> * &lt;http://www.gnu.org/licenses/lgpl-3.0.html&gt;.<a name="line.28"></a>
+<span class="sourceLineNo">029</span> * #L%<a name="line.29"></a>
+<span class="sourceLineNo">030</span> */<a name="line.30"></a>
+<span class="sourceLineNo">031</span><a name="line.31"></a>
+<span class="sourceLineNo">032</span><a name="line.32"></a>
+<span class="sourceLineNo">033</span>import java.util.EnumSet;<a name="line.33"></a>
+<span class="sourceLineNo">034</span><a name="line.34"></a>
+<span class="sourceLineNo">035</span>/**<a name="line.35"></a>
+<span class="sourceLineNo">036</span> * Odroid-XU4 pin definitions for (default) WiringPi pin numbering scheme.<a name="line.36"></a>
+<span class="sourceLineNo">037</span> *<a name="line.37"></a>
+<span class="sourceLineNo">038</span> * @author Robert Savage (&lt;a<a name="line.38"></a>
+<span class="sourceLineNo">039</span> *         href="http://www.savagehomeautomation.com"&gt;http://www.savagehomeautomation.com&lt;/a&gt;)<a name="line.39"></a>
+<span class="sourceLineNo">040</span> */<a name="line.40"></a>
+<span class="sourceLineNo">041</span>public class OdroidXU4Pin extends PinProvider {<a name="line.41"></a>
+<span class="sourceLineNo">042</span><a name="line.42"></a>
+<span class="sourceLineNo">043</span>    // (!! 1.8 VDC MAX ON ALL GPIO PINS !!)<a name="line.43"></a>
+<span class="sourceLineNo">044</span>    public static final Pin GPIO_00 = createDigitalPin(0,  "GPIO 0");<a name="line.44"></a>
+<span class="sourceLineNo">045</span>    public static final Pin GPIO_01 = createDigitalPin(1,  "GPIO 1");<a name="line.45"></a>
+<span class="sourceLineNo">046</span>    public static final Pin GPIO_02 = createDigitalPin(2,  "GPIO 2");<a name="line.46"></a>
+<span class="sourceLineNo">047</span>    public static final Pin GPIO_03 = createDigitalPin(3,  "GPIO 3");<a name="line.47"></a>
+<span class="sourceLineNo">048</span>    public static final Pin GPIO_04 = createDigitalPin(4,  "GPIO 4");<a name="line.48"></a>
+<span class="sourceLineNo">049</span>    public static final Pin GPIO_05 = createDigitalPin(5,  "GPIO 5");<a name="line.49"></a>
+<span class="sourceLineNo">050</span>    public static final Pin GPIO_06 = createDigitalPin(6,  "GPIO 6");<a name="line.50"></a>
+<span class="sourceLineNo">051</span>    public static final Pin GPIO_07 = createDigitalPin(7,  "GPIO 7");<a name="line.51"></a>
+<span class="sourceLineNo">052</span>    public static final Pin GPIO_08 = createDigitalPin(8,  "GPIO 8");<a name="line.52"></a>
+<span class="sourceLineNo">053</span>    public static final Pin GPIO_09 = createDigitalPin(9,  "GPIO 9");<a name="line.53"></a>
+<span class="sourceLineNo">054</span>    public static final Pin GPIO_10 = createDigitalPin(10, "GPIO 10");<a name="line.54"></a>
+<span class="sourceLineNo">055</span>    public static final Pin GPIO_11 = createDigitalPin(11, "GPIO 11");<a name="line.55"></a>
+<span class="sourceLineNo">056</span>    public static final Pin GPIO_12 = createDigitalPin(12, "GPIO 12");<a name="line.56"></a>
+<span class="sourceLineNo">057</span>    public static final Pin GPIO_13 = createDigitalPin(13, "GPIO 13");<a name="line.57"></a>
+<span class="sourceLineNo">058</span>    public static final Pin GPIO_14 = createDigitalPin(14, "GPIO 14");<a name="line.58"></a>
+<span class="sourceLineNo">059</span>    public static final Pin GPIO_15 = createDigitalPin(15, "GPIO 15");<a name="line.59"></a>
+<span class="sourceLineNo">060</span>    public static final Pin GPIO_16 = createDigitalPin(16, "GPIO 16");<a name="line.60"></a>
+<span class="sourceLineNo">061</span>    public static final Pin GPIO_21 = createDigitalPin(21, "GPIO 21");<a name="line.61"></a>
+<span class="sourceLineNo">062</span>    public static final Pin GPIO_22 = createDigitalPin(22, "GPIO 22");<a name="line.62"></a>
+<span class="sourceLineNo">063</span>    public static final Pin GPIO_23 = createDigitalPin(23, "GPIO 23");<a name="line.63"></a>
+<span class="sourceLineNo">064</span>    public static final Pin GPIO_26 = createDigitalPin(26, "GPIO 26");<a name="line.64"></a>
+<span class="sourceLineNo">065</span>    public static final Pin GPIO_27 = createDigitalPin(27, "GPIO 27");<a name="line.65"></a>
+<span class="sourceLineNo">066</span>    public static final Pin GPIO_30 = createDigitalPin(30, "GPIO 30");<a name="line.66"></a>
+<span class="sourceLineNo">067</span>    public static final Pin GPIO_31 = createDigitalPin(31, "GPIO 31");<a name="line.67"></a>
+<span class="sourceLineNo">068</span><a name="line.68"></a>
+<span class="sourceLineNo">069</span>    // (!! 1.8 VDC MAX ON ALL AIN PINS !!)<a name="line.69"></a>
+<span class="sourceLineNo">070</span>    // 03       ADC_0.AIN0  (!! 1.8 VDC MAX !!)<a name="line.70"></a>
+<span class="sourceLineNo">071</span>    public static final Pin AIN0 = createAnalogInputPin(0 + OdroidGpioProvider.AIN_ADDRESS_OFFSET, "AIN0");<a name="line.71"></a>
+<span class="sourceLineNo">072</span><a name="line.72"></a>
+<span class="sourceLineNo">073</span>    // 23       ADC_0.AIN3  (!! 1.8 VDC MAX !!)<a name="line.73"></a>
+<span class="sourceLineNo">074</span>    public static final Pin AIN3 = createAnalogInputPin(1 + OdroidGpioProvider.AIN_ADDRESS_OFFSET, "AIN3");<a name="line.74"></a>
+<span class="sourceLineNo">075</span><a name="line.75"></a>
+<span class="sourceLineNo">076</span>    private static Pin createAnalogInputPin(int address, String name) {<a name="line.76"></a>
+<span class="sourceLineNo">077</span>        return createAnalogInputPin(OdroidGpioProvider.NAME, address, name);<a name="line.77"></a>
+<span class="sourceLineNo">078</span>    }<a name="line.78"></a>
+<span class="sourceLineNo">079</span><a name="line.79"></a>
+<span class="sourceLineNo">080</span>    protected static Pin createDigitalPin(int address, String name) {<a name="line.80"></a>
+<span class="sourceLineNo">081</span>        return createDigitalPin(OdroidGpioProvider.NAME, address, name);<a name="line.81"></a>
+<span class="sourceLineNo">082</span>    }<a name="line.82"></a>
+<span class="sourceLineNo">083</span><a name="line.83"></a>
+<span class="sourceLineNo">084</span>    // *override* static method from subclass<a name="line.84"></a>
+<span class="sourceLineNo">085</span>    // (overriding a static method is not supported in Java<a name="line.85"></a>
+<span class="sourceLineNo">086</span>    //  so this method definition will hide the subclass static method)<a name="line.86"></a>
+<span class="sourceLineNo">087</span>    public static Pin getPinByName(String name) {<a name="line.87"></a>
+<span class="sourceLineNo">088</span>        return PinProvider.getPinByName(name);<a name="line.88"></a>
+<span class="sourceLineNo">089</span>    }<a name="line.89"></a>
+<span class="sourceLineNo">090</span><a name="line.90"></a>
+<span class="sourceLineNo">091</span>    // *override* static method from subclass<a name="line.91"></a>
+<span class="sourceLineNo">092</span>    // (overriding a static method is not supported in Java<a name="line.92"></a>
+<span class="sourceLineNo">093</span>    //  so this method definition will hide the subclass static method)<a name="line.93"></a>
+<span class="sourceLineNo">094</span>    public static Pin getPinByAddress(int address) {<a name="line.94"></a>
+<span class="sourceLineNo">095</span>        return PinProvider.getPinByAddress(address);<a name="line.95"></a>
+<span class="sourceLineNo">096</span>    }<a name="line.96"></a>
+<span class="sourceLineNo">097</span><a name="line.97"></a>
+<span class="sourceLineNo">098</span>    // *override* static method from subclass<a name="line.98"></a>
+<span class="sourceLineNo">099</span>    // (overriding a static method is not supported in Java<a name="line.99"></a>
+<span class="sourceLineNo">100</span>    //  so this method definition will hide the subclass static method)<a name="line.100"></a>
+<span class="sourceLineNo">101</span>    public static Pin[] allPins() { return PinProvider.allPins(); }<a name="line.101"></a>
+<span class="sourceLineNo">102</span>}<a name="line.102"></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</pre>
+</div>
+</body>
+</html>
