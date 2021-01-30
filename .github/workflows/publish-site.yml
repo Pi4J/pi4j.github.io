@@ -9,12 +9,12 @@ jobs:
   build-deploy:
     runs-on: ubuntu-18.04
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
         
-      - name: Extract PGP private key to file from GitHub secret
-        run: 'echo "$PGP_PRIVATE_KEY" > pi4j.key'
-        env:
-          PGP_PRIVATE_KEY: ${{ secrets.PGP_PRIVATE_KEY }}
+#      - name: Extract PGP private key to file from GitHub secret
+#        run: 'echo "$PGP_PRIVATE_KEY" > pi4j.key'
+#        env:
+#          PGP_PRIVATE_KEY: ${{ secrets.PGP_PRIVATE_KEY }}
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
