@@ -20,7 +20,7 @@ jobs:
         run: hugo --minify
         
       - name: See directory
-        run: ls - lR
+        run: ls -lR
         
      # - name: Commit the generated website and push to git repository
      #   run: |
