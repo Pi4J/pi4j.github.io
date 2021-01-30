@@ -29,7 +29,7 @@ jobs:
           git status
           git add public/.
           git commit -am "[AUTO] New version of website"
-          git push
+          git push origin HEAD:main
 
      # - name: Deploy
      #   uses: peaceiris/actions-gh-pages@v3
