@@ -17,7 +17,7 @@ permalink: /about
 
 **The Pi4J Project's** mission is to provide a rich and powerful, yet simple to use, Java-friendly API library enabling programmatic access to the low-level hardware I/O capabilities of embedded platforms such as the Raspberry Pi.
 
-![](/assets/about/pi4j-overview.jpg)
+![](/assets/about/home/pi4j-overview.jpg)
 
     
 !!! As of Version 2.0,  Pi4J will no longer include support for preriphery devices and add-on chipsets/boards as part of the core project.  A new plugin model has been introduced in version 2.0 that should help enable third-party development and support third-party add-ons which may be developed and maintained indepdentantly from the core Pi4J project.

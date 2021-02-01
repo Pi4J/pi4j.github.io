@@ -17,3 +17,52 @@ disablePathToLower = true
   [markup.tableOfContents]
     startLevel = 1
     endLevel = 9
+
+# Menu links along the sidebar navigation
+[[menu.main]]
+	name = "About"
+	identifier = "about"
+	url = "/about/"
+	weight = 1
+
+[[menu.main]]
+	identifier = "about"
+	name = "About"
+	url = "/about/"
+	weight = 100 # Weight is an integer used to sort the menu items. The sorting goes from smallest to largest numbers. If weight is not defined for each menu entry, Hugo will sort the entries alphabetically.
+
+[[menu.main]]
+	identifier = "books"
+	name = "Books"
+	url = "/books/"
+	weight = 150
+
+[[menu.main]]
+	identifier = "courses"
+	name = "Courses"
+	url = "/courses/"
+	weight = 155
+
+[[menu.main]]
+	identifier = "articles"
+	name = "Articles"
+	url = "/articles/"
+	weight = 157
+
+[[menu.main]]
+	identifier = "presentations"
+	name = "Presentations"
+	url = "/presentations/"
+	weight = 170
+
+[[menu.main]]
+	identifier = "learning"
+	name = "Learning"
+	url = "/learning/"
+	weight = 190
+
+[[menu.main]]
+	identifier = "tags"
+	name = "Tags"
+	url = "/tags/"
+	weight = 200

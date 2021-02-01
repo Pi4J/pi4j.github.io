@@ -15,4 +15,4 @@ the more well-known BCM numbering is being used now.
 
 This drawing shows the different numbers for WiringPi and BCM in a 40-pins Raspberry Pi header:
 
-![40-pins header](headerpins_in_header.png)
+![40-pins header](/assets/documentation/headerpins_in_header.png)
