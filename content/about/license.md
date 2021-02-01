@@ -1,9 +1,6 @@
 ---
 title: 'License (Open Source)'
-taxonomy:
-    category:
-        - docs
-visible: true
+weight: 50
 ---
 
 The Pi4J Version 2.0 project is distributed and licensed under the **Apache License, Version 2.0** license. (_A business-friendly OSS license_)

@@ -1,9 +1,5 @@
 ---
 title: 'Shutting down the Pi4J Context'
-taxonomy:
-    category:
-        - docs
-visible: true
 ---
 
 At the end of our application, the context needs to be shutdown to release the I/O and clean up the used resources.

@@ -1,8 +1,6 @@
 ---
-layout: default
-published: true
 title: Java development on the Raspberry Pi with Visual Studio Code
-order: 2
+weight: 40
 ---
 
 To use Pi4J V2 you'll need Java 11 or newer. Luckily this version is included in the current version of Raspbian OS. In the release notes of Raspbian you can see that the version of 2019-06-20 includes OpenJDK Java 11:

@@ -1,8 +1,6 @@
 ---
-layout: default
-published: true
 title: Minimal example application with a LED and button
-order: 3
+weight: 50
 ---
 
 !!! In the ["pi4j-example-minimal" GitHub project](https://github.com/Pi4J/pi4j-example-minimal) you can find a project which contains the minimal code to control a digital input and output with Pi4J. The project is further described on this page. The application will toggle a a LED on/off and each time you press the button, the toggling speed increases. When you have pushed the button 5 times, the application stops.

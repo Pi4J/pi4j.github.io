@@ -1,10 +1,5 @@
 ---
 title: 'Pin numbering'
-media_order: headerpins_in_header.png
-taxonomy:
-    category:
-        - docs
-visible: true
 ---
 
 Pi4J V1 took a pretty opinionated approach to pin numbering as the scheme was based on the underlying WiringPi.

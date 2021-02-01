@@ -1,9 +1,5 @@
 ---
 title: 'Logging with SLF4J'
-taxonomy:
-    category:
-        - docs
-visible: true
 ---
 
 Pi4J uses SLF4J for logging. To include it in your project, add this Maven dependency:

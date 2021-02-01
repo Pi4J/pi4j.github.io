@@ -1,9 +1,6 @@
 ---
 title: 'Previous versions (V1)'
-taxonomy:
-    category:
-        - docs
-visible: true
+weight: 20
 ---
 
 On this site you can find all detailed info with a lot of examples for the second generation of Pi4J which requires Java 11.

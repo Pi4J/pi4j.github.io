@@ -1,9 +1,6 @@
 ---
 title: 'What''s New (V2)'
-taxonomy:
-    category:
-        - docs
-visible: true
+weight: 30
 ---
 
 #### What's New in 2.0?

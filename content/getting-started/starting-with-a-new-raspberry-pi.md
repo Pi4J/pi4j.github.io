@@ -1,8 +1,6 @@
 ---
-layout: default
-published: true
 title: Starting with a new Raspberry Pi
-order: 1
+weight: 30
 ---
 
 # Introduction

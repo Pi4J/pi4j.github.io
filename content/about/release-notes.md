@@ -1,9 +1,6 @@
 ---
 title: 'Release Notes'
-taxonomy:
-    category:
-        - docs
-visible: true
+weight: 40
 ---
 
 Release note are not available as this project does not yet have any releases.  

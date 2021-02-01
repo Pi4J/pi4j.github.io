@@ -1,9 +1,5 @@
 ---
 title: 'Pulse Width Modulation (PWM)'
-taxonomy:
-    category:
-        - docs
-visible: true
 ---
 
 The RaspberryPi hardware supports 2 hardware PWM channels. But as Pi4J uses PiGPIO "under the hood", we can take advantage of the 

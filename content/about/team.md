@@ -1,9 +1,6 @@
 ---
 title: 'The Team'
-media_order: 'frank.jpg,robert-savage.png'
-taxonomy:
-    category:
-        - docs
+weight: 60
 ---
 
 <table style="border: none;" cellspacing="0" cellpadding="0" border="0">

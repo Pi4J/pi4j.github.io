@@ -1,9 +1,5 @@
 ---
 title: 'Digital Output (GPIO)'
-taxonomy:
-    category:
-        - docs
-visible: true
 ---
 
 ```
