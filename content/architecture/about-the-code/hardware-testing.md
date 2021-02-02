@@ -1,5 +1,6 @@
 ---
-title: 'Hardware testing'
+title: Hardware testing
+weight: 50
 ---
 
 To minimize the required time and efforts to test a new release, V2 aims to include an automated test which performs I/O testing on each I/O interface on each model of RPi. Ideally this would happen as part of the unit testing sequence for each code commit or at least as part of the release cycle.  

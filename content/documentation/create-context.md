@@ -1,5 +1,6 @@
 ---
-title: 'Creating a Pi4J Context'
+title: Creating a Pi4J Context
+weight: 70
 ---
 
 The context is an immutable runtime object that holds the configured state and manages the lifecycle of a Pi4J instance. It includes all loaded plugins, providers, platforms, I/O instance registry, environmental configuration and runtime objects including executor thread pools,  I/O event listeners, etc.   

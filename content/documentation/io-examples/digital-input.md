@@ -1,5 +1,6 @@
 ---
-title: 'Digital Input (GPIO)'
+title: Digital Input (GPIO)
+weight: 210
 ---
 
 V2 provides a declarative style of configuration for I/O provisioning instead of the hard-coded approach offered in V1.

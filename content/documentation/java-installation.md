@@ -1,23 +1,33 @@
 ---
-title: Java installation for different board versions
+title: Java for ARMv6/7/8
+weight: 50
 ---
 
-Boards with ARMv6 processor:
+Raspberry Pi OS Full comes with Java 11 pre-installed. But this version only works on board-versions with an 
+ARMv7 or ARMv8. In some cases you will need to do some additional steps to install a Java version which works
+on your board. 
 
-*     Raspberry Pi 1 A and A+
-*     Raspberry Pi 1 B and B+
-*     Compute Module 1
-*     Zero 1.2, 1.3 and W
+## Board versions
 
-Boards with ARMv7 or ARMv8 processor:
+### With ARMv6 processor
 
-*     Model A+, version 3
-*     Model B, version 2, 3 and 4
-*     Compute Module, version 3
+* Raspberry Pi 1 A and A+
+* Raspberry Pi 1 B and B+
+* Compute Module 1
+* Zero 1.2, 1.3 and W
 
-### Check the installed Java version
+### With ARMv7 or ARMv8 processor
 
-If you prepared a microSD card with the latest version of Raspbian OS (full version), you can check the installed Java version in the terminal. On a board with ARMv7 or ARMv8 you will get this result:
+* Model A+, version 3
+* Model B, version 2, 3 and 4
+* Compute Module, version 3
+
+## How to check and install Java
+
+### Check the current version
+
+If you prepared a microSD card with the latest version of Raspbian OS (full version), Java is already installed!
+You can check the installed Java version in the terminal. On a board with ARMv7 or ARMv8 you will get this result:
 
 ```
 $ java -version
@@ -36,7 +46,8 @@ Server VM is only supported on ARMv7+ VFP
 
 ### Check your board version
 
-If you are not sure which type of board you have, you can check this in the terminal with “cat /proc/cpuinfo”, for instance for a Raspberry Pi B+ 1.2:
+If you are not sure which type of board you have, you can check this in the terminal with `cat /proc/cpuinfo`, 
+for instance for a Raspberry Pi B+ 1.2:
 
 ```
 $ cat /proc/cpuinfo
@@ -122,7 +133,7 @@ OpenJDK Client VM Zulu11.41+75-CA (build 11.0.8+10-LTS, mixed mode)
 
 OK, ready to run Java 11 applications on the Raspberry Pi with ARMv6!
 
-### More info
+## More info
 
 If you want more info, or use JavaFX, check these blog posts:
 

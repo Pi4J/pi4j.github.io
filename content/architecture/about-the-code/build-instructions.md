@@ -1,5 +1,6 @@
 ---
-title: 'Build Instructions'
+title: Build Instructions
+weight: 30
 ---
 
 Building the Pi4J Project is simple and requires minimal effort.  Pi4J is primarily built using Apache Maven and Java 11.  Pi4J can be built directly on your host computer or inside a Docker container where all toolchains and dependencies are already installed, configuired and cached.   

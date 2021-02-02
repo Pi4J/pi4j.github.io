@@ -1,5 +1,6 @@
 ---
-title: 'I/O Registry'
+title: I/O Registry
+weight: 140
 ---
 
 An additional V2 feature is an I/O registry where all I/O instances that have been created can be maintained, managed, re-accessed, etc. As the library keeps track of all the created I/O instances, they become publicly accessible through a registry where users can interrogate, iterate, identify and access all created I/O instances that Pi4J is managing.

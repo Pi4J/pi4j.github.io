@@ -1,5 +1,6 @@
 ---
-title: 'Maven settings'
+title: Maven settings
+weight: 40
 ---
 
 To simplify development but not commit sensitive information, you can add personal or PC-specific settings in the Maven settings.xml file. This file is stored or needs to be created in the ".m2" directory in your home directory:

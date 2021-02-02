@@ -1,5 +1,6 @@
 ---
-title: 'I/O Examples'
+title: I/O Examples
+weight: 120
 ---
 
 Here you can find detailed examples for the different functionalities of Pi4J per I/O type.

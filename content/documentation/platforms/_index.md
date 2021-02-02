@@ -1,5 +1,6 @@
 ---
-title: 'Choosing a Platform'
+title: Choosing a Platform
+weight: 80
 ---
 
 Platforms are extensible service modules responsible for defining a set of default I/O providers and specific hardware capabilities for an embedded hardware system where Pi4J is deployed/running.

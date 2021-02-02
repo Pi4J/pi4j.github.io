@@ -1,5 +1,6 @@
 ---
-title: 'Project structure'
+title: Project structure
+weight: 10
 ---
 
 To ensure the Pi4J V2 project is easy to maintain, there is a clear separation between the core functions and isolated test, example and plugin projects.

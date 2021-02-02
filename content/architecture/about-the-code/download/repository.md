@@ -1,5 +1,6 @@
 ---
-title: 'Maven Repository'
+title: Maven Repository
+weight: 30
 ---
 
 **Pi4J V.2 is not yet released or published to Maven Central.**

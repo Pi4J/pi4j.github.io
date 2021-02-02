@@ -1,5 +1,6 @@
 ---
-title: 'Shutting down the Pi4J Context'
+title: Shutting down the Pi4J Context
+weight: 150
 ---
 
 At the end of our application, the context needs to be shutdown to release the I/O and clean up the used resources.

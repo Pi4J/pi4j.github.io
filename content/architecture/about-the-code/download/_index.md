@@ -1,5 +1,6 @@
 ---
-title: 'Getting started with in-progress-V2'
+title: Download/Install
+weight: 20
 ---
 
 Getting started with V2 in the state of June 3th of 2020.

@@ -1,5 +1,6 @@
 ---
-title: 'Direct Download'
+title: Direct Download
+weight: 20
 ---
 
 **Direct downloads are not yet available.**

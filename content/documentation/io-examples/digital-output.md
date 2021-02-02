@@ -1,5 +1,6 @@
 ---
-title: 'Digital Output (GPIO)'
+title: Digital Output (GPIO)
+weight: 200
 ---
 
 ```

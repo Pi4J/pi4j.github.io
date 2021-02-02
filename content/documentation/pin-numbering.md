@@ -1,5 +1,6 @@
 ---
-title: 'Pin numbering'
+title: Pin numbering
+weight: 40
 ---
 
 Pi4J V1 took a pretty opinionated approach to pin numbering as the scheme was based on the underlying WiringPi.
