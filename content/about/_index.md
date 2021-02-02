@@ -16,45 +16,45 @@ Version 2.0 of Pi4J is finally starting to come together and is _almost_ ready f
 The following tables outlines some of the current (high-level) features planned for V.2 release.  Please note that some of these features may get deferred and not incuded in the first release.
 
 | ARCHTECTURAL COMPONENTS | STATUS | PRIORITY |
-|---	|---	|--- |
-| Runtime Context | [fa=fa-cogs /] In Testing | [fa=fa-arrow-circle-up /] HIGH |
-| I/O Registry | [fa=fa-cogs /] In Testing | [fa=fa-arrow-circle-up /] HIGH |
-| Platforms | [fa=fa-hourglass-half /] **Incomplete** | [fa=fa-arrow-circle-up /] HIGH |
-| Providers | [fa=fa-cogs /] In Testing | [fa=fa-arrow-circle-up /] HIGH |
-| Dependency Injection | [fa=fa-flask /] In Research | [fa=fa-arrow-circle-up /] HIGH |
+| :---	| :---	| :--- |
+| Runtime Context | <i class="fa fa-cogs"></i> In Testing | <i class="fa fa-arrow-circle-up"></i> HIGH |
+| I/O Registry | <i class="fa fa-cogs"></i> In Testing | <i class="fa fa-arrow-circle-up"></i> HIGH |
+| Platforms | <i class="fa fa-hourglass-half"></i> **Incomplete** | <i class="fa fa-arrow-circle-up"></i> HIGH |
+| Providers | <i class="fa fa-cogs"></i> In Testing | <i class="fa fa-arrow-circle-up"></i> HIGH |
+| Dependency Injection | <i class="fa fa-flask"></i> In Research | <i class="fa fa-arrow-circle-up"></i> HIGH |
 
 ---
 
 | CORE FEATURES | STATUS | PRIORITY |
-|---	|---	|--- |
-| Remote I/O (via TCP) | [fa=fa-cogs /] InTesting |  [fa=fa-arrow-circle-up /] HIGH |
-| Executor Service | [fa=fa-hourglass-half /] **Incomplete** |  [fa=fa-arrow-circle-up /] HIGH |
-| GPIO Pulse | [fa=fa-hourglass-half /] **Incomplete** | [fa=fa-arrow-circle-up /] HIGH |
-| GPIO Blink | [fa=fa-hourglass-half /] **Incomplete** | [fa=fa-arrow-circle-up /] HIGH |
+| :---	| :---	| :--- |
+| Remote I/O (via TCP) | <i class="fa fa-cogs"></i> InTesting |  <i class="fa fa-arrow-circle-up"></i> HIGH |
+| Executor Service | <i class="fa fa-hourglass-half"></i> **Incomplete** |  <i class="fa fa-arrow-circle-up"></i> HIGH |
+| GPIO Pulse | <i class="fa fa-hourglass-half"></i> **Incomplete** | <i class="fa fa-arrow-circle-up"></i> HIGH |
+| GPIO Blink | <i class="fa fa-hourglass-half"></i> **Incomplete** | <i class="fa fa-arrow-circle-up"></i> HIGH |
 
 ---
 
 | I/O PLUGINS | STATUS | PRIORITY |
-|---	|---	|--- |
-| PiGpio GPIO Provider Plugin | [fa=fa-cogs /] In Testing | [fa=fa-arrow-circle-up /] HIGH |
-| PiGpio SPI Provider Plugin | [fa=fa-cogs /] In Testing | [fa=fa-arrow-circle-up /] HIGH |
-| PiGpio SERIAL Provider Plugin | [fa=fa-cogs /] In Testing | [fa=fa-arrow-circle-up /] HIGH |
-| PiGpio I2C Provider Plugin | [fa=fa-cogs /] In Testing | [fa=fa-arrow-circle-up /] HIGH |
-| PiGpio PWM Provider Plugin | [fa=fa-cogs /] In Testing | [fa=fa-arrow-circle-up /] HIGH |
-|---	|---	|--- |
-| LinuxFX GPIO Provider Plugin | [fa=fa-hourglass-half /] Incomplete | [fa=fa-arrow-circle-down /] LOW |
-| LinuxFX SPI Provider Plugin | [fa=fa-hourglass-half /] Incomplete | [fa=fa-arrow-circle-down /] LOW |
-| LinuxFX SERIAL Provider Plugin | [fa=fa-hourglass-half /] Incomplete | [fa=fa-arrow-circle-down /] LOW |
-| LinuxFX I2C Provider Plugin | [fa=fa-hourglass-half /] Incomplete | [fa=fa-arrow-circle-down /] LOW |
-|---	|---	|--- |
-| WiringPi GPIO Provider Plugin | [fa=fa-hourglass-o /] Not Started | [fa=fa-arrow-circle-down /] LOW |
-| WiringPi SPI Provider Plugin | [fa=fa-hourglass-o /] Not Started | [fa=fa-arrow-circle-down /] LOW |
-| WiringPi I2C Provider Plugin | [fa=fa-hourglass-o /] Not Started | [fa=fa-arrow-circle-down /] LOW |
-| WiringPi PWM Provider Plugin | [fa=fa-hourglass-o /] Not Started | [fa=fa-arrow-circle-down /] LOW |
-|---	|---	|--- |
-| PiGpio Bitbang Serial | [fa=fa-hourglass-o /] Not Started | [fa=fa-arrow-circle-down /] LOW |
-| PiGpio Bitbang I2C | [fa=fa-hourglass-o /] Not Started | [fa=fa-arrow-circle-down /] LOW |
-| PiGpio Bitbang SPI | [fa=fa-hourglass-o /] Not Started | [fa=fa-arrow-circle-down /] LOW |
+| :---	| :---	| :--- |
+| PiGpio GPIO Provider Plugin | <i class="fa fa-cogs"></i> In Testing | <i class="fa fa-arrow-circle-up"></i> HIGH |
+| PiGpio SPI Provider Plugin | <i class="fa fa-cogs"></i> In Testing | <i class="fa fa-arrow-circle-up"></i> HIGH |
+| PiGpio SERIAL Provider Plugin | <i class="fa fa-cogs"></i> In Testing | <i class="fa fa-arrow-circle-up"></i> HIGH |
+| PiGpio I2C Provider Plugin | <i class="fa fa-cogs"></i> In Testing | <i class="fa fa-arrow-circle-up"></i> HIGH |
+| PiGpio PWM Provider Plugin | <i class="fa fa-cogs"></i> In Testing | <i class="fa fa-arrow-circle-up"></i> HIGH |
+| :---	| :---	| :--- |
+| LinuxFX GPIO Provider Plugin | <i class="fa fa-hourglass-half"></i> Incomplete | <i class="fa fa-arrow-circle-down"></i> LOW |
+| LinuxFX SPI Provider Plugin | <i class="fa fa-hourglass-half"></i> Incomplete | <i class="fa fa-arrow-circle-down"></i> LOW |
+| LinuxFX SERIAL Provider Plugin | <i class="fa fa-hourglass-half"></i> Incomplete | <i class="fa fa-arrow-circle-down"></i> LOW |
+| LinuxFX I2C Provider Plugin | <i class="fa fa-hourglass-half"></i> Incomplete | <i class="fa fa-arrow-circle-down"></i> LOW |
+| :---	| :---	| :--- |
+| WiringPi GPIO Provider Plugin | <i class="fa fa-hourglass-o"></i> Not Started | <i class="fa fa-arrow-circle-down"></i> LOW |
+| WiringPi SPI Provider Plugin | <i class="fa fa-hourglass-o"></i> Not Started | <i class="fa fa-arrow-circle-down"></i> LOW |
+| WiringPi I2C Provider Plugin | <i class="fa fa-hourglass-o"></i> Not Started | <i class="fa fa-arrow-circle-down"></i> LOW |
+| WiringPi PWM Provider Plugin | <i class="fa fa-hourglass-o"></i> Not Started | <i class="fa fa-arrow-circle-down"></i> LOW |
+| :---	| :---	| :--- |
+| PiGpio Bitbang Serial | <i class="fa fa-hourglass-o"></i> Not Started | <i class="fa fa-arrow-circle-down"></i> LOW |
+| PiGpio Bitbang I2C | <i class="fa fa-hourglass-o"></i> Not Started | <i class="fa fa-arrow-circle-down"></i> LOW |
+| PiGpio Bitbang SPI | <i class="fa fa-hourglass-o"></i> Not Started | <i class="fa fa-arrow-circle-down"></i> LOW |
 
 ---
 
@@ -65,26 +65,26 @@ The table below illustrates the testing progress on the various supported platfo
 As standard OpenJDK versions are not available for the ARMv6 these are considered to be low priority.
 
 | PLATFORM/MODEL | [ARM](https://en.wikipedia.org/wiki/Raspberry_Pi#Specifications) | STATUS | PRIORITY |
-|---	|---	|--- |
-| RaspberryPi - 4B | ARMv8 | [fa=fa-cogs /] In Testing; Preliminary Tests PASSED | [fa=fa-arrow-circle-up /] HIGH |
-|---	|---	|--- |
-| RaspberryPi - 3A+ | ARMv8 | [fa=fa-hourglass-o /] Not Started | [fa=fa-arrow-circle-up /] HIGH |
-| RaspberryPi - 3B+| ARMv8 | [fa=fa-cogs /] In Testing; Preliminary Tests PASSED | [fa=fa-arrow-circle-up /] HIGH |
-| RaspberryPi - 3B | ARMv8 | [fa=fa-cogs /] In Testing; Preliminary Tests PASSED | [fa=fa-arrow-circle-up /] HIGH |
-|---	|---	|--- |
-| RaspberryPi - ZeroW | ARMv6 | [fa=fa-times /] Not Supported | [fa=fa-arrow-circle-down /] LOW |
-| RaspberryPi - Zero | ARMv6 | [fa=fa-times /] Not Supported | [fa=fa-arrow-circle-down /] LOW |
-|---	|---	|--- |
-| RaspberryPi - 2B (v1.2) | ARMv8 | [fa=fa-hourglass-o /] Not Started | [fa=fa-circle /] MEDIUM |
-| RaspberryPi - 2B | ARMv7 | [fa=fa-hourglass-o /] Not Started | [fa=fa-circle /] MEDIUM |
-| RaspberryPi - 1B+ | ARMv6 | [fa=fa-times /] Not Supported | [fa=fa-arrow-circle-down /] LOW |
-| RaspberryPi - 1A+ | ARMv6 | [fa=fa-times /] Not Supported | [fa=fa-arrow-circle-down /] LOW |
-| RaspberryPi - 1B (Rev 2) | ARMv8 | [fa=fa-hourglass-o /] Not Started | [fa=fa-circle /] MEDIUM |
-| RaspberryPi - 1B (Rev 1) | ARMv7 | [fa=fa-hourglass-o /] Not Started | [fa=fa-circle /] MEDIUM |
-| RaspberryPi - 1A | ARMv6 | [fa=fa-times /] Not Supported | [fa=fa-arrow-circle-down /] LOW |
-|---	|---	|--- |
-| RaspberryPi - CM3+ (Compute Module)  | ARMv8 | [fa=fa-hourglass-o /] Not Started | [fa=fa-arrow-circle-up /] HIGH |
-| RaspberryPi - CM3 (Compute Module)  | ARMv8 | [fa=fa-hourglass-o /] Not Started | [fa=fa-arrow-circle-up /] HIGH |
-| RaspberryPi - CM1 (Compute Module)  | ARMv6 | [fa=fa-times /] Not Supported | [fa=fa-arrow-circle-down /] LOW |
+| :---	| :---	| :--- | :--- |
+| RaspberryPi - 4B | ARMv8 | <i class="fa fa-cogs"></i> In Testing; Preliminary Tests PASSED | <i class="fa fa-arrow-circle-up"></i> HIGH |
+| 	| 	|   |    |
+| RaspberryPi - 3A+ | ARMv8 | <i class="fa fa-hourglass-o"></i> Not Started | <i class="fa fa-arrow-circle-up"></i> HIGH |
+| RaspberryPi - 3B+| ARMv8 | <i class="fa fa-cogs"></i> In Testing; Preliminary Tests PASSED | <i class="fa fa-arrow-circle-up"></i> HIGH |
+| RaspberryPi - 3B | ARMv8 | <i class="fa fa-cogs"></i> In Testing; Preliminary Tests PASSED | <i class="fa fa-arrow-circle-up"></i> HIGH |
+| 	| 	|   |    |
+| RaspberryPi - ZeroW | ARMv6 | <i class="fa fa-times"></i> Not Supported | <i class="fa fa-arrow-circle-down"></i> LOW |
+| RaspberryPi - Zero | ARMv6 | <i class="fa fa-times"></i> Not Supported | <i class="fa fa-arrow-circle-down"></i> LOW |
+| 	| 	|   |    |
+| RaspberryPi - 2B (v1.2) | ARMv8 | <i class="fa fa-hourglass-o"></i> Not Started | <i class="fa fa-circle"></i> MEDIUM |
+| RaspberryPi - 2B | ARMv7 | <i class="fa fa-hourglass-o"></i> Not Started | <i class="fa fa-circle"></i> MEDIUM |
+| RaspberryPi - 1B+ | ARMv6 | <i class="fa fa-times"></i> Not Supported | <i class="fa fa-arrow-circle-down"></i> LOW |
+| RaspberryPi - 1A+ | ARMv6 | <i class="fa fa-times"></i> Not Supported | <i class="fa fa-arrow-circle-down"></i> LOW |
+| RaspberryPi - 1B (Rev 2) | ARMv8 | <i class="fa fa-hourglass-o"></i> Not Started | <i class="fa fa-circle"></i> MEDIUM |
+| RaspberryPi - 1B (Rev 1) | ARMv7 | <i class="fa fa-hourglass-o"></i> Not Started | <i class="fa fa-circle"></i> MEDIUM |
+| RaspberryPi - 1A | ARMv6 | <i class="fa fa-times"></i> Not Supported | <i class="fa fa-arrow-circle-down"></i> LOW |
+| 	| 	|   |    |
+| RaspberryPi - CM3+ (Compute Module)  | ARMv8 | <i class="fa fa-hourglass-o"></i> Not Started | <i class="fa fa-arrow-circle-up"></i> HIGH |
+| RaspberryPi - CM3 (Compute Module)  | ARMv8 | <i class="fa fa-hourglass-o"></i> Not Started | <i class="fa fa-arrow-circle-up"></i> HIGH |
+| RaspberryPi - CM1 (Compute Module)  | ARMv6 | <i class="fa fa-times"></i> Not Supported | <i class="fa fa-arrow-circle-down /] LOW |
 
 ---

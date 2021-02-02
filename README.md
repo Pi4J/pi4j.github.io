@@ -8,6 +8,11 @@ Uses the [Hugo-theme-learn](https://learn.netlify.app/en/).
 
 This website is created with the static site generator [Hugo](https://gohugo.io/).
 
+### Text format
+
+All pages are separate md-files inside the [content](content/) directory. The formatting
+of the text needs to use the rules specified in [commonmark.org](https://spec.commonmark.org/0.29/).
+
 ### Test locally
 
 To test the site locally, first install Hugo as described on ["Install Hugo"](https://gohugo.io/getting-started/installing/).
