@@ -1,5 +1,5 @@
 ---
-title: Minimal example application with a LED and button
+title: Minimal example application
 weight: 50
 ---
 

@@ -2,6 +2,8 @@
 title: Welcome to Pi4J
 ---
 
+# Welcome to Pi4J
+
 !! Looking for the V1-versions of Pi4J which are compatible with Java 8?
 !! [Click here...](/previous-version-v1)
 

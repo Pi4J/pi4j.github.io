@@ -1,4 +1,4 @@
 ---
-title: Adding a user interface with JavaFX
+title: User interface with JavaFX
 weight: 70
 ---

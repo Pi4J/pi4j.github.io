@@ -1,21 +1,21 @@
 ---
-title: Starting with a new Raspberry Pi
+title: Set up a new Raspberry Pi
 weight: 30
 ---
 
-# Introduction
+## Introduction
 
-# Step-by-step
+## Step-by-step
 
-## Material list
+### Material list
 
-## SD card
+### SD card
 
-## First start-up
+### First start-up
 
-## Install Pi4J
+### Install Pi4J
 
-# Keep your Raspberry Pi up-to-date
+## Keep your Raspberry Pi up-to-date
 
 ### Update to the latest version
 
