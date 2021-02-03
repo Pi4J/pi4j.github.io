@@ -3,9 +3,11 @@ title: 'License (Open Source)'
 weight: 50
 ---
 
-The Pi4J Version 2.0 project is distributed and licensed under the **Apache License, Version 2.0** license. (_A business-friendly OSS license_)
-* https://www.apache.org/licenses/LICENSE-2.0
-* https://github.com/Pi4J/pi4j-v2/blob/master/LICENSE.txt
+The Pi4J Version 2.0 project is distributed and licensed under the **Apache License, Version 2.0** license 
+(_A business-friendly OSS license_).
+
+* [apache.org/licenses/LICENSE-2.0](https://www.apache.org/licenses/LICENSE-2.0)
+* [github.com/Pi4J/pi4j-v2/blob/master/LICENSE.txt](https://github.com/Pi4J/pi4j-v2/blob/master/LICENSE.txt)
 
 <div style="max-width: 650px; margin-left: auto; margin-right: auto;" >
 <pre>

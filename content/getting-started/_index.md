@@ -11,5 +11,9 @@ with more in-depth and technical info, can be found in the "[Documentation](/doc
 
 This part of the site takes you through the different steps to start "from scratch":
 
-1. [Setting up the Raspberry Pi with all the tools needed]()
-2. []()
+1. [Setting up the Raspberry Pi with all the tools needed](/getting-started/set-up-a-new-raspberry-pi/)
+2. [Java development on the Raspberry Pi with Visual Studio Code](/getting-started/java-development-on-the-raspberry-pi-with-vsc/)
+3. [Minimal example application with an LED and button](/getting-started/minimal-example-application/)
+4. [Introduction to electronics with CrowPi](/getting-started/introduction-to-electronics-with-crowpi/)
+5. [Adding a user interface with JavaFX](/getting-started/user-interface-with-javafx/)
+6. [Game development with FXGL and an Arcade controller](/getting-started/game-development-with-fxgl/)

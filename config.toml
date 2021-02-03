@@ -17,7 +17,7 @@ home = ["HTML", "RSS", "JSON"]
   # Prefix URL to edit current page. Will display an "Edit this page" button on top right hand corner of every page.
   # Useful to give opportunity to people to create merge request for your doc.
   # See the config.toml file from this documentation site to have an example.
-  editURL = "https://github.com/Pi4J/pi4j.github.io/"
+  editURL = "https://github.com/Pi4J/pi4j.github.io/blob/main/content/"
   # Author of the site, will be used in meta information
   author = "Pi4J"
   # Description of the site, will be used in meta information
@@ -97,6 +97,11 @@ home = ["HTML", "RSS", "JSON"]
     # Hugo extracts the "photo taken where" (GPS latitude and longitude) into
     # .Long and .Lat. Set this to true to turn it off.
     disableLatLong = false
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-tags'></i> Tags"
+url = "/tags"
+weight = 5
 
 [[menu.shortcuts]]
 name = "<i class='fab fa-github'></i> GitHub project"

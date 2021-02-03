@@ -1,12 +1,14 @@
 # Pi4J website
 
-## Theme
-
-Uses the [Hugo-theme-learn](https://learn.netlify.app/en/).
-
 ## GoHugo
 
 This website is created with the static site generator [Hugo](https://gohugo.io/).
+
+### Theme
+
+Uses the [Hugo-theme-learn](https://learn.netlify.app/en/).
+
+Special layout components are explained on [learn.netlify.app/en/shortcodes](https://learn.netlify.app/en/shortcodes/notice/).
 
 ### Text format
 

@@ -3,15 +3,20 @@ title: 'About'
 weight: 10
 ---
 
-#### Project Status/Summary
+## Project Status/Summary
 
 Version 2.0 of Pi4J is finally starting to come together and is _almost_ ready for some real-world BETA testing.  Significant progress has been made on the general architecture and primary user-facing interfaces.  Pi4J V.2 is a complete re-write and **does not maintain API compatibility** with previous versions.  It is not intended to be a drop-in replacement for previous versions of Pi4J.  Pi4J V.2 is a completely new design bringing modern conventions, development practices, extensibility support and simplified integration experience for Pi4J users.
 
-!! Pi4J Version 2.0 is still considered **EXPERIMENTAL** at this point.  While many parts of the project are working, there are still a number of areas that require further development and certain APIs are subject to change without notice.  A significant portion of the code is presently undocumented and hardware integration testing is incomplete.  It is not recommended to use Pi4J V.2 in any production workload at this time.
+*Pi4J Version 2.0 is still considered **EXPERIMENTAL** at this point. 
+While many parts of the project are working, there are still a number of areas that require 
+further development and certain APIs are subject to change without notice.
+A significant portion of the code is presently undocumented and hardware integration testing 
+is incomplete. 
+It is not recommended to use Pi4J V.2 in any production workload at this time.*
 
 ---
 
-##### Feature/Component Status
+## Feature/Component Status
 
 The following tables outlines some of the current (high-level) features planned for V.2 release.  Please note that some of these features may get deferred and not incuded in the first release.
 
@@ -41,24 +46,24 @@ The following tables outlines some of the current (high-level) features planned 
 | PiGpio SERIAL Provider Plugin | <i class="fa fa-cogs"></i> In Testing | <i class="fa fa-arrow-circle-up"></i> HIGH |
 | PiGpio I2C Provider Plugin | <i class="fa fa-cogs"></i> In Testing | <i class="fa fa-arrow-circle-up"></i> HIGH |
 | PiGpio PWM Provider Plugin | <i class="fa fa-cogs"></i> In Testing | <i class="fa fa-arrow-circle-up"></i> HIGH |
-| :---	| :---	| :--- |
+| 	| 	|   |
 | LinuxFX GPIO Provider Plugin | <i class="fa fa-hourglass-half"></i> Incomplete | <i class="fa fa-arrow-circle-down"></i> LOW |
 | LinuxFX SPI Provider Plugin | <i class="fa fa-hourglass-half"></i> Incomplete | <i class="fa fa-arrow-circle-down"></i> LOW |
 | LinuxFX SERIAL Provider Plugin | <i class="fa fa-hourglass-half"></i> Incomplete | <i class="fa fa-arrow-circle-down"></i> LOW |
 | LinuxFX I2C Provider Plugin | <i class="fa fa-hourglass-half"></i> Incomplete | <i class="fa fa-arrow-circle-down"></i> LOW |
-| :---	| :---	| :--- |
+| 	| 	|   |
 | WiringPi GPIO Provider Plugin | <i class="fa fa-hourglass-o"></i> Not Started | <i class="fa fa-arrow-circle-down"></i> LOW |
 | WiringPi SPI Provider Plugin | <i class="fa fa-hourglass-o"></i> Not Started | <i class="fa fa-arrow-circle-down"></i> LOW |
 | WiringPi I2C Provider Plugin | <i class="fa fa-hourglass-o"></i> Not Started | <i class="fa fa-arrow-circle-down"></i> LOW |
 | WiringPi PWM Provider Plugin | <i class="fa fa-hourglass-o"></i> Not Started | <i class="fa fa-arrow-circle-down"></i> LOW |
-| :---	| :---	| :--- |
+| 	| 	|   |
 | PiGpio Bitbang Serial | <i class="fa fa-hourglass-o"></i> Not Started | <i class="fa fa-arrow-circle-down"></i> LOW |
 | PiGpio Bitbang I2C | <i class="fa fa-hourglass-o"></i> Not Started | <i class="fa fa-arrow-circle-down"></i> LOW |
 | PiGpio Bitbang SPI | <i class="fa fa-hourglass-o"></i> Not Started | <i class="fa fa-arrow-circle-down"></i> LOW |
 
 ---
 
-##### Hardware Testing Status
+## Hardware Testing Status
 
 The table below illustrates the testing progress on the various supported platforms/models.
 

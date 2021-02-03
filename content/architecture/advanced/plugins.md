@@ -8,8 +8,8 @@ This will enable us to deliver a stable, fully tested framework as the number of
 
 More info about how this extensibility is achieved:
 
-* Extensible I/O hardware [PROVIDERS](/getting-started/chose-provider):  things like GPIO expanders, I2C bus expanders, GertBoard, add-on hardware shields, etc.
-* Extensible SBC platforms [PLATFORMS](/getting-started/chose-platform):  the core project may only support Raspberry Pi, but the platform and libraries should be written to allow a third party to create plugins for alternate hardware platforms/boards.
+* Extensible I/O hardware [PROVIDERS](/documentation/providers/):  things like GPIO expanders, I2C bus expanders, GertBoard, add-on hardware shields, etc.
+* Extensible SBC platforms [PLATFORMS](/documentation/platforms/):  the core project may only support Raspberry Pi, but the platform and libraries should be written to allow a third party to create plugins for alternate hardware platforms/boards.
 * Extensible **plugins**.
 
 Plugins are extensible service modules that interact with or augment the Pi4J infrastructure. The most common plugins are I/O Providers and Platforms. Other plugin examples could be a web app to view/control the Pi4J runtime state/status, some third-party observer to the Pi4J runtime state/status,...
@@ -30,7 +30,6 @@ module com.pi4j.plugin.raspberrypi {
     exports com.pi4j.plugin.raspberrypi.provider.spi;
     exports com.pi4j.plugin.raspberrypi.provider.i2c;
 
-    provides com.pi4j.extension.Plugin
-            with RaspberryPiPlugin;
+    provides com.pi4j.extension.Plugin with RaspberryPiPlugin;
 }
 ```

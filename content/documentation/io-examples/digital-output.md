@@ -1,6 +1,7 @@
 ---
 title: Digital Output (GPIO)
 weight: 200
+tags: ["Digital Output"]
 ---
 
 ```

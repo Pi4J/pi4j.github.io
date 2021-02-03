@@ -1,6 +1,7 @@
 ---
 title: Pulse Width Modulation (PWM)
 weight: 220
+tags: ["PWM"]
 ---
 
 The RaspberryPi hardware supports 2 hardware PWM channels. But as Pi4J uses PiGPIO "under the hood", we can take advantage of the 

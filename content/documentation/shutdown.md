@@ -5,7 +5,7 @@ weight: 150
 
 At the end of our application, the context needs to be shutdown to release the I/O and clean up the used resources.
 
-```
+```java
 # Start of program
 var pi4j = Pi4J.newAutoContext();
 

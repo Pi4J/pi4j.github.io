@@ -5,7 +5,7 @@ weight: 20
 
 Getting started with V2 in the state of June 3th of 2020.
 
-# Pi4J V2
+## Pi4J V2
 
 * Checkout the project [pi4j-v2](https://github.com/Pi4J/pi4j-v2)
 * Select JDK11, e.g. ``sdk use java 11.0.7.fx-librca``
@@ -33,9 +33,9 @@ Getting started with V2 in the state of June 3th of 2020.
 [INFO] ------------------------------------------------------------------------
 ```
 
-# Example application
+## Example application
 
-## Building the example application
+### Building the example application
 
 * Checkout the project [Pi4J V.2 - Telegraph Demo Project](https://github.com/Pi4J/pi4j-demo-telegraph)
 * Select JDK11, e.g. ``sdk use java 11.0.7.fx-librca``
@@ -53,6 +53,6 @@ Getting started with V2 in the state of June 3th of 2020.
 /target/distribution/slf4j-simple-2.0.0-alpha0.jar
 ```
 
-## Running on the Raspberry Pi
+### Running on the Raspberry Pi
 
 * After copying all files from target/distribution to a Raspberry Pi, start `./run.sh`

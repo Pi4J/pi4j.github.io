@@ -1,6 +1,7 @@
 ---
 title: Serial Peripheral Interface (SPI)
 weight: 240
+tags: ["SPI"]
 ---
 
-Page content goes here.
+TODO
