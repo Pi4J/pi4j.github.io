@@ -1,4 +1,4 @@
-baseURL = "https://test.pi4j.com/"
+baseURL = "https://v2.pi4j.com/"
 languageCode = "en-us"
 title = "Pi4J"
 theme = "hugo-theme-learn"
