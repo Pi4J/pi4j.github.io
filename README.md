@@ -10,6 +10,25 @@ Uses the [Hugo-theme-learn](https://learn.netlify.app/en/).
 
 Special layout components are explained on [learn.netlify.app/en/shortcodes](https://learn.netlify.app/en/shortcodes/notice/).
 
+### Additional tools 
+
+#### Gallery image view
+
+https://www.liwen.id.au/heg/#gallery-usage
+
+Example use:
+
+```
+{{< gallery >}}
+{{< figure link="/assets/... .png" caption="" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/... .png" caption="" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/... .png" caption="" caption-position="center" caption-effect="fade" >}}
+{{< /gallery >}}
+{{< load-photoswipe >}}
+```
+
+The last line only must be added once per page if multiple galleries are used.
+
 ### Text format
 
 All pages are separate md-files inside the [content](content/) directory. The formatting

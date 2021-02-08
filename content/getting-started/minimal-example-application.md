@@ -4,99 +4,103 @@ weight: 50
 tags: ["Digital Input", "Digital Output"]
 ---
 
-!!! In the ["pi4j-example-minimal" GitHub project](https://github.com/Pi4J/pi4j-example-minimal) you can find a project which contains the minimal code to control a digital input and output with Pi4J. The project is further described on this page. The application will toggle a a LED on/off and each time you press the button, the toggling speed increases. When you have pushed the button 5 times, the application stops.
+In the ["pi4j-example-minimal" GitHub project](https://github.com/Pi4J/pi4j-example-minimal) you can 
+find a project which contains the minimal code to control a digital input and output with Pi4J. The project is further 
+described on this page. The application will toggle an LED on/off and each time you press the button, the toggling 
+speed increases. When you have pushed the button 5 times, the application stops.
 
-#### Wiring
+## Wiring
 
 This minimal example application uses this wiring:
 
 ![](/assets/getting-started/minimal/led-button_bb.png)
 
-#### Dependency in pom.xml
+## Dependency in pom.xml
 
-!!! The description on this page handles the Maven approach, but the same project can also be built with Gradle, and the "[build.gradle](https://github.com/Pi4J/pi4j-example-minimal/blob/master/build.gradle)" file is included in the sources.
+The description on this page handles the Maven approach, but the same project can also be built with Gradle, and the 
+[build.gradle-file](https://github.com/Pi4J/pi4j-example-minimal/blob/master/build.gradle) is included in the sources.
 
-!! At this moment Pi4J V2 is not yet released, so you'll need to add the snapshot repository.
+{{% notice note %}}At this moment Pi4J V2 is not yet released, so you'll need to add the snapshot repository.{{% /notice %}}
 
-```
-   <repositories>
-        <repository>
-            <id>oss-snapshots-repo</id>
-            <name>Sonatype OSS Maven Repository</name>
-            <url>https://oss.sonatype.org/content/groups/public</url>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
+```xml
+<repositories>
+    <repository>
+        <id>oss-snapshots-repo</id>
+        <name>Sonatype OSS Maven Repository</name>
+        <url>https://oss.sonatype.org/content/groups/public</url>
+        <releases>
+            <enabled>false</enabled>
+        </releases>
+        <snapshots>
+            <enabled>true</enabled>
+        </snapshots>
+    </repository>
+</repositories>
 ``` 
 
 In this project we will be using slf4 for logging, pi4j-core and the pi4j-plugins for the Raspberry Pi and PiGPIO. To make the versions easy to update, we add those numbers as properties. 
 
-``` 
-    <properties>
-        <!-- DEPENDENCIES VERSIONS -->
-        <slf4j.version>2.0.0-alpha0</slf4j.version>
-        <pi4j.version>2.0-SNAPSHOT</pi4j.version>
-    </properties>
+```xml
+<properties>
+    <!-- DEPENDENCIES VERSIONS -->
+    <slf4j.version>2.0.0-alpha0</slf4j.version>
+    <pi4j.version>2.0-SNAPSHOT</pi4j.version>
+</properties>
 ``` 
   
 These are the dependencies we need:
 
+```xml
+<dependencies>
+    <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-api</artifactId>
+        <version>${slf4j.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-simple</artifactId>
+        <version>${slf4j.version}</version>
+    </dependency>
+
+    <!-- include Pi4J Core -->
+    <dependency>
+        <groupId>com.pi4j</groupId>
+        <artifactId>pi4j-core</artifactId>
+        <version>${pi4j.version}</version>
+    </dependency>
+
+    <!-- include Pi4J Plugins (Platforms and I/O Providers) -->
+    <dependency>
+        <groupId>com.pi4j</groupId>
+        <artifactId>pi4j-plugin-raspberrypi</artifactId>
+        <version>${pi4j.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>com.pi4j</groupId>
+        <artifactId>pi4j-plugin-pigpio</artifactId>
+        <version>${pi4j.version}</version>
+    </dependency>
+</dependencies>
 ``` 
-    <dependencies>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-            <version>${slf4j.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-simple</artifactId>
-            <version>${slf4j.version}</version>
-        </dependency>
 
-        <!-- include Pi4J Core -->
-        <dependency>
-            <groupId>com.pi4j</groupId>
-            <artifactId>pi4j-core</artifactId>
-            <version>${pi4j.version}</version>
-        </dependency>
+## Pi4J code blocks which are used
 
-        <!-- include Pi4J Plugins (Platforms and I/O Providers) -->
-        <dependency>
-            <groupId>com.pi4j</groupId>
-            <artifactId>pi4j-plugin-raspberrypi</artifactId>
-            <version>${pi4j.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.pi4j</groupId>
-            <artifactId>pi4j-plugin-pigpio</artifactId>
-            <version>${pi4j.version}</version>
-        </dependency>
-    </dependencies>
-``` 
-
-#### Pi4J code blocks which are used
-
-##### Initialization
+### Initialization
 
 Before you can use Pi4J you must initialize a new runtime context.
 
 The 'Pi4J' static class includes a few helper context creators for the most common use cases.  The 'newAutoContext()' method will automatically load all available Pi4J extensions found in the application's classpath which may include 'Platforms' and 'I/O Providers'.
         
-```
+```java
 var pi4j = Pi4J.newAutoContext();
 ```
 
-##### Output Pi4J Context information
+### Output Pi4J Context information
 
 The library contains helper functions to output info about the available and used platforms and providers. To keep the example code clean, these are part of the "PrintInfo.java" class. For example to print the loaded platforms:
 
-```
+```java
 Platforms platforms = pi4j.platforms();
 
 console.box("Pi4J PLATFORMS");
@@ -105,11 +109,11 @@ platforms.describe().print(System.out);
 console.println();
 ```
 
-##### Handle the button presses
+### Handle the button presses
 
 To handle digital input events we first need a configuration for it. With that configuration, Pi4J can create the object for us and the state changes can be handled.
 
-```
+```java
 private static int pressCount = 0;
 private static final int PIN_BUTTON = 24; // PIN 18 = BCM 24
 
@@ -131,11 +135,11 @@ button.addListener(e -> {
 });
 ```
 
-##### Toggle a LED
+### Toggle a LED
 
 For the LED we use a similar approach with a configuration. The created led-object can be used to toggle its state.
 
-```
+```java
 private static final int PIN_LED = 22; // PIN 15 = BCM 22
 
 var ledConfig = DigitalOutput.newConfigBuilder(pi4j)
@@ -158,31 +162,36 @@ while (pressCount < 5) {
 }
 ```
 
-##### Closing the application
+### Closing the application
 
 Before the application quits, we need to call the 'shutdown()' function on the Pi4J static helper class. This will ensure that all I/O instances are properly shutdown, released by the the system and shutdown in the appropriate manner. Terminate will also ensure that any background threads/processes are cleanly shutdown and any used memory is returned to the system.
 
-```
+```java
 pi4j.shutdown();
 ``` 
 
-#### Steps to run this application on your Raspberry Pi
+## Steps to run this application on your Raspberry Pi
 
 * Attach a LED and button as shown in the image above
 * Use a recent Raspbian OS image which has Java 11. To check if you have the correct Java version in the terminal:
+
 ```
 $ java -version
 openjdk version "11.0.6" 2020-01-14
 OpenJDK Runtime Environment (build 11.0.6+10-post-Raspbian-1deb10u1)
 OpenJDK Server VM (build 11.0.6+10-post-Raspbian-1deb10u1, mixed mode)
 ``` 
+
 * Download the project from GitHub and build it:
+
 ```
 $ git clone https://github.com/Pi4J/pi4j-example-minimal.git
 $ cd pi4j-example-minimal/
 $ mvn clean package
 ``` 
+
 * Change to the distribution directory where you can find the generated package and required Java-modules. Start it with the provided run.sh script:
+
 ```
 $ cd target/distribution
 $ ls -l
@@ -197,7 +206,9 @@ total 644
 -rw-r--r-- 1 pi pi  15372 Jun 19 10:04 slf4j-simple-2.0.0-alpha0.jar
 $ sudo ./run.sh
 ``` 
+
 * The output will first show you some info about the platforms and providers. Then the LED starts blinking and shows how much times you pushed the button:
+
 ``` 
 LED high
 LED low
