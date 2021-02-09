@@ -15,6 +15,7 @@ Special layout components are explained on [learn.netlify.app/en/shortcodes](htt
 #### Gallery image view
 
 https://www.liwen.id.au/heg/#gallery-usage
+https://github.com/liwenyip/hugo-easy-gallery/
 
 Example use:
 
