@@ -15,6 +15,10 @@ This minimal example application uses this wiring:
 
 ![](/assets/getting-started/minimal/led-button_bb.png)
 
+## Maven and Gradle
+
+TODO Explain difference
+
 ## Dependency in pom.xml
 
 The description on this page handles the Maven approach, but the same project can also be built with Gradle, and the 
