@@ -40,7 +40,16 @@ Server VM is only supported on ARMv7+ VFP
 
 ## Maven
 
-TODO describe maven installation
+Pi4J is using Maven as build tool, this allows you to compile your code with the required modules into JAR-file thanks 
+to the pom.xml configuration file which you can find in the root of a project. We need to install Maven and can do this
+with a single command, after which we can immediately check the installation by requesting the version:
+
+```
+$ sudo apt install maven
+$ mvn -v
+Apache Maven 3.6.0
+Maven home: /usr/share/maven
+```
 
 ## Visual Studio Code
 
@@ -50,14 +59,11 @@ go to the ["VSC Download page (code.visualstudio.com/Download)"](https://code.vi
 select the "Linux .deb ARM" version.
 
 {{< gallery >}}
-{{< figure link="/assets/getting-started/vsc/visualstudiocode-download.png" caption="" caption-position="center" caption-effect="fade" >}}
-{{< figure link="/assets/getting-started/vsc/visualstudiocode-32bit.png" caption="" caption-position="center" caption-effect="fade" >}}
-{{< figure link="/assets/getting-started/vsc/" caption="" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/getting-started/vsc/visualstudiocode-download.png" caption="Download page for VSC" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/getting-started/vsc/programming-tools.png" caption="VSC in the list of programming tools" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/getting-started/vsc/vsc-on-raspberry-pi.png" caption="VSC running on the Raspberry Pi with Maven and Java Extension Pack" caption-position="center" caption-effect="fade" >}}
 {{< /gallery >}}
 {{< load-photoswipe >}}
-
-TODO add screenshot VSC in programming section
-TODO add screenshot VSC with Java extensions.
 
 When the download is finished, open a terminal, go to the Download directory and install the downloaded deb-file like this:
 
@@ -66,3 +72,10 @@ $ cd /home/pi/Downloads
 $ sudo apt install ./code_1.53.0-1612367698_armhf.deb 
 ```
 
+Since 02/2021 there is even an easier way, as Visual Studio Code is now available as a Raspberry Pi OS apt package. 
+Use the following commands:
+
+```
+$ sudo apt update
+$ sudo apt install code -y
+``

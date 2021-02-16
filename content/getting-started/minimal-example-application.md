@@ -15,14 +15,43 @@ This minimal example application uses this wiring:
 
 ![](/assets/getting-started/minimal/led-button_bb.png)
 
-## Maven and Gradle
+## Building the application
 
-TODO Explain difference
+The main build tool used by the Pi4J project is Maven, but for this example we provided both the Maven and Gradle approach,
+so you can select the tool you prefer.
+
+### Maven
+
+This project can be built with Apache Maven 3.6 (or later) and Java 11 OpenJDK (or later). These prerequisites must be 
+installed prior to building this project as described on the previous pages. The following command can be used to 
+download all project dependencies and compile the Java module. You can build this project directly on a Raspberry Pi with Java 11+.
+
+```
+mvn clean package
+```
+
+### Gradle
+
+You can also use the Gradle Build Tool from these same sources. Use version 6.6 (or later) and Java 11 OpenJDK (or later). 
+The Gradle wrapper is used as described on [docs.gradle.org](https://docs.gradle.org/current/userguide/gradle_wrapper.html).
+The Gradle configuraion file [build.gradle-file](https://github.com/Pi4J/pi4j-example-minimal/blob/master/build.gradle) 
+is included in the sources.
+
+On Linux:
+
+```
+./gradlew build
+```
+
+On Windows:
+
+```
+gradlew.bat build
+```
 
 ## Dependency in pom.xml
 
-The description on this page handles the Maven approach, but the same project can also be built with Gradle, and the 
-[build.gradle-file](https://github.com/Pi4J/pi4j-example-minimal/blob/master/build.gradle) is included in the sources.
+For the Maven approach, a pom.xml file defines all the dependencies, and the build process.
 
 {{% notice note %}}At this moment Pi4J V2 is not yet released, so you'll need to add the snapshot repository.{{% /notice %}}
 

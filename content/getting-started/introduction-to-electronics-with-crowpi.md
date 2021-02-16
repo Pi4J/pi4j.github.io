@@ -10,6 +10,6 @@ electronics: components are inexpensive and easy to find on ebay or one of the m
 {{< gallery >}}
 {{< figure link="/assets/getting-started/crowpi/crowpi1.jpg" caption="CrowPi 1" caption-position="center" caption-effect="fade" >}}
 {{< figure link="/assets/getting-started/crowpi/crowpi2.jpg" caption="CrowPi 2" caption-position="center" caption-effect="fade" >}}
-{{< figure link="/assets/getting-started/crowpi/electronics-starter-kit.jpg" caption="Electronics starter kit" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/getting-started/crowpi/electronics-starter-kit.jpg" caption="Example electronics starter kit" caption-position="center" caption-effect="fade" >}}
 {{< /gallery >}}
 {{< load-photoswipe >}}
