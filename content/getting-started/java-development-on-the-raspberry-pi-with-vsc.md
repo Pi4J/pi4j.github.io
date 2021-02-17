@@ -78,4 +78,5 @@ Use the following commands:
 ```
 $ sudo apt update
 $ sudo apt install code -y
-``
+```
+
