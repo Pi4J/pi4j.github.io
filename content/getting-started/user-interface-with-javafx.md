@@ -17,7 +17,7 @@ The main goal of Java has always been to be able to create applications which ar
 companies who want to use JavaFX in critical applications. They also provide [tools to build and compile Java 
 code to native applications for all platforms](https://gluonhq.com/products/).
 
-# JavaFX on Raspberry Pi
+## JavaFX on Raspberry Pi
 
 JavaFX is also an ideal framework to build Java applications with a user interface for the Raspberry Pi.
 
@@ -25,7 +25,7 @@ You can find a runtime version dedicated to the Raspberry Pi on the [Gluon downl
 Let's install it on our board, so we can start Java+JavaFX applications which make best use of the capabilities 
 of the Raspberry Pi.
 
-## Installation
+### Installation
 
 To get the latest version on your Raspberry Pi:
 
@@ -40,7 +40,7 @@ $ unzip openjfx.zip
 $ sudo mv arm32fb-sdk/ /opt/arm32fb-sdk/
 ```
 
-## Start an application 
+### Start an application 
 
 Now the OpenJFX-runtime is available on our Raspberry Pi, we can start each Java application which was compiled
 to a JAR with some additional parameters to run it with the best rendering support.
@@ -58,6 +58,6 @@ java \
   --module {YOUR_MAIN_CLASS} $@
 ```
 
-# Minimal example application
+## Minimal example application
 
 TODO

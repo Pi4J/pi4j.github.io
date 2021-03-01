@@ -13,7 +13,7 @@ a game with an "Arcade" controller.
 For this project, we will be using [FXGL](https://github.com/AlmasB/FXGL), an opensource library on top of 
 JavaFX to build games.
 
-# The controller 
+## The controller 
 
 This project uses an [Arcade kit](https://www.kiwi-electronics.nl/pim-471?search=arcade&description=true)
 in combination with a [Picade X HAT USB-C](https://www.kiwi-electronics.nl/index.php?route=product/product&search=arcade&description=true&product_id=4337)

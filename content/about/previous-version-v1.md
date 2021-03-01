@@ -1,5 +1,5 @@
 ---
-title: 'Previous versions (V1)'
+title: 'Previous versions (V.1)'
 weight: 20
 ---
 
@@ -9,7 +9,7 @@ weight: 20
 
 * ONGOING
 * Experimental build using JDK11
-* Not using Java-modules, this will be part of the V2
+* Not using Java-modules, this will be part of the V.2
 * [Documentation website V1.4](/1.4/index.html)
 
 ### Pi4J Version 1.3

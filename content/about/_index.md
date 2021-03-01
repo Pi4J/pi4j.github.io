@@ -5,14 +5,20 @@ weight: 10
 
 ## Project Status/Summary
 
-Version 2.0 of Pi4J is finally starting to come together and is _almost_ ready for some real-world BETA testing.  Significant progress has been made on the general architecture and primary user-facing interfaces.  Pi4J V.2 is a complete re-write and **does not maintain API compatibility** with previous versions.  It is not intended to be a drop-in replacement for previous versions of Pi4J.  Pi4J V.2 is a completely new design bringing modern conventions, development practices, extensibility support and simplified integration experience for Pi4J users.
+Version 2.0 of Pi4J is finally starting to come together and is _almost_ ready for some real-world 
+BETA testing.  Significant progress has been made on the general architecture and primary user-facing 
+interfaces.  Pi4J V.2 is a complete re-write and **does not maintain API compatibility** with previous 
+versions.  It is not intended to be a drop-in replacement for previous versions of Pi4J.  Pi4J V.2 is 
+a completely new design bringing modern conventions, development practices, extensibility support 
+and simplified integration experience for Pi4J users.
 
 *Pi4J Version 2.0 is still considered **EXPERIMENTAL** at this point. 
 While many parts of the project are working, there are still a number of areas that require 
 further development and certain APIs are subject to change without notice.
 A significant portion of the code is presently undocumented and hardware integration testing 
-is incomplete. 
-It is not recommended to use Pi4J V.2 in any production workload at this time.*
+is incomplete.*
+
+**It is not recommended to use Pi4J V.2 in any production workload at this time.**
 
 ---
 
