@@ -35,7 +35,7 @@ This resulted in two main versions.
 
 The original library which started in 2012 and got a last release in 2021. Up till **version 1.3 the
 library targets Java 8**, while **version 1.4 relies on Java 11**. More info is provided on 
-["Previous versions (V.1)"](/about/previous-version-v1/)
+["Previous versions (V.1)"](/about/previous-version-v1/).
 
 #### Version 2
 

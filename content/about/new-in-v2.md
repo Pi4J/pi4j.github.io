@@ -47,8 +47,7 @@ The following features have been removed from the Pi4J library:
 
 ## Sources
 
-The Pi4J V.2 source code is available in this GitHub repository:  
-[Pi4J V.2 GitHub Repository](https://github.com/Pi4J/pi4j-v2)
+The Pi4J V.2 source code is available in this GitHub repository: [Pi4J V.2 GitHub Repository](https://github.com/Pi4J/pi4j-v2)
 
 ```shell
 git clone https://github.com/Pi4J/pi4j-v2
@@ -63,5 +62,4 @@ and certain APIs are subject to change without notice. A significant portion of 
 is presently undocumented and hardware integration testing is incomplete. It is not
 recommended to use Pi4J V.2 in any production workload at this time.
 
-For a more detailed account of the project status, please see this page:  
-[**About > Project Status**](/about/). 
+For a more detailed account of the project status, please see this page: [**About > Project Status**](/about/). 

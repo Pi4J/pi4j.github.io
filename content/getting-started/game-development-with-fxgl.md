@@ -35,3 +35,8 @@ Pimoroni provides a [GitHub project](https://github.com/pimoroni/picade-hat) wit
 this hat with RetroPie, but this project aims to take full control of the hardware with Java.
 
 The GPIO numbers are defined by the hat and can be found on [pinout.xyz](https://pinout.xyz/pinout/picade_hat)
+
+## The application
+
+**TODO, currently only minimal implementation is done based on Snake game created by Almas and Frank**
+
