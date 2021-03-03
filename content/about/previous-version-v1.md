@@ -7,9 +7,11 @@ weight: 20
 
 ### Pi4J Version 1.4
 
-* ONGOING
-* Experimental build using JDK11
-* Not using Java-modules, this will be part of the V.2
+* Released 2021-03-03
+* Support for JDK/JRE 11 and 64-bit ARM platforms
+* This release is the final release for the Pi4J Version 1.x codebase
+* The Pi4J project is now prioritizing focus on providing Java programs access, control and communication with the core I/O capabilities of the Raspberry Pi platform
+* Not using Java-modules yet, this will be part of the V.2
 * [Documentation website V1.4](/1.4/index.html)
 
 ### Pi4J Version 1.3
