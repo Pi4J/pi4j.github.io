@@ -57,7 +57,7 @@ gradlew.bat build
 
 For the Maven approach, a pom.xml file defines all the dependencies, and the build process.
 
-{{% notice note %}}At this moment Pi4J V2 is not yet released, so you'll need to add the snapshot repository.{{% /notice %}}
+{{% notice note %}}At this moment Pi4J V.2 is not yet released, so you'll need to add the snapshot repository.{{% /notice %}}
 
 ```xml
 <repositories>

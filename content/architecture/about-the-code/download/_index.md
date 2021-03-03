@@ -3,9 +3,9 @@ title: Download/Install
 weight: 20
 ---
 
-Getting started with V2 in the state of June 3th of 2020.
+Getting started with V.2 in the state of June 3th of 2020.
 
-## Pi4J V2
+## Pi4J V.2
 
 * Checkout the project [pi4j-v2](https://github.com/Pi4J/pi4j-v2)
 * Select JDK11, e.g. ``sdk use java 11.0.7.fx-librca``

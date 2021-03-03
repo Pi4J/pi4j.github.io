@@ -7,7 +7,7 @@ weight: 50
 Pi Pico with a lot of GPIOs for a very low price, seems even to be a better fit for this project compared to the
 Arduino Due... To be further investigated!{{% /notice %}}
 
-To minimize the required time and efforts to test a new release, V2 aims to include an automated test which performs 
+To minimize the required time and efforts to test a new release, V.2 aims to include an automated test which performs 
 I/O testing on each I/O interface on each model of RPi. Ideally this would happen as part of the unit testing sequence 
 for each code commit or at least as part of the release cycle.  
 

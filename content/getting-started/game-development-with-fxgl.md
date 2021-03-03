@@ -13,7 +13,7 @@ a game with an "Arcade" controller.
 For this project, we will be using [FXGL](https://github.com/AlmasB/FXGL), an opensource library on top of 
 JavaFX to build games.
 
-# The controller 
+## The controller 
 
 This project uses an [Arcade kit](https://www.kiwi-electronics.nl/pim-471?search=arcade&description=true)
 in combination with a [Picade X HAT USB-C](https://www.kiwi-electronics.nl/index.php?route=product/product&search=arcade&description=true&product_id=4337)
@@ -35,3 +35,8 @@ Pimoroni provides a [GitHub project](https://github.com/pimoroni/picade-hat) wit
 this hat with RetroPie, but this project aims to take full control of the hardware with Java.
 
 The GPIO numbers are defined by the hat and can be found on [pinout.xyz](https://pinout.xyz/pinout/picade_hat)
+
+## The application
+
+**TODO, currently only minimal implementation is done based on Snake game created by Almas and Frank**
+

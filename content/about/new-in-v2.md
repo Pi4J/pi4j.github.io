@@ -1,5 +1,5 @@
 ---
-title: 'What''s New (V2)'
+title: 'What''s New (V.2)'
 weight: 30
 ---
 
@@ -28,11 +28,9 @@ The WiringPi project has now been deprecated (see [wiringpi.com/wiringpi-depreca
 Pi4J version 2.0 will no longer be based on WiringPi and has moved to using the PIGPIO library 
 ([http://abyz.me.uk/rpi/pigpio/](http://abyz.me.uk/rpi/pigpio/)) internally for low level integation. 
 With this move, we will also support the remote I/O features (via TCP socket) offered by the PIGPIO daemon 
-([http://abyz.me.uk/rpi/pigpio/pigpiod.html](http://abyz.me.uk/rpi/pigpio/pigpiod.html)).  
+([http://abyz.me.uk/rpi/pigpio/pigpiod.html](http://abyz.me.uk/rpi/pigpio/pigpiod.html)).
 
----
-
-## What are the differences compared to V1?
+## What are the differences compared to V.1?
 
 Starting with the Pi4J 2.0 builds, the Pi4J project is prioritizing focus on providing Java programs access, 
 control and communication with the core I/O capabilities of the Raspberry Pi platform. Earlier versions of Pi4J were 
@@ -46,3 +44,22 @@ The following features have been removed from the Pi4J library:
 * **IO Expanders** -- IO expansion is still supported but concrete implementations should be provided outside the core Pi4J core project such that they can be maintained and extended independently.
 * **Other Platforms** -- Other platforms such as Odroid, BananaPi, NanoPi, OrangePi, etc. have been removed and will no longer be supported. The challenge with supporting these additional platforms is that Pi4J depends on the underlying WiringPi project and WiringPi ports for these other platforms is not well supported by the various SoC vendors or community. The various WiringPi ports for these other platforms are also inconsistent causing inconsistent features and functionality of Pi4J. Additionally, regression testing of bug fixes and new features in Pi4J is compounded with each additional supported platform.
 * **Components & Devices** -- Pi4J originally provided higher level interfaces for components and devices that provided an abstraction layer between real world devices (things) and lower-level I/O interfaces. While a noble goal, unfortunately this part of the project never received the attention and time that it deserved and never gained much adoption by the community. We are removing these to allow Pi4J to focus solely on the raw I/O supported by the Raspberry Pi platform.
+
+## Sources
+
+The Pi4J V.2 source code is available in this GitHub repository: [Pi4J V.2 GitHub Repository](https://github.com/Pi4J/pi4j-v2)
+
+```shell
+git clone https://github.com/Pi4J/pi4j-v2
+```
+
+(Please note, this repository is only temporary, and the sources can later be moved to the
+main Pi4J repo. Thus, any forks from this temporary repository will be broken after the move.)
+
+Pi4J V.2 is still considered **EXPERIMENTAL** at this point. While many parts of the
+project are working, there are still a number of areas that require further development
+and certain APIs are subject to change without notice. A significant portion of the code
+is presently undocumented and hardware integration testing is incomplete. It is not
+recommended to use Pi4J V.2 in any production workload at this time.
+
+For a more detailed account of the project status, please see this page: [**About > Project Status**](/about/). 

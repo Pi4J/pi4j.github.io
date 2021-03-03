@@ -11,39 +11,50 @@ JavaFX is a framework to create user interfaces for desktop (Windows, Mac, Linux
 an opensource project which is documented on [openjfx.io](https://openjfx.io/) and the sources are available
 in [this GitHub project](https://github.com/openjdk/jfx). 
 
-The main goal of Java has always been to be able to create applications which are **"write once, run everywhere"**.
+The main goal of Java has always been to be able to create applications which are **"write once, run everywhere"**. 
+JavaFX promises the same for Graphical User Interface applications.
 
 [Gluon](https://gluonhq.com/) is the main maintainer of the OpenJFX project and offers commercial support to 
 companies who want to use JavaFX in critical applications. They also provide [tools to build and compile Java 
 code to native applications for all platforms](https://gluonhq.com/products/).
 
-# JavaFX on Raspberry Pi
+## JavaFX on Raspberry Pi
 
-JavaFX is also an ideal framework to build Java applications with a user interface for the Raspberry Pi.
+JavaFX is also an ideal framework to build Java applications with a user interface for the Raspberry Pi!
 
 You can find a runtime version dedicated to the Raspberry Pi on the [Gluon download page](https://gluonhq.com/products/javafx/).
 Let's install it on our board, so we can start Java+JavaFX applications which make best use of the capabilities 
 of the Raspberry Pi.
 
-## Installation
+### Installation
 
-To get the latest version on your Raspberry Pi:
+To get the latest version on your Raspberry Pi, first check the 
+[Gluon download page for the download link](https://gluonhq.com/products/javafx/).
 
-* check the Gluon download page for the download link
-* download the file 
-* unzip the file
-* move the unzipped directory to the opt-directory (optionally, but it's a logical place)
+![Gluon JavaFX download page](/assets/getting-started/javafx/gluon-download.png)
 
+Copy the link and use it with wget to download the file:
+
+1. Download the file
 ```
 $ wget -O openjfx.zip https://gluonhq.com/download/javafx-linux-arm32-drm-sdk/
+```
+2. Unzip the file
+```
 $ unzip openjfx.zip
+```
+3. Move the unzipped directory to the opt-directory (optionally, but it's a logical place)
+```
 $ sudo mv arm32fb-sdk/ /opt/arm32fb-sdk/
 ```
 
-## Start an application 
+### Start an application 
 
 Now the OpenJFX-runtime is available on our Raspberry Pi, we can start each Java application which was compiled
 to a JAR with some additional parameters to run it with the best rendering support.
+
+The additional arguments are needed to link to the downloaded JavaFX library and select the correct 
+[Monocle platform](https://wiki.openjdk.java.net/display/OpenJFX/Monocle).
 
 ```
 java \
@@ -53,11 +64,46 @@ java \
   -Dprism.verbose=false \
   -Djavafx.verbose=false \
   -Dmonocle.platform=EGL \
-  --module-path /opt/arm32fb-sdk/lib:. \
+  --module-path .:/opt/arm32fb-sdk/lib \
   --add-modules javafx.controls \
   --module {YOUR_MAIN_CLASS} $@
 ```
 
-# Minimal example application
+TODO: describe each of the startup arguments, here or in a sub page.
 
-TODO
+## Minimal example application
+
+In this repository [https://github.com/Pi4J/pi4j-example-javafx](https://github.com/Pi4J/pi4j-example-javafx), 
+a minimal example project is provided which combines Java, JavaFX, Pi4J and a few buttons. The wiring for this 
+example is identical to the [Minimal example application](/getting-started/minimal-example-application/) with 
+a single LED and button.
+
+{{< gallery >}}
+{{< figure link="/assets/getting-started/javafx/javafx-ui-started.png" caption="JavaFX UI after start-up" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/getting-started/javafx/javafx-ui-button-pressed.png" caption="JavaFX UI after click on physical button" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/getting-started/javafx/toggled-led.jpg" caption="LED turned on by clicking on the JavaFX button" caption-position="center" caption-effect="fade" >}}
+{{< /gallery >}}
+{{< load-photoswipe >}}
+
+To test the application:
+
+1. Download the sources to your Raspberry Pi
+```
+$ git clone https://github.com/pi4j/pi4j-example-javafx
+```
+2. Move to the downloaded directory
+```
+$ cd pi4j-example-javafx
+```
+3. Build the project
+```
+$ mvn package
+```
+4. Move to the target > distribution directory
+```
+$ cd target/distribution
+```
+5. Run the application with the provided run-script
+```
+$ sudo ./run.sh
+```

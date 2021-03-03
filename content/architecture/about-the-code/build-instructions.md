@@ -98,7 +98,7 @@ the native library projects which will be cross-compiled for RaspberryPi/ARM (32
 
 ### Building Pi4J Native Libraries
 
-Pi4J V2 also includes native libraries that will need to be compiled if you are modifying any native code.  Most users will never need to compile the native libraries as these artifacts are automatically downloaded  when building the Pi4J JARs from Maven repositories. One of the following commands can be used to build the Pi4J JARs and Native Libraries:
+Pi4J V.2 also includes native libraries that will need to be compiled if you are modifying any native code.  Most users will never need to compile the native libraries as these artifacts are automatically downloaded  when building the Pi4J JARs from Maven repositories. One of the following commands can be used to build the Pi4J JARs and Native Libraries:
 
 ```
 mvn clean install -Pnative
