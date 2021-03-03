@@ -14,7 +14,7 @@ This part of the site takes you through the different steps to start "from scrat
 1. [Setting up the Raspberry Pi with all the tools needed](/getting-started/set-up-a-new-raspberry-pi/)
 2. [Understanding the GPIO pins](/getting-started/understanding-the-pins/)
 3. [Java development on the Raspberry Pi with Visual Studio Code](/getting-started/java-development-on-the-raspberry-pi-with-vsc/)
-4. [Using a Linux/Windows/Mac separate computer as developing workstation](/getting-started/using-a-lwm-separate-computer-as-developing-workstation/)
+4. [Using a Linux/Windows/Mac separate computer as developing workstation](/getting-started/developing-on-a-remote-pc/)
 5. [Minimal example application with an LED and button](/getting-started/minimal-example-application/)
 6. [Introduction to electronics with CrowPi](/getting-started/introduction-to-electronics-with-crowpi/)
 7. [Adding a user interface with JavaFX](/getting-started/user-interface-with-javafx/)
