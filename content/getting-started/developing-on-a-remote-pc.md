@@ -4,6 +4,10 @@ date =  2021-02-27T16:39:35+01:00
 weight = 45
 +++
 
+{{% notice note %}}
+GITHUB PROJECT: [https://github.com/Pi4J/pi4j-maven-archetype](https://github.com/Pi4J/pi4j-maven-archetype)
+{{% /notice %}}
+
 ## Developing Java programs using a remote PC workstation
 
 Writing your Java program, compiling and running it directly on the Raspberry Pi board
