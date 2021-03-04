@@ -1,5 +1,7 @@
 ---
 title: Game development with FXGL
+weight: 80
+tags: ["JavaFX"]
 ---
 
 {{% notice note %}}

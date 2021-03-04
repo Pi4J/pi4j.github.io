@@ -1,8 +1,7 @@
-+++
-title = "Developing on a remote PC"
-date =  2021-02-27T16:39:35+01:00
-weight = 45
-+++
+---
+title: Developing on a remote PC
+weight: 45
+---
 
 {{% notice note %}}
 GITHUB PROJECT: [https://github.com/Pi4J/pi4j-maven-archetype](https://github.com/Pi4J/pi4j-maven-archetype)

@@ -19,3 +19,5 @@ This part of the site takes you through the different steps to start "from scrat
 6. [Introduction to electronics with CrowPi](/getting-started/introduction-to-electronics-with-crowpi/)
 7. [Adding a user interface with JavaFX](/getting-started/user-interface-with-javafx/)
 8. [Game development with FXGL and an Arcade controller](/getting-started/game-development-with-fxgl/)
+
+And if you still want to learn more, we have a [list of additional resources](/getting-started/learn-more/).
