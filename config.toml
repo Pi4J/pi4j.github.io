@@ -1,4 +1,4 @@
-baseURL = "https://v2.pi4j.com/"
+baseURL = "https://pi4j.com/"
 languageCode = "en-us"
 title = "Pi4J"
 theme = "hugo-theme-learn"
@@ -35,11 +35,11 @@ home = ["HTML", "RSS", "JSON"]
   disableShortcutsTitle = false
   # If set to false, a Home button will appear below the search bar on the menu.
   # It is redirecting to the landing page of the current language if specified. (Default is "/")
-  disableLandingPageButton = true
+  disableLandingPageButton = false
   # When using mulitlingual website, disable the switch language button.
   disableLanguageSwitchingButton = false
   # Hide breadcrumbs in the header and only show the current page title
-  disableBreadcrumb = true
+  disableBreadcrumb = false
   # If set to true, prevents Hugo from including the mermaid module if not needed (will reduce load times and traffic)
   disableMermaid = false
   # Specifies the remote location of the mermaid js
