@@ -1,5 +1,6 @@
 ---
 title: 'PiJukeBox by Daniel Mårtensson'
+weight: 60
 ---
 
 ### PiJukeBox by Daniel Mårtensson
