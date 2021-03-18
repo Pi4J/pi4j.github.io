@@ -13,6 +13,8 @@ find a project which contains the minimal code to control a digital input and ou
 described on this page. The application will toggle an LED on/off and each time you press the button, the toggling 
 speed increases. When you have pushed the button 5 times, the application stops.
 
+{{< vimeo 525570174 >}}
+
 ## Wiring
 
 This minimal example application uses this wiring:
