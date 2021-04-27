@@ -46,7 +46,7 @@ $ unzip openjfx.zip
 ```
 3. Move the unzipped directory to the opt-directory (optionally, but it's a logical place)
 ```
-$ sudo mv arm32fb-sdk/ /opt/arm32fb-sdk/
+$ sudo mv javafx-sdk-17/ /opt/javafx-sdk-17/
 ```
 
 ### Start an application 
@@ -59,13 +59,12 @@ The additional arguments are needed to link to the downloaded JavaFX library and
 
 ```
 java \
-  -Dmonocle.egl.lib=/opt/arm32fb-sdk/lib/libgluon_drm.so \
-  -Djava.library.path=/opt/arm32fb-sdk/lib \
+  -Dglass.platform=gtk \
+  -Djava.library.path=/opt/javafx-sdk-17/lib \
   -Dmonocle.platform.traceConfig=false \
   -Dprism.verbose=false \
   -Djavafx.verbose=false \
-  -Dmonocle.platform=EGL \
-  --module-path .:/opt/arm32fb-sdk/lib \
+  --module-path .:/opt/javafx-sdk-17/lib \
   --add-modules javafx.controls \
   --module {YOUR_MAIN_CLASS} $@
 ```
@@ -73,6 +72,8 @@ java \
 TODO: describe each of the startup arguments, here or in a sub page.
 
 ## Minimal example application
+
+### Sources
 
 In this repository [https://github.com/Pi4J/pi4j-example-javafx](https://github.com/Pi4J/pi4j-example-javafx), 
 a minimal example project is provided which combines Java, JavaFX, Pi4J and a few buttons. The wiring for this 
@@ -86,25 +87,34 @@ a single LED and button.
 {{< /gallery >}}
 {{< load-photoswipe >}}
 
-To test the application:
+### Steps to test the application
 
 1. Download the sources to your Raspberry Pi
+
 ```
 $ git clone https://github.com/pi4j/pi4j-example-javafx
 ```
+
 2. Move to the downloaded directory
+
 ```
 $ cd pi4j-example-javafx
 ```
+
 3. Build the project
+
 ```
 $ mvn package
 ```
+
 4. Move to the target > distribution directory
+
 ```
 $ cd target/distribution
 ```
+
 5. Run the application with the provided run-script
+
 ```
 $ sudo ./run.sh
 ```
