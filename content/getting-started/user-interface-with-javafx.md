@@ -38,7 +38,7 @@ Copy the link and use it with wget to download the file:
 
 1. Download the file
 ```
-$ wget -O openjfx.zip https://gluonhq.com/download/javafx-linux-arm32-drm-sdk/
+$ wget -O openjfx.zip https://gluonhq.com/download/javafx-17-ea-sdk-linux-arm32/
 ```
 2. Unzip the file
 ```
