@@ -19,6 +19,19 @@ JavaFX promises the same for Graphical User Interface applications.
 companies who want to use JavaFX in critical applications. They also provide [tools to build and compile Java 
 code to native applications for all platforms](https://gluonhq.com/products/).
 
+## Developing a JavaFX application
+
+The best part of Java is the "Write Once, Run Everywhere". This means you can develop your application on any PC
+(Windows, Mac, Linux) and run it on any other one of these (yes 
+[even on mobile](https://foojay.io/today/native-applications-for-multiple-devices-from-a-single-javafx-project-with-gluon-mobile-and-github-actions/)) 
+with the exact same look-and-feel and behavior. The only limitation is the part you develop specifically for the Raspberry Pi:
+controlling the GPIOs with Pi4J. 
+
+The most used IDE for Java development is IntelliJ IDEA, which is not available for Raspberry Pi. If you are using it
+on your PC and want to learn more about the best approach to get started with JavaFX, read this great tutorial
+["Beginning JavaFX Applications with IntelliJ IDEA"](https://foojay.io/today/beginning-javafx-with-intellij/tw) by 
+[Carl Dea](https://twitter.com/carldea).
+
 ## JavaFX on Raspberry Pi
 
 JavaFX is also an ideal framework to build Java applications with a user interface for the Raspberry Pi!
