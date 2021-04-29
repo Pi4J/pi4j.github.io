@@ -29,7 +29,7 @@ controlling the GPIOs with Pi4J.
 
 The most used IDE for Java development is IntelliJ IDEA, which is not available for Raspberry Pi. If you are using it
 on your PC and want to learn more about the best approach to get started with JavaFX, read this great tutorial
-["Beginning JavaFX Applications with IntelliJ IDEA"](https://foojay.io/today/beginning-javafx-with-intellij/tw) by 
+["Beginning JavaFX Applications with IntelliJ IDEA"](https://foojay.io/today/beginning-javafx-with-intellij/) by 
 [Carl Dea](https://twitter.com/carldea).
 
 ## JavaFX on Raspberry Pi
