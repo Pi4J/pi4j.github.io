@@ -1,5 +1,5 @@
 ---
-title: Introduction to electronics
+title: Electronics with CrowPi
 weight: 60
 ---
 
@@ -17,3 +17,9 @@ electronics: components are inexpensive and easy to find on ebay or one of the m
 {{< figure link="/assets/getting-started/crowpi/electronics-starter-kit.jpg" caption="Example electronics starter kit" caption-position="center" caption-effect="fade" >}}
 {{< /gallery >}}
 {{< load-photoswipe >}}
+
+As the CrowPi contains a lot of components, this example is described on the following subpages:
+
+{{% children %}}
+
+The CrowPi sources and documentation are provided by the [Swiss FHNW University](https://www.fhnw.ch/en/).

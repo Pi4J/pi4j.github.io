@@ -34,7 +34,7 @@ As already mentioned in the first section, multiple slaves can also be connected
 The number available depends on the hardware used. On the Raspberry Pi, the standard SPI0
 with two different slaves use what is called Chip Select Pins is controlled.
 
-# Additional Information
+## Additional Information
 
 - [Wikipedia SPI](https://en.wikipedia.org/wiki/Serial_Peripheral_Interface)
 - [SPI pinout for Raspberry Pi](https://pinout.xyz/pinout/spi#)
