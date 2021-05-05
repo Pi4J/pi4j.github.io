@@ -1141,3 +1141,11 @@ pre .copy-to-clipboard:hover {
 option {
     color: initial;
 }
+
+.fa-github, .fa-twitter, .fa-home {
+    margin-right: 10px;
+}
+
+.fa-tags {
+    margin-right: 7px;
+}
