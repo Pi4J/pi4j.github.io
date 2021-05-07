@@ -124,14 +124,13 @@ the run configuration "crowpi-examples [install]". Then start the application by
 {{< figure link="/assets/getting-started/crowpi/intellij-start-firstapplication.jpg" caption="Start the application" caption-position="center" caption-effect="fade" >}}
 {{< /gallery >}}
 
-It immediately opens that Run Fensterby IntelliJ. It takes a moment and some text is displayed on the command line. 
-After a few seconds the output stops and it looks like this: 
+It immediately opens the "Run" window in IntelliJ IDEA. It takes a moment, and some text is displayed on the command line. 
+After a few seconds the output stops, and it looks like this: 
 
 {{< gallery >}}
 {{< figure link="/assets/getting-started/crowpi/intellij-run-example.jpg" caption="Run Output in IntelliJ" caption-position="center" caption-effect="fade" >}}
 {{< /gallery >}}
 
-A number can now be typed in here according to the instruction and with Enterbeeing confirmed. The corresponding 
-sample application is then executed. If there are still error messages in the command line, it is worth checking 
-the network connection of the computer and the Raspberry Pi again. There are also some tips and tricks for 
-troubleshooting in the troubleshooting section of this tutorial. 
+A number can now be typed in here according to the displayed list (+ Enter. The corresponding sample application is then 
+executed. If there are still error messages in the command line, it is worth checking the network connection of the 
+computer and the Raspberry Pi again.
