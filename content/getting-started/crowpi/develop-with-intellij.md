@@ -131,6 +131,6 @@ After a few seconds the output stops, and it looks like this:
 {{< figure link="/assets/getting-started/crowpi/intellij-run-example.jpg" caption="Run Output in IntelliJ" caption-position="center" caption-effect="fade" >}}
 {{< /gallery >}}
 
-A number can now be typed in here according to the displayed list (+ Enter. The corresponding sample application is then 
+A number can now be typed in here according to the displayed list (+ Enter). The corresponding sample application is then 
 executed. If there are still error messages in the command line, it is worth checking the network connection of the 
 computer and the Raspberry Pi again.
