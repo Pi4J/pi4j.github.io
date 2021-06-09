@@ -14,6 +14,7 @@ on which they are used.
 Current supported providers:
 
 * [PiGpio](/documentation/providers/pigpio/)
+* [LinuxFS](/documentation/providers/linuxfs/)
 
 Possible future providers:
 
