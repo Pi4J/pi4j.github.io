@@ -90,9 +90,9 @@ img / a styles
     right: 0;
     top: 0;
     bottom: 0;
-    /*background-size: cover;*/
-    /*background-position: 50% 50%;*/
-    /*background-repeat: no-repeat;*/
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
 }
 .gallery.hover-effect-zoom figure:hover .img {
     transform: scale(1.05);
