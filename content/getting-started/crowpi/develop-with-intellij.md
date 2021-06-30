@@ -89,6 +89,27 @@ the background image of CrowPi.
 The dialog for setting the configurations now opens. A little hint: wherever the IP address of the Raspberry Pi 
 is required, there is already a placeholder "Add CrowPi IP here". 
 
+Depending on the configuration of your Raspberry Pi, you may need to define one of this available properties:
+
+* crowpi.remote.port, default 22
+* crowpi.remote.username, default pi
+* crowpi.remote.password, default pi
+* crowpi.remote.target, default ???
+* crowpi.launcher.class, default ???
+* crowpi.launcher.args, default ???
+
+crowpi.remote.host specifies the IP/hostname of the CrowPi, defaults to empty
+crowpi.remote.port defaults to 22 and specifies the SSH server port
+crowpi.remote.username defaults to pi
+crowpi.remote.password defaults to crowpi (this deviates from the Raspberry Pi OS default which is raspberry)
+crowpi.remote.target is the destination folder on the CrowPi where the compiled JAR files are copied to before execution and defaults to /home/pi/deploy (auto-created if missing)
+crowpi.launcher.class is the class path which should get launched by the JVM, defaults to com.pi4j.crowpi/com.pi4j.crowpi.Launcher and should not be changed (warranty void if you do so :wink:)
+crowpi.launcher.args are the arguments passed to the application launched by the JVM, specified as a string, passed through as-is without quoting, so e.g. BuzzerApp to launch that directly. Defaults to empty / no args.
+
+The first five are only needed for remote deployments. Leaving crowpi.remote.host empty triggers local deployment.
+
+There is also crowpi.remote.jvmOptions if you want to add any custom JVM options, defaults to empty or options for remote debug if Maven profile debug is used (edited)
+
 {{< gallery >}}
 {{< figure link="/assets/getting-started/crowpi/intellij-three-configs.jpg" caption="The three configurations" caption-position="center" caption-effect="fade" >}}
 {{< /gallery >}}
