@@ -132,6 +132,20 @@ i2c_set_clkt_tout 1000
 
 The following code shows setting the pins on a TCA 9534 which can be found on ["Sequent Microsystems"](https://www.kickstarter.com/projects/279405789/4-relays-for-raspberry-pi-8-level-stackable-10a-250v-each)
 
+
+To use the LinuxFS provider, which provices I2C, add the proper dependency:
+
+```xml
+
+<dependency>
+    <groupId>com.pi4j</groupId>
+    <artifactId>pi4j-plugin-linuxfs</artifactId>
+    <version>${pi4j.version}</version>
+</dependency>
+```
+
+Now we can use the following example:
+
 ```java
 import com.pi4j.Pi4J;
 import com.pi4j.context.Context;
