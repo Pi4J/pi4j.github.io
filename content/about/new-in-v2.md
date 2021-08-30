@@ -53,13 +53,6 @@ The Pi4J V.2 source code is available in this GitHub repository: [Pi4J V.2 GitHu
 git clone https://github.com/Pi4J/pi4j-v2
 ```
 
-(Please note, this repository is only temporary, and the sources can later be moved to the
-main Pi4J repo. Thus, any forks from this temporary repository will be broken after the move.)
-
-Pi4J V.2 is still considered **EXPERIMENTAL** at this point. While many parts of the
-project are working, there are still a number of areas that require further development
-and certain APIs are subject to change without notice. A significant portion of the code
-is presently undocumented and hardware integration testing is incomplete. It is not
-recommended to use Pi4J V.2 in any production workload at this time.
-
-For a more detailed account of the project status, please see this page: [**About > Project Status**](/about/). 
+Pi4J V.2 had the first release in August 2021. Rework from V.1 to V.2 took quit some time and will never be finished, but
+we are confident this is a great library to develop Java application on the Raspberry Pi. Any remarks and contributions
+are welcome as either bug reports or discussions in the [GitHub repository](https://github.com/Pi4J/pi4j-v2).
