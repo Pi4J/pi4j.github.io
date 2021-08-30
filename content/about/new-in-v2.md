@@ -12,11 +12,14 @@ extensibility, simplified integration and a modern Java API including the follow
 * Immutable Runtime Context
 * Extensible Provider/Platform/Plug-in Architecture
 * Builder-patterns for creating new I/O instances
-* Dependency Injection via Pi4J Annotations
 * Well-documented source code
 * Hardware PWM Support
-* Remote I/O Support (via TCP/IP)
 * Java 11
+
+Future plans:
+
+* Dependency Injection via Pi4J Annotations
+* Remote I/O Support (via TCP/IP)
 
 In addition to the features listed above, Pi4J version 2.0 also abandons the old WiringPi pin numbering scheme in favor
 of the more traditional and commonly used Broadcom pin numbering scheme.  This pin numbering scheme has been a source of 

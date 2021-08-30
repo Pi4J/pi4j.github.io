@@ -59,31 +59,13 @@ gradlew.bat build
 
 For the Maven approach, a pom.xml file defines all the dependencies, and the build process.
 
-{{% notice note %}}At this moment Pi4J V.2 is not yet released, so you'll need to add the snapshot repository.{{% /notice %}}
-
-```xml
-<repositories>
-    <repository>
-        <id>oss-snapshots-repo</id>
-        <name>Sonatype OSS Maven Repository</name>
-        <url>https://oss.sonatype.org/content/groups/public</url>
-        <releases>
-            <enabled>false</enabled>
-        </releases>
-        <snapshots>
-            <enabled>true</enabled>
-        </snapshots>
-    </repository>
-</repositories>
-``` 
-
 In this project we will be using slf4 for logging, pi4j-core and the pi4j-plugins for the Raspberry Pi and PiGPIO. To make the versions easy to update, we add those numbers as properties. 
 
 ```xml
 <properties>
     <!-- DEPENDENCIES VERSIONS -->
-    <slf4j.version>2.0.0-alpha0</slf4j.version>
-    <pi4j.version>2.0-SNAPSHOT</pi4j.version>
+    <slf4j.version>1.7.32</slf4j.version>
+    <pi4j.version>2.0</pi4j.version>
 </properties>
 ``` 
   
