@@ -3,7 +3,7 @@ title: 'Release Notes'
 weight: 40
 ---
 
-# 2021-08-26 2.0
+## 2021-08-26 2.0
 
 Yoohoo it's here! After a lot of work we present you the totally renewed Pi4J library!
 
