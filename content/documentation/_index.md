@@ -13,4 +13,4 @@ find multiple examples to get you started.{{% /notice %}}
 2. **Do you want to go a few steps further and contribute to Pi4J, extend it with additional plugins or 
    understand how it is build?**
 
-{{% notice warning %}}In that case you'll find more information in the [Architecture/Design](/architecture/) section.{{% /notice %}}
+{{% notice note %}}In that case you'll find more information in the [Architecture/Design](/architecture/) section.{{% /notice %}}
