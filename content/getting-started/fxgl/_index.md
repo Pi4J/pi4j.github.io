@@ -44,7 +44,7 @@ The GPIO numbers are defined by the hat and can be found on [pinout.xyz](https:/
 
 * Download the project from GitHub and build it:
 
-```
+``` shell
 $ git clone https://github.com/Pi4J/pi4j-example-fxgl.git
 $ cd pi4j-example-fxgl/
 $ mvn clean package
@@ -52,7 +52,7 @@ $ mvn clean package
 
 * Change to the distribution directory where you can find the generated package and required Java-modules. Start it with the provided run.sh script:
 
-```
+``` shell
 $ cd target/distribution
 $ ls -l
 total 644
@@ -106,7 +106,7 @@ onKeyDown(KeyCode.G, () -> player.getComponent(SnakeHeadComponent.class).log());
 
 ### GPIO
 * The Enum PicadeControl handles the the gpio numbers for the connected controls. [pinout.xyz](https://pinout.xyz/pinout/picade_hat) 
-```
+``` java
 PIN_JOYSTICK_UP(12),
 PIN_JOYSTICK_DOWN(6),
 PIN_JOYSTICK_LEFT(20),
@@ -118,6 +118,7 @@ PIN_BUTTON_1(5);
 
 **run.sh**
 </br>Runs the application in windowed mode
+
 ``` shell
 #!/usr/bin/env bash
 java \

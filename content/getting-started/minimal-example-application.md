@@ -196,7 +196,7 @@ pi4j.shutdown();
 * Attach a LED and button as shown in the image above
 * Use a recent Raspbian OS image which has Java 11. To check if you have the correct Java version in the terminal:
 
-```
+```shell
 $ java -version
 openjdk version "11.0.6" 2020-01-14
 OpenJDK Runtime Environment (build 11.0.6+10-post-Raspbian-1deb10u1)
@@ -205,7 +205,7 @@ OpenJDK Server VM (build 11.0.6+10-post-Raspbian-1deb10u1, mixed mode)
 
 * Download the project from GitHub and build it:
 
-```
+```shell
 $ git clone https://github.com/Pi4J/pi4j-example-minimal.git
 $ cd pi4j-example-minimal/
 $ mvn clean package
@@ -213,7 +213,7 @@ $ mvn clean package
 
 * Change to the distribution directory where you can find the generated package and required Java-modules. Start it with the provided run.sh script:
 
-```
+```shell
 $ cd target/distribution
 $ ls -l
 total 644
@@ -230,7 +230,7 @@ $ sudo ./run.sh
 
 * The output will first show you some info about the platforms and providers. Then the LED starts blinking and shows how much times you pushed the button:
 
-``` 
+```shell
 LED high
 LED low
 LED high

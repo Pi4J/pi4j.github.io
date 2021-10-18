@@ -72,7 +72,7 @@ TODO add pictures
 As we have put the Full edition on the SD card, Java is already available. Open a terminal window and type in `java -version`.
 Java will be started to show you the installed version.
 
-```
+```shell
 $ java -version
 openjdk version "11.0.9" 2020-10-20
 OpenJDK Runtime Environment (build 11.0.9+11-post-Raspbian-1deb10u1)
@@ -89,7 +89,7 @@ TODO
 
 Open a terminal and perform following commands
 
-```
+```shell
 sudo apt update
 sudo apt full-upgrade
 ```

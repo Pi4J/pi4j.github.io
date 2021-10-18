@@ -68,12 +68,14 @@ If you want to go 64-bit, you can use the same approach. There is no official 64
 
 #### Unclutter
 Another great addition for a kiosk approach is [Unclutter](https://wiki.archlinux.org/title/Unclutter), a small tool which hides your mouse cursor when you do not need it. You only have to move the mouse for the cursor to reappear.
+
 ``` shell
 sudo apt install unclutter
 ``` 
 
 To run the application in kiosk mode it is recommended to have an open ssh session on the side to follow the process or 
 in case of errors, being able to restart the desktop with:
+
 ``` shell
 /sbin/init 5
 ```

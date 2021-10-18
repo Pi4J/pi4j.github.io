@@ -50,15 +50,15 @@ To get the latest version on your Raspberry Pi, first check the
 Copy the link and use it with wget to download the file:
 
 1. Download the file
-```
+```shell
 $ wget -O openjfx.zip https://gluonhq.com/download/javafx-17-ea-sdk-linux-arm32/
 ```
 2. Unzip the file
-```
+```shell
 $ unzip openjfx.zip
 ```
 3. Move the unzipped directory to the opt-directory (optionally, but it's a logical place)
-```
+```shell
 $ sudo mv javafx-sdk-17/ /opt/javafx-sdk-17/
 ```
 
@@ -70,7 +70,7 @@ to a JAR with some additional parameters to run it with the best rendering suppo
 The additional arguments are needed to link to the downloaded JavaFX library and select the correct 
 [Monocle platform](https://wiki.openjdk.java.net/display/OpenJFX/Monocle).
 
-```
+```shell
 java \
   -Dglass.platform=gtk \
   -Djava.library.path=/opt/javafx-sdk-17/lib \
@@ -104,30 +104,30 @@ a single LED and button.
 
 1. Download the sources to your Raspberry Pi
 
-```
+```shell
 $ git clone https://github.com/pi4j/pi4j-example-javafx
 ```
 
 2. Move to the downloaded directory
 
-```
+```shell
 $ cd pi4j-example-javafx
 ```
 
 3. Build the project
 
-```
+```shell
 $ mvn package
 ```
 
 4. Move to the target > distribution directory
 
-```
+```shell
 $ cd target/distribution
 ```
 
 5. Run the application with the provided run-script
 
-```
+```shell
 $ sudo ./run.sh
 ```
