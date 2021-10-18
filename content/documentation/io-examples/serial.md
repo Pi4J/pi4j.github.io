@@ -129,7 +129,8 @@ public class SerialReader implements Runnable {
             // Read data until the flag is false
             while (continueReading) {
                 // First we need to check if there is data available to read.
-                // The read() command for pigio-serial is a NON-BLOCKING call, in contrast to typical java input streams.
+                // The read() command for pigio-serial is a NON-BLOCKING call, 
+                // in contrast to typical java input streams.
                 var available = serial.available();
                 if (available > 0) {
                     for (int i = 0; i < available; i++) {
