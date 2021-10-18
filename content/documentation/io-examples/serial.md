@@ -50,6 +50,9 @@ The GPS module used in this example: NEO-7M.
 | RX        | UART TX, GPIO 15        |
 | TX        | UART RX, GPIO 16        |
 
+In the readme of the coding example, you can find the description how you can test the GPS module in the terminal 
+with `gpsd.socket`.
+
 ### Initialize the serial port
 
 First Pi4J needs to be initialized. Within this context we can then configure and open the serial port. As long as the
