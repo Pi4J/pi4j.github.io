@@ -41,14 +41,21 @@ easily be achieved with a Thread to handle the incoming data.
 
 ### Wiring
 
-TODO
+The GPS module used in this example: NEO-7M.
+
+| NEO-7M    | Raspberry Pi            |
+| :---      | :---                    |
+| VCC       | Power 5V (e.g. pin 2)   |
+| GND       | Ground (e.g. pin 6)     |
+| RX        | UART TX, GPIO 15        |
+| TX        | UART RX, GPIO 16        |
 
 ### Initialize the serial port
 
 First Pi4J needs to be initialized. Within this context we can then configure and open the serial port. As long as the
 serial port is open, we run a thread to handle the incoming data.
 
-```java
+``` java
 var console = new Console();
 var pi4j = Pi4J.newAutoContext();
 
@@ -90,7 +97,7 @@ its data as readable String lines seperated by a line separator, we only need to
 32 (see the [ASCII code table](https://en.wikipedia.org/wiki/ASCII#Printable_characters)). All lower values are handled
 as line separators.
 
-```java
+``` java
 public class SerialReader implements Runnable {
 
     private final Console console;
@@ -152,7 +159,7 @@ public class SerialReader implements Runnable {
 You can get the full working example from GitHub and run on a Raspberry Pi after you correctly connected a GPS module. 
 As you can see in the output, each data line (starting with `$GP...`) is logged.
 
-```shell
+``` shell
 $ git clone https://github.com/Pi4J/pi4j-example-serial.git
 $ cd https://github.com/Pi4J/pi4j-example-serial.git
 $ mvn package
