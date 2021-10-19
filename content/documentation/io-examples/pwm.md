@@ -179,6 +179,7 @@ public class BuzzerComponent extends Component {
             .name("Buzzer")
             .address(address)
             .pwmType(PwmType.HARDWARE)
+            .provider("pigpio-pwm")
             .initial(0)
             .shutdown(0)
             .build();
