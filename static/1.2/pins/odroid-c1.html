@@ -147,13 +147,13 @@
 
         <li class="divider pull-right">|</li>
       
-    <li class="pull-right">              <a href="https://github.com/Pi4J/pi4j/issues/" class="externalLink" target="pi4j-github" title="Issues">
+    <li class="pull-right">              <a href="https://github.com/Pi4J/pi4j-v1/issues/" class="externalLink" target="pi4j-github" title="Issues">
         Issues</a>
   </li>
 
         <li class="divider pull-right">|</li>
       
-    <li class="pull-right">              <a href="https://github.com/Pi4J/pi4j/" class="externalLink" target="pi4j-github" title="Github">
+    <li class="pull-right">              <a href="https://github.com/Pi4J/pi4j-v1/" class="externalLink" target="pi4j-github" title="Github">
         Github</a>
   </li>
 
@@ -599,12 +599,12 @@ PlatformManager.setPlatform(Platform.ODROID);</pre></div></li></ul></div>
 <li>Serial/UART Communication</li>
 <li>Software-based PWM</li>
 <li>System Info</li></ul>
-<p><a class="externalLink" href="https://github.com/Pi4J/pi4j/tree/master/pi4j-example/src/main/java/odroid/c1">View Odroid C1/C1+ Examples</a></p></div>
+<p><a class="externalLink" href="https://github.com/Pi4J/pi4j-v1/tree/master/pi4j-example/src/main/java/odroid/c1">View Odroid C1/C1+ Examples</a></p></div>
 <div class="section">
 <h3><a name="Known_Issues"></a>Known Issues</h3>
 <ul>
 <li><b>GPIO Listener Events</b> (edge triggered interrupts) [APPLIES ONLY TO C1/C1+/C2]
-<p>Pi4J uses edge detection for GPIO pin state change events. The Odroid C1/C1+/C2 only permit up to four GPIO pins to be configured with edge detection for both &quot;rising&quot; and &quot;falling&quot; edges (a.k.a., &quot;both&quot;). Thus, you can only use a maximum of four GPIO input pins with listener events. Alternatively, you can manually poll for GPIO pin state changes. The included sample code demonstrates both the event listener and polling for pin state changes: <br /><a class="externalLink" href="https://github.com/Pi4J/pi4j/blob/master/pi4j-example/src/main/java/odroid/GpioListenAllExample.java">GpioListenAllExample</a></p></li>
+<p>Pi4J uses edge detection for GPIO pin state change events. The Odroid C1/C1+/C2 only permit up to four GPIO pins to be configured with edge detection for both &quot;rising&quot; and &quot;falling&quot; edges (a.k.a., &quot;both&quot;). Thus, you can only use a maximum of four GPIO input pins with listener events. Alternatively, you can manually poll for GPIO pin state changes. The included sample code demonstrates both the event listener and polling for pin state changes: <br /><a class="externalLink" href="https://github.com/Pi4J/pi4j-v1/blob/master/pi4j-example/src/main/java/odroid/GpioListenAllExample.java">GpioListenAllExample</a></p></li>
 <li><b>PWM</b>
 <p>PWM is not supported in the Hardkernel Odroid WiringPi port. Thus PWM is not currently supported by Pi4J for the Odroid C1/C1+/C2 boards.</p></li>
 <li><b>WiringPi SoftPWM</b>

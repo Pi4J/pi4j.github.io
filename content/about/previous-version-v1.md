@@ -14,7 +14,7 @@ weight: 20
 * Changed project to Apache License, Version 2.0
 * Removed pi4j-device and pi4j-gpio-extension library
 * Removed platform support for Odroid, BananaPi, BPi, NanoPi, OrangePi
-* Various improvements and bug fixes listed here: [GitHub Issues (v1.4)](https://github.com/Pi4J/pi4j/milestone/9?closed=1)
+* Various improvements and bug fixes listed here: [GitHub Issues (v1.4)](https://github.com/Pi4J/pi4j-v1/milestone/9?closed=1)
 * Not using Java-modules yet, this will be part of the V.2
 * [Documentation website V1.4](/1.4/index.html)
 
@@ -22,7 +22,7 @@ weight: 20
 
 * Released 2021-01-29
 * Added support for Raspberry Pi 4B, 400, and Compute Module 4
-* Various improvements and bug fixes listed here: [GitHub Issues (v1.3)](https://github.com/Pi4J/pi4j/milestone/10?closed=1)
+* Various improvements and bug fixes listed here: [GitHub Issues (v1.3)](https://github.com/Pi4J/pi4j-v1/milestone/10?closed=1)
 * Based on JDK8
 * [Documentation website V1.3](/1.3/index.html)
 
