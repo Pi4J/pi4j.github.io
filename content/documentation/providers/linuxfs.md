@@ -2,11 +2,18 @@
 title: LinuxFS
 ---
 
-The current implementation of the LinuxFS plugin implements a file based I2C provider. The file based provider opens `/dev/i2c-1` using a `RandomAccessFile` to perform I2C reads and writes.
+The current implementation of the LinuxFS plugin implements a file based I2C provider. The file based provider opens 
+`/dev/i2c-1` using a `RandomAccessFile` to perform I2C reads and writes.
+
+Providers in the LinuxFS plugin:
+
+* linuxfs-digital-input
+* linuxfs-digital-output
+* linuxfs-i2c
 
 To use the LinuxFS provider first add the proper dependency:
 
-```xml
+``` xml
 <dependency>
     <groupId>com.pi4j</groupId>
     <artifactId>pi4j-plugin-linuxfs</artifactId>
@@ -16,7 +23,7 @@ To use the LinuxFS provider first add the proper dependency:
 
 And then one can get access to the provider as follows:
 
-```java
+``` java
 Context pi4j = Pi4J.newAutoContext();
 I2CProvider i2CProvider = pi4j.provider("linuxfs-i2c");
 I2CConfig i2cConfig = I2C.newConfigBuilder(pi4j).id("TCA9534").bus(1).device(0x3f).build();
