@@ -6,12 +6,12 @@ The current implementation of the PiGpio exposes the GPIO functions available on
 
 Providers in the PiGpio plugin:
 
-* raspberrypi-digital-input
-* raspberrypi-digital-output
-* raspberrypi-pwm
-* raspberrypi-i2c
-* raspberrypi-spi
-* raspberrypi-serial
+* pigpio-digital-input
+* pigpio-digital-output
+* pigpio-pwm
+* pigpio-i2c
+* pigpio-spi
+* pigpio-serial
 
 To use the LinuxFS provider first add the proper dependency:
 
