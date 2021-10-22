@@ -7,8 +7,6 @@ The current implementation of the LinuxFS plugin implements a file based I2C pro
 
 Providers in the LinuxFS plugin:
 
-* linuxfs-digital-input
-* linuxfs-digital-output
 * linuxfs-i2c
 
 To use the LinuxFS provider first add the proper dependency:
