@@ -13,7 +13,7 @@ Providers in the PiGpio plugin:
 * pigpio-spi
 * pigpio-serial
 
-To use the LinuxFS provider first add the proper dependency:
+To use the PiGpio provider first add the proper dependency:
 
 ``` xml
 <dependency>
