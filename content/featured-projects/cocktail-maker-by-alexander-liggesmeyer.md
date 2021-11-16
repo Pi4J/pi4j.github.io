@@ -15,6 +15,8 @@ written with VueJS.
 
 {{< gallery >}}
 {{< figure link="/assets/featured-projects/cocktail/cocktailmaker_circuit.png" caption="" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/featured-projects/cocktail/screen-login.png" caption="" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/featured-projects/cocktail/screen-cocktail.png" caption="" caption-position="center" caption-effect="fade" >}}
 {{< figure link="/assets/featured-projects/cocktail/20211116_100823.jpg" caption="" caption-position="center" caption-effect="fade" >}}
 {{< figure link="/assets/featured-projects/cocktail/20211116_100734.jpg" caption="" caption-position="center" caption-effect="fade" >}}
 {{< figure link="/assets/featured-projects/cocktail/20211116_100717.jpg" caption="" caption-position="center" caption-effect="fade" >}}
