@@ -33,9 +33,13 @@ the Java JDK (JRE it is enough), Maven and the other development tools.
     - You can't run Web applications (using a web container like Tomcat or similar)
 
 ## Setting up
+
 ### Configure the RPi for Headless mode
+
 The _Headless Mode_ configuration enables the RPi board to communicate with the RDW over SSH protocol.
+
 These are the needed steps:
+
 - Check if the RDW is equipped with a SSH Client. If the RDW OS is Linux you already have it 
 - For Windows you can use _putty_, _MobaXterm_ or you can enable the (new) OpenSsh Client porting on Windows 10
 - Connect both the RPi and RDW to your local network
@@ -44,24 +48,32 @@ to configure your RPi
 - Install the Maven tool on the RDW
 
 You should now be able to open a SSH Terminal window on RDW and to remotely login on the RPi board.
+
 ### Install the _raspimaven-archetype_
-- Goto the [Github Pi4J Project](https://github.com/Pi4J/pi4j-maven-archetype "raspimaven-archetype") and download the project
+
+Goto the [Github Pi4J Project](https://github.com/Pi4J/pi4j-maven-archetype "raspimaven-archetype") and download the project
 clicking on the green _Code_ button and selecting _Download ZIP_
-- Unzip the archetype file in an empty folder, let say _my-folder_
-- `cd my-folder/raspimaven-archetype`
+
+- Unzip the archetype file in a _FOLDER_
+- `cd FOLDER/pi4j-maven-archetype-master`
 - `mvn install`
 
 _Congratulation ! - Now you are ready to generate your first **Project Template**_
 
 ### Generate a new Project Template
+
 Let suppose you want to begin the new wonderful PI4J-V2 project _my-project_, to do this follow these steps:
+
 - `mkdir my-project`
 - `cd my-project`
 - `mvn archetype:generate -DarchetypeCatalog=local`
 - answer to the questions the archetype asks you (see below for details)
+
 ### Configuring your new project
+
 Before starting the new project generation, the archetype asks some configuration data. The list of question
 and the replies are shown here below:
+
 1. _Choose archetype:_ **select the _raspimaven-archetype_ from the list proposed**
 1. _Define value for property 'groupId':_ **choose the Maven groupId for your project.** (If don't know what is a groupId, don't worry, just type _"com.example"_ for now)
 1. _Define value for property 'artifactId':_ **choose a name for the program executable your project will produce**
@@ -73,12 +85,43 @@ If the list is ok for you, reply _Y_ to accept, otherwise reply _N_ to change on
 
 After the list confirmation, the archetype generates a new maven project template for you. 
 
+#### Note on the Java runtime
+
+If you are not using the default Raspberry Pi OS full edition and/or included Java, you may get this kind of error:
+
+```shell
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-antrun-plugin:3.0.0:run (exec) on project ...: An Ant BuildException has occured: The following error occurred while executing this line:
+[ERROR] ...\antrun\build.xml:166: The following error occurred while executing this line:
+[ERROR] ...\antrun\build.xml:123: Remote command failed with exit status 1
+[ERROR] around Ant part ...... @ 9:59 in ...\antrun\build-main.xml
+```
+
+This can be caused by a mis-configured Java runtime. The default value in `raspberry.properties` is:
+
+```
+target.remote.jre=/usr/lib/jvm/default-java
+```
+
+Check if this value exists and links to your Java runtime, or find the location of your installed JDK with
+`sudo find / -iname java` and use the result in your configuration.
+
+For instance: a Raspberry Pi Zero (type 1) with ARMv6 requires a specific Java version for this type of processor. This
+is described more in detail on ["Java for ARMv6/7/8](https://pi4j.com/documentation/java-installation/). If you use Azul
+Zulu JDK, you will need to change the configuration to:
+
+```
+target.remote.jre=/usr/lib/jvm/zulu11.41.75-ca-jdk11.0.8-linux_aarch32hf
+```
+
 **Congratulations** 
 
 You should be able to open the new project with your preferred java IDE. The IDE should be able
 to recognize the project as a valid Maven project.
+
 ### Explore the new project template
+
 Feel free to explore the new project familiarizing with the folder structure. These are the most important features:
+
 - The file README.md contains the intruction to configure the connection(s) to your RPi board(s) and the decription of the Maven
 commands to build your project, transfer the executable code to the target RPi, run it and also open a debugger session.
 - The _pom.xml_ file already includes the dependencies needed to compile your program with the JPi4J-V2 libraries.
