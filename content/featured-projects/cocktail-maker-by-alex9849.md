@@ -3,7 +3,7 @@ title: 'Cocktail Maker'
 weight: 65
 ---
 
-The CocktailMaker is a cocktail mixing machine by [Alexander Liggesmeyer](https://alexander.liggesmeyer.net/). It can 
+The CocktailMaker is a cocktail mixing machine by [Alexander Liggesmeyer](https://github.com/alex9849/pi-cocktail-maker). It can 
 control as many pumps as the RaspberryPi provides GPIO pins. For every pump that gets added to the system, the user has 
 to provide the amount of time that that pump needs to pump one centiliter in milliseconds. The machine uses peristaltic 
 pumps. So that number is perfectly accurate. The flow rate won't vary over time. It uses a relay board for closing the 
@@ -31,22 +31,24 @@ written with VueJS.
 
 * Pumping ingredients in sequential order.
 * Pumping ingredients concurrently and mixing them by spreading the active pump timings within the productionstep.
-* Ingredients that cannot be added automatically (maybe because they didn't get assigned to one pump or are simply not liquid) can be handled. If a recipe with a non-pumpable ingredient got ordered the application will prompt the user to add that ingredient at the corresponding point.
-* Recipes can be resized for every order. The user decides the size of the cocktail he wants to order. All ingredients amount will get recalculated automatically.
+* Ingredients that cannot be added automatically (maybe because they didn't get assigned to one pump or are simply not liquid) 
+can be handled. If a recipe with a non-pumpable ingredient got ordered the application will prompt the user to add that 
+ingredient at the corresponding point.
+* Recipes can be resized for every order. The user decides the size of the cocktail he wants to order. All ingredients 
+amount will get recalculated automatically.
 * A drag & drop recipe editor.
 * Recipes can be categorized.
 * Collections: Users can create collections and add recipes to them.
-* Bar: Users can add owned ingredients to their bar. The application can search for recipes that he can order with the owned recipes. If the user tries to order a recipe where he doesn't own all ingredients he will get a warning.
-* The cocktail maker can search for recipes that can be produced fully automatic. (Won't require the user to add ingredients manually)
+* Bar: Users can add owned ingredients to their bar. The application can search for recipes that he can order with the 
+owned recipes. If the user tries to order a recipe where he doesn't own all ingredients he will get a warning.
+* The cocktail maker can search for recipes that can be produced fully automatic. (Won't require the user to add ingredients 
+manually)
 * Recipes can be searched by ingredients.
-* Multiple users & permission system: The admin can create new users and assign them to predefined groups, that have different permissions.
-
-### Ideas for the future
-
-The next update will also allow the application to track the remaining amount of liquid of the connected bottles and 
-prevent an order if the remaining liquid doesn't reach. It is also able to switch between pumps on the fly. If one order 
-empties one bottle, but another bottle with the same ingredient is connected, the application will empty the first 
-container and will switch to the second one mid-production. 
+* Multiple users & permission system: The admin can create new users and assign them to predefined groups, that have different 
+permissions.
+* Track the remaining amount of liquid of the connected bottles and prevent an order if the remaining liquid doesn't reach. 
+It is also able to switch between pumps on the fly. If one order empties one bottle, but another bottle with the same ingredient 
+is connected, the application will empty the first container and will switch to the second one mid-production. 
 
 ### Docker deployment
 
