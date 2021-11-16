@@ -1,5 +1,5 @@
 ---
-title: 'Soft real time PLC with Strolch'
+title: 'Soft real time PLC'
 weight: 55
 ---
 

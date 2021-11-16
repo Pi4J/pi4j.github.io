@@ -1,5 +1,5 @@
 ---
-title: 'PiJukeBox by Daniel Mårtensson'
+title: 'PiJukeBox'
 weight: 60
 ---
 
