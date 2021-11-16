@@ -83,7 +83,12 @@ and the replies are shown here below:
 The archetype now shows you a summary of the configuration parameters you have just typed in, plus the values proposed for the _main-class_ and _package_ parameters.
 If the list is ok for you, reply _Y_ to accept, otherwise reply _N_ to change one or more values (you will have to re-type all parameter values ...)
 
-After the list confirmation, the archetype generates a new maven project template for you. 
+After the list confirmation, the archetype generates a new maven project template for you.
+
+**Congratulations**
+
+You should be able to open the new project with your preferred java IDE. The IDE should be able
+to recognize the project as a valid Maven project.
 
 #### Note on the Java runtime
 
@@ -106,17 +111,12 @@ Check if this value exists and links to your Java runtime, or find the location 
 `sudo find / -iname java` and use the result in your configuration.
 
 For instance: a Raspberry Pi Zero (type 1) with ARMv6 requires a specific Java version for this type of processor. This
-is described more in detail on ["Java for ARMv6/7/8](https://pi4j.com/documentation/java-installation/). If you use Azul
+is described more in detail on ["Java for ARMv6/7/8"](https://pi4j.com/documentation/java-installation/). If you use Azul
 Zulu JDK, you will need to change the configuration to:
 
 ```
 target.remote.jre=/usr/lib/jvm/zulu11.41.75-ca-jdk11.0.8-linux_aarch32hf
 ```
-
-**Congratulations** 
-
-You should be able to open the new project with your preferred java IDE. The IDE should be able
-to recognize the project as a valid Maven project.
 
 ### Explore the new project template
 
