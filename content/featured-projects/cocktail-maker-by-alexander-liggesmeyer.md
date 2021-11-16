@@ -3,8 +3,6 @@ title: 'Cocktail Maker'
 weight: 65
 ---
 
-### Project description 
-
 The CocktailMaker is a cocktail mixing machine by [Alexander Liggesmeyer](https://alexander.liggesmeyer.net/). It can 
 control as many pumps as the RaspberryPi provides GPIO pins. For every pump that gets added to the system, the user has 
 to provide the amount of time that that pump needs to pump one centiliter in milliseconds. The machine uses peristaltic 
