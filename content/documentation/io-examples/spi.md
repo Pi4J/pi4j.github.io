@@ -45,6 +45,7 @@ Initialize the Pi4J Context with a provider which supports SPI fully, e.g. the P
 would be:
 
 ```java
+var piGpio = PiGpio.newNativeInstance();
 var pi4j = Pi4J.newContextBuilder()
     .noAutoDetect()
     .add(
@@ -56,6 +57,7 @@ var pi4j = Pi4J.newContextBuilder()
 Depending on the type of GPIOs you need in your project this could be further extended to e.g.:
 
 ```java
+var piGpio = PiGpio.newNativeInstance();
 var pi4j = Pi4J.newContextBuilder()
     .noAutoDetect()
     .add(
