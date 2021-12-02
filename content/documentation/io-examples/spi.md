@@ -41,6 +41,34 @@ with two different slaves use what is called Chip Select Pins is controlled.
 
 ## Code example 
 
+Initialize the Pi4J Context with a provider which supports SPI fully, e.g. the PiGpioSpiProvider. The minimal example 
+would be:
+
+```java
+var pi4j = Pi4J.newContextBuilder()
+    .noAutoDetect()
+    .add(
+        PiGpioSpiProvider.newInstance(piGpio)
+    )
+    .build();
+```
+
+Depending on the type of GPIOs you need in your project this could be further extended to e.g.:
+
+```java
+var pi4j = Pi4J.newContextBuilder()
+    .noAutoDetect()
+    .add(
+        PiGpioDigitalInputProvider.newInstance(piGpio),
+        PiGpioDigitalOutputProvider.newInstance(piGpio),
+        PiGpioPwmProvider.newInstance(piGpio),
+        PiGpioI2CProvider.newInstance(piGpio),
+        PiGpioSerialProvider.newInstance(piGpio),
+        PiGpioSpiProvider.newInstance(piGpio)
+    )
+    .build();
+```
+
 The following example is an extract of the [CrowPi example project](/getting-started/crowpi/) which includes
 a component to control an 8x8 LED matrix display with an MAX7219 driver chip which is controlled via SPI.
 
