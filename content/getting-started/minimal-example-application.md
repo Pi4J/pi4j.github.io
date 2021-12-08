@@ -254,3 +254,12 @@ LED low
 LED high
 Button was pressed for the 5th time
 ``` 
+
+* If you get an error like shown below, you probably didn't start the application with `sudo`, which is (at the moment) required for the
+PiGpio native library that handles the interfacing with the GPIOs.
+
+```shell
+WARN com.pi4j.library.pigpio.impl.PiGpioNativeImpl 
+    - PIGPIO ERROR: PI_INIT_FAILED; pigpio initialisation failedWARN com.pi4j.library.pigpio.impl.PiGpioNativeImpl 
+    - PIGPIO ERROR: PI_INIT_FAILED; pigpio initialisation failed
+```
