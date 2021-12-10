@@ -4,5 +4,3 @@ weight: 40
 ---
 
 Release notes of Pi4J V2 are available on [github.com/Pi4J/pi4j-v2/releases](https://github.com/Pi4J/pi4j-v2/releases).
-
-<iframe src="https://github.com/Pi4J/pi4j-v2/releases" style="width: 100%; height: 100vh;"></iframe>
