@@ -34,7 +34,7 @@ The pom.xml-file uses the `maven-assembly-plugin` plugin to create the FAT JAR:
         <archive>
             <manifest>
                 <addClasspath>true</addClasspath>
-                <mainClass>be.webtechie.pi4jgpio.App</mainClass>
+                <mainClass>com.pi4j.example.MinimalExample</mainClass>
             </manifest>
         </archive>
     </configuration>
