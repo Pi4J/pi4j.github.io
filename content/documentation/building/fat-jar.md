@@ -107,3 +107,33 @@ com.pi4j.plugin.pigpio.PiGpioPlugin
 com.pi4j.plugin.raspberrypi.RaspberryPiPlugin
 ```
 
+When using `maven-shade-plugin` instead of `maven-assembly-plugin` more output is given which actually shows this exact problem:
+
+``` 
+[INFO] Including org.slf4j:slf4j-api:jar:1.7.32 in the shaded jar.
+[INFO] Including org.slf4j:slf4j-simple:jar:1.7.32 in the shaded jar.
+[INFO] Including com.pi4j:pi4j-core:jar:2.0 in the shaded jar.
+[INFO] Including com.pi4j:pi4j-plugin-raspberrypi:jar:2.0 in the shaded jar.
+[INFO] Including com.pi4j:pi4j-plugin-pigpio:jar:2.0 in the shaded jar.
+[INFO] Including com.pi4j:pi4j-library-pigpio:jar:2.0 in the shaded jar.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] pi4j-core-2.0.jar, pi4j-example-fatjar-0.0.1.jar, pi4j-library-pigpio-2.0.jar, pi4j-plugin-pigpio-2.0.jar, pi4j-plugin-raspberrypi-2.0.jar, slf4j-api-1.7.32.jar, slf4j-simple-1.7.32.jar define 1 overlapping resource:
+[WARNING]   - META-INF/MANIFEST.MF
+[WARNING] pi4j-core-2.0.jar, pi4j-library-pigpio-2.0.jar, pi4j-plugin-pigpio-2.0.jar, pi4j-plugin-raspberrypi-2.0.jar define 3 overlapping resources:
+[WARNING]   - LICENSE.txt
+[WARNING]   - NOTICE.txt
+[WARNING]   - README.md
+[WARNING] pi4j-plugin-pigpio-2.0.jar, pi4j-plugin-raspberrypi-2.0.jar define 1 overlapping resource:
+[WARNING]   - META-INF/services/com.pi4j.extension.Plugin
+[WARNING] maven-shade-plugin has detected that some class files are
+[WARNING] present in two or more JARs. When this happens, only one
+[WARNING] single version of the class is copied to the uber jar.
+[WARNING] Usually this is not harmful and you can skip these warnings,
+[WARNING] otherwise try to manually exclude artifacts based on
+[WARNING] mvn dependency:tree -Ddetail=true and the above output.
+[WARNING] See http://maven.apache.org/plugins/maven-shade-plugin/
+```
