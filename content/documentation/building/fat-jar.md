@@ -137,3 +137,8 @@ When using `maven-shade-plugin` instead of `maven-assembly-plugin` more output i
 [WARNING] mvn dependency:tree -Ddetail=true and the above output.
 [WARNING] See http://maven.apache.org/plugins/maven-shade-plugin/
 ```
+
+## Probably related issues in Apache JIRA
+
+* [MASSEMBLY-891: Multi-release JAR files aren't handled correctly](https://issues.apache.org/jira/browse/MASSEMBLY-891)
+* [MASSEMBLY-916: When using mulitple Spring dependencies, the files from META-INF (from the Spring jars) overwrite each other in an executable jar-with-dependencies.](https://issues.apache.org/jira/browse/MASSEMBLY-916)
