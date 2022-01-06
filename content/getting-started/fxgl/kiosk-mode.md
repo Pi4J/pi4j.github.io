@@ -1,6 +1,6 @@
 ---
 title: JavaFX kiosk mode
-weight: 80
+weight: 82
 ---
 
 {{% notice note %}}
