@@ -54,8 +54,8 @@ When building the project with `mvn package` the following two files are created
 
 | File                                                | File size |
 |:----------------------------------------------------|----------:|
-| pi4j-example-fatjar-0.0.1.jar                       | 6 KB      |
-| pi4j-example-fatjar-0.0.1-jar-with-dependencies.jar |    538 KB |
+| pi4j-example-fatjar-0.0.1.jar                       |      6 KB |
+| pi4j-example-fatjar-0.0.1-jar-with-dependencies.jar |    538 KB |  
 
 As a jar-file is actually a zip-file, we can easily check the contents
 
@@ -72,7 +72,8 @@ As a jar-file is actually a zip-file, we can easily check the contents
 
 ## Problem to load the Pi4J modules
 
-Pi4J V2 uses ServiceLoader to detect which modules are available to communicate with the GPIOs. This allows to very dynamically extend the possibilities of the framework.
+Pi4J V2 uses ServiceLoader to detect which modules are available to communicate with the GPIOs. This allows to very 
+dynamically extend the possibilities of the framework.
 
 Code extract from [pi4j-core/src/.../runtime/impl/DefaultRuntime.java](https://github.com/Pi4J/pi4j-v2/blob/develop/pi4j-core/src/main/java/com/pi4j/runtime/impl/DefaultRuntime.java#L224):
 
@@ -81,4 +82,28 @@ Code extract from [pi4j-core/src/.../runtime/impl/DefaultRuntime.java](https://g
 var plugins = ServiceLoader.load(Plugin.class);
 ```
 
-TODO further explain problem here...
+The problem is located here as every module has a com.pi4j.extension.Plugin file. When you make a fat jar, only one of 
+those files survives and thus the module for which the service file doesn't exist anymore in the fat jar isn't loaded.
+
+In the example file we only see the file com.pi4j.plugin.raspberrypi.RaspberryPiPlugin entry, thus missing all the other plugins.
+
+![Unpacked fat jar with the problem META-INF file](/assets/documentation/fat-jar-problem.png)
+
+The content of this file only contains a single plugin:
+
+```
+com.pi4j.plugin.raspberrypi.RaspberryPiPlugin
+```
+
+If we look into the sources of the Pi4J V2 project, we see each file has its own META-INF service file.
+
+![The META-INF files of all plugins](/assets/documentation/plugin-meta-inf-files.png)
+
+So would probably need the combined results in the fat jar META-INF file?
+
+``` 
+com.pi4j.plugin.linuxfs.LinuxFsPlugin
+com.pi4j.plugin.pigpio.PiGpioPlugin
+com.pi4j.plugin.raspberrypi.RaspberryPiPlugin
+```
+
