@@ -6,9 +6,8 @@ weight: 162
 {{% notice note %}}
 Pi4J V2 projects as FAT JAR don't work at this moment.
 <br/><br/>
-This document is a description of the current problem in preparation of a discussion to find a solution... 
-<br/><br/>
-Related to the ongoing discussion on ["Pros and Cons for the modular approach and what can be improved?"](https://github.com/Pi4J/pi4j-v2/discussions/178)
+This document is a description of the current problem related to the ongoing discussion on 
+["Pros and Cons for the modular approach and what can be improved?"](https://github.com/Pi4J/pi4j-v2/discussions/178)
 {{% /notice %}}
 
 ## About FAT JARs
