@@ -4,6 +4,10 @@ weight: 164
 tags: ["Gradle"]
 ---
 
+{{% notice note %}}
+GITHUB PROJECT: [https://github.com/Pi4J/pi4j-example-minimal](https://github.com/Pi4J/pi4j-example-minimal)
+{{% /notice %}}
+
 The Pi4J V2 project itself uses Maven and most example projects also use this build tool. But if you prefer to use Gradle,
 you can start with a copy of the ["Minimal example application"](/getting-started/minimal-example-application/) which includes
 all the required files to build with Gradle.
@@ -24,7 +28,7 @@ On Windows:
 
 ```
 gradlew.bat build
-```
+```r
 
 ## Build result
 

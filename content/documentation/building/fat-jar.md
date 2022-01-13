@@ -4,6 +4,10 @@ weight: 162
 tags: ["FatJAR"]
 ---
 
+{{% notice note %}}
+EXAMPLE PROJECT: [https://github.com/Pi4J/pi4j-example-fatjar](https://github.com/Pi4J/pi4j-example-fatjar)
+{{% /notice %}}
+
 ## About FAT JARs
 
 With Pi4J V1 you can create a so-called FAT JAR, which packages all the dependencies into one jar-file. That way it is
@@ -14,9 +18,7 @@ the maven-shade-plugin.
 
 ## Example FAT JAR project
 
-{{% notice note %}}
-EXAMPLE PROJECT: [https://github.com/Pi4J/pi4j-example-fatjar](https://github.com/Pi4J/pi4j-example-fatjar)
-{{% /notice %}}
+Check the example project (link on top of this page) for the full README, pom.xml and sources.
 
 ### Maven plugins
 

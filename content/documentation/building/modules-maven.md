@@ -4,6 +4,10 @@ weight: 163
 tags: ["Maven"]
 ---
 
+{{% notice note %}}
+GITHUB PROJECT: [https://github.com/Pi4J/pi4j-example-minimal](https://github.com/Pi4J/pi4j-example-minimal)
+{{% /notice %}}
+
 Because the Pi4J V2 project follows the modular approach of Java, the functionality of the framework has been split into
 different modules, each with their own responsibility. 
 
