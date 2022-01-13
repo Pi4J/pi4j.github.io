@@ -1,6 +1,7 @@
 ---
 title: Develop with Intellij IDEA
 weight: 62
+tags: ["CrowPi"]
 ---
 
 In this tutorial, IntelliJ IDEA is used for the development. The articles, instructions and pictures are created accordingly. 

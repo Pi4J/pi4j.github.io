@@ -1,6 +1,7 @@
 ---
 title: CrowPi OS
 weight: 61
+tags: ["CrowPi"]
 ---
 
 You can start experimenting with the default Raspberry Pi OS, but to make things easier a prepackaged OS is available

@@ -1,6 +1,7 @@
 ---
 title: Electronics with CrowPi
 weight: 60
+tags: ["CrowPi"]
 ---
 
 {{% notice note %}}
