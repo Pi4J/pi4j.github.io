@@ -40,7 +40,7 @@ mvn clean package
 
 You can also use the Gradle Build Tool from these same sources. Use version 6.6 (or later) and Java 11 OpenJDK (or later). 
 The Gradle wrapper is used as described on [docs.gradle.org](https://docs.gradle.org/current/userguide/gradle_wrapper.html).
-The Gradle configuraion file [build.gradle-file](https://github.com/Pi4J/pi4j-example-minimal/blob/master/build.gradle) 
+The Gradle configuration file [build.gradle-file](https://github.com/Pi4J/pi4j-example-minimal/blob/master/build.gradle) 
 is included in the sources.
 
 On Linux:
@@ -59,7 +59,8 @@ gradlew.bat build
 
 For the Maven approach, a pom.xml file defines all the dependencies, and the build process.
 
-In this project we will be using slf4 for logging, pi4j-core and the pi4j-plugins for the Raspberry Pi and PiGPIO. To make the versions easy to update, we add those numbers as properties. 
+In this project we will be using slf4 for logging, pi4j-core and the pi4j-plugins for the Raspberry Pi and PiGPIO. To 
+make the versions easy to update, we add those numbers as properties. 
 
 ```xml
 <properties>
@@ -111,7 +112,9 @@ These are the dependencies we need:
 
 Before you can use Pi4J you must initialize a new runtime context.
 
-The 'Pi4J' static class includes a few helper context creators for the most common use cases.  The 'newAutoContext()' method will automatically load all available Pi4J extensions found in the application's classpath which may include 'Platforms' and 'I/O Providers'.
+The `Pi4J` static class includes a few helper context creators for the most common use cases.  The `newAutoContext()`
+method will automatically load all available Pi4J extensions found in the application's classpath which may include 
+`Platforms` and `I/O Providers`.
         
 ```java
 var pi4j = Pi4J.newAutoContext();
@@ -119,7 +122,8 @@ var pi4j = Pi4J.newAutoContext();
 
 ### Output Pi4J Context information
 
-The library contains helper functions to output info about the available and used platforms and providers. To keep the example code clean, these are part of the "PrintInfo.java" class. For example to print the loaded platforms:
+The library contains helper functions to output info about the available and used platforms and providers. To keep the 
+example code clean, these are part of the `PrintInfo.java` class. For example to print the loaded platforms:
 
 ```java
 Platforms platforms = pi4j.platforms();
@@ -132,7 +136,8 @@ console.println();
 
 ### Handle the button presses
 
-To handle digital input events we first need a configuration for it. With that configuration, Pi4J can create the object for us and the state changes can be handled.
+To handle digital input events we first need a configuration for it. With that configuration, Pi4J can create the object 
+for us and the state changes can be handled.
 
 ```java
 private static int pressCount = 0;
@@ -185,7 +190,9 @@ while (pressCount < 5) {
 
 ### Closing the application
 
-Before the application quits, we need to call the 'shutdown()' function on the Pi4J static helper class. This will ensure that all I/O instances are properly shutdown, released by the the system and shutdown in the appropriate manner. Terminate will also ensure that any background threads/processes are cleanly shutdown and any used memory is returned to the system.
+Before the application quits, we need to call the `shutdown()` function on the Pi4J static helper class. This will ensure 
+that all I/O instances are properly shutdown, released by the system and shutdown in the appropriate manner. Termination 
+will also ensure that any background threads/processes are cleanly shutdown and any used memory is returned to the system.
 
 ```java
 pi4j.shutdown();
@@ -211,7 +218,8 @@ $ cd pi4j-example-minimal/
 $ mvn clean package
 ``` 
 
-* Change to the distribution directory where you can find the generated package and required Java-modules. Start it with the provided run.sh script:
+* Change to the distribution directory where you can find the generated package and required Java-modules. Start it with 
+the provided `run.sh` script:
 
 ```shell
 $ cd target/distribution
@@ -228,7 +236,8 @@ total 644
 $ sudo ./run.sh
 ``` 
 
-* The output will first show you some info about the platforms and providers. Then the LED starts blinking and shows how much times you pushed the button:
+* The output will first show you some info about the platforms and providers. Then the LED starts blinking and shows how 
+many times you pushed the button:
 
 ```shell
 LED high
@@ -255,8 +264,8 @@ LED high
 Button was pressed for the 5th time
 ``` 
 
-* If you get an error like shown below, you probably didn't start the application with `sudo`, which is (at the moment) required for the
-PiGpio native library that handles the interfacing with the GPIOs.
+* If you get an error like shown below, you probably didn't start the application with `sudo`, which is (at the moment) 
+required for the PiGpio native library that handles the interfacing with the GPIOs.
 
 ```shell
 WARN com.pi4j.library.pigpio.impl.PiGpioNativeImpl 

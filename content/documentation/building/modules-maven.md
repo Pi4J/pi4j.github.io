@@ -1,11 +1,8 @@
 ---
 title: Build Java modules with Maven
-weight: 161
+weight: 163
+tags: ["Maven"]
 ---
-
-{{% notice note %}}
-At this moment this is the only way to distribute a Pi4J V2 project.
-{{% /notice %}}
 
 Because the Pi4J V2 project follows the modular approach of Java, the functionality of the framework has been split into
 different modules, each with their own responsibility. 
@@ -16,13 +13,14 @@ directory.
 
 Take for instance a look at the ["Minimal example application"](/getting-started/minimal-example-application/).
 
-When building this project with ...
+Build your project with:
 
 ```shell
 $ mvn clean package
 ``` 
 
-... you will find the generated package and required Java-modules and can start your application with the provided run.sh script:
+When finished, you will find the generated package and required Java-modules and can start your application with the 
+provided run.sh script:
 
 ```shell
 $ cd target/distribution

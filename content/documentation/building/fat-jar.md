@@ -1,6 +1,7 @@
 ---
 title: Build as a FAT JAR with Maven
 weight: 162
+tags: ["FatJAR"]
 ---
 
 ## About FAT JARs
