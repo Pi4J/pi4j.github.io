@@ -32,15 +32,11 @@ You will need to download the pi4J distribution from the Maven maven repository:
 
 Expand the file:
 
-```shell
-$ unzip pi4j-distribution-2.1.1.zip`
-```
+`unzip pi4j-distribution-2.1.1.zip`
 
 Add the lib directory to CLASSPATH by added this line to your .bashrc file:
 
-```
-export CLASSPATH=$CLASSPATH:~/pi4j-2.1.1/lib/*
-```
+`export CLASSPATH=$CLASSPATH:~/pi4j-2.1.1/lib/*`
 
 ## Minimal Java example file
 
@@ -97,15 +93,15 @@ public class GettingStartedExample {
 
 ## Compile the example
 
-`$ javac GettingStartedExample.java`
+`javac GettingStartedExample.java`
 
 ## Execute the example
 
-`$ java GettingStartedExample`
+`java GettingStartedExample`
 
 If everything is OK the output must be something similar depending on  your configuration:
 
-```
+```shell
 [main] INFO com.pi4j.util.Console - 
 
 [main] INFO com.pi4j.util.Console - ************************************************************
