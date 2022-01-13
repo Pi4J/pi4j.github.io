@@ -1,5 +1,5 @@
 ---
-title: Build Java modules with Maven
+title: Build Java modules with Gradle
 weight: 164
 tags: ["Gradle"]
 ---

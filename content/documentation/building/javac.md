@@ -164,3 +164,7 @@ REGISTRY: [1] "I/O Registered Instances" <com.pi4j.registry.impl.DefaultRegistry
 ??IO: "DOUT-1" {my-digital-output-1} <com.pi4j.plugin.raspberrypi.provider.gpio.digital.RpiDigitalOutput> {DOUT-1} 
 [main] INFO com.pi4j.util.Console - 
 ```
+
+---
+
+*Thanks to Manuel de Vega Barreiro for this contribution.*

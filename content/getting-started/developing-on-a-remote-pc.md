@@ -129,3 +129,6 @@ commands to build your project, transfer the executable code to the target RPi, 
 - The _platform_ folder contains an example configuration file for connecting to you RPi board. Read the README.md explanation,
 open the _platform/raspberry.properties_ file (or copy it to a new file) and edit it to describe how to connect to your RPi
 
+---
+
+*Thanks to Adi and Luca Buraggi for this contribution.*
