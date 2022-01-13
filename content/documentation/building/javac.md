@@ -13,12 +13,10 @@ Pi4J.
 
 ## Java release
 
-Any Java release over 11 is enough.
-
-Check this using this command:
+Any Java release over 11 is enough, check it with this command:
 
 ```shell
-$ java --version`
+$ java -version
 java 17.0.1 2021-10-19 LTS
 Java(TM) SE Runtime Environment (build 17.0.1+12-LTS-39)
 Java HotSpot(TM) 64-Bit Server VM (build 17.0.1+12-LTS-39, mixed mode, sharing)
@@ -26,7 +24,7 @@ Java HotSpot(TM) 64-Bit Server VM (build 17.0.1+12-LTS-39, mixed mode, sharing)
 
 ## PI4J jar files
 
-You will need to download the pi4J distribution from the Maven maven repository:
+You will need to download the Pi4J distribution from the Maven repository:
 
 [pi4j-distribution-2.1.1.zip](https://repo1.maven.org/maven2/com/pi4j/pi4j-distribution/2.1.1/pi4j-distribution-2.1.1.zip)
 
@@ -99,7 +97,7 @@ public class GettingStartedExample {
 
 `java GettingStartedExample`
 
-If everything is OK the output must be something similar depending on  your configuration:
+If everything is OK the output must be something similar to this, depending on your configuration:
 
 ```shell
 [main] INFO com.pi4j.util.Console - 
