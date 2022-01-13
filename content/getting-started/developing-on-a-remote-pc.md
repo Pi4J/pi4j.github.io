@@ -1,6 +1,7 @@
 ---
 title: Developing on a remote PC
 weight: 45
+tags: ["Maven"]
 ---
 
 {{% notice note %}}

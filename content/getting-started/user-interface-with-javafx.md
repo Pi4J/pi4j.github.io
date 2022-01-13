@@ -1,7 +1,7 @@
 ---
 title: User interface with JavaFX
 weight: 70
-tags: ["Digital Input", "Digital Output", "JavaFX"]
+tags: ["Digital Input", "Digital Output", "JavaFX", "Maven"]
 ---
 
 {{% notice note %}}

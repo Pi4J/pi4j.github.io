@@ -1,7 +1,7 @@
 ---
 title: Minimal example application
 weight: 50
-tags: ["Digital Input", "Digital Output"]
+tags: ["Digital Input", "Digital Output", "Maven", "Gradle"]
 ---
 
 {{% notice note %}}

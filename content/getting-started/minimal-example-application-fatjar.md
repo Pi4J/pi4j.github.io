@@ -1,7 +1,7 @@
 ---
 title: Minimal example as FAT JAR
 weight: 50
-tags: ["Digital Input", "Digital Output"]
+tags: ["Digital Input", "Digital Output", "FatJAR"]
 ---
 
 {{% notice note %}}

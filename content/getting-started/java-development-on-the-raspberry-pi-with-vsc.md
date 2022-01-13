@@ -1,6 +1,7 @@
 ---
 title: Java development with VSC
 weight: 40
+tags: ["Visual Studio Code"]
 ---
 
 ## Java on the Raspberry Pi

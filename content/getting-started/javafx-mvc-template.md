@@ -1,7 +1,7 @@
 ---
 title: JavaFX GUI and MVC template
 weight: 90
-tags: ["Digital Input", "Digital Output", "JavaFX"]
+tags: ["Digital Input", "Digital Output", "JavaFX", "Maven"]
 ---
 
 {{% notice note %}}
