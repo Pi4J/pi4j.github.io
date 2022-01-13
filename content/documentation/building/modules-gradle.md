@@ -20,15 +20,11 @@ Use Gradle version 6.6 (or later) and Java 11 OpenJDK (or later). The Gradle wra
 
 On Linux:
 
-```
-./gradlew build
-```
+`./gradlew build`
 
 On Windows:
 
-```
-gradlew.bat build
-```r
+`gradlew.bat build`
 
 ## Build result
 
@@ -54,7 +50,7 @@ This is the list of files created by the build process of this example applicati
 
 Make the run script executable and start it like this:
 
-```
-chmod +x run.sh
-sudo ./run.sh
+```shell
+$ chmod +x run.sh
+$ sudo ./run.sh
 ```
