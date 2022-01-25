@@ -5,7 +5,7 @@ tags: ["Serial"]
 ---
 
 {{% notice note %}}
-GITHUB PROJECT: [https://github.com/Pi4J/pi4j-example-serial/](https://github.com/Pi4J/pi4j-example-serial/)
+GITHUB PROJECT: [https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/example/serial/gps](https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/example/serial/gps)
 {{% /notice %}}
 
 ## What is it?
@@ -166,12 +166,6 @@ You can get the full working example from GitHub and run on a Raspberry Pi after
 As you can see in the output, each data line (starting with `$GP...`) is logged.
 
 ``` shell
-$ git clone https://github.com/Pi4J/pi4j-example-serial.git
-$ cd https://github.com/Pi4J/pi4j-example-serial.git
-$ mvn package
-$ cd target/distribution
-$ sudo ./run.sh
-
 [main] INFO com.pi4j.util.Console - ************************************************************
 [main] INFO com.pi4j.util.Console - ************************************************************
 [main] INFO com.pi4j.util.Console - 
