@@ -44,7 +44,7 @@ even if you don't have Java installed already, as JBang will also take care of t
 ```shell
 $ curl -Ls https://sh.jbang.dev | bash -s - app setup
 $ java -version
-
+TODO add output here of java 11 version
 ```
 
 ## Minimal JBang example
@@ -90,7 +90,7 @@ Create a new file `JBangPi4JExample.java` with the following content:
 //DEPS org.slf4j:slf4j-simple:1.7.35
 //DEPS com.pi4j:pi4j-core:2.1.1
 //DEPS com.pi4j:pi4j-plugin-raspberrypi:2.1.1
-//DEPS com.pi4j:pi4j-plugin-pigpio:2.1.1
+//DEPS com.pi4j:pi4j-plugin-linuxfs:2.1.1
 
 import com.pi4j.Pi4J;
 import com.pi4j.io.gpio.digital.DigitalInput;
@@ -120,7 +120,7 @@ class JBangPi4JExample {
                 .address(PIN_LED)
                 .shutdown(DigitalState.LOW)
                 .initial(DigitalState.LOW)
-                .provider("pigpio-digital-output");
+                .provider("linuxfs-digital-output");
         var led = pi4j.create(ledConfig);
 
         var buttonConfig = DigitalInput.newConfigBuilder(pi4j)
@@ -129,7 +129,7 @@ class JBangPi4JExample {
                 .address(PIN_BUTTON)
                 .pull(PullResistance.PULL_DOWN)
                 .debounce(3000L)
-                .provider("pigpio-digital-input");
+                .provider("linuxfs-digital-input");
         var button = pi4j.create(buttonConfig);
         button.addListener(e -> {
             if (e.state() == DigitalState.LOW) {
@@ -156,9 +156,9 @@ class JBangPi4JExample {
 
 Without the need of any further configuration, installation, dependency download, or compiling, we can now run this code with:
 
-``shell
+```shell
 jbang JBangPi4JExample.java
-``
+```
 
 ## Conclusion
 
