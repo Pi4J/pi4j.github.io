@@ -33,7 +33,7 @@ For this manual you can use the following approach:
 
 ```shell
 $ java -version
-
+bash: java: command not found
 ```
 
 ## Installing JBang
@@ -43,6 +43,7 @@ even if you don't have Java installed already, as JBang will also take care of t
 
 ```shell
 $ curl -Ls https://sh.jbang.dev | bash -s - app setup
+$ java -version
 
 ```
 
@@ -67,9 +68,9 @@ class HelloWorld {
 
 By saving this file as `HelloWorld.java` it can be started with:
 
-``shell
+```shell
 jbang HelloWorld.java
-``
+```
 
 ## JBang Pi4J example
 
