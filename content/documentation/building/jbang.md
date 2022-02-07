@@ -203,9 +203,18 @@ Downloading JDK 11. Be patient, this can take several minutes...
 [Thread-8] INFO com.pi4j.util.Console - Button was pressed for the 5th time
 ```
 
+Both commands can even be combined to make things easier, allowing you to start the application simply with:
+
+```shell
+$ sudo `which jbang` JBangPi4JExample.java
+```
+
 Yep, we have a working example, with dependencies, without the need to compile anything!
 
 ## Conclusion
 
 JBang is a great way to run single-file Java-files, and helps you to quickly get started with Pi4J on the Raspberry Pi, 
 and can be the ideal getting-started method to experiment with electronics and Java.
+
+Thanks to [Max Rydahl Andersen](https://twitter.com/maxandersen) and the many contributors for creating JBang and to
+propose the [solution how `sudo` can be combined with JBang](https://github.com/jbangdev/jbang/discussions/1229).
