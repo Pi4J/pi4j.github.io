@@ -1,14 +1,14 @@
 ---
 title: Running Pi4J with JBang
 weight: 165
-tags: ["Gradle"]
+tags: ["JBang"]
 ---
 
 {{% notice note %}}
-Project website: [https://www.jbang.dev/](https://www.jbang.dev/)
+JBang project website: [https://www.jbang.dev/](https://www.jbang.dev/)
 {{% /notice %}}
 
-## About JBang
+## What is JBang?
 
 As described on their website:
 
@@ -44,12 +44,14 @@ even if you don't have Java installed already, as JBang will also take care of t
 ```shell
 $ curl -Ls https://sh.jbang.dev | bash -s - app setup
 $ java -version
-TODO add output here of java 11 version
+openjdk version "11.0.14" 2022-01-18
+OpenJDK Runtime Environment Temurin-11.0.14+9 (build 11.0.14+9)
+OpenJDK Server VM Temurin-11.0.14+9 (build 11.0.14+9, mixed mode)
 ```
 
 ## Minimal JBang example
 
-A minimal JBang Java file looks like the following code block, take note of the special first line that tricks the system
+A minimal JBang Java-file looks like the following code block, take note of the special first line that tricks the system
 to run this as a script while still being valid Java-code.
 
 ```java
@@ -69,7 +71,8 @@ class HelloWorld {
 By saving this file as `HelloWorld.java` it can be started with:
 
 ```shell
-jbang HelloWorld.java
+$ jbang HelloWorld.java
+Hello World!
 ```
 
 ## JBang Pi4J example
@@ -78,7 +81,7 @@ If your project needs dependencies - which is the case for a Pi4J project - you 
 following gradle-style locators format](https://www.jbang.dev/documentation/guide/latest/dependencies.html), for example:
 `//DEPS com.pi4j:pi4j-core:2.1.1`.
 
-The following example is based on the ["Minimal example application"](/getting-started/minimal-example-application/) and uses
+The following example is based on the ["Minimal example application"](/getting-started/minimal-example-application/), and uses
 the same wiring with a button and LED. By using JBang we can run this project with a single file without the need of a full
 Maven or Gradle project, or compiling the Java code.
 
@@ -109,8 +112,6 @@ class JBangPi4JExample {
     public static void main(String[] args) throws Exception {
 
         final var console = new Console();
-
-        console.title("<-- The Pi4J Project -->", "Minimal Example project");
         
         var pi4j = Pi4J.newAutoContext();
         
@@ -120,7 +121,7 @@ class JBangPi4JExample {
                 .address(PIN_LED)
                 .shutdown(DigitalState.LOW)
                 .initial(DigitalState.LOW)
-                .provider("linuxfs-digital-output");
+                .provider("pigpio-digital-output");
         var led = pi4j.create(ledConfig);
 
         var buttonConfig = DigitalInput.newConfigBuilder(pi4j)
@@ -129,7 +130,7 @@ class JBangPi4JExample {
                 .address(PIN_BUTTON)
                 .pull(PullResistance.PULL_DOWN)
                 .debounce(3000L)
-                .provider("linuxfs-digital-input");
+                .provider("pigpio-digital-input");
         var button = pi4j.create(buttonConfig);
         button.addListener(e -> {
             if (e.state() == DigitalState.LOW) {
@@ -154,12 +155,57 @@ class JBangPi4JExample {
 }
 ```
 
-Without the need of any further configuration, installation, dependency download, or compiling, we can now run this code with:
+Without the need of any further configuration, installation, dependency download, or compiling, we should now be able to run this code with:
 
 ```shell
-jbang JBangPi4JExample.java
+$ jbang JBangPi4JExample.java
+
+[jbang] Building jar...
+
+[main] INFO com.pi4j.Pi4J - New auto context
+[main] INFO com.pi4j.Pi4J - New context builder
+[main] INFO com.pi4j.platform.impl.DefaultRuntimePlatforms - adding platform to managed platform map [id=raspberrypi; name=RaspberryPi Platform; priority=5; class=com.pi4j.plugin.raspberrypi.platform.RaspberryPiPlatform]
+[main] WARN com.pi4j.library.pigpio.impl.PiGpioNativeImpl - PIGPIO ERROR: PI_INIT_FAILED; pigpio initialisation failed
 ```
+
+Auch, an error...?! But this is a known one! At this moment, PiGpio - the underlying native library which interacts with the GPIOs -
+needs to be called as `sudo`. This is not ideal, and we are investigating how we can rework this. But with some additional 
+steps this can be fixed easily! 
+
+First we need to find out where JBang is installed for our current user with `which jbang`. This full path can be used to start
+JBang from that location, instead of the shortcut `jbang` that was automatically created by JBang for the `pi` user (in this case). 
+As Java was installed by JBang for the `pi` user, it needs to do this again for the `sudo` user, but also this is handled 
+automatically again by JBang.
+
+```shell
+$ which jbang
+/home/pi/.jbang/bin/jbang
+
+$ sudo /home/pi/.jbang/bin/jbang JBangPi4JExample.java
+Downloading JDK 11. Be patient, this can take several minutes...
+
+[main] INFO com.pi4j.Pi4J - New auto context
+[main] INFO com.pi4j.Pi4J - New context builder
+[main] INFO com.pi4j.platform.impl.DefaultRuntimePlatforms - adding platform to managed platform map [id=raspberrypi; name=RaspberryPi Platform; priority=5; class=com.pi4j.plugin.raspberrypi.platform.RaspberryPiPlatform]
+[main] INFO com.pi4j.util.Console - LED high
+[main] INFO com.pi4j.util.Console - LED low
+[main] INFO com.pi4j.util.Console - LED low
+[Thread-0] INFO com.pi4j.util.Console - Button was pressed for the 1th time
+[main] INFO com.pi4j.util.Console - LED high
+[main] INFO com.pi4j.util.Console - LED low
+[main] INFO com.pi4j.util.Console - LED high
+[Thread-2] INFO com.pi4j.util.Console - Button was pressed for the 2th time
+[main] INFO com.pi4j.util.Console - LED low
+[main] INFO com.pi4j.util.Console - LED high
+...
+[main] INFO com.pi4j.util.Console - LED high
+[main] INFO com.pi4j.util.Console - LED low
+[Thread-8] INFO com.pi4j.util.Console - Button was pressed for the 5th time
+```
+
+Yep, we have a working example, with dependencies, without the need to compile anything!
 
 ## Conclusion
 
-JBang is a great way to run single-file Java-files which can help you to quickly get started with Pi4J on the Raspberry Pi.
+JBang is a great way to run single-file Java-files, and helps you to quickly get started with Pi4J on the Raspberry Pi, 
+and can be the ideal getting-started method to experiment with electronics and Java.
