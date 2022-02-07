@@ -203,13 +203,13 @@ Downloading JDK 11. Be patient, this can take several minutes...
 [Thread-8] INFO com.pi4j.util.Console - Button was pressed for the 5th time
 ```
 
-Both commands can even be combined to make things easier, allowing you to start the application simply with:
+Yep, we have a working example, with dependencies, without the need to compile anything!
+
+And both commands can even be combined to make things even more easy, allowing you to start the application simply with:
 
 ```shell
 $ sudo `which jbang` JBangPi4JExample.java
 ```
-
-Yep, we have a working example, with dependencies, without the need to compile anything!
 
 ## Conclusion
 
