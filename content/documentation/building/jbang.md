@@ -21,6 +21,12 @@ for running .java files directly in your shell but felt it was a bit too cumbers
 
 *JBang lets you do all this!*
 
+## Video 
+
+This video shows you all the steps decribed further on this page
+
+{{< youtube 33CWAN1dQvA >}}
+
 ## Prepare a Raspberry Pi
 
 For this manual you can use the following approach:

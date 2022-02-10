@@ -45,7 +45,7 @@ home = ["HTML", "RSS", "JSON"]
   # Specifies the remote location of the mermaid js
   customMermaidURL = "https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"
   # Hide Next and Previous page buttons normally displayed full height beside content
-  disableNextPrev = false
+  disableNextPrev = true
   # Order sections in menu by "weight" or "title". Default to "weight"
   ordersectionsby = "weight"
   # Change default color scheme with a variant one. Can be "red", "blue", "green".

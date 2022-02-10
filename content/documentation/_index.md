@@ -14,3 +14,7 @@ find multiple examples to get you started.{{% /notice %}}
    understand how it is build?**
 
 {{% notice note %}}In that case you'll find more information in the [Architecture/Design](/architecture/) section.{{% /notice %}}
+
+## Table of contents of the "Documentation" section
+
+{{% children depth="3" %}}
