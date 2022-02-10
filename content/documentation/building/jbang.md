@@ -23,7 +23,7 @@ for running .java files directly in your shell but felt it was a bit too cumbers
 
 ## Video 
 
-This video shows you all the steps decribed further on this page
+This video shows you all the steps described further on this page.
 
 {{< youtube 33CWAN1dQvA >}}
 
