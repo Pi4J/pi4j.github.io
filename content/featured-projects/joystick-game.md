@@ -1,5 +1,5 @@
 ---
-title: 'JMonkeyEngine Vehicle with Joystick'
+title: 'JMonkeyEngine with Joystick'
 weight: 75
 ---
 
