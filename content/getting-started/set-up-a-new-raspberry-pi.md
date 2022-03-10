@@ -81,9 +81,11 @@ OpenJDK Server VM (build 11.0.9+11-post-Raspbian-1deb10u1, mixed mode)
 
 ### Install pigpio (required for pi4j2)
 
-  sudo apt-get install pigpio
-  sudo systemctl start pigpiod
-  sudo systemctl enable pigpiod
+```
+sudo apt-get install pigpio
+sudo systemctl start pigpiod
+sudo systemctl enable pigpiod
+```
 
 ### Install Pi4J
 
