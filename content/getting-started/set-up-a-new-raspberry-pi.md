@@ -79,9 +79,16 @@ OpenJDK Runtime Environment (build 11.0.9+11-post-Raspbian-1deb10u1)
 OpenJDK Server VM (build 11.0.9+11-post-Raspbian-1deb10u1, mixed mode)
 ```
 
+### Install pigpio (required for pi4j2)
+
+  sudo apt-get install pigpio
+  sudo systemctl start pigpiod
+  sudo systemctl enable pigpiod
+
 ### Install Pi4J
 
-TODO
+Follow the instructions found here:
+ https://github.com/Pi4J/pi4j.github.io/blob/main/docs/v2/install
 
 ## Keep your Raspberry Pi up-to-date
 
