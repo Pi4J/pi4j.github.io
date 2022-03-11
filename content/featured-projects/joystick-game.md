@@ -39,6 +39,14 @@ Let's have an example of a 3-bit Analogue to Digital Converter :
 
 ## What's SPI ? 
 ![image](https://user-images.githubusercontent.com/60224159/157852097-4800a22c-c81b-4a1b-ba2b-2d1ab2b1652b.png)
+- Serial Peripheral Interface (SPI) is an interface bus commonly used to send data between microcontrollers and small peripherals such as shift registers, sensors, and SD cards. It uses separate clock and data lines, along with a select line to choose the device you wish to talk to.
+- Our target is to transfer the output from our priority encoder to the BCM processor of our Pi throughout the SPI protocol (Synchronously over Tx from MCP3008 to Rx of the Pi).
+- To send and receive synchronous data we use `MISO` (the same as CIPO) for receving data from peripherals and `MOSI` (the same as COPI) to send data to the peripherals.
+- MISO : Master-in-Slave-Out = CIPO : Controller-in-peripheral-out.
+- MOSI : Master-out-Slave-In = COPI : Controller-out-Peripheral-in.
+- MCP3008 is used to receive analog input, so MISO or CIPO is our common active data line.
+- CS is the chip select, it's used to select which peripheral device to use.
+- SCLK is the serial clock and it's used to synchronize data on a data line, to have a clear separate message per 8 clocks (8-bit message).
 
 ## Wiring Up :
 ![Pi4j Joystick_bb](https://user-images.githubusercontent.com/60224159/157844859-34b0373b-09e2-488e-af82-d993a2d48719.png)
