@@ -14,14 +14,25 @@ weight: 75
 - Some patience and time.
 
 ## Difference between Analog and Digital signals ? 
-
+![image by com.electronicstutorials](https://user-images.githubusercontent.com/60224159/157845938-df8508cf-00aa-4f44-b830-b815414cdd23.png)
+- An analog signal is a continuously variable voltage between 0 and Vmax over time.
+- A digital signal is rather a discrete step-by-step output voltage of LOW (fall) to HIGH (rise) according to the switch position among a network of resistors.
+- To convert from analog signals to digial signals, we need to encode the output voltage changing over time to some sequence of bits.
+- We cannot interface analog electronics on digital devices such as (arduinos and raspberry pi w/o converting into digial signals).
+ 
 ## What's ADC ?
+![image](https://user-images.githubusercontent.com/60224159/157847366-3a8b0f59-363a-4316-be20-a0e60832c5b3.png)
+
 
 ## What's SPI ? 
 
 ## Wiring Up :
+![Pi4j Joystick_bb](https://user-images.githubusercontent.com/60224159/157844859-34b0373b-09e2-488e-af82-d993a2d48719.png)
 
 ## Testing the wiring : 
+Before going deeper and testing with jme vehicle, please test this code and do your conclusions : 
+```java
+```
 
 ## Testing with a jmonkeyengine vehicle : 
 
