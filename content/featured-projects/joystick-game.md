@@ -63,6 +63,9 @@ Before going deeper and testing with jme vehicle, please test this code and do y
 {{< youtube 9ZvhFQSwHF0 >}}
 
 ## More at sources :
+- ADC overview : https://www.electronics-tutorials.ws/combination/analogue-to-digital-converter.html
+- MCP3008 ADC : 
+- SPI overview : https://learn.sparkfun.com/tutorials/serial-peripheral-interface-spi/all
 - Gradle lib : https://github.com/Scrappers-glitch/JoyStickModule
 - Testcase : https://github.com/Scrappers-glitch/JmeCarPhysicsTestRPI
 
