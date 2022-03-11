@@ -78,7 +78,10 @@ gpioController.addListener((GpioPinListenerAnalog) event -> {
 
 ## Testing with a jmonkeyengine vehicle : 
 It's very hard to give you a full overview of how to create a jmonkeyengine vehicle in this tutorial, so you could fairly refer to jme docs and examples for more : 
-- https://github.com/jMonkeyEngine/jmonkeyengine/blob/master/jme3-examples/src/main/java/jme3test/bullet/TestPhysicsCar.java
+- Use the physics in your game and control your game via keyboard : https://wiki.jmonkeyengine.org/docs/3.4/tutorials/beginner/hello_physics.html
+- A Keyboard controlled car demo : https://github.com/jMonkeyEngine/jmonkeyengine/blob/master/jme3-examples/src/main/java/jme3test/bullet/TestPhysicsCar.java
+- The idea is simple, any game can be controlled using a keyboard interface (bound to jme update), so you can simply replace that with a custom `InputHandler` using a custom hardware. 
+- The trick is to bind your joystick pi4j interface to jme thread.
  
 ## Video of operation : 
 
@@ -86,7 +89,7 @@ It's very hard to give you a full overview of how to create a jmonkeyengine vehi
 
 ## More at sources :
 - ADC overview : https://www.electronics-tutorials.ws/combination/analogue-to-digital-converter.html
-- MCP3008 ADC : 
+- MCP3008 ADC : https://www.microchip.com/en-us/product/MCP3008
 - SPI overview : https://learn.sparkfun.com/tutorials/serial-peripheral-interface-spi/all
 - Gradle lib : https://github.com/Scrappers-glitch/JoyStickModule
 - Testcase : https://github.com/Scrappers-glitch/JmeCarPhysicsTestRPI
