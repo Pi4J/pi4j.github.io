@@ -54,6 +54,23 @@ Let's have an example of a 3-bit Analogue to Digital Converter :
 ## Testing the wiring : 
 Before going deeper and testing with jme vehicle, please test this code and do your conclusions : 
 ```java
+// Define MCP3008 provider on CS0 -- Peripheral device 0
+final MCP3008GpioProvider mcp3008GpioProvider = new MCP3008GpioProvider(SpiChannel.CS0);
+// define analog input pins on the adc
+final GpioPinAnalogInput[] gpioPinAnalogInput= new GpioPinAnalogInput[2];
+gpioPinAnalogInput[0] = MCP3008Pin.CH0;
+gpioPinAnalogInput[1] = MCP3008Pin.CH1;
+// define the threshold analog (the minimum voltage at which the Pi can listen to).
+mcp3008GpioProvider.setEventThreshold(thresholdAnalogValue, gpioPinAnalogInput);
+// enable monitoring of analog values with an interval of 250 ms
+mcp3008GpioProvider.setMonitorEnabled(true);
+mcp3008GpioProvider.setMonitorInterval(250);
+// start collecting data from the SPi connected to MCP3008 output.
+final GpioController gpioController = GpioFactory.getInstance();
+gpioController.addListener((GpioPinListenerAnalog) event -> {
+    System.out.println("Value at CH0 : " + mcp3008GpioProvider.getValue(gpioPinAnalogInput[0]));
+    System.out.println("Value at CH1 : " + mcp3008GpioProvider.getValue(gpioPinAnalogInput[1]));
+}, gpioPinAnalogInput);
 ```
 
 ## Testing with a jmonkeyengine vehicle : 
