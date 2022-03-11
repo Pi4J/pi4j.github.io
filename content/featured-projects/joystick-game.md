@@ -15,15 +15,24 @@ weight: 75
 
 ## Difference between Analog and Digital signals ? 
 ![image](https://user-images.githubusercontent.com/60224159/157847529-3b46c3e9-8d39-428c-91a1-f3018cb9f9e3.png)
-- An analog signal is a continuously variable voltage between 0 and Vmax over time.
+- An analog signal is a continuously variable voltage between 0 and Vmax over time, examples : Temparature sensor output, Potentiometers (joysticks)....
 - A digital signal is rather a discrete step-by-step output voltage of LOW (fall) to HIGH (rise) according to the switch position among a network of resistors.
-- VREF : creates a reference voltage to be used as a comparasion point with the input voltage (discussed later in this topic).
 - To convert from analog signals to digial signals, we need to encode the output voltage changing over time to some sequence of bits.
 - We cannot interface analog electronics on digital devices such as (arduinos and raspberry pi w/o converting into digial signals).
  
 ## What's ADC ?
-![image](https://user-images.githubusercontent.com/60224159/157847366-3a8b0f59-363a-4316-be20-a0e60832c5b3.png)
 
+Let's have an example of a 3-bit Analogue to Digital Converter : 
+
+![image](https://user-images.githubusercontent.com/60224159/157848094-2b43e3ba-8434-41bd-950c-d0847718ac24.png)
+![image](https://user-images.githubusercontent.com/60224159/157848257-f9b3c795-bf30-4fdd-8a57-3e9259c35a1f.png)
+
+### This how ADC works under the hood, Steps of converting Analog to Digital : 
+1) Analog voltage goes through `Vin`, 
+2) Then it's passed to a network of voltage comparators that compares its voltage to the selected reference range (Vref, which is selected at the time of wiring).
+3) If `Vin` > `Vref` the comparator output would be HIGH aka (1), if `Vin` < `Vref` the comparator output would be LOW aka (0).
+4) The significant of having a network of comparators is to encode the value of the analog signal into a digital sequence of bits.
+5) The output of comparators `Dn` gets passed into a 3-bit priority encoder.
 
 ## What's SPI ? 
 
