@@ -81,7 +81,7 @@ It's very hard to give you a full overview of how to create a jmonkeyengine vehi
 - Use the physics in your game and control your game via keyboard : https://wiki.jmonkeyengine.org/docs/3.4/tutorials/beginner/hello_physics.html
 - A Keyboard controlled car demo : https://github.com/jMonkeyEngine/jmonkeyengine/blob/master/jme3-examples/src/main/java/jme3test/bullet/TestPhysicsCar.java
 - The idea is simple, any game can be controlled using a keyboard interface (bound to jme update), so you can simply replace that with a custom `InputHandler` using a custom hardware. 
-- The trick is to bind your joystick pi4j interface to jme thread.
+- The trick is to bind your joystick pi4j interface to jme thread (OpenGL's thread).
  
 ## Video of operation : 
 
