@@ -14,9 +14,10 @@ weight: 75
 - Some patience and time.
 
 ## Difference between Analog and Digital signals ? 
-![image by com.electronicstutorials](https://user-images.githubusercontent.com/60224159/157845938-df8508cf-00aa-4f44-b830-b815414cdd23.png)
+![image](https://user-images.githubusercontent.com/60224159/157847529-3b46c3e9-8d39-428c-91a1-f3018cb9f9e3.png)
 - An analog signal is a continuously variable voltage between 0 and Vmax over time.
 - A digital signal is rather a discrete step-by-step output voltage of LOW (fall) to HIGH (rise) according to the switch position among a network of resistors.
+- VREF : creates a reference voltage to be used as a comparasion point with the input voltage (discussed later in this topic).
 - To convert from analog signals to digial signals, we need to encode the output voltage changing over time to some sequence of bits.
 - We cannot interface analog electronics on digital devices such as (arduinos and raspberry pi w/o converting into digial signals).
  
