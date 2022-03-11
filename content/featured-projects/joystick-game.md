@@ -74,7 +74,9 @@ gpioController.addListener((GpioPinListenerAnalog) event -> {
 ```
 
 ## Testing with a jmonkeyengine vehicle : 
-
+It's very hard to give you a full overview of how to create a jmonkeyengine vehicle in this tutorial, so you could fairly refer to jme docs and examples for more : 
+- https://github.com/jMonkeyEngine/jmonkeyengine/blob/master/jme3-examples/src/main/java/jme3test/bullet/TestPhysicsCar.java
+ 
 ## Video of operation : 
 
 {{< youtube 9ZvhFQSwHF0 >}}
