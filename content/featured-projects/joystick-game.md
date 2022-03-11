@@ -51,6 +51,9 @@ Let's have an example of a 3-bit Analogue to Digital Converter :
 ## Wiring Up :
 ![Pi4j Joystick_bb](https://user-images.githubusercontent.com/60224159/157844859-34b0373b-09e2-488e-af82-d993a2d48719.png)
 
+Vcc : is used for powering up the IC and not to compare with VREF.
+Vref : is used for controlling the maximum resolution of the input voltage (analog signal), if VREF = 5v5 (maximum voltage received by MCP3008), then the resolution of Vin is a 100%.
+ 
 ## Testing the wiring : 
 Before going deeper and testing with jme vehicle, please test this code and do your conclusions : 
 ```java
