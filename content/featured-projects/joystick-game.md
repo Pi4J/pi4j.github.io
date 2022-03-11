@@ -30,7 +30,7 @@ weight: 75
 {{< youtube 9ZvhFQSwHF0 >}}
 
 ## More at sources :
-- [Gradle lib : ](https://github.com/Scrappers-glitch/JoyStickModule)
-- [Testcase : ](https://github.com/Scrappers-glitch/JmeCarPhysicsTestRPI)
+[Gradle lib : ](https://github.com/Scrappers-glitch/JoyStickModule)
+[Testcase : ](https://github.com/Scrappers-glitch/JmeCarPhysicsTestRPI)
 
 
