@@ -33,8 +33,12 @@ Let's have an example of a 3-bit Analogue to Digital Converter :
 3) If `Vin` > `Vref` the comparator output would be HIGH aka (1), if `Vin` < `Vref` the comparator output would be LOW aka (0).
 4) The significant of having a network of comparators is to encode the value of the analog signal into a digital sequence of bits.
 5) The output of comparators `Dn` gets passed into a 3-bit priority encoder.
+6) The priority encoder by definition, it encodes based on the **high priority input** and ignores **the low priority input**.
+7) So, if `Vin = 3.5 to 4.0 V` then the `Comparators output = 11111111`, 
+8) At last when inputting the comparator output into the priority encoder the encoder gives a value of 7 which points to D7 of comparator U7 aka the last voltage level, and that's true because our Vin is bigger than the Vref<max>.
 
 ## What's SPI ? 
+![image](https://user-images.githubusercontent.com/60224159/157852097-4800a22c-c81b-4a1b-ba2b-2d1ab2b1652b.png)
 
 ## Wiring Up :
 ![Pi4j Joystick_bb](https://user-images.githubusercontent.com/60224159/157844859-34b0373b-09e2-488e-af82-d993a2d48719.png)
