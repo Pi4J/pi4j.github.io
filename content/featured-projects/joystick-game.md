@@ -47,32 +47,6 @@ Let's have an example of a 3-bit Analogue to Digital Converter :
 - MCP3008 is used to receive analog input, so MISO or CIPO is our common active data line.
 - CS is the chip select, it's used to select which peripheral device to use.
 - SCLK is the serial clock and it's used to synchronize data on a data line, to have a clear separate message per 8 clocks (8-bit message).
-
-## MCP3008 ADC
-![image](https://user-images.githubusercontent.com/60224159/158028785-b54f7832-a876-4875-aeae-683dbeb0e895.png)
-- MCP3008 A/D Converter is a 10-bit analog to digital converter.
-- 10-bit means : it has a maximum resolution of 10-bits `in binary (1111111111)` = `in dec (1023)` = `in hex (3FF)` and that's determined by the Vref vs Dn voltage as discussed before using the voltage comparator.
-- MCP3008 has 8 analog input channels that can be used in parallel (updated via SCLK using the SPI), the last number `8` stands for the number of analog inputs.
-- MCP3008 controls its logic using SPI.
-- MCP3008 can accept between `2v7` and `5v5` after which the IC may burn out.
-- MCP3008 comes in various packages for various usages (PDIP, SOIC,....), in our case we would use the PDIP.
-- Other adcs like `MCP3002` and `MCP3004` works by the same analogy, except that they can accept a max of 2 analog inputs and a max of 8 analog inputs respectively, if your project would use a max of 2 analog inputs, then you could buy `MCP3002` and still can follow this tutorial.
- 
-## Cracking the MCP3008 Datasheet 
-Alright, here is how to tackle down the MCP3008/MCP3004 datasheet :
-1) Know your package type whether PDIP (Plastic Dual in-Line), SOIC (Small Outline IC), TSSOP (Thin Shrink Small Outline Plastic) :
-![image](https://user-images.githubusercontent.com/60224159/158029157-5c1e6ef7-6d2a-4802-a302-7208cd8c7d8c.png)
-![image](https://user-images.githubusercontent.com/60224159/158029201-9b789559-2ed2-407a-a3e7-53dcbea93b30.png)
-
-2) Know your pin configuration and orientation :
-- In our case, we do a tutorial, so we will use PDIP (Plastic-Dual-In-Line) package.
-![image](https://user-images.githubusercontent.com/60224159/158029235-ecbbd08d-992f-4ca0-bf53-994dcaf53c1d.png)
-- So, our pins outline are as follows : 
- 
-3) Know the meaning of pins on your package : 
-- This is the hardest part of understanding how an IC work, but quick looking on an internal diagram may be insightful : 
-
-4) Last, have some fun with the IC...
  
 ## Wiring Up :
 ![Pi4j Joystick_bb](https://user-images.githubusercontent.com/60224159/157844859-34b0373b-09e2-488e-af82-d993a2d48719.png)
