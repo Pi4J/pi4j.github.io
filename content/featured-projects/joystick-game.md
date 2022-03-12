@@ -47,7 +47,7 @@ Let's have an example of a 3-bit Analogue to Digital Converter :
 - MCP3008 is used to receive analog input, so MISO or CIPO is our common active data line.
 - CS is the chip select, it's used to select which peripheral device to use.
 - SCLK is the serial clock and it's used to synchronize data on a data line, to have a clear separate message per 8 clocks (8-bit message).
- 
+
 ## Wiring Up :
 ![Pi4j Joystick_bb](https://user-images.githubusercontent.com/60224159/157844859-34b0373b-09e2-488e-af82-d993a2d48719.png)
 
