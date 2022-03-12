@@ -71,14 +71,21 @@ Alright, here is how to tackle down the MCP3008/MCP3004 datasheet :
 ![image](https://user-images.githubusercontent.com/60224159/158029201-9b789559-2ed2-407a-a3e7-53dcbea93b30.png)
 
 2) Know your pin configuration and orientation :
-- In our case, we do a tutorial, so we will use PDIP (Plastic-Dual-In-Line) package.
-![image](https://user-images.githubusercontent.com/60224159/158029235-ecbbd08d-992f-4ca0-bf53-994dcaf53c1d.png)
-- So, our pins outline are as follows : 
- 
-3) Know the meaning of pins on your package : 
-- This is the hardest part of understanding how an IC work, but quick looking on an internal diagram may be insightful : 
+   - In our case, we do a tutorial, so we will use PDIP (Plastic-Dual-In-Line) package : 
 
-4) Last, have some fun with the IC...
+   ![image](https://user-images.githubusercontent.com/60224159/158029235-ecbbd08d-992f-4ca0-bf53-994dcaf53c1d.png)
+ 
+   - So, our pins outline are as follows : 
+   
+   ![image](https://user-images.githubusercontent.com/60224159/158029866-e9b0f8fa-17ba-463f-9e81-23a66fa7dc86.png)
+   ![image](https://user-images.githubusercontent.com/60224159/158029842-f27a58cd-9b21-4759-9c51-554ab0c41a78.png)
+
+3) Know the meaning of pins on your package : 
+   - This is the hardest part of understanding how an IC work, but quick looking on an internal diagram may be insightful : 
+
+4) Know the max capacity of voltage input pins before wiring up : 
+
+5) Have some fun with the IC.
  
 ## Wiring Up
 
