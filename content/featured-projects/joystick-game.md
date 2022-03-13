@@ -83,8 +83,12 @@ Alright, here is how to tackle down the MCP3008/MCP3004 datasheet :
 3) Know the meaning of pins on your package : 
    - This is the hardest part of understanding how an IC work, but quick looking on an internal diagram may be insightful : 
 
-4) Know the max capacity of voltage input pins before wiring up : 
-
+4) Know the max rating of voltage input pins (Vdd, Vref, Analog channels) before wiring up : 
+   - VDD-Max-Rating = 5v5.
+   - VREF-Max-Raing = 5v5, min-working-voltage = 2v7.
+   - Analog-CH-max-Rating =
+   - Max-Clock-Rating = 
+   - Error-
 5) Have some fun with the IC.
  
 ## Wiring Up
