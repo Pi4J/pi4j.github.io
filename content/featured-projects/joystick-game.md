@@ -59,7 +59,7 @@ This diagram describes steps of how SPI Communication works in MCP3008 :
 2) SCLK += Clock.
 3) Rising edge of clock (LOW-to-HIGH) ->> Reads data from A/D and latches it for the MCU (micro-controller unit) ->> Creates the rising edges of `Din` line (Cyan line) ->> MOSI line.
 4) Falling edge of clock (HIGH-to_LOW) ->> Writes data from the MCU to the A/D ->> Creates the falling edges of `Dout` line bits (magneta line) ->> MISO line.
-5) Data expression sent via MISO is an 8-bit data that is latched on a shift register in a serial out manner.
+5) Each input (D0, D1, D2, Dn) is an analog input that's encoded into a 10-bit digital output and then clocked out for the MCU on the falling edge of the SCLK as shown by the last data line (Dout).
  
 ## MCP3008 ADC
 ![image](https://user-images.githubusercontent.com/60224159/158028785-b54f7832-a876-4875-aeae-683dbeb0e895.png)
