@@ -77,11 +77,14 @@ This diagram describes steps of how SPI Communication works in MCP3008 :
  
 ## Cracking the MCP3008 Datasheet 
 Alright, here is how to tackle down the MCP3008/MCP3004 datasheet :
+ 
 1) Know your package type whether PDIP (Plastic Dual in-Line), SOIC (Small Outline IC), TSSOP (Thin Shrink Small Outline Plastic) :
+ 
 ![image](https://user-images.githubusercontent.com/60224159/158029157-5c1e6ef7-6d2a-4802-a302-7208cd8c7d8c.png)
 ![image](https://user-images.githubusercontent.com/60224159/158029201-9b789559-2ed2-407a-a3e7-53dcbea93b30.png)
 
 2) Know your pin configuration and orientation :
+ 
    - In our case, we do a tutorial, so we will use PDIP (Plastic-Dual-In-Line) package : 
 
    ![image](https://user-images.githubusercontent.com/60224159/158029235-ecbbd08d-992f-4ca0-bf53-994dcaf53c1d.png)
@@ -92,7 +95,9 @@ Alright, here is how to tackle down the MCP3008/MCP3004 datasheet :
    ![image](https://user-images.githubusercontent.com/60224159/158029842-f27a58cd-9b21-4759-9c51-554ab0c41a78.png)
 
 3) Know the meaning of pins on your package : 
+ 
    - This is the hardest part of understanding how an IC work, but quick looking on an internal diagram may be insightful : 
+ 
      ![image](https://user-images.githubusercontent.com/60224159/158267851-18b269f9-7a40-49c9-9a61-82ab37c0676d.png)
      
     As you can see the MCP has a different way of comparing VREF and Din and encoding the results, it uses a modern way called `10-bit SAR - Successive Approximation Register and a DAC` which we will not cover in this tutorial but the net result is the same as a using a network of resistors with comparators.
