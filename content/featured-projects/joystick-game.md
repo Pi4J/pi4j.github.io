@@ -80,8 +80,8 @@ Alright, here is how to tackle down the MCP3008/MCP3004 datasheet :
  
 1) Know your package type whether PDIP (Plastic Dual in-Line), SOIC (Small Outline IC), TSSOP (Thin Shrink Small Outline Plastic) :
  
-![image](https://user-images.githubusercontent.com/60224159/158029157-5c1e6ef7-6d2a-4802-a302-7208cd8c7d8c.png)
-![image](https://user-images.githubusercontent.com/60224159/158029201-9b789559-2ed2-407a-a3e7-53dcbea93b30.png)
+   ![image](https://user-images.githubusercontent.com/60224159/158029157-5c1e6ef7-6d2a-4802-a302-7208cd8c7d8c.png)
+   ![image](https://user-images.githubusercontent.com/60224159/158029201-9b789559-2ed2-407a-a3e7-53dcbea93b30.png)
 
 2) Know your pin configuration and orientation :
  
