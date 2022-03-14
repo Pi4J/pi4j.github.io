@@ -30,7 +30,7 @@ Let's have an example of a 3-bit Analogue to Digital Converter :
 ![image](https://user-images.githubusercontent.com/60224159/157848094-2b43e3ba-8434-41bd-950c-d0847718ac24.png)
 ![image](https://user-images.githubusercontent.com/60224159/157848257-f9b3c795-bf30-4fdd-8a57-3e9259c35a1f.png)
 
-### This how ADC works under the hood, steps of converting Analog to Digital
+### This is how ADC works under the hood, steps of converting Analog to Digital
 
 1) Analog voltage goes through `Vin`, 
 2) Then it's passed to a network of voltage comparators that compares its voltage to the selected reference range (Vref, which is selected at the time of wiring).
@@ -59,7 +59,8 @@ This diagram describes steps of how SPI Communication works in MCP3008 :
 2) SCLK += Clock.
 3) Rising edge of clock (LOW-to-HIGH) ->> Reads data from A/D and latches it for the MCU (micro-controller unit) ->> Creates the rising edges of `Din` line (Cyan line) ->> MOSI line.
 4) Falling edge of clock (HIGH-to_LOW) ->> Writes data from the MCU to the A/D ->> Creates the falling edges of `Dout` line bits (magneta line) ->> MISO line.
-5) Each input (D0, D1, D2, Dn) is an analog input that's encoded into a 10-bit digital output and then clocked out for the MCU on the falling edge of the SCLK as shown by the last data line (Dout).
+5) Each input (D0, D1, D2, Dn) is an analog input that's encoded into a 10-bit digital output (B0-B9) and then clocked out for the MCU on the falling edge of the SCLK as shown by the last data line (Dout).
+6) `B-null (red circle)` is the leading bit, it marks the last bit clocked out.
  
 ## MCP3008 ADC
 ![image](https://user-images.githubusercontent.com/60224159/158028785-b54f7832-a876-4875-aeae-683dbeb0e895.png)
@@ -89,13 +90,17 @@ Alright, here is how to tackle down the MCP3008/MCP3004 datasheet :
 
 3) Know the meaning of pins on your package : 
    - This is the hardest part of understanding how an IC work, but quick looking on an internal diagram may be insightful : 
-
-4) Know the max rating of voltage input pins (Vdd, Vref, Analog channels) before wiring up : 
+     ![image](https://user-images.githubusercontent.com/60224159/158265198-d9647414-5a4c-4d31-b5ed-85826a209b27.png)
+     
+4) Know the max ratings of various IC properties before wiring up : 
    - VDD-Max-Rating = 5v5.
    - VREF-Max-Raing = 5v5, min-working-voltage = 2v7.
-   - Analog-CH-max-Rating =
-   - Max-Clock-Rating = 
-   - Accuracy.
+   - Analog-Channel-Max-Rating = VREF = 5v5 -- after that the channel may burn or the IC may not work.
+   - Max-Clock-Rating = f-CLK = 3.6 MHZ on 5v5, 1.35 on 2v7.
+   - Error = +/- 1.0 LSB (least significant bit). 
+   - Resolution = max analog value = 10-bits = 0b1111111111 = 1023.
+   - Other data like CLK rising, falling and setup time are neglectable.
+   - You may pay attention to temparature data if your project works in a special temparature case like a hot place or freezer or etc.
 5) Have some fun with the IC.
  
 ## Wiring Up
