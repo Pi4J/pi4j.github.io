@@ -53,6 +53,13 @@ Let's have an example of a 3-bit Analogue to Digital Converter :
 - MCP3008 is used to receive analog input, so MISO or CIPO is our common active data line.
 - CS is the chip select, it's used to select which peripheral device to use.
 - SCLK is the serial clock and it's used to synchronize data on a data line, to have a clear separate message per 8 clocks (8-bit message).
+![image](https://user-images.githubusercontent.com/60224159/158260327-7252ab74-e77f-464b-b569-fdd0313f60da.png)
+This diagram describes steps of how SPI Communication works in MCP3008 : 
+1) CS = LOW -> signifies the selection to peripheral IO 0.
+2) SCLK += Clock.
+3) Rising edge of clock (LOW-to-HIGH) ->> Reads data from A/D and latches it for the MCU (micro-controller unit) ->> Creates the rising edges of `Din` line (Cyan line) ->> MOSI line.
+4) Falling edge of clock (HIGH-to_LOW) ->> Writes data from the MCU to the A/D ->> Creates the falling edges of `Dout` line bits (magneta line) ->> MISO line.
+5) Data expression sent via MISO is an 8-bit data that is latched on a shift register in a serial out manner.
  
 ## MCP3008 ADC
 ![image](https://user-images.githubusercontent.com/60224159/158028785-b54f7832-a876-4875-aeae-683dbeb0e895.png)
@@ -88,7 +95,7 @@ Alright, here is how to tackle down the MCP3008/MCP3004 datasheet :
    - VREF-Max-Raing = 5v5, min-working-voltage = 2v7.
    - Analog-CH-max-Rating =
    - Max-Clock-Rating = 
-   - Error-
+   - Accuracy.
 5) Have some fun with the IC.
  
 ## Wiring Up
