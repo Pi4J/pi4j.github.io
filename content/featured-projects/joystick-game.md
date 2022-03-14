@@ -91,7 +91,8 @@ Alright, here is how to tackle down the MCP3008/MCP3004 datasheet :
 3) Know the meaning of pins on your package : 
    - This is the hardest part of understanding how an IC work, but quick looking on an internal diagram may be insightful : 
      ![image](https://user-images.githubusercontent.com/60224159/158265198-d9647414-5a4c-4d31-b5ed-85826a209b27.png)
-     
+     -- As you can see the MCP has a different way of comparing VREF and Din and encoding the results, it uses a modern way called `10-bit SAR - Successive Approximation Register and a DAC` which we will not cover in this tutorial but the net result is the same as a using a network of resistors with comparators.
+ 
 4) Know the max ratings of various IC properties before wiring up : 
    - VDD-Max-Rating = 5v5.
    - VREF-Max-Raing = 5v5, min-working-voltage = 2v7.
@@ -101,6 +102,7 @@ Alright, here is how to tackle down the MCP3008/MCP3004 datasheet :
    - Resolution = max analog value = 10-bits = 0b1111111111 = 1023.
    - Other data like CLK rising, falling and setup time are neglectable.
    - You may pay attention to temparature data if your project works in a special temparature case like a hot place or freezer or etc.
+ 
 5) Have some fun with the IC.
  
 ## Wiring Up
