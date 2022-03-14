@@ -53,8 +53,11 @@ Let's have an example of a 3-bit Analogue to Digital Converter :
 - MCP3008 is used to receive analog input, so MISO or CIPO is our common active data line.
 - CS is the chip select, it's used to select which peripheral device to use.
 - SCLK is the serial clock and it's used to synchronize data on a data line, to have a clear separate message per 8 clocks (8-bit message).
+
 ![image](https://user-images.githubusercontent.com/60224159/158260327-7252ab74-e77f-464b-b569-fdd0313f60da.png)
+ 
 This diagram describes steps of how SPI Communication works in MCP3008 : 
+ 
 1) CS = LOW -> signifies the selection to peripheral IO 0.
 2) SCLK += Clock.
 3) Rising edge of clock (LOW-to-HIGH) ->> Reads data from A/D and latches it for the MCU (micro-controller unit) ->> Creates the rising edges of `Din` line (Cyan line) ->> MOSI line.
@@ -91,7 +94,8 @@ Alright, here is how to tackle down the MCP3008/MCP3004 datasheet :
 3) Know the meaning of pins on your package : 
    - This is the hardest part of understanding how an IC work, but quick looking on an internal diagram may be insightful : 
      ![image](https://user-images.githubusercontent.com/60224159/158265198-d9647414-5a4c-4d31-b5ed-85826a209b27.png)
-     -- As you can see the MCP has a different way of comparing VREF and Din and encoding the results, it uses a modern way called `10-bit SAR - Successive Approximation Register and a DAC` which we will not cover in this tutorial but the net result is the same as a using a network of resistors with comparators.
+     
+    As you can see the MCP has a different way of comparing VREF and Din and encoding the results, it uses a modern way called `10-bit SAR - Successive Approximation Register and a DAC` which we will not cover in this tutorial but the net result is the same as a using a network of resistors with comparators.
  
 4) Know the max ratings of various IC properties before wiring up : 
    - VDD-Max-Rating = 5v5.
