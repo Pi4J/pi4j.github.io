@@ -101,7 +101,7 @@ Alright, here is how to tackle down the MCP3008/MCP3004 datasheet :
    - VDD-Max-Rating = 5v5.
    - VREF-Max-Raing = 5v5, min-working-voltage = 2v7.
    - Analog-Channel-Max-Rating = VREF = 5v5 -- after that the channel may burn or the IC may not work.
-   - Max-Clock-Rating = f-CLK = 3.6 MHZ on 5v5, 1.35 on 2v7.
+   - Max-Clock-Rating = f-CLK = 3.6 MHZ on 5v5, 1.35 MHZ on 2v7.
    - Error = +/- 1.0 LSB (least significant bit). 
    - Resolution = max analog value = 10-bits = 0b1111111111 = 1023.
    - Other data like CLK rising, falling and setup time are neglectable.
