@@ -18,7 +18,7 @@ weight: 75
 
 ![image](https://user-images.githubusercontent.com/60224159/157847529-3b46c3e9-8d39-428c-91a1-f3018cb9f9e3.png)
 
-- An analog signal is a continuously variable voltage between 0 and Vmax over time, examples : Temparature sensor output, Potentiometers (joysticks)....
+- An analog signal is a continuously variable voltage between 0 and Vmax over time, examples : Temperature sensor output, Potentiometers (joysticks)....
 - A digital signal is rather a discrete step-by-step output voltage of LOW (fall) to HIGH (rise) according to the switch position among a network of resistors.
 - To convert from analog signals to digial signals, we need to encode the output voltage changing over time to some sequence of bits.
 - We cannot interface analog electronics on digital devices such as (arduinos and raspberry pi w/o converting into digial signals).
@@ -110,7 +110,7 @@ Alright, here is how to tackle down the MCP3008/MCP3004 datasheet :
    - Error = +/- 1.0 LSB (least significant bit). 
    - Resolution = max analog value = 10-bits = 0b1111111111 = 1023.
    - Other data like CLK rising, falling and setup time are neglectable.
-   - You may pay attention to temparature data if your project works in a special temparature case like a hot place or freezer or etc.
+   - You may pay attention to temperature data if your project works in a special temperature case like a hot place or freezer or etc.
  
 5) Have some fun with the IC.
  
