@@ -4,12 +4,13 @@ weight: 201
 tags: ["Simple LED"]
 ---
 ### Description
-The simpleLED is a template class, that you can use in your own Java-project.
+The [simpleLED](https://github.com/Pi4J/pi4j-example-components/tree/Dev-Arcade/src/main/java/com/pi4j/example/components) (src/main/java/com/pi4j/example/components) is a template class, that you can use in your own Java-project.
 You can take any LED you want to. Like for example this one: [LED](https://www.berrybase.de/bauelemente/aktive-bauelemente/leds/led-sortimente/5mm-led-set-70-st-252-ck)
-The Template Class gives you the option to switch off, switch on or toggle the state of the LED.
+
+The template Class gives you the option to switch off, switch on or toggle the state of the LED.
 
 ### Layout
-![Simple LED Layout](/assets/documentation/Devices/Layout-SimpleLED.png)
+![Simple LED Layout](/assets/documentation/device-examples/Layout-SimpleLED.png)
 
 ### Code
 A simple example on how to use the LED-Class from the [Hardware-Catalog](https://github.com/Pi4J/pi4j-example-components) :
@@ -32,7 +33,9 @@ led.setStateOff();
 System.out.println("off");
 sleep(2000);
 ```
+### Further application
+The class is implemented in the two sample projects [Theremin](https://github.com/DieterHolz/RaspPiTheremin) and [Potobooth]().
 
-### Further application / project ideas
+### Further projetct ideas
 - Use an infrared LED to establish communication with an infrared receiver.
 - Use several red LEDs to recreate the running lights of KITT, the car from Knight Rider.
