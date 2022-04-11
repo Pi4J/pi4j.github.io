@@ -16,7 +16,7 @@ The template Class gives you the option to switch off, switch on or toggle the s
 A simple example on how to use the LED-Class from the [Hardware-Catalog](https://github.com/Pi4J/pi4j-example-components) :
 ```
 // Create a new SimpleLED component
-SimpleLED led = new SimpleLED(pi4j, 17);
+SimpleLED led = new SimpleLED(pi4j, 26);
 
 // Turn on the LED to have a defined state
 led.setStateOn();
