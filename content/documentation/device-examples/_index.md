@@ -15,3 +15,6 @@ to this list.
 | Device(s)                     | Developed by          | Link              |
 | :---                          | :---                  | :---              |
 | MCP230008, MCP23017, TCA9548  | Thomas Aarts          | [github.com/Pi4J/pi4j-device-tca9548](https://github.com/Pi4J/pi4j-device-tca9548) |
+| [Simple Button](/documentation/device-examples/simplebutton) | Reto Stutz, Mike Schoder | [Example Devices](https://github.com/Pi4J/pi4j-example-components)|
+| [Simple LED](/documentation/device-examples/simpleled) | Reto Stutz, Mike Schoder | [Example Devices](https://github.com/Pi4J/pi4j-example-components)|
+| [Joystick](/documentation/device-examples/joystick) | Reto Stutz, Mike Schoder | [Example Devices](https://github.com/Pi4J/pi4j-example-components)|
