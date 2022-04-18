@@ -219,7 +219,8 @@ $ mvn clean package
 ``` 
 
 * Change to the distribution directory where you can find the generated package and required Java-modules. Start it with 
-the provided `run.sh` script:
+the provided `run.sh` script. Make sure to start with `sudo` as Pi4J (at this moment) needs to be started with it, to enable
+the native library that is part of Pi4J to communicate with the GPIOs:
 
 ```shell
 $ cd target/distribution
