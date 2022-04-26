@@ -34,7 +34,7 @@ System.out.println("off");
 sleep(2000);
 ```
 ### Further application
-The class is implemented in the two sample projects [Theremin](https://github.com/DieterHolz/RaspPiTheremin) and [Potobooth]().
+The class is implemented in the two sample projects [Theremin](https://github.com/DieterHolz/RaspPiTheremin) and [Potobooth](https://github.com/DieterHolz/PhotoBooth).
 
 ### Further projetct ideas
 - Use an infrared LED to establish communication with an infrared receiver.
