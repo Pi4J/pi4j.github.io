@@ -83,6 +83,7 @@ lcd.clearDisplay();
 // Turn off the backlight makes the display appear turned off
 lcd.setDisplayBacklight(false);
 ```
+Create an own [Symbol](https://www.8051projects.net/lcd-interfacing/lcd-custom-character.php)
 
 ### Further application
 The class is implemented in the two sample projects [Theremin](https://github.com/DieterHolz/RaspPiTheremin) and [Potobooth](https://github.com/DieterHolz/PhotoBooth).
