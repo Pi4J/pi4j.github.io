@@ -139,6 +139,8 @@ console.println();
 To handle digital input events we first need a configuration for it. With that configuration, Pi4J can create the object 
 for us and the state changes can be handled.
 
+Additional info on the `newConfigBuilder` can be found on ["Building an I/O Instance"](/documentation/build-io/).
+
 ```java
 private static int pressCount = 0;
 private static final int PIN_BUTTON = 24; // PIN 18 = BCM 24
