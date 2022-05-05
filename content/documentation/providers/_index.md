@@ -14,9 +14,18 @@ on which they are used.
 Current supported providers:
 
 * [PiGpio](/documentation/providers/pigpio/)
+  * Pro
+    * Most performant at this moment, natively
+    * Can be used remotely
+  * Contra
+    * Needs to run as `sudo`
 * [LinuxFS](/documentation/providers/linuxfs/)
+  * Pro
+    * Generic for any SoC supporting LinuxFS
+    * Doesn't need `sudo`
+  * Contra
+    * Latency (? - still to be tested)
 
 Possible future providers:
 
-* LinuxFileSystemProvider: e.g. to use native Linux serial interfaces
 * RemoteProvider to control the I/O from a remote device e.g. through websockets

@@ -8,6 +8,10 @@ The current implementation of the LinuxFS plugin implements a file based I2C pro
 Providers in the LinuxFS plugin:
 
 * linuxfs-i2c
+* Under construction
+  * linuxfs-digital-input
+  * linuxfs-digital-output
+  * linuxfs-pwm
 
 To use the LinuxFS provider first add the proper dependency:
 
@@ -25,6 +29,7 @@ And then one can get access to the provider as follows:
 Context pi4j = Pi4J.newAutoContext();
 I2CProvider i2CProvider = pi4j.provider("linuxfs-i2c");
 I2CConfig i2cConfig = I2C.newConfigBuilder(pi4j).id("TCA9534").bus(1).device(0x3f).build();
+
 try (I2C tca9534Dev = i2CProvider.create(i2cConfig)) {
 
 	int config = tca9534Dev.readRegister(TCA9534_REG_ADDR_CFG);
