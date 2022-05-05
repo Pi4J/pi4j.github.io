@@ -15,7 +15,9 @@ var ledConfig = DigitalOutput.newConfigBuilder(pi4j)
     .provider("linuxfs-digital-output");
 ```
 
-## id
+## newConfigBuilder parameters
+
+### id
 
 The `id` field is used internally inside the Pi4J context/runtime to keep track of the instances. 
 If you don't assign an `id`, Pi4J will create a unique ID string for the instance -- so its optional and only needed 
@@ -47,7 +49,7 @@ boolean myLedAlreadyExists = registry.exists("my-led");
 var outputs = registry.allByIoType(IOType.DIGITAL_OUTPUT);
 ```
 
-## name and description
+### name and description
 
 Fields like `name` and `description` are entirely optional and not used by Pi4J internally except to print if performing 
 a `describe()` or `toString()` operation on Pi4J objects.
@@ -72,4 +74,21 @@ output.describe().print(System.out);
 
 // ... CONSOLE OUTPUT
 // > IO: "My Digital Output" {my-dout} <com.pi4j.plugin.linuxfs.provider.gpio.digital.LinuxFsDigitalOutput> {DOUT-26} 
+```
+
+## Reuse the config 
+
+The config object can be reused to create multiple GPIOs by overriding the `address` (and `id` if used) for each I/O 
+instance:
+
+```java
+var config = DigitalOutput.newConfigBuilder(pi4j)
+        .provider("linuxfs-digital-output")
+        .shutdown(DigitalState.LOW)
+        .initial(DigitalState.LOW);
+
+var pin0 = pi4j.dout().create(config.address(0).id("my-led"));
+var pin1 = pi4j.dout().create(config.address(1).id("my-relay"));
+var pin2 = pi4j.dout().create(config.address(2).id("my-lock"));
+var pin3 = pi4j.dout().create(config.address(3).id("my-pump"));
 ```
