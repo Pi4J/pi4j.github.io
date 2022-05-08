@@ -15,16 +15,16 @@ The Template Class gives you the option to check the state of the button, and to
 A simple example on how to use the Button-Class from the [Hardware-Catalog](https://github.com/Pi4J/pi4j-example-components) :
 ```
 // Initialize the button component
-final var ledbutton = new LEDButton(pi4j, 26, Boolean.FALSE, 19);
+final var ledbutton = new LEDButton(pi4j, PIN.D26, Boolean.FALSE, 19);
 
 // Turn on the LED to have a defined state
 ledbutton.LEDsetStateOn();
 //see the LED for a Second
-sleep(1000);
+delay(1000);
 
 // Register event handlers to print a message when pressed (onDown) and depressed (onUp)
-ledbutton.btnonDown(() -> System.out.println("Pressing the Button"));
-ledbutton.btnonUp(() -> System.out.println("Stopped pressing."));
+ledbutton.onDown(() -> logInfo("Pressing the Button"));
+ledbutton.onUp(()   -> logInfo("Stopped pressing."));
 
 // Wait for 15 seconds while handling events before exiting
 System.out.println("Press the button to see it in action!");
@@ -33,7 +33,7 @@ System.out.println("Press the button to see it in action!");
 // in the meantime, the Button can still be pressed, as we only freeze the main thread
 for (int i = 0; i < 15; i++) {
 	System.out.println(ledbutton.LEDtoggleState());
-	sleep(1000);
+	delay(1000);
 }
 
 // Unregister all event handlers to exit this application in a clean way
