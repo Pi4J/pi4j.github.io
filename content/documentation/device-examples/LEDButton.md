@@ -15,7 +15,7 @@ The Template Class gives you the option to check the state of the button, and to
 A simple example on how to use the Button-Class from the [Hardware-Catalog](https://github.com/Pi4J/pi4j-example-components) :
 ```
 // Initialize the button component
-final var ledbutton = new LEDButton(pi4j, PIN.D26, Boolean.FALSE, 19);
+final var ledbutton = new LEDButton(pi4j, PIN.D26, Boolean.FALSE, PIN.PWM19);
 
 // Turn on the LED to have a defined state
 ledbutton.LEDsetStateOn();
