@@ -16,25 +16,25 @@ The template Class gives you the option to switch off, switch on or toggle the s
 A simple example on how to use the LED-Class from the [Hardware-Catalog](https://github.com/Pi4J/pi4j-example-components) :
 ```
 // Create a new SimpleLED component
-SimpleLED led = new SimpleLED(pi4j, 26);
+SimpleLED led = new SimpleLED(pi4j, PIN.D26);
 
 // Turn on the LED to have a defined state
 led.setStateOn();
-sleep(1000);
+delay(1000);
 
 // Make a flashing light by toggling the LED every second
 for (int i = 0; i < 10; i++) {
-    System.out.println(led.toggleState());
-    sleep(1000);
+	System.out.println(led.toggleState());
+	delay(1000);
 }
 
 // That's all so turn off the relay and quit
 led.setStateOff();
 System.out.println("off");
-sleep(2000);
+delay(2000);
 ```
 ### Further application
-The class is implemented in the two sample projects [Theremin](https://github.com/DieterHolz/RaspPiTheremin) and [Potobooth]().
+The class is implemented in the two sample projects [Theremin](https://github.com/DieterHolz/RaspPiTheremin) and [Potobooth](https://github.com/DieterHolz/PhotoBooth).
 
 ### Further projetct ideas
 - Use an infrared LED to establish communication with an infrared receiver.
