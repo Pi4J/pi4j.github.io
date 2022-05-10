@@ -21,6 +21,7 @@ to this list.
 | [LEDButton](/documentation/device-examples/ledbutton) | Reto Stutz, Mike Schoder | [Example Devices](https://github.com/Pi4J/pi4j-example-components)|
 | [AD Converter ADS1115](/documentation/device-examples/ads1115) | Reto Stutz, Mike Schoder | [Example Devices](https://github.com/Pi4J/pi4j-example-components)|
 | [LCD Display](/documentation/device-examples/lcddisplay) | Reto Stutz, Mike Schoder | [Example Devices](https://github.com/Pi4J/pi4j-example-components)|
+| [LEDStrip](/documentation/device-examples/ledstrip) | Reto Stutz, Mike Schoder | [Example Devices](https://github.com/Pi4J/pi4j-example-components)|
 
 ### Simple Implementation
 
