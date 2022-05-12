@@ -8,6 +8,11 @@ The [ledstrip](https://github.com/Pi4J/pi4j-example-components/tree/Dev-Arcade/s
 You can take a LED Strip with the WS28xx-chip set. Like for example this one: [LEDStrip](https://www.berrybase.de/sensoren-module/led/ws2812-13-neopixel/stripes/adafruit-neopixel-led-streifen-starter-pack-30-led/meter-schwarz-1m)
 The Template Class gives you the option to set the LED's of the strip to a desired RGB-Color.
 
+{{% notice note %}}
+Make sure to check if SPI is enabled in your RaspberryPI.
+Check the SPI Address. Default is GPIO 8 (#24).
+{{% /notice %}}
+
 ### Layout
 ![LEDStrip Layout](/assets/documentation/device-examples/Layout-LEDStrip.png)
 
@@ -15,8 +20,8 @@ The Template Class gives you the option to set the LED's of the strip to a desir
 A simple example on how to use the LEDStrip-Class from the [Hardware-Catalog](https://github.com/Pi4J/pi4j-example-components) :
 ```
 // Initialize the RGB
-int pixels = 8;
-final var ledstrip = new RGBLed(pi4j, PIN.D26, pixels, 127);
+int pixels = 10;
+final var ledstrip = new LEDStrip(pi4j, pixels, 127);
 
 //set them all off, so nothing is shining
 logger.info("Starting with setting all leds off");
