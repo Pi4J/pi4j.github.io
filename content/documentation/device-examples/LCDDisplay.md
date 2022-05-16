@@ -80,8 +80,71 @@ sleep(3000);
 // Clear the display to start next parts
 lcd.clearDisplay();
 
+// Let's try to draw a house. To keep this method short and clean we create the characters in a separate
+// method below.
+createCharacters(lcd);
+
+// Now all characters are ready. Just draw them on the right place by moving the cursor and writing the
+// created characters to specific positions
+lcd.writeCharacter('\1', 1, 1);
+lcd.writeCharacter('\2', 2, 1);
+lcd.writeCharacter('\3', 1, 2);
+lcd.writeCharacter('\4', 2, 2);
+delay(3000);
+
 // Turn off the backlight makes the display appear turned off
 lcd.setDisplayBacklight(false);
+lcd.clearDisplay();
+
+public void createCharacters(LCDDisplay lcd) {
+// Create upper left part of the house
+  lcd.createCharacter(1, new byte[]{
+	0b00000,
+	0b00000,
+	0b00000,
+	0b00001,
+	0b00011,
+	0b00111,
+	0b01111,
+	0b11111
+  });
+
+// Create upper right part of the house
+  lcd.createCharacter(2, new byte[]{
+	0b00000,
+	0b00000,
+	0b00010,
+	0b10010,
+	0b11010,
+	0b11110,
+	0b11110,
+	0b11111
+  });
+
+// Create lower left part of the house
+  lcd.createCharacter(3, new byte[]{
+	0b11111,
+	0b11111,
+	0b11111,
+	0b11111,
+	0b10001,
+	0b10001,
+	0b10001,
+	0b10001
+  });
+
+// Create lower right part of the house
+  lcd.createCharacter(4, new byte[]{
+	0b11111,
+	0b11111,
+	0b11111,
+	0b10001,
+	0b10001,
+	0b10001,
+	0b11111,
+	0b11111
+  });
+}
 ```
 Create an own [Symbol](https://www.8051projects.net/lcd-interfacing/lcd-custom-character.php)
 
