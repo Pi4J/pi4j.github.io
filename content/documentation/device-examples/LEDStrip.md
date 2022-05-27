@@ -51,8 +51,6 @@ delay(3000);
 
 //finishing and closing
 ledstrip.close();
-logInfo("closing the app");
-logInfo("Color "+ ledstrip.getPixelColor(0));
 ```
 
 ### Further application
