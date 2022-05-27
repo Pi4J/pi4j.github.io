@@ -1,6 +1,6 @@
 ---
 title: LEDStrip
-weight: 206
+weight: 207
 tags: ["LEDStrip"]
 ---
 ### Description
