@@ -6,7 +6,7 @@ tags: ["Buzzer"]
 ### Description
 The [Buzzer](https://github.com/Pi4J/pi4j-example-components/tree/Dev-Arcade/src/main/java/com/pi4j/example/components) (src/main/java/com/pi4j/example/components) is a template class, that you can use in your own Java-project.
 You can take any Buzzer you find. Like for example this one: [Buzzer](https://www.berrybase.de/sensoren-module/audio-schall/ky-012-aktives-buzzer-modul)
-The Template Class gives you the option to play a note, and to create own little melodies to play. It's all controlled over a Frequency on the PWM.
+The Template Class gives you the option to play a note, and to create your own little melodies to play. The buzzer is controlled via a PWM output. The dutycycle is fixed at 50% and with the frequency the desired sound can be reproduced.
 
 ### Layout
 ![Buzzer Layout](/assets/documentation/device-examples/Layout-Buzzer.png)
@@ -18,7 +18,7 @@ A simple example on how to use the Buzzer-Class from the [Hardware-Catalog](http
 Buzzer buzzer = new Buzzer(pi4j, PIN.PWM18);
 
 //playing a simple note
-logInfo("playing note b6 for 1 sec");
+System.out.println("playing note b6 for 1 sec");
 buzzer.playTone(Buzzer.Note.B6.getFrequency(), 1000);
 
 //shutting it down for 1 second
@@ -42,15 +42,16 @@ Buzzer.Sound[] melody = new Buzzer.Sound[]{
 };
 
 //playing the melody once, then shutting down for a second
-logInfo("playing melody once");
+System.out.println("playing melody once");
 buzzer.playMelody(60, melody);
-buzzer.playSilence(1000);
+delay(1000);
 
 //playing the melody 5 times repeatedly
-logInfo("playing melody 5 times");
-logInfo("playing in a different thread, so the app is moving on");
-buzzer.setVolume(100);
+System.out.println("playing melody 5 times");
+System.out.println("playing in a different thread, so the app is moving on");
 buzzer.playMelody(60, 5, melody);
+System.out.println("waiting for melody to finish");
+delay(3000);
 ```
 
 ### Further application
