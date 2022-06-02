@@ -152,6 +152,5 @@ Create an own [Symbol](https://www.8051projects.net/lcd-interfacing/lcd-custom-c
 The class is implemented in the two sample projects [Theremin](https://github.com/DieterHolz/RaspPiTheremin) and [Potobooth](https://github.com/DieterHolz/PhotoBooth).
 
 ### Further projetct ideas
-
-- A Temperature Sensor hooked to a disply, where it shows how warm it is
+- A Temperature Sensor hooked to a display, where it shows how warm it is
 - A Microfone, which listens what is said, and writing on the display what is said
