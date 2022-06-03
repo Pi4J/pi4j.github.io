@@ -1,5 +1,5 @@
 ---
-title: LEDButton
+title: Buzzer
 weight: 208
 tags: ["Buzzer"]
 ---
