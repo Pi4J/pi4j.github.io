@@ -25,6 +25,7 @@ to this list.
 | [Potentiometer](/documentation/device-examples/potentiometer) | Reto Stutz, Mike Schoder | [Example Devices](https://github.com/Pi4J/pi4j-example-components)|
 | [Buzzer](/documentation/device-examples/buzzer) | Reto Stutz, Mike Schoder | [Example Devices](https://github.com/Pi4J/pi4j-example-components)|
 | [Servo](/documentation/device-examples/servo) | Reto Stutz, Mike Schoder | [Example Devices](https://github.com/Pi4J/pi4j-example-components)|
+| [RaspiCamera](/documentation/device-examples/raspicamera) | Reto Stutz, Mike Schoder | [Example Devices](https://github.com/Pi4J/pi4j-example-components)|
 
 ### Simple Implementation
 
