@@ -18,7 +18,7 @@ The basic functions of the template class are:
 ### Code
 A simple example on how to use the Joystick-Class from the [Hardware-Catalog](https://github.com/Pi4J/pi4j-example-components) :
 ```
-logInfo("Joystick test started ...");
+System.out.println("Joystick test started ...");
 
 ADS1115 ads1115 = new ADS1115(pi4j, 0x01, ADS1115.GAIN.GAIN_4_096V, ADS1115.ADDRESS.GND, 4);
 
@@ -29,54 +29,34 @@ JoystickAnalog joystick = new JoystickAnalog(pi4j, ads1115, 0, 1, 3.3, true, PIN
 //JoystickAnalog joystick = new JoystickAnalog(pi4j, ads1115, 0, 1, 3.3, false, PIN.D26);
 
 //register event handlers
-joystick.xOnMove(() -> {
-    logInfo("Current value of joystick x axis is: " + String.format("%.3f", joystick.getXValue()));
+joystick.xOnMove((value) -> {
+    System.out.println("Current value of joystick x axis is: " + String.format("%.3f", value));
 });
-joystick.yOnMove(() -> {
-    logInfo("Current value of joystick y axis is: " + String.format("%.3f", joystick.getYValue()));
+joystick.yOnMove((value) -> {
+    System.out.println("Current value of joystick y axis is: " + String.format("%.3f", value));
 });
 
 joystick.pushOnDown(() -> logInfo("Pressing the Button"));
 joystick.pushOnUp(() -> logInfo("Stopped pressing."));
 joystick.pushWhilePressed(() -> logInfo("Button is still pressed."), 1000);
 
-joystick.start(0.1,10);
-
-System.out.println("Joystick x value before calibration is: " +  String.format("%.3f", joystick.getXValue()));
-System.out.println("Joystick y value before calibration is: " +  String.format("%.3f", joystick.getYValue()));
-
-joystick.stop();
-
-delay(1000);
-
 joystick.calibrateJoystick();
 
-joystick.start(0.1, 10);
-
-System.out.println("Joystick x value after calibration is: " +  String.format("%.3f", joystick.getXValue()));
-System.out.println("Joystick y value after calibration is: " +  String.format("%.3f", joystick.getYValue()));
-
-joystick.stop();
-
-delay(1000);
-
 //start continious reading with single shot in this mode you can connect up to 4 devices to the analog module
-joystick.start(0.1, 10);
+joystick.start(0.05, 10);
 
 //wait while handling events before exiting
-logInfo("Move the joystick to see it in action!");
+System.out.println("Move the joystick to see it in action!");
 
-delay(50_000);
+delay(30_000);
 
 //stop continious reading
 joystick.stop();
 
-delay(1000);
-
 //deregister all event handlers
 joystick.deregisterAll();
 
-logInfo("Joystick test done");
+System.out.println("Joystick test done");
 ```
 
 ### Further application
