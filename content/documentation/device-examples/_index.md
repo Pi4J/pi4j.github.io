@@ -31,3 +31,5 @@ to this list.
 
 For a Simple Implementation, the recommendation is to use the [Launcher Class](https://github.com/Pi4J/pi4j-example-components/blob/Dev-Arcade/src/main/java/com/pi4j/example/Launcher.java).
 With this, a simple application can be started.
+
+TODO: better statement how the launcher works

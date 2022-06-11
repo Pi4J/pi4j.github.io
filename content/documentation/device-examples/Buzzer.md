@@ -1,11 +1,12 @@
 ---
 title: Buzzer
-weight: 208
+weight: 209
 tags: ["Buzzer"]
 ---
 ### Description
 The [Buzzer](https://github.com/Pi4J/pi4j-example-components/tree/Dev-Arcade/src/main/java/com/pi4j/example/components) (src/main/java/com/pi4j/example/components) is a template class, that you can use in your own Java-project.
 You can take any Buzzer you find. Like for example this one: [Buzzer](https://www.berrybase.de/sensoren-module/audio-schall/ky-012-aktives-buzzer-modul)
+
 The Template Class gives you the option to play a note, and to create your own little melodies to play. The buzzer is controlled via a PWM output. The dutycycle is fixed at 50% and with the frequency the desired sound can be reproduced.
 
 ### Layout
@@ -55,8 +56,8 @@ delay(3000);
 ```
 
 ### Further application
-The class is implemented in the two sample projects [Theremin](https://github.com/DieterHolz/RaspPiTheremin) and [Potobooth](https://github.com/DieterHolz/PhotoBooth).
+The class is implemented in the sample project [Theremin](https://github.com/DieterHolz/RaspPiTheremin).
 
 ### Further projetct ideas
-- An application, which sounds if you walk by, like an alarm.
+- An application, which triggers if you walk by and starts beeping, like an alarm.
 - An application, where you use many of them to create a beautiful sounding melody.

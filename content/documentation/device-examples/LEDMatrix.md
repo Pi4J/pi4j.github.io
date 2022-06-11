@@ -45,7 +45,7 @@ ledMatrix.close();
 ```
 
 ### Further application
-The class is implemented in the two sample projects [Theremin](https://github.com/DieterHolz/RaspPiTheremin) and [Potobooth](https://github.com/DieterHolz/PhotoBooth).
+The class is not yet implemented in a project.
 
 ### Further projetct ideas
 - A suit with a sewn-on LED matrix, which can be used to display images and animations.

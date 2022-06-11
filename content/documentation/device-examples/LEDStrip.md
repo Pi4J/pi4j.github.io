@@ -1,11 +1,12 @@
 ---
 title: LEDStrip
-weight: 207
+weight: 206
 tags: ["LEDStrip"]
 ---
 ### Description
 The [ledstrip](https://github.com/Pi4J/pi4j-example-components/tree/Dev-Arcade/src/main/java/com/pi4j/example/components) (src/main/java/com/pi4j/example/components) is a template class, that you can use in your own Java-project.
 You can take a LED Strip with the WS28xx-chip set. Like for example this one: [LEDStrip](https://www.berrybase.de/sensoren-module/led/ws2812-13-neopixel/stripes/adafruit-neopixel-led-streifen-starter-pack-30-led/meter-schwarz-1m)
+
 The Template Class gives you the option to set the LED's of the strip to a desired RGB-Color.
 If you have many strips, you can use the [LEDMatrix](/documentation/device-examples/ledmatrix)
 
@@ -55,7 +56,7 @@ ledstrip.close();
 ```
 
 ### Further application
-The class is implemented in the two sample projects [Theremin](https://github.com/DieterHolz/RaspPiTheremin) and [Potobooth](https://github.com/DieterHolz/PhotoBooth).
+The class is implemented in the sample project [Potobooth](https://github.com/DieterHolz/PhotoBooth).
 
 ### Further projetct ideas
 - A suit with LED-Strips sewn on, on which different animations can run.

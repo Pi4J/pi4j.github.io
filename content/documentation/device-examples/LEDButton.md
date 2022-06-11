@@ -4,9 +4,10 @@ weight: 203
 tags: ["LEDButton"]
 ---
 ### Description
-The [ledbutton](https://github.com/Pi4J/pi4j-example-components/tree/Dev-Arcade/src/main/java/com/pi4j/example/components) (src/main/java/com/pi4j/example/components) is a template class, that you can use in your own Java-project.
-You can take any Button with a LED you want to. Like for example this one: [LED Button](https://www.berrybase.de/bauelemente/schalter-taster/drucktaster/massive-arcade-button-100mm-beleuchtet-40-led-12v-dc-41)
-The Template Class gives you the option to check the state of the button, and to create simple events if the button is pressed or depressed. Also it lets you control the LED.
+The [LEDButton](https://github.com/Pi4J/pi4j-example-components/tree/Dev-Arcade/src/main/java/com/pi4j/example/components) (src/main/java/com/pi4j/example/components) is a template class, that you can use in your own Java-project.
+You can take any Button with a LED you want to. Like for example this one: [LEDButton](https://www.berrybase.de/bauelemente/schalter-taster/drucktaster/massive-arcade-button-100mm-beleuchtet-40-led-12v-dc-41)
+
+The Template Class gives you the option to check the state of the button, and to create simple events if the button is pressed or depressed, or the whole time is is being pressed. Also it lets you control the LED.
 
 ### Layout
 ![LEDButton Layout](/assets/documentation/device-examples/Layout-LEDButton.png)
