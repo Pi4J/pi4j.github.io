@@ -27,18 +27,6 @@ consumption in the open state. The higher the resistance, the less current is co
 {{< /gallery >}}
 {{< load-photoswipe >}}
 
-### Current limiting resistor to protect GPIO as input
-In a typical factory system there may be buttons on a control panel located remotely from the central processing unit. The buttons are connected to central processing via long wires. 
-Unfortunately this can lead to inadvertent electronic failure. Long wires can act as an inductor and when a button is opened or closed, large voltage spikes can show up on the electronic paths.
-These spikes can destroy the input or even the PI itself.
-
-To protect the input from such spikes a current limiting resistor can be used. The recommendation here is to use a resistor of at least 1kOhm.
-
-{{< gallery >}}
-{{< figure link="/assets/getting-started/electricalEngineering/currentLimitingResistorInput.png" caption="Current Limiting Resistor Breadboard" caption-position="center" caption-effect="fade" >}}
-{{< /gallery >}}
-{{< load-photoswipe >}}
-
 
 ### Voltage divider
 If components have a lower operating voltage than the 3.3V of the Raspberry Pi, a voltage divider can be used to achieve the desired voltage.
@@ -51,6 +39,16 @@ If the required current and the required voltage of the load are known, the exac
 {{< figure link="/assets/getting-started/electricalEngineering/voltageDividerCircuit.png" caption="Voltage Divider electrical drawing" caption-position="center" caption-effect="fade" >}}
 {{< /gallery >}}
 {{< load-photoswipe >}}
+
+### 3.3V <--> 5V level shifter
+To protect the Pi from 5V devices, a level shift/conversion can be done with the "Adafruit TXB0104 Bi-Directional Level Shifter" component. The bi-directional level shifter works for an I2C bus, 
+for a TTL serial connection, for a slow <2MHz SPI connection and any other digital interface both uni- and bidirectional. 
+
+{{< gallery >}}
+{{< figure link="/assets/getting-started/electricalEngineering/TXB0104logicLevelConverter.jpeg" caption="Logic Level Converter" caption-position="center" caption-effect="fade" >}}
+{{< /gallery >}}
+{{< load-photoswipe >}}
+
 
 ## Additional power supply
 If one or more large loads are required for the project, it may be necessary to use an additional power supply. A solution for this is the Mini Power Supply Module 
@@ -65,3 +63,50 @@ HW-131 Breadboard Power Module which provides two voltages 3.3V and 5V and a max
 {{% notice note %}}
 In case of an additional power supply, the ground of the Raspberry Pi and the ground of the power supply must be connected to each other.
 {{% /notice %}}
+
+{{% notice note %}}
+Do not use the USB port of the computer to power the electronics. Errors in the wiring can destroy the USB port of the computer.
+{{% /notice %}}
+
+## Soldering tutorial
+[Here](https://www.youtube.com/watch?v=Qps9woUGkvI) is a short video that explains the basics of soldering. 
+
+[Here](https://www.youtube.com/watch?v=bG7yW9FigJA) is a short video that explains how to remove solder. 
+
+{{% notice note %}}
+If a breakout with two pin headers like the TXB0104 is used, the pin headers can be mounted on the breadboard first, then the breakout is placed on the pin headers and finally 
+everything can be soldered. So the pin headers are mounted exactly in 90° angle to the breakout and can be mounted on the breadboard without any problem.
+{{% /notice %}}
+
+{{< gallery >}}
+{{< figure link="/assets/getting-started/electricalEngineering/solderingTwoPins1.png" caption="Soldering Two Pins Part 1" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/getting-started/electricalEngineering/solderingTwoPins2.png" caption="Soldering Two Pins Part 2" caption-position="center" caption-effect="fade" >}}
+{{< /gallery >}}
+{{< load-photoswipe >}}
+
+## Automatic wire stripper
+[Here](https://www.youtube.com/watch?v=dvFS_ZEzwKg) is a short video that explains how the automatic wire stripper works.
+
+{{< gallery >}}
+{{< figure link="/assets/getting-started/electricalEngineering/automaticWireStripper.png" caption="Automatic Wire Stripper" caption-position="center" caption-effect="fade" >}}
+{{< /gallery >}}
+{{< load-photoswipe >}}
+
+## Crimping tutorial
+[Here](https://www.youtube.com/watch?v=WFvEeWHDt1E) is a short video that explains the basics of crimping wires. 
+
+{{< gallery >}}
+{{< figure link="/assets/getting-started/electricalEngineering/crimping.png" caption="Crimping Tool" caption-position="center" caption-effect="fade" >}}
+{{< /gallery >}}
+{{< load-photoswipe >}}
+
+
+## Crimping ferrules tutorial
+[Here](https://www.youtube.com/watch?v=bJk0mzaATI4) is a short video that explains the basics of crimping ferrules to wires. 
+
+{{< gallery >}}
+{{< figure link="/assets/getting-started/electricalEngineering/crimpingFerrules.png" caption="Crimping Ferrules Tool" caption-position="center" caption-effect="fade" >}}
+{{< /gallery >}}
+{{< load-photoswipe >}}
+
+
