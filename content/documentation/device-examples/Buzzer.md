@@ -12,6 +12,12 @@ The Template Class gives you the option to play a note, and to create your own l
 ### Layout
 ![Buzzer Layout](/assets/documentation/device-examples/Layout-Buzzer.png)
 
+{{< gallery >}}
+{{< figure link="/assets/documentation/device-examples/pictures/BuzzerActiveBreadboard.png" caption="Buzzer Acitve Breadboard" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/documentation/device-examples/pictures/BuzzerActive.png" caption="Buzzer Active" caption-position="center" caption-effect="fade" >}}
+{{< /gallery >}}
+{{< load-photoswipe >}}
+
 ### Code
 A simple example on how to use the Buzzer-Class from the [Hardware-Catalog](https://github.com/Pi4J/pi4j-example-components) :
 ```

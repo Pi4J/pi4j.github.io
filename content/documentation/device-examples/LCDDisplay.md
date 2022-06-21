@@ -17,6 +17,15 @@ Also, check if I2C is enabled in your raspberry-config.
 ### Layout
 ![LCD Display Layout](/assets/documentation/device-examples/Layout-LCDDisplay.png)
 
+{{< gallery >}}
+{{< figure link="/assets/documentation/device-examples/pictures/LCD-Display2-RowsBreadboard.png" caption="LCD Display 2 Rows Breadboard" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/documentation/device-examples/pictures/LCD-Display2-RowsFront.png" caption="LCD Display 2 Rows Front" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/documentation/device-examples/pictures/LCD-Display2-RowsBack.png" caption="LCD Display 2 Rows Back" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/documentation/device-examples/pictures/LCD-Display4-RowsFront.png" caption="LCD Display 4 Rows Front" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/documentation/device-examples/pictures/LCD-Display4-RowsBack.png" caption="LCD Display 4 Rows Back" caption-position="center" caption-effect="fade" >}}
+{{< /gallery >}}
+{{< load-photoswipe >}}
+
 ### Code
 An example on how to use the LCD Display-Class from the [Hardware-Catalog](https://github.com/Pi4J/pi4j-example-components)
 

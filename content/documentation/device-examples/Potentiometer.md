@@ -21,6 +21,7 @@ If continuous measurement is active, a customized event can be triggered when th
 
 {{< gallery >}}
 {{< figure link="/assets/documentation/device-examples/pictures/PotentiometerBreadboard.png" caption="Potentiometer Breadboard" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/documentation/device-examples/pictures/Potentiometer.png" caption="Potentiometer" caption-position="center" caption-effect="fade" >}}
 {{< figure link="/assets/documentation/device-examples/pictures/ADS1115-Front.png" caption="ADS1115-Front" caption-position="center" caption-effect="fade" >}}
 {{< figure link="/assets/documentation/device-examples/pictures/ADS1115-Back.png" caption="ADS1115-Back" caption-position="center" caption-effect="fade" >}}
 {{< /gallery >}}
