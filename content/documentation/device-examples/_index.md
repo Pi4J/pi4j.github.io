@@ -17,14 +17,14 @@ to this list.
 | MCP230008, MCP23017, TCA9548  | Thomas Aarts          | [github.com/Pi4J/pi4j-device-tca9548](https://github.com/Pi4J/pi4j-device-tca9548) |
 | [Simple Button](/documentation/device-examples/simplebutton) | Reto Stutz, Mike Schoder | [Example Devices](https://github.com/Pi4J/pi4j-example-components)|
 | [Simple LED](/documentation/device-examples/simpleled) | Reto Stutz, Mike Schoder | [Example Devices](https://github.com/Pi4J/pi4j-example-components)|
-| [Joystick](/documentation/device-examples/joystick) | Reto Stutz, Mike Schoder | [Example Devices](https://github.com/Pi4J/pi4j-example-components)|
-| [LEDButton](/documentation/device-examples/ledbutton) | Reto Stutz, Mike Schoder | [Example Devices](https://github.com/Pi4J/pi4j-example-components)|
 | [AD Converter ADS1115](/documentation/device-examples/ads1115) | Reto Stutz, Mike Schoder | [Example Devices](https://github.com/Pi4J/pi4j-example-components)|
-| [LCD Display](/documentation/device-examples/lcddisplay) | Reto Stutz, Mike Schoder | [Example Devices](https://github.com/Pi4J/pi4j-example-components)|
-| [LEDStrip](/documentation/device-examples/ledstrip) | Reto Stutz, Mike Schoder | [Example Devices](https://github.com/Pi4J/pi4j-example-components)|
-| [LEDMatrix](/documentation/device-examples/ledmatrix) | Reto Stutz, Mike Schoder | [Example Devices](https://github.com/Pi4J/pi4j-example-components)|
-| [Potentiometer](/documentation/device-examples/potentiometer) | Reto Stutz, Mike Schoder | [Example Devices](https://github.com/Pi4J/pi4j-example-components)|
 | [Buzzer](/documentation/device-examples/buzzer) | Reto Stutz, Mike Schoder | [Example Devices](https://github.com/Pi4J/pi4j-example-components)|
+| [Joystick](/documentation/device-examples/joystick) | Reto Stutz, Mike Schoder | [Example Devices](https://github.com/Pi4J/pi4j-example-components)|
+| [LCD Display](/documentation/device-examples/lcddisplay) | Reto Stutz, Mike Schoder | [Example Devices](https://github.com/Pi4J/pi4j-example-components)|
+| [LEDButton](/documentation/device-examples/ledbutton) | Reto Stutz, Mike Schoder | [Example Devices](https://github.com/Pi4J/pi4j-example-components)|
+| [LEDMatrix](/documentation/device-examples/ledmatrix) | Reto Stutz, Mike Schoder | [Example Devices](https://github.com/Pi4J/pi4j-example-components)|
+| [LEDStrip](/documentation/device-examples/ledstrip) | Reto Stutz, Mike Schoder | [Example Devices](https://github.com/Pi4J/pi4j-example-components)|
+| [Potentiometer](/documentation/device-examples/potentiometer) | Reto Stutz, Mike Schoder | [Example Devices](https://github.com/Pi4J/pi4j-example-components)|
 | [Servo](/documentation/device-examples/servo) | Reto Stutz, Mike Schoder | [Example Devices](https://github.com/Pi4J/pi4j-example-components)|
 
 ### Simple Implementation

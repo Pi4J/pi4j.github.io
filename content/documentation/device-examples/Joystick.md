@@ -1,6 +1,6 @@
 ---
 title: Joystick
-weight: 202
+weight: 210
 tags: ["Joystick"]
 ---
 ### Description

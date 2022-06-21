@@ -1,6 +1,6 @@
 ---
 title: Buzzer
-weight: 209
+weight: 210
 tags: ["Buzzer"]
 ---
 ### Description

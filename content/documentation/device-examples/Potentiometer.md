@@ -1,6 +1,6 @@
 ---
 title: Potentiometer
-weight: 208
+weight: 210
 tags: ["Potentiometer"]
 ---
 ### Description
