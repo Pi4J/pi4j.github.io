@@ -20,6 +20,7 @@ to this list.
 | [AD Converter ADS1115](/documentation/device-examples/ads1115) | Reto Stutz, Mike Schoder | [Example Devices](https://github.com/Pi4J/pi4j-example-components)|
 | [Buzzer](/documentation/device-examples/buzzer) | Reto Stutz, Mike Schoder | [Example Devices](https://github.com/Pi4J/pi4j-example-components)|
 | [Joystick](/documentation/device-examples/joystick) | Reto Stutz, Mike Schoder | [Example Devices](https://github.com/Pi4J/pi4j-example-components)|
+| [Joystick Analog](/documentation/device-examples/joystickanalog) | Reto Stutz, Mike Schoder | [Example Devices](https://github.com/Pi4J/pi4j-example-components)|
 | [LCD Display](/documentation/device-examples/lcddisplay) | Reto Stutz, Mike Schoder | [Example Devices](https://github.com/Pi4J/pi4j-example-components)|
 | [LEDButton](/documentation/device-examples/ledbutton) | Reto Stutz, Mike Schoder | [Example Devices](https://github.com/Pi4J/pi4j-example-components)|
 | [LEDMatrix](/documentation/device-examples/ledmatrix) | Reto Stutz, Mike Schoder | [Example Devices](https://github.com/Pi4J/pi4j-example-components)|
