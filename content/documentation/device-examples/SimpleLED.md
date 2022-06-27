@@ -12,6 +12,11 @@ The template Class gives you the option to switch off, switch on or toggle the s
 ### Layout
 ![Simple LED Layout](/assets/documentation/device-examples/Layout-SimpleLED.png)
 
+{{< gallery >}}
+{{< figure link="/assets/documentation/device-examples/pictures/SimpleLedBreadboard.png" caption="Simple Led Breadboard" caption-position="center" caption-effect="fade" >}}
+{{< /gallery >}}
+{{< load-photoswipe >}}
+
 ### Code
 A simple example on how to use the LED-Class from the [Hardware-Catalog](https://github.com/Pi4J/pi4j-example-components) :
 ```

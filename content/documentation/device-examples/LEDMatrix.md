@@ -16,11 +16,17 @@ Check the SPI Address. Default is "SPI0 MOSI" Pin (#19).
 ### Layout
 ![LEDMatrix Layout](/assets/documentation/device-examples/Layout-LEDMatrix.png)
 
+{{< gallery >}}
+{{< figure link="/assets/documentation/device-examples/pictures/LED-MatrixBreadboard.png" caption="LED Matrix Breadboard" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/documentation/device-examples/pictures/LED-Matrix.png" caption="LED Matrix" caption-position="center" caption-effect="fade" >}}
+{{< /gallery >}}
+{{< load-photoswipe >}}
+
 ### Code
 A simple example on how to use the LEDMatrix-Class from the [Hardware-Catalog](https://github.com/Pi4J/pi4j-example-components) :
 ```
 int Rows = 3;
-int Columns = 3;
+int Columns = 4;
 double brightness = 0.5;
 
 System.out.println("Initialising the matrix");

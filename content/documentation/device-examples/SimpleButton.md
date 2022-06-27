@@ -12,6 +12,11 @@ The Template Class gives you the option to check the state of the button, and to
 ### Layout
 ![Simple Button Layout](/assets/documentation/device-examples/Layout-SimpleButton.png)
 
+{{< gallery >}}
+{{< figure link="/assets/documentation/device-examples/pictures/SimpleButtonBreadboard.png" caption="Simple Button Breadboard" caption-position="center" caption-effect="fade" >}}
+{{< /gallery >}}
+{{< load-photoswipe >}}
+
 ### Code
 A simple example on how to use the Button-Class from the [Hardware-Catalog](https://github.com/Pi4J/pi4j-example-components) :
 ```

@@ -60,12 +60,12 @@ HW-131 Breadboard Power Module which provides two voltages 3.3V and 5V and a max
 {{< /gallery >}}
 {{< load-photoswipe >}}
 
-{{% notice note %}}
-In case of an additional power supply, the ground of the Raspberry Pi and the ground of the power supply must be connected to each other.
+{{% notice warning %}}
+Do not use the USB port of the computer to power the electronics. Errors in the wiring can destroy the USB port of the computer.
 {{% /notice %}}
 
 {{% notice note %}}
-Do not use the USB port of the computer to power the electronics. Errors in the wiring can destroy the USB port of the computer.
+In case of an additional power supply, the ground of the Raspberry Pi and the ground of the power supply must be connected to each other.
 {{% /notice %}}
 
 ## Soldering tutorial

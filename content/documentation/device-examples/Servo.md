@@ -10,7 +10,17 @@ You can set the servo to a specific location, likewise to 110 degrees of it's ra
 A suitable hardware component is: [Servo](https://www.berrybase.de/bauelemente/elektromagnetische-bauelemente/motoren-servos/sg92r-micro-servo)
 
 ### Layout
-![Servo Layout](/assets/documentation/device-examples/Layout-servo.png)
+![Servo Layout](/assets/documentation/device-examples/Layout-Servo.png)
+
+{{< gallery >}}
+{{< figure link="/assets/documentation/device-examples/pictures/ServoBreadboard.png" caption="Servo Breadboard" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/documentation/device-examples/pictures/ServoSG-5010-TopView.png" caption="Servo SG-5010 Top View" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/documentation/device-examples/pictures/ServoSG-5010-SideView.png" caption="Servo SG-5010 Side View" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/documentation/device-examples/pictures/ServoSG92R-SideView.png" caption="Servo SG92R Side View" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/documentation/device-examples/pictures/miniPowerSupplyModule.jpeg" caption="Mini Power Supply Module" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/documentation/device-examples/pictures/miniPowerSupplyModuleFrontBack.jpeg" caption="Mini Power Supply Module Front Back" caption-position="center" caption-effect="fade" >}}
+{{< /gallery >}}
+{{< load-photoswipe >}}
 
 ### Code
 An example on how to use the Servo-Class from the [Hardware-Catalog](https://github.com/Pi4J/pi4j-example-components)

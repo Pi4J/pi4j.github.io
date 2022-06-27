@@ -16,6 +16,8 @@ The basic functions of the template class are:
 ![Joystick Layout](/assets/documentation/device-examples/Layout-JoystickAnalog.png)
 
 {{< gallery >}}
+{{< figure link="/assets/documentation/device-examples/pictures/JoystickAnalogBreadboard.png" caption="Joystick Analog Breadboard" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/documentation/device-examples/pictures/JoystickAnalog.png" caption="Joystick Analog" caption-position="center" caption-effect="fade" >}}
 {{< figure link="/assets/documentation/device-examples/pictures/ADS1115-Front.png" caption="ADS1115-Front" caption-position="center" caption-effect="fade" >}}
 {{< figure link="/assets/documentation/device-examples/pictures/ADS1115-Back.png" caption="ADS1115-Back" caption-position="center" caption-effect="fade" >}}
 {{< /gallery >}}
