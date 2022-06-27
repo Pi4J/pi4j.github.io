@@ -4,16 +4,15 @@ weight: 201
 tags: ["Simple LED"]
 ---
 ### Description
-The [simpleLED](https://github.com/Pi4J/pi4j-example-components/tree/Dev-Arcade/src/main/java/com/pi4j/example/components) (src/main/java/com/pi4j/example/components) is a template class, that you can use in your own Java-project.
-You can take any LED you want to. Like for example this one: [LED](https://www.berrybase.de/bauelemente/aktive-bauelemente/leds/led-sortimente/5mm-led-set-70-st-252-ck)
+The [simpleLED](https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/components) (src/main/java/com/pi4j/components) is a template class, that you can use in your own Java-project.
 
 The template Class gives you the option to switch off, switch on or toggle the state of the LED.
 
 ### Layout
-![Simple LED Layout](/assets/documentation/device-examples/Layout-SimpleLED.png)
+![Simple LED Layout](/assets/documentation/device-examples/components/Layout-SimpleLED.png)
 
 {{< gallery >}}
-{{< figure link="/assets/documentation/device-examples/pictures/SimpleLedBreadboard.png" caption="Simple Led Breadboard" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/documentation/device-examples/components/pictures/SimpleLedBreadboard.png" caption="Simple Led Breadboard" caption-position="center" caption-effect="fade" >}}
 {{< /gallery >}}
 {{< load-photoswipe >}}
 

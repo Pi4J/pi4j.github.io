@@ -1,19 +1,20 @@
 ---
-title: LEDButton
+title: LED Button
 weight: 210
 tags: ["LEDButton"]
 ---
 ### Description
-The [LEDButton](https://github.com/Pi4J/pi4j-example-components/tree/Dev-Arcade/src/main/java/com/pi4j/example/components) (src/main/java/com/pi4j/example/components) is a template class, that you can use in your own Java-project.
-You can take any Button with a LED you want to. Like for example this one: [LEDButton](https://www.berrybase.de/bauelemente/schalter-taster/drucktaster/massive-arcade-button-100mm-beleuchtet-40-led-12v-dc-41)
+The [LEDButton](https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/components) (src/main/java/com/pi4j/components) is a template class, that you can use in your own Java-project.
+You can take any Button with a LED you want to. Like for example the big button bellow in the picture gallery.
 
 The Template Class gives you the option to check the state of the button, and to create simple events if the button is pressed or depressed, or the whole time is is being pressed. Also it lets you control the LED.
 
 ### Layout
-![LEDButton Layout](/assets/documentation/device-examples/Layout-LEDButton.png)
+![LEDButton Layout](/assets/documentation/device-examples/components/Layout-LEDButton.png)
 
 {{< gallery >}}
-{{< figure link="/assets/documentation/device-examples/pictures/LedButtonBreadboard.png" caption="Led Button Breadboard" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/documentation/device-examples/components/pictures/LedButtonBreadboard.png" caption="Led Button Breadboard" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/documentation/device-examples/components/pictures/BigButton.png" caption="Big Button" caption-position="center" caption-effect="fade" >}}
 {{< /gallery >}}
 {{< load-photoswipe >}}
 
