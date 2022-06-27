@@ -30,10 +30,9 @@ to this list.
 
 ### Simple Implementation
 
-For a Simple Implementation, the recommendation is to use the [Launcher Class](https://github.com/Pi4J/pi4j-example-components/blob/Dev-Arcade/src/main/java/com/pi4j/example/Launcher.java).
-With this, a simple application can be started.
-
-TODO: better statement how the launcher works
+For a simple implementation of a project with one of the components, the recommendation is to use the [Template-Project](https://github.com/Pi4J/pi4j-template-javafx).
+The Readme.md describes how to get started with the project.
+To get a better understanding, look at one of those finished template-projects: [Theremin](https://github.com/DieterHolz/RaspPiTheremin) or [Photobooth](https://github.com/DieterHolz/PhotoBooth)
 
 ### Electrical Engineering
 General inputs and help on electrical engineering can be looked up on Getting started with PI4J / .[Electrical Engineering](/getting-started/electricalengeneering/) page.
