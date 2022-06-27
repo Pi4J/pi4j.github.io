@@ -4,10 +4,9 @@ weight: 210
 tags: ["LCD Display"]
 ---
 ### Description
-The [LCD Display](https://github.com/Pi4J/pi4j-example-components/tree/Dev-Arcade/src/main/java/com/pi4j/example/components) (src/main/java/com/pi4j/example/components) is a template class, that you can use in your own Java-project.
+The [LCD Display](https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/components) (src/main/java/com/pi4j/components) is a template class, that you can use in your own Java-project.
 It is used to show Numbers, Text and Symbols on a small Display.
 The Class supports only LCD Displays with the PCF8574T I2C Backpack. Supported display-dimensions are 40x2, 20x4, 20x2, 16x2, 16x1.
-A suitable hardware component is: [LCD Display](https://www.berrybase.de/sensoren-module/displays/alphanumerische-displays/alphanumerisches-lcd-16x2-blau/wei-223-mit-i2c-backpack)
 
 {{% notice note %}}
 IF YOU CAN'T SEE ANYTHING WRITTEN ON THE DISPLAY, TRY TO SET THE CONTRAST BY TURNING THE CONTRAST-SCREW AT THE BACK WITH A SCREWDRIVER.
@@ -15,14 +14,14 @@ Also, check if I2C is enabled in your raspberry-config.
 {{% /notice %}}
 
 ### Layout
-![LCD Display Layout](/assets/documentation/device-examples/Layout-LCDDisplay.png)
+![LCD Display Layout](/assets/documentation/device-examples/components/Layout-LCDDisplay.png)
 
 {{< gallery >}}
-{{< figure link="/assets/documentation/device-examples/pictures/LCD-Display2-RowsBreadboard.png" caption="LCD Display 2 Rows Breadboard" caption-position="center" caption-effect="fade" >}}
-{{< figure link="/assets/documentation/device-examples/pictures/LCD-Display2-RowsFront.png" caption="LCD Display 2 Rows Front" caption-position="center" caption-effect="fade" >}}
-{{< figure link="/assets/documentation/device-examples/pictures/LCD-Display2-RowsBack.png" caption="LCD Display 2 Rows Back" caption-position="center" caption-effect="fade" >}}
-{{< figure link="/assets/documentation/device-examples/pictures/LCD-Display4-RowsFront.png" caption="LCD Display 4 Rows Front" caption-position="center" caption-effect="fade" >}}
-{{< figure link="/assets/documentation/device-examples/pictures/LCD-Display4-RowsBack.png" caption="LCD Display 4 Rows Back" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/documentation/device-examples/components/pictures/LCD-Display2-RowsBreadboard.png" caption="LCD Display 2 Rows Breadboard" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/documentation/device-examples/components/pictures/LCD-Display2-RowsFront.png" caption="LCD Display 2 Rows Front" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/documentation/device-examples/components/pictures/LCD-Display2-RowsBack.png" caption="LCD Display 2 Rows Back" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/documentation/device-examples/components/pictures/LCD-Display4-RowsFront.png" caption="LCD Display 4 Rows Front" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/documentation/device-examples/components/pictures/LCD-Display4-RowsBack.png" caption="LCD Display 4 Rows Back" caption-position="center" caption-effect="fade" >}}
 {{< /gallery >}}
 {{< load-photoswipe >}}
 

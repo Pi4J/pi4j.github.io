@@ -1,12 +1,12 @@
 ---
-title: LEDMatrix
+title: LED Matrix
 weight: 210
 tags: ["LEDMatrix"]
 ---
 ### Description
-The [LEDMatrix](https://github.com/Pi4J/pi4j-example-components/tree/Dev-Arcade/src/main/java/com/pi4j/example/components) (src/main/java/com/pi4j/example/components) is a template class, that you can use in your own Java-project.
+The [LEDMatrix](https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/components) (src/main/java/com/pi4j/components) is a template class, that you can use in your own Java-project.
 It is an extension of the class [LEDStrip](/documentation/device-examples/ledstrip). An LED matrix can be built from one LED strip. To do this, separate the LED strip at the desired point and place the individual strips under each other or next to each other. The individual ends can then be connected to each other with a wire.
-The constructor can be passed either as a rectangular matrix or a user-defined matrix with different numbers of LEDs in the individual strips.
+The constructor can be passed either as a rectangular matrix or a user-defined matrix with different numbers of LEDs in the individual strips. A software compatible LED strip is for example the WS28xx-chip set LED Strip.
 
 {{% notice note %}}
 Make sure to check if SPI is enabled in your RaspberryPI.
@@ -14,11 +14,11 @@ Check the SPI Address. Default is "SPI0 MOSI" Pin (#19).
 {{% /notice %}}
 
 ### Layout
-![LEDMatrix Layout](/assets/documentation/device-examples/Layout-LEDMatrix.png)
+![LEDMatrix Layout](/assets/documentation/device-examples/components/Layout-LEDMatrix.png)
 
 {{< gallery >}}
-{{< figure link="/assets/documentation/device-examples/pictures/LED-MatrixBreadboard.png" caption="LED Matrix Breadboard" caption-position="center" caption-effect="fade" >}}
-{{< figure link="/assets/documentation/device-examples/pictures/LED-Matrix.png" caption="LED Matrix" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/documentation/device-examples/components/pictures/LED-MatrixBreadboard.png" caption="LED Matrix Breadboard" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/documentation/device-examples/components/pictures/LED-Matrix.png" caption="LED Matrix" caption-position="center" caption-effect="fade" >}}
 {{< /gallery >}}
 {{< load-photoswipe >}}
 
