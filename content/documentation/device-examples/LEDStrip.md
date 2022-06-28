@@ -1,12 +1,14 @@
 ---
 title: LEDStrip
-weight: 207
+weight: 210
 tags: ["LEDStrip"]
 ---
 ### Description
 The [ledstrip](https://github.com/Pi4J/pi4j-example-components/tree/Dev-Arcade/src/main/java/com/pi4j/example/components) (src/main/java/com/pi4j/example/components) is a template class, that you can use in your own Java-project.
 You can take a LED Strip with the WS28xx-chip set. Like for example this one: [LEDStrip](https://www.berrybase.de/sensoren-module/led/ws2812-13-neopixel/stripes/adafruit-neopixel-led-streifen-starter-pack-30-led/meter-schwarz-1m)
+
 The Template Class gives you the option to set the LED's of the strip to a desired RGB-Color.
+If you have many strips, you can use the [LEDMatrix](/documentation/device-examples/ledmatrix)
 
 {{% notice note %}}
 Make sure to check if SPI is enabled in your RaspberryPI.
@@ -16,46 +18,54 @@ Check the SPI Address. Default is "SPI0 MOSI" Pin (#19).
 ### Layout
 ![LEDStrip Layout](/assets/documentation/device-examples/Layout-LEDStrip.png)
 
+{{< gallery >}}
+{{< figure link="/assets/documentation/device-examples/pictures/LED-Strip4-LED-Breadboard.png" caption="LED Strip 4 LED Breadboard" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/documentation/device-examples/pictures/LED-Strip4-LED.png" caption="LED Strip 4 LED" caption-position="center" caption-effect="fade" >}}
+{{< /gallery >}}
+{{< load-photoswipe >}}
+
 ### Code
 A simple example on how to use the LEDStrip-Class from the [Hardware-Catalog](https://github.com/Pi4J/pi4j-example-components) :
 ```
 // Initialize the RGB
-int pixels = 10;
-final var ledstrip = new LEDStrip(pi4j, pixels, 127);
+int pixels = 4;
+final var ledstrip = new LEDStrip(pi4j, pixels, 0.5);
 
 //set them all off, so nothing is shining
-logInfo("Starting with setting all leds off");
+System.out.println("Starting with setting all leds off");
 ledstrip.allOff();
 
-logInfo("setting the leds to RED");
-ledstrip.setStripColor(PixelColor.RED);
+System.out.println("setting the LEDs to RED");
+ledstrip.setStripColor(LEDStrip.PixelColor.RED);
 ledstrip.render();
 delay(3000);
 
-logInfo("setting the leds to Light Blue");
-ledstrip.setStripColor(PixelColor.LIGHT_BLUE);
+System.out.println("setting the LEDs to Light Blue");
+ledstrip.setStripColor(LEDStrip.PixelColor.LIGHT_BLUE);
 ledstrip.render();
 delay(3000);
 
-logInfo("setting the first led to Purple");
-ledstrip.setPixelColor(0, PixelColor.PURPLE);
+System.out.println("setting the first led to Purple");
+ledstrip.setPixelColor(0, LEDStrip.PixelColor.PURPLE);
 ledstrip.render();
 delay(3000);
 
-logInfo("setting the brightness to full and just show the first led as White");
+System.out.println("setting the brightness to full and just show the first led as White");
 ledstrip.allOff();
-ledstrip.setBrightness(255);
-ledstrip.setPixelColor(0, PixelColor.WHITE);
+ledstrip.setBrightness(1);
+ledstrip.setPixelColor(0, LEDStrip.PixelColor.WHITE);
 ledstrip.render();
 delay(3000);
 
 //finishing and closing
 ledstrip.close();
+System.out.println("closing the app");
+System.out.println("Color "+ ledstrip.getPixelColor(0));
 ```
 
 ### Further application
-The class is implemented in the two sample projects [Theremin](https://github.com/DieterHolz/RaspPiTheremin) and [Potobooth](https://github.com/DieterHolz/PhotoBooth).
+The class is implemented in the sample project [Potobooth](https://github.com/DieterHolz/PhotoBooth).
 
 ### Further projetct ideas
-- A Suit with LED-Strips sewn on, where you can display animations on the strips
-- A RGB-Strip, where you stream your Display on, to use it as ambient light
+- A suit with LED-Strips sewn on, on which different animations can run.
+- A LED-strip which can be used as a backlight of a screen. The color and brightness can change to the volume and mood of the displayed images.

@@ -1,25 +1,35 @@
 ---
 title: LCD Display
-weight: 204
+weight: 210
 tags: ["LCD Display"]
 ---
 ### Description
 The [LCD Display](https://github.com/Pi4J/pi4j-example-components/tree/Dev-Arcade/src/main/java/com/pi4j/example/components) (src/main/java/com/pi4j/example/components) is a template class, that you can use in your own Java-project.
 It is used to show Numbers, Text and Symbols on a small Display.
-The Class supports only LCD Displays with the PCF8574T I2C Backpack. Supported Displays are 40x2, 20x4, 20x2, 16x2, 16x1.
+The Class supports only LCD Displays with the PCF8574T I2C Backpack. Supported display-dimensions are 40x2, 20x4, 20x2, 16x2, 16x1.
 A suitable hardware component is: [LCD Display](https://www.berrybase.de/sensoren-module/displays/alphanumerische-displays/alphanumerisches-lcd-16x2-blau/wei-223-mit-i2c-backpack)
 
 {{% notice note %}}
-IF YOU CAN'T SEE ANYTHING WRITTEN ON THE DISPLAY, TRY TO SET THE CONTRAST BY TURNING THE CONTRAST-SCREW WITH A SCREWDRIVER
+IF YOU CAN'T SEE ANYTHING WRITTEN ON THE DISPLAY, TRY TO SET THE CONTRAST BY TURNING THE CONTRAST-SCREW AT THE BACK WITH A SCREWDRIVER.
+Also, check if I2C is enabled in your raspberry-config.
 {{% /notice %}}
 
 ### Layout
 ![LCD Display Layout](/assets/documentation/device-examples/Layout-LCDDisplay.png)
 
+{{< gallery >}}
+{{< figure link="/assets/documentation/device-examples/pictures/LCD-Display2-RowsBreadboard.png" caption="LCD Display 2 Rows Breadboard" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/documentation/device-examples/pictures/LCD-Display2-RowsFront.png" caption="LCD Display 2 Rows Front" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/documentation/device-examples/pictures/LCD-Display2-RowsBack.png" caption="LCD Display 2 Rows Back" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/documentation/device-examples/pictures/LCD-Display4-RowsFront.png" caption="LCD Display 4 Rows Front" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/documentation/device-examples/pictures/LCD-Display4-RowsBack.png" caption="LCD Display 4 Rows Back" caption-position="center" caption-effect="fade" >}}
+{{< /gallery >}}
+{{< load-photoswipe >}}
+
 ### Code
 An example on how to use the LCD Display-Class from the [Hardware-Catalog](https://github.com/Pi4J/pi4j-example-components)
 
-The PI4J-Context must add the LinuxFsI2CProvider.newInstance() Provider, which is explained under [LinuxFS](/documentation/providers/linuxfs/)
+The PI4J-Context must add the LinuxFsI2C Provider, which is explained under [LinuxFS](/documentation/providers/linuxfs/)
 ```
 pi4j = Pi4J.newContextBuilder()
 	.noAutoDetect()
@@ -146,11 +156,14 @@ public void createCharacters(LCDDisplay lcd) {
   });
 }
 ```
-Create an own [Symbol](https://www.8051projects.net/lcd-interfacing/lcd-custom-character.php)
+{{% notice note %}}
+If you want to create an own character or symbol, then use the following tutorial. Right at the bottom, you can click on the bitmap to see the byte-code.
+[Create an own Symbol](https://www.8051projects.net/lcd-interfacing/lcd-custom-character.php)
+{{% /notice %}}
 
 ### Further application
-The class is implemented in the two sample projects [Theremin](https://github.com/DieterHolz/RaspPiTheremin) and [Potobooth](https://github.com/DieterHolz/PhotoBooth).
+The class is implemented in the sample project [Potobooth](https://github.com/DieterHolz/PhotoBooth).
 
 ### Further projetct ideas
-- A Temperature Sensor hooked to a display, where it shows how warm it is
-- A Microfone, which listens what is said, and writing on the display what is said
+- A Temperature Sensor hooked to a display, where it constantly shows how warm it is
+- A microphone, which listens what is said, and writing on the display what is said

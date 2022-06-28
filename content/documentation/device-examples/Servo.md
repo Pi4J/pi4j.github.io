@@ -1,45 +1,73 @@
 ---
 title: Servo
-weight: 209
+weight: 210
 tags: ["Servo"]
 ---
 ### Description
 The [Servo](https://github.com/Pi4J/pi4j-example-components/tree/Dev-Arcade/src/main/java/com/pi4j/example/components) (src/main/java/com/pi4j/example/components) is a template class, that you can use in your own Java-project.
 You can set the servo to a specific location, likewise to 110 degrees of it's range.
+
 A suitable hardware component is: [Servo](https://www.berrybase.de/bauelemente/elektromagnetische-bauelemente/motoren-servos/sg92r-micro-servo)
 
 ### Layout
-![Servo Layout](/assets/documentation/device-examples/Layout-servo.png)
+![Servo Layout](/assets/documentation/device-examples/Layout-Servo.png)
+
+{{< gallery >}}
+{{< figure link="/assets/documentation/device-examples/pictures/ServoBreadboard.png" caption="Servo Breadboard" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/documentation/device-examples/pictures/ServoSG-5010-TopView.png" caption="Servo SG-5010 Top View" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/documentation/device-examples/pictures/ServoSG-5010-SideView.png" caption="Servo SG-5010 Side View" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/documentation/device-examples/pictures/ServoSG92R-SideView.png" caption="Servo SG92R Side View" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/documentation/device-examples/pictures/miniPowerSupplyModule.jpeg" caption="Mini Power Supply Module" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/documentation/device-examples/pictures/miniPowerSupplyModuleFrontBack.jpeg" caption="Mini Power Supply Module Front Back" caption-position="center" caption-effect="fade" >}}
+{{< /gallery >}}
+{{< load-photoswipe >}}
 
 ### Code
 An example on how to use the Servo-Class from the [Hardware-Catalog](https://github.com/Pi4J/pi4j-example-components)
 
 ```
-//testing component has only a valid range in 45 degrees
-        int maxDegrees = 45;
-        //initialising component
-        Servo servo = new Servo(pi4j, PIN.PWM18, 500, 1500, maxDegrees);
+// Initialize servo motor component
+final var servoMotor = new ServoMotor(pi4j, PIN.PWM18.getPin());
 
-        logInfo("setting it to the lowest position");
-        servo.setMin();
-        delay(1000);
+// Demonstrate the percentage mapping on the servo
+System.out.println("In 2 seconds, the servo motor will move to the left-most position which is 0%");
+delay(2000);
+servoMotor.setPercent(10);
 
-        logInfo("setting it to the center position");
-        servo.setCenter();
-        delay(1000);
+System.out.println("In another 2 seconds, the servo motor will show 100% by moving to the right-most position");
+delay(2000);
+servoMotor.setPercent(90);
 
-        logInfo("setting it to the highest position");
-        servo.setMax();
-        delay(1000);
+System.out.println("Last but not least, in 2 more seconds the servo will be centered to display 50%");
+delay(2000);
+servoMotor.setPercent(50);
 
-        logInfo("counting up from zero");
-        for (int i = 0; i < maxDegrees; i++) {
-            servo.setPositionDegrees(i);
-            delay(500);
-        }
+// Sweep once from left to right using the setAngle function
+System.out.println("We will sweep once to the left in 2 seconds...");
+delay(2000);
+servoMotor.setAngle(-80);
 
-        logInfo("closing the connection, shutting down the pwm");
-        servo.close();
+System.out.println("... and now to the right in 2 more seconds!");
+delay(2000);
+servoMotor.setAngle(80);
+
+// Use a custom range for displaying the data
+System.out.println("Imagine a pointer on the servo positioned above a label between -20ºC and +40ºC");
+System.out.println("By using the setRange() method, we can automatically map our temperature range to the servo range!");
+System.out.println("As an example, in five seconds the servo will show -10º which should be on the far left of the servo.");
+delay(2000);
+
+servoMotor.setRange(-20, +40); // This will define our range as values between -20 and +40
+servoMotor.moveOnRange(-10); // This will map -10 based on the previously defined range
+
+delay(2000);
+
+//back to middle position
+System.out.println("To finish the servo will be centered to display 50%");
+servoMotor.setPercent(50);
+
+// And this demo is over, sleep for a second to give the servo some time to position itself
+delay(1000);
 ```
 
 ### Further application
@@ -47,4 +75,4 @@ The class is implemented in the two sample projects [Theremin](https://github.co
 
 ### Further projetct ideas
 - As a Servo can cover up to 180 degrees, it could be used as a steering-wheel hooked to a potentiometer
-- A pointer, to show how much time is left
+- As a pointer, to show how much time is left in a timer

@@ -1,18 +1,27 @@
 ---
 title: Joystick
-weight: 202
+weight: 210
 tags: ["Joystick"]
 ---
 ### Description
 The [Joystick](https://github.com/Pi4J/pi4j-example-components/tree/Dev-Arcade/src/main/java/com/pi4j/example/components) (src/main/java/com/pi4j/example/components) is a template class, that you can use in your own Java-project.
 The template is created for a digital joystick with 4 directions (up, right, down, left) and as an option additionally with a push button in direction down.
-A suitable hardware component is: : [Joystick](https://www.reichelt.com/ch/de/entwicklerboards-arcade-knopf-joystick-kit-debo-arcade-kit-p256436.html?PROVID=2808&gclid=CjwKCAiAgvKQBhBbEiwAaPQw3MO3WLBqcT6DHMUkYO6i48psAwyXVe3VInKECFcebdgTe-iKTppDCxoC_uEQAvD_BwE)
+A suitable hardware component is: [Joystick](https://www.reichelt.com/ch/de/entwicklerboards-arcade-knopf-joystick-kit-debo-arcade-kit-p256436.html?PROVID=2808&gclid=CjwKCAiAgvKQBhBbEiwAaPQw3MO3WLBqcT6DHMUkYO6i48psAwyXVe3VInKECFcebdgTe-iKTppDCxoC_uEQAvD_BwE)
 
 The template class allows to query the individual joystick positions and can trigger a simple event when the joystick swings out in a direction or when it returns to the center position.
-The class implements the simpleInput template.
 
 ### Layout
 ![Joystick Layout](/assets/documentation/device-examples/Layout-Joystick.png)
+
+{{< gallery >}}
+{{< figure link="/assets/documentation/device-examples/pictures/JoystickDigitalBreadboard.png" caption="Joystick Digital Breadboard" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/documentation/device-examples/pictures/JoystickDigitalTopView.png" caption="Joystick Digital Top View" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/documentation/device-examples/pictures/JoystickDigitalBackViewAllAxis.png" caption="Joystick Digital Back View All Axis" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/documentation/device-examples/pictures/JoystickDigitalBackViewOneAxis.png" caption="Joystick Digital Back View One Axis" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/documentation/device-examples/pictures/JoystickDigitalWiringBack.png" caption="Joystick Digital Wiring Back" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/documentation/device-examples/pictures/JoystickDigitalWiringBackCorner.png" caption="Joystick Digital Wiring Back Corner" caption-position="center" caption-effect="fade" >}}
+{{< /gallery >}}
+{{< load-photoswipe >}}
 
 ### Code
 A simple example on how to use the Joystick-Class from the [Hardware-Catalog](https://github.com/Pi4J/pi4j-example-components) :
@@ -45,9 +54,8 @@ joystick.deRegisterAll();
 ```
 
 ### Further application
-The class is implemented in the two sample projects [Theremin](https://github.com/DieterHolz/RaspPiTheremin) and [Potobooth](https://github.com/DieterHolz/PhotoBooth).
+The class is not yet implemented in a project.
 
 ### Further projetct ideas
-
 - Realize the popular arcade game Street Fighter on your own Raspberry Pi.
-- Create a crane claws game, the hit at every party.
+- Create a claw crane game machine, the hit at every party.

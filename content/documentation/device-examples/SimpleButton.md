@@ -6,10 +6,16 @@ tags: ["Simple Button"]
 ### Description
 The [simplebutton](https://github.com/Pi4J/pi4j-example-components/tree/Dev-Arcade/src/main/java/com/pi4j/example/components) (src/main/java/com/pi4j/example/components) is a template class, that you can use in your own Java-project.
 You can take any Button you want to. Like for example this one: [Arcade Button](https://www.berrybase.de/bauelemente/schalter-taster/drucktaster/arcade-button-30mm)
-The Template Class gives you the option to check the state of the button, and to create simple events if the button is pressed or depressed.
+
+The Template Class gives you the option to check the state of the button, and to create simple events if the button is pressed, depressed or while it is being pressed.
 
 ### Layout
 ![Simple Button Layout](/assets/documentation/device-examples/Layout-SimpleButton.png)
+
+{{< gallery >}}
+{{< figure link="/assets/documentation/device-examples/pictures/SimpleButtonBreadboard.png" caption="Simple Button Breadboard" caption-position="center" caption-effect="fade" >}}
+{{< /gallery >}}
+{{< load-photoswipe >}}
 
 ### Code
 A simple example on how to use the Button-Class from the [Hardware-Catalog](https://github.com/Pi4J/pi4j-example-components) :
