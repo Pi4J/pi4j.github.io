@@ -1,11 +1,11 @@
 ---
-title: LEDStrip
+title: LED Strip
 weight: 210
 tags: ["LEDStrip"]
 ---
 ### Description
-The [ledstrip](https://github.com/Pi4J/pi4j-example-components/tree/Dev-Arcade/src/main/java/com/pi4j/example/components) (src/main/java/com/pi4j/example/components) is a template class, that you can use in your own Java-project.
-You can take a LED Strip with the WS28xx-chip set. Like for example this one: [LEDStrip](https://www.berrybase.de/sensoren-module/led/ws2812-13-neopixel/stripes/adafruit-neopixel-led-streifen-starter-pack-30-led/meter-schwarz-1m)
+The [ledstrip](https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/components) (src/main/java/com/pi4j/components) is a template class, that you can use in your own Java-project.
+You can take a LED Strip with the WS28xx-chip set.
 
 The Template Class gives you the option to set the LED's of the strip to a desired RGB-Color.
 If you have many strips, you can use the [LEDMatrix](/documentation/device-examples/ledmatrix)
@@ -16,11 +16,11 @@ Check the SPI Address. Default is "SPI0 MOSI" Pin (#19).
 {{% /notice %}}
 
 ### Layout
-![LEDStrip Layout](/assets/documentation/device-examples/Layout-LEDStrip.png)
+![LEDStrip Layout](/assets/documentation/device-examples/components/Layout-LEDStrip.png)
 
 {{< gallery >}}
-{{< figure link="/assets/documentation/device-examples/pictures/LED-Strip4-LED-Breadboard.png" caption="LED Strip 4 LED Breadboard" caption-position="center" caption-effect="fade" >}}
-{{< figure link="/assets/documentation/device-examples/pictures/LED-Strip4-LED.png" caption="LED Strip 4 LED" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/documentation/device-examples/components/pictures/LED-Strip4-LED-Breadboard.png" caption="LED Strip 4 LED Breadboard" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/documentation/device-examples/components/pictures/LED-Strip4-LED.png" caption="LED Strip 4 LED" caption-position="center" caption-effect="fade" >}}
 {{< /gallery >}}
 {{< load-photoswipe >}}
 

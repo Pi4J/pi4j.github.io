@@ -4,7 +4,7 @@ weight: 210
 tags: ["Potentiometer"]
 ---
 ### Description
-The [Potentiometer](https://github.com/Pi4J/pi4j-example-components/tree/Dev-Arcade/src/main/java/com/pi4j/example/components) (src/main/java/com/pi4j/example/components) is a template class, that you can use in your own Java-project.
+The [Potentiometer](https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/components) (src/main/java/com/pi4j/components) is a template class, that you can use in your own Java-project.
 The constructor of the class requires an ADS1115 object. In addition, the channel, with which the AD converter evaluates the current position of the sliding contact must be defined. For normalization, the maximum voltage that can drop across the sliding contact must also be specified. Any commercially available potentiometer with three connections (fixed resistor and the slider) can be evaluated with this class.
 
 The current position of the slider can be defined with a single shot. The return value is either in volts or as a normalized value between 0 and 1.
@@ -16,14 +16,14 @@ Using the fast method, a continuous measurement is started in the AD converter. 
 If continuous measurement is active, a customized event can be triggered when the position of the slider changes. The threshold can be used to set the sensitivity at which the event should be triggered.
 
 ### Layout
-![Potentiometer Layout](/assets/documentation/device-examples/Layout-Potentiometer.png)
+![Potentiometer Layout](/assets/documentation/device-examples/components/Layout-Potentiometer.png)
 ![]()
 
 {{< gallery >}}
-{{< figure link="/assets/documentation/device-examples/pictures/PotentiometerBreadboard.png" caption="Potentiometer Breadboard" caption-position="center" caption-effect="fade" >}}
-{{< figure link="/assets/documentation/device-examples/pictures/Potentiometer.png" caption="Potentiometer" caption-position="center" caption-effect="fade" >}}
-{{< figure link="/assets/documentation/device-examples/pictures/ADS1115-Front.png" caption="ADS1115-Front" caption-position="center" caption-effect="fade" >}}
-{{< figure link="/assets/documentation/device-examples/pictures/ADS1115-Back.png" caption="ADS1115-Back" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/documentation/device-examples/components/pictures/PotentiometerBreadboard.png" caption="Potentiometer Breadboard" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/documentation/device-examples/components/pictures/Potentiometer.png" caption="Potentiometer" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/documentation/device-examples/components/pictures/ADS1115-Front.png" caption="ADS1115-Front" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/documentation/device-examples/components/pictures/ADS1115-Back.png" caption="ADS1115-Back" caption-position="center" caption-effect="fade" >}}
 {{< /gallery >}}
 {{< load-photoswipe >}}
 
