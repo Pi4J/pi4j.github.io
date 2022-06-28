@@ -53,6 +53,6 @@ ledMatrix.close();
 ### Further application
 The class is not yet implemented in a project.
 
-### Further projetct ideas
+### Further project ideas
 - A suit with a sewn-on LED matrix, which can be used to display images and animations.
 - A LED-strip which can be used as a backlight of a screen. The color and brightness can change to the volume and mood of the displayed images.

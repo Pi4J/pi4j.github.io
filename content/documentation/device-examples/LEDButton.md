@@ -51,6 +51,6 @@ System.out.println("Everything off");
 ### Further application
 The class is implemented in the two sample projects [Theremin](https://github.com/DieterHolz/RaspPiTheremin) and [Potobooth](https://github.com/DieterHolz/PhotoBooth).
 
-### Further projetct ideas
+### Further project ideas
 - An application, which includes a button. if the button is pressed, the app will order you a crate of beer from your favorite store.
 - An application, where you can play "whack a mole". If the LED is on and you hit the right button, you get points.

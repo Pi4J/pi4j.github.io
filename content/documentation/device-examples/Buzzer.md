@@ -64,6 +64,6 @@ delay(3000);
 ### Further application
 The class is implemented in the sample project [Theremin](https://github.com/DieterHolz/RaspPiTheremin).
 
-### Further projetct ideas
+### Further project ideas
 - An application, which triggers if you walk by and starts beeping, like an alarm.
 - An application, where you use many of them to create a beautiful sounding melody.

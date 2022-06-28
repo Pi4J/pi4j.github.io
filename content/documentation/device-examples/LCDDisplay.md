@@ -9,7 +9,7 @@ It is used to show Numbers, Text and Symbols on a small Display.
 The Class supports only LCD Displays with the PCF8574T I2C Backpack. Supported display-dimensions are 40x2, 20x4, 20x2, 16x2, 16x1.
 A suitable hardware component is: [LCD Display](https://www.berrybase.de/sensoren-module/displays/alphanumerische-displays/alphanumerisches-lcd-16x2-blau/wei-223-mit-i2c-backpack)
 
-{{% notice note %}}
+{{% notice warning %}}
 IF YOU CAN'T SEE ANYTHING WRITTEN ON THE DISPLAY, TRY TO SET THE CONTRAST BY TURNING THE CONTRAST-SCREW AT THE BACK WITH A SCREWDRIVER.
 Also, check if I2C is enabled in your raspberry-config.
 {{% /notice %}}
@@ -164,6 +164,6 @@ If you want to create an own character or symbol, then use the following tutoria
 ### Further application
 The class is implemented in the sample project [Potobooth](https://github.com/DieterHolz/PhotoBooth).
 
-### Further projetct ideas
+### Further project ideas
 - A Temperature Sensor hooked to a display, where it constantly shows how warm it is
 - A microphone, which listens what is said, and writing on the display what is said

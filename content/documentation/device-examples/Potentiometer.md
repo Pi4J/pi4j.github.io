@@ -64,6 +64,6 @@ System.out.println("Potentiometer test done");
 ### Further application
 The class is implemented in the sample project [Theremin](https://github.com/DieterHolz/RaspPiTheremin).
 
-### Further projetct ideas
+### Further project ideas
 - An application, to control the brightness of some lights.
 - The speed and direction of a drone can be controlled with a potentiometer.
