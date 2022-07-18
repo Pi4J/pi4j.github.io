@@ -66,6 +66,6 @@ System.out.println("Color "+ ledstrip.getPixelColor(0));
 ### Further application
 The class is implemented in the sample project [Potobooth](https://github.com/DieterHolz/PhotoBooth).
 
-### Further projetct ideas
+### Further project ideas
 - A suit with LED-Strips sewn on, on which different animations can run.
 - A LED-strip which can be used as a backlight of a screen. The color and brightness can change to the volume and mood of the displayed images.

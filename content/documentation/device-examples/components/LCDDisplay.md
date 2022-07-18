@@ -163,6 +163,6 @@ If you want to create an own character or symbol, then use the following tutoria
 ### Further application
 The class is implemented in the sample project [Photobooth](https://github.com/DieterHolz/PhotoBooth).
 
-### Further projetct ideas
+### Further project ideas
 - A Temperature Sensor hooked to a display, where it constantly shows how warm it is
 - A microphone, which listens what is said, and writing on the display what is said

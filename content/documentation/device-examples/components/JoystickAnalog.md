@@ -70,7 +70,7 @@ System.out.println("Joystick test done");
 ### Further application
 The class is implemented in the sample project [Theremin](https://github.com/DieterHolz/RaspPiTheremin).
 
-### Further projetct ideas
+### Further project ideas
 
 - create your own PlayStation controller
 - use the joystick to control the position of servo motors steplessly

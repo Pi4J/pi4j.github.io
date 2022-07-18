@@ -1,5 +1,5 @@
 ---
-title: Devices examples
+title: Device examples
 weight: 130
 ---
 
@@ -12,6 +12,9 @@ V.1 but made it much more difficult to maintain and fully test the library.
 | Provider         | Link              |
 | :---                  | :---              |
 | FHNW          | [Components](/documentation/device-examples/components) |
+<<<<<<< HEAD
+| Community Implementation         | [Community Implementation](/documentation/device-examples/communityimplementation) |
+=======
 | Community Implementation         | [Community Implementation](/documentation/device-examples/communityimplementation) |
 
 ### Simple Implementation
@@ -22,3 +25,4 @@ To get a better understanding, look at one of those finished template-projects: 
 
 ### Electrical Engineering
 General inputs and help on electrical engineering can be looked up on Getting started with PI4J / .[Electrical Engineering](/getting-started/electricalengeneering/) page.
+>>>>>>> 76e4d4f723e89f6782ae2b971cc7f29cd9d9ddff

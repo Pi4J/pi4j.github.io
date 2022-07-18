@@ -56,6 +56,6 @@ joystick.deRegisterAll();
 ### Further application
 The class is not yet implemented in a project.
 
-### Further projetct ideas
+### Further project ideas
 - Realize the popular arcade game Street Fighter on your own Raspberry Pi.
 - Create a claw crane game machine, the hit at every party.
