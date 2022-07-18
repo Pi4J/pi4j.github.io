@@ -161,7 +161,7 @@ If you want to create an own character or symbol, then use the following tutoria
 {{% /notice %}}
 
 ### Further application
-The class is implemented in the sample project [Potobooth](https://github.com/DieterHolz/PhotoBooth).
+The class is implemented in the sample project [Photobooth](https://github.com/DieterHolz/PhotoBooth).
 
 ### Further projetct ideas
 - A Temperature Sensor hooked to a display, where it constantly shows how warm it is
