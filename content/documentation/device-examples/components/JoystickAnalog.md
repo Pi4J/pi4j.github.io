@@ -4,8 +4,8 @@ weight: 210
 tags: ["Joystick analog"]
 ---
 ### Description
-The [JoystickAnalog](https://github.com/Pi4J/pi4j-example-components/tree/Dev-Arcade/src/main/java/com/pi4j/example/components) (src/main/java/com/pi4j/example/components) is a template class, that you can use in your own Java-project.
-The template class is created for an analog joystick, for example the KY-023, which consists of two potentiometers, one for the X-axis and one for the Y-axis.
+The [JoystickAnalog](https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/components) (src/main/java/com/pi4j/components) is a template class, that you can use in your own Java-project.
+The template class is created for an analog joystick, for example the KY-023, which consists of two potentiometers, one for the X-axis and one for the Y-axis. But any joystick with two potentiometers will meet the requirements.
 
 The basic functions of the template class are:
 * return of a normalized value, optionally between 0 and 1 or between -1 and 1, of the X-axis and the Y-axis
@@ -13,13 +13,13 @@ The basic functions of the template class are:
 * calibration of the center position of the joystick (center position 0.5 at a normalized value between 0 and 1, center position 0 at a normalized value between -1 and 1)
 
 ### Layout
-![Joystick Layout](/assets/documentation/device-examples/Layout-JoystickAnalog.png)
+![Joystick Layout](/assets/documentation/device-examples/components/Layout-JoystickAnalog.png)
 
 {{< gallery >}}
-{{< figure link="/assets/documentation/device-examples/pictures/JoystickAnalogBreadboard.png" caption="Joystick Analog Breadboard" caption-position="center" caption-effect="fade" >}}
-{{< figure link="/assets/documentation/device-examples/pictures/JoystickAnalog.png" caption="Joystick Analog" caption-position="center" caption-effect="fade" >}}
-{{< figure link="/assets/documentation/device-examples/pictures/ADS1115-Front.png" caption="ADS1115-Front" caption-position="center" caption-effect="fade" >}}
-{{< figure link="/assets/documentation/device-examples/pictures/ADS1115-Back.png" caption="ADS1115-Back" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/documentation/device-examples/components/pictures/JoystickAnalogBreadboard.png" caption="Joystick Analog Breadboard" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/documentation/device-examples/components/pictures/JoystickAnalog.png" caption="Joystick Analog" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/documentation/device-examples/components/pictures/ADS1115-Front.png" caption="ADS1115-Front" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/documentation/device-examples/components/pictures/ADS1115-Back.png" caption="ADS1115-Back" caption-position="center" caption-effect="fade" >}}
 {{< /gallery >}}
 {{< load-photoswipe >}}
 

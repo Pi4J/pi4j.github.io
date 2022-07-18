@@ -4,17 +4,16 @@ weight: 210
 tags: ["Buzzer"]
 ---
 ### Description
-The [Buzzer](https://github.com/Pi4J/pi4j-example-components/tree/Dev-Arcade/src/main/java/com/pi4j/example/components) (src/main/java/com/pi4j/example/components) is a template class, that you can use in your own Java-project.
-You can take any Buzzer you find. Like for example this one: [Buzzer](https://www.berrybase.de/sensoren-module/audio-schall/ky-012-aktives-buzzer-modul)
+The [Buzzer](https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/components) (src/main/java/com/pi4j/components) is a template class, that you can use in your own Java-project.
 
 The Template Class gives you the option to play a note, and to create your own little melodies to play. The buzzer is controlled via a PWM output. The dutycycle is fixed at 50% and with the frequency the desired sound can be reproduced.
 
 ### Layout
-![Buzzer Layout](/assets/documentation/device-examples/Layout-Buzzer.png)
+![Buzzer Layout](/assets/documentation/device-examples/components/Layout-Buzzer.png)
 
 {{< gallery >}}
-{{< figure link="/assets/documentation/device-examples/pictures/BuzzerActiveBreadboard.png" caption="Buzzer Acitve Breadboard" caption-position="center" caption-effect="fade" >}}
-{{< figure link="/assets/documentation/device-examples/pictures/BuzzerActive.png" caption="Buzzer Active" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/documentation/device-examples/components/pictures/BuzzerActiveBreadboard.png" caption="Buzzer Acitve Breadboard" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/documentation/device-examples/components/pictures/BuzzerActive.png" caption="Buzzer Active" caption-position="center" caption-effect="fade" >}}
 {{< /gallery >}}
 {{< load-photoswipe >}}
 
