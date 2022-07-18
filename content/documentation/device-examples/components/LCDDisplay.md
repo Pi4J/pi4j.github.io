@@ -8,7 +8,7 @@ The [LCD Display](https://github.com/Pi4J/pi4j-example-components/tree/main/src/
 It is used to show Numbers, Text and Symbols on a small Display.
 The Class supports only LCD Displays with the PCF8574T I2C Backpack. Supported display-dimensions are 40x2, 20x4, 20x2, 16x2, 16x1.
 
-{{% notice warning %}}
+{{% notice note %}}
 IF YOU CAN'T SEE ANYTHING WRITTEN ON THE DISPLAY, TRY TO SET THE CONTRAST BY TURNING THE CONTRAST-SCREW AT THE BACK WITH A SCREWDRIVER.
 Also, check if I2C is enabled in your raspberry-config.
 {{% /notice %}}
@@ -161,7 +161,7 @@ If you want to create an own character or symbol, then use the following tutoria
 {{% /notice %}}
 
 ### Further application
-The class is implemented in the sample project [Potobooth](https://github.com/DieterHolz/PhotoBooth).
+The class is implemented in the sample project [Photobooth](https://github.com/DieterHolz/PhotoBooth).
 
 ### Further project ideas
 - A Temperature Sensor hooked to a display, where it constantly shows how warm it is

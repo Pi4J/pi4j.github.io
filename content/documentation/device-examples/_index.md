@@ -12,4 +12,17 @@ V.1 but made it much more difficult to maintain and fully test the library.
 | Provider         | Link              |
 | :---                  | :---              |
 | FHNW          | [Components](/documentation/device-examples/components) |
+<<<<<<< HEAD
 | Community Implementation         | [Community Implementation](/documentation/device-examples/communityimplementation) |
+=======
+| Community Implementation         | [Community Implementation](/documentation/device-examples/communityimplementation) |
+
+### Simple Implementation
+
+For a simple implementation of a project with one of the components, the recommendation is to use the [Template-Project](https://github.com/Pi4J/pi4j-template-javafx).
+The Readme.md describes how to get started with the project.
+To get a better understanding, look at one of those finished template-projects: [Theremin](https://github.com/DieterHolz/RaspPiTheremin) or [Photobooth](https://github.com/DieterHolz/PhotoBooth)
+
+### Electrical Engineering
+General inputs and help on electrical engineering can be looked up on Getting started with PI4J / .[Electrical Engineering](/getting-started/electricalengeneering/) page.
+>>>>>>> 76e4d4f723e89f6782ae2b971cc7f29cd9d9ddff
