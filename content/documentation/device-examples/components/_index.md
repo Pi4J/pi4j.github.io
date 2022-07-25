@@ -32,4 +32,4 @@ With this, a simple application can be started.
 TODO: better statement how the launcher works
 
 ### Electrical Engineering
-General inputs and help on electrical engineering can be looked up on Getting started with PI4J / .[Electrical Engineering](/getting-started/electricalengeneering/) page.
+General inputs and help on electrical engineering can be looked up on Getting started with PI4J / [Electrical Engineering](/getting-started/electricalengeneering/) page.
