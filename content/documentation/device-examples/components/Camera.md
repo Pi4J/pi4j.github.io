@@ -21,7 +21,7 @@ The camera class is using the bash-commands "libcamera-hello", "libcamera-still"
 ### Code
 An example on how to use the Camera-Class from the [Hardware-Catalog](https://github.com/Pi4J/pi4j-example-components)
 
-```
+```java
 System.out.println("Initializing the camera");
 Camera camera = new Camera();
 
@@ -53,7 +53,7 @@ camera.takeVid(vidconfig);
 ```
 
 ### Further application
-The class is implemented in the sample project [Potobooth](https://github.com/DieterHolz/PhotoBooth).
+The class is implemented in the sample project [Photobooth](https://github.com/DieterHolz/PhotoBooth).
 
 ### Further project ideas
 - Use a camera and a motion-sensor to create a wildlife-camera

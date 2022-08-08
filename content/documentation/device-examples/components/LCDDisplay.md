@@ -29,7 +29,7 @@ Also, check if I2C is enabled in your raspberry-config.
 An example on how to use the LCD Display-Class from the [Hardware-Catalog](https://github.com/Pi4J/pi4j-example-components)
 
 The PI4J-Context must add the LinuxFsI2C Provider, which is explained under [LinuxFS](/documentation/providers/linuxfs/)
-```
+```java
 pi4j = Pi4J.newContextBuilder()
 	.noAutoDetect()
 	.add(new RaspberryPiPlatform() {
@@ -48,7 +48,7 @@ pi4j = Pi4J.newContextBuilder()
 	.build();
 ```
 When the right Context is loaded, you can use the Display like following:
-```
+```java
 //Create a Component, with amount of ROWS and COLUMNS of the Device
 LCDDisplay lcd = new LCDDisplay(pi4j, 4, 20);
 System.out.println("Here we go.. let's have some fun with that LCD Display!");

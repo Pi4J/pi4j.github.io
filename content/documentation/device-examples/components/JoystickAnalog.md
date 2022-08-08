@@ -25,7 +25,7 @@ The basic functions of the template class are:
 
 ### Code
 A simple example on how to use the JoystickAnalog-Class from the [Hardware-Catalog](https://github.com/Pi4J/pi4j-example-components) :
-```
+```java
 System.out.println("Joystick test started ...");
 
 ADS1115 ads1115 = new ADS1115(pi4j, 0x01, ADS1115.GAIN.GAIN_4_096V, ADS1115.ADDRESS.GND, 4);

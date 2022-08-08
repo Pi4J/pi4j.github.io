@@ -25,7 +25,7 @@ You can use a wide variety of analog servo motors such as the SG92R or the SG-50
 ### Code
 An example on how to use the Servo-Class from the [Hardware-Catalog](https://github.com/Pi4J/pi4j-example-components)
 
-```
+```java
 // Initialize servo motor component
 final var servoMotor = new ServoMotor(pi4j, PIN.PWM18.getPin());
 
@@ -71,7 +71,7 @@ delay(1000);
 ```
 
 ### Further application
-The class is implemented in the two sample projects [Theremin](https://github.com/DieterHolz/RaspPiTheremin) and [Potobooth](https://github.com/DieterHolz/PhotoBooth).
+The class is implemented in the two sample projects [Theremin](https://github.com/DieterHolz/RaspPiTheremin) and [Photobooth](https://github.com/DieterHolz/PhotoBooth).
 
 ### Further project ideas
 - As a Servo can cover up to 180 degrees, it could be used as a steering-wheel hooked to a potentiometer

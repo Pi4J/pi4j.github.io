@@ -18,7 +18,7 @@ The template Class gives you the option to switch off, switch on or toggle the s
 
 ### Code
 A simple example on how to use the LED-Class from the [Hardware-Catalog](https://github.com/Pi4J/pi4j-example-components) :
-```
+```java
 // Create a new SimpleLED component
 SimpleLED led = new SimpleLED(pi4j, PIN.D26);
 
@@ -38,7 +38,7 @@ System.out.println("off");
 delay(2000);
 ```
 ### Further application
-The class is implemented in the two sample projects [Theremin](https://github.com/DieterHolz/RaspPiTheremin) and [Potobooth](https://github.com/DieterHolz/PhotoBooth).
+The class is implemented in the two sample projects [Theremin](https://github.com/DieterHolz/RaspPiTheremin) and [Photobooth](https://github.com/DieterHolz/PhotoBooth).
 
 ### Further project ideas
 - Use an infrared LED to establish communication with an infrared receiver.

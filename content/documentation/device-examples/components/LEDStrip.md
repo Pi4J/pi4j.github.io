@@ -26,7 +26,7 @@ Check the SPI Address. Default is "SPI0 MOSI" Pin (#19).
 
 ### Code
 A simple example on how to use the LEDStrip-Class from the [Hardware-Catalog](https://github.com/Pi4J/pi4j-example-components) :
-```
+```java
 // Initialize the RGB
 int pixels = 4;
 final var ledstrip = new LEDStrip(pi4j, pixels, 0.5);
@@ -64,7 +64,7 @@ System.out.println("Color "+ ledstrip.getPixelColor(0));
 ```
 
 ### Further application
-The class is implemented in the sample project [Potobooth](https://github.com/DieterHolz/PhotoBooth).
+The class is implemented in the sample project [Photobooth](https://github.com/DieterHolz/PhotoBooth).
 
 ### Further project ideas
 - A suit with LED-Strips sewn on, on which different animations can run.

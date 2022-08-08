@@ -19,7 +19,7 @@ The Template Class gives you the option to play a note, and to create your own l
 
 ### Code
 A simple example on how to use the Buzzer-Class from the [Hardware-Catalog](https://github.com/Pi4J/pi4j-example-components) :
-```
+```java
 //initialising the buzzer
 Buzzer buzzer = new Buzzer(pi4j, PIN.PWM18);
 

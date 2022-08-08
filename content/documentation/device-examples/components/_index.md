@@ -29,7 +29,5 @@ for which a Java implementation, based on Pi4J V.2, is available.
 For a Simple Implementation, the recommendation is to use the [Launcher Class](https://github.com/Pi4J/pi4j-example-components/blob/Dev-Arcade/src/main/java/com/pi4j/example/Launcher.java).
 With this, a simple application can be started.
 
-TODO: better statement how the launcher works
-
 ### Electrical Engineering
 General inputs and help on electrical engineering can be looked up on Getting started with PI4J / [Electrical Engineering](/getting-started/electricalengeneering/) page.

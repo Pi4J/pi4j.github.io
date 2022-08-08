@@ -25,7 +25,7 @@ The template class allows to query the individual joystick positions and can tri
 
 ### Code
 A simple example on how to use the Joystick-Class from the [Hardware-Catalog](https://github.com/Pi4J/pi4j-example-components) :
-```
+```java
 //Initzalize the joystick component
 final var joystick = new Joystick(pi4j, PIN.D5, PIN.D6, PIN.PWM13, PIN.PWM19, PIN.D26);
 
