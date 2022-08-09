@@ -4,7 +4,7 @@ weight: 210
 tags: ["Servo"]
 ---
 ### Description
-The [Servo](https://github.com/Pi4J/pi4j-example-components/tree/Dev-Arcade/src/main/java/com/pi4j/example/components) (src/main/java/com/pi4j/example/components) is a template class, that you can use in your own Java-project.
+The [Servo](https://github.com/Pi4J/pi4j-example-components/tree/Dev-Arcade/src/main/java/com/pi4j/example/catalog) (src/main/java/com/pi4j/catalog) is a template class, that you can use in your own Java-project.
 You can set the servo to a specific location, likewise to 110 degrees of it's range.
 
 You can use a wide variety of analog servo motors such as the SG92R or the SG-5010 (for a little more torque).

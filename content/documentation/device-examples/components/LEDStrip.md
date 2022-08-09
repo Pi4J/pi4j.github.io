@@ -4,7 +4,7 @@ weight: 210
 tags: ["LEDStrip"]
 ---
 ### Description
-The [ledstrip](https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/components) (src/main/java/com/pi4j/components) is a template class, that you can use in your own Java-project.
+The [ledstrip](https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog) (src/main/java/com/pi4j/catalog) is a template class, that you can use in your own Java-project.
 You can take a LED Strip with the WS28xx-chip set.
 
 The Template Class gives you the option to set the LED's of the strip to a desired RGB-Color.

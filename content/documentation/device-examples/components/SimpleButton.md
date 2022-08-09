@@ -4,7 +4,7 @@ weight: 200
 tags: ["Simple Button"]
 ---
 ### Description
-The [simplebutton](https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/components) (src/main/java/com/pi4j/components) is a template class, that you can use in your own Java-project.
+The [simplebutton](https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog) (src/main/java/com/pi4j/catalog) is a template class, that you can use in your own Java-project.
 
 The Template Class gives you the option to check the state of the button, and to create simple events if the button is pressed, depressed or while it is being pressed.
 

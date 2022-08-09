@@ -4,7 +4,7 @@ weight: 210
 tags: ["Camera"]
 ---
 ### Description
-The [Camera](https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/components) (src/main/java/com/pi4j/components/components) is a template class, that you can use in your own Java-project.
+The [Camera](https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog) (src/main/java/com/pi4j/catalog) is a template class, that you can use in your own Java-project.
 Currently, the code is only tested with a [Raspberry-Camera](https://www.raspberrypi.com/documentation/accessories/camera.html#introducing-the-raspberry-pi-cameras) and the [crowpi-image](/getting-started/crowpi/crowpi-os/).
 You can take pictures or videos, with or without a preview.
 

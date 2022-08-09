@@ -4,7 +4,7 @@ weight: 210
 tags: ["Joystick"]
 ---
 ### Description
-The [Joystick](https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/components) (src/main/java/com/pi4j/components) is a template class, that you can use in your own Java-project.
+The [Joystick](https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog) (src/main/java/com/pi4j/catalog) is a template class, that you can use in your own Java-project.
 The template is created for a digital joystick with 4 directions (up, right, down, left) and as an option additionally with a push button in direction down.
 A suitable hardware component is the arcade joystick in the picture bellow. But any joystick with switching contacts will meet the requirements.
 
