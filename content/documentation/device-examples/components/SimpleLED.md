@@ -4,7 +4,7 @@ weight: 201
 tags: ["Simple LED"]
 ---
 ### Description
-The [simpleLED](https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog) (src/main/java/com/pi4j/catalog) is a template class, that you can use in your own Java-project.
+The [SimpleLED](https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog/components/SimpleLED.java) is a template class, that you can use in your own Java-project.
 
 The template Class gives you the option to switch off, switch on or toggle the state of the LED.
 

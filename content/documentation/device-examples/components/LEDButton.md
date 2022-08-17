@@ -4,7 +4,7 @@ weight: 210
 tags: ["LEDButton"]
 ---
 ### Description
-The [LEDButton](https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog) (src/main/java/com/pi4j/catalog) is a template class, that you can use in your own Java-project.
+The [LEDButton](https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog/components/LEDButton.java) is a template class, that you can use in your own Java-project.
 You can take any Button with a LED you want to. Like for example the big button bellow in the picture gallery.
 
 The Template Class gives you the option to check the state of the button, and to create simple events if the button is pressed or depressed, or the whole time is is being pressed. Also it lets you control the LED.

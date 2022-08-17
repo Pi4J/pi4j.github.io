@@ -4,8 +4,8 @@ weight: 210
 tags: ["LEDMatrix"]
 ---
 ### Description
-The [LEDMatrix](https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j//catalog) (src/main/java/com/pi4j/catalog) is a template class, that you can use in your own Java-project.
-It is an extension of the class [LEDStrip](/documentation/device-examples/ledstrip). An LED matrix can be built from one LED strip. To do this, separate the LED strip at the desired point and place the individual strips under each other or next to each other. The individual ends can then be connected to each other with a wire.
+The [LEDMatrix](https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j//catalog/components/LEDMatrix.java) is a template class, that you can use in your own Java-project.
+It is an extension of the class [LEDStrip](/documentation/device-examples/components/ledstrip). An LED matrix can be built from one LED strip. To do this, separate the LED strip at the desired point and place the individual strips under each other or next to each other. The individual ends can then be connected to each other with a wire.
 The constructor can be passed either as a rectangular matrix or a user-defined matrix with different numbers of LEDs in the individual strips. A software compatible LED strip is for example the WS28xx-chip set LED Strip.
 
 {{% notice note %}}

@@ -4,7 +4,7 @@ weight: 210
 tags: ["Potentiometer"]
 ---
 ### Description
-The [Potentiometer](https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog) (src/main/java/com/pi4j/catalog) is a template class, that you can use in your own Java-project.
+The [Potentiometer](https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog/components/Potentiometer.java) is a template class, that you can use in your own Java-project.
 The constructor of the class requires an ADS1115 object. In addition, the channel, with which the AD converter evaluates the current position of the sliding contact must be defined. For normalization, the maximum voltage that can drop across the sliding contact must also be specified. Any commercially available potentiometer with three connections (fixed resistor and the slider) can be evaluated with this class.
 
 The current position of the slider can be defined with a single shot. The return value is either in volts or as a normalized value between 0 and 1.

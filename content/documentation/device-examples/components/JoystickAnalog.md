@@ -4,7 +4,7 @@ weight: 210
 tags: ["Joystick analog"]
 ---
 ### Description
-The [JoystickAnalog](https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog) (src/main/java/com/pi4j/catalog) is a template class, that you can use in your own Java-project.
+The [JoystickAnalog](https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog/components/JoystickAnalog.java) is a template class, that you can use in your own Java-project.
 The template class is created for an analog joystick, for example the KY-023, which consists of two potentiometers, one for the X-axis and one for the Y-axis. But any joystick with two potentiometers will meet the requirements.
 
 The basic functions of the template class are:

@@ -4,11 +4,11 @@ weight: 210
 tags: ["LEDStrip"]
 ---
 ### Description
-The [ledstrip](https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog) (src/main/java/com/pi4j/catalog) is a template class, that you can use in your own Java-project.
+The [LEDStrip](https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog/components/LEDStrip.java) is a template class, that you can use in your own Java-project.
 You can take a LED Strip with the WS28xx-chip set.
 
 The Template Class gives you the option to set the LED's of the strip to a desired RGB-Color.
-If you have many strips, you can use the [LEDMatrix](/documentation/device-examples/ledmatrix)
+If you have many strips, you can use the [LEDMatrix](/documentation/device-examples/components/ledmatrix)
 
 {{% notice note %}}
 Make sure to check if SPI is enabled in your RaspberryPI.
