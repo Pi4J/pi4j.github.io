@@ -1,10 +1,9 @@
 ---
-title: Components
+title: Component examples
 weight: 50
 ---
 
-The core Pi4J V.2 library doesn't contain any specific support for devices like buttons, motors, LCD etc. This page lists widely used components
-for which a Java implementation, based on Pi4J V.2, is available.
+The FHNW University contributed a full project with example implementations of the following devices.
 
 ### Current available components
 
