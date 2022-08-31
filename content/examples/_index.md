@@ -12,8 +12,8 @@ In this section, we want to provide you example implementations of several devic
 
 | Provider                 | Link              |
 |:-------------------------| :---              |
-| FHNW University          | [Components](/documentation/device-examples/components) |
-| Community Implementation | [Community Implementation](/documentation/device-examples/communityimplementation) |
+| FHNW University          | [Components](/examples/components) |
+| Community Implementation | [Community Implementation](/examples/communityimplementation) |
 
 ### Simple Implementation
 
