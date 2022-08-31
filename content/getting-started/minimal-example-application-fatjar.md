@@ -9,7 +9,7 @@ GITHUB PROJECT: [https://github.com/Pi4J/pi4j-example-fatjar](https://github.com
 {{% /notice %}}
 
 The ["Minimal example application"](/getting-started/minimal-example-application/) uses one LED and button to demonstrate
-the basic use of Pi4J V2. When building that project with Maven, all the required Java modules are copied to the 
+the basic use of Pi4J V.2. When building that project with Maven, all the required Java modules are copied to the 
 `target/distribution` directory. But a lot of developers like to produce a single, executable JAR that contains
 all dependencies, also known as a "FAT JAR".
 

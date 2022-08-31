@@ -8,7 +8,7 @@ tags: ["Maven"]
 GITHUB PROJECT: [https://github.com/Pi4J/pi4j-example-minimal](https://github.com/Pi4J/pi4j-example-minimal)
 {{% /notice %}}
 
-Because the Pi4J V2 project follows the modular approach of Java, the functionality of the framework has been split into
+Because the Pi4J V.2 project follows the modular approach of Java, the functionality of the framework has been split into
 different modules, each with their own responsibility. 
 
 The easiest way to start a new project, is to copy one of the example projects which include a full Maven pom.xml-file

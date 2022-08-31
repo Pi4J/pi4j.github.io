@@ -13,7 +13,7 @@ EXAMPLE PROJECT: [https://github.com/Pi4J/pi4j-example-fatjar](https://github.co
 With Pi4J V1 you can create a so-called FAT JAR, which packages all the dependencies into one jar-file. That way it is
 very easy to build your project on one computer and distribute your application as a single file to one or more clients.
 
-Because of the modular approach and how Pi4J V2 loads it dependencies at runtime, this approach can be achieved by using
+Because of the modular approach and how Pi4J V.2 loads it dependencies at runtime, this approach can be achieved by using
 the maven-shade-plugin.
 
 ## Example FAT JAR project
@@ -108,7 +108,7 @@ As a jar-file is actually a zip-file, we can easily check the contents of the FA
 
 ## Loading of the Pi4J modules
 
-Pi4J V2 uses ServiceLoader to detect which modules are available to communicate with the GPIOs. This allows to very 
+Pi4J V.2 uses ServiceLoader to detect which modules are available to communicate with the GPIOs. This allows to very 
 dynamically extend the possibilities of the framework.
 
 Code extract from [pi4j-core/src/.../runtime/impl/DefaultRuntime.java](https://github.com/Pi4J/pi4j-v2/blob/develop/pi4j-core/src/main/java/com/pi4j/runtime/impl/DefaultRuntime.java#L224):

@@ -9,4 +9,4 @@ Since Pi4J is a low-level library, it tries to avoid inheriting third-party libr
 
 The dark grey blocks "Annotation Engine", "@Register" and "@Inject" are here as a future idea but are not included in the current V2.
 
-![Pi4J V2 architecture](https://raw.githubusercontent.com/Pi4J/pi4j-v2/master/assets/draw.io/pi4j-v2-architecture.jpg)
+![Pi4J V.2 architecture](https://raw.githubusercontent.com/Pi4J/pi4j-v2/master/assets/draw.io/pi4j-v2-architecture.jpg)

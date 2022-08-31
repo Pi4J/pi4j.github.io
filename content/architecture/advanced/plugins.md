@@ -37,4 +37,4 @@ module com.pi4j.plugin.raspberrypi {
 
 ServiceLoader overview by [Piotr Mińkowski](https://twitter.com/piotr_minkowski).
 
-![Pi4J V2 architecture](/assets/architecture/serviceloader-overview.jpg)
+![Pi4J V.2 architecture](/assets/architecture/serviceloader-overview.jpg)

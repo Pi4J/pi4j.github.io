@@ -6,7 +6,7 @@ tags: ["Visual Studio Code"]
 
 ## Java on the Raspberry Pi
 
-To use Pi4J V2 you'll need Java 11 or newer. Luckily this version is included in the current version of Raspberry Pi OS. 
+To use Pi4J V.2 you'll need Java 11 or newer. Luckily this version is included in the current version of Raspberry Pi OS. 
 In the release notes you can see that the version of 2019-06-20 includes OpenJDK Java 11:
 
 ```shell
