@@ -1,6 +1,19 @@
 # Pi4J website
 
-## GoHugo
+Sources of [the documentation website of the Pi4J project](https://www.pi4j.com).
+
+## Contribute 
+
+If you want to contribute to this website, make a fork and create a merge request.
+
+### New release
+
+When a new release of Pi4J is created, following has to be modified in this website:
+
+* Root _index.md: update version and date
+* about/release-notes.md: update the content to match the new version
+
+## Created with GoHugo
 
 This website is created with the static site generator [Hugo](https://gohugo.io/).
 
