@@ -5,7 +5,7 @@ tags: ["Serial"]
 ---
 
 {{% notice note %}}
-GITHUB PROJECT: [https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/example/serial/gps](https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/example/serial/gps)
+GITHUB PROJECT: [https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/SerialGps_App.java](https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/SerialGps_App.java)
 {{% /notice %}}
 
 ## What is it?
