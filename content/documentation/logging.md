@@ -17,7 +17,7 @@ There are different ways to configure the logging output, as described on [the S
 
 ```java
 public static void main(String[] args) throws Exception {
-    // Configure default lolling level, accept a log level as the first program argument
+    // Configure default logging level, accept a log level as the first program argument
     System.setProperty("org.slf4j.simpleLogger.defaultLogLevel", "INFO");
         
     // Your code comes here
