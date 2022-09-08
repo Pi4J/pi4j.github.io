@@ -3,7 +3,9 @@ title: Joystick Analog
 weight: 210
 tags: ["Joystick analog"]
 ---
+
 ### Description
+
 The [JoystickAnalog](https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog/components/JoystickAnalog.java) is a template class, that you can use in your own Java-project.
 The template class is created for an analog joystick, for example the KY-023, which consists of two potentiometers, one for the X-axis and one for the Y-axis. But any joystick with two potentiometers will meet the requirements.
 
@@ -13,18 +15,21 @@ The basic functions of the template class are:
 * calibration of the center position of the joystick (center position 0.5 at a normalized value between 0 and 1, center position 0 at a normalized value between -1 and 1)
 
 ### Layout
-![Joystick Layout](/assets/documentation/device-examples/components/Layout-JoystickAnalog.png)
+
+![Joystick Layout](/assets/examples/components/components/Layout-JoystickAnalog.png)
 
 {{< gallery >}}
-{{< figure link="/assets/documentation/device-examples/components/pictures/JoystickAnalogBreadboard.png" caption="Joystick Analog Breadboard" caption-position="center" caption-effect="fade" >}}
-{{< figure link="/assets/documentation/device-examples/components/pictures/JoystickAnalog.png" caption="Joystick Analog" caption-position="center" caption-effect="fade" >}}
-{{< figure link="/assets/documentation/device-examples/components/pictures/ADS1115-Front.png" caption="ADS1115-Front" caption-position="center" caption-effect="fade" >}}
-{{< figure link="/assets/documentation/device-examples/components/pictures/ADS1115-Back.png" caption="ADS1115-Back" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/examples/components/components/pictures/JoystickAnalogBreadboard.png" caption="Joystick Analog Breadboard" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/examples/components/components/pictures/JoystickAnalog.png" caption="Joystick Analog" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/examples/components/components/pictures/ADS1115-Front.png" caption="ADS1115-Front" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/examples/components/components/pictures/ADS1115-Back.png" caption="ADS1115-Back" caption-position="center" caption-effect="fade" >}}
 {{< /gallery >}}
 {{< load-photoswipe >}}
 
 ### Code
-A simple example on how to use the JoystickAnalog-Class from the [Hardware-Catalog](https://github.com/Pi4J/pi4j-example-components) :
+
+A simple example on how to use the JoystickAnalog-Class from the [Hardware-Catalog](https://github.com/Pi4J/pi4j-example-components):
+
 ```java
 System.out.println("Joystick test started ...");
 
@@ -68,6 +73,7 @@ System.out.println("Joystick test done");
 ```
 
 ### Further application
+
 The class is implemented in the sample project [Theremin](https://github.com/DieterHolz/RaspPiTheremin).
 
 ### Further project ideas

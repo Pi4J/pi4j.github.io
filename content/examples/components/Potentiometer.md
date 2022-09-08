@@ -3,7 +3,9 @@ title: Potentiometer
 weight: 210
 tags: ["Potentiometer"]
 ---
+
 ### Description
+
 The [Potentiometer](https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog/components/Potentiometer.java) is a template class, that you can use in your own Java-project.
 The constructor of the class requires an ADS1115 object. In addition, the channel, with which the AD converter evaluates the current position of the sliding contact must be defined. For normalization, the maximum voltage that can drop across the sliding contact must also be specified. Any commercially available potentiometer with three connections (fixed resistor and the slider) can be evaluated with this class.
 
@@ -16,19 +18,21 @@ Using the fast method, a continuous measurement is started in the AD converter. 
 If continuous measurement is active, a customized event can be triggered when the position of the slider changes. The threshold can be used to set the sensitivity at which the event should be triggered.
 
 ### Layout
-![Potentiometer Layout](/assets/documentation/device-examples/components/Layout-Potentiometer.png)
+
+![Potentiometer Layout](/assets/examples/components/components/Layout-Potentiometer.png)
 ![]()
 
 {{< gallery >}}
-{{< figure link="/assets/documentation/device-examples/components/pictures/PotentiometerBreadboard.png" caption="Potentiometer Breadboard" caption-position="center" caption-effect="fade" >}}
-{{< figure link="/assets/documentation/device-examples/components/pictures/Potentiometer.png" caption="Potentiometer" caption-position="center" caption-effect="fade" >}}
-{{< figure link="/assets/documentation/device-examples/components/pictures/ADS1115-Front.png" caption="ADS1115-Front" caption-position="center" caption-effect="fade" >}}
-{{< figure link="/assets/documentation/device-examples/components/pictures/ADS1115-Back.png" caption="ADS1115-Back" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/examples/components/components/pictures/PotentiometerBreadboard.png" caption="Potentiometer Breadboard" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/examples/components/components/pictures/Potentiometer.png" caption="Potentiometer" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/examples/components/components/pictures/ADS1115-Front.png" caption="ADS1115-Front" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/examples/components/components/pictures/ADS1115-Back.png" caption="ADS1115-Back" caption-position="center" caption-effect="fade" >}}
 {{< /gallery >}}
 {{< load-photoswipe >}}
 
 ### Code
-A simple example on how to use the potentiometer from the [Hardware-Catalog](https://github.com/Pi4J/pi4j-example-components) :
+
+A simple example on how to use the potentiometer from the [Hardware-Catalog](https://github.com/Pi4J/pi4j-example-components):
 
 ```java
 System.out.println("Potentiometer test started ...");
@@ -62,8 +66,10 @@ System.out.println("Potentiometer test done");
 ```
 
 ### Further application
+
 The class is implemented in the sample project [Theremin](https://github.com/DieterHolz/RaspPiTheremin).
 
 ### Further project ideas
+
 - An application, to control the brightness of some lights.
 - The speed and direction of a drone can be controlled with a potentiometer.

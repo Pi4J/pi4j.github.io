@@ -3,27 +3,31 @@ title: ServoMotor
 weight: 210
 tags: ["ServoMotor"]
 ---
+
 ### Description
+
 The [ServoMotor](https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog/components/ServoMotor.java) is a template class, that you can use in your own Java-project.
 You can set the servo to a specific location, likewise to 110 degrees of it's range.
 
 You can use a wide variety of analog servo motors such as the SG92R or the SG-5010 (for a little more torque).
 
 ### Layout
-![Servo Layout](/assets/documentation/device-examples/components/Layout-Servo.png)
+
+![Servo Layout](/assets/examples/components/components/Layout-Servo.png)
 
 {{< gallery >}}
-{{< figure link="/assets/documentation/device-examples/components/pictures/ServoBreadboard.png" caption="Servo Breadboard" caption-position="center" caption-effect="fade" >}}
-{{< figure link="/assets/documentation/device-examples/components/pictures/ServoSG-5010-TopView.png" caption="Servo SG-5010 Top View" caption-position="center" caption-effect="fade" >}}
-{{< figure link="/assets/documentation/device-examples/components/pictures/ServoSG-5010-SideView.png" caption="Servo SG-5010 Side View" caption-position="center" caption-effect="fade" >}}
-{{< figure link="/assets/documentation/device-examples/components/pictures/ServoSG92R-SideView.png" caption="Servo SG92R Side View" caption-position="center" caption-effect="fade" >}}
-{{< figure link="/assets/documentation/device-examples/components/pictures/miniPowerSupplyModule.jpeg" caption="Mini Power Supply Module" caption-position="center" caption-effect="fade" >}}
-{{< figure link="/assets/documentation/device-examples/components/pictures/miniPowerSupplyModuleFrontBack.jpeg" caption="Mini Power Supply Module Front Back" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/examples/components/components/pictures/ServoBreadboard.png" caption="Servo Breadboard" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/examples/components/components/pictures/ServoSG-5010-TopView.png" caption="Servo SG-5010 Top View" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/examples/components/components/pictures/ServoSG-5010-SideView.png" caption="Servo SG-5010 Side View" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/examples/components/components/pictures/ServoSG92R-SideView.png" caption="Servo SG92R Side View" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/examples/components/components/pictures/miniPowerSupplyModule.jpeg" caption="Mini Power Supply Module" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/examples/components/components/pictures/miniPowerSupplyModuleFrontBack.jpeg" caption="Mini Power Supply Module Front Back" caption-position="center" caption-effect="fade" >}}
 {{< /gallery >}}
 {{< load-photoswipe >}}
 
 ### Code
-An example on how to use the Servo-Class from the [Hardware-Catalog](https://github.com/Pi4J/pi4j-example-components)
+
+An example how to use the Servo-Class from the [Hardware-Catalog](https://github.com/Pi4J/pi4j-example-components):
 
 ```java
 // Initialize servo motor component
@@ -71,8 +75,10 @@ delay(1000);
 ```
 
 ### Further application
+
 The class is implemented in the two sample projects [Theremin](https://github.com/DieterHolz/RaspPiTheremin) and [Photobooth](https://github.com/DieterHolz/PhotoBooth).
 
 ### Further project ideas
+
 - As a Servo can cover up to 180 degrees, it could be used as a steering-wheel hooked to a potentiometer
 - As a pointer, to show how much time is left in a timer

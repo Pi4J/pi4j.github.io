@@ -23,30 +23,53 @@ Uses the [Hugo-theme-learn](https://learn.netlify.app/en/).
 
 Special layout components are explained on [learn.netlify.app/en/shortcodes](https://learn.netlify.app/en/shortcodes/notice/).
 
-### Additional tools 
+### Text format
+
+All pages are separate md-files inside the [content](content/) directory. The formatting
+of the text needs to use the rules specified in [commonmark.org](https://spec.commonmark.org/0.29/).
+
+### Images
+
+#### Location for images
+
+Upload new images to `/static/assets/` (please use a subdirectory per chapter).
+
+#### Single image 
+
+To include a single image in your content use the following structure:
+
+`![DESCRIPTION](/assets/DIR/FILE)`
+
+For example:
+
+`![Wiring of a LED and button for the minimal example](/assets/getting-started/minimal/led-button_bb.png)`
 
 #### Gallery image view
 
-https://www.liwen.id.au/heg/#gallery-usage
-https://github.com/liwenyip/hugo-easy-gallery/
+For multiple images a gallery view can be used thanks to the integration of [Hugo Easy Gallery](https://www.liwen.id.au/heg/#gallery-usage).
 
 Example use:
 
 ```
 {{< gallery >}}
-{{< figure link="/assets/... .png" caption="" caption-position="center" caption-effect="fade" >}}
-{{< figure link="/assets/... .png" caption="" caption-position="center" caption-effect="fade" >}}
-{{< figure link="/assets/... .png" caption="" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/DIR/FILE" caption="DESCRIPTION" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/DIR/FILE" caption="DESCRIPTION" caption-position="center" caption-effect="fade" >}}
 {{< /gallery >}}
 {{< load-photoswipe >}}
 ```
 
-The last line only must be added once per page if multiple galleries are used.
+Please note `{{< load-photoswipe >}}`, the last line only must be added once per page if multiple galleries are used.
 
-### Text format
+For example:
 
-All pages are separate md-files inside the [content](content/) directory. The formatting
-of the text needs to use the rules specified in [commonmark.org](https://spec.commonmark.org/0.29/).
+```
+{{< gallery >}}
+{{< figure link="/assets/featured-projects/didier/IMG_20210831_125559-small.jpg" caption="Robot picture 1" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/featured-projects/didier/IMG_20210831_125615-small.jpg" caption="Robot picture 2" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/featured-projects/didier/IMG_20210920_083431-small.jpg" caption="Robot picture 3" caption-position="center" caption-effect="fade" >}}
+{{< /gallery >}}
+{{< load-photoswipe >}}
+```
 
 ### Test locally
 

@@ -19,7 +19,7 @@ speed increases. When you have pushed the button 5 times, the application stops.
 
 This minimal example application uses this wiring:
 
-![](/assets/getting-started/minimal/led-button_bb.png)
+![Wiring of a LED and button for the minimal example application](/assets/getting-started/minimal/led-button_bb.png)
 
 ## Building the application
 

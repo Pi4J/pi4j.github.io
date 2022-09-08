@@ -3,22 +3,27 @@ title: Buzzer
 weight: 210
 tags: ["Buzzer"]
 ---
+
 ### Description
+
 The [Buzzer](https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog/components/Buzzer.java) is a template class, that you can use in your own Java-project.
 
 The Template Class gives you the option to play a note, and to create your own little melodies to play. The buzzer is controlled via a PWM output. The dutycycle is fixed at 50% and with the frequency the desired sound can be reproduced.
 
 ### Layout
-![Buzzer Layout](/assets/documentation/device-examples/components/Layout-Buzzer.png)
+
+![Buzzer Layout](/assets/examples/components/components/Layout-Buzzer.png)
 
 {{< gallery >}}
-{{< figure link="/assets/documentation/device-examples/components/pictures/BuzzerActiveBreadboard.png" caption="Buzzer Acitve Breadboard" caption-position="center" caption-effect="fade" >}}
-{{< figure link="/assets/documentation/device-examples/components/pictures/BuzzerActive.png" caption="Buzzer Active" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/examples/components/components/pictures/BuzzerActiveBreadboard.png" caption="Buzzer Acitve Breadboard" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/examples/components/components/pictures/BuzzerActive.png" caption="Buzzer Active" caption-position="center" caption-effect="fade" >}}
 {{< /gallery >}}
 {{< load-photoswipe >}}
 
 ### Code
-A simple example on how to use the Buzzer-Class from the [Hardware-Catalog](https://github.com/Pi4J/pi4j-example-components) :
+
+A simple example on how to use the Buzzer-Class from the [Hardware-Catalog](https://github.com/Pi4J/pi4j-example-components):
+
 ```java
 //initialising the buzzer
 Buzzer buzzer = new Buzzer(pi4j, PIN.PWM18);
@@ -61,8 +66,10 @@ delay(3000);
 ```
 
 ### Further application
+
 The class is implemented in the sample project [Theremin](https://github.com/DieterHolz/RaspPiTheremin).
 
 ### Further project ideas
+
 - An application, which triggers if you walk by and starts beeping, like an alarm.
 - An application, where you use many of them to create a beautiful sounding melody.
