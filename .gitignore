@@ -46,3 +46,6 @@ Thumbs.db
 # Netbeans IDE files
 /nbproject/private/
 /nbproject/
+
+# Auto generated
+/docs/
