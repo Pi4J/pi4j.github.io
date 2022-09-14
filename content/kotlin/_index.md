@@ -1,5 +1,6 @@
 ---
 title: Kotlin
+description: "Pi4J Kotlin DSL & API Example & Documentation"
 weight: 45
 ---
 

@@ -1,13 +1,14 @@
 ---
 title: Minimal Kotlin Pi4J example
+description: "Pi4J Kotlin DSL & API Example"
 weight: 46
 ---
 
-{{% notice note %}}
-GITHUB PROJECT: [https://github.com/Pi4J/pi4j-kotlin/blob/master/example/src/main/kotlin/MinimalExample.kt](https://github.com/Pi4J/pi4j-kotlin/blob/master/example/src/main/kotlin/MinimalExample.kt)
+{{% notice info %}}
+Full Example on GitHub: [https://github.com/Pi4J/pi4j-kotlin/blob/master/example/src/main/kotlin/MinimalExample.kt](https://github.com/Pi4J/pi4j-kotlin/blob/master/example/src/main/kotlin/MinimalExample.kt)
 {{% /notice %}}
 
-{{% notice note %}}
+{{% notice tip %}}
 For full documentation, visit the [Kotlin Docs](https://pi4j.com/kotlin/kotlin-api-docs/)
 {{% /notice %}}
 

@@ -1,9 +1,13 @@
 ---
 title: Kotlin API & DSL Documentation
+description: "Pi4J Kotlin DSL & API Documentation"
 weight: 47
 ---
 
+{{% notice info %}}
 Here you can find the provided APIs and the dead-simple DSLs of the Kotlin package.
+{{% /notice %}}
+
 
 ## Components
 
