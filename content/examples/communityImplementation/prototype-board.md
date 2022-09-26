@@ -1,6 +1,6 @@
 ---
 title: Prototype Board
-weight: 210
+weight: 101
 tags: ["Prototype"]
 ---
 
@@ -24,9 +24,9 @@ jumpers to connect directly to the [Pi Gpio pins](/assets/examples/community/pro
 Also, the jumper connections to the Pi are simplified by extending the Pi 
 gpios to an external Gpio breadboard.
 
-{{% notice tip %}}
-1. Power off 'sudo shutdown' the Pi prior to making connections.
-   {{% /notice %}}
+{{% notice note %}}
+Power off 'sudo shutdown' the Pi prior to making connections.
+{{% /notice %}}
 
 ### Component and wiring
 
@@ -36,10 +36,17 @@ Connecting directly to the Pi [40 pin connector](/assets/examples/community/prot
 terminations increase and the use of a case and fan require minor disassembly. The
 40 pin connector can be extended to a Gpio breadboard. This extension is 
 possible with a ribbon cable.
-![ribbon cable and breadboards](/assets/examples/community/prototype/proto_flatcable_breadboard.png)
+
+{{< gallery >}}
+{{< figure link="/assets/examples/community/prototype/proto_flatcable_breadboard.png" caption="Ribbon cable and breadboards" caption-position="center" caption-effect="fade" >}}
+{{< /gallery >}}
+{{< load-photoswipe >}}
 
 Once the ribbon cable is attached to the Pi 40 pin connector the Pi case can be secured.
-![Prototyope power](/assets/examples/community/prototype/proto_pi_w_cable.png)
+
+{{< gallery >}}
+{{< figure link="/assets/examples/community/prototype/proto_pi_w_cable.png" caption="Prototyope power" caption-position="center" caption-effect="fade" >}}
+{{< /gallery >}}
 
 ## Ribbon cable termination
 
@@ -48,17 +55,25 @@ Gpio breadboard terminates the ribbon cable. The Gpio breadboard is wired to sup
 3.3v 5v and ground through multiple pins to facilitate use of multiple chip 
 breadboards.
 
-![Prototype pi_40_pin_extension](/assets/examples/community/prototype/proto_40_connector.png)
+{{< gallery >}}
+{{< figure link="/assets/examples/community/prototype/proto_40_connector.png" caption="Prototype pi_40_pin_extension" caption-position="center" caption-effect="fade" >}}
+{{< /gallery >}}
 
 The use of a 28 pin socket will accommodate many different chips.
-![Prototype pi_28_pin_socket](/assets/examples/community/prototype/proto_28Pin_socket.png)
+
+{{< gallery >}}
+{{< figure link="/assets/examples/community/prototype/proto_28Pin_socket.png" caption="Prototype pi_28_pin_socket" caption-position="center" caption-effect="fade" >}}
+{{< /gallery >}}
 
 Soldering the 28 pin socket and pins associated with each of the 28 pins provides 
 jumper connections to all pins of the inserted chip. 
 
 The chip breadboard also provides sets of pins for 3.3v 5v and ground. Single jumpers 
 from the Gpio breadboard to this chip breadboard provides these multiple pins.  
-![Prototype board](/assets/examples/community/prototype/proto_28pin_mounted.png)
+
+{{< gallery >}}
+{{< figure link="/assets/examples/community/prototype/proto_28pin_mounted.png" caption="Prototype board" caption-position="center" caption-effect="fade" >}}
+{{< /gallery >}}
 
 ## Complete 
 
@@ -67,7 +82,10 @@ the chip with its pin 1 at the pin 1 of the chip breadboard it simplifies pin
 identification between the chips datasheet and its breadboard connection. 
 Using the chips Datasheet jumpers connect between pins of the chip to the Pi 
 GPIOs on Gpio breadboard connector or 5v/3.3v and ground on the chip breadboard. 
-![Prototype complete](/assets/examples/community/prototype/proto_complete.png)
+
+{{< gallery >}}
+{{< figure link="/assets/examples/community/prototype/proto_complete.png" caption="Prototype complete" caption-position="center" caption-effect="fade" >}}
+{{< /gallery >}}
 
 
 
