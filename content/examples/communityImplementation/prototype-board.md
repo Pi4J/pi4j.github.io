@@ -25,7 +25,7 @@ Also, the jumper connections to the Pi are simplified by extending the Pi
 gpios to an external Gpio breadboard.
 
 {{% notice note %}}
-Power off 'sudo shutdown' the Pi prior to making connections.
+Power off the Pi with `sudo shutdown` prior to making connections.
 {{% /notice %}}
 
 ### Component and wiring
