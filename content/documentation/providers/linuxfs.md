@@ -13,9 +13,19 @@ Providers in the LinuxFS plugin:
   * linuxfs-digital-output
   * linuxfs-pwm
 
-To use the LinuxFS provider first add the proper dependency:
+To use the LinuxFS provider include the following dependencies:
 
 ``` xml
+<dependency>
+    <groupId>com.pi4j</groupId>
+    <artifactId>pi4j-core</artifactId>
+    <version>${pi4j.version}</version>
+</dependency>
+<dependency>
+    <groupId>com.pi4j</groupId>
+    <artifactId>pi4j-plugin-raspberrypi</artifactId>
+    <version>${pi4j.version}</version>
+</dependency>
 <dependency>
     <groupId>com.pi4j</groupId>
     <artifactId>pi4j-plugin-linuxfs</artifactId>
