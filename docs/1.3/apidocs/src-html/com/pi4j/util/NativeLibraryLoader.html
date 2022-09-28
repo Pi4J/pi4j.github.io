@@ -1,0 +1,301 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+<title>Source code</title>
+<link rel="stylesheet" type="text/css" href="../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<div class="sourceContainer">
+<pre><span class="sourceLineNo">001</span>package com.pi4j.util;<a name="line.1"></a>
+<span class="sourceLineNo">002</span><a name="line.2"></a>
+<span class="sourceLineNo">003</span>/*<a name="line.3"></a>
+<span class="sourceLineNo">004</span> * #%L<a name="line.4"></a>
+<span class="sourceLineNo">005</span> * **********************************************************************<a name="line.5"></a>
+<span class="sourceLineNo">006</span> * ORGANIZATION  :  Pi4J<a name="line.6"></a>
+<span class="sourceLineNo">007</span> * PROJECT       :  Pi4J :: Java Library (Core)<a name="line.7"></a>
+<span class="sourceLineNo">008</span> * FILENAME      :  NativeLibraryLoader.java<a name="line.8"></a>
+<span class="sourceLineNo">009</span> *<a name="line.9"></a>
+<span class="sourceLineNo">010</span> * This file is part of the Pi4J project. More information about<a name="line.10"></a>
+<span class="sourceLineNo">011</span> * this project can be found here:  https://www.pi4j.com/<a name="line.11"></a>
+<span class="sourceLineNo">012</span> * **********************************************************************<a name="line.12"></a>
+<span class="sourceLineNo">013</span> * %%<a name="line.13"></a>
+<span class="sourceLineNo">014</span> * Copyright (C) 2012 - 2021 Pi4J<a name="line.14"></a>
+<span class="sourceLineNo">015</span> * %%<a name="line.15"></a>
+<span class="sourceLineNo">016</span> * This program is free software: you can redistribute it and/or modify<a name="line.16"></a>
+<span class="sourceLineNo">017</span> * it under the terms of the GNU Lesser General Public License as<a name="line.17"></a>
+<span class="sourceLineNo">018</span> * published by the Free Software Foundation, either version 3 of the<a name="line.18"></a>
+<span class="sourceLineNo">019</span> * License, or (at your option) any later version.<a name="line.19"></a>
+<span class="sourceLineNo">020</span> *<a name="line.20"></a>
+<span class="sourceLineNo">021</span> * This program is distributed in the hope that it will be useful,<a name="line.21"></a>
+<span class="sourceLineNo">022</span> * but WITHOUT ANY WARRANTY; without even the implied warranty of<a name="line.22"></a>
+<span class="sourceLineNo">023</span> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the<a name="line.23"></a>
+<span class="sourceLineNo">024</span> * GNU General Lesser Public License for more details.<a name="line.24"></a>
+<span class="sourceLineNo">025</span> *<a name="line.25"></a>
+<span class="sourceLineNo">026</span> * You should have received a copy of the GNU General Lesser Public<a name="line.26"></a>
+<span class="sourceLineNo">027</span> * License along with this program.  If not, see<a name="line.27"></a>
+<span class="sourceLineNo">028</span> * &lt;http://www.gnu.org/licenses/lgpl-3.0.html&gt;.<a name="line.28"></a>
+<span class="sourceLineNo">029</span> * #L%<a name="line.29"></a>
+<span class="sourceLineNo">030</span> */<a name="line.30"></a>
+<span class="sourceLineNo">031</span><a name="line.31"></a>
+<span class="sourceLineNo">032</span>import com.pi4j.platform.Platform;<a name="line.32"></a>
+<span class="sourceLineNo">033</span><a name="line.33"></a>
+<span class="sourceLineNo">034</span>import java.io.File;<a name="line.34"></a>
+<span class="sourceLineNo">035</span>import java.io.FileNotFoundException;<a name="line.35"></a>
+<span class="sourceLineNo">036</span>import java.io.IOException;<a name="line.36"></a>
+<span class="sourceLineNo">037</span>import java.io.InputStream;<a name="line.37"></a>
+<span class="sourceLineNo">038</span>import java.net.URISyntaxException;<a name="line.38"></a>
+<span class="sourceLineNo">039</span>import java.nio.file.Files;<a name="line.39"></a>
+<span class="sourceLineNo">040</span>import java.nio.file.Path;<a name="line.40"></a>
+<span class="sourceLineNo">041</span>import java.nio.file.Paths;<a name="line.41"></a>
+<span class="sourceLineNo">042</span>import java.nio.file.StandardCopyOption;<a name="line.42"></a>
+<span class="sourceLineNo">043</span>import java.util.Set;<a name="line.43"></a>
+<span class="sourceLineNo">044</span>import java.util.TreeSet;<a name="line.44"></a>
+<span class="sourceLineNo">045</span>import java.util.logging.ConsoleHandler;<a name="line.45"></a>
+<span class="sourceLineNo">046</span>import java.util.logging.FileHandler;<a name="line.46"></a>
+<span class="sourceLineNo">047</span>import java.util.logging.Level;<a name="line.47"></a>
+<span class="sourceLineNo">048</span>import java.util.logging.Logger;<a name="line.48"></a>
+<span class="sourceLineNo">049</span><a name="line.49"></a>
+<span class="sourceLineNo">050</span>public class NativeLibraryLoader {<a name="line.50"></a>
+<span class="sourceLineNo">051</span><a name="line.51"></a>
+<span class="sourceLineNo">052</span>        private static final Set&lt;String&gt; loadedLibraries = new TreeSet&lt;&gt;();<a name="line.52"></a>
+<span class="sourceLineNo">053</span>        private static final Logger logger = Logger.getLogger(NativeLibraryLoader.class.getName());<a name="line.53"></a>
+<span class="sourceLineNo">054</span>        private static boolean initialized;<a name="line.54"></a>
+<span class="sourceLineNo">055</span><a name="line.55"></a>
+<span class="sourceLineNo">056</span>        // private constructor<a name="line.56"></a>
+<span class="sourceLineNo">057</span>        private NativeLibraryLoader() {<a name="line.57"></a>
+<span class="sourceLineNo">058</span>                // forbid object construction<a name="line.58"></a>
+<span class="sourceLineNo">059</span>        }<a name="line.59"></a>
+<span class="sourceLineNo">060</span><a name="line.60"></a>
+<span class="sourceLineNo">061</span>        public static synchronized void load(String fileName, String libName) {<a name="line.61"></a>
+<span class="sourceLineNo">062</span>                // check for debug property; if found enable all logging levels<a name="line.62"></a>
+<span class="sourceLineNo">063</span>                if (!initialized) {<a name="line.63"></a>
+<span class="sourceLineNo">064</span>                        initialized = true;<a name="line.64"></a>
+<span class="sourceLineNo">065</span>                        if (System.getProperty("pi4j.debug") != null) {<a name="line.65"></a>
+<span class="sourceLineNo">066</span>                                logger.setLevel(Level.ALL);<a name="line.66"></a>
+<span class="sourceLineNo">067</span>                                try {<a name="line.67"></a>
+<span class="sourceLineNo">068</span>                                        // create an appending file handler<a name="line.68"></a>
+<span class="sourceLineNo">069</span>                                        FileHandler fileHandler = new FileHandler("pi4j.log");<a name="line.69"></a>
+<span class="sourceLineNo">070</span>                                        fileHandler.setLevel(Level.ALL);<a name="line.70"></a>
+<span class="sourceLineNo">071</span>                                        ConsoleHandler consoleHandler = new ConsoleHandler();<a name="line.71"></a>
+<span class="sourceLineNo">072</span>                                        consoleHandler.setLevel(Level.ALL);<a name="line.72"></a>
+<span class="sourceLineNo">073</span><a name="line.73"></a>
+<span class="sourceLineNo">074</span>                                        // add to the desired loggers<a name="line.74"></a>
+<span class="sourceLineNo">075</span>                                        logger.addHandler(fileHandler);<a name="line.75"></a>
+<span class="sourceLineNo">076</span>                                        logger.addHandler(consoleHandler);<a name="line.76"></a>
+<span class="sourceLineNo">077</span>                                } catch (IOException e) {<a name="line.77"></a>
+<span class="sourceLineNo">078</span>                                        System.err.println("Unable to setup logging to debug. No logging will be done. Error: ");<a name="line.78"></a>
+<span class="sourceLineNo">079</span>                                        e.printStackTrace();<a name="line.79"></a>
+<span class="sourceLineNo">080</span>                                }<a name="line.80"></a>
+<span class="sourceLineNo">081</span>                        }<a name="line.81"></a>
+<span class="sourceLineNo">082</span>                }<a name="line.82"></a>
+<span class="sourceLineNo">083</span><a name="line.83"></a>
+<span class="sourceLineNo">084</span>                // first, make sure that this library has not already been previously loaded<a name="line.84"></a>
+<span class="sourceLineNo">085</span>                if (loadedLibraries.contains(fileName)) {<a name="line.85"></a>
+<span class="sourceLineNo">086</span>                        logger.fine("Library [" + fileName + "] has already been loaded; no need to load again.");<a name="line.86"></a>
+<span class="sourceLineNo">087</span>                        return;<a name="line.87"></a>
+<span class="sourceLineNo">088</span>                }<a name="line.88"></a>
+<span class="sourceLineNo">089</span><a name="line.89"></a>
+<span class="sourceLineNo">090</span>                // cache loaded library<a name="line.90"></a>
+<span class="sourceLineNo">091</span>                loadedLibraries.add(fileName);<a name="line.91"></a>
+<span class="sourceLineNo">092</span><a name="line.92"></a>
+<span class="sourceLineNo">093</span>                // determine if there is an overriding library path defined for native libraries<a name="line.93"></a>
+<span class="sourceLineNo">094</span>                String libPath = System.getProperty("pi4j.library.path");<a name="line.94"></a>
+<span class="sourceLineNo">095</span>                if(StringUtil.isNotNullOrEmpty(libPath, true)) {<a name="line.95"></a>
+<span class="sourceLineNo">096</span><a name="line.96"></a>
+<span class="sourceLineNo">097</span>                        // if the overriding library path is set to "system", then attempt to use the system resolved library paths<a name="line.97"></a>
+<span class="sourceLineNo">098</span>                        if (libPath.equalsIgnoreCase("system")) {<a name="line.98"></a>
+<span class="sourceLineNo">099</span>                                logger.fine("Attempting to load library using {pi4j.library.path} system resolved library name: [" + libName + "]");<a name="line.99"></a>
+<span class="sourceLineNo">100</span>                                try {<a name="line.100"></a>
+<span class="sourceLineNo">101</span>                                        // load library from JVM system library path; based on library name<a name="line.101"></a>
+<span class="sourceLineNo">102</span>                                        System.loadLibrary(libName);<a name="line.102"></a>
+<span class="sourceLineNo">103</span>                                } catch (Exception ex) {<a name="line.103"></a>
+<span class="sourceLineNo">104</span>                                        //throw this error<a name="line.104"></a>
+<span class="sourceLineNo">105</span>                                        throw new UnsatisfiedLinkError("Pi4J was unable load the native library [" +<a name="line.105"></a>
+<span class="sourceLineNo">106</span>                                                        libName + "] from the system defined library path.  The system property 'pi4j.library.path' is defined as [" +<a name="line.106"></a>
+<span class="sourceLineNo">107</span>                                                        libPath + "]. You can alternatively define the 'pi4j.library.path' " +<a name="line.107"></a>
+<span class="sourceLineNo">108</span>                                                        "system property to override this behavior and specify an absolute library path." +<a name="line.108"></a>
+<span class="sourceLineNo">109</span>                                                        "; UNDERLYING EXCEPTION: [" + ex.getClass().getName() + "]=" + ex.getMessage());<a name="line.109"></a>
+<span class="sourceLineNo">110</span>                                }<a name="line.110"></a>
+<span class="sourceLineNo">111</span>                        }<a name="line.111"></a>
+<span class="sourceLineNo">112</span><a name="line.112"></a>
+<span class="sourceLineNo">113</span>                        // if the overriding library path is set to "local", then attempt to use the JAR local path to resolve library<a name="line.113"></a>
+<span class="sourceLineNo">114</span>                        else if (libPath.equalsIgnoreCase("local")) {<a name="line.114"></a>
+<span class="sourceLineNo">115</span>                                // get local directory path of JAR file<a name="line.115"></a>
+<span class="sourceLineNo">116</span>                                try {<a name="line.116"></a>
+<span class="sourceLineNo">117</span>                                        libPath = NativeLibraryLoader.class.getProtectionDomain().getCodeSource().getLocation().toURI().getPath();<a name="line.117"></a>
+<span class="sourceLineNo">118</span>                                } catch (URISyntaxException e) {<a name="line.118"></a>
+<span class="sourceLineNo">119</span>                                        logger.severe(e.getMessage());<a name="line.119"></a>
+<span class="sourceLineNo">120</span>                                        libPath = ".";<a name="line.120"></a>
+<span class="sourceLineNo">121</span>                                }<a name="line.121"></a>
+<span class="sourceLineNo">122</span>                                // build path based on lib directory and lib filename<a name="line.122"></a>
+<span class="sourceLineNo">123</span>                                String path = Paths.get(libPath, fileName).toString();<a name="line.123"></a>
+<span class="sourceLineNo">124</span>                                logger.fine("Attempting to load library using {pi4j.library.path} defined path: [" + path + "]");<a name="line.124"></a>
+<span class="sourceLineNo">125</span>                                try {<a name="line.125"></a>
+<span class="sourceLineNo">126</span>                                        // load library from local path of this JAR file<a name="line.126"></a>
+<span class="sourceLineNo">127</span>                                        System.load(path);<a name="line.127"></a>
+<span class="sourceLineNo">128</span>                                } catch (Exception ex) {<a name="line.128"></a>
+<span class="sourceLineNo">129</span>                                        //throw this error<a name="line.129"></a>
+<span class="sourceLineNo">130</span>                                        throw new UnsatisfiedLinkError("Pi4J was unable load the native library [" +<a name="line.130"></a>
+<span class="sourceLineNo">131</span>                                                        libName + "] from the user defined library path.  The system property 'pi4j.library.path' is defined as [" +<a name="line.131"></a>
+<span class="sourceLineNo">132</span>                                                        libPath + "]. Please make sure the defined the 'pi4j.library.path' " +<a name="line.132"></a>
+<span class="sourceLineNo">133</span>                                                        "system property contains the correct absolute library path." +<a name="line.133"></a>
+<span class="sourceLineNo">134</span>                                                        "; UNDERLYING EXCEPTION: [" + ex.getClass().getName() + "]=" + ex.getMessage());<a name="line.134"></a>
+<span class="sourceLineNo">135</span>                                }<a name="line.135"></a>
+<span class="sourceLineNo">136</span>                        }<a name="line.136"></a>
+<span class="sourceLineNo">137</span><a name="line.137"></a>
+<span class="sourceLineNo">138</span>                        // if the overriding library path is set to something else, then attempt to use the defined path to resolve library<a name="line.138"></a>
+<span class="sourceLineNo">139</span>                        else {<a name="line.139"></a>
+<span class="sourceLineNo">140</span>                                // build path based on lib directory and lib filename<a name="line.140"></a>
+<span class="sourceLineNo">141</span>                                String path = Paths.get(libPath, fileName).toString();<a name="line.141"></a>
+<span class="sourceLineNo">142</span>                                logger.fine("Attempting to load library using {pi4j.library.path} defined path: [" + path + "]");<a name="line.142"></a>
+<span class="sourceLineNo">143</span>                                try {<a name="line.143"></a>
+<span class="sourceLineNo">144</span>                                        // load library from user defined absolute path provided via pi4j.library.path}<a name="line.144"></a>
+<span class="sourceLineNo">145</span>                                        System.load(path);<a name="line.145"></a>
+<span class="sourceLineNo">146</span>                                } catch (Exception ex) {<a name="line.146"></a>
+<span class="sourceLineNo">147</span>                                        //throw this error<a name="line.147"></a>
+<span class="sourceLineNo">148</span>                                        throw new UnsatisfiedLinkError("Pi4J was unable load the native library [" +<a name="line.148"></a>
+<span class="sourceLineNo">149</span>                                                        libName + "] from the user defined library path.  The system property 'pi4j.library.path' is defined as [" +<a name="line.149"></a>
+<span class="sourceLineNo">150</span>                                                        libPath + "]. Please make sure the defined the 'pi4j.library.path' " +<a name="line.150"></a>
+<span class="sourceLineNo">151</span>                                                        "system property contains the correct absolute library path." +<a name="line.151"></a>
+<span class="sourceLineNo">152</span>                                                        "; UNDERLYING EXCEPTION: [" + ex.getClass().getName() + "]=" + ex.getMessage());<a name="line.152"></a>
+<span class="sourceLineNo">153</span>                                }<a name="line.153"></a>
+<span class="sourceLineNo">154</span>                        }<a name="line.154"></a>
+<span class="sourceLineNo">155</span>                }<a name="line.155"></a>
+<span class="sourceLineNo">156</span>                // if there is no overriding library path defined, then attempt to load native library from embedded resource<a name="line.156"></a>
+<span class="sourceLineNo">157</span>        else {<a name="line.157"></a>
+<span class="sourceLineNo">158</span>                        //<a name="line.158"></a>
+<span class="sourceLineNo">159</span>                        // path = /lib/{platform}/{linking:static|dynamic}/{filename}<a name="line.159"></a>
+<span class="sourceLineNo">160</span>                        //<a name="line.160"></a>
+<span class="sourceLineNo">161</span>                        String platform = System.getProperty("pi4j.platform", Platform.RASPBERRYPI.getId());<a name="line.161"></a>
+<span class="sourceLineNo">162</span><a name="line.162"></a>
+<span class="sourceLineNo">163</span>                        // NOTE: As of 2018-04-23, Pi4J no longer includes<a name="line.163"></a>
+<span class="sourceLineNo">164</span>                        //       a statically linked wiringPi lib for the Raspberry Pi platform.  The<a name="line.164"></a>
+<span class="sourceLineNo">165</span>                        //       default linking for the Raspberry Pi platform should always be "dynamic"<a name="line.165"></a>
+<span class="sourceLineNo">166</span>                        String linking = System.getProperty("pi4j.linking",<a name="line.166"></a>
+<span class="sourceLineNo">167</span>                                        platform.equalsIgnoreCase(Platform.RASPBERRYPI.getId()) ? "dynamic" : "static");<a name="line.167"></a>
+<span class="sourceLineNo">168</span><a name="line.168"></a>
+<span class="sourceLineNo">169</span>                        String path = "/lib/" + platform + "/" + linking + "/" + fileName;<a name="line.169"></a>
+<span class="sourceLineNo">170</span>                        logger.fine("Attempting to load [" + fileName + "] using path: [" + path + "]");<a name="line.170"></a>
+<span class="sourceLineNo">171</span>                        try {<a name="line.171"></a>
+<span class="sourceLineNo">172</span>                                loadLibraryFromClasspath(path);<a name="line.172"></a>
+<span class="sourceLineNo">173</span>                                logger.fine("Library [" + fileName + "] loaded successfully using embedded resource file: [" + path + "]");<a name="line.173"></a>
+<span class="sourceLineNo">174</span>                        } catch (Exception | UnsatisfiedLinkError e) {<a name="line.174"></a>
+<span class="sourceLineNo">175</span>                                logger.log(Level.SEVERE, "Unable to load [" + fileName + "] using path: [" + path + "]", e);<a name="line.175"></a>
+<span class="sourceLineNo">176</span>                                // either way, we did what we could, no need to remove now the library from the loaded libraries<a name="line.176"></a>
+<span class="sourceLineNo">177</span>                                // since we run inside one VM and nothing could possibly change, so there is no point in<a name="line.177"></a>
+<span class="sourceLineNo">178</span>                                // trying out this logic again<a name="line.178"></a>
+<span class="sourceLineNo">179</span>                        }<a name="line.179"></a>
+<span class="sourceLineNo">180</span>                }<a name="line.180"></a>
+<span class="sourceLineNo">181</span>        }<a name="line.181"></a>
+<span class="sourceLineNo">182</span><a name="line.182"></a>
+<span class="sourceLineNo">183</span>        /**<a name="line.183"></a>
+<span class="sourceLineNo">184</span>         * Loads library from classpath<a name="line.184"></a>
+<span class="sourceLineNo">185</span>         *<a name="line.185"></a>
+<span class="sourceLineNo">186</span>         * The file from classpath is copied into system temporary directory and then loaded. The temporary file is<a name="line.186"></a>
+<span class="sourceLineNo">187</span>     * deleted after exiting. Method uses String as filename because the pathname is<a name="line.187"></a>
+<span class="sourceLineNo">188</span>         * "abstract", not system-dependent.<a name="line.188"></a>
+<span class="sourceLineNo">189</span>         *<a name="line.189"></a>
+<span class="sourceLineNo">190</span>         * @param path<a name="line.190"></a>
+<span class="sourceLineNo">191</span>         *            The file path in classpath as an absolute path, e.g. /package/File.ext (could be inside jar)<a name="line.191"></a>
+<span class="sourceLineNo">192</span>         * @throws IOException<a name="line.192"></a>
+<span class="sourceLineNo">193</span>         *             If temporary file creation or read/write operation fails<a name="line.193"></a>
+<span class="sourceLineNo">194</span>         * @throws IllegalArgumentException<a name="line.194"></a>
+<span class="sourceLineNo">195</span>         *             If source file (param path) does not exist<a name="line.195"></a>
+<span class="sourceLineNo">196</span>         * @throws IllegalArgumentException<a name="line.196"></a>
+<span class="sourceLineNo">197</span>         *             If the path is not absolute or if the filename is shorter than three characters (restriction<a name="line.197"></a>
+<span class="sourceLineNo">198</span>     *             of {@see File#createTempFile(java.lang.String, java.lang.String)}).<a name="line.198"></a>
+<span class="sourceLineNo">199</span>         */<a name="line.199"></a>
+<span class="sourceLineNo">200</span>        public static void loadLibraryFromClasspath(String path) throws IOException {<a name="line.200"></a>
+<span class="sourceLineNo">201</span>                Path inputPath = Paths.get(path);<a name="line.201"></a>
+<span class="sourceLineNo">202</span><a name="line.202"></a>
+<span class="sourceLineNo">203</span>                if (!inputPath.isAbsolute()) {<a name="line.203"></a>
+<span class="sourceLineNo">204</span>                        throw new IllegalArgumentException("The path has to be absolute, but found: " + inputPath);<a name="line.204"></a>
+<span class="sourceLineNo">205</span>                }<a name="line.205"></a>
+<span class="sourceLineNo">206</span><a name="line.206"></a>
+<span class="sourceLineNo">207</span>                String fileNameFull = inputPath.getFileName().toString();<a name="line.207"></a>
+<span class="sourceLineNo">208</span>                int dotIndex = fileNameFull.indexOf('.');<a name="line.208"></a>
+<span class="sourceLineNo">209</span>                if (dotIndex &lt; 0 || dotIndex &gt;= fileNameFull.length() - 1) {<a name="line.209"></a>
+<span class="sourceLineNo">210</span>                        throw new IllegalArgumentException("The path has to end with a file name and extension, but found: " + fileNameFull);<a name="line.210"></a>
+<span class="sourceLineNo">211</span>                }<a name="line.211"></a>
+<span class="sourceLineNo">212</span><a name="line.212"></a>
+<span class="sourceLineNo">213</span>                String fileName = fileNameFull.substring(0, dotIndex);<a name="line.213"></a>
+<span class="sourceLineNo">214</span>                String extension = fileNameFull.substring(dotIndex);<a name="line.214"></a>
+<span class="sourceLineNo">215</span><a name="line.215"></a>
+<span class="sourceLineNo">216</span>                Path target = Files.createTempFile(fileName, extension);<a name="line.216"></a>
+<span class="sourceLineNo">217</span>                File targetFile = target.toFile();<a name="line.217"></a>
+<span class="sourceLineNo">218</span>                targetFile.deleteOnExit();<a name="line.218"></a>
+<span class="sourceLineNo">219</span><a name="line.219"></a>
+<span class="sourceLineNo">220</span>                try (InputStream source = NativeLibraryLoader.class.getResourceAsStream(inputPath.toString())) {<a name="line.220"></a>
+<span class="sourceLineNo">221</span>                        if (source == null) {<a name="line.221"></a>
+<span class="sourceLineNo">222</span>                                throw new FileNotFoundException("File " + inputPath + " was not found in classpath.");<a name="line.222"></a>
+<span class="sourceLineNo">223</span>                        }<a name="line.223"></a>
+<span class="sourceLineNo">224</span>                        Files.copy(source, target, StandardCopyOption.REPLACE_EXISTING);<a name="line.224"></a>
+<span class="sourceLineNo">225</span>                }<a name="line.225"></a>
+<span class="sourceLineNo">226</span>                // Finally, load the library<a name="line.226"></a>
+<span class="sourceLineNo">227</span>                System.load(target.toAbsolutePath().toString());<a name="line.227"></a>
+<span class="sourceLineNo">228</span>        }<a name="line.228"></a>
+<span class="sourceLineNo">229</span>}<a name="line.229"></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</pre>
+</div>
+</body>
+</html>

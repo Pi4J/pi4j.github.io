@@ -27,9 +27,8 @@ jobs:
           git config --global user.email "team@pi4j.com"
           git config --global user.name "Pi4J Build"
           git checkout -b publish
-          git status
+          git fetch
           git add docs/.
-          git pull
           git commit -am "[AUTO] New version of website"
           git push origin HEAD:publish
           
