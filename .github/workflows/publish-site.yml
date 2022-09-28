@@ -29,5 +29,5 @@ jobs:
           git status
           git add docs/.
           git commit -am "[AUTO] New version of website"
-          git push origin HEAD:main
+          git push origin HEAD:publish
           
