@@ -2,5 +2,4 @@
 The Template Class gives you the option to check the state of the button, and to create simple events if the button is pressed, depressed or while it is being pressed.
 Layout Simple Button Breadboard
 Big Button
-Code A simple example on how to use the Button-Class from the Hardware-Catalog:
-// Initialize the button component final var button = new SimpleButton(pi4j, PIN.</description></item></channel></rss>
+Code A simple example on how to use the Button-Class from the Hardware-Catalog:</description></item></channel></rss>
