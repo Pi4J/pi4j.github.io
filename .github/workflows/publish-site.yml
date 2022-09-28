@@ -26,6 +26,7 @@ jobs:
         run: |
           git config --global user.email "team@pi4j.com"
           git config --global user.name "Pi4J Build"
+          git checkout -b publish
           git status
           git add docs/.
           git pull
