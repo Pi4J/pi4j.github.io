@@ -1,5 +1,5 @@
 ---
-title: Direct Download
+title: Pi4J Downloads
 weight: 45
 ---
 
