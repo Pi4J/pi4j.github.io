@@ -25,7 +25,7 @@ A big thank you to everyone who experimented with Pi4J, took part in the discuss
 
 Thanks to the work of FHNW students and @taartspi, the list of available example implementations has become larger and larger. We even moved them to their own section of this documentation website! Take a look at [Example implementations](/examples/) if you need a quick-start to use a buzzer, camera, LED strip, TCA9548, MCP4725,... or any of the other examples.
 
-### Changes in V2.2.0 (20220829)
+### Changes in V2.2.0
 
 Multiple improvements were added in this release (and others are already in progress for the next one!):
 
