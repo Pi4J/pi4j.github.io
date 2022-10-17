@@ -5,6 +5,16 @@ weight: 40
 
 All releases of Pi4J V.2 are listed on [github.com/Pi4J/pi4j-v2/releases](https://github.com/Pi4J/pi4j-v2/releases).
 
+## 2022-10-17 - V2.2.1
+
+Multiple fixes by [@taartspi](https://github.com/taartspi):
+
+* Better error message when mixing 32- and 64-bit artifacts
+* SPI improvements:
+  * Add missing initialization in constructor
+  * Track weather the user set the mode or bus config values to improve the use of SPI flags
+
+
 ## 2022-08-30 - V2.2.0
 
 What an amazing achievement! No major issues were found in the previous release, but several small fixes were added by more people than ever before in the Pi4J-history. This is a real confirmation of the openness of this project and how a community can work together to further improve a project. 
@@ -15,7 +25,16 @@ A big thank you to everyone who experimented with Pi4J, took part in the discuss
 
 Thanks to the work of FHNW students and @taartspi, the list of available example implementations has become larger and larger. We even moved them to their own section of this documentation website! Take a look at [Example implementations](/examples/) if you need a quick-start to use a buzzer, camera, LED strip, TCA9548, MCP4725,... or any of the other examples.
 
-### Changes in V2.2.0
+### Changes in V2.2.1 (20221017)
+
+Multiple fixes by [@taartspi](https://github.com/taartspi)
+
+* Better error message when mixing 32- and 64-bit artifacts
+* SPI:
+    * Add missing initialization in constructor
+    * Track weather the user set the mode or bus config values to improve the use of SPI flags
+
+### Changes in V2.2.0 (20220829)
 
 Multiple improvements were added in this release (and others are already in progress for the next one!):
 

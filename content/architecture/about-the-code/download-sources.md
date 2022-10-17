@@ -3,13 +3,13 @@ title: Download/Install
 weight: 20
 ---
 
-Getting started with V.2 in the state of June 3th of 2020.
+You can build the project from sources available on [GitHub](https://github.com/Pi4J/pi4j-v2).
 
 ## Pi4J V.2
 
 * Checkout the project [pi4j-v2](https://github.com/Pi4J/pi4j-v2)
-* Select JDK11, e.g. ``sdk use java 11.0.7.fx-librca``
-* In the root of pi4j-v2 run `m̀vn clean install``
+* Select JDK11, e.g. `sdk use java 11.0.16.1-zulu`
+* In the root of pi4j-v2 run `mvn clean install`
 
 ```
 [INFO] Executed tasks

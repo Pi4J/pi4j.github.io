@@ -1,9 +1,7 @@
 ---
 title: Direct Download
-weight: 20
+weight: 45
 ---
-
-You can build the project from sources available on [GitHub](https://github.com/Pi4J/pi4j-v2).
 
 All downloads provided by the project can be found on [pi4j.com/download](https://pi4j.com/download/).
 

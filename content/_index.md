@@ -4,7 +4,7 @@ title: Welcome to Pi4J
 
 ## Welcome to Pi4J
 
-**Latest release: V2.2.0 (2022-08-30, see [Release Notes](/about/release-notes/)).**
+**Latest release: V2.2.1 (2022-10-17, see [Release Notes](/about/release-notes/)).**
 
 This project is intended to provide **a friendly object-oriented I/O API and implementation libraries 
 for Java Programmers** to access the **full I/O capabilities of the Raspberry Pi platform**. This project 
