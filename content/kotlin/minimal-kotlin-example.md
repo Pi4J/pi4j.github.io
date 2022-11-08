@@ -74,7 +74,7 @@ console {
 
 ## Building & Running the application
 
-You can simply run the example app using gradle on the target device (Raspberry Pi for eample):
+You can simply run the example app using gradle on the target device (Raspberry Pi for example):
 ``` shell
 ./gradlew :example:run
 ```
