@@ -12,7 +12,7 @@ Kotlin makes extensive use of Domain Specific Language (DSL) to provide APIs tha
 Install the Pi4J dependency and `pi4j-ktx` in your app's `build.gradle.ktx` file:
 ``` kotlin
 dependencies {
-    implementation("com.pi4j:pi4j-ktx:2.2.1") // Kotlin DSL
+    implementation("com.pi4j:pi4j-ktx:2.2.1.2") // Kotlin DSL
     implementation("com.pi4j:pi4j-core:2.2.1")
     implementation("com.pi4j:pi4j-plugin-raspberrypi:2.2.1")
     implementation("com.pi4j:pi4j-plugin-pigpio:2.2.1")
