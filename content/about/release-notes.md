@@ -5,6 +5,16 @@ weight: 40
 
 All releases of Pi4J V.2 are listed on [github.com/Pi4J/pi4j-v2/releases](https://github.com/Pi4J/pi4j-v2/releases).
 
+## 2022-10-17 - V2.2.1
+
+Multiple fixes by [@taartspi](https://github.com/taartspi):
+
+* Better error message when mixing 32- and 64-bit artifacts
+* SPI improvements:
+  * Add missing initialization in constructor
+  * Track weather the user set the mode or bus config values to improve the use of SPI flags
+
+
 ## 2022-08-30 - V2.2.0
 
 What an amazing achievement! No major issues were found in the previous release, but several small fixes were added by more people than ever before in the Pi4J-history. This is a real confirmation of the openness of this project and how a community can work together to further improve a project. 

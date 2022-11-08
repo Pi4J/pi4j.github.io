@@ -13,12 +13,22 @@ Providers in the PiGpio plugin:
 * pigpio-spi
 * pigpio-serial
 
-To use the PiGpio provider first add the proper dependency:
+To use the PiGpio provider include the following dependencies:
 
 ``` xml
 <dependency>
     <groupId>com.pi4j</groupId>
+    <artifactId>pi4j-core</artifactId>
+    <version>${pi4j.version}</version>
+</dependency>
+<dependency>
+    <groupId>com.pi4j</groupId>
     <artifactId>pi4j-plugin-raspberrypi</artifactId>
+    <version>${pi4j.version}</version>
+</dependency>
+<dependency>
+    <groupId>com.pi4j</groupId>
+    <artifactId>pi4j-plugin-pigpio</artifactId>
     <version>${pi4j.version}</version>
 </dependency>
 ```
