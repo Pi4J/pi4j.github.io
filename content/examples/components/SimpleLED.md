@@ -28,7 +28,7 @@ A simple example on how to use the LED-Class from the [Hardware-Catalog](https:/
 SimpleLED led = new SimpleLED(pi4j, PIN.D26);
 
 // Turn on the LED to have a defined state
-led.setStateOn();
+led.on();
 delay(1000);
 
 // Make a flashing light by toggling the LED every second
@@ -38,7 +38,7 @@ for (int i = 0; i < 10; i++) {
 }
 
 // That's all so turn off the relay and quit
-led.setStateOff();
+led.off();
 System.out.println("off");
 delay(2000);
 ```
