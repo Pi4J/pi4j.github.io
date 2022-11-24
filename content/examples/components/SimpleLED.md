@@ -6,7 +6,7 @@ tags: ["Simple LED"]
 
 ### Description
 
-The [SimpleLED](https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog/components/SimpleLED.java) is a template class, that you can use in your own Java-project.
+The [SimpleLed](https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog/components/SimpleLed.java) is a template class, that you can use in your own Java-project.
 
 The template Class gives you the option to switch off, switch on or toggle the state of the LED.
 
@@ -24,23 +24,28 @@ The template Class gives you the option to switch off, switch on or toggle the s
 A simple example on how to use the LED-Class from the [Hardware-Catalog](https://github.com/Pi4J/pi4j-example-components):
 
 ```java
+System.out.println("Simple LED app started ...");
+
 // Create a new SimpleLED component
-SimpleLED led = new SimpleLED(pi4j, PIN.D26);
+SimpleLed led = new SimpleLed(pi4j, PIN.D26);
 
 // Turn on the LED to have a defined state
+System.out.println("Turn on LED.");
 led.on();
 delay(1000);
 
 // Make a flashing light by toggling the LED every second
 for (int i = 0; i < 10; i++) {
-	System.out.println(led.toggleState());
-	delay(1000);
+System.out.println("Current LED state is " + led.toggleState() +".");
+delay(1000);
 }
 
 // That's all so turn off the relay and quit
 led.off();
-System.out.println("off");
+System.out.println("Turn off LED.");
 delay(2000);
+
+System.out.println("Simple LED app done.");
 ```
 
 ### Further application

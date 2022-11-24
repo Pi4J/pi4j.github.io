@@ -6,7 +6,7 @@ tags: ["LEDStrip"]
 
 ### Description
 
-The [LEDStrip](https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog/components/LEDStrip.java) is a template class, that you can use in your own Java-project.
+The [LedStrip](https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog/components/LedStrip.java) is a template class, that you can use in your own Java-project.
 You can take a LED Strip with the WS28xx-chip set.
 
 The Template Class gives you the option to set the LED's of the strip to a desired RGB-Color.
@@ -32,40 +32,43 @@ Check the SPI Address. Default is "SPI0 MOSI" Pin (#19).
 A simple example on how to use the LEDStrip-Class from the [Hardware-Catalog](https://github.com/Pi4J/pi4j-example-components):
 
 ```java
+System.out.println("LED strip app started ...");
 // Initialize the RGB
 int pixels = 4;
-final var ledstrip = new LEDStrip(pi4j, pixels, 0.5);
+final LedStrip ledStrip = new LedStrip(pi4j, pixels, 0.5);
 
 //set them all off, so nothing is shining
 System.out.println("Starting with setting all leds off");
-ledstrip.allOff();
+ledStrip.allOff();
 
 System.out.println("setting the LEDs to RED");
-ledstrip.setStripColor(LEDStrip.PixelColor.RED);
-ledstrip.render();
+ledStrip.setStripColor(LedStrip.PixelColor.RED);
+ledStrip.render();
 delay(3000);
 
 System.out.println("setting the LEDs to Light Blue");
-ledstrip.setStripColor(LEDStrip.PixelColor.LIGHT_BLUE);
-ledstrip.render();
+ledStrip.setStripColor(LedStrip.PixelColor.LIGHT_BLUE);
+ledStrip.render();
 delay(3000);
 
 System.out.println("setting the first led to Purple");
-ledstrip.setPixelColor(0, LEDStrip.PixelColor.PURPLE);
-ledstrip.render();
+ledStrip.setPixelColor(0, LedStrip.PixelColor.PURPLE);
+ledStrip.render();
 delay(3000);
 
 System.out.println("setting the brightness to full and just show the first led as White");
-ledstrip.allOff();
-ledstrip.setBrightness(1);
-ledstrip.setPixelColor(0, LEDStrip.PixelColor.WHITE);
-ledstrip.render();
+ledStrip.allOff();
+ledStrip.setBrightness(1);
+ledStrip.setPixelColor(0, LedStrip.PixelColor.WHITE);
+ledStrip.render();
 delay(3000);
 
 //finishing and closing
-ledstrip.close();
+ledStrip.close();
 System.out.println("closing the app");
-System.out.println("Color "+ ledstrip.getPixelColor(0));
+System.out.println("Color "+ ledStrip.getPixelColor(0));
+
+System.out.println("LED strip app done.");
 ```
 
 ### Further application

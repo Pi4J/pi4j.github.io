@@ -6,7 +6,7 @@ tags: ["LEDButton"]
 
 ### Description
 
-The [LEDButton](https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog/components/LEDButton.java) is a template class, that you can use in your own Java-project.
+The [LedButton](https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog/components/LedButton.java) is a template class, that you can use in your own Java-project.
 You can take any Button with a LED you want to. Like for example the big button bellow in the picture gallery.
 
 The Template Class gives you the option to check the state of the button, and to create simple events if the button is pressed or depressed, or the whole time is is being pressed. Also it lets you control the LED.
@@ -26,17 +26,19 @@ The Template Class gives you the option to check the state of the button, and to
 A simple example on how to use the Button-Class from the [Hardware-Catalog](https://github.com/Pi4J/pi4j-example-components):
 
 ```java
+        System.out.println("LED button app started ...");
+
 // Initialize the button component
-final var ledbutton = new LEDButton(pi4j, PIN.D26, Boolean.FALSE, PIN.PWM19);
+final LedButton ledButton = new LedButton(pi4j, PIN.D26, Boolean.FALSE, PIN.PWM19);
 
 // Turn on the LED to have a defined state
-ledbutton.LEDsetStateOn();
+ledButton.ledSetStateOn();
 //see the LED for a Second
 delay(1000);
 
 // Register event handlers to print a message when pressed (onDown) and depressed (onUp)
-ledbutton.onDown(() -> logInfo("Pressing the Button"));
-ledbutton.onUp(()   -> logInfo("Stopped pressing."));
+ledButton.btnOnDown(() -> System.out.println("Pressing the Button"));
+ledButton.btnOnUp(()   -> System.out.println("Stopped pressing."));
 
 // Wait for 15 seconds while handling events before exiting
 System.out.println("Press the button to see it in action!");
@@ -44,14 +46,15 @@ System.out.println("Press the button to see it in action!");
 // Make a flashing light by toggling the LED every second
 // in the meantime, the Button can still be pressed, as we only freeze the main thread
 for (int i = 0; i < 15; i++) {
-	System.out.println(ledbutton.LEDtoggleState());
-	delay(1000);
+System.out.println(ledButton.ledToggleState());
+delay(1000);
 }
 
 // Unregister all event handlers to exit this application in a clean way
-ledbutton.btndeRegisterAll();
-ledbutton.LEDsetStateOff();
-System.out.println("Everything off");
+ledButton.btnDeRegisterAll();
+ledButton.ledSetStateOff();
+
+System.out.println("LED button app done.");
 ```
 
 ### Further application
