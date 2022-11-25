@@ -6,8 +6,8 @@ tags: ["LCD Display"]
 
 ### Description
 
-The [LCDDisplay](https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog/components/LCDDisplay.java) is a template class, that you can use in your own Java-project.
-It is used to show Numbers, Text and Symbols on a small Display.
+The [LcdDisplay](https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog/components/LcdDisplay.java) 
+is a template class, that you can use in your own Java-project. It is used to show Numbers, Text and Symbols on a small Display.
 The Class supports only LCD Displays with the PCF8574T I2C Backpack. Supported display-dimensions are 40x2, 20x4, 20x2, 16x2, 16x1.
 
 {{% notice note %}}
@@ -57,7 +57,7 @@ When the right Context is loaded, you can use the Display like following:
 
 ```java
 //Create a Component, with amount of ROWS and COLUMNS of the Device
-LCDDisplay lcd = new LCDDisplay(pi4j, 4, 20);
+LcdDisplay lcd = new LcdDisplay(pi4j, 4, 20);
 System.out.println("Here we go.. let's have some fun with that LCD Display!");
 
 // Turn on the backlight makes the display appear turned on
