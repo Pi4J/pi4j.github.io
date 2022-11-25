@@ -36,8 +36,8 @@ delay(1000);
 
 // Make a flashing light by toggling the LED every second
 for (int i = 0; i < 10; i++) {
-System.out.println("Current LED state is " + led.toggleState() +".");
-delay(1000);
+	System.out.println("Current LED state is " + led.toggleState() +".");
+	delay(1000);
 }
 
 // That's all so turn off the relay and quit

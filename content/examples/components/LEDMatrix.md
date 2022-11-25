@@ -30,7 +30,7 @@ Check the SPI Address. Default is "SPI0 MOSI" Pin (#19).
 A simple example on how to use the LEDMatrix-Class from the [Hardware-Catalog](https://github.com/Pi4J/pi4j-example-components):
 
 ```java
- System.out.println("LED matrix app started ...");
+System.out.println("LED matrix app started ...");
 int Rows = 3;
 int Columns = 4;
 double brightness = 0.5;
