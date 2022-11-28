@@ -99,24 +99,30 @@ home = ["HTML", "RSS", "JSON"]
     disableLatLong = false
 
 [[menu.shortcuts]]
-name = "<i class='fas fa-tags'></i> Tags"
+name = "<i class='fas fa-tags' style='width: 25px'></i> Tags"
 url = "/tags"
 weight = 5
 
 [[menu.shortcuts]]
-name = "<i class='fab fa-github'></i> GitHub project"
+name = "<i class='fab fa-github' style='width: 25px'></i> GitHub project"
 identifier = "github"
 url = "https://github.com/Pi4J"
 weight = 10
 
 [[menu.shortcuts]]
-name = "<i class='fab fa-twitter'></i> Twitter @pi4j"
+name = "<i class='fab fa-mastodon' style='width: 25px'></i> Mastodon @pi4j"
+identifier = "mastodon"
+url = "https://foojay.social/@pi4j"
+weight = 15
+
+[[menu.shortcuts]]
+name = "<i class='fab fa-twitter' style='width: 25px'></i> Twitter @pi4j"
 identifier = "twitter"
 url = "https://twitter.com/pi4J"
 weight = 20
 
 [[menu.shortcuts]]
-name = "<i class='fab fa-github'></i> Pi4J Forum"
+name = "<i class='fab fa-github' style='width: 25px'></i> Pi4J Forum"
 identifier = "discussions"
 url = "https://github.com/Pi4J/pi4j-v2/discussions"
 weight = 30
