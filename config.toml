@@ -110,7 +110,7 @@ url = "https://github.com/Pi4J"
 weight = 10
 
 [[menu.shortcuts]]
-name = "<i class='fab fa-mastodon' style='width: 25px'></i> Mastodon @pi4j"
+name = "<i class='fab fa-mastodon' style='width: 25px'></i> Mastodon @pi4j@foojay.social"
 identifier = "mastodon"
 url = "https://foojay.social/@pi4j"
 weight = 15
