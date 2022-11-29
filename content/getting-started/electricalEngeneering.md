@@ -68,6 +68,18 @@ Do not use the USB port of the computer to power the electronics. Errors in the 
 In case of an additional power supply, the ground of the Raspberry Pi and the ground of the power supply must be connected to each other.
 {{% /notice %}}
 
+## Breadboard
+[Here](https://www.youtube.com/watch?v=6WReFkfrUIk) is a short video that explains the basics of breadboards. 
+{{< gallery >}}
+{{< figure link="/assets/getting-started/electricalEngineering/breadboard.jpeg" caption="Breadboard" caption-position="center" caption-effect="fade" >}}
+{{< /gallery >}}
+{{< load-photoswipe >}}
+
+{{% notice note %}}
+The red and blue lines on the side show which pins are connected. On some boards these lines are interrupted in the middle (see picture breadboard). 
+This means at this point, the pins are interrupted and not electrically connected.
+{{% /notice %}}
+
 ## Soldering tutorial
 [Here](https://www.youtube.com/watch?v=Qps9woUGkvI) is a short video that explains the basics of soldering. 
 
@@ -100,6 +112,20 @@ everything can be soldered. So the pin headers are mounted exactly in 90° angle
 {{< /gallery >}}
 {{< load-photoswipe >}}
 
+{{% notice note %}}
+If the crimp connection does not hold, the following measures can lead to a better connection:
+<br> - Strip wire to double length, lay on top of each other and twist (see picture below)
+<br> - The crimping tool is too short, crimp the sleeve twice in different places (see picture below)
+{{% /notice %}}
+
+{{< gallery >}}
+{{< figure link="/assets/getting-started/electricalEngineering/stripDoubleLength.png" caption="Strip double length" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/getting-started/electricalEngineering/crimpingStep1.png" caption="Crimping step 1" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/getting-started/electricalEngineering/crimpingStep2.png" caption="Crimping step 2" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/getting-started/electricalEngineering/crimpingStep3.png" caption="Crimping step 3" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/getting-started/electricalEngineering/crimpingStep4.png" caption="Crimping step 4" caption-position="center" caption-effect="fade" >}}
+{{< /gallery >}}
+{{< load-photoswipe >}}
 
 ## Crimping ferrules tutorial
 [Here](https://www.youtube.com/watch?v=bJk0mzaATI4) is a short video that explains the basics of crimping ferrules to wires. 
