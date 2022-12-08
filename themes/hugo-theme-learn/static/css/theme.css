@@ -1142,7 +1142,7 @@ option {
     color: initial;
 }
 
-.fa-github, .fa-twitter, .fa-home {
+.fa-github, .fa-twitter, .fa-home, .fa-mastodon {
     margin-right: 10px;
 }
 
