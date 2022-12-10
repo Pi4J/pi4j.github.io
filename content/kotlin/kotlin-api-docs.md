@@ -171,7 +171,7 @@ pwm(address = 24) {
 Using the `console` function, you can create a `Console` object and use it to print output to the console:
 
 ```kotlin
-consolse {
+console {
     +"This will be printed as a new line"
     box("This will be printed inside a box")
     +"Another line because I really like it"
