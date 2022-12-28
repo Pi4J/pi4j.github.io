@@ -57,13 +57,8 @@ console {
         piGpioProvider()
       }.run {
         while (pressCount < 5) {
-          if (isHigh) {
-            +"LED low"
-            low()
-          } else {
-            +"LED high"
-            high()
-          }
+          +"LED ${state()}"
+          toggle()
           Thread.sleep((500L / (pressCount + 1)))
         }
       }
