@@ -23,13 +23,26 @@ dependencies {
 i2c(1, 0x3f) {
     id("TCA9534")
     linuxFsI2CProvider()
+}.use {
+  // use here. Will auto close
+}
+```
+
+## Writing
+```kotlin
+
+i2c(1, 0x3f) {
+    id("TCA9534")
+    linuxFsI2CProvider()
+}.use {
+  val newState = setPin(currentState, pin = 8, TCA9534_REG_ADDR_OUT_PORT)
 }
 ```
 
 ## Minimal I²C Example
 
 {{% notice info %}}
-This is the Kotlin DSL version of the same [I²C example here](/documentation/io-examples/i2c#code-example), but leveraging Kotlin's Coroutines
+This is the Kotlin DSL version of the same [I²C example here](/documentation/io-examples/i2c#code-example), but leveraging the Kotlin DSL
 {{% /notice %}}
 
 ```kotlin
