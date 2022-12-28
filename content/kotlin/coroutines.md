@@ -1,12 +1,13 @@
 ---
 title: Coroutines Support
-description: "Coroutines for Pi4J Kotlin"
+description: "Coroutines for Pi4J 
+-Kotlin"
 weight: 48
 ---
 
 ## pi4jAsync
 
-Same with the `pi4j` DSL, you can create a pi4j block to execute within a `CoroutineScope` using the `pi4jAsync` DSL , use the `pi4j` function.
+Same with the `pi4j` DSL, you can create a pi4j block to execute within a `CoroutineScope` using the `pi4jAsync` DSL.
 
 ```kotlin
 pi4jAsync {
