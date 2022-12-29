@@ -23,7 +23,7 @@ dependencies {
 i2c(1, 0x3f) {
     id("TCA9534")
     linuxFsI2CProvider()
-}.use {
+}.use { tca9534Dev ->
   // use here. Will auto close
 }
 ```
@@ -34,8 +34,8 @@ i2c(1, 0x3f) {
 i2c(1, 0x3f) {
     id("TCA9534")
     linuxFsI2CProvider()
-}.use {
-  val newState = setPin(currentState, pin = 8, TCA9534_REG_ADDR_OUT_PORT)
+}.use { tca9534Dev ->
+  val newState = tca9534Dev.setPin(currentState, pin = 8, TCA9534_REG_ADDR_OUT_PORT)
 }
 ```
 
