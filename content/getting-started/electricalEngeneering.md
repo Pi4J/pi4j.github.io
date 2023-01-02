@@ -76,7 +76,8 @@ In case of an additional power supply, the ground of the Raspberry Pi and the gr
 {{< load-photoswipe >}}
 
 {{% notice note %}}
-The red and blue lines on the side show which pins are connected. On some boards these lines are interrupted in the middle (see picture breadboard). 
+The red and blue lines on the side show which pins are connected. Be aware that red and blue can also be interchangednot because not all suppliers use them in the same position.<br>
+On some boards these lines are interrupted in the middle (see picture breadboard). 
 This means at this point, the pins are interrupted and not electrically connected.
 {{% /notice %}}
 
