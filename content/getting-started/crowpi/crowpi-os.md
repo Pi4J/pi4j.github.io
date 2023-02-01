@@ -55,12 +55,6 @@ entry in order to avoid unwanted data loss. On Windows, the drive letter that is
 data carrier, so that this can be easily checked in Explorer. In case of doubt, however, simply unplug the data carrier
 with important media beforehand so that nothing can happen.
 
-{{< gallery >}}
-{{< figure link="" caption="" caption-position="center" caption-effect="fade" >}}
-{{< /gallery >}}
-
-TODO picture select SD card
-
 Everything is ready to write the image to the SD card. The process can be started by pressing the "Write" button. 
 Another confirmation dialog follows before the SD card is finally overwritten. Writing the image to the SD card can 
 take a few minutes which is completely normal. As soon as the process is completed, a message appears. The SD card can 

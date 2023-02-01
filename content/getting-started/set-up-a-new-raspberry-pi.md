@@ -23,8 +23,6 @@ But be aware! This is also some piece of sensitive electronics. It's always a go
 the grounding pin of a power outlet to make sure your body is not electrically charged which could damage
 one of the components on the board.
 
-TODO add picture.
-
 ### Material list
 
 * Raspberry Pi
@@ -61,8 +59,6 @@ including "OpenJDK 11", so will be able to take a quick start with Java developm
 5. Click on "SD Card" > "CHOOSE SD CARD"
 6. Select the SD card 
 
-TODO add pictures
-
 ### First start-up
 
 #### Additional Raspberry Pi OS settings
@@ -81,7 +77,9 @@ OpenJDK Server VM (build 11.0.9+11-post-Raspbian-1deb10u1, mixed mode)
 
 ### Install Pi4J
 
-TODO
+Nothing to do here! Pi4J are dependencies you add to your project with Maven or Gradle. So nothing to be installed...
+
+If you want to get started with Pi4J V2 without creating a full Java project, take a look at the ["single source file" example with JBang](https://pi4j.com/documentation/building/jbang/).
 
 ## Keep your Raspberry Pi up-to-date
 

@@ -82,8 +82,6 @@ java \
   --module {YOUR_MAIN_CLASS} $@
 ```
 
-TODO: describe each of the startup arguments, here or in a sub page.
-
 ## Minimal example application
 
 ### Sources

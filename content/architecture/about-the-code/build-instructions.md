@@ -112,8 +112,6 @@ more information about the profiles illustrated in these commands.{{% /notice %}
 Additional information about Docker Builds vs Cross-Compiler builds can be found here:
 https://github.com/Pi4J/pi4j-v2/issues/21#issuecomment-651976487
 
-TODO *Create a topic here detailing Docker builds vs Cross-compiler builds.*
-
 ---
 
 ### Custom Build Profiles
