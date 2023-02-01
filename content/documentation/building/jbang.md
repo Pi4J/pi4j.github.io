@@ -27,6 +27,10 @@ This video shows you all the steps described further on this page.
 
 {{< youtube 33CWAN1dQvA >}}
 
+And this example was fully explained during a short Devoxx Belgium 2022 talk.
+
+{{< youtube Fu6imQDi5sI >}}
+
 ## Prepare a Raspberry Pi
 
 For this manual you can use the following approach:
