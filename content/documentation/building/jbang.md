@@ -21,7 +21,7 @@ for running .java files directly in your shell but felt it was a bit too cumbers
 
 *JBang lets you do all this!*
 
-## Video 
+## Videos
 
 This video shows you all the steps described further on this page.
 

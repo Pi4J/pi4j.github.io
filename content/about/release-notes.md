@@ -5,6 +5,13 @@ weight: 40
 
 All releases of Pi4J V.2 are listed on [github.com/Pi4J/pi4j-v2/releases](https://github.com/Pi4J/pi4j-v2/releases).
 
+## 2023-02-06 - V2.3.0
+
+* Improvements for PIGPIO.gpioCfgInterfaces by [@bwaldvogel](https://github.com/bwaldvogel).
+* New i2c interface to support multibyte register address by [@taartspi](https://github.com/taartspi).
+* Fix in LinuxFsI2C byte array offset by [@harlanhu](https://github.com/harlanhu).
+* Remove unused JNA references by [@taartspi](https://github.com/taartspi).
+
 ## 2022-10-17 - V2.2.1
 
 Multiple fixes by [@taartspi](https://github.com/taartspi):
