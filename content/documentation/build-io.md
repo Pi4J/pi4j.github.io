@@ -78,21 +78,7 @@ output.describe().print(System.out);
 
 ## Reuse the config 
 
-The config object can be reused to create multiple GPIOs by overriding the `address` (and `id` if used) for each I/O 
-instance:
-
-```java
-var config = DigitalOutput.newConfigBuilder(pi4j)
-        .provider("linuxfs-digital-output")
-        .shutdown(DigitalState.LOW)
-        .initial(DigitalState.LOW);
-
-var pin0 = pi4j.dout().create(config.address(0).id("my-led"));
-var pin1 = pi4j.dout().create(config.address(1).id("my-relay"));
-var pin2 = pi4j.dout().create(config.address(2).id("my-lock"));
-var pin3 = pi4j.dout().create(config.address(3).id("my-pump"));
-```
-The above code didn't compile for me. The code below (remove .dout()) compiles and works.
+The config object can be reused to create multiple GPIOs by overriding the `address` (and `id` if used) for each I/O instance:
 
 ```java
 var config = DigitalOutput.newConfigBuilder(pi4j)
