@@ -13,7 +13,7 @@ Feel free to checkout the [Pi4J docs on I²C](/documentation/io-examples/i2c/)
 Add LinuxFs dependency
 ```kotlin
 dependencies {
-    implementation("com.pi4j:pi4j-plugin-linuxfs:2.2.1")
+    implementation("com.pi4j:pi4j-plugin-linuxfs:2.3.0")
 }
 ```
 

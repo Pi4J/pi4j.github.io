@@ -52,6 +52,10 @@ possible, and the protocol is compatible with the smaller 7-bit address space.
 
 ## Code example
 
+{{% notice tip %}}
+Feel free to check the [Kotlin DSL for I²C](/kotlin/i2c/)
+{{% /notice %}}
+
 The following code shows setting the pins on a TCA 9534 which can be found on 
 ["Sequent Microsystems"](https://www.kickstarter.com/projects/279405789/4-relays-for-raspberry-pi-8-level-stackable-10a-250v-each)
 
