@@ -39,6 +39,10 @@ example from the book ["The Definitive Guide to Modern Java Clients with JavaFX"
 That example uses V1 of Pi4J with a listener provided by the library. In V.2 this listener is no longer provided but can 
 easily be achieved with a Thread to handle the incoming data.
 
+{{% notice tip %}}
+Feel free to check the [Kotlin DSL for Serial](/kotlin/serial/)
+{{% /notice %}}
+
 ### Wiring
 
 The GPS module used in this example: NEO-7M.
