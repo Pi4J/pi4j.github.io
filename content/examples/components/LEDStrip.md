@@ -10,7 +10,7 @@ The [LedStrip](https://github.com/Pi4J/pi4j-example-components/tree/main/src/mai
 You can take a LED Strip with the WS28xx-chip set.
 
 The Template Class gives you the option to set the LED's of the strip to a desired RGB-Color.
-If you have many strips, you can use the [LEDMatrix](/examples/components/components/ledmatrix)
+If you have many strips, you can use the [LEDMatrix](https://pi4j.com/examples/components/ledmatrix/)
 
 {{% notice note %}}
 Make sure to check if SPI is enabled in your RaspberryPI.
