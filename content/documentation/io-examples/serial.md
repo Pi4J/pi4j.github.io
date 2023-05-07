@@ -32,6 +32,31 @@ higher (19200, 38400, 57600, 115200) speeds, depending on the speed which can be
 The Pi has two built-in connections to GPIOs BCM number 14 (TX) and 15 (RX). Identical to the other GPIOs, they use 
 3.3V so make sure, when you connect other devices, the same voltage is used.
 
+## Uart Types
+The following details are located in the Pi4 BCM2711-peripherals document.
+The BCM2711 device has six UARTs. One mini UART (UART1) and five PL011 UARTs (UART0, UART2, UART3, UART4 &UART5).
+### Mini UART
+Pi GPIO14 and GPIO15 support operation as a mini UART.
+
+* 7-bit or 8-bit operation
+* 1 start and 1 stop bit
+* No parities
+* Break generation
+* 8 symbols deep FIFOs for receive and transmit
+* SW controlled RTS, SW readable CTS
+* Auto flow control with programmable FIFO level
+* 16550 like registers
+* Baudrate derived from system clock
+
+### PL011
+The fuller function PL011 uarts are available via GPIO Alternative Function Assignments.
+See Pi command *raspi-gpio funcs*.
+
+
+## Limitations
+At the present time the PiGpio library supports only Parity *None* on any/all uarts. Any future additional UART 
+functionality within the PiGpio library will require changes within the Pi4J code base. 
+
 ## Code example
 
 The following example demonstrates how you can connect to a GPS module to read the data. This example is based on an 
