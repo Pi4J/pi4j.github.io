@@ -33,10 +33,13 @@ The Pi has two built-in connections to GPIOs BCM number 14 (TX) and 15 (RX). Ide
 3.3V so make sure, when you connect other devices, the same voltage is used.
 
 ## Uart Types
+
 The following details are located in the Pi4 BCM2711-peripherals document.
-The BCM2711 device has six UARTs. One mini UART (UART1) and five PL011 UARTs (UART0, UART2, UART3, UART4 &UART5).
+The BCM2711 device has six UARTs. One mini UART (UART1) and five PL011 UARTs (UART0, UART2, UART3, UART4, and UART5).
+
 ### Mini UART
-Pi GPIO14 and GPIO15 support operation as a mini UART.
+
+Raspberry Pi GPIO14 and GPIO15 support operation as a mini UART.
 
 * 7-bit or 8-bit operation
 * 1 start and 1 stop bit
@@ -49,11 +52,12 @@ Pi GPIO14 and GPIO15 support operation as a mini UART.
 * Baudrate derived from system clock
 
 ### PL011
-The fuller function PL011 uarts are available via GPIO Alternative Function Assignments.
-See Pi command *raspi-gpio funcs*.
 
+The fuller function PL011 uarts are available via GPIO Alternative Function Assignments.
+See Pi command `raspi-gpio funcs`.
 
 ## Limitations
+
 At the present time the PiGpio library supports only Parity *None* on any/all uarts. Any future additional UART 
 functionality within the PiGpio library will require changes within the Pi4J code base. 
 
