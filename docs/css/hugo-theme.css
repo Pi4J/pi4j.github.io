@@ -16,17 +16,24 @@
     padding: 15px !important;
 }
 
-
 #TableOfContents > ul > li > ul > li > ul li {
   margin-right: 8px;
 }
 
 #TableOfContents > ul > li > a   {
-  font-weight: bold; padding: 0 18px; margin: 0 2px;
+  font-weight: bold;
+    padding: 0 18px;
+    margin: 0 2px;
 }
 
 #TableOfContents > ul > li > ul > li > a {
-  font-weight: bold;
+    font-weight: bold;
+    padding: 0 30px;
+}
+
+#TableOfContents > ul > li > ul > li > ul > li > a {
+    font-weight: bold;
+    padding: 0 42px;
 }
 
 #TableOfContents > ul > li > ul > li > ul > li > ul > li > ul > li  {
