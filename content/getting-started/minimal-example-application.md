@@ -220,9 +220,7 @@ $ cd pi4j-example-minimal/
 $ mvn clean package
 ``` 
 
-* Change to the distribution directory where you can find the generated package and required Java-modules. Start it with 
-the provided `run.sh` script. Make sure to start with `sudo` as Pi4J (at this moment) needs to be started with it, to enable
-the native library that is part of Pi4J to communicate with the GPIOs:
+* Change to the distribution directory where you can find the generated package and required Java-modules. 
 
 ```shell
 $ cd target/distribution
@@ -236,6 +234,11 @@ total 644
 -rwxr-xr-x 1 pi pi    101 Jun 19 10:04 run.sh
 -rw-r--r-- 1 pi pi  52173 Jun 19 10:04 slf4j-api-2.0.0-alpha0.jar
 -rw-r--r-- 1 pi pi  15372 Jun 19 10:04 slf4j-simple-2.0.0-alpha0.jar
+```
+
+* Start the application with the provided `run.sh` script. **Make sure to start with `sudo` as Pi4J (at this moment) needs to be started with it**, to enable the native library that is part of Pi4J to communicate with the GPIOs:
+
+```shell
 $ sudo ./run.sh
 ``` 
 
