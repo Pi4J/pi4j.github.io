@@ -275,6 +275,5 @@ required for the PiGpio native library that handles the interfacing with the GPI
 
 ```shell
 WARN com.pi4j.library.pigpio.impl.PiGpioNativeImpl 
-    - PIGPIO ERROR: PI_INIT_FAILED; pigpio initialisation failedWARN com.pi4j.library.pigpio.impl.PiGpioNativeImpl 
     - PIGPIO ERROR: PI_INIT_FAILED; pigpio initialisation failed
 ```
