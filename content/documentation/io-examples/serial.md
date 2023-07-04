@@ -73,7 +73,7 @@ That example uses V1 of Pi4J with a listener provided by the library. In V.2 thi
 easily be achieved with a Thread to handle the incoming data.
 
 {{% notice tip %}}
-This example has been used by Mark Baird to create an application to record GPS tracks with the ArcGIS Maps SDK for Java and [fully explained in a very nice post on the Esri ArcGIS blog](https://www.esri.com/arcgis-blog/products/sdk-java/developers/how-to-use-the-arcgis-maps-sdk-for-java-in-a-raspberry-pi-for-recording-gps-tracks/).
+This example has been used by Mark Baird to create an application to record GPS tracks with the ArcGIS Maps SDK for Java. He has [written a full explanation in a very nice post on the Esri ArcGIS blog](https://www.esri.com/arcgis-blog/products/sdk-java/developers/how-to-use-the-arcgis-maps-sdk-for-java-in-a-raspberry-pi-for-recording-gps-tracks/).
 {{% /notice %}}
 
 ### Wiring
