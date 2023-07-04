@@ -32,6 +32,10 @@ higher (19200, 38400, 57600, 115200) speeds, depending on the speed which can be
 The Pi has two built-in connections to GPIOs BCM number 14 (TX) and 15 (RX). Identical to the other GPIOs, they use 
 3.3V so make sure, when you connect other devices, the same voltage is used.
 
+{{% notice tip %}}
+Feel free to check the [Kotlin DSL for Serial](/kotlin/serial/)
+{{% /notice %}}
+
 ## Uart Types
 
 The following details are located in the Pi4 BCM2711-peripherals document.
@@ -69,7 +73,7 @@ That example uses V1 of Pi4J with a listener provided by the library. In V.2 thi
 easily be achieved with a Thread to handle the incoming data.
 
 {{% notice tip %}}
-Feel free to check the [Kotlin DSL for Serial](/kotlin/serial/)
+This example has been used by Mark Baird to create an application to record GPS tracks with the ArcGIS Maps SDK for Java and [fully explained in a very nice post on the Esri ArcGIS blog](https://www.esri.com/arcgis-blog/products/sdk-java/developers/how-to-use-the-arcgis-maps-sdk-for-java-in-a-raspberry-pi-for-recording-gps-tracks/).
 {{% /notice %}}
 
 ### Wiring
