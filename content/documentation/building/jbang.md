@@ -85,7 +85,7 @@ $ jbang HelloWorld.java
 Hello World!
 ```
 
-## JBang Pi4J example
+## JBang Pi4J Minimal Example
 
 If your project needs dependencies - which is the case for a Pi4J project - you can [define them in the java-file with the
 following gradle-style locators format](https://www.jbang.dev/documentation/guide/latest/dependencies.html), for example:
@@ -95,7 +95,7 @@ The following example is based on the ["Minimal example application"](/getting-s
 the same wiring with a button and LED. By using JBang we can run this project with a single file without the need of a full
 Maven or Gradle project, or compiling the Java code.
 
-Create a new file `JBangPi4JExample.java` with the following content:
+Create a new file `Pi4JMinimalExample.java` with the following content:
 
 ```java
 ///usr/bin/env jbang "$0" "$@" ; exit $?
@@ -112,7 +112,7 @@ import com.pi4j.io.gpio.digital.DigitalState;
 import com.pi4j.io.gpio.digital.PullResistance;
 import com.pi4j.util.Console;
 
-class JBangPi4JExample {
+class Pi4JMinimalExample {
 
     private static final int PIN_BUTTON = 24; // PIN 18 = BCM 24
     private static final int PIN_LED = 22; // PIN 15 = BCM 22
@@ -168,7 +168,7 @@ class JBangPi4JExample {
 Without the need of any further configuration, installation, dependency download, or compiling, we should now be able to run this code with:
 
 ```shell
-$ jbang JBangPi4JExample.java
+$ jbang Pi4JMinimalExample.java
 
 [jbang] Building jar...
 
@@ -191,7 +191,7 @@ automatically again by JBang.
 $ which jbang
 /home/pi/.jbang/bin/jbang
 
-$ sudo /home/pi/.jbang/bin/jbang JBangPi4JExample.java
+$ sudo /home/pi/.jbang/bin/jbang Pi4JMinimalExample.java
 Downloading JDK 11. Be patient, this can take several minutes...
 
 [main] INFO com.pi4j.Pi4J - New auto context
@@ -218,7 +218,7 @@ Yep, we have a working example, with dependencies, without the need to compile a
 And both commands can even be combined to make things even more easy, allowing you to start the application simply with:
 
 ```shell
-$ sudo `which jbang` JBangPi4JExample.java
+$ sudo `which jbang` Pi4JMinimalExample.java
 ```
 
 ## Conclusion
