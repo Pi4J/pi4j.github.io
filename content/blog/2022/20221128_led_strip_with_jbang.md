@@ -1,10 +1,10 @@
 ---
 title: LED strip with Pi4J and JBang
+date: 2022-11-28
 canonical: https://foojay.io/today/controlling-a-led-strip-with-pi4j-and-jbang/
-weight: 3
 ---
 
-By Robert von Burg
+2022-11-28, by Robert von Burg
 
 ## Intro
 

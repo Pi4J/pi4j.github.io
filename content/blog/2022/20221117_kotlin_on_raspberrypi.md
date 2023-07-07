@@ -1,10 +1,10 @@
 ---
 title: Kotlin on the Raspberry Pi
+date: 2022-11-17
 canonical: https://foojay.io/today/kotlin-on-the-raspberrypi-pi4j-kotlin/
-weight: 2
 ---
 
-by Muhammad Hashim
+2022-11-17, by Muhammad Hashim
 
 ## Intro
 

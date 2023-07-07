@@ -1,10 +1,10 @@
 ---
 title: Getting Started Template
+date: 2022-01-13
 canonical: https://foojay.io/today/template-to-get-started-with-pi4j-and-javafx-on-raspberry-pi/
-weight: 1
 ---
 
-by Frank Delporte
+2022-01-13, by Frank Delporte
 
 ## Intro
 
