@@ -1,10 +1,10 @@
 ---
 title: BME280 (temp, humidity, pressure) via Pi4J, I2C, and JBang
-date: 2023-07-15
+date: 2023-07-18
 
 ---
 
-2023-07-07, by Frank Delporte and Tom Aarts
+2023-07-18, by Frank Delporte and Tom Aarts
 
 {{% notice note %}}
 GITHUB PROJECT: [https://github.com/Pi4J/pi4j-jbang](https://github.com/Pi4J/pi4j-jbang)
@@ -12,7 +12,11 @@ GITHUB PROJECT: [https://github.com/Pi4J/pi4j-jbang](https://github.com/Pi4J/pi4
 
 ## Intro
 
-This is an example project to demonstrate how to read the temperature, humidity and pressure from a BME280 sensor, installed on an Adafruit board that can be controlled via I2C and SPI.
+This is an example project to demonstrate how to read the temperature, humidity and pressure from a BME280 sensor, installed on an Adafruit board that can be controlled via I2C and SPI. Such a sensor itself, is a very tiny device, that can be integrated in phones and many other types of devices. 
+
+Typically when you want to integrate such a device in a project, you'll need to dive into the [Data Sheet](https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bme280-ds002.pdf) to find out how it needs to be controlled. If you want to better understand the code from this example, you can check the Data Sheet as the register read-outs and calculations are based on the example code you can find in that document.
+
+// TODO add pictures sensor
 
 ## Wiring
 
@@ -197,6 +201,7 @@ The following sources have been used for this example:
 
 * [Pi4J_V2-TemperatureSensor example code by Tom Aarts](https://github.com/Pi4J/pi4j-example-devices/blob/master/src/main/java/com/pi4j/devices/bmp280/README.md)
 * [Bosch BMP280 Data Sheet](https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bmp280-ds001.pdf)
+* [Bosch BME280 Data Sheet](https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bme280-ds002.pdf)
 * [Product page: "Adafruit BME280 I2C or SPI Temperature Humidity Pressure Sensor - STEMMA QT"](https://www.adafruit.com/product/2652)
 * [Tutorial with Arduino code: "Adafruit BME280 Humidity + Barometric Pressure + Temperature Sensor Breakout"](https://learn.adafruit.com/adafruit-bme280-humidity-barometric-pressure-temperature-sensor-breakout/pinouts)
 * [Adafruit_CircuitPython_BME280 library source code](https://github.com/adafruit/Adafruit_CircuitPython_BME280/blob/main/adafruit_bme280/basic.py#L248)
