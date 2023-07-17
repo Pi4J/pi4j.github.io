@@ -4,7 +4,7 @@ weight: 162
 tags: ["FatJAR"]
 ---
 
-{{% notice note %}}
+{{% notice tip %}}
 EXAMPLE PROJECT: [https://github.com/Pi4J/pi4j-example-fatjar](https://github.com/Pi4J/pi4j-example-fatjar)
 {{% /notice %}}
 

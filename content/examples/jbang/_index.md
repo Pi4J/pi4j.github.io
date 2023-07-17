@@ -3,7 +3,7 @@ title: JBang Examples
 weight: 150
 ---
 
-{{% notice note %}}
+{{% notice tip %}}
 GITHUB PROJECT: [https://github.com/Pi4J/pi4j-jbang](https://github.com/Pi4J/pi4j-jbang)
 {{% /notice %}}
 

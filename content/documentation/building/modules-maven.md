@@ -4,7 +4,7 @@ weight: 163
 tags: ["Maven"]
 ---
 
-{{% notice note %}}
+{{% notice tip %}}
 GITHUB PROJECT: [https://github.com/Pi4J/pi4j-example-minimal](https://github.com/Pi4J/pi4j-example-minimal)
 {{% /notice %}}
 

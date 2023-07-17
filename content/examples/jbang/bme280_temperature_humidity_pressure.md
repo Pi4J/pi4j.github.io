@@ -5,13 +5,13 @@ weight: 160
 
 ## BME280 Sensor (temp, humidity, pressure) via Pi4J, I2C, and JBang
 
-{{% notice note %}}
+{{% notice tip %}}
 GITHUB PROJECT: [https://github.com/Pi4J/pi4j-jbang](https://github.com/Pi4J/pi4j-jbang)
 {{% /notice %}}
 
 ## Intro
 
-{{% notice note %}}
+{{% notice warning %}}
 Before proceeding with this example, make sure that you have a Raspberry Pi prepared to execute Java code with JBang as [explained here](https://pi4j.com/examples/jbang/)
 {{% /notice %}}
 

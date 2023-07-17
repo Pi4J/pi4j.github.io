@@ -5,13 +5,13 @@ weight: 155
 
 ## Minimal Pi4J with JBang example
 
-{{% notice note %}}
+{{% notice tip %}}
 GITHUB PROJECT: [https://github.com/Pi4J/pi4j-jbang](https://github.com/Pi4J/pi4j-jbang)
 {{% /notice %}}
 
 ## Intro
 
-{{% notice note %}}
+{{% notice warning %}}
 Before proceeding with this example, make sure that you have a Raspberry Pi prepared to execute Java code with JBang as [explained here](https://pi4j.com/examples/jbang/)
 {{% /notice %}}
 
