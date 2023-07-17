@@ -1,5 +1,5 @@
 ---
-title: Example implementations
+title: Example Implementations
 weight: 35
 ---
 
@@ -25,6 +25,6 @@ To get a better understanding, look at one of those finished template-projects: 
 ### Electrical Engineering
 General inputs and help on electrical engineering can be looked up on the Getting started with PI4J / [Electrical Engineering](/getting-started/electricalengeneering/) page.
 
-### Table of contents of the "Documentation" section
+### Table of contents of the "Example Implementations" section
 
 {{% children depth="3" %}}

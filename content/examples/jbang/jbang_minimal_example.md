@@ -22,6 +22,18 @@ Create a new file JBangPi4JExample.java with the following content:
 ## Application
 
 ```java
+///usr/bin/env jbang "$0" "$@" ; exit $?
+
+//DEPS org.slf4j:slf4j-api:1.7.35
+//DEPS org.slf4j:slf4j-simple:1.7.35
+//DEPS com.pi4j:pi4j-core:2.3.0
+//DEPS com.pi4j:pi4j-plugin-raspberrypi:2.3.0
+//DEPS com.pi4j:pi4j-plugin-pigpio:2.3.0
+
+import com.pi4j.Pi4J;
+import com.pi4j.io.gpio.digital.DigitalInput;
+import com.pi4j.io.gpio.digital.DigitalOutput;
+import com.pi4j.io.gpio.digital.DigitalState;
 import com.pi4j.io.gpio.digital.PullResistance;
 import com.pi4j.util.Console;
 
