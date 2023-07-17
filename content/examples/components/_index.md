@@ -1,5 +1,5 @@
 ---
-title: Component examples
+title: Component Examples
 weight: 50
 ---
 

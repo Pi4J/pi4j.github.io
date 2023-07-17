@@ -1,5 +1,5 @@
 ---
-title: JBang examples
+title: JBang Examples
 weight: 150
 ---
 
