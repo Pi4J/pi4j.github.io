@@ -12,7 +12,7 @@ GITHUB PROJECT: [https://github.com/Pi4J/pi4j-jbang](https://github.com/Pi4J/pi4
 ## Intro
 
 {{% notice warning %}}
-Before proceeding with this example, make sure that you have a Raspberry Pi prepared to execute Java code with JBang as [explained here](https://pi4j.com/examples/jbang/)
+Before proceeding with this example, make sure that you have a Raspberry Pi prepared to execute Java code with JBang as [explained here](https://pi4j.com/examples/jbang/).
 {{% /notice %}}
 
 This is an example project to demonstrate how to read the temperature, humidity and pressure from a BME280 sensor, installed on an Adafruit board that can be controlled via I2C and SPI. Such a sensor itself is a very tiny component that can be integrated in phones and many other types of devices. 

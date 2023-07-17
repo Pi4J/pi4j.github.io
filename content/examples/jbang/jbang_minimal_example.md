@@ -12,7 +12,7 @@ GITHUB PROJECT: [https://github.com/Pi4J/pi4j-jbang](https://github.com/Pi4J/pi4
 ## Intro
 
 {{% notice warning %}}
-Before proceeding with this example, make sure that you have a Raspberry Pi prepared to execute Java code with JBang as [explained here](https://pi4j.com/examples/jbang/)
+Before proceeding with this example, make sure that you have a Raspberry Pi prepared to execute Java code with JBang as [explained here](https://pi4j.com/examples/jbang/).
 {{% /notice %}}
 
 The following example is based on the ["Minimal example application"](http://localhost:49905/getting-started/minimal-example-application/), and uses the same wiring with a button and LED. By using JBang we can run this project with a single file without the need of a full Maven or Gradle project, or compiling the Java code.
