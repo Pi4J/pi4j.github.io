@@ -3,7 +3,7 @@ title: JavaFX kiosk mode
 weight: 82
 ---
 
-{{% notice note %}}
+{{% notice tip %}}
 Visit [webtechie.be]( https://webtechie.be/post/2021-04-23-javafx-kiosk-raspberry-pi/) for the full blogpost
 {{% /notice %}}
 

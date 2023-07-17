@@ -3,7 +3,7 @@ title: FXGl to Picade
 weight: 81
 ---
 
-{{% notice note %}}
+{{% notice tip %}}
 GITHUB PROJECT: [https://github.com/Pi4J/pi4j-example-fxgl](https://github.com/Pi4J/pi4j-example-fxgl)
 {{% /notice %}}
 

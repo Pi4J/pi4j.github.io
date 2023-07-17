@@ -35,6 +35,20 @@ Special layout components are explained on [learn.netlify.app/en/shortcodes](htt
 All pages are separate md-files inside the [content](content/) directory. The formatting
 of the text needs to use the rules specified in [commonmark.org](https://spec.commonmark.org/0.29/).
 
+Notes can be included like this:
+
+```
+{{% notice note %}}
+GITHUB PROJECT: [https://github.com/Pi4J/pi4j-logo](https://github.com/Pi4J/pi4j-logo)
+{{% /notice %}}
+```
+
+Available types:
+
+* `notice note`: blue box
+* `notice tip`: green box
+* `notice warning`: red box
+
 ### Images
 
 #### Location for images

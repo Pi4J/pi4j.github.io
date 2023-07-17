@@ -4,7 +4,7 @@ weight: 45
 tags: ["Maven"]
 ---
 
-{{% notice note %}}
+{{% notice tip %}}
 GITHUB PROJECT: [https://github.com/Pi4J/pi4j-maven-archetype](https://github.com/Pi4J/pi4j-maven-archetype)
 {{% /notice %}}
 

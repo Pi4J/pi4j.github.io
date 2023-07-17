@@ -8,7 +8,6 @@ weight: 47
 Here you can find the provided APIs and the dead-simple DSLs of the Kotlin package.
 {{% /notice %}}
 
-
 ## Components
 
 ### Context

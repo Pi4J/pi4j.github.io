@@ -4,7 +4,7 @@ weight: 250
 tags: ["Serial"]
 ---
 
-{{% notice note %}}
+{{% notice tip %}}
 GITHUB PROJECT: [https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/SerialGps_App.java](https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/SerialGps_App.java)
 {{% /notice %}}
 

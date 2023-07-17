@@ -4,7 +4,7 @@ weight: 70
 tags: ["Digital Input", "Digital Output", "JavaFX", "Maven"]
 ---
 
-{{% notice note %}}
+{{% notice tip %}}
 GITHUB PROJECT: [https://github.com/Pi4J/pi4j-example-javafx](https://github.com/Pi4J/pi4j-example-javafx)
 {{% /notice %}}
 

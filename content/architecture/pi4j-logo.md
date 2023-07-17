@@ -3,7 +3,7 @@ title: The Pi4J Logo
 weight: 999
 ---
 
-{{% notice note %}}
+{{% notice tip %}}
 GITHUB PROJECT: [https://github.com/Pi4J/pi4j-logo](https://github.com/Pi4J/pi4j-logo)
 {{% /notice %}}
 

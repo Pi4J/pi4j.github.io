@@ -4,7 +4,7 @@ weight: 60
 tags: ["CrowPi"]
 ---
 
-{{% notice note %}}
+{{% notice tip %}}
 GITHUB PROJECT: [https://github.com/Pi4J/pi4j-example-crowpi](https://github.com/Pi4J/pi4j-example-crowpi)
 {{% /notice %}}
 
