@@ -39,7 +39,7 @@ As this board can be controlled with both I2C and SPI, there are more available 
 * CS to 3.3V
 
 {{% notice tip %}}
-The connection order is documented in the datasheet, and mentions a connection between the CS pin and 3.3V is required to enable the I2C interface, before the VCC pin is connected to 3.3V. Failure to do this could lead to frustrating debugging...
+The connection order is documented in the datasheet, and mentions that a connection between the CS pin and 3.3V is required to enable the I2C interface, before the VCC pin is connected to 3.3V. Failure to do this could lead to frustrating debugging...
 {{% /notice %}}
 
 In the wiring diagram, another brand of board ([Sparkfun](https://www.sparkfun.com/products/13676)) is used, which has the I2C and SPI connections on different sides, but to align it with the pictures, the same connections are used as are available on the Adafruit board.
@@ -299,6 +299,10 @@ console.println("Temperature: " + df.format(temperature* 1.8 + 32) + " °F ");
 ## Running the Application
 
 Because JBang can download the dependencies and compile the code, we just need the Java-file to execute it.
+
+{{% notice tip %}}
+Regarding the humidity value: it turned out its value was lower compared to another device. While looking for a potential cause, it turns out that this is a know issue, while the temperature and pressure seem to be close to expected. The manufacturer was involved in some hits and admits the chip can fall out of calibration depending storage and soldering conditions. They have a multistep process where you store the chip at different temperatures to potentially get it back to the correct humidity readout.
+{{% /notice %}}
 
 ### Running the I2C Application
 
