@@ -26,6 +26,16 @@ Typically, when you want to integrate such a device in a project, you'll need to
 {{< /gallery >}}
 {{< load-photoswipe >}}
 
+## Enable I2C and SPI
+
+We will be using both I2C and SPI for this experiment, so we need to make sure they are enabled:
+
+* Open a terminal 
+* Execute `sudo raspi-config` 
+* Go to "Interface Options"
+* Go to "I2C" and select "Yes"
+* Go to "SPI" and select "Yes"
+
 ## Wiring
 
 ### Wiring for I2C
@@ -52,7 +62,7 @@ In the wiring diagram, another brand of board ([Sparkfun](https://www.sparkfun.c
 
 #### Check the I2C Wiring
 
-After the wiring has been completed, you can check if the device is connected correctly by checking if the I2C device is detected. Make sure I2C is enabled on the Raspberry Pi. In the terminal run `sudo raspi-config' and enable I2C in the "Interface Options". When everything went OK, you should now see that a device is detected on I2C address 0x77:
+After the wiring has been completed, you can check if the device is connected correctly by checking if the I2C device is detected. Make sure I2C is enabled on the Raspberry Pi, as mentioned before. When everything went OK, you should now see that a device is detected on I2C address 0x77:
 
 ```shell
 $ i2cdetect -y 1
@@ -66,6 +76,8 @@ $ i2cdetect -y 1
 60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 70: -- -- -- -- -- -- -- 77
 ```
+
+On modern Raspberry Pi OS releases, you can run this command without sudo. The `-y` disables interactive mode, so it just goes ahead and scans. The `1` specifies the I2C bus.
 
 ### Wiring for SPI
 
