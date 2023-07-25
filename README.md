@@ -49,6 +49,14 @@ Available types:
 * `notice tip`: green box
 * `notice warning`: red box
 
+Example:
+
+```
+{{% notice tip %}}
+Feel free to check the [Kotlin DSL for Serial](/kotlin/serial/)
+{{% /notice %}}
+```
+
 ### Images
 
 #### Location for images

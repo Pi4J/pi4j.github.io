@@ -36,6 +36,11 @@ As this board can be controlled with both I2C and SPI, there are more available 
 * GND to GND
 * SCK to I2C clock SCL (pin 5)
 * SDI to I2C data SDA (pin 3)
+* CS to 3.3V
+
+{{% notice tip %}}
+The connection order is documented in the datasheet, and mentions a connection between the CS pin and 3.3V is required to enable the I2C interface, before the VCC pin is connected to 3.3V. Failure to do this could lead to frustrating debugging...
+{{% /notice %}}
 
 In the wiring diagram, another brand of board ([Sparkfun](https://www.sparkfun.com/products/13676)) is used, which has the I2C and SPI connections on different sides, but to align it with the pictures, the same connections are used as are available on the Adafruit board.
 
@@ -265,17 +270,14 @@ The reset and value readout is inspired by the Adafruit CircuitPython library an
 ```java
 byte[] buff = new byte[6];
 device.readRegister(BMP280Declares.press_msb, buff);
-long adc_T = (long) ((buff[3] & 0xFF) << 12) + (long) ((buff[4] & 0xFF) << 4) + (long) (buff[5] & 0xFF);
+long adc_T =  (long)  ((buff[3] & 0xFF) << 12) |  (long)  ((buff[4] & 0xFF) << 4) |  (long) ((buff[5] & 0x0F) >> 4);
 
-byte[] wrtReg = new byte[1];
-wrtReg[0] = (byte) BMP280Declares.reg_dig_t1;
-
-byte[] compVal = new byte[2];
+...
 
 DecimalFormat df = new DecimalFormat("0.###");
 
 // Temperature
-device.readRegister(wrtReg, compVal);
+device.readRegister(readReg, compVal);
 long dig_t1 = castOffSignInt(compVal);
 
 device.readRegister(BMP280Declares.reg_dig_t2, compVal);
@@ -286,11 +288,12 @@ int dig_t3 = signedInt(compVal);
 
 double var1 = (((double) adc_T) / 16384.0 - ((double) dig_t1) / 1024.0) * ((double) dig_t2);
 double var2 = ((((double) adc_T) / 131072.0 - ((double) dig_t1) / 8192.0) *
-        (((double) adc_T) / 131072.0 - ((double) dig_t1) / 8192.0)) * ((double) dig_t3);
+(((double) adc_T) / 131072.0 - ((double) dig_t1) / 8192.0)) * ((double) dig_t3);
 double t_fine = (int) (var1 + var2);
 double temperature = (var1 + var2) / 5120.0;
 
-console.println("Measure temperature: " + df.format(temperature) + "°C");
+console.println("Temperature: " + df.format(temperature) + " °C");
+console.println("Temperature: " + df.format(temperature* 1.8 + 32) + " °F ");
 ```
 
 ## Running the Application
@@ -318,12 +321,12 @@ $ jbang Pi4JTempHumPressI2C.java
 [main] INFO com.pi4j.platform.impl.DefaultRuntimePlatforms - adding platform to managed platform map [id=raspberrypi; name=RaspberryPi Platform; priority=5; class=com.pi4j.plugin.raspberrypi.platform.RaspberryPiPlatform]
 [main] INFO com.pi4j.util.Console - Initializing the sensor via I2C
 [main] INFO com.pi4j.util.Console - **************************************
-[main] INFO com.pi4j.util.Console - Reading values, loop 1
-[main] INFO com.pi4j.util.Console - Measure temperature: 25.137°C
-[main] INFO com.pi4j.util.Console - Humidity: 0.0%
-[main] INFO com.pi4j.util.Console - Pressure: 101136.782 Pa
-[main] INFO com.pi4j.util.Console - Pressure: 1.011 bar
-[main] INFO com.pi4j.util.Console - Pressure: 0.998 atm
+[main] INFO com.pi4j.util.Console - Temperature: 21.287 °C
+[main] INFO com.pi4j.util.Console - Temperature: 70.316 °F 
+[main] INFO com.pi4j.util.Console - Pressure: 100412.769 Pa
+[main] INFO com.pi4j.util.Console - Pressure: 1.004 bar
+[main] INFO com.pi4j.util.Console - Pressure: 0.991 atm
+[main] INFO com.pi4j.util.Console - Humidity: 52.7 %
 [main] INFO com.pi4j.util.Console - **************************************
 [main] INFO com.pi4j.util.Console - Reading values, loop 2
 ...
@@ -354,11 +357,12 @@ $ sudo `which jbang` Pi4JTempHumPressSpi.java
 [main] INFO com.pi4j.util.Console - Initializing the sensor via SPI
 [main] INFO com.pi4j.util.Console - **************************************
 [main] INFO com.pi4j.util.Console - Reading values, loop 1
-[main] INFO com.pi4j.util.Console - Measure temperature: 24.533°C
-[main] INFO com.pi4j.util.Console - Pressure: 100606.095 Pa
-[main] INFO com.pi4j.util.Console - Pressure: 1.006 bar
-[main] INFO com.pi4j.util.Console - Pressure: 0.993 atm
-[main] INFO com.pi4j.util.Console - Humidity: 0.0%
+[main] INFO com.pi4j.util.Console - Temperature: 21.865 °C
+[main] INFO com.pi4j.util.Console - Temperature: 71.356 °F 
+[main] INFO com.pi4j.util.Console - Pressure: 100419.804 Pa
+[main] INFO com.pi4j.util.Console - Pressure: 1.004 bar
+[main] INFO com.pi4j.util.Console - Pressure: 0.991 atm
+[main] INFO com.pi4j.util.Console - Humidity: 49.74 %
 [main] INFO com.pi4j.util.Console - **************************************
 [main] INFO com.pi4j.util.Console - Reading values, loop 2
 ...
