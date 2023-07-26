@@ -26,6 +26,12 @@ Typically, when you want to integrate such a device in a project, you'll need to
 {{< /gallery >}}
 {{< load-photoswipe >}}
 
+## Video
+
+This tutorial is also explained in this video:
+
+{{< youtube -CgjwthLy5c >}}
+
 ## Enable I2C and SPI
 
 We will be using both I2C and SPI for this experiment, so we need to make sure they are enabled:
