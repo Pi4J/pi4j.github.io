@@ -2,6 +2,8 @@
 title: Electronics with CrowPi
 weight: 60
 tags: ["CrowPi"]
+aliases:
+  - /getting-started/crowpi/
 ---
 
 {{% notice tip %}}

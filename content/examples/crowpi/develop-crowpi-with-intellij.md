@@ -1,7 +1,9 @@
 ---
 title: Develop with Intellij IDEA
-weight: 62
-tags: ["CrowPi"]
+weight: 20
+tags: ["Pi4J OS", "CrowPi", "IntelliJ IDEA"]
+aliases:
+  - /getting-started/crowpi/develop-with-intellij/
 ---
 
 In this tutorial, IntelliJ IDEA is used for the development. The articles, instructions and pictures are created accordingly. 
