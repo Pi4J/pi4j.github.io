@@ -198,7 +198,7 @@ The main method initializes the sensor, and loops 10 times to the process of res
                 resetSensor(bme280);
 
                 // The sensor needs some time to make the measurement
-                Thread.sleep(100);
+                Thread.sleep(300);
 
                 getMeasurements(bme280);
 
@@ -261,7 +261,7 @@ The main method initializes the sensor, and loops 10 times to the process of res
             resetSensor();
 
             // The sensor needs some time to make the measurement
-            Thread.sleep(100);
+            Thread.sleep(300);
 
             getMeasurements();
 
