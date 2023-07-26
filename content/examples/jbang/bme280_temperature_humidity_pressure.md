@@ -313,7 +313,9 @@ console.println("Temperature: " + df.format(temperature* 1.8 + 32) + " °F ");
 Because JBang can download the dependencies and compile the code, we just need the Java-file to execute it.
 
 {{% notice tip %}}
-Regarding the humidity value: it turned out its value was lower compared to another device. While looking for a potential cause, it turns out that this is a know issue, while the temperature and pressure seem to be close to expected. The manufacturer was involved in some hits and admits the chip can fall out of calibration depending storage and soldering conditions. They have a multistep process where you store the chip at different temperatures to potentially get it back to the correct humidity readout.
+**A side note regarding the humidity value.** i
+
+It turned out its value was lower compared to another device, while the temperature and pressure seemed to be close to expected. This appears to be a known issue. The manufacturer was involved in some hits and admits the chip can fall out of calibration depending storage and soldering conditions. They have a [documented multistep process](https://community.bosch-sensortec.com/t5/MEMS-sensors-forum/BME680-and-BME280-too-low-humidity/m-p/21794?attachment-id=2668) where you store the chip at different temperatures to potentially get it back to the correct humidity readout.
 {{% /notice %}}
 
 ### Running the I2C Application
