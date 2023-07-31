@@ -89,7 +89,7 @@ As with each JBang example, we need to define the first script line and the depe
 
 ### ExpanderDataWriteAdapter
 
-This example project doesn't use the Pi4J serial communication, as it doesn't support this baud rate (at this moment), but the `com.fazecast:jSerialComm:2.10.2` library. An inner class is used to setup the serial communication and provide a write method.
+This example project doesn't use the Pi4J serial communication (because it doesn't support this baud rate - at this moment), but instead the `com.fazecast:jSerialComm:2.10.2` library. An inner class is used to setup the serial communication and provide a write method.
 
 ```java
 static class ExpanderDataWriteAdapter {
@@ -135,7 +135,7 @@ static class ExpanderDataWriteAdapter {
 
 ### Helper methods
 
-Check the sources of the example for the full code, here the additional helper methods are listed without the full implementation:
+Check the sources of the example for the full code, this is an overview of the additional helper methods without the full implementation:
 
 ```java
 private static void sendAllOff() {
@@ -169,12 +169,12 @@ private static ByteBuffer initHeaderBuffer(int size, byte channel, byte command)
 
 With all this code in place, we can start sending color data to the LED strip. The idea is to send a byte array containing a value for each color of the LEDs.
 
-For instance, to send these colors, when using RGB-leds:
+For instance, to send these colors to the first four LEDs, when using RGB-leds:
 
-* Red for the first LED
-* Green for the second LED
-* Blue for the third LED
-* White for the third LED
+1 Red 
+2 Green 
+3 Blue 
+4 White 
 
 The byte array will look like this:
 
@@ -221,11 +221,11 @@ byte[3] = (byte) 0xff;
 
 #### Order of the color values
 
-Test the red, green, blue output to define how the RGB colors are ordered in the PBOE controller and/or LED strip. You can define the relation between the colors in your byte array with the actual led strip in the `sendWs2812` method, with the `int rIndex, int gIndex, int bIndex, int wIndex` parameters. If you are using RGB-leds and 3 bytes per pixel, the `wIndex` parameter is ignored.
+Test the red, green, and blue output to define how the RGB colors are ordered in the PBOE controller and/or LED strip. You can define the relationship between the colors in your byte array with the actual led strip in the `sendWs2812` method, with the `int rIndex, int gIndex, int bIndex, int wIndex` parameters. If you are using RGB-leds and 3 bytes per pixel, the `wIndex` parameter is ignored.
 
 #### Sending color values
 
-The example code uses multiple byte arrays to define various colors and effects to a strip with 11 LEDs, connected to the channel 0 pins of the PBOE.
+The example code uses multiple byte arrays to send various colors and effects to a strip with 11 LEDs, connected to the channel 0 pins of the PBOE.
 
 ```java
 private static final byte CH_WS2812_DATA = 1;
@@ -304,7 +304,7 @@ public static void main(String[] args) throws InterruptedException {
 
 ## Running the Application
 
-Serial communication with the `jSerialComm` library, can be done without the need for `sudo`, so the application can be started with:
+No `sudo` is needed for serial communication with the `jSerialComm` library, so the application can be started with:
 
 ```bash
 $ jbang PixelblazeOutputExpander.java
