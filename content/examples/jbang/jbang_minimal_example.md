@@ -1,6 +1,7 @@
 ---
 title: Minimal Example
 weight: 155
+tags: ["JBang", "DigitalInput", "DigitalOuput", "LED", "Button"]
 ---
 
 ## Minimal Pi4J with JBang example

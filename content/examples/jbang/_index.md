@@ -1,6 +1,7 @@
 ---
 title: JBang Examples
 weight: 150
+tags: ["JBang"]
 ---
 
 {{% notice tip %}}
