@@ -5,9 +5,7 @@ tags: ["JBang", "Pixelblaze", "LED Strip"]
 ---
 
 {{% notice tip %}}
-GITHUB PROJECT: [https://github.com/Pi4J/pi4j-jbang](https://github.com/Pi4J/pi4j-jbang)
-
-* [PixelblazeOutputExpander.java](https://github.com/Pi4J/pi4j-jbang/blob/main/PixelblazeOutputExpander.java)
+GITHUB PROJECT: [PixelblazeOutputExpander.java](https://github.com/Pi4J/pi4j-jbang/blob/main/PixelblazeOutputExpander.java)
 {{% /notice %}}
 
 One of the most "fancy" electronic components is definitely a LED strip. It's really cool to control a long strip of lights with only a few lines of code... But, there is a problem. The timings of the signals is crucial to reliably control these strips. Both Python and Java on a Raspberry Pi can struggle with these timings as they are running on Linux, a non-real-time operating system. So pauzes in the garbage collection of the virtual machine of Java, or any hickup in the operation of the operating system can cause unexpected effects on the LED strips. That's why in most projects a microcontroller (Arduino, Raspberry Pi Pico, ESP32,...) is used to drive the LED strip. 

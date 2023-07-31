@@ -7,10 +7,7 @@ tags: ["JBang", "BME280", "BMP208"]
 ## BME280 Sensor (temp, humidity, pressure) via Pi4J, I2C, and JBang
 
 {{% notice tip %}}
-GITHUB PROJECT: [https://github.com/Pi4J/pi4j-jbang](https://github.com/Pi4J/pi4j-jbang)
-
-* [Pi4JTempHumPressI2C.java](https://github.com/Pi4J/pi4j-jbang/blob/main/Pi4JTempHumPressI2C.java)
-* [Pi4JTempHumPressSpi.java](https://github.com/Pi4J/pi4j-jbang/blob/main/Pi4JTempHumPressSpi.java)
+GITHUB PROJECT: [Pi4JTempHumPressI2C.java](https://github.com/Pi4J/pi4j-jbang/blob/main/Pi4JTempHumPressI2C.java) and [Pi4JTempHumPressSpi.java](https://github.com/Pi4J/pi4j-jbang/blob/main/Pi4JTempHumPressSpi.java)
 {{% /notice %}}
 
 ## Intro

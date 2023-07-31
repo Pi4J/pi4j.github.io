@@ -7,9 +7,7 @@ tags: ["JBang", "DigitalInput", "DigitalOuput", "LED", "Button"]
 ## Minimal Pi4J with JBang example
 
 {{% notice tip %}}
-GITHUB PROJECT: [https://github.com/Pi4J/pi4j-jbang](https://github.com/Pi4J/pi4j-jbang)
-
-* [Pi4JMinimalExample.java](https://github.com/Pi4J/pi4j-jbang/blob/main/Pi4JMinimalExample.java)
+GITHUB PROJECT: [Pi4JMinimalExample.java](https://github.com/Pi4J/pi4j-jbang/blob/main/Pi4JMinimalExample.java)
 {{% /notice %}}
 
 ## Intro
