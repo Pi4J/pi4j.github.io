@@ -13,6 +13,7 @@ In this section, we want to provide you example implementations of several devic
 | Provider                 | Link                                                          |
 |:-------------------------|:--------------------------------------------------------------|
 | FHNW University          | [Components](/examples/components)                            |
+| FHNW University          | [CrowPi](/examples/crowpi)                                    |
 | Community Implementation | [Community Implementation](/examples/communityimplementation) |
 | Pi4J                     | [JBang examples](/examples/jbang)                             |
 
@@ -23,6 +24,7 @@ The Readme.md describes how to get started with the project.
 To get a better understanding, look at one of those finished template-projects: [Theremin](https://github.com/DieterHolz/RaspPiTheremin) or [Photobooth](https://github.com/DieterHolz/PhotoBooth)
 
 ### Electrical Engineering
+
 General inputs and help on electrical engineering can be looked up on the Getting started with PI4J / [Electrical Engineering](/getting-started/electricalengeneering/) page.
 
 ### Table of contents of the "Example Implementations" section

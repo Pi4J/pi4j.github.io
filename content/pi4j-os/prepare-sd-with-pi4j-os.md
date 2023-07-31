@@ -4,7 +4,7 @@ weight: 10
 tags: ["Pi4J OS"]
 ---
 
-To prepare an SD-card with one of these flavors, download the latest build from [TODO]() and follow the steps described in ["Set up a new Raspberry Pi](/getting-started/set-up-a-new-raspberry-pi/), but instead of selecting on of the OS's predefined in the Imager tool, select "Choose OS > Use custom", and selected the downloaded file.
+To prepare an SD-card with one of these flavors, download the latest build from [pi4j.com/download](https://pi4j.com/download/) and follow the steps described in ["Set up a new Raspberry Pi](/getting-started/set-up-a-new-raspberry-pi/), but instead of selecting on of the OS's predefined in the Imager tool, select "Choose OS > Use custom", and selected the downloaded file.
 
 ## Install the Raspberry Pi Imager
 
