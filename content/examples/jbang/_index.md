@@ -6,6 +6,9 @@ tags: ["JBang"]
 
 {{% notice tip %}}
 GITHUB PROJECT: [https://github.com/Pi4J/pi4j-jbang](https://github.com/Pi4J/pi4j-jbang)
+
+* [HelloWorld.java](https://github.com/Pi4J/pi4j-jbang/blob/main/HelloWorld.java)
+* [JsonParsing.java](https://github.com/Pi4J/pi4j-jbang/blob/main/JsonParsing.java)
 {{% /notice %}}
 
 Want to get started with Java programming on the Raspberry Pi?

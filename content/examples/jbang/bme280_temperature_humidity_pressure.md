@@ -8,6 +8,9 @@ tags: ["JBang", "BME280", "BMP208"]
 
 {{% notice tip %}}
 GITHUB PROJECT: [https://github.com/Pi4J/pi4j-jbang](https://github.com/Pi4J/pi4j-jbang)
+
+* [Pi4JTempHumPressI2C.java](https://github.com/Pi4J/pi4j-jbang/blob/main/Pi4JTempHumPressI2C.java)
+* [Pi4JTempHumPressSpi.java](https://github.com/Pi4J/pi4j-jbang/blob/main/Pi4JTempHumPressSpi.java)
 {{% /notice %}}
 
 ## Intro
