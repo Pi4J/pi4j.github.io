@@ -2,24 +2,26 @@
 title: Electronics with CrowPi
 weight: 60
 tags: ["CrowPi"]
+aliases:
+  - /examples/crowpi/
 ---
 
 {{% notice tip %}}
 GITHUB PROJECT: [https://github.com/Pi4J/pi4j-example-crowpi](https://github.com/Pi4J/pi4j-example-crowpi)
 {{% /notice %}}
 
-For this example we are going to use a [CrowPi, which is a starter kit in a laptop-housing](https://www.elecrow.com/crowpi.html).
+The [CrowPi is an electronics starter kit in a laptop-housing](https://www.elecrow.com/crowpi.html).
 Of course, you can get any electronics starter kit for this purpose or buy separate components. That's the fun of 
 electronics: components are inexpensive and easy to find on ebay or one of the many web shops.
 
 {{< gallery >}}
-{{< figure link="/assets/getting-started/crowpi/crowpi1.jpg" caption="CrowPi 1" caption-position="center" caption-effect="fade" >}}
-{{< figure link="/assets/getting-started/crowpi/crowpi2.jpg" caption="CrowPi 2" caption-position="center" caption-effect="fade" >}}
-{{< figure link="/assets/getting-started/crowpi/electronics-starter-kit.jpg" caption="Example electronics starter kit" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/examples/crowpi/crowpi1.jpg" caption="CrowPi 1" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/examples/crowpi/crowpi2.jpg" caption="CrowPi 2" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/examples/crowpi/electronics-starter-kit.jpg" caption="Example electronics starter kit" caption-position="center" caption-effect="fade" >}}
 {{< /gallery >}}
 {{< load-photoswipe >}}
 
-As the CrowPi contains a lot of components, this example is described on the following subpages:
+As the CrowPi contains a lot of components, its use is described on the following subpages:
 
 {{% children %}}
 

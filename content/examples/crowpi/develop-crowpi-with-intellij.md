@@ -1,10 +1,12 @@
 ---
 title: Develop with Intellij IDEA
-weight: 62
-tags: ["CrowPi"]
+weight: 20
+tags: ["Pi4J OS", "CrowPi", "IntelliJ IDEA"]
+aliases:
+  - /getting-started/crowpi/develop-with-intellij/
 ---
 
-In this tutorial, IntelliJ IDEA is used for the development. The articles, instructions and pictures are created accordingly. 
+The CrowPi example project contains settings to make it easy to develop on a PC with IntelliJ IDEA and execute the application on the CrowPi. The articles, instructions and pictures are created accordingly. 
 IntelliJ IDEA is from available Jetbrains in different versions. The community version has enough functionality for development 
 with the CrowPi and is available for Windows, MacOS and Linux, but NOT for Raspberry Pi. The 
 [download can be found here](https://www.jetbrains.com/idea/download/).
@@ -32,8 +34,8 @@ the process is started and any necessary authentication of the user is carried o
 tool. 
 
 {{< gallery >}}
-{{< figure link="/assets/getting-started/crowpi/intellij-getfromvcs.jpg" caption="Import from VCS" caption-position="center" caption-effect="fade" >}}
-{{< figure link="/assets/getting-started/crowpi/intellij-insert-githublink.jpg" caption="Insert import from VCS link" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/examples/crowpi/intellij-getfromvcs.jpg" caption="Import from VCS" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/examples/crowpi/intellij-insert-githublink.jpg" caption="Insert import from VCS link" caption-position="center" caption-effect="fade" >}}
 {{< /gallery >}}
 
 As soon as the project has been completely cloned on the local computer, the project opens automatically in the development
@@ -43,14 +45,14 @@ can be properly initialized. Maven is a software project management tool, more i
 already offers a complete setup and is easy to use. 
 
 {{< gallery >}}
-{{< figure link="/assets/getting-started/crowpi/intellij-import-maven.jpg" caption="Import Maven Project" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/examples/crowpi/intellij-import-maven.jpg" caption="Import Maven Project" caption-position="center" caption-effect="fade" >}}
 {{< /gallery >}}
 
 Importing the Maven project triggers a security warning at IntelliJ. Click on "Trust project" to confirmed when you
 downloaded the soruces from the official Pi4J CrowPi repository. 
 
 {{< gallery >}}
-{{< figure link="/assets/getting-started/crowpi/intellij-trust-project.jpg" caption="Trust Project confirmation" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/examples/crowpi/intellij-trust-project.jpg" caption="Trust Project confirmation" caption-position="center" caption-effect="fade" >}}
 {{< /gallery >}}
 
 Now a last import step. To be able to better research errors or understand how the code of the dependencies works, the
@@ -59,7 +61,7 @@ on the far right. Click on "Download Sources and/or Documentation". Then in the 
 Documentation". Now all used libraries are locally available and visible. 
 
 {{< gallery >}}
-{{< figure link="/assets/getting-started/crowpi/intellij-download-deps-maven.jpg" caption="Download Dependencies and Sources" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/examples/crowpi/intellij-download-deps-maven.jpg" caption="Download Dependencies and Sources" caption-position="center" caption-effect="fade" >}}
 {{< /gallery >}}
 
 Now only the start configuration of the project is missing, which is described in the next section.
@@ -84,7 +86,7 @@ click here and select "Edit Configurations". As explained before, the IP address
 the background image of CrowPi.
 
 {{< gallery >}}
-{{< figure link="/assets/getting-started/crowpi/intellij-select-configuration.jpg" caption="Select configuration menu" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/examples/crowpi/intellij-select-configuration.jpg" caption="Select configuration menu" caption-position="center" caption-effect="fade" >}}
 {{< /gallery >}}
 
 The dialog for setting the configurations now opens. A little hint: wherever the IP address of the Raspberry Pi 
@@ -112,7 +114,7 @@ The first five are only needed for remote deployments. Leaving crowpi.remote.hos
 There is also crowpi.remote.jvmOptions if you want to add any custom JVM options, defaults to empty or options for remote debug if Maven profile debug is used (edited)
 
 {{< gallery >}}
-{{< figure link="/assets/getting-started/crowpi/intellij-three-configs.jpg" caption="The three configurations" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/examples/crowpi/intellij-three-configs.jpg" caption="The three configurations" caption-position="center" caption-effect="fade" >}}
 {{< /gallery >}}
 
 First we configure "crowpi-examples [debug]". For this, as in the picture, go to the tab "Runner" open and double click
@@ -120,21 +122,21 @@ on "Add CrowPi IP here". The dialog window to provide the IP address opens. Conf
 to save. 
 
 {{< gallery >}}
-{{< figure link="/assets/getting-started/crowpi/intellij-setup-debugconfig.jpg" caption="Settings debug" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/examples/crowpi/intellij-setup-debugconfig.jpg" caption="Settings debug" caption-position="center" caption-effect="fade" >}}
 {{< /gallery >}}
 
 Now we can configure "crowpi-examples [install]". This works exactly the same as "crowpi-examples [debug]". The same 
 setting is required. Again use "Apply" to save. 
 
 {{< gallery >}}
-{{< figure link="/assets/getting-started/crowpi/intellij-setup-runconfig.jpg" caption="Settings Install" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/examples/crowpi/intellij-setup-runconfig.jpg" caption="Settings Install" caption-position="center" caption-effect="fade" >}}
 {{< /gallery >}}
 
 Now the last configuration for "Remote Debug". The menu is a bit different here. However, it is easier to use than 
 the previous ones. Add the IP Address in the "Host" field. With "OK" the setting is finished. 
 
 {{< gallery >}}
-{{< figure link="/assets/getting-started/crowpi/intellij-remotedebug-config.jpg" caption="Remote Debug Settings" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/examples/crowpi/intellij-remotedebug-config.jpg" caption="Remote Debug Settings" caption-position="center" caption-effect="fade" >}}
 {{< /gallery >}}
 
 ## First test run
@@ -143,14 +145,14 @@ Everything is set up to start the CrowPi project for the first time directly fro
 the run configuration "crowpi-examples [install]". Then start the application by pressing the green play button. 
 
 {{< gallery >}}
-{{< figure link="/assets/getting-started/crowpi/intellij-start-firstapplication.jpg" caption="Start the application" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/examples/crowpi/intellij-start-firstapplication.jpg" caption="Start the application" caption-position="center" caption-effect="fade" >}}
 {{< /gallery >}}
 
 It immediately opens the "Run" window in IntelliJ IDEA. It takes a moment, and some text is displayed on the command line. 
 After a few seconds the output stops, and it looks like this: 
 
 {{< gallery >}}
-{{< figure link="/assets/getting-started/crowpi/intellij-run-example.jpg" caption="Run Output in IntelliJ" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/examples/crowpi/intellij-run-example.jpg" caption="Run Output in IntelliJ" caption-position="center" caption-effect="fade" >}}
 {{< /gallery >}}
 
 A number can now be typed in here according to the displayed list (+ Enter). The corresponding sample application is then 
