@@ -13,7 +13,7 @@ In this section, we want to provide you example implementations of several devic
 | Provider                 | Link                                                          |
 |:-------------------------|:--------------------------------------------------------------|
 | FHNW University          | [Components](/examples/components)                            |
-| FHNW University          | [CrowPi](/examples/crowpi)                                    |
+| FHNW University          | [Electronics with CrowPi](/examples/crowpi)                   |
 | Community Implementation | [Community Implementation](/examples/communityimplementation) |
 | Pi4J                     | [JBang examples](/examples/jbang)                             |
 

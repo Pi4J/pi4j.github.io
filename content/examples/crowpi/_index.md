@@ -6,10 +6,6 @@ aliases:
   - /examples/crowpi/
 ---
 
-{{% notice tip %}}
-GITHUB PROJECT: [https://github.com/Pi4J/pi4j-example-crowpi](https://github.com/Pi4J/pi4j-example-crowpi)
-{{% /notice %}}
-
 The [CrowPi is an electronics starter kit in a laptop-housing](https://www.elecrow.com/crowpi.html).
 Of course, you can get any electronics starter kit for this purpose or buy separate components. That's the fun of 
 electronics: components are inexpensive and easy to find on ebay or one of the many web shops.

@@ -4,6 +4,10 @@ weight: 30
 tags: ["Pi4J OS", "CrowPi"]
 ---
 
+{{% notice tip %}}
+GITHUB PROJECT: [https://github.com/Pi4J/pi4j-example-crowpi](https://github.com/Pi4J/pi4j-example-crowpi)
+{{% /notice %}}
+
 The CrowPi example code contains examples for the following components. The links in this table will bring you to the German documentation written by the students who created these examples.
 
 | Component                       | Link                                                                                                        |

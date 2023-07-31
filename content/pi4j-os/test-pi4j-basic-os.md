@@ -48,7 +48,7 @@ Attach a button to `pin 25`.
 * on Picade Console that's the `button-4`-button.
 - Otherwise:
 
-image::assets/pi4j-minimal.png[Button on Pin 25]
+![Button on Pin 25](https://github.com/Pi4J/pi4j-os/blob/main/assets/pi4j-minimal.png?raw=true)
 
 Compile and start the Java application
 
