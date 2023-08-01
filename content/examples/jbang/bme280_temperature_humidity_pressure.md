@@ -12,10 +12,6 @@ GITHUB PROJECT: [github.com/Pi4J/pi4j-jbang > Pi4JTempHumPressI2C.java](https://
 
 ## Intro
 
-{{% notice warning %}}
-Before proceeding with this example, make sure that you have a Raspberry Pi prepared to execute Java code with JBang as [explained here](https://pi4j.com/examples/jbang/).
-{{% /notice %}}
-
 This is an example project to demonstrate how to read the temperature, humidity and pressure from a [BME280 sensor, installed on an Adafruit board](https://www.adafruit.com/product/2652) that can be controlled via I2C and SPI. Such a sensor itself is a very tiny component that can be integrated in phones and many other types of devices. 
 
 Typically, when you want to integrate such a device in a project, you'll need to dive into the [Data Sheet](https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bme280-ds002.pdf) to find out how it needs to be controlled. If you want to better understand the code from this example, you can check the Data Sheet as the register read-outs and calculations are based on the example code you can find in that document.
@@ -108,6 +104,10 @@ In the wiring diagram, another brand of board ([Sparkfun](https://www.sparkfun.c
 {{< load-photoswipe >}}
 
 ## Application
+
+{{% notice warning %}}
+Before proceeding with this example, make sure that you have a Raspberry Pi prepared to execute Java code with JBang as [explained here](https://pi4j.com/examples/jbang/).
+{{% /notice %}}
 
 Because I2C and SPI require different dependencies, imports and settings, two separate example files are provided:
 

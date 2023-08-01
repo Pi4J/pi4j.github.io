@@ -12,17 +12,13 @@ One of the most "fancy" electronic components is definitely a LED strip. It's re
 
 ## Intro
 
-This example is using such approach with the [Pixelblaze Output Expander (PBOE)](https://shop.electromage.com/products/pixelblaze-output-expander-serial-to-8x-ws2812-apa102-driver). This product was initially intended to connect more LED strips to the [Pixelblaze V3 Standard - WiFi LED Controller](https://shop.electromage.com/products/pixelblaze-v3-standard-wifi-led-controller) and [Pixelblaze V3 Pico - Tiny WiFi LED Controller](https://shop.electromage.com/products/pixelblaze-v3-pico-tiny-wifi-led-controller). But because the expander is controlled through a serial connection, we can also control it from a Raspberry Pi.
+This example is using such approach with the [Pixelblaze Output Expander (PBOE)](https://shop.electromage.com/products/pixelblaze-output-expander-serial-to-8x-ws2812-apa102-driver). This product was initially intended to connect more LED strips to the [Pixelblaze V3 Standard - WiFi LED Controller](https://shop.electromage.com/products/pixelblaze-v3-standard-wifi-led-controller) and [Pixelblaze V3 Pico - Tiny WiFi LED Controller](https://shop.electromage.com/products/pixelblaze-v3-pico-tiny-wifi-led-controller). But because the expander is controlled through a serial connection, we can also use it with a Raspberry Pi.
 
-The LED strips that are used, contain LEDs of the WS2812B type, which means they have SMD 5050-LEDs with an integrated IC-driver, so they can be addressed separately. A few examples:
+The LED strips contain LEDs of the WS2812B type, which means they have SMD 5050-LEDs with an integrated IC-driver, so they can be addressed separately. A few examples:
 
 * [LED strip on Amazon](https://www.amazon.nl/dp/B08Y8QXTCL)
 * [LED matrix on Amazon](https://www.amazon.nl/dp/B0B81R484Z)
 * [Many variants on ebay](https://www.ebay.de/b/WS2812B-LEDs/bn_7005777392)
-
-{{% notice warning %}}
-Before proceeding with this example, make sure that you have a Raspberry Pi prepared to execute Java code with JBang as [explained here](https://pi4j.com/examples/jbang/).
-{{% /notice %}}
 
 ## Wiring
 
@@ -71,6 +67,10 @@ To be able to control the serial link from software, the following steps must be
 * Green LED (for short time): Received data for its channels and is drawing.
 
 ## Application
+
+{{% notice warning %}}
+Before proceeding with this example, make sure that you have a Raspberry Pi prepared to execute Java code with JBang as [explained here](https://pi4j.com/examples/jbang/).
+{{% /notice %}}
 
 Jeff Vyduna and Ben Hencke of ElectroMage, the creators of Pixelblaze, provided example Java code for this project. The serial data format is [documented on GitHub](https://github.com/simap/pixelblaze_output_expander/tree/v3.x). What the code is doing in short:
 
