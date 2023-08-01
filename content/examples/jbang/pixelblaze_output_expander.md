@@ -26,7 +26,11 @@ Before proceeding with this example, make sure that you have a Raspberry Pi prep
 
 ## Wiring
 
-To control the PBOE, we actually only need one wire to be connected to the Raspberry Pi (RPi) for the serial data to be sent from RPi to PBOE. But we must not forget one important fact: a LED strip with a lot of LEDs will require more power than the RPi can supply. So we need an external power supply of 5V that is dimensioned correctly to provide all the power needed for the strip when all LEDs are at maximum level.
+To control the PBOE, we actually only need one wire to be connected to the Raspberry Pi (RPi) for the serial data to be sent from RPi to PBOE. But we must not forget one important fact: a LED strip with a lot of LEDs will require more power than the RPi can supply. So we need an external power supply that is dimensioned correctly to provide all the power needed for the strip when all LEDs are at maximum level. As a guideline, 0,1W ~ 0,3W/LED is required per LED. For a strip with 60 LEDs/meter, that means 18W/meter, or a total of 90W for a 5 meter strip. That's almost 20A at 5V! 
+
+{{% notice warning %}}
+Use an **external power supply to power LED strips**!!! The 5V of the Raspberry Pi is passed straight through from the USB and the current is therefore limited. This is a [good question with clear answers about this topic on StackExchange](https://raspberrypi.stackexchange.com/questions/9298/what-is-the-maximum-current-the-gpio-pins-can-output).
+{{% /notice %}}
 
 Connections between RPi, PBOE, and power supply:
 
