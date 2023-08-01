@@ -1,7 +1,7 @@
 ---
 title: LED Strip
 weight: 210
-tags: ["LEDStrip"]
+tags: ["LED Strip"]
 ---
 
 ### Description

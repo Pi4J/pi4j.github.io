@@ -1,7 +1,7 @@
 ---
 title: Simple LED
 weight: 201
-tags: ["Simple LED"]
+tags: ["Simple LED", "LED"]
 ---
 
 ### Description

@@ -1,7 +1,7 @@
 ---
 title: Simple Button
 weight: 200
-tags: ["Simple Button"]
+tags: ["Simple Button", "Button"]
 ---
 
 ### Description

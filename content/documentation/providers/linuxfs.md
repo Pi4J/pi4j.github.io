@@ -1,5 +1,6 @@
 ---
 title: LinuxFS
+tags: ["LinuxFS"]
 ---
 
 The current implementation of the LinuxFS plugin implements a file based I2C provider. The file based provider opens 

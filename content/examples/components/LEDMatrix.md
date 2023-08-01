@@ -1,7 +1,7 @@
 ---
 title: LED Matrix
 weight: 210
-tags: ["LEDMatrix"]
+tags: ["LED Matrix"]
 ---
 
 ### Description

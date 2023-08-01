@@ -1,6 +1,7 @@
 ---
 title: Choosing an I/O Provider
 weight: 90
+tags: ["LinuxFS", "PiGpio"]
 ---
 
 Providers are extensible service modules responsible for the concrete implementation of a specific I/O type. 

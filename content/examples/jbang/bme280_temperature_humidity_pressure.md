@@ -1,7 +1,7 @@
 ---
 title: BME280 Sensor
 weight: 160
-tags: ["JBang", "BME280", "BMP208"]
+tags: ["JBang", "BME280", "BMP280"]
 ---
 
 ## BME280 Sensor (temp, humidity, pressure) via Pi4J, I2C, and JBang

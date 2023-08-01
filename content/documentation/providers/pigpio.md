@@ -1,5 +1,6 @@
 ---
 title: PiGpio
+tags: ["PiGpio"]
 ---
 
 The current implementation of the PiGpio exposes the GPIO functions available on the Raspberry Pi.

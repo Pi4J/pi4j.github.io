@@ -1,7 +1,7 @@
 ---
 title: LED Button
 weight: 210
-tags: ["LEDButton"]
+tags: ["LED Button", "LED", "Button"]
 ---
 
 ### Description

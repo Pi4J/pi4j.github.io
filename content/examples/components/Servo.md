@@ -1,7 +1,7 @@
 ---
 title: ServoMotor
 weight: 210
-tags: ["ServoMotor"]
+tags: ["Servo Motor"]
 ---
 
 ### Description
