@@ -41,7 +41,7 @@
         <ul>
           {{ range sort . "Weight"}}
               <li>
-                  {{.Pre}}<a class="padding" href="{{.URL | absLangURL }}" {{ if eq .Identifier "mastodon" }} rel="me" {{ end }}>{{safeHTML .Name}}</a>{{.Post}}
+                  {{.Pre}}<a class="padding" href="{{.URL | absLangURL }}" target="_blank" {{ if eq .Identifier "mastodon" }} rel="me" {{ end }}>{{safeHTML .Name}}</a>{{.Post}}
               </li>
           {{end}}
         </ul>
