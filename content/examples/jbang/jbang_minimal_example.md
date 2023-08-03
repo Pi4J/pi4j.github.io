@@ -18,9 +18,11 @@ Before proceeding with this example, make sure that you have a Raspberry Pi prep
 
 The following example is based on the ["Minimal example application"](http://localhost:49905/getting-started/minimal-example-application/), and uses the same wiring with a button and LED. By using JBang we can run this project with a single file without the need of a full Maven or Gradle project, or compiling the Java code.
 
-Create a new file JBangPi4JExample.java with the following content:
+![Wiring of a LED and button for the minimal example application](/assets/getting-started/minimal/led-button_bb.png)
 
 ## Application
+
+Create a new file JBangPi4JExample.java with the following content:
 
 ```java
 ///usr/bin/env jbang "$0" "$@" ; exit $?
