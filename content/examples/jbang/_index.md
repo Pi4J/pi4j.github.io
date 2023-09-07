@@ -68,6 +68,12 @@ $ git clone https://github.com/Pi4J/pi4j-jbang
 $ cd pi4j-jbang
 ```
 
+### Explained Examples 
+
+The examples in the GitHub project are explained on these pages:
+
+{{% children depth="1" %}}
+
 ## Video Demo
 
 This approach to demonstrate Pi4J with JBang has been explained and demonstrated on Voxxed Days Brussels on May 23th, 2023.
