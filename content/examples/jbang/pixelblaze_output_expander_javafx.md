@@ -10,14 +10,14 @@ GITHUB PROJECT: [github.com/Pi4J/pi4j-jbang > PixelblazeOutputExpanderJavaFX.jav
 
 We already know how to control a LED strip, so let's add a JavaFX User Interface to control the colors on each of the LEDs on the strip.
 
-## Intro
-
-This example is based on the [Pixelblaze Output Expander (PBOE) JBang example](/examples/jbang/pixelblaze_output_expander/). Make sure to check out the PBOE example, so you fully understand how to set up and use JBang, and connect and control a LED strip via a PBOE.
-
 {{< gallery >}}
 {{< figure link="/assets/examples/jbang/pixelblaze/javafx-ui.png" caption="Demo of the JavaFX UI" caption-position="center" caption-effect="fade" >}}
 {{< /gallery >}}
 {{< load-photoswipe >}}
+
+## Intro
+
+This example is based on the [Pixelblaze Output Expander (PBOE) JBang example](/examples/jbang/pixelblaze_output_expander/). Make sure to check out the PBOE example, so you fully understand how to set up and use JBang, and connect and control a LED strip via a PBOE.
 
 ## Application
 
