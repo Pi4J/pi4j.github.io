@@ -8,7 +8,7 @@ tags: ["JBang", "Pixelblaze", "LED Strip", "JavaFX"]
 GITHUB PROJECT: [github.com/Pi4J/pi4j-jbang > PixelblazeOutputExpanderJavaFX.java](https://github.com/Pi4J/pi4j-jbang/blob/main/PixelblazeOutputExpanderJavaFX.java)
 {{% /notice %}}
 
-We already know how to control a LED strip, so let's add a JavaFX User Interface the colors on each of the LEDs on the strip.
+We already know how to control a LED strip, so let's add a JavaFX User Interface to control the colors on each of the LEDs on the strip.
 
 ## Intro
 
