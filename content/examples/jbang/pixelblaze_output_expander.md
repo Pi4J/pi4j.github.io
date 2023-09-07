@@ -196,15 +196,19 @@ public class PixelBlazeOutputExpanderHelper {
 
 Thanks to the helper-class, the code inside the actual demo is very small.
 
-#### JBang Configuration
+#### JBang Configuration and Imports
 
-As with each JBang example, we need to define the first script line and the dependencies, one in this case, and we need to include the helper-source:
+As with each JBang example, we need to define the first script line and the dependencies, one in this case, and we need to include the helper-source. Only two imports are needed for this example.
 
 ```java
 ///usr/bin/env jbang "$0" "$@" ; exit $?
 
 //DEPS com.fazecast:jSerialComm:2.10.2
 //SOURCES helper/PixelBlazeOutputExpanderHelper.java
+
+import helper.PixelBlazeOutputExpanderHelper;
+
+import java.util.Random;
 ```
 
 #### Initialize the Helper
