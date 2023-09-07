@@ -25,7 +25,7 @@ This example uses the same `helper.PixelBlazeOutputExpanderHelper` to send comma
 
 ### JBang Configuration and Imports
 
-As with each JBang example, we need to define the first script line and the dependencies, one in this case, and we need to include the helper-source. This example needs some more dependencies and imports for JavaFX.
+As with each JBang example, we need to define the first script line and the dependencies, and we need to include the helper-source. This example needs some more dependencies and imports for JavaFX.
 
 ```java
 ///usr/bin/env jbang "$0" "$@" ; exit $?
@@ -53,7 +53,7 @@ import java.util.List;
 
 ### JavaFX Code
 
-Please check the full example code, as we don't explain how to use RGB values here, but only the JavaFX part. We want a user-interface that shows a color picker to control the LEDs one-by-one, a color picker to put the same color on all LEDs, and a clear button.
+Please check the full example code, as we don't explain how to use RGB values, but only the JavaFX part. We want a user-interface that shows a color picker to control the LEDs one-by-one, a color picker to put the same color on all LEDs, and a clear button.
 
 ```java
 private static final int BYTES_PER_PIXEL = 3;
