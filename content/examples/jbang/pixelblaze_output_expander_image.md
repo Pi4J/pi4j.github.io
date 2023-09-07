@@ -5,7 +5,7 @@ tags: ["JBang", "Pixelblaze", "LED Strip"]
 ---
 
 {{% notice tip %}}
-GITHUB PROJECT: [github.com/Pi4J/pi4j-jbang > PixelblazeOutputExpanderImageMatrix.java](https://github.com/Pi4J/pi4j-jbang/blob/main/PixelblazeOutputExpander.java)
+GITHUB PROJECT: [github.com/Pi4J/pi4j-jbang > PixelblazeOutputExpanderImageMatrix.java](https://github.com/Pi4J/pi4j-jbang/blob/main/PixelblazeOutputExpanderImageMatrix.java)
 {{% /notice %}}
 
 A LED strip doesn't only exist as a single strip, the same system is also used in a LED matrix. In this example, we will control such a [8*32 LED matrix](https://www.amazon.nl/dp/B0B81R484Z).
