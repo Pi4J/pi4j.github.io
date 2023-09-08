@@ -14,6 +14,13 @@ One of the most "fancy" electronic components is definitely a LED strip. It's re
 
 This example is using such approach with the [Pixelblaze Output Expander (PBOE)](https://shop.electromage.com/products/pixelblaze-output-expander-serial-to-8x-ws2812-apa102-driver). This product was initially intended to connect more LED strips to the [Pixelblaze V3 Standard - WiFi LED Controller](https://shop.electromage.com/products/pixelblaze-v3-standard-wifi-led-controller) and [Pixelblaze V3 Pico - Tiny WiFi LED Controller](https://shop.electromage.com/products/pixelblaze-v3-pico-tiny-wifi-led-controller). But because the expander is controlled through a serial connection, we can also use it with a Raspberry Pi.
 
+You can buy this component here:
+
+* Directly from the creator of the Pixelblaze in the US: [ElectroMage](https://shop.electromage.com/products/pixelblaze-output-expander-serial-to-8x-ws2812-apa102-driver).
+* Outside of the US:
+  * UK: [DialSLV](https://dialslv.com/product/expander/)
+  * [Mouser](https://www.mouser.be/ProductDetail/Hencke-Technologies/EM-O3?qs=QNEnbhJQKvY7RFy9Q0t0MA%3D%3D) but doesn't ship to consumers in the EU/UK because it isn’t CE-certified.
+
 The LED strips contain LEDs of the WS2812B type, which means they have SMD 5050-LEDs with an integrated IC-driver, so they can be addressed separately. A few examples:
 
 * [LED strip on Amazon](https://www.amazon.nl/dp/B08Y8QXTCL)
