@@ -20,7 +20,7 @@ This example uses the same `helper.PixelBlazeOutputExpanderHelper` to send comma
 
 ### JBang Configuration and Imports
 
-As with each JBang example, we need to define the first script line and the dependencies, one in this case, and we need to include the helper-source. This example also needs some more imports.
+As with each JBang example, we need to define the first script line and the dependencies, one in this case, and we need to include the helper-sources. This example also needs some more imports, and we do a static import of the ImageHelper methods, so we can easily use them in the code.
 
 ```java
 ///usr/bin/env jbang "$0" "$@" ; exit $?
@@ -219,8 +219,8 @@ for (i = 0; i < 100; i++) {
 No `sudo` is needed for serial communication with the `jSerialComm` library, so the application can be started with:
 
 ```bash
-$ jbang PixelblazeOutputExpanderImageMatrix.java
-[jbang] Building jar for PixelblazeOutputExpanderImageMatrix.java...
+$ jbang PixelblazeOutputExpanderImageMatrix8x32.java
+[jbang] Building jar for PixelblazeOutputExpanderImageMatrix8x32.java...
 Initializing serial
 Opening /dev/ttyS0
 All off
