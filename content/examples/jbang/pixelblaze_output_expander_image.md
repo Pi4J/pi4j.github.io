@@ -5,7 +5,7 @@ tags: ["JBang", "Pixelblaze", "LED Strip"]
 ---
 
 {{% notice tip %}}
-GITHUB PROJECT: [github.com/Pi4J/pi4j-jbang > PixelblazeOutputExpanderImageMatrix.java](https://github.com/Pi4J/pi4j-jbang/blob/main/PixelblazeOutputExpanderImageMatrix.java)
+GITHUB PROJECT: [github.com/Pi4J/pi4j-jbang > PixelblazeOutputExpanderImageMatrix8x32.java](https://github.com/Pi4J/pi4j-jbang/blob/main/PixelblazeOutputExpanderImageMatrix8x32.java)
 {{% /notice %}}
 
 A LED strip doesn't only exist as a single strip, the same system is also used in a LED matrix. In this example, we will control such a [8*32 LED matrix](https://www.amazon.nl/dp/B0B81R484Z).
@@ -16,7 +16,7 @@ This example is based on the [Pixelblaze Output Expander (PBOE) JBang example](/
 
 ## Application
 
-This example uses the same `helper.PixelBlazeOutputExpanderHelper` to send commands to the PBOE.
+This example uses the same `helper.PixelBlazeOutputExpanderHelper` to send commands to the PBOE. An additional shared code-file `helper.ImageHelper` is used to handle images.
 
 ### JBang Configuration and Imports
 
@@ -26,16 +26,16 @@ As with each JBang example, we need to define the first script line and the depe
 ///usr/bin/env jbang "$0" "$@" ; exit $?
 
 //DEPS com.fazecast:jSerialComm:2.10.2
+//SOURCES helper/ImageHelper.java
 //SOURCES helper/PixelBlazeOutputExpanderHelper.java
 
 import helper.PixelBlazeOutputExpanderHelper;
 
-import javax.imageio.ImageIO;
-
-import java.awt.image.BufferedImage;
-import java.io.File;
 import java.io.IOException;
 import java.util.Random;
+
+import static helper.ImageHelper.getImageData;
+import static helper.ImageHelper.imageToMatrix;
 ```
 
 ### Enum With Images
@@ -118,10 +118,9 @@ Row 3   IN   >                              > OUT, connected to beginning of row
 ...
 ```
 
-With the following code, RED is send to each LED, one by one, from position 0 to the final LED.
+With the following code, RED is sent to each LED, one by one, from position 0 to the final LED.
 
 ```java
-            
 // Check the position of the LEDs, to identify how the LED strip is wired
 System.out.println("One by one RED");
 for (i = 0; i < NUMBER_OF_LEDS; i++) {
@@ -153,12 +152,6 @@ Row 8
 As it turns out the order of the LEDs doesn't match the X/Y system of an image, an extra method is needed to "flip" the X/Y into the actual ordering of the LEDs. Although this method is easy, it took me some iterations to find a correct approach...
 
 ```java
-/**
- * Image is read to byte array pixel per pixel for each row to get one continuous line of data.
- * But the matrix is wired in columns, first column down, second column up, third column down,...
- *
- * So we need to "mix up" the image byte array to one that matches the coordinates on the matrix.
- */
 private static byte[] imageToMatrix(byte[] imageData) {
     byte[] matrixData = new byte[imageData.length];
 
@@ -251,6 +244,14 @@ Image: RPI
 All off
 Closing /dev/ttyS0
 ```
+
+## Controlling an 8x8 matrix
+
+Within the GitHub project, you can also find an example to send images to an 8x8 matrix.
+
+{{% notice tip %}}
+GITHUB PROJECT: [github.com/Pi4J/pi4j-jbang > PixelblazeOutputExpanderImageMatrix8x8.java](https://github.com/Pi4J/pi4j-jbang/blob/main/PixelblazeOutputExpanderImageMatrix8x8.java)
+{{% /notice %}}
 
 ## Conclusion
 
