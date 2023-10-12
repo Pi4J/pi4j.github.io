@@ -223,25 +223,25 @@ $ jbang PixelblazeOutputExpanderImageMatrix8x32.java
 [jbang] Building jar for PixelblazeOutputExpanderImageMatrix8x32.java...
 Initializing serial
 Opening /dev/ttyS0
-All off
+All off on channel 2 with 256
 One by one RED
 Full RGB
-Image: LINE_1
-Image: LINE_2
-Image: LINE_3
-Image: LINE_4
-Image: LINE_5
-Image: LINE_6
-Image: LINE_7
-Image: LINE_8
-Image: RED
-Image: GREEN
-Image: BLUE
-Image: STRIPES
-Image: STRIPES_TEST
-Image: DUKE
-Image: RPI
-All off
+Image data/image_8_32_line_1.png loaded with W 32 and H 8
+Image data/image_8_32_line_2.png loaded with W 32 and H 8
+Image data/image_8_32_line_3.png loaded with W 32 and H 8
+Image data/image_8_32_line_4.png loaded with W 32 and H 8
+Image data/image_8_32_line_5.png loaded with W 32 and H 8
+Image data/image_8_32_line_6.png loaded with W 32 and H 8
+Image data/image_8_32_line_7.png loaded with W 32 and H 8
+Image data/image_8_32_line_8.png loaded with W 32 and H 8
+Image data/image_8_32_red.png loaded with W 32 and H 8
+Image data/image_8_32_green.png loaded with W 32 and H 8
+Image data/image_8_32_blue.png loaded with W 32 and H 8
+Image data/image_8_32_stripes.png loaded with W 32 and H 8
+Image data/image_8_32_stripes_test.png loaded with W 32 and H 8
+Image data/image_8_32_duke.png loaded with W 32 and H 8
+Image data/image_8_32_raspberrypi.png loaded with W 32 and H 8
+All off on channel 2 with 256
 Closing /dev/ttyS0
 ```
 
