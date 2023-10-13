@@ -464,29 +464,27 @@ The example application also contains demos for a longer strip with 300 LEDs (5 
 No `sudo` is needed for serial communication with the `jSerialComm` library, so the application can be started with:
 
 ```bash
-$ jbang PixelblazeOutputExpander.java
-All off
-00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
-Port was open:false, last error:0
+$ jbang PixelblazeOutputExpander.java 
+Initializing serial
 Opening /dev/ttyS0
-One by one red
-ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
-00 00 00 ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
-... 
+All off on channel 0 with 11
+All off on channel 1 with 300
+All off on channel 2 with 256
+One by one on channel 0, will take 2s
 All red
-ff 00 00 ff 00 00 ff 00 00 ff 00 00 ff 00 00 ff 00 00 ff 00 00 ff 00 00 ff 00 00 ff 00 00 ff 00 00 
 All green
-00 ff 00 00 ff 00 00 ff 00 00 ff 00 00 ff 00 00 ff 00 00 ff 00 00 ff 00 00 ff 00 00 ff 00 00 ff 00 
 All blue
-00 00 ff 00 00 ff 00 00 ff 00 00 ff 00 00 ff 00 00 ff 00 00 ff 00 00 ff 00 00 ff 00 00 ff 00 00 ff 
 Random colors 1
-1f 43 1b 3d b1 9c 46 81 ee 2f bb ba e2 a5 f5 9f af 06 27 d8 6c 04 64 68 a4 fa 31 57 14 c5 9e 7b b9 
-...
+..
 All red
-ff 00 00 ff 00 00 ff 00 00 ff 00 00 ff 00 00 ff 00 00 ff 00 00 ff 00 00 ff 00 00 ff 00 00 ff 00 00 
-All off
-00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
-... 
+All off on channel 0 with 11
+...
+One by one on channel 1, will take 6s
+...
+All red on LED strip on channel 1
+All off on channel 1 with 300
+All red on LED matrix on channel 2
+...
 Closing /dev/ttyS0
 ```
 
