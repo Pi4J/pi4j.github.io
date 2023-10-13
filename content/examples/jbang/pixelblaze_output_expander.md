@@ -25,11 +25,46 @@ You can buy this component here:
   * UK: [DialSLV](https://dialslv.com/product/expander/)
   * [Mouser](https://www.mouser.be/ProductDetail/Hencke-Technologies/EM-O3?qs=QNEnbhJQKvY7RFy9Q0t0MA%3D%3D) but doesn't ship to consumers in the EU/UK because it isn’t CE-certified.
 
-The LED strips contain LEDs of the WS2812B type, which means they have SMD 5050-LEDs with an integrated IC-driver, so they can be addressed separately. A few examples:
+## LED Strips
+
+### LED Strips Used in the Examples
+
+The LED strips used in these examples, contain LEDs of the WS2812B type, which means they have SMD 5050-LEDs with an integrated IC-driver, so they can be addressed separately. A few examples:
 
 * [LED strip on Amazon](https://www.amazon.nl/dp/B08Y8QXTCL)
 * [LED matrix on Amazon](https://www.amazon.nl/dp/B0B81R484Z)
 * [Many variants on ebay](https://www.ebay.de/b/WS2812B-LEDs/bn_7005777392)
+
+### How Data is Handled by LED Strips
+
+To control such a LED strip, you need to send it a byte array with RGB (red/green/blue) values. Let's use an example for a strip with three LEDs, on which you want to show:
+
+1. Full red (#FF0000)
+2. Not full white (#A6A6A6)
+3. Full blue (#0000FF)
+
+This means, we need a byte array with 9 values:
+
+| Array index |     0 |   1 |     2 |     3 |    4 |     5 |     6 |    7 |    8 |
+| :--         |------:|----:|------:|------:|-----:|------:|------:|-----:|-----:| 
+| LED         |     1 |     |       |     2 |      |       |     3 |      |      |
+| R, G, B     | #FF   | #00 | #00   | #A6   | #A6  | #A6   | #00   | #00  | #FF  |
+
+The IC of the first led will take the first 3 values from the byte array and output the remaining part to the second LED:
+
+| Array index |     0 |    1 |     2 |     3 |    4 |   5 |
+| :--         |------:|-----:|------:|------:|-----:|----:|
+| LED         |     2 |      |       |     3 |      |     |
+| R, G, B     | #A6   |  #A6 | #A6   | #00   | #00  | #FF |
+
+Again, the second LED will take the first 3 values and output the remaining part:
+
+| Array index |     0 |    1 |   2 |
+| :--         |------:|-----:|----:|
+| LED         |     3 |      |     |
+| R, G, B     | #00   | #00  | #FF |
+
+For this system to work correctly, a strict timing of the data signal is needed. Otherwise the IC will handle parts of the data as being a new package, and you'll get unexpected results.
 
 ## Wiring
 
