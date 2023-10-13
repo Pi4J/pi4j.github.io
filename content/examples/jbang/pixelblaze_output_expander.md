@@ -39,32 +39,42 @@ The LED strips used in these examples, contain LEDs of the WS2812B type, which m
 
 To control such a LED strip, you need to send it a byte array with RGB (red/green/blue) values. Let's use an example for a strip with three LEDs, on which you want to show:
 
-1. Full red (#FF0000)
-2. Not full white (#A6A6A6)
-3. Full blue (#0000FF)
+1. Full red (RGB #FF0000)
+2. Not full white (RGB #A6A6A6)
+3. Full blue (RGB #0000FF)
+
+{{% notice tip %}}
+Although you may be used to use the color ordering RGB for e.g. CSS or in drawing applications, LED strips actually use GRB.
+{{% /notice %}}
 
 This means, we need a byte array with 9 values:
 
-| Array index |     0 |   1 |     2 |     3 |    4 |     5 |     6 |    7 |    8 |
-| :--         |------:|----:|------:|------:|-----:|------:|------:|-----:|-----:| 
-| LED         |     1 |     |       |     2 |      |       |     3 |      |      |
-| R, G, B     | #FF   | #00 | #00   | #A6   | #A6  | #A6   | #00   | #00  | #FF  |
+| Array index |   0 |   1 |     2 |     3 |    4 |     5 |     6 |    7 |    8 |
+|:------------|----:|----:|------:|------:|-----:|------:|------:|-----:|-----:| 
+| LED         |   1 |     |       |     2 |      |       |     3 |      |      |
+| G, R, B     | #00 | #FF | #00   | #A6   | #A6  | #A6   | #00   | #00  | #FF  |
 
 The IC of the first led will take the first 3 values from the byte array and output the remaining part to the second LED:
 
 | Array index |     0 |    1 |     2 |     3 |    4 |   5 |
 | :--         |------:|-----:|------:|------:|-----:|----:|
 | LED         |     2 |      |       |     3 |      |     |
-| R, G, B     | #A6   |  #A6 | #A6   | #00   | #00  | #FF |
+| G, R, B     | #A6   |  #A6 | #A6   | #00   | #00  | #FF |
 
 Again, the second LED will take the first 3 values and output the remaining part:
 
 | Array index |     0 |    1 |   2 |
 | :--         |------:|-----:|----:|
 | LED         |     3 |      |     |
-| R, G, B     | #00   | #00  | #FF |
+| G, R, B     | #00   | #00  | #FF |
 
 For this system to work correctly, a strict timing of the data signal is needed. Otherwise the IC will handle parts of the data as being a new package, and you'll get unexpected results.
+
+This is a timing diagram from a datasheet of [WS2812B Intelligent control LED integrated light source](https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf):
+
+{{< gallery >}}
+{{< figure link="/assets/examples/jbang/pixelblaze/led-strip-timings.png" caption="Timing of the signals for an LED strip" caption-position="center" caption-effect="fade" >}}
+{{< /gallery >}}
 
 ## Wiring
 
