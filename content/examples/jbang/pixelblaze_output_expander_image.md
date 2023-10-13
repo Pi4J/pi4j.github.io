@@ -10,6 +10,10 @@ GITHUB PROJECT: [github.com/Pi4J/pi4j-jbang > PixelblazeOutputExpanderImageMatri
 
 A LED strip doesn't only exist as a single strip, the same system is also used in a LED matrix. In this example, we will control such a [8*32 LED matrix](https://www.amazon.nl/dp/B0B81R484Z).
 
+Full LED strip code walkthrough, and additional info in this live session with Frank and Robert:
+
+{{< youtube eToIXACqSuY >}}
+
 ## Intro
 
 This example is based on the [Pixelblaze Output Expander (PBOE) JBang example](/examples/jbang/pixelblaze_output_expander/). Make sure to check out the PBOE example, so you fully understand how to set up and use JBang, and connect and control a LED strip via a PBOE.

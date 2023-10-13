@@ -15,6 +15,10 @@ We already know how to control a LED strip, so let's add a JavaFX User Interface
 {{< /gallery >}}
 {{< load-photoswipe >}}
 
+Full LED strip code walkthrough, and additional info in this live session with Frank and Robert:
+
+{{< youtube eToIXACqSuY >}}
+
 ## Intro
 
 This example is based on the [Pixelblaze Output Expander (PBOE) JBang example](/examples/jbang/pixelblaze_output_expander/). Make sure to check out the PBOE example, so you fully understand how to set up and use JBang, and connect and control a LED strip via a PBOE.

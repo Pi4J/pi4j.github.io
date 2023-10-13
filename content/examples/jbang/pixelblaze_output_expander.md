@@ -10,6 +10,10 @@ GITHUB PROJECT: [github.com/Pi4J/pi4j-jbang > PixelblazeOutputExpander.java](htt
 
 One of the most "fancy" electronic components is definitely a LED strip. It's really cool to control a long strip of lights with only a few lines of code... But, there is a problem. The timing of the signals is crucial to reliably control these strips. Both Python and Java on a Raspberry Pi can struggle with these timings as they are running on Linux, a non-real-time operating system. So pauses in the garbage collection of the Java virtual machine, or any glitch in the operating system can cause unexpected effects on the LED strips. That's why in most projects, a microcontroller (Arduino, Raspberry Pi Pico, ESP32,...) is used to drive the LED strip. 
 
+Full LED strip code walkthrough, and additional info in this live session with Frank and Robert:
+
+{{< youtube eToIXACqSuY >}}
+
 ## Intro
 
 This example is using such approach with the [Pixelblaze Output Expander (PBOE)](https://shop.electromage.com/products/pixelblaze-output-expander-serial-to-8x-ws2812-apa102-driver). This product was initially intended to connect more LED strips to the [Pixelblaze V3 Standard - WiFi LED Controller](https://shop.electromage.com/products/pixelblaze-v3-standard-wifi-led-controller) and [Pixelblaze V3 Pico - Tiny WiFi LED Controller](https://shop.electromage.com/products/pixelblaze-v3-pico-tiny-wifi-led-controller). But because the expander is controlled through a serial connection, we can also use it with a Raspberry Pi.
