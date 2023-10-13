@@ -15,7 +15,7 @@ We already know how to control a LED strip, so let's add a JavaFX User Interface
 {{< /gallery >}}
 {{< load-photoswipe >}}
 
-Full LED strip code walkthrough, and additional info in this live session with Frank and Robert:
+Full LED strip code walkthrough, and additional info in this live session with Robert (aka Eitch) and Frank:
 
 {{< youtube eToIXACqSuY >}}
 
