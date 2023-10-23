@@ -26,34 +26,37 @@ The camera class is using the bash-commands "libcamera-hello", "libcamera-still"
 An example on how to use the Camera-Class from the [Hardware-Catalog](https://github.com/Pi4J/pi4j-example-components)
 
 ```java
-System.out.println("Initializing the camera");
-Camera camera = new Camera();
+        Camera camera = new Camera();
 
-System.out.println("Taking a default picture");
-camera.takeStill();
+        System.out.println("Taking a default picture");
+        camera.recordPicture();
 
-System.out.println("Taking a pic with different parameters");
-var config = Camera.PicConfig.Builder.outputPath("/home/pi/Pictures/")
-		.delay(3000)
-		.disablePreview(true)
-		.encoding(Camera.PicEncoding.PNG)
-		.useDate(true)
-		.quality(93)
-		.width(1280)
-		.height(800)
-		.build();
+        System.out.println("Taking a pic with different parameters");
+        var config = Camera.newPictureConfigBuilder()
+        .outputPath("/home/pi/Pictures/")
+        .delay(3000)
+        .disablePreview(true)
+        .encoding(Camera.PicEncoding.PNG)
+        .useDate(true)
+        .quality(93)
+        .width(1280)
+        .height(800)
+        .build();
 
-camera.takeStill(config);
+        camera.recordPicture(config);
 
-System.out.println("waiting for camera to take pic");
-delay(4000);
+        System.out.println("Waiting for camera to take pic");
+        delay(Duration.ofSeconds(4));
 
-System.out.println("Taking a video for 3 seconds");
-var vidconfig = Camera.VidConfig.Builder.outputPath("/home/pi/Videos/")
-		.recordTime(3000)
-		.useDate(true)
-		.build();
-camera.takeVid(vidconfig);
+        System.out.println("Taking a video for 3 seconds");
+        var vidconfig = Camera.newVidConfigBuilder()
+        .outputPath("/home/pi/Videos/")
+        .recordTime(3000)
+        .useDate(true)
+        .build();
+        camera.recordVideo(vidconfig);
+
+        camera.reset();
 ```
 
 ### Further application

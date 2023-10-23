@@ -4,6 +4,10 @@ weight: 210
 tags: ["LED Strip"]
 ---
 
+{{% notice note %}}
+This example is outdated. Use a PixelBlaze Output Expander as described [here](https://pi4j.com/examples/jbang/pixelblaze_output_expander/) instead.
+{{% /notice %}}
+
 ### Description
 
 The [LedStrip](https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog/components/LedStrip.java) is a template class, that you can use in your own Java-project.

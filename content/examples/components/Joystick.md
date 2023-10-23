@@ -14,10 +14,11 @@ The template class allows to query the individual joystick positions and can tri
 
 ### Layout
 
-![Joystick Layout](/assets/examples/components/components/Layout-Joystick.png)
+![Joystick Layout](/assets/examples/components/components/Layout-Joystick-New.png)
 
 {{< gallery >}}
 {{< figure link="/assets/examples/components/components/pictures/JoystickDigitalBreadboard.png" caption="Joystick Digital Breadboard" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/examples/components/components/pictures/JoystickDigitalDetail.jpg" caption="Joystick Digital Breadboard Detail" caption-position="center" caption-effect="fade" >}}
 {{< figure link="/assets/examples/components/components/pictures/JoystickDigitalTopView.png" caption="Joystick Digital Top View" caption-position="center" caption-effect="fade" >}}
 {{< figure link="/assets/examples/components/components/pictures/JoystickDigitalBackViewAllAxis.png" caption="Joystick Digital Back View All Axis" caption-position="center" caption-effect="fade" >}}
 {{< figure link="/assets/examples/components/components/pictures/JoystickDigitalBackViewOneAxis.png" caption="Joystick Digital Back View One Axis" caption-position="center" caption-effect="fade" >}}
@@ -31,31 +32,35 @@ The template class allows to query the individual joystick positions and can tri
 A simple example on how to use the Joystick-Class from the [Hardware-Catalog](https://github.com/Pi4J/pi4j-example-components):
 
 ```java
-//Initzalize the joystick component
+//Initialize the joystick component
 final var joystick = new Joystick(pi4j, PIN.D5, PIN.D6, PIN.PWM13, PIN.PWM19, PIN.D26);
 
-//Register event handlers to print a message when pressed (onDown) and (onUp)
-joystick.onNorth(() -> System.out.println("Start Pressing joystick button North"));
-joystick.whileNorth(1000, () -> System.out.println("Pressing joystick button North"));
+        //Register all event handlers
+        joystick.onNorth(() -> System.out.println("Start NORTH"));
+        joystick.whileNorth(() -> System.out.println("Still NORTH"),
+        Duration.ofSeconds(1));
 
-joystick.onWest(() -> System.out.println("Start Pressing joystick button West"));
-joystick.whileWest(1000, () -> System.out.println("Pressing joystick button West"));
+        joystick.onWest(() -> System.out.println("Start WEST"));
+        joystick.whileWest(() -> System.out.println("Still WEST"),
+        Duration.ofSeconds(1));
 
-joystick.onSouth(() -> System.out.println("Start Pressing joystick button South"));
-joystick.whileSouth(1000, () -> System.out.println("Pressing joystick button South"));
+        joystick.onSouth(() -> System.out.println("Start SOUTH"));
+        joystick.whileSouth(() -> System.out.println("Still SOUTH"),
+        Duration.ofSeconds(1));
 
-joystick.onEast(() -> System.out.println(" Start Pressing joystick button East"));
-joystick.whileEast(1000, () -> System.out.println("Pressing joystick button East"));
+        joystick.onEast(() -> System.out.println(" Start EAST"));
+        joystick.whileEast(() -> System.out.println("Still EAST"),
+        Duration.ofSeconds(1));
 
-joystick.onPushDown(() -> System.out.println("Start Pressing joystick button PUSH"));
-joystick.onPushUp(() -> System.out.println("Stop pressing joystick button PUSH"));
+        joystick.onPushDown(() -> System.out.println("Start PUSH"));
+        joystick.onPushUp(() -> System.out.println("Still PUSHing"));
 
-// Wait for 15 seconds while handling events before exiting
-System.out.println("Press the button to see it in action!");
-delay(15000);
+        // Wait for 15 seconds while handling events before exiting
+        System.out.println("Move the joystick and push it's button to see it in action!");
+        delay(Duration.ofSeconds(15));
 
-// Unregister all event handlers to exit this application in a clean way
-joystick.deRegisterAll();
+        // cleanup
+        joystick.reset();
 ```
 
 ### Further application
