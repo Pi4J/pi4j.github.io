@@ -59,7 +59,7 @@ When an application needs dependencies, they are defined inside the file itself 
 
 Each of the provided examples contains more information about the wiring inside the file itself and are also explained here on the Pi4J website.
 
-### Get the Examples from GitHub
+#### Get the Examples from GitHub
 
 You can clone the project with the examples to your Raspberry Pi in the terminal with the following commands:
 
@@ -67,6 +67,12 @@ You can clone the project with the examples to your Raspberry Pi in the terminal
 $ git clone https://github.com/Pi4J/pi4j-jbang
 $ cd pi4j-jbang
 ```
+
+#### Detailed Info of Each Example
+
+The examples in the GitHub project are explained on these pages:
+
+{{% children depth="1" %}}
 
 ## Video Demo
 
