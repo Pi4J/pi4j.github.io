@@ -5,12 +5,38 @@ weight: 40
 
 All releases of Pi4J V.2 are listed on [github.com/Pi4J/pi4j-v2/releases](https://github.com/Pi4J/pi4j-v2/releases).
 
+## 2023-10-24 - V2.4.0
+
+* Extended LinuxFS plugin
+  * PWM provider
+  * First set of implementations for Digital Input and Output
+  * To be further extended, see https://github.com/Pi4J/pi4j-v2/issues/307
+* Implement blink method in DigitalOutputBase
+* Added testcases for I2CRegisterDataReader, I2CRegisterDataWrite
+* Fix I2C write register: multi byte register may fail with large data
+* Fix mock SPI.transfer() functionality
+  * https://github.com/Pi4J/pi4j-v2/issues/298
+  * https://github.com/Pi4J/pi4j-v2/issues/299
+  * https://github.com/Pi4J/pi4j-v2/issues/300
+* Add readEntireMockBuffer() method to class MockSpi
+* Fix for data read over I2C becomes out of sync over a slower wireless network
+  * https://github.com/Pi4J/pi4j-v2/issues/16
+  * https://github.com/Pi4J/pi4j-v2/issues/303
+* Use Socket#setSoTimeout to timeout read requests of GPIO socket implementation
+  * https://github.com/Pi4J/pi4j-v2/issues/305
+
+Thanks to [@GeVanCo](https://github.com/GeVanCo), [@MMMMMNG](https://github.com/MMMMMNG), [@IAmNickNack](https://github.com/IAmNickNack), [@savageautomate](https://github.com/savageautomate), [@eitch](https://github.com/eitch), [@taartspi](https://github.com/taartspi), [@FDelporte](https://github.com/FDelporte).
+
+All changes: https://github.com/Pi4J/pi4j-v2/compare/2.3.0...2.4.0
+
 ## 2023-02-06 - V2.3.0
 
 * Improvements for PIGPIO.gpioCfgInterfaces by [@bwaldvogel](https://github.com/bwaldvogel).
 * New i2c interface to support multibyte register address by [@taartspi](https://github.com/taartspi).
 * Fix in LinuxFsI2C byte array offset by [@harlanhu](https://github.com/harlanhu).
 * Remove unused JNA references by [@taartspi](https://github.com/taartspi).
+
+All changes: https://github.com/Pi4J/pi4j-v2/compare/2.2.1...2.3.0
 
 ## 2022-10-17 - V2.2.1
 
@@ -21,6 +47,7 @@ Multiple fixes by [@taartspi](https://github.com/taartspi):
   * Add missing initialization in constructor
   * Track weather the user set the mode or bus config values to improve the use of SPI flags
 
+All changes: https://github.com/Pi4J/pi4j-v2/compare/2.2.0...2.2.1
 
 ## 2022-08-30 - V2.2.0
 

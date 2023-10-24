@@ -66,7 +66,7 @@ make the versions easy to update, we add those numbers as properties.
 <properties>
     <!-- DEPENDENCIES VERSIONS -->
     <slf4j.version>1.7.32</slf4j.version>
-    <pi4j.version>2.0</pi4j.version>
+    <pi4j.version>2.3.0</pi4j.version>
 </properties>
 ``` 
   
@@ -226,14 +226,14 @@ $ mvn clean package
 $ cd target/distribution
 $ ls -l
 total 644
--rw-r--r-- 1 pi pi 364456 Jun 19 10:04 pi4j-core-2.0-SNAPSHOT.jar
+-rw-r--r-- 1 pi pi 364456 Jun 19 10:04 pi4j-core-2.3.0.jar
 -rw-r--r-- 1 pi pi   7243 Jun 19 10:04 pi4j-example-minimal-0.0.1.jar
--rw-r--r-- 1 pi pi 142461 Jun 19 10:04 pi4j-library-pigpio-2.0-SNAPSHOT.jar
--rw-r--r-- 1 pi pi  37302 Jun 19 10:04 pi4j-plugin-pigpio-2.0-SNAPSHOT.jar
--rw-r--r-- 1 pi pi  26917 Jun 19 10:04 pi4j-plugin-raspberrypi-2.0-SNAPSHOT.jar
+-rw-r--r-- 1 pi pi 142461 Jun 19 10:04 pi4j-library-pigpio-2.3.0.jar
+-rw-r--r-- 1 pi pi  37302 Jun 19 10:04 pi4j-plugin-pigpio-2.3.0.jar
+-rw-r--r-- 1 pi pi  26917 Jun 19 10:04 pi4j-plugin-raspberrypi-2.3.0.jar
 -rwxr-xr-x 1 pi pi    101 Jun 19 10:04 run.sh
--rw-r--r-- 1 pi pi  52173 Jun 19 10:04 slf4j-api-2.0.0-alpha0.jar
--rw-r--r-- 1 pi pi  15372 Jun 19 10:04 slf4j-simple-2.0.0-alpha0.jar
+-rw-r--r-- 1 pi pi  52173 Jun 19 10:04 slf4j-api-1.7.32.jar
+-rw-r--r-- 1 pi pi  15372 Jun 19 10:04 slf4j-simple-1.7.32.jar
 ```
 
 * Start the application with the provided `run.sh` script. **Make sure to start with `sudo` as Pi4J (at this moment) needs to be started with it**, to enable the native library that is part of Pi4J to communicate with the GPIOs:
