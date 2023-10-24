@@ -5,7 +5,7 @@ tags: ["LED Strip"]
 ---
 
 {{% notice note %}}
-This example is outdated. Use a PixelBlaze Output Expander as described [here](https://pi4j.com/examples/jbang/pixelblaze_output_expander/) instead.
+Although this example is still valid, an easier approach for the control of an array of LEDs can be achieved with the PixelBlaze Output Expander as described [here](https://pi4j.com/examples/jbang/pixelblaze_output_expander/).
 {{% /notice %}}
 
 ### Description

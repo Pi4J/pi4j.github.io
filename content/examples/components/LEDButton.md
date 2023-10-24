@@ -26,30 +26,27 @@ The Template Class gives you the option to check the state of the button, and to
 A simple example on how to use the Button-Class from the [Hardware-Catalog](https://github.com/Pi4J/pi4j-example-components):
 
 ```java
-        System.out.println("LED button demo started ...");
-
 // Initialize the button component
 final LedButton ledButton = new LedButton(pi4j, PIN.D26, false, PIN.D5);
 
-        // Make a flashing light by toggling the LED
-        for (int i = 0; i < 4; i++) {
-        ledButton.toggleLed();
-        delay(Duration.ofMillis(500));
-        }
+// Make a flashing light by toggling the LED
+for (int i = 0; i < 4; i++) {
+    ledButton.toggleLed();
+    delay(Duration.ofMillis(500));
+}
 
-        // Register event handlers to turn LED on when pressed (onDown) and off when depressed (onUp)
-        ledButton.onDown(() -> ledButton.ledOn());
-        ledButton.onUp  (() -> ledButton.ledOff());
+// Register event handlers to turn LED on when pressed (onDown) and off when depressed (onUp)
+ledButton.onDown(() -> ledButton.ledOn());
+ledButton.onUp  (() -> ledButton.ledOff());
 
-        // Wait for 15 seconds while handling events before exiting
-        System.out.println("Press the button to see it in action!");
-        delay(Duration.ofSeconds(15));
+// Wait for 15 seconds while handling events before exiting
+System.out.println("Press the button to see it in action!");
+delay(Duration.ofSeconds(15));
 
-        // Unregister all event handlers to exit this application in a clean way
-        ledButton.reset();
+// Unregister all event handlers to exit this application in a clean way
+ledButton.reset();
 
-        System.out.println("LED button demo finished.");
-
+System.out.println("LED button demo finished.");
 ```
 
 ### Further application

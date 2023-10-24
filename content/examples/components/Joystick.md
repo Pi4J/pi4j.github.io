@@ -35,32 +35,32 @@ A simple example on how to use the Joystick-Class from the [Hardware-Catalog](ht
 //Initialize the joystick component
 final var joystick = new Joystick(pi4j, PIN.D5, PIN.D6, PIN.PWM13, PIN.PWM19, PIN.D26);
 
-        //Register all event handlers
-        joystick.onNorth(() -> System.out.println("Start NORTH"));
-        joystick.whileNorth(() -> System.out.println("Still NORTH"),
-        Duration.ofSeconds(1));
+//Register all event handlers
+joystick.onNorth(() -> System.out.println("Start NORTH"));
+joystick.whileNorth(() -> System.out.println("Still NORTH"),
+Duration.ofSeconds(1));
 
-        joystick.onWest(() -> System.out.println("Start WEST"));
-        joystick.whileWest(() -> System.out.println("Still WEST"),
-        Duration.ofSeconds(1));
+joystick.onWest(() -> System.out.println("Start WEST"));
+joystick.whileWest(() -> System.out.println("Still WEST"),
+Duration.ofSeconds(1));
 
-        joystick.onSouth(() -> System.out.println("Start SOUTH"));
-        joystick.whileSouth(() -> System.out.println("Still SOUTH"),
-        Duration.ofSeconds(1));
+joystick.onSouth(() -> System.out.println("Start SOUTH"));
+joystick.whileSouth(() -> System.out.println("Still SOUTH"),
+Duration.ofSeconds(1));
 
-        joystick.onEast(() -> System.out.println(" Start EAST"));
-        joystick.whileEast(() -> System.out.println("Still EAST"),
-        Duration.ofSeconds(1));
+joystick.onEast(() -> System.out.println(" Start EAST"));
+joystick.whileEast(() -> System.out.println("Still EAST"),
+Duration.ofSeconds(1));
 
-        joystick.onPushDown(() -> System.out.println("Start PUSH"));
-        joystick.onPushUp(() -> System.out.println("Still PUSHing"));
+joystick.onPushDown(() -> System.out.println("Start PUSH"));
+joystick.onPushUp(() -> System.out.println("Still PUSHing"));
 
-        // Wait for 15 seconds while handling events before exiting
-        System.out.println("Move the joystick and push it's button to see it in action!");
-        delay(Duration.ofSeconds(15));
+// Wait for 15 seconds while handling events before exiting
+System.out.println("Move the joystick and push it's button to see it in action!");
+delay(Duration.ofSeconds(15));
 
-        // cleanup
-        joystick.reset();
+// cleanup
+joystick.reset();
 ```
 
 ### Further application

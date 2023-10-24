@@ -35,36 +35,34 @@ If continuous measurement is active, a customized event can be triggered when th
 A simple example on how to use the potentiometer from the [Hardware-Catalog](https://github.com/Pi4J/pi4j-example-components):
 
 ```java
-        System.out.println("Potentiometer demo started ...");
+// a potentiometer needs an ADC
+Ads1115 ads1115 = new Ads1115(pi4j);
 
-        // a potentiometer needs an ADC
-        Ads1115 ads1115 = new Ads1115(pi4j);
+Potentiometer poti = new Potentiometer(ads1115, Ads1115.Channel.A0);
 
-        Potentiometer poti = new Potentiometer(ads1115, Ads1115.Channel.A0);
+//read current value from poti one time
+System.out.printf("P0 raw value is %.2f V%n", poti.readCurrentVoltage());
 
-        //read current value from poti one time
-        System.out.printf("P0 raw value is %.2f V%n", poti.readCurrentVoltage());
+//read current value from the poti in percent one time
+System.out.printf("P0 normalized value is %.2f %%%n", poti.readNormalizedValue());
 
-        //read current value from the poti in percent one time
-        System.out.printf("P0 normalized value is %.2f %%%n", poti.readNormalizedValue());
+// Register event handlers to print a message when potentiometer is moved
+poti.onNormalizedValueChange((value) -> System.out.printf("P0 slider is at %.2f %%%n", value));
 
-        // Register event handlers to print a message when potentiometer is moved
-        poti.onNormalizedValueChange((value) -> System.out.printf("P0 slider is at %.2f %%%n", value));
-        
-        //you have to start continuous reading on ADC (because you can use up to 4 channels and all of them need to be fully configured before starting to read the values)
-        ads1115.startContinuousReading(0.1);
+//you have to start continuous reading on ADC (because you can use up to 4 channels and all of them need to be fully configured before starting to read the values)
+ads1115.startContinuousReading(0.1);
 
-        System.out.println("Move the potentiometer to see it in action!");
-        // Wait while handling events before exiting
-        delay(Duration.ofSeconds(15));
+System.out.println("Move the potentiometer to see it in action!");
+// Wait while handling events before exiting
+delay(Duration.ofSeconds(15));
 
-        ads1115.stopContinuousReading();
+ads1115.stopContinuousReading();
 
-        System.out.println("No new values should be reported");
-        delay(Duration.ofSeconds(5));
+System.out.println("No new values should be reported");
+delay(Duration.ofSeconds(5));
 
-        ads1115.reset();
-        System.out.println("Potentiometer demo finished");
+ads1115.reset();
+System.out.println("Potentiometer demo finished");
 ```
 
 ### Further application

@@ -31,30 +31,30 @@ The basic functions of the template class are:
 A simple example on how to use the JoystickAnalog-Class from the [Hardware-Catalog](https://github.com/Pi4J/pi4j-example-components):
 
 ```java
-        // an analog joystick needs an ADC
-        Ads1115 ads1115 = new Ads1115(pi4j);
+// an analog joystick needs an ADC
+Ads1115 ads1115 = new Ads1115(pi4j);
 
-                //joystick with normalized axis from -1 to 1
-                JoystickAnalog joystick = new JoystickAnalog(ads1115, Ads1115.Channel.A0, Ads1115.Channel.A1, PIN.D26, true);
+//joystick with normalized axis from -1 to 1
+JoystickAnalog joystick = new JoystickAnalog(ads1115, Ads1115.Channel.A0, Ads1115.Channel.A1, PIN.D26, true);
 
-                //register all event handlers you need
-                joystick.onMove((xPos, yPos) -> System.out.printf("Current position of joystick is: %.2f, %.2f%n", xPos, yPos),
+//register all event handlers you need
+joystick.onMove((xPos, yPos) -> System.out.printf("Current position of joystick is: %.2f, %.2f%n", xPos, yPos),
                 ()           -> System.out.println("Joystick in home position"));
 
-                joystick.onDown      (() -> System.out.println("Pressing the button"));
-                joystick.onUp        (() -> System.out.println("Stopped pressing."));
-                joystick.whilePressed(() -> System.out.println("Button is still pressed."), Duration.ofMillis(500));
+ joystick.onDown      (() -> System.out.println("Pressing the button"));
+ joystick.onUp        (() -> System.out.println("Stopped pressing."));
+ joystick.whilePressed(() -> System.out.println("Button is still pressed."), Duration.ofMillis(500));
 
-                //start continuous reading after all ADC channels are configured
-                ads1115.startContinuousReading(0.1);
+ //start continuous reading after all ADC channels are configured
+ ads1115.startContinuousReading(0.1);
 
-                System.out.println("Move the joystick to see it in action!");
+ System.out.println("Move the joystick to see it in action!");
 
-                //wait while handling events before exiting
-                delay(Duration.ofSeconds(30));
+ //wait while handling events before exiting
+ delay(Duration.ofSeconds(30));
 
-                //cleanup
-                joystick.reset();
+ //cleanup
+ joystick.reset();
 ```
 
 ### Further application

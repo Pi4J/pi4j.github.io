@@ -24,25 +24,24 @@ The template Class gives you the option to switch off, switch on or toggle the s
 A simple example on how to use the LED-Class from the [Hardware-Catalog](https://github.com/Pi4J/pi4j-example-components):
 
 ```java
-        System.out.println("Simple LED demo started ...");
+System.out.println("Simple LED demo started ...");
 
-        // Create a new SimpleLED component
-        SimpleLed led = new SimpleLed(pi4j, PIN.D26);
+// Create a new SimpleLED component
+SimpleLed led = new SimpleLed(pi4j, PIN.D26);
 
-        // Turn on the LED to have a defined state
-        System.out.println("Turn on LED.");
-        led.on();
-        delay(Duration.ofSeconds(1));
+// Turn on the LED to have a defined state
+System.out.println("Turn on LED.");
+led.on();
+delay(Duration.ofSeconds(1));
 
-        // Make a flashing light by toggling the LED every second
-        for (int i = 0; i < 10; i++) {
-        System.out.println("Current LED state is :" + led.toggle() +".");
-        delay(Duration.ofSeconds(1));
-        }
+// Make a flashing light by toggling the LED every second
+for (int i = 0; i < 10; i++) {
+    System.out.println("Current LED state is :" + led.toggle() +".");
+    delay(Duration.ofSeconds(1));
+}
 
-        // That's it so reset all and quit
-        led.reset();
-
+// That's it so reset all
+led.reset();
 ```
 
 ### Further application
