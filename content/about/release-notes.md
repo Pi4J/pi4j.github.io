@@ -11,6 +11,7 @@ All releases of Pi4J V.2 are listed on [github.com/Pi4J/pi4j-v2/releases](https:
   * PWM provider
   * First set of implementations for Digital Input and Output
   * To be further extended, see https://github.com/Pi4J/pi4j-v2/issues/307
+* Don't re-initialize pigpio twice, thus use singleton
 * Implement blink method in DigitalOutputBase
 * Added testcases for I2CRegisterDataReader, I2CRegisterDataWrite
 * Fix I2C write register: multi byte register may fail with large data
