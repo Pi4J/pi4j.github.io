@@ -4,6 +4,10 @@ weight: 210
 tags: ["LED Strip"]
 ---
 
+{{% notice note %}}
+Although this example is still valid, an easier approach for the control of an array of LEDs can be achieved with the PixelBlaze Output Expander as described [here](https://pi4j.com/examples/jbang/pixelblaze_output_expander/).
+{{% /notice %}}
+
 ### Description
 
 The [LedStrip](https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog/components/LedStrip.java) is a template class, that you can use in your own Java-project.

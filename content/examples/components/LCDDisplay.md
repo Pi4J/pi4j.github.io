@@ -56,110 +56,121 @@ pi4j = Pi4J.newContextBuilder()
 When the right Context is loaded, you can use the Display like following:
 
 ```java
-//Create a Component, with amount of ROWS and COLUMNS of the Device
-LcdDisplay lcd = new LcdDisplay(pi4j, 4, 20);
-System.out.println("Here we go.. let's have some fun with that LCD Display!");
+public class LcdDisplay_App implements Application {
+    @Override
+    public void execute(Context pi4j) {
+        System.out.println("LCD demo started");
 
-// Turn on the backlight makes the display appear turned on
-lcd.setDisplayBacklight(true);
+        //Create a Component, with amount of ROWS and COLUMNS of the device
+        //LcdDisplay lcd = new LcdDisplay(pi4j); //2x16 is default
+        LcdDisplay lcd = new LcdDisplay(pi4j, 4, 20);
 
-// Write text to the lines separate
-lcd.displayText("Hello", 1);
-lcd.displayText("   World!", 2);
-lcd.displayText("Line 3", 3);
-lcd.displayText("   Line 4", 4);
+        // Write text to specific position
+        lcd.displayLineOfText("Hello" , 0);
+        lcd.displayLineOfText("World!", 1, 3);
 
-// Wait a little to have some time to read it
-sleep(3000);
+        // Wait a little to have some time to read it
+        delay(Duration.ofSeconds(3));
 
-// Clear the display to start next parts
-lcd.clearDisplay();
+        lcd.clearDisplay();
 
-// To write some text there are different methods. The simplest one is this one which automatically inserts
-// linebreaks if needed.
-lcd.displayText("Boohoo that's so simple to use!");
+        lcd.centerTextInLine("Hi", 0);
 
-// Delay again
-sleep(3000);
+        delay(Duration.ofSeconds(1));
 
-// Of course it is also possible to write with newLine Chars
-lcd.displayText("Some Big Text \n with some new Lines \n just testing");
-sleep(3000);
+        // To write some text there are different methods. The simplest one is this one which automatically inserts
+        // linebreaks if needed.
+        lcd.displayText("Boohoo that's so simple to use!");
+        delay(Duration.ofSeconds(3));
 
-// Of course it is also possible to write long text
-lcd.displayText("Some Big Text with no new Lines, just to test how many lines will get filled");
-sleep(3000);
+        // Of course, it is also possible to use linebreaks
+        lcd.displayText("Some big text \nwith a new line\nonly displayed on 4 row LCD");
+        delay(Duration.ofSeconds(4));
 
-lcd.displayText("Small Text with \nnew");
-sleep(3000);
+        // Long text are cut to the bone
+        lcd.displayText("Some big text with no new lines, just to test how many lines will get filled");
+        delay(Duration.ofSeconds(4));
 
-// Clear the display to start next parts
-lcd.clearDisplay();
+        // Clear the display to start next parts
+        lcd.clearDisplay();
 
-// Let's try to draw a house. To keep this method short and clean we create the characters in a separate
-// method below.
-createCharacters(lcd);
+        // Let's try to draw a house.
+        // To keep this method short and clean we create the characters in a separate method below.
+        createCharacters(lcd);
 
-// Now all characters are ready. Just draw them on the right place by moving the cursor and writing the
-// created characters to specific positions
-lcd.writeCharacter('\1', 1, 1);
-lcd.writeCharacter('\2', 2, 1);
-lcd.writeCharacter('\3', 1, 2);
-lcd.writeCharacter('\4', 2, 2);
-delay(3000);
+        // Now all characters are ready. Just draw them on the right place by moving the cursor and writing the
+        // created characters to specific positions
+        lcd.writeCharacter('\1', 0, 1);
+        lcd.writeCharacter('\2', 0, 2);
+        lcd.writeCharacter('\3', 1, 1);
+        lcd.writeCharacter('\4', 1, 2);
 
-// Turn off the backlight makes the display appear turned off
-lcd.setDisplayBacklight(false);
-lcd.clearDisplay();
+        delay(Duration.ofSeconds(3));
 
-public void createCharacters(LCDDisplay lcd) {
-// Create upper left part of the house
-  lcd.createCharacter(1, new byte[]{
-	0b00000,
-	0b00000,
-	0b00000,
-	0b00001,
-	0b00011,
-	0b00111,
-	0b01111,
-	0b11111
-  });
+        // we've built a rolling home
+        for (int i = 0; i < 5; i++) {
+            lcd.scrollRight();
+            delay(Duration.ofSeconds(1));
+        }
 
-// Create upper right part of the house
-  lcd.createCharacter(2, new byte[]{
-	0b00000,
-	0b00000,
-	0b00010,
-	0b10010,
-	0b11010,
-	0b11110,
-	0b11110,
-	0b11111
-  });
+        for (int i = 0; i < 5; i++) {
+            lcd.scrollLeft();
+            delay(Duration.ofSeconds(1));
+        }
 
-// Create lower left part of the house
-  lcd.createCharacter(3, new byte[]{
-	0b11111,
-	0b11111,
-	0b11111,
-	0b11111,
-	0b10001,
-	0b10001,
-	0b10001,
-	0b10001
-  });
+        lcd.reset();
+        System.out.println("LCD demo finished");
+    }
 
-// Create lower right part of the house
-  lcd.createCharacter(4, new byte[]{
-	0b11111,
-	0b11111,
-	0b11111,
-	0b10001,
-	0b10001,
-	0b10001,
-	0b11111,
-	0b11111
-  });
+    public void createCharacters(LcdDisplay lcd) {
+        // Create upper left part of the house
+        lcd.createCharacter(1, new byte[]{
+                0b00000,
+                0b00000,
+                0b00000,
+                0b00001,
+                0b00011,
+                0b00111,
+                0b01111,
+                0b11111
+        });
+
+        // Create upper right part of the house
+        lcd.createCharacter(2, new byte[]{
+                0b00000,
+                0b00000,
+                0b00010,
+                0b10010,
+                0b11010,
+                0b11110,
+                0b11110,
+                0b11111
+        });
+
+        // Create lower left part of the house
+        lcd.createCharacter(3, new byte[]{
+                0b11111,
+                0b11111,
+                0b11111,
+                0b11111,
+                0b10001,
+                0b10001,
+                0b10001,
+                0b10001
+        });
+
+        // Create lower right part of the house
+        lcd.createCharacter(4, new byte[]{
+                0b11111,
+                0b11111,
+                0b11111,
+                0b10001,
+                0b10001,
+                0b10001,
+                0b11111,
+                0b11111
+        });
+    }
 }
 ```
 

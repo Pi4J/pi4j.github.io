@@ -35,32 +35,34 @@ If continuous measurement is active, a customized event can be triggered when th
 A simple example on how to use the potentiometer from the [Hardware-Catalog](https://github.com/Pi4J/pi4j-example-components):
 
 ```java
-System.out.println("Potentiometer test started ...");
+// a potentiometer needs an ADC
+Ads1115 ads1115 = new Ads1115(pi4j);
 
-Ads1115 ads1115 = new Ads1115(pi4j, 0x01, Ads1115.GAIN.GAIN_4_096V, Ads1115.ADDRESS.GND, 4);
-
-Potentiometer poti = new Potentiometer(ads1115, 0, 3.3);
+Potentiometer poti = new Potentiometer(ads1115, Ads1115.Channel.A0);
 
 //read current value from poti one time
-System.out.println("Current value of the poti is " + String.format("%.3f", poti.singleShotGetVoltage()) + " voltage.");
+System.out.printf("P0 raw value is %.2f V%n", poti.readCurrentVoltage());
 
 //read current value from the poti in percent one time
-System.out.println("The potentiometer slider is currently at " + String.format("%.3f", poti.singleShotGetNormalizedValue()) + " % of its full travel.");
+System.out.printf("P0 normalized value is %.2f %%%n", poti.readNormalizedValue());
 
 // Register event handlers to print a message when potentiometer is moved
-poti.setConsumerSlowReadChan((value) -> System.out.println("The potentiometer slider is currently at " + String.format("%.3f", value) + " % of its full travel."));
+poti.onNormalizedValueChange((value) -> System.out.printf("P0 slider is at %.2f %%%n", value));
 
-//start continuous reading with single shot in this mode you can connect up to 4 devices to the analog module
-poti.startSlowContinuousReading(0.05, 10);
+//you have to start continuous reading on ADC (because you can use up to 4 channels and all of them need to be fully configured before starting to read the values)
+ads1115.startContinuousReading(0.1);
 
-// Wait while handling events before exiting
 System.out.println("Move the potentiometer to see it in action!");
-delay(30_000);
+// Wait while handling events before exiting
+delay(Duration.ofSeconds(15));
 
-//stop continuous reading
-poti.stopSlowContinuousReading();
+ads1115.stopContinuousReading();
 
-System.out.println("Potentiometer test done");
+System.out.println("No new values should be reported");
+delay(Duration.ofSeconds(5));
+
+ads1115.reset();
+System.out.println("Potentiometer demo finished");
 ```
 
 ### Further application

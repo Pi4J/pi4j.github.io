@@ -26,35 +26,27 @@ The Template Class gives you the option to check the state of the button, and to
 A simple example on how to use the Button-Class from the [Hardware-Catalog](https://github.com/Pi4J/pi4j-example-components):
 
 ```java
-        System.out.println("LED button app started ...");
-
 // Initialize the button component
-final LedButton ledButton = new LedButton(pi4j, PIN.D26, Boolean.FALSE, PIN.PWM19);
+final LedButton ledButton = new LedButton(pi4j, PIN.D26, false, PIN.D5);
 
-// Turn on the LED to have a defined state
-ledButton.ledOn();
-//see the LED for a Second
-delay(1000);
+// Make a flashing light by toggling the LED
+for (int i = 0; i < 4; i++) {
+    ledButton.toggleLed();
+    delay(Duration.ofMillis(500));
+}
 
-// Register event handlers to print a message when pressed (onDown) and depressed (onUp)
-ledButton.btnOnDown(() -> System.out.println("Pressing the Button"));
-ledButton.btnOnUp(()   -> System.out.println("Stopped pressing."));
+// Register event handlers to turn LED on when pressed (onDown) and off when depressed (onUp)
+ledButton.onDown(() -> ledButton.ledOn());
+ledButton.onUp  (() -> ledButton.ledOff());
 
 // Wait for 15 seconds while handling events before exiting
 System.out.println("Press the button to see it in action!");
-
-// Make a flashing light by toggling the LED every second
-// in the meantime, the Button can still be pressed, as we only freeze the main thread
-for (int i = 0; i < 15; i++) {
-System.out.println(ledButton.ledToggleState());
-delay(1000);
-}
+delay(Duration.ofSeconds(15));
 
 // Unregister all event handlers to exit this application in a clean way
-ledButton.btnDeRegisterAll();
-ledButton.ledOff();
+ledButton.reset();
 
-System.out.println("LED button app done.");
+System.out.println("LED button demo finished.");
 ```
 
 ### Further application
