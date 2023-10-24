@@ -18,7 +18,7 @@ The template class allows to query the individual joystick positions and can tri
 
 {{< gallery >}}
 {{< figure link="/assets/examples/components/components/pictures/JoystickDigitalBreadboard.png" caption="Joystick Digital Breadboard" caption-position="center" caption-effect="fade" >}}
-{{< figure link="/assets/examples/components/components/pictures/JoystickDigitalDetail.jpg" caption="Joystick Digital Breadboard Detail" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/examples/components/components/pictures/JoystickDigitalBreadboardDetail.jpg" caption="Joystick Digital Breadboard Detail" caption-position="center" caption-effect="fade" >}}
 {{< figure link="/assets/examples/components/components/pictures/JoystickDigitalTopView.png" caption="Joystick Digital Top View" caption-position="center" caption-effect="fade" >}}
 {{< figure link="/assets/examples/components/components/pictures/JoystickDigitalBackViewAllAxis.png" caption="Joystick Digital Back View All Axis" caption-position="center" caption-effect="fade" >}}
 {{< figure link="/assets/examples/components/components/pictures/JoystickDigitalBackViewOneAxis.png" caption="Joystick Digital Back View One Axis" caption-position="center" caption-effect="fade" >}}
