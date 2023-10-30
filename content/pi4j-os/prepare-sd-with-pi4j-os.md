@@ -42,11 +42,20 @@ Pi4J OS img-file.
 {{< figure link="/assets/pi4j-os/usecustom-raspberrypi-imager.png" caption="Use custom in Imager Tool" caption-position="center" caption-effect="fade" >}}
 {{< /gallery >}}
 
-The second step is to select the SD card. To do this, press the button "Choose storage". It automatically
-shows you only the available removable media such as USB sticks or SD cards. It is now very important to select the correct
-entry in order to avoid unwanted data loss. On Windows, the drive letter that is actually affected is shown under the
-data carrier, so that this can be easily checked in Explorer. In case of doubt, however, simply unplug the data carrier
-with important media beforehand so that nothing can happen.
+The second step is to add a user and password via the preferences-button.
+
+* Username: pi
+* Password: pi4j
+
+{{< gallery >}}
+{{< figure link="/assets/pi4j-os/imager-preferences.png" caption="Setting Username and Password " caption-position="center" caption-effect="fade" >}}
+{{< /gallery >}}
+
+All the other settings should be left as they are.
+
+
+The third step is to select the SD card. To do this, press the button "Choose storage". It automatically
+shows you only the available removable media such as USB sticks or SD cards. It is now very important to select the correct entry in order to avoid unwanted data loss. On Windows, the drive letter that is actually affected is shown under the data carrier, so that this can be easily checked in Explorer. In case of doubt, however, simply unplug the data carrier with important media beforehand so that nothing can happen.
 
 Everything is ready to write the image to the SD card. The process can be started by pressing the "Write" button.
 Another confirmation dialog follows before the SD card is finally overwritten. Writing the image to the SD card can
