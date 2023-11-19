@@ -1,15 +1,18 @@
 ---
-title: 'Cocktail Maker'
+title: 'CocktailPi'
 weight: 65
 ---
 
-The CocktailMaker is a cocktail mixing machine by [Alexander Liggesmeyer](https://github.com/alex9849/pi-cocktail-maker). It can 
+The CocktailPi is a cocktail mixing machine by Alexander Liggesmeyer. It can 
 control as many pumps as the RaspberryPi provides GPIO pins. For every pump that gets added to the system, the user has 
 to provide the amount of time that that pump needs to pump one centiliter in milliseconds. The machine uses peristaltic 
 pumps. So that number is perfectly accurate. The flow rate won't vary over time. It uses a relay board for closing the 
 electronic circuit for all pumps. This allows to power the pumps with more than 5V. The relay board is connected to the 
 Pi which controls the board with Pi4J V1. The backend-application is written in Java (Spring boot). The frontend is 
 written with VueJS.
+
+* [Project website](https://cocktailpi.org/)
+* [Sources](https://github.com/alex9849/CocktailPi)
 
 {{< gallery >}}
 {{< figure link="/assets/featured-projects/cocktail/cocktailmaker_circuit.png" caption="" caption-position="center" caption-effect="fade" >}}
