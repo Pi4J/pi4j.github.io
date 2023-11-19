@@ -11,8 +11,12 @@ electronic circuit for all pumps. This allows to power the pumps with more than 
 Pi which controls the board with Pi4J V1. The backend-application is written in Java (Spring boot). The frontend is 
 written with VueJS.
 
+### Links
+
 * [Project website](https://cocktailpi.org/)
 * [Sources](https://github.com/alex9849/CocktailPi)
+
+### Pictures
 
 {{< gallery >}}
 {{< figure link="/assets/featured-projects/cocktail/cocktailmaker_circuit.png" caption="" caption-position="center" caption-effect="fade" >}}
@@ -27,6 +31,8 @@ written with VueJS.
 {{< figure link="/assets/featured-projects/cocktail/20211116_100414.jpg" caption="" caption-position="center" caption-effect="fade" >}}
 {{< /gallery >}}
 {{< load-photoswipe >}}
+
+### Video 
 
 [A video is available on Reddit](https://www.reddit.com/r/homeautomation/comments/qsjj04/built_an_automatic_cocktail_machine/)
 
@@ -57,7 +63,3 @@ is connected, the application will empty the first container and will switch to 
 
 The whole application can be deployed as a docker container that has to be started in privileged mode. This allows even
 beginners that don't have much experience to build their own machine.
-
-### Sources
-
-[The full sources are available on GitHub](https://github.com/alex9849/pi-cocktail-maker)
