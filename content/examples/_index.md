@@ -12,10 +12,11 @@ In this section, we want to provide you example implementations of several devic
 
 | Provider                 | Link                                                          |
 |:-------------------------|:--------------------------------------------------------------|
+| Pi4J                     | [JBang examples](/examples/jbang)                             |
 | FHNW University          | [Components](/examples/components)                            |
 | FHNW University          | [Electronics with CrowPi](/examples/crowpi)                   |
 | Community Implementation | [Community Implementation](/examples/communityimplementation) |
-| Pi4J                     | [JBang examples](/examples/jbang)                             |
+
 
 ### Simple Implementation
 
