@@ -1,6 +1,6 @@
 ---
 title: JBang Examples
-weight: 150
+weight: 25
 tags: ["JBang"]
 ---
 
