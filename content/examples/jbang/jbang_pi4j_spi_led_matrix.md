@@ -108,9 +108,7 @@ public static void main(String[] args) throws Exception {
 
 ## Running the Application
 
-Because this example uses the PiGpio plugin, we need to execute it with `sudo`:
-
-Without the need of any further configuration, installation, dependency download, or compiling, we should now be able to run this code with:
+Because this example uses the PiGpio plugin, we need to execute it with `sudo`. Without the need of any further configuration, installation, dependency download, or compiling, we can now run this code with:
 
 ```shell
 $ sudo `which jbang` Pi4JLedMatrixSpi.java
