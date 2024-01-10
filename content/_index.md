@@ -10,8 +10,8 @@ This project is intended to provide **a friendly object-oriented I/O API and imp
 
 If you immediately want to "dive" into Pi4J development, check these resources:
 
-* Starters: [Creating a single file application with JBang](examples/jbang/jbang_minimal_example.md).
-* Experienced Java developer: [Creating an application with Maven or Gradle](getting-started/minimal-example-application.md).
+* Starters: [Creating a single file application with JBang](/examples/jbang/jbang_minimal_example).
+* Experienced Java developer: [Creating an application with Maven or Gradle](/getting-started/minimal-example-application).
 
 ### Brief History
 
