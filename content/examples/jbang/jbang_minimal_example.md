@@ -22,7 +22,7 @@ The following example is based on the ["Minimal example application"](http://loc
 
 ## Application
 
-Create a new file JBangPi4JExample.java with the following content:
+Create a new file Pi4JMinimalExample.java with the following content:
 
 ```java
 ///usr/bin/env jbang "$0" "$@" ; exit $?
