@@ -5,7 +5,7 @@ weight: 35
 
 Connecting electronic components to the Pi is done via one or more of the pins in the so-called header. The number of 
 pins has "grown" between the different Raspberry Pi board versions, but all recent ones have a 40-pin header. It's of
-course important to be aware of the correct numbering to not correct components the wrong way.
+course important to be aware of the correct numbering to not connect components the wrong way.
 
 ![Numbering of the pins](/assets/getting-started/pins/headernumber-on-board.jpg)
 
