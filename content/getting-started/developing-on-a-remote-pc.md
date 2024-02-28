@@ -50,13 +50,13 @@ to configure your RPi
 
 You should now be able to open a SSH Terminal window on RDW and to remotely login on the RPi board.
 
-### Install the _raspimaven-archetype_
+### Install the _pi4j-maven-archetype_
 
-Goto the [Github Pi4J Project](https://github.com/Pi4J/pi4j-maven-archetype "raspimaven-archetype") and download the project
+Goto the [Github Pi4J Maven Archetype repository](https://github.com/Pi4J/pi4j-maven-archetype) and download the project
 clicking on the green _Code_ button and selecting _Download ZIP_
 
 - Unzip the archetype file in a _FOLDER_
-- `cd FOLDER/pi4j-maven-archetype-master`
+- `cd FOLDER/pi4j-maven-archetype-main`
 - `mvn install`
 
 _Congratulation ! - Now you are ready to generate your first **Project Template**_
@@ -75,7 +75,7 @@ Let suppose you want to begin the new wonderful PI4J V.2 project _my-project_, t
 Before starting the new project generation, the archetype asks some configuration data. The list of question
 and the replies are shown here below:
 
-1. _Choose archetype:_ **select the _raspimaven-archetype_ from the list proposed**
+1. _Choose archetype:_ **select the _pi4j-maven-archetype_ from the list proposed**
 1. _Define value for property 'groupId':_ **choose the Maven groupId for your project.** (If don't know what is a groupId, don't worry, just type _"com.example"_ for now)
 1. _Define value for property 'artifactId':_ **choose a name for the program executable your project will produce**
 1. _Define value for property 'version':  1.0-SNAPSHOT:_ **type Enter to accept the default value shown, or type the initial program version, something like _1.0.0_**
