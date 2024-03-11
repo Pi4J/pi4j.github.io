@@ -20,7 +20,7 @@ With over 100 commits from multiple branches, this is a major release with many 
 * And more additional changes:
   * Remove the ProviderProxyHandler, simplifying provider loading, thus no more reflection on the instances.
   * Allow to add and remove IO instances at runtime.
-  * Allow to easily switch a GPIO from output to an input and vice versa, see issue [#26](https://github.com/Pi4J/pi4j-v2/issues/26).
+  * Allow to easily switch a GPIO from output to an input and vice versa, see issue [#26](https://github.com/Pi4J/pi4j-v2/issues/26), extending on the work by [@MEBoo](https://github.com/MEBoo), in pull request [#1](https://github.com/MEBoo/pi4j-v2-issue26/pull/1).
   * Fixing a race condition in the default runtime registry.
   * Added properly life cycle management of all threads in Pi4J.
 
