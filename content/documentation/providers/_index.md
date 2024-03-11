@@ -14,18 +14,25 @@ on which they are used.
 
 Current supported providers:
 
-* [PiGpio](/documentation/providers/pigpio/)
+* [GpioD]()
+  * Was introduced in Pi4J 2.5.0
   * Pro
-    * Most performant at this moment, natively
-    * Can be used remotely
-  * Contra
-    * Needs to run as `sudo`
+    * Works on Raspberry Pi 5
+    * Doesn't need sudo
+  * Contra 
+    * Only provides input and output providers
 * [LinuxFS](/documentation/providers/linuxfs/)
   * Pro
     * Generic for any SoC supporting LinuxFS
     * Doesn't need `sudo`
   * Contra
     * Latency (? - still to be tested)
+* [PiGpio](/documentation/providers/pigpio/)
+  * Pro
+    * Most performant at this moment, natively
+    * Can be used remotely
+  * Contra
+    * Needs to run as `sudo`
 
 Possible future providers:
 

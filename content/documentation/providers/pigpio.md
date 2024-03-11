@@ -1,5 +1,6 @@
 ---
-title: PiGpio
+title: PiGpio Provider
+weight: 95
 tags: ["PiGpio"]
 ---
 
