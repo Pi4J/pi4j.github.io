@@ -20,16 +20,17 @@ Current supported providers:
     * Works on Raspberry Pi 5
     * Doesn't need sudo
   * Contra 
-    * Only provides input and output providers
+    * Only provides DigitalInput and DigitalOutput
 * [LinuxFS](/documentation/providers/linuxfs/)
   * Pro
     * Generic for any SoC supporting LinuxFS
     * Doesn't need `sudo`
   * Contra
+    * Doesn't provide serial and SPI 
     * Latency (? - still to be tested)
 * [PiGpio](/documentation/providers/pigpio/)
   * Pro
-    * Most performant at this moment, natively
+    * Provides all types of communication: DigitalInput, DigitalOutput, PWM, I2C, SPI, Serial
     * Can be used remotely
   * Contra
     * Needs to run as `sudo`
