@@ -5,6 +5,21 @@ weight: 40
 
 All releases of Pi4J V.2 are listed on [github.com/Pi4J/pi4j-v2/releases](https://github.com/Pi4J/pi4j-v2/releases).
 
+## 2024-03-?? - V2.5.0
+
+With over 100 commits from multiple branches, this is a major release with many improvements! With many thanks to the core team, and a major addition of Alexander Liggesmeyer, Pi4J is again lifted to a higher level!
+
+* A new GpioD Provider adds **support for the Raspberry Pi 5**.
+  * Issues [#321](https://github.com/Pi4J/pi4j-v2/issues/321), [#320](https://github.com/Pi4J/pi4j-v2/issues/320), [#317](https://github.com/Pi4J/pi4j-v2/issues/317)
+* Better handling of mock Plugins: Plugins can now define if they are mocks, and these are not auto-detected anymore. The default target for the Pi4J library is the Raspberry Pi, and thus auto-detecting mocks on the Pi, which are only for tests is counterintuitive.
+* Extended Providers with a priority: this priority helps to determine which Provider should be loaded, when multiple Providers with the same IOType are being loaded by different plugins. This change enforces that a given IOType can only have one Provider loaded at runtime preventing errors when, for instance, two I2C providers are loaded at the same time, concurrently writing to the I2C bus.
+* Fix for: LinuxFile reused scratch buffers ensuring size was usable. But the limit value cannot be modified so later usage failed as an intended overwrite. Pull request [#331](https://github.com/Pi4J/pi4j-v2/pull/331).
+* Fix for: I2C interface should use a restart between the write and read operation. Pull request [#333](https://github.com/Pi4J/pi4j-v2/pull/333).
+* Fix for: LinuxFile reused scratch buffers ensuring size was usable, but the limit value cannot be modified so later usage failed as an intended overwrite. Commit [ed208f2](https://github.com/Pi4J/pi4j-v2/commit/ed208f26cfd2a92978d010495fa1c6b5f8726e12).
+* Fix for: Shutting down pool executor too early. Commit [7909a2d](https://github.com/Pi4J/pi4j-v2/commit/7909a2d64d07d23732e5e31254d4d32d4c4087bd).
+
+All changes: https://github.com/Pi4J/pi4j-v2/compare/2.4.0...2.5.0
+
 ## 2023-10-24 - V2.4.0
 
 * Extended LinuxFS plugin
