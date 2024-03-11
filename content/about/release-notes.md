@@ -17,6 +17,12 @@ With over 100 commits from multiple branches, this is a major release with many 
 * Fix for: I2C interface should use a restart between the write and read operation. Pull request [#333](https://github.com/Pi4J/pi4j-v2/pull/333).
 * Fix for: LinuxFile reused scratch buffers ensuring size was usable, but the limit value cannot be modified so later usage failed as an intended overwrite. Commit [ed208f2](https://github.com/Pi4J/pi4j-v2/commit/ed208f26cfd2a92978d010495fa1c6b5f8726e12).
 * Fix for: Shutting down pool executor too early. Commit [7909a2d](https://github.com/Pi4J/pi4j-v2/commit/7909a2d64d07d23732e5e31254d4d32d4c4087bd).
+* And more additional changes:
+  * Remove the ProviderProxyHandler, simplifying provider loading, thus no more reflection on the instances.
+  * Allow to add and remove IO instances at runtime.
+  * Allow to easily switch a GPIO from output to an input and vice versa, see issue [#26](https://github.com/Pi4J/pi4j-v2/issues/26).
+  * Fixing a race condition in the default runtime registry.
+  * Added properly life cycle management of all threads in Pi4J.
 
 All changes: https://github.com/Pi4J/pi4j-v2/compare/2.4.0...2.5.0
 
