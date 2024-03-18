@@ -9,6 +9,8 @@ All releases of Pi4J V.2 are listed on [github.com/Pi4J/pi4j-v2/releases](https:
 
 With over 100 commits from multiple branches, this is a major release with many improvements! With many thanks to the core team ([Robert von Burg](https://github.com/eitch), [Tom Aarts](https://github.com/taartspi)), and a major addition of [Alexander Liggesmeyer](https://github.com/alex9849), Pi4J is again lifted to a higher level!
 
+You can find out [more about Alexander in this blog post](/blog/2024/20240318_interview_alexander_liggesmeyer/).
+
 ### Changes in 2.5.0
 
 * A new GpioD Provider adds **support for the Raspberry Pi 5**.
