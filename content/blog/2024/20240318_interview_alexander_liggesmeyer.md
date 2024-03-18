@@ -8,11 +8,6 @@ tags: ["Interview", "Pi4J"]
 
 Today, version 2.5.0 got released with many changes, fixes and improvements. The most important one being support for the Raspberry Pi 5. Short after the release of this new board, [several issues were raised on GitHub](https://github.com/Pi4J/pi4j-v2/issues/321) as Pi4J was not compatible. The Raspberry Pi 5 uses a completely new way to interact with the GPIOs: the [RP1 chip](https://www.raspberrypi.com/documentation/microcontrollers/rp1.html). Thanks to this chip, GPIO, SPI, I2C, USB, ethernet,... are seperated from the SoC to make it easier to develop newer boards and support. But this new approach wasn't supported by the PiGpio library used in Pi4J V2... Until Alexander Liggesmeyer took up the challenge to find a solution!
 
-{{< gallery >}}
-{{< figure link="/assets/about/team/alexander.jpg" caption=" Alexander Liggesmeyer" caption-position="center" caption-effect="fade" >}}
-{{< /gallery >}}
-{{< load-photoswipe >}}
-
 _Thanks Alexander for your amazing work! Can you introduce yourself?_
 
 I'm Alexander, and I'm currently doing a PhD at [Saarland University's HCI Lab](https://hci.cs.uni-saarland.de/). The research chair is working in the area of human computer interaction, which also very often involves prototyping hardware.
