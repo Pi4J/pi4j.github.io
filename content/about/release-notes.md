@@ -5,7 +5,7 @@ weight: 40
 
 All releases of Pi4J V.2 are listed on [github.com/Pi4J/pi4j-v2/releases](https://github.com/Pi4J/pi4j-v2/releases).
 
-## 2024-03-?? - V2.5.0
+## 2024-03-18 - V2.5.0
 
 With over 100 commits from multiple branches, this is a major release with many improvements! With many thanks to the core team ([Robert von Burg](https://github.com/eitch), [Tom Aarts](https://github.com/taartspi)), and a major addition of [Alexander Liggesmeyer](https://github.com/alex9849), Pi4J is again lifted to a higher level!
 
@@ -31,7 +31,7 @@ All changes: https://github.com/Pi4J/pi4j-v2/compare/2.4.0...2.5.0
 
 ### Known Issue
 
-* _java.io.IOException: Remote I/O error java.base/java.io.RandomAccessFile.writeBytes(Native Method). Using linuxfs-i2c, dependent upon i2c operations this exception can occur_: If the program initially uses read or write, and later uses readRegister or writeRegister there is no exception. However if the program initially uses readRegister or writeRegister subsequent write or read may encounter this exception. For more info and the temporary fix, check [#335](https://github.com/Pi4J/pi4j-v2/issues/335).
+* _java.io.IOException: Remote I/O error java.base/java.io.RandomAccessFile.writeBytes(Native Method). Using linuxfs-i2c, dependent upon i2c operations this exception can occur_: If the program initially uses read or write, and later uses readRegister or writeRegister there is no exception. However, if the program initially uses readRegister or writeRegister subsequent write or read may encounter this exception. For more info and the temporary fix, check [#335](https://github.com/Pi4J/pi4j-v2/issues/335).
 
 ## 2023-10-24 - V2.4.0
 
