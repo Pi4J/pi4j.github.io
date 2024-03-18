@@ -14,18 +14,26 @@ on which they are used.
 
 Current supported providers:
 
-* [PiGpio](/documentation/providers/pigpio/)
+* [GpioD]()
+  * Was introduced in Pi4J 2.5.0
   * Pro
-    * Most performant at this moment, natively
-    * Can be used remotely
-  * Contra
-    * Needs to run as `sudo`
+    * Works on Raspberry Pi 5
+    * Doesn't need sudo
+  * Contra 
+    * Only provides DigitalInput and DigitalOutput
 * [LinuxFS](/documentation/providers/linuxfs/)
   * Pro
     * Generic for any SoC supporting LinuxFS
     * Doesn't need `sudo`
   * Contra
+    * Doesn't provide serial and SPI 
     * Latency (? - still to be tested)
+* [PiGpio](/documentation/providers/pigpio/)
+  * Pro
+    * Provides all types of communication: DigitalInput, DigitalOutput, PWM, I2C, SPI, Serial
+    * Can be used remotely
+  * Contra
+    * Needs to run as `sudo`
 
 Possible future providers:
 

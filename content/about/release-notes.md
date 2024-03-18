@@ -5,6 +5,34 @@ weight: 40
 
 All releases of Pi4J V.2 are listed on [github.com/Pi4J/pi4j-v2/releases](https://github.com/Pi4J/pi4j-v2/releases).
 
+## 2024-03-?? - V2.5.0
+
+With over 100 commits from multiple branches, this is a major release with many improvements! With many thanks to the core team ([Robert von Burg](https://github.com/eitch), [Tom Aarts](https://github.com/taartspi)), and a major addition of [Alexander Liggesmeyer](https://github.com/alex9849), Pi4J is again lifted to a higher level!
+
+### Changes in 2.5.0
+
+* A new GpioD Provider adds **support for the Raspberry Pi 5**.
+  * Issues [#321](https://github.com/Pi4J/pi4j-v2/issues/321), [#320](https://github.com/Pi4J/pi4j-v2/issues/320), [#317](https://github.com/Pi4J/pi4j-v2/issues/317)
+  * This new GpioD provider interfaces directly with the Raspberry Pi's gpiochip device, located at `/dev/gpiochip...`. It leverages the [native libgpiod library](https://git.kernel.org/pub/scm/libs/libgpiod/libgpiod.git/?h=v1.6.x), which is developed as a part of the Linux kernel. Libgpiod is currently the recommended way to control GPIO pins. Therefore, using this provider is also recommended.
+  * This new provider can be used without the need to start a Pi4J application with sudo, so also fixes [#212](https://github.com/Pi4J/pi4j-v2/issues/212) when you only need DigitalInput and/or DigitalOutput.
+* Better handling of mock Plugins: Plugins can now define if they are mocks, and these are not auto-detected anymore. The default target for the Pi4J library is the Raspberry Pi, and thus auto-detecting mocks on the Pi, which are only for tests is counterintuitive.
+* Extended Providers with a priority: this priority helps to determine which Provider should be loaded, when multiple Providers with the same IOType are being loaded by different plugins. This change enforces that a given IOType can only have one Provider loaded at runtime preventing errors when, for instance, two I2C providers are loaded at the same time, concurrently writing to the I2C bus.
+* Fix for: LinuxFile reused scratch buffers ensuring size was usable. But the limit value cannot be modified so later usage failed as an intended overwrite. Pull request [#331](https://github.com/Pi4J/pi4j-v2/pull/331).
+* Fix for: I2C interface should use a restart between the write and read operation. Pull request [#333](https://github.com/Pi4J/pi4j-v2/pull/333).
+* Fix for: LinuxFile reused scratch buffers ensuring size was usable, but the limit value cannot be modified so later usage failed as an intended overwrite. Commit [ed208f2](https://github.com/Pi4J/pi4j-v2/commit/ed208f26cfd2a92978d010495fa1c6b5f8726e12).
+* Fix for: Shutting down pool executor too early. Commit [7909a2d](https://github.com/Pi4J/pi4j-v2/commit/7909a2d64d07d23732e5e31254d4d32d4c4087bd).
+* ProviderProxyHandler got removed, simplifying provider loading, thus no more reflection on the instances.
+* You can now add and remove IO instances at runtime.
+* You can now easily switch a GPIO from output to an input and vice versa, see issue [#26](https://github.com/Pi4J/pi4j-v2/issues/26), extending on the work by [@MEBoo](https://github.com/MEBoo), in pull request [#1](https://github.com/MEBoo/pi4j-v2-issue26/pull/1).
+* A race condition got fixed in the default runtime registry.
+* Proper life cycle management got added for of all threads in Pi4J.
+
+All changes: https://github.com/Pi4J/pi4j-v2/compare/2.4.0...2.5.0
+
+### Known Issue
+
+* _java.io.IOException: Remote I/O error java.base/java.io.RandomAccessFile.writeBytes(Native Method). Using linuxfs-i2c, dependent upon i2c operations this exception can occur_: If the program initially uses read or write, and later uses readRegister or writeRegister there is no exception. However if the program initially uses readRegister or writeRegister subsequent write or read may encounter this exception. For more info and the temporary fix, check [#335](https://github.com/Pi4J/pi4j-v2/issues/335).
+
 ## 2023-10-24 - V2.4.0
 
 * Extended LinuxFS plugin
