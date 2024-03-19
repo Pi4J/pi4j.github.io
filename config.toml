@@ -122,7 +122,13 @@ url = "https://twitter.com/pi4J"
 weight = 20
 
 [[menu.shortcuts]]
-name = "<i class='fab fa-github' style='width: 25px'></i> Pi4J Forum"
+name = "<i class='fab fa-github' style='width: 25px'></i> Pi4J V2 Discussions"
 identifier = "discussions"
 url = "https://github.com/Pi4J/pi4j-v2/discussions"
 weight = 30
+
+[[menu.shortcuts]]
+name = "<i class='fab fa-slack' style='width: 25px'></i> Join our Slack"
+identifier = "slack"
+url = "https://join.slack.com/t/pi4j/shared_invite/zt-1ttqt8wgj-E6t69qaLrNuCMPLiYnBCsg"
+weight = 35
