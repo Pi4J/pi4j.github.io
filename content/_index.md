@@ -8,7 +8,7 @@ title: Welcome to Pi4J
 
 This project is intended to provide **a friendly object-oriented I/O API and implementation libraries for Java Programmers** to access the **full I/O capabilities of the Raspberry Pi platform**. This project abstracts the low-level native integration and interrupt monitoring to enable Java programmers to **focus on implementing their application business logic**.
 
-{{% notice warning %}}
+{{% notice note %}}
 Pi4J supports the new Raspberry Pi 5 as of version 2.5.0. Because of the new [GPIO chip RP1](https://www.raspberrypi.com/documentation/microcontrollers/rp1.html), a new GPIO Provider was needed. See the [release notes for more info](/about/release-notes/).
 {{% /notice %}}
 
