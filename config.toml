@@ -99,36 +99,36 @@ home = ["HTML", "RSS", "JSON"]
     disableLatLong = false
 
 [[menu.shortcuts]]
-name = "<i class='fas fa-tags' style='width: 25px'></i> Tags"
+name = "<i class='fas more-tag fa-tags'></i> Tags"
 url = "/tags"
 weight = 5
 
 [[menu.shortcuts]]
-name = "<i class='fab fa-github' style='width: 25px'></i> GitHub project"
+name = "<i class='fab more-tag fa-github'></i> GitHub project"
 identifier = "github"
 url = "https://github.com/Pi4J"
 weight = 10
 
 [[menu.shortcuts]]
-name = "<i class='fab fa-mastodon' style='width: 25px'></i> Mastodon @pi4j@foojay.social"
+name = "<i class='fab more-tag fa-mastodon'></i> Mastodon @pi4j@foojay.social"
 identifier = "mastodon"
 url = "https://foojay.social/@pi4j"
 weight = 15
 
 [[menu.shortcuts]]
-name = "<i class='fab fa-twitter' style='width: 25px'></i> Twitter @pi4j"
+name = "<i class='fab more-tag fa-twitter'></i> Twitter @pi4j"
 identifier = "twitter"
 url = "https://twitter.com/pi4J"
 weight = 20
 
 [[menu.shortcuts]]
-name = "<i class='fab fa-github' style='width: 25px'></i> Pi4J V2 Discussions"
+name = "<i class='fab more-tag fa-github'></i> Pi4J V2 Discussions"
 identifier = "discussions"
 url = "https://github.com/Pi4J/pi4j-v2/discussions"
 weight = 30
 
 [[menu.shortcuts]]
-name = "<i class='fab fa-slack' style='width: 25px'></i> Join our Slack"
+name = "<i class='fab more-tag fa-slack'></i> Join our Slack"
 identifier = "slack"
 url = "https://join.slack.com/t/pi4j/shared_invite/zt-1ttqt8wgj-E6t69qaLrNuCMPLiYnBCsg"
 weight = 35

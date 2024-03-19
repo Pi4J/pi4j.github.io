@@ -1142,8 +1142,9 @@ option {
     color: initial;
 }
 
-.fa-github, .fa-twitter, .fa-home, .fa-mastodon {
+.more-tag {
     margin-right: 10px;
+    width: 20px;
 }
 
 .fa-tags {
