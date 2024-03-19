@@ -35,7 +35,7 @@ Should not be used as a template for one's own JavaFX applications.
 The two other example applications use an LED and a button.
 These must be wired as is shown in the following diagram:
 
-![](https://github.com/Pi4J/pi4j-template-javafx/raw/master/assets/led-button_bb.png)
+![](/assets/getting-started/minimal/led-button_bb.png)
 
 ## MinimalPi4J
 
@@ -51,7 +51,7 @@ This application shows the interaction between a JavaFX based Graphical User Int
 
 This application is to be used as a template for one's own applications. This includes the existing test cases.
 
-![GUI application started from IntelliJ IDEA](https://pi4j.com/assets/getting-started/template-javafx-mvc/running-gui.png)
+![GUI application started from IntelliJ IDEA](/assets/getting-started/template-javafx-mvc/running-gui.png)
 
 You should first get to know and understand the example. For your own applications you should then copy the TemplateApp and modify it for your project, however without violating the rules of the MVC concept.
 
@@ -66,7 +66,7 @@ When developing PUI only applications, or when adding the GUI later, then one sh
 The classic Model-View-Controller concept contains in addition to the starter class at least 3 more classes.
 The interaction is clearly defined:
 
-![](https://github.com/Pi4J/pi4j-template-javafx/raw/master/assets/mvc-concept.png)
+![](/assets/blogs/mvc/mvc-concept.png)
 
 This way the GUI and PUI are completely separated from each other, i.e a GUI button to turn an LED on has no direct access to the LED component of the PUI. Instead the GUI button triggers a corresponding action in the controller which then sets the on state property in the model. The PUI listening on this state then turns the actual LED on or off.
 
@@ -74,7 +74,7 @@ GUI and PUI work with the same identical controller and thus also the same ident
 
 In the MVC concept, every user interaction traverses the exact same cycle:
 
-![MVC Concept](https://github.com/Pi4J/pi4j-template-javafx/raw/master/assets/mvc-interaction.png)
+![MVC Concept](/assets/blogs/mvc/mvc-interaction.png)
 
 ## Conclusion
 
