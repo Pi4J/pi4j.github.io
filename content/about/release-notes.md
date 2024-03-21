@@ -15,6 +15,10 @@ With over 100 commits from multiple branches, this is a major release with many 
 
 You can find out [more about Alexander in this blog post](/blog/2024/20240318_interview_alexander_liggesmeyer/).
 
+{{% notice warning %}}
+The new GpioD Provider needs the latest Raspberry Pi OS version (`Debian GNU/Linux 12 (bookworm)`).
+{{% /notice %}}
+
 ### Changes in 2.5.0
 
 * A new GpioD Provider adds **support for the Raspberry Pi 5**.
