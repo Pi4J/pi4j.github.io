@@ -65,7 +65,7 @@ make the versions easy to update, we add those numbers as properties.
 ```xml
 <properties>
     <!-- DEPENDENCIES VERSIONS -->
-    <slf4j.version>1.7.32</slf4j.version>
+    <slf4j.version>2.0.12</slf4j.version>
     <pi4j.version>2.5.1</pi4j.version>
 </properties>
 ``` 
@@ -134,35 +134,14 @@ platforms.describe().print(System.out);
 console.println();
 ```
 
-### Handle the button presses
+### Blink a LED
 
-To handle digital input events we first need a configuration for it. With that configuration, Pi4J can create the object 
-for us and the state changes can be handled.
-
-Additional info on the `newConfigBuilder` can be found on ["Building an I/O Instance"](/documentation/build-io/).
-
-```java
-private static int pressCount = 0;
-private static final int PIN_BUTTON = 24; // PIN 18 = BCM 24
-
-var button = pi4j.digitalInput().create(PIN_BUTTON, "myButton");
-
-button.addListener(e -> {
-       if (e.state() == DigitalState.LOW) {
-              pressCount++;
-              console.println("Button was pressed for the " + pressCount + "th time");
-       }
-});
-```
-
-### Toggle a LED
-
-For the LED we use a similar approach with a configuration. The created led-object can be used to toggle its state.
+To initialize a LED, we use the minimal required code, only defining the pin number. The created led-object can be used to toggle its state.
 
 ```java
 private static final int PIN_LED = 22; // PIN 15 = BCM 22
 
-var led = pi4j.digitalOutput().create(PIN_LED, "myLed");
+var led = pi4j.digitalOutput().create(PIN_LED);
 
 while (pressCount < 5) {
       if (led.equals(DigitalState.HIGH)) {
@@ -172,6 +151,33 @@ while (pressCount < 5) {
       }
       Thread.sleep(500 / (pressCount + 1));
 }
+```
+
+### Handle the button presses
+
+To handle digital input events, some more configuration is needed, and we use a config builder. With that configuration, Pi4J can create the object for us and the state changes can be handled.
+
+Additional info on the `newConfigBuilder` can be found on ["Building an I/O Instance"](/documentation/build-io/).
+
+```java
+private static int pressCount = 0;
+private static final int PIN_BUTTON = 24; // PIN 18 = BCM 24
+
+var buttonConfig = DigitalInput.newConfigBuilder(pi4j)
+        .id("button")
+        .name("Press button")
+        .address(PIN_BUTTON)
+        .pull(PullResistance.PULL_DOWN)
+        .debounce(3000L);
+
+var button = pi4j.create(buttonConfig);
+
+button.addListener(e -> {
+       if (e.state() == DigitalState.LOW) {
+              pressCount++;
+              console.println("Button was pressed for the " + pressCount + "th time");
+       }
+});
 ```
 
 ### Closing the application
@@ -187,7 +193,7 @@ pi4j.shutdown();
 ## Steps to run this application on your Raspberry Pi
 
 * Attach a LED and button as shown in the image above
-* Use a recent Raspbian OS image which has Java 11. To check if you have the correct Java version in the terminal:
+* Use a recent Raspbian OS image which has Java 11 or newer. To check if you have the correct Java version in the terminal:
 
 ```shell
 $ java -version
@@ -218,7 +224,6 @@ total 608
 -rwxr-xr-x 1 pi pi    101 Mar 21 10:48 run.sh
 -rw-r--r-- 1 pi pi  68115 Feb  5 22:32 slf4j-api-2.0.12.jar
 -rw-r--r-- 1 pi pi  15701 Feb  5 22:33 slf4j-simple-2.0.12.jar
-
 ```
 
 * Start the application with the provided `run.sh` script:
