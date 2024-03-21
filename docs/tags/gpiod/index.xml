@@ -2,4 +2,4 @@
 Providers in the GpioD plugin:
 gpiod-digital-input gpiod-digital-output The GpioD Provider needs a recent Raspberry Pi OS version (Bookworm)!
 If you get an error at startup with the following content, your OS is outdated for the GpioD implementation used in Pi4J:
-UNDERLYING EXCEPTION: [java.lang.UnsatisfiedLinkError]=/tmp/libgpiod368899536808039438.so: /lib/aarch64-linux-gnu/libc.so.6: version `GLIBC_2.</description></item></channel></rss>
+UNDERLYING EXCEPTION: [java.lang.UnsatisfiedLinkError]=/tmp/libgpiod368899536808039438.so: /lib/aarch64-linux-gnu/libc.</description></item></channel></rss>
