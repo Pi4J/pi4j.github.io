@@ -9,6 +9,10 @@ aliases:
 
 Yes, Raspberry Pi OS is great! And we made if even more awesome by adding some "goodies" for Java developers! So, to be clear, Pi4J OS is not yet another OS. It's the official Raspberry Pi OS, with additional tools and preconfigurations to make it the ideal OS for any Java developer who wants to use a Raspberry Pi.
 
+{{% notice tip %}}
+GITHUB PROJECT: [https://github.com/Pi4J/pi4j-os](https://github.com/Pi4J/pi4j-os)
+{{% /notice %}}
+
 ## Additional Feature on top of Raspberry Pi OS
 
 This project provides pre-built versions of OS images with all you need to develop 100% pure Java applications for specific Raspberry Pi setups. They are based on the latest official [Raspberry Pi OS](https://www.raspberrypi.org/software/) and are automatically built using Packer. 

@@ -5,6 +5,10 @@ weight: 40
 
 All releases of Pi4J V.2 are listed on [github.com/Pi4J/pi4j-v2/releases](https://github.com/Pi4J/pi4j-v2/releases).
 
+## 2024-03-18 - V2.5.1
+
+Sorry! Because of a configuration error, the wrong native code is included in 2.5.0 for the new GpioD Provider. But [thanks to the lightning fast action](https://github.com/Pi4J/pi4j-v2/commit/6ac458ec2d9b38a20b2195f4ecc03a65fbdebff7) of [Robert von Burg](https://github.com/eitch) we have a fixed version for you to enjoy :-)
+
 ## 2024-03-18 - V2.5.0
 
 With over 100 commits from multiple branches, this is a major release with many improvements! With many thanks to the core team ([Robert von Burg](https://github.com/eitch), [Tom Aarts](https://github.com/taartspi)), and a major addition of [Alexander Liggesmeyer](https://github.com/alex9849), Pi4J is again lifted to a higher level!

@@ -15,6 +15,15 @@ Providers in the PiGpio plugin:
 * pigpio-spi
 * pigpio-serial
 
+{{% notice warn %}}
+Applications which use the PiGpio Provider, need to be started with `sudo` to be able to interface with the GPIOs. When you don't use `sudo`, you'll see an error like this:
+
+```shell
+WARN com.pi4j.library.pigpio.impl.PiGpioNativeImpl 
+    - PIGPIO ERROR: PI_INIT_FAILED; pigpio initialisation failed
+```
+{{% /notice %}}
+
 To use the PiGpio provider include the following dependencies:
 
 ``` xml

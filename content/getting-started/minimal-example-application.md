@@ -66,7 +66,7 @@ make the versions easy to update, we add those numbers as properties.
 <properties>
     <!-- DEPENDENCIES VERSIONS -->
     <slf4j.version>1.7.32</slf4j.version>
-    <pi4j.version>2.3.0</pi4j.version>
+    <pi4j.version>2.5.1</pi4j.version>
 </properties>
 ``` 
   
@@ -100,7 +100,7 @@ These are the dependencies we need:
     </dependency>
     <dependency>
         <groupId>com.pi4j</groupId>
-        <artifactId>pi4j-plugin-pigpio</artifactId>
+        <artifactId>pi4j-plugin-gpiod</artifactId>
         <version>${pi4j.version}</version>
     </dependency>
 </dependencies>
@@ -145,15 +145,7 @@ Additional info on the `newConfigBuilder` can be found on ["Building an I/O Inst
 private static int pressCount = 0;
 private static final int PIN_BUTTON = 24; // PIN 18 = BCM 24
 
-var buttonConfig = DigitalInput.newConfigBuilder(pi4j)
-      .id("button")
-      .name("Press button")
-      .address(PIN_BUTTON)
-      .pull(PullResistance.PULL_DOWN)
-      .debounce(3000L)
-      .provider("pigpio-digital-input");
-      
-var button = pi4j.create(buttonConfig);
+var button = pi4j.digitalInput().create(PIN_BUTTON, "myButton");
 
 button.addListener(e -> {
        if (e.state() == DigitalState.LOW) {
@@ -170,15 +162,7 @@ For the LED we use a similar approach with a configuration. The created led-obje
 ```java
 private static final int PIN_LED = 22; // PIN 15 = BCM 22
 
-var ledConfig = DigitalOutput.newConfigBuilder(pi4j)
-      .id("led")
-      .name("LED Flasher")
-      .address(PIN_LED)
-      .shutdown(DigitalState.LOW)
-      .initial(DigitalState.LOW)
-      .provider("pigpio-digital-output");
-      
-var led = pi4j.create(ledConfig);
+var led = pi4j.digitalOutput().create(PIN_LED, "myLed");
 
 while (pressCount < 5) {
       if (led.equals(DigitalState.HIGH)) {
@@ -225,21 +209,22 @@ $ mvn clean package
 ```shell
 $ cd target/distribution
 $ ls -l
-total 644
--rw-r--r-- 1 pi pi 364456 Jun 19 10:04 pi4j-core-2.3.0.jar
--rw-r--r-- 1 pi pi   7243 Jun 19 10:04 pi4j-example-minimal-0.0.1.jar
--rw-r--r-- 1 pi pi 142461 Jun 19 10:04 pi4j-library-pigpio-2.3.0.jar
--rw-r--r-- 1 pi pi  37302 Jun 19 10:04 pi4j-plugin-pigpio-2.3.0.jar
--rw-r--r-- 1 pi pi  26917 Jun 19 10:04 pi4j-plugin-raspberrypi-2.3.0.jar
--rwxr-xr-x 1 pi pi    101 Jun 19 10:04 run.sh
--rw-r--r-- 1 pi pi  52173 Jun 19 10:04 slf4j-api-1.7.32.jar
--rw-r--r-- 1 pi pi  15372 Jun 19 10:04 slf4j-simple-1.7.32.jar
+total 608
+-rw-r--r-- 1 pi pi 310147 Mar 21 09:53 pi4j-core-2.5.1.jar
+-rw-r--r-- 1 pi pi   6240 Mar 21 10:48 pi4j-example-minimal-0.0.1.jar
+-rw-r--r-- 1 pi pi 158381 Mar 21 09:52 pi4j-library-gpiod-2.5.1.jar
+-rw-r--r-- 1 pi pi  22202 Mar 21 09:52 pi4j-plugin-gpiod-2.5.1.jar
+-rw-r--r-- 1 pi pi  26919 Mar 21 09:52 pi4j-plugin-raspberrypi-2.5.1.jar
+-rwxr-xr-x 1 pi pi    101 Mar 21 10:48 run.sh
+-rw-r--r-- 1 pi pi  68115 Feb  5 22:32 slf4j-api-2.0.12.jar
+-rw-r--r-- 1 pi pi  15701 Feb  5 22:33 slf4j-simple-2.0.12.jar
+
 ```
 
-* Start the application with the provided `run.sh` script. **Make sure to start with `sudo` as Pi4J (at this moment) needs to be started with it**, to enable the native library that is part of Pi4J to communicate with the GPIOs:
+* Start the application with the provided `run.sh` script:
 
 ```shell
-$ sudo ./run.sh
+$ ./run.sh
 ``` 
 
 * The output will first show you some info about the platforms and providers. Then the LED starts blinking and shows how 
@@ -269,11 +254,3 @@ LED low
 LED high
 Button was pressed for the 5th time
 ``` 
-
-* If you get an error like shown below, you probably didn't start the application with `sudo`, which is (at the moment) 
-required for the PiGpio native library that handles the interfacing with the GPIOs.
-
-```shell
-WARN com.pi4j.library.pigpio.impl.PiGpioNativeImpl 
-    - PIGPIO ERROR: PI_INIT_FAILED; pigpio initialisation failed
-```
