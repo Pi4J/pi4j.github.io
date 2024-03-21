@@ -11,7 +11,7 @@ Providers in the GpioD plugin:
 * gpiod-digital-input
 * gpiod-digital-output
 
-{{% notice warn %}}
+{{% notice warning %}}
 The GpioD Provider needs a recent Raspberry Pi OS version (Bookworm)!
 {{% /notice %}}
 

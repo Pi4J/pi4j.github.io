@@ -15,7 +15,7 @@ Providers in the PiGpio plugin:
 * pigpio-spi
 * pigpio-serial
 
-{{% notice warn %}}
+{{% notice warning %}}
 Applications which use the PiGpio Provider, need to be started with `sudo` to be able to interface with the GPIOs.
 {{% /notice %}}
 
