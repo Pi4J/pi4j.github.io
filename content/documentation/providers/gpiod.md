@@ -13,14 +13,13 @@ Providers in the GpioD plugin:
 
 {{% notice warn %}}
 The GpioD Provider needs a recent Raspberry Pi OS version (Bookworm)!
+{{% /notice %}}
 
 If you get an error at startup with the following content, your OS is outdated for the GpioD implementation used in Pi4J:
 
 ```shell
 UNDERLYING EXCEPTION: [java.lang.UnsatisfiedLinkError]=/tmp/libgpiod368899536808039438.so: /lib/aarch64-linux-gnu/libc.so.6: version `GLIBC_2.33' not found (required by /tmp/libgpiod368899536808039438.so)
 ```
-{{% /notice %}}
-
 
 To use the GpioD provider include the following dependencies:
 
