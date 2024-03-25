@@ -45,23 +45,14 @@ Possible future providers:
 
 * RemoteProvider to control the I/O from a remote device e.g. through websockets
 
-Pi4J 2.5 ensuring a single provider for an I/O type is loaded may result in the provider your code references not being found.
-Below is an example to specifically load the PiGpio providers.  There also is  example code to pretty print the
-Providers that were loaded.
+Pi4J 2.5 Provider not found
+* Pi4J 2.5 ensuring a single provider for an I/O type is loaded may result in the provider your code references not being 
+found because it was replaced by a higher priority provider.
+If you encounter this case, you can remove the unwanted provider plugin from your pom.xml file dependencies. Then after a clean 
+and rebuild of your program the unwanted provider will no longer be loaded.
+ 
 
-* Ensure single provider for a I/O type
-```java
-  Context pi4j = Pi4J.newAutoContext();
-```
-* Specifically load PiGpio providers
- ```java
-    PiGpio piGpio = PiGpio.newNativeInstance();
-    Context pi4j = Pi4J.newContextBuilder().add(
-        PiGpioI2CProvider.newInstance(piGpio),
-        PiGpioDigitalInputProvider.newInstance(piGpio),
-        PiGpioDigitalOutputProvider.newInstance(piGpio)).build();
-```
-* PrettyPrint loaded providers
+* PrettyPrint loaded providers. After creating the Context the following code will print the currently loaded provider for each I/O type.
 ```java
     System.out.println("-------------------------------------------------");
     System.out.println("PI4J PROVIDERS");
