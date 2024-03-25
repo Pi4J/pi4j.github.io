@@ -1,7 +1,7 @@
 ---
 title: Choosing an I/O Provider
 weight: 90
-tags: ["LinuxFS", "PiGpio"]
+tags: ["GpioD", "LinuxFS", "PiGpio"]
 ---
 
 Providers are extensible service modules responsible for the concrete implementation of a specific I/O type. 
@@ -14,7 +14,7 @@ on which they are used.
 
 Current supported providers:
 
-* [GpioD]()
+* [GpioD](/documentation/providers/gpiod/)
   * Was introduced in Pi4J 2.5.0
   * Pro
     * Works on Raspberry Pi 5
