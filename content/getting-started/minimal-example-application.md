@@ -144,12 +144,12 @@ private static final int PIN_LED = 22; // PIN 15 = BCM 22
 var led = pi4j.digitalOutput().create(PIN_LED);
 
 while (pressCount < 5) {
-      if (led.equals(DigitalState.HIGH)) {
-           led.low();
-      } else {
-           led.high();
-      }
-      Thread.sleep(500 / (pressCount + 1));
+    if (led.state() == DigitalState.HIGH) {
+        led.low();
+    } else {
+        led.high();
+    }
+    Thread.sleep(500 / (pressCount + 1));
 }
 ```
 
