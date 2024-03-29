@@ -5,7 +5,7 @@ weight: 100
 
 A GPIO can be configured with Pi4J in different ways, either short for default behavior, a bit longer with additional settings, or with a full custom configuration using a building pattern.
 
-## Available I/O
+## I/O Initialization Examples
 
 Before we can initialize an I/0, the Pi4J context must be initialized. The `Pi4J` static class includes a few helper context creators for the most common use cases.  The `newAutoContext()` method will automatically load all available Pi4J extensions found in the application's classpath which may include `Platforms` and `I/O Providers`.
 
