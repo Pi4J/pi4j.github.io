@@ -13,9 +13,9 @@ Before we can initialize an I/0, the Pi4J context must be initialized. The `Pi4J
 var pi4j = Pi4J.newAutoContext();
 ```
 
-### DigitalOutput
+### DigitalInput
 
-Here are a few examples of the different possibilities to initialize a digital output object:
+Here are a few examples of the different possibilities to initialize a digital input object:
 
 ```java
 # Shortest way
@@ -39,9 +39,9 @@ var buttonConfig = DigitalInput.newConfigBuilder(pi4j)
 var button = pi4j.create(buttonConfig);
 ``` 
 
-### DigitalInput
+### DigitalOutput
 
-The examples above are also applicable for an input:
+The examples above are also applicable for an output:
 
 ```java
 # Shortest way
@@ -55,8 +55,8 @@ var led = pi4j.digitalOutput().create(INTEGER_PIN_ADDRESS);
 # Or you can use a configuration builder
 var ledConfig = DigitalOutput.newConfigBuilder(pi4j)
         .id("my-dout")
-        .name("My Digital Output")
-        .address(GPIO_PIN)
+        .name("My LED")
+        .address(PIN_LED)
         .shutdown(DigitalState.LOW)
         .initial(DigitalState.HIGH);
 var led = pi4j.create(ledConfig);
