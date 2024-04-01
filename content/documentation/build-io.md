@@ -18,18 +18,18 @@ var pi4j = Pi4J.newAutoContext();
 Here are a few examples of the different possibilities to initialize a digital input object:
 
 ```java
-# Shortest way
+// Shortest way
 var button = pi4j.din().create(INTEGER_PIN_ADDRESS);
 
-# Is equal to
+// Is equal to
 var button = pi4j.digitalInput().create(INTEGER_PIN_ADDRESS);
 
-# The create method can be called with more parameters
+// The create method can be called with more parameters
 var button = pi4j.din().create(INTEGER_PIN_ADDRESS, STRING_ID);
 var button = pi4j.din().create(INTEGER_PIN_ADDRESS, STRING_ID, STRING_NAME);
 var button = pi4j.din().create(INTEGER_PIN_ADDRESS, STRING_ID, STRING_NAME, STRING_DESCRIPTION);
 
-# Or you can use a configuration builder
+// Or you can use a configuration builder
 var buttonConfig = DigitalInput.newConfigBuilder(pi4j)
         .id("button")
         .name("Press button")
@@ -44,15 +44,15 @@ var button = pi4j.create(buttonConfig);
 The examples above are also applicable for an output:
 
 ```java
-# Shortest way
+// Shortest way
 var led = pi4j.dout().create(INTEGER_PIN_ADDRESS);
 
-# Is equal to
+// Is equal to
 var led = pi4j.digitalOutput().create(INTEGER_PIN_ADDRESS);
 
-# The create method can be called with more parameters, see above
+// The create method can be called with more parameters, see above
 
-# Or you can use a configuration builder
+// Or you can use a configuration builder
 var ledConfig = DigitalOutput.newConfigBuilder(pi4j)
         .id("my-dout")
         .name("My LED")
@@ -67,13 +67,13 @@ var led = pi4j.create(ledConfig);
 The same methodology is available for other types of I/O's:
 
 ```java
-# Shortest way
+// Shortest way
 var pwm = pi4j.pwm().create(INTEGER_PIN_ADDRESS);
 var spi = pi4.spi().create(STRING_ID);
 var i2c = pi4j.i2c().create(INTEGER_BUS, INTEGER_DEVICE);
 var serial = pi4j.serial().create(STRING_ID);
 
-# Or using the config builder, for example, I2C:
+// Or using the config builder, for example, I2C:
 var i2cConfig = I2C.newConfigBuilder(pi4j)
         .id("my-i2c")
         .bus(I2C_BUS)
