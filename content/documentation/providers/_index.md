@@ -23,8 +23,6 @@ Current supported providers:
     * Works on Raspberry Pi 5
     * Doesn't need sudo
     * Supports DigitalInput and DigitalOutput
-  * Contra 
-    *  
 * [LinuxFS](/documentation/providers/linuxfs/)
   * Pro
     * Works on Raspberry Pi 5
@@ -55,7 +53,7 @@ and rebuild of your program the unwanted provider will no longer be loaded.
  
 
 * PrettyPrint loaded providers. After creating the Context the following code will print the currently loaded provider for each I/O type.
-```java
+```
     System.out.println("-------------------------------------------------");
     System.out.println("PI4J PROVIDERS");
     System.out.println("-------------------------------------------------");
