@@ -6,7 +6,7 @@ tags: ["Pi4J", "SPI", "MAX7219", "BME280"]
 
 2024-04-17, by Frank Delporte
 
-Roberto Marquez shared a project with us that uses Java to interface with a MAX7219 SPI device to control an LED matrix. It's inspired by the blog "[Raspberry Pi and SPI 8×8 LED matrix example with Java and Pi4j](https://www.hackerspacetech.com/raspberry-pi-and-spi-8x8-led-matrix-example-with-java-and-pi4j/)", but differs in that it is Web-enabled via Spring Boot. This project is the starting point to create a weather station in combination with the BMP280, see "[BME280 Sensor (temp, humidity, pressure) via Pi4J, I2C, and JBang](https://pi4j.com/examples/jbang/bme280_temperature_humidity_pressure/)".
+Roberto Marquez shared a project with us that uses Java to interface with a MAX7219 SPI device to control an LED matrix. It's inspired by the blog [Raspberry Pi and SPI 8×8 LED matrix example with Java and Pi4j](https://www.hackerspacetech.com/raspberry-pi-and-spi-8x8-led-matrix-example-with-java-and-pi4j/), but differs in that it is Web-enabled via Spring Boot. This project is the starting point to create a weather station in combination with the BMP280, see [BME280 Sensor (temp, humidity, pressure) via Pi4J, I2C, and JBang](https://pi4j.com/examples/jbang/bme280_temperature_humidity_pressure/).
 
 {{< gallery >}}
 {{< figure link="/assets/blogs/max7219/wiring-diagram.png" caption="Wiring diagram" caption-position="center" caption-effect="fade" >}}
@@ -14,7 +14,7 @@ Roberto Marquez shared a project with us that uses Java to interface with a MAX7
 {{< /gallery >}}
 {{< load-photoswipe >}}
 
-While working on his project, Roberto contributed extra LED character definitions for the [Pi4JLedMatrixSpi single-file application in the Pi4J V2 JBang project](https://github.com/Pi4J/pi4j-jbang/blob/main/Pi4JLedMatrixSpi.java).
+While working on his project, Roberto contributed extra LED character definitions for the [Pi4JLedMatrixSpi.java single-file application in the Pi4J V2 JBang project](https://github.com/Pi4J/pi4j-jbang/blob/main/Pi4JLedMatrixSpi.java).
 
 ## Demos
 
