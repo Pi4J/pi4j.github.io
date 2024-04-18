@@ -1,10 +1,10 @@
 ---
-title: "Java Controlled LED Matrix via a MAX7219 SPI Controller"
+title: "LED Matrix with SPI MAX7219"
 date: 2024-04-17
 tags: ["Pi4J", "SPI", "MAX7219", "BME280"]
 ---
 
-2024-04-17, by Frank Delporte
+2024-04-18, by Frank Delporte
 
 Roberto Marquez shared a project with us that uses Java to interface with a MAX7219 SPI device to control an LED matrix. It's inspired by the blog [Raspberry Pi and SPI 8×8 LED matrix example with Java and Pi4j](https://www.hackerspacetech.com/raspberry-pi-and-spi-8x8-led-matrix-example-with-java-and-pi4j/), but differs in that it is Web-enabled via Spring Boot. This project is the starting point to create a weather station in combination with the BMP280, see [BME280 Sensor (temp, humidity, pressure) via Pi4J, I2C, and JBang](https://pi4j.com/examples/jbang/bme280_temperature_humidity_pressure/).
 
