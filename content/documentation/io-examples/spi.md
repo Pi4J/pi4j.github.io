@@ -1,7 +1,7 @@
 ---
 title: Serial Peripheral Interface (SPI)
 weight: 240
-tags: ["SPI"]
+tags: ["SPI", "MAX7219"]
 ---
 
 ## What is it?

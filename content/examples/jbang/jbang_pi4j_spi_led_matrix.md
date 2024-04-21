@@ -1,7 +1,7 @@
 ---
 title: 8x8 LED Matrix
 weight: 160
-tags: ["JBang", "SPI", "LED", "LED Matrix"]
+tags: ["JBang", "SPI", "LED", "LED Matrix", "MAX7219"]
 ---
 
 ## Controlling a 8x8 LED Matrix with MAX7219 via SPI

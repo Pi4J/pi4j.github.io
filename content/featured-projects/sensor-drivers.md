@@ -1,6 +1,7 @@
 ---
 title: 'Sensor drivers'
 weight: 80
+tags: ["ADS1115", "BME280", "BMP180", "HTU21D", "PCF8591", "BH1750"]
 ---
 
 In case you want to read the data from various I2C sensors connected to Raspberry Pi
