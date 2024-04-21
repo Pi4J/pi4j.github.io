@@ -125,8 +125,8 @@ dtoverlay=pwm-2chan
 
 Dtoverlay=pwm-2chan,pin=12,func=4,pin2=13,func2=4
 
-GPIO 12  channel 1
-GPIO 13  channel 0
+GPIO 12  channel 0
+GPIO 13  channel 1
 
 ```
 
