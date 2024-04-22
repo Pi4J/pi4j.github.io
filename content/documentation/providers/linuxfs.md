@@ -1,12 +1,16 @@
 ---
 title: LinuxFS Provider
 weight: 93
-tags: ["LinuxFS"]
+tags: ["LinuxFS", "PWM", "I2C"]
 ---
 
 The current implementation of the LinuxFS plugin implements a file based I2C and PWM provider. The file based I2C provider opens 
 `/dev/i2c-1` using a `RandomAccessFile` to perform I2C reads and writes. The file based PWM provider opens
 `/sys/class/pwm/pwmchip?` using a `RandomAccessFile` to perform PWM operations.
+
+{{% notice warning %}}
+The Linuxfs provider linuxfs-pwm requires minimum kernel Bullseye 6.21 and Bookworm 6.6.22 !
+{{% /notice %}}
 
 Providers in the LinuxFS plugin:
 
@@ -15,12 +19,6 @@ Providers in the LinuxFS plugin:
 * Under construction
   * linuxfs-digital-input
   * linuxfs-digital-output
-
-
-
-{{% notice warning %}}
-The Linuxfs provider linuxfs-pwm requires minimum kernel Bullseye 6.21 and Bookworm 6.6.22 !
-{{% /notice %}}
 
 To use the LinuxFS provider include the following dependencies:
 
