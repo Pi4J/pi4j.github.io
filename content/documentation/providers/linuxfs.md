@@ -4,16 +4,23 @@ weight: 93
 tags: ["LinuxFS"]
 ---
 
-The current implementation of the LinuxFS plugin implements a file based I2C provider. The file based provider opens 
-`/dev/i2c-1` using a `RandomAccessFile` to perform I2C reads and writes.
+The current implementation of the LinuxFS plugin implements a file based I2C and PWM provider. The file based I2C provider opens 
+`/dev/i2c-1` using a `RandomAccessFile` to perform I2C reads and writes. The file based PWM provider opens
+`/sys/class/pwm/pwmchip?` using a `RandomAccessFile` to perform PWM operations.
 
 Providers in the LinuxFS plugin:
 
 * linuxfs-i2c
+* linuxfs-pwm
 * Under construction
   * linuxfs-digital-input
   * linuxfs-digital-output
-  * linuxfs-pwm
+
+
+
+{{% notice warning %}}
+The Linuxfs provider linuxfs-pwm requires minimum kernel Bullseye 6.21 and Bookworm 6.6.22 !
+{{% /notice %}}
 
 To use the LinuxFS provider include the following dependencies:
 
@@ -35,7 +42,7 @@ To use the LinuxFS provider include the following dependencies:
 </dependency>
 ```
 
-And then one can get access to the provider as follows:
+And then one can get access to the I2C provider as follows:
 
 ``` java
 Context pi4j = Pi4J.newAutoContext();
@@ -54,3 +61,27 @@ try (I2C tca9534Dev = i2CProvider.create(i2cConfig)) {
 
 pi4j.shutdown();
 ```
+
+And then one can get access to the PWM provider as follows:
+```java
+  /**
+     * Builds a new PWM configuration for the buzzer
+     *
+     * @param pi4j    Pi4J context
+     * @param address BCM pin address
+     * @return PWM configuration
+     */
+    protected static PwmConfig buildPwmConfig(Context pi4j, int address) {
+        return Pwm.newConfigBuilder(pi4j)
+            .id("BCM" + address)
+            .name("Buzzer")
+            .address(address)
+            .pwmType(PwmType.HARDWARE)
+            .provider("linuxfs-pwm")
+            .initial(0)
+            .shutdown(0)
+            .build();
+    }
+
+```
+

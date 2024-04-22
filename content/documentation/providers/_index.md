@@ -22,14 +22,16 @@ Current supported providers:
   * Pro
     * Works on Raspberry Pi 5
     * Doesn't need sudo
-  * Contra 
-    * Only provides DigitalInput and DigitalOutput
+    * Supports DigitalInput and DigitalOutput
 * [LinuxFS](/documentation/providers/linuxfs/)
   * Pro
+    * Works on Raspberry Pi 5
     * Generic for any SoC supporting LinuxFS
+    * Supports I2C, and PWM Hardware
     * Doesn't need `sudo`
   * Contra
     * Doesn't provide serial and SPI 
+    * DigitalInput and DigitalOutput under construction
     * Latency (? - still to be tested)
 * [PiGpio](/documentation/providers/pigpio/)
   * Pro
@@ -37,7 +39,7 @@ Current supported providers:
     * Can be used remotely
   * Contra
     * Needs to run as `sudo`
-    * 03/22/2024 Does not support Pi5
+    * 03/22/2024 Does not support Raspberry Pi 5
 
 Possible future providers:
 
@@ -51,7 +53,7 @@ and rebuild of your program the unwanted provider will no longer be loaded.
  
 
 * PrettyPrint loaded providers. After creating the Context the following code will print the currently loaded provider for each I/O type.
-```java
+```
     System.out.println("-------------------------------------------------");
     System.out.println("PI4J PROVIDERS");
     System.out.println("-------------------------------------------------");

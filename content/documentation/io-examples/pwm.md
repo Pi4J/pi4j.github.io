@@ -7,7 +7,7 @@ tags: ["PWM"]
 ## What is it?
 
 The abbreviation PWM stands for "Pulse Width Modulation" and is also often referred 
-to in German as pulse width modulation or pulse width modulation. This technology 
+to in German as pulse width modulation or pulse duration modulation. This technology 
 is used, among other things, to control servomotors and is also used, for example, 
 for the fans of a regular computer.
 
@@ -16,11 +16,16 @@ binary, i.e. off (0% power) or on (100% power), but to control them almost at wi
 The functionality of PWM works in such a way that the component is switched off and 
 on again and again within a certain period of time.
 
-## Software vs. Hardware
+## Pigpio Provider (pigpio-pwm)
 
-Two different types of PWM are available on the Raspberry Pi, specifically a software 
+### Software vs. Hardware
+
+When using the pigpio-pwm provider two different types of PWM are available on the Raspberry Pi, specifically a software 
 and a hardware implementation. Both basically offer the same options, but the software
-version cannot achieve precise or particularly fast frequencies.
+version cannot achieve precise or particularly fast frequencies. When using the linuxfs-pwm provider only 
+hardware PWM is available.
+
+### Software PWM limitation
 
 The reason for this is that in the software implementation for each individual cycle 
 (on / off) a new control command must be transmitted from the JVM (Java Virtual Machine) 
@@ -31,6 +36,7 @@ The Raspberry Pi supports 2 hardware based PWM channels. You can access these tw
 via 2 separate sets of 4 GPIO header pins, but still limited to only 2 channels 
 (2 unique PWM timing configurations).
 
+### PWM GPIOs
 ```
 The same PWM channel is available on multiple GPIO. 
 The latest frequency and dutycycle setting will be used by all GPIO which share a PWM channel.
@@ -48,6 +54,7 @@ The GPIO must be one of the following:
 52  PWM channel 0  Compute module only
 53  PWM channel 1  Compute module only
 ```
+The GPIO number in the above chart is supplied as the buildPwmConfig config value ```address```.
 
 As Pi4J is using PiGPIO "under the hood", you can take advantage of the additional 
 PWM functionalities of it. PiGPIO is providing **additional (soft) PWM support to any 
@@ -60,6 +67,74 @@ provided at a software layer, in this case by the PIGPIO library.
 If you need more than 2 PWM pins, use the software PWM functionality, it may be perfectly 
 fine for your application. If they are not good enough, then you will probably need a 
 PWM expander board/chip (controlled by I2C/SPI) to provide additional PWM support.
+
+
+## Linuxfs Provider (linuxfs-pwm)
+
+### Hardware only
+
+Only hardware PWM is supported.
+
+### PWM GPIOs
+
+The user must modify the config.txt file to enable PWM. Raspberry OS Bullseye /boot/config.txt.
+Raspberry OS Bookworm  /boot/firmware/config.txt. To take effect after file modification the 
+Raspberry Pi must be rebooted.
+
+#### Raspberry Pi 4
+```
+
+[all]
+
+dtoverlay=pwm
+ GPIO 18 channel 0
+
+
+[all]
+
+dtoverlay=pwm-2chan
+ GPIO 18 channel 0
+ GPIO 19 channel 1
+ 
+
+[all]
+
+dtoverlay=pwm-2chan,pin=12,func=4,pin2=13,func2=4
+ GPIO 12 channel 0
+ GPIO 13 channel 1
+
+```
+
+#### Raspberry Pi 5
+
+```
+[all]
+
+dtoverlay=pwm
+ GPIO 18 channel 2
+
+
+[all]
+
+dtoverlay=pwm-2chan
+ GPIO 18 channel 2
+ GPIO 19 channel 3
+ 
+ 
+[all]
+
+Dtoverlay=pwm-2chan,pin=12,func=4,pin2=13,func2=4
+
+GPIO 12  channel 0
+GPIO 13  channel 1
+
+```
+
+The statement added to the config.txt file will determine which GPIOs will exhibit the PWM behavior.
+The channel number in the above charts are supplied as the buildPwmConfig config value ```address```.
+
+
+
 
 ## Technical implementation
 
@@ -78,15 +153,18 @@ For the technical control of a component with PWM, two values must be defined:
 
 These two values can be controlled via the Pi4J library and are also used internally by this project.
 
-## Additional Information
-
+### Additional Information
+- [Choosing an I/O Provider](../providers/_index.md)
 - [Wikipedia on PWM](https://en.wikipedia.org/wiki/Pulse-width_modulation)
 - [Wikipedia with audio frequencies](https://en.wikipedia.org/wiki/Piano_key_frequencies)
 
-## Code example
+### Code example
 
-The following example is an extract of the [CrowPi example project](/getting-started/crowpi/) which includes 
+The following example is an extract of the [CrowPi example project](../../examples/crowpi/crowpi-examples.md) which includes 
 a component to control a buzzer with PWM.
+Of importance, this example executes on a Raspberry Pi4, the buildPwmConfig(Context pi4j, int address) example 
+code uses pigpio-pwm and the value passed for 'address' is the BCM pin number.
+
 
 ```java
 public class BuzzerComponent extends Component {
@@ -167,7 +245,7 @@ public class BuzzerComponent extends Component {
     }
 
     /**
-     * Builds a new PWM configuration for the buzzer
+     * Builds a new PWM configuration for the buzzer using pigpio-pwm
      *
      * @param pi4j    Pi4J context
      * @param address BCM pin address
@@ -184,5 +262,23 @@ public class BuzzerComponent extends Component {
             .shutdown(0)
             .build();
     }
+     /**
+      *  Builds a new PWM configuration for the buzzer using linuxfs-pwm
+     * @param pi4j    Pi4J context
+     * @param address Channel
+     * @return PWM configuration
+     */
+  protected static PwmConfig buildPwmConfig(Context pi4j, int address) {
+    return Pwm.newConfigBuilder(pi4j)
+            .id("Channel" + address)
+            .name("Buzzer")
+            .address(address)
+            .pwmType(PwmType.HARDWARE)
+            .provider("linuxfs-pwm")
+            .initial(0)
+            .shutdown(0)
+            .build();
+  }
+
 }
 ```
