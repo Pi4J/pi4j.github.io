@@ -37,12 +37,13 @@ via 2 separate sets of 4 GPIO header pins, but still limited to only 2 channels
 (2 unique PWM timing configurations).
 
 ### PWM GPIOs
-```
-The same PWM channel is available on multiple GPIO. 
+
+The same PWM channel is available on multiple GPIOs.
 The latest frequency and dutycycle setting will be used by all GPIO which share a PWM channel.
 
 The GPIO must be one of the following:
 
+```
 12  PWM channel 0  All models but A and B
 13  PWM channel 1  All models but A and B
 18  PWM channel 0  All models
@@ -71,7 +72,7 @@ PWM expander board/chip (controlled by I2C/SPI) to provide additional PWM suppor
 
 ## Linuxfs Provider (linuxfs-pwm)
 
-As of version 2.5.2 of Pi4J, `linuxfs-pwm` also supports hardware PMW on the Raspberry Pi 5. More information and an example implementation is available in the blog post [PWM Hardware Support on Raspberry Pi5](/blog/2024/20240422_pwm_rpi5/).
+As of version 2.6.0 of Pi4J, `linuxfs-pwm` also supports hardware PMW on the Raspberry Pi 5. More information and an example implementation is available in the blog post [PWM Hardware Support on Raspberry Pi5](/blog/2024/20240422_pwm_rpi5/).
 
 ### Hardware only
 

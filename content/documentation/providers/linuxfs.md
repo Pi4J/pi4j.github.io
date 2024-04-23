@@ -9,7 +9,7 @@ The current implementation of the LinuxFS plugin implements a file based I2C and
 `/sys/class/pwm/pwmchip?` using a `RandomAccessFile` to perform PWM operations.
 
 {{% notice warning %}}
-The Linuxfs provider linuxfs-pwm requires minimum kernel Bullseye 6.21 and Bookworm 6.6.22 !
+The Linuxfs provider linuxfs-pwm requires minimum kernel Bullseye 6.1.21 and Bookworm 6.6.22 !
 {{% /notice %}}
 
 Providers in the LinuxFS plugin:
