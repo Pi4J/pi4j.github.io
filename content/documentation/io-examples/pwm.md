@@ -37,12 +37,13 @@ via 2 separate sets of 4 GPIO header pins, but still limited to only 2 channels
 (2 unique PWM timing configurations).
 
 ### PWM GPIOs
-```
-The same PWM channel is available on multiple GPIO. 
+
+The same PWM channel is available on multiple GPIOs.
 The latest frequency and dutycycle setting will be used by all GPIO which share a PWM channel.
 
 The GPIO must be one of the following:
 
+```
 12  PWM channel 0  All models but A and B
 13  PWM channel 1  All models but A and B
 18  PWM channel 0  All models
@@ -71,70 +72,64 @@ PWM expander board/chip (controlled by I2C/SPI) to provide additional PWM suppor
 
 ## Linuxfs Provider (linuxfs-pwm)
 
+As of version 2.6.0 of Pi4J, `linuxfs-pwm` also supports hardware PMW on the Raspberry Pi 5. More information and an example implementation is available in the blog post [PWM Hardware Support on Raspberry Pi5](/blog/2024/20240422_pwm_rpi5/).
+
 ### Hardware only
 
 Only hardware PWM is supported.
 
 ### PWM GPIOs
 
-The user must modify the config.txt file to enable PWM. Raspberry OS Bullseye /boot/config.txt.
-Raspberry OS Bookworm  /boot/firmware/config.txt. To take effect after file modification the 
-Raspberry Pi must be rebooted.
+The user must modify `config.txt` to enable PWM. 
+
+* Raspberry OS Bullseye: `/boot/config.txt`
+* Raspberry OS Bookworm  `/boot/firmware/config.txt` 
+ 
+To take effect after file modification the Raspberry Pi must be rebooted.
 
 #### Raspberry Pi 4
-```
 
+Use one of the following configurations:
+
+```text
 [all]
-
 dtoverlay=pwm
- GPIO 18 channel 0
-
+# GPIO 18 = channel 0
 
 [all]
-
 dtoverlay=pwm-2chan
- GPIO 18 channel 0
- GPIO 19 channel 1
- 
+# GPIO 18 = channel 0
+# GPIO 19 = channel 1
 
 [all]
-
 dtoverlay=pwm-2chan,pin=12,func=4,pin2=13,func2=4
- GPIO 12 channel 0
- GPIO 13 channel 1
+# GPIO 12 = channel 0
+# GPIO 13 = channel 1
 
 ```
 
 #### Raspberry Pi 5
 
-```
-[all]
+Use one of the following configurations:
 
+```text
+[all]
 dtoverlay=pwm
- GPIO 18 channel 2
-
+# GPIO 18 = channel 2
 
 [all]
-
 dtoverlay=pwm-2chan
- GPIO 18 channel 2
- GPIO 19 channel 3
- 
+# GPIO 18 = channel 2
+# GPIO 19 = channel 3
  
 [all]
-
 Dtoverlay=pwm-2chan,pin=12,func=4,pin2=13,func2=4
-
-GPIO 12  channel 0
-GPIO 13  channel 1
-
+# GPIO 12 = channel 0
+# GPIO 13 = channel 1
 ```
 
-The statement added to the config.txt file will determine which GPIOs will exhibit the PWM behavior.
-The channel number in the above charts are supplied as the buildPwmConfig config value ```address```.
-
-
-
+The statement added to `config.txt` will determine which GPIOs will exhibit the PWM behavior.
+The channel number in the above charts are supplied as the `buildPwmConfig` value for the `address`.
 
 ## Technical implementation
 

@@ -1,10 +1,10 @@
 ---
 title: GpioD Provider
 weight: 91
-tags: ["GpioD"]
+tags: ["GpioD", "Digital Input", "Digital Output"]
 ---
 
-The GpioD plugin provider was added in Pi4J 2.5.0 to be able to support the Raspberry Pi 5 with the new [GPIO chip RP1](https://www.raspberrypi.com/documentation/microcontrollers/rp1.html). 
+The GpioD plugin provider was added in Pi4J 2.5.0 to be able to support the Raspberry Pi 5 with the new [GPIO chip RP1](https://www.raspberrypi.com/documentation/microcontrollers/rp1.html).
 
 Providers in the GpioD plugin:
 
@@ -12,7 +12,7 @@ Providers in the GpioD plugin:
 * gpiod-digital-output
 
 {{% notice warning %}}
-The GpioD Provider needs a recent Raspberry Pi OS version (Bookworm)!
+The GpioD provider requires minimum kernel Bullseye 6.1.21 and Bookworm 6.6.22 !
 {{% /notice %}}
 
 If you get an error at startup with the following content, your OS is outdated for the GpioD implementation used in Pi4J:

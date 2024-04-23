@@ -1,7 +1,7 @@
 ---
 title: PiGpio Provider
 weight: 95
-tags: ["PiGpio"]
+tags: ["PiGpio", "PWM", "I2C", "SPI", "Serial", "Digital Input", "Digital Output"]
 ---
 
 The current implementation of the PiGpio exposes the GPIO functions available on the Raspberry Pi.
