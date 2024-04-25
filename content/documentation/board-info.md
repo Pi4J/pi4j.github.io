@@ -19,7 +19,7 @@ The board info is used in some of the plugins to set the correct priority, based
 
 ## Demo Use on api.pi4j.com
 
-The new `BoardInfoHelper` class and the related enums and methods is used as the basis for the website [api.pi4j.com](https://api.pi4j.com) that visualizes all the info defined inside the library, like board info, header pins, type of pins, etc. This website runs on a Raspberry Pi board, so the [System Information screen](https://api.pi4j.com/system-information) show the info about that board using this new class.
+The new `BoardInfoHelper` class and the related enums and methods are used as the basis for the website [api.pi4j.com](https://api.pi4j.com) that visualizes all the info defined inside the library, like board info, header pins, type of pins, etc. This website runs on a Raspberry Pi board, so the [System Information screen](https://api.pi4j.com/system-information) show the info about that board using this new class.
 
 {{< gallery >}}
 {{< figure link="/assets/documentation/api-boards.png" caption="List of boards defined in the library" caption-position="center" caption-effect="fade" >}}
