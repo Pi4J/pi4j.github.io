@@ -6,7 +6,7 @@ tags: ["Interview", "Pi4J"]
 
 2024-04-25, by Frank Delporte
 
-**Tom Aarts** starting contributing to the Pi4J project when he did his first commit in the [pi4j-example-devices repository](https://github.com/Pi4J/pi4j-example-devices/). At this moment, you can find example implementations for a long list of devices (see screenshot below), using V2 of Pi4J. While creating these implementations he found and fixed some missing pieces and bugs in the core library. See, for instance, this [blog post about the ongoing PWM improvements for the Raspberry Pi 5](https://pi4j.com/blog/2024/20240423_pwm_rpi5/). Furthermore, you can find Tom often in assisting users who [filed a Pi4J V2 issue](https://github.com/Pi4J/pi4j-v2/issues) or [started a discussion](https://github.com/Pi4J/pi4j-v2/discussions).
+**Tom Aarts** started contributing to the Pi4J project when he did his first commit in the [pi4j-example-devices repository](https://github.com/Pi4J/pi4j-example-devices/). At this moment, you can find example implementations for a long list of devices (see screenshot below), using V2 of Pi4J. While creating these implementations he found and fixed some missing pieces and bugs in the core library. See, for instance, this [blog post about the ongoing PWM improvements for the Raspberry Pi 5](https://pi4j.com/blog/2024/20240423_pwm_rpi5/). Furthermore, you can find Tom often in assisting users who [filed a Pi4J V2 issue](https://github.com/Pi4J/pi4j-v2/issues) or [started a discussion](https://github.com/Pi4J/pi4j-v2/discussions).
 
 Let's learn more about him...
 
