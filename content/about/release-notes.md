@@ -5,9 +5,33 @@ weight: 40
 
 All releases of Pi4J V.2 are listed on [github.com/Pi4J/pi4j-v2/releases](https://github.com/Pi4J/pi4j-v2/releases).
 
+## 2024-04-XX - V2.6.0
+
+* New hardware PWM provider added to the GpioD plugin, see: 
+  * [Blog: PWM Hardware Support on RPi5](https://pi4j.com/blog/2024/20240423_pwm_rpi5/).
+  * [Documentation: I/O Examples: Pulse Width Modulation (PWM)](https://pi4j.com/documentation/io-examples/pwm/).
+* Various improvements in the I2C implementation in both core and plugins, see:
+  * [Blog: Ongoing I2C Improvements](https://pi4j.com/blog/2024/20240418_i2c_improvements/).
+* Dependency bumps in the pom file, see [pull request #337](https://github.com/Pi4J/pi4j-v2/pull/337).
+* New BoardInfo included to detect type of Raspberry Pi board, providing a lot of info about the board, SoC, pins, etc., see:
+  * [Documentation: Using Board Info](https://pi4j.com/documentation/board-info/).
+  * Example implementation and visualization on [api.pi4j.com](https://api.pi4j.com/).
+* Fix for "IOBase constructor do not update the fields id, name & description".
+  * [Issue #257](https://github.com/Pi4J/pi4j-v2/issues/257): IOAlreadyExistsException when reopening Serial-connection.
+  * [Issue #244](https://github.com/Pi4J/pi4j-v2/issues/244): Multiple SPI throws IOAlreadyExistsException.
+* Several code improvements and clean-up.
+
+Thanks to contributions by [@fusetim](https://github.com/fusetim), [@taartspi](https://github.com/taartspi), [@eitch](https://github.com/eitch), [@fdelporte](https://github.com/fdelporte).
+
+Make sure to also read the interviews with [Robert von Burg](https://pi4j.com/blog/2024/20240419_interview_robert_von_burg/) and [Tom Aarts](https://pi4j.com/blog/2024/20240425_interview_tom_aarts/).
+
+All changes: https://github.com/Pi4J/pi4j-v2/compare/2.5.1...2.6.0
+
 ## 2024-03-18 - V2.5.1
 
 Sorry! Because of a configuration error, the wrong native code is included in 2.5.0 for the new GpioD Provider. But [thanks to the lightning fast action](https://github.com/Pi4J/pi4j-v2/commit/6ac458ec2d9b38a20b2195f4ecc03a65fbdebff7) of [Robert von Burg](https://github.com/eitch) we have a fixed version for you to enjoy :-)
+
+All changes: https://github.com/Pi4J/pi4j-v2/compare/2.5.0...2.5.1
 
 ## 2024-03-18 - V2.5.0
 
