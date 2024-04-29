@@ -5,7 +5,7 @@ weight: 40
 
 All releases of Pi4J V.2 are listed on [github.com/Pi4J/pi4j-v2/releases](https://github.com/Pi4J/pi4j-v2/releases).
 
-## 2024-04-XX - V2.6.0
+## 2024-04-29 - V2.6.0
 
 * New hardware PWM provider added to the GpioD plugin, see: 
   * [Blog: PWM Hardware Support on RPi5](https://pi4j.com/blog/2024/20240423_pwm_rpi5/).
