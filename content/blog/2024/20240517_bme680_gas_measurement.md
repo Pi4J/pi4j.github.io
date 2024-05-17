@@ -1,5 +1,5 @@
 ---
-title: "Gas measurement with Bosch sensor"
+title: "Bosch sensor gas measurement"
 date: 2024-04-25
 tags: ["BME280", "BMP280", "BME680", "BME688"]
 ---
