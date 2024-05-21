@@ -41,3 +41,8 @@ _Integrating BSEC libraries poses a few challenges:_
 _I'm looking into developing a Java (or Groovy) wrapper for integrating BSEC 2.4.0.0 into my app. Should I be unable to wrap it in Java, I will likely implement a call to external C or Python code (disgusting but likely functional, provided that a solution to run on 64-bit Raspbian exists)._
 
 _BME68X sensors give exceptional results for their price. I advise avoiding messing with air quality if you don't need it; if you do, you shall find a way to integrate BSEC libraries._
+
+## Bosch software
+
+* [Download API and Bosch Sensortec Environmental Cluster (BSEC) Software ](https://www.bosch-sensortec.com/software-tools/software/bme688-software/#Library)
+* [BME680 Software](https://www.bosch-sensortec.com/software-tools/software/bme680-software-bsec/)
