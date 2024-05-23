@@ -2,7 +2,7 @@ baseURL = "https://pi4j.com/"
 languageCode = "en-us"
 title = "Pi4J"
 theme = "hugo-theme-learn"
-publishDir = "docs"
+publishDir = "public"
 
 refLinksErrorLevel = "WARNING"
 

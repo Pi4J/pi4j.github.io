@@ -13,7 +13,6 @@ This project by Tom Aarts (published on May 15, 2024), is a binary clock created
   <source src="/assets/featured-projects/binaryclock/binaryclock.mp4" />
 </video>
 
-
 Design document describing the LED  PCF8575 connections, and the Java implementation that drives the clock LEDs.
 Note: there are two PCF8575 IC used in this design.  This IC is used as it can provide the current flow to
 directly control the LED.   Alternative IC like the MCP23017 with less current capability would require a NPN
@@ -45,13 +44,16 @@ repeats.
 # Parts
 
 ## AITIAO  PCF8575  16 IO Expander
+
 Since there are 20 LEDs, two ICs are required. In my case these parts I purchased do not match their documentation.  My chip has solder bridges for all three address bits, A0 A1 A2.  Also their description of a solder bridge across VCC-VDD appears to be backwards.  I think as  cautionary tale, I soldered the ICs down and lost access to their VCC-VDD bridge and couldn’t experiment.   
 This companies chip functions correctly with the Chip VCC and LED anode voltage equal.
 
 ## LEDs
+
 Cheapos.
 
 ## Prototype board
+
 Half Size BreadBoard.  You can see in the chart ‘Overall LED Connections’ I cut paths on the planar so the LEDs
 could be placed close to each other.  You can buy larger BreadBoards from ElectroCookie, called snappable.
 On these boards each row, ie: A B C …  has three solder lands and each letters trace are not connected to the
@@ -63,7 +65,7 @@ next letter, so no trace cutting and there is more area for components and solde
 
 ![PCF8575 pin assignment](/assets/featured-projects/binaryclock/pcf8575_pin_assignment.png)
 
-# Pi Connectins
+# Pi Connections
 
 The PCF8575 ICs and the Diode anodes connect to the Pi 3.3v
 The PCF8575 ICs connect to the Pi Ground.
@@ -74,7 +76,6 @@ The PCF8575 ICs connect to the Pi SDA and SCL (I2C).
 The Java project uses Pi4J V2.6.0 and you can find the sources in this [GitHub repository](https://github.com/taartspi/pi4j-binary-clock)
 
 Developed using pi4j 2.6.0-SNAPSHOT.
-
 
 # Completed project
 
