@@ -1,0 +1,5 @@
+#########################################
+# THE Pi4J PROJECT (V2) - APT REPOSITORY
+#########################################
+deb [arch=all] https://pi4j.com/download v2 stable
+#deb [arch=all] https://pi4j.com/download v2 stable testing
