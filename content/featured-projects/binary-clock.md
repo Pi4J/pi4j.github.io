@@ -1,6 +1,7 @@
 ---
 title: 'Binary Clock'
 weight: 54
+tags: ["LED", "PCF8575", "MCP23008", "MCP23017"]
 ---
 
 {{% notice tip %}}
