@@ -1,6 +1,7 @@
 ---
 title: Community Implementations
 weight: 100
+tags: ["1602A", "ADS1256", "BMP280", "DAC8552", "DHT22", "IS31FL3731", "MCP23008", "MCP23017", "MCP3008", "MCP4725", "SN74HC595", "TCA9548", "VL53L0X"]
 ---
 
 On this page we want to keep a list of projects which contain implementation code for specific devices using the Pi4J 
