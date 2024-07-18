@@ -135,16 +135,16 @@ To run this example, we need a runtime that has JavaFX included. At this moment,
 ```bash
 $ curl -s "https://get.sdkman.io" | bash
 $ source "$HOME/.sdkman/bin/sdkman-init.sh"
-$ sdk install java 20.0.2.fx-librca 
+$ sdk install java 22.0.1.fx-zulu
 
 # Or if you already ran the install
-$ sdk use java 20.0.2.fx-librca 
-Using java version 20.0.2.fx-librca in this shell.
+$ sdk use java 22.0.1.fx-zulu
+Using java version 22.0.1.fx-zulu in this shell.
 
 $ java -version
-openjdk version "20.0.2" 2023-07-18
-OpenJDK Runtime Environment (build 20.0.2+10)
-OpenJDK 64-Bit Server VM (build 20.0.2+10, mixed mode)
+openjdk version "22.0.1" 2024-04-16
+OpenJDK Runtime Environment Zulu22.30+13-CA (build 22.0.1+8)
+OpenJDK 64-Bit Server VM Zulu22.30+13-CA (build 22.0.1+8, mixed mode, sharing)
 ```
 
 No `sudo` is needed for serial communication with the `jSerialComm` library, so the application can be started with:
