@@ -5,6 +5,15 @@ weight: 40
 
 All releases of Pi4J V.2 are listed on [github.com/Pi4J/pi4j-v2/releases](https://github.com/Pi4J/pi4j-v2/releases).
 
+## 2024-07-29 - V2.6.1
+
+This is a minor bug fix release to allow a smoother integration in a Spring Boot Starter by allowing to run on PC for testing without initialization errors and with reduced logging of the I2C Mock plugin.
+
+* [Issue #354](https://github.com/Pi4J/pi4j-v2/issues/354): Gracefully handle UnsatisfiedLinkError on newAutoContext when not running on a Raspberry Pi, for instance, when testing on Windows or macOS.
+* Clean up of logs in `MockI2C.java`.
+
+All changes: https://github.com/Pi4J/pi4j-v2/compare/2.6.0...2.6.1
+
 ## 2024-04-29 - V2.6.0
 
 * New hardware PWM provider added to the GpioD plugin, see: 
