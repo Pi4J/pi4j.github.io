@@ -42,7 +42,8 @@ Current supported providers:
     * 03/22/2024 Does not support Raspberry Pi 5
 
 Possible future providers:
-
+* Pi5 SPI, under construction. 
+* Pi5 Serial. At present the intent is no Pi4j Serial provider on Pi5. As an alternative see [jSerialComm](http://fazecast.github.io/jSerialComm/).
 * RemoteProvider to control the I/O from a remote device e.g. through websockets
 
 Pi4J 2.5 Provider not found
