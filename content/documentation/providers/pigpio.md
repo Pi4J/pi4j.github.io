@@ -4,7 +4,14 @@ weight: 95
 tags: ["PiGpio", "PWM", "I2C", "SPI", "Serial", "Digital Input", "Digital Output"]
 ---
 
-The current implementation of the PiGpio exposes the GPIO functions available on the Raspberry Pi.
+The current implementation of the PiGpio exposes the GPIO functions available on the Raspberry Pi (see Note Pi5 below). 
+This implementation is developed/supported by a team separate of Pi4j.  Pi4j is a consumer of that PiGpio work.
+
+```shell
+Pi5  At the present time the PiGpio implementation does not support the new Pi5 board. 
+- This new Pi5 RP1 chip will require a large development effort. There is no known plan for this develoment.   
+```
+
 
 Providers in the PiGpio plugin:
 
