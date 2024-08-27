@@ -35,6 +35,29 @@ be found in the relevant data sheets. Due to the shortage of addresses,
 there is also a variant with a 10-bit address space. Up to 1136 nodes are 
 possible, and the protocol is compatible with the smaller 7-bit address space.
 
+Command line tool to output a list of installed busses:
+```
+root@rp5:~# i2cdetect -l
+i2c-1	i2c       	Synopsys DesignWare I2C adapter 	I2C adapter
+i2c-11	i2c       	107d508200.i2c                  	I2C adapter
+i2c-12	i2c       	107d508280.i2c                  	I2C adapter
+```
+
+Command line tool to immediately scan the standard addresses on I2C bus 1 (i2c-1)
+```
+root@rp5:~# i2cdetect -y 1
+     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+00:                         -- -- -- -- -- -- -- -- 
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+30: -- -- -- -- -- -- 36 -- -- -- -- -- -- -- -- -- 
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+70: -- -- -- -- -- -- -- --
+```
+1 device found with address of 0x36.
+
 ## Transfer rates
 
 | Mode | Max. transfer rate | Direction |
