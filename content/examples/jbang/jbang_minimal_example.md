@@ -102,7 +102,7 @@ Because this example uses the PiGpio plugin, we need to execute it with `sudo`:
 Without the need of any further configuration, installation, dependency download, or compiling, we should now be able to run this code with:
 
 ```shell
-$ sudo `which jbang` JBangPi4JExample.java
+$  sudo `which jbang` Pi4JMinimalExample.java
 
 Downloading JDK 11. Be patient, this can take several minutes...
 [main] INFO com.pi4j.Pi4J - New auto context
