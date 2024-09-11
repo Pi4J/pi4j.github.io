@@ -1,9 +1,81 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Project source structure on Pi4J</title><link>https://pi4j.com/architecture/about-the-code/</link><description>Recent content in Project source structure on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://pi4j.com/architecture/about-the-code/index.xml" rel="self" type="application/rss+xml"/><item><title>Download/Install</title><link>https://pi4j.com/architecture/about-the-code/download-sources/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/architecture/about-the-code/download-sources/</guid><description>You can build the project from sources available on GitHub.
-Pi4J V.2 Checkout the project pi4j-v2 Select JDK11, e.g. sdk use java 11.0.16.1-zulu In the root of pi4j-v2 run mvn clean install [INFO] Executed tasks [INFO] ------------------------------------------------------------------------ [INFO] Reactor Summary for Pi4J :: Parent POM 2.0-SNAPSHOT: [INFO] [INFO] Pi4J :: Parent POM ................................. SUCCESS [ 0.972 s] [INFO] Pi4J :: DOCKER :: Docker Parent POM .............. SUCCESS [ 0.290 s] [INFO] Pi4J :: TESTING :: Arduino Test Harness .</description></item><item><title>Build Instructions</title><link>https://pi4j.com/architecture/about-the-code/build-instructions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/architecture/about-the-code/build-instructions/</guid><description>Building the Pi4J Project is simple and requires minimal effort. Pi4J is primarily built using Apache Maven and Java 11. Pi4J can be built directly on your host computer or inside a Docker container where all toolchains and dependencies are already installed, configuired and cached.
-If you wish to build using a Docker container, please skip ahead to the Building with Docker topic.
-Prerequsites In order to build Pi4J, the host system must have the following toolchains pre-installed.</description></item><item><title>Maven settings</title><link>https://pi4j.com/architecture/about-the-code/maven-settings/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/architecture/about-the-code/maven-settings/</guid><description>To simplify development but not commit sensitive information, you can add personal or PC-specific settings in the Maven settings.xml file. This file is stored or needs to be created in the &amp;ldquo;.m2&amp;rdquo; directory in your home directory:
-Windows: C:\Users\YOUR_NAME.m2 Linux: /home/YOUR_NAME/.m2 Mac: /Users/YOUR_NAME/.m2 For more info see this article on Baeldung.
-This is an example settings file, including settings for compiling of Pi4J and credentials to upload the generated code to a Raspberry Pi.</description></item><item><title>Code styling</title><link>https://pi4j.com/architecture/about-the-code/code-styling/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/architecture/about-the-code/code-styling/</guid><description>To prevent unnecessary code (tabs versus spaces, number of characters per line&amp;hellip;) we have defined an editorconfig for IntelliJ IDEA. You can find more info here about its use.
-Some tips to keep the code clean and readable:
-Short methods with a clear name Use SonarLint to get improvement tips while code Use shortcuts CTRL+ALT+L: Reformat code CTRL+ALT+O: Optimize imports</description></item><item><title>Hardware testing</title><link>https://pi4j.com/architecture/about-the-code/hardware-testing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/architecture/about-the-code/hardware-testing/</guid><description>This is an experimental project which will need a lot of love&amp;hellip; The new Raspberry Pi Pico with a lot of GPIOs for a very low price, seems even to be a better fit for this project compared to the Arduino Due&amp;hellip; To be further investigated!
-To minimize the required time and efforts to test a new release, V.2 aims to include an automated test which performs I/O testing on each I/O interface on each model of RPi.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Project source structure on Pi4J</title><link>https://pi4j.com/architecture/about-the-code/</link><description>Recent content in Project source structure on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://pi4j.com/architecture/about-the-code/index.xml" rel="self" type="application/rss+xml"/><item><title>Download/Install</title><link>https://pi4j.com/architecture/about-the-code/download-sources/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/architecture/about-the-code/download-sources/</guid><description>&lt;p>You can build the project from sources available on &lt;a href="https://github.com/Pi4J/pi4j-v2" target="_blank" rel="noopener">GitHub&lt;/a>.&lt;/p>
+&lt;h2 id="pi4j-v2">Pi4J V.2&lt;/h2>
+&lt;ul>
+&lt;li>Checkout the project &lt;a href="https://github.com/Pi4J/pi4j-v2" target="_blank" rel="noopener">pi4j-v2&lt;/a>&lt;/li>
+&lt;li>Select JDK11, e.g. &lt;code>sdk use java 11.0.16.1-zulu&lt;/code>&lt;/li>
+&lt;li>In the root of pi4j-v2 run &lt;code>mvn clean install&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>[INFO] Executed tasks
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Pi4J :: Parent POM 2.0-SNAPSHOT:
+[INFO] 
+[INFO] Pi4J :: Parent POM ................................. SUCCESS [ 0.972 s]
+[INFO] Pi4J :: DOCKER :: Docker Parent POM .............. SUCCESS [ 0.290 s]
+[INFO] Pi4J :: TESTING :: Arduino Test Harness ........... SUCCESS [ 1.832 s]
+[INFO] Pi4J :: LIBRARY :: Libraries Parent POM ........... SUCCESS [ 0.064 s]
+[INFO] Pi4J :: LIBRARY :: JNI Wrapper for PIGPIO Library . SUCCESS [ 6.615 s]
+[INFO] Pi4J :: LIBRARY :: Java Library (CORE) ............ SUCCESS [ 6.260 s]
+[INFO] Pi4J :: PLUGIN :: Plugins Parent POM ............. SUCCESS [ 0.061 s]
+[INFO] Pi4J :: PLUGIN :: Mock Platform &amp;amp; Providers ...... SUCCESS [ 0.683 s]
+[INFO] Pi4J :: PLUGIN :: PIGPIO I/O Providers ........... SUCCESS [ 2.084 s]
+[INFO] Pi4J :: PLUGIN :: RaspberryPi Platform &amp;amp; Providers SUCCESS [ 0.447 s]
+[INFO] Pi4J :: TESTING :: Unit/Integration Tests ......... SUCCESS [ 2.350 s]
+[INFO] Pi4J :: EXAMPLE :: Sample Code .................... SUCCESS [ 0.632 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+&lt;/code>&lt;/pre>&lt;h2 id="example-application">Example application&lt;/h2>
+&lt;h3 id="building-the-example-application">Building the example application&lt;/h3>
+&lt;ul>
+&lt;li>Checkout the project &lt;a href="https://github.com/Pi4J/pi4j-demo-telegraph" target="_blank" rel="noopener">Pi4J V.2 - Telegraph Demo Project&lt;/a>&lt;/li>
+&lt;li>Select JDK11, e.g. &lt;code>sdk use java 11.0.16.1-zulu&lt;/code>&lt;/li>
+&lt;li>In the root of pi4j-demo-telegraph run &lt;code>mvn clean install&lt;/code>&lt;/li>
+&lt;li>Check the directory target\distribution &amp;ndash;&amp;gt; this contains all the files to be copied to the Raspberry Pi&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>/target/distribution/pi4j-core-2.0-SNAPSHOT.jar
+/target/distribution/pi4j-demo-telegraph-1.0-SNAPSHOT.jar
+/target/distribution/pi4j-library-pigpio-2.0-SNAPSHOT.jar
+/target/distribution/pi4j-plugin-pigpio-2.0-SNAPSHOT.jar
+/target/distribution/pi4j-plugin-raspberrypi-2.0-SNAPSHOT.jar
+/target/distribution/run.sh
+/target/distribution/slf4j-api-2.0.0-alpha0.jar
+/target/distribution/slf4j-simple-2.0.0-alpha0.jar
+&lt;/code>&lt;/pre>&lt;h3 id="running-on-the-raspberry-pi">Running on the Raspberry Pi&lt;/h3>
+&lt;ul>
+&lt;li>After copying all files from target/distribution to a Raspberry Pi, start &lt;code>./run.sh&lt;/code>&lt;/li>
+&lt;/ul></description></item><item><title>Build Instructions</title><link>https://pi4j.com/architecture/about-the-code/build-instructions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/architecture/about-the-code/build-instructions/</guid><description>&lt;p>Building the Pi4J Project is simple and requires minimal effort. Pi4J is primarily built using Apache Maven and Java 11.
+Pi4J can be built directly on your host computer or inside a Docker container where all toolchains and dependencies are
+already installed, configuired and cached.&lt;/p>
+
+&lt;div class="notices note" >&lt;p>If you wish to build using a Docker container, please skip ahead to the
+&lt;a href="#building-with-docker">&lt;em>Building with Docker&lt;/em>&lt;/a> topic.&lt;/p>
+&lt;/div>
+
+&lt;hr>
+&lt;h3 id="prerequsites">Prerequsites&lt;/h3>
+&lt;p>In order to build Pi4J, the host system must have the following toolchains pre-installed.&lt;/p></description></item><item><title>Maven settings</title><link>https://pi4j.com/architecture/about-the-code/maven-settings/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/architecture/about-the-code/maven-settings/</guid><description>&lt;p>To simplify development but not commit sensitive information, you can add personal or PC-specific settings in the Maven settings.xml file. This file is stored or needs to be created in the &amp;ldquo;.m2&amp;rdquo; directory in your home directory:&lt;/p>
+&lt;ul>
+&lt;li>Windows: C:\Users\YOUR_NAME.m2&lt;/li>
+&lt;li>Linux: /home/YOUR_NAME/.m2&lt;/li>
+&lt;li>Mac: /Users/YOUR_NAME/.m2&lt;/li>
+&lt;/ul>
+&lt;p>For more info see &lt;a href="https://www.baeldung.com/maven-local-repository" target="_blank" rel="noopener">this article on Baeldung&lt;/a>.&lt;/p>
+&lt;p>This is an example settings file, including settings for compiling of Pi4J and credentials to upload the generated code to a Raspberry Pi.&lt;/p></description></item><item><title>Code styling</title><link>https://pi4j.com/architecture/about-the-code/code-styling/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/architecture/about-the-code/code-styling/</guid><description>&lt;p>To prevent unnecessary code (tabs versus spaces, number of characters per line&amp;hellip;) we have defined an &lt;a href="https://github.com/Pi4J/pi4j-v2/blob/master/.editorconfig" target="_blank" rel="noopener">editorconfig&lt;/a> for IntelliJ IDEA. You can find &lt;a href="https://www.jetbrains.com/help/idea/configuring-code-style.html" target="_blank" rel="noopener">more info here&lt;/a> about its use.&lt;/p>
+&lt;p>Some tips to keep the code clean and readable:&lt;/p>
+&lt;ul>
+&lt;li>Short methods with a clear name&lt;/li>
+&lt;li>Use SonarLint to get improvement tips while code&lt;/li>
+&lt;li>Use shortcuts
+&lt;ul>
+&lt;li>CTRL+ALT+L: Reformat code&lt;/li>
+&lt;li>CTRL+ALT+O: Optimize imports&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item><item><title>Hardware testing</title><link>https://pi4j.com/architecture/about-the-code/hardware-testing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/architecture/about-the-code/hardware-testing/</guid><description>&lt;div class="notices warning" >&lt;p>This is an experimental project which will need a lot of love&amp;hellip; The new Raspberry
+Pi Pico with a lot of GPIOs for a very low price, seems even to be a better fit for this project compared to the
+Arduino Due&amp;hellip; To be further investigated!&lt;/p>
+&lt;/div>
+
+&lt;p>To minimize the required time and efforts to test a new release, V.2 aims to include an automated test which performs
+I/O testing on each I/O interface on each model of RPi. Ideally this would happen as part of the unit testing sequence
+for each code commit or at least as part of the release cycle.&lt;/p></description></item></channel></rss>

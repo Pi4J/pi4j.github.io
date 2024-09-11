@@ -1,8 +1,53 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>I2C on Pi4J</title><link>https://pi4j.com/tags/i2c/</link><description>Recent content in I2C on Pi4J</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 18 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://pi4j.com/tags/i2c/index.xml" rel="self" type="application/rss+xml"/><item><title>LinuxFS Provider</title><link>https://pi4j.com/documentation/providers/linuxfs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/providers/linuxfs/</guid><description>The current implementation of the LinuxFS plugin implements a file based I2C and PWM provider. The file based I2C provider opens /dev/i2c-1 using a RandomAccessFile to perform I2C reads and writes. The file based PWM provider opens /sys/class/pwm/pwmchip? using a RandomAccessFile to perform PWM operations.
-The Linuxfs provider linuxfs-pwm requires minimum kernel Bullseye 6.1.21 and Bookworm 6.6.22 !
-Providers in the LinuxFS plugin:
-linuxfs-i2c linuxfs-pwm Under construction linuxfs-digital-input linuxfs-digital-output To use the LinuxFS provider include the following dependencies:</description></item><item><title>PiGpio Provider</title><link>https://pi4j.com/documentation/providers/pigpio/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/providers/pigpio/</guid><description>The current implementation of the PiGpio exposes the GPIO functions available on the Raspberry Pi (see Note Pi5 below). This implementation is developed/supported by a team separate of Pi4j. Pi4j is a consumer of that PiGpio work.
-Pi5 At the present time the PiGpio implementation does not support the new Pi5 board. - This new Pi5 RP1 chip will require a large development effort. There is no known plan for this develoment.</description></item><item><title>Inter-Integrated Circuit (I²C)</title><link>https://pi4j.com/documentation/io-examples/i2c/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/io-examples/i2c/</guid><description>What is it? I²C (spoken as I-Squared-C) is a bus originally invented by Philips. It is designed as a classic master-slave bus. A data transfer is always i nitiated by a master. It can also be set up in a multi-master system. I²C is connected via two signal lines (data line and clock line). The transmission rate of the bus can be between 0.1 Mbit/s up to 3.4 Mbit/s depending on the clock rate.</description></item><item><title>I²C Clock Stretching</title><link>https://pi4j.com/documentation/io-examples/i2c/clock-stretching/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/io-examples/i2c/clock-stretching/</guid><description>Clock Stretching Please be aware there are some hardware issues when using the Raspberry Pi with devices that expect to be able to use clock stretching, for more info see &amp;ldquo;Adventures in I2C: clock stretching on the Raspberry Pi&amp;rdquo; and &amp;ldquo;I2C stretch bug. Been fixed or not?&amp;rdquo;.
-Clock stretching in I2C allows a slave device to halt the master before a more data is sent. This is often the case when the slave device writes to an EEPROM etc.</description></item><item><title>Ongoing I2C Improvements</title><link>https://pi4j.com/blog/2024/20240418_i2c_improvements/</link><pubDate>Thu, 18 Apr 2024 00:00:00 +0000</pubDate><guid>https://pi4j.com/blog/2024/20240418_i2c_improvements/</guid><description>2024-04-17, by Frank Delporte
-Robert von Burg is working on improvements of the I2C implementation in Pi4J in preparation for the next release. The changes are in pull request #351. It&amp;rsquo;s still work-in-progress but will bring these improvements:
-New I2C.execute(Callable) method to allow to atomically execute multiple I2C calls in a thread in a safe way. New I2C.writeRead(byte[], byte[]) method to atomically perform a write, immediately followed by a read on the I2C bus.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>I2C on Pi4J</title><link>https://pi4j.com/tags/i2c/</link><description>Recent content in I2C on Pi4J</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 18 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://pi4j.com/tags/i2c/index.xml" rel="self" type="application/rss+xml"/><item><title>LinuxFS Provider</title><link>https://pi4j.com/documentation/providers/linuxfs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/providers/linuxfs/</guid><description>&lt;p>The current implementation of the LinuxFS plugin implements a file based I2C and PWM provider. The file based I2C provider opens
+&lt;code>/dev/i2c-1&lt;/code> using a &lt;code>RandomAccessFile&lt;/code> to perform I2C reads and writes. The file based PWM provider opens
+&lt;code>/sys/class/pwm/pwmchip?&lt;/code> using a &lt;code>RandomAccessFile&lt;/code> to perform PWM operations.&lt;/p>
+
+&lt;div class="notices warning" >&lt;p>The Linuxfs provider linuxfs-pwm requires minimum kernel Bullseye 6.1.21 and Bookworm 6.6.22 !&lt;/p>
+&lt;/div>
+
+&lt;p>Providers in the LinuxFS plugin:&lt;/p>
+&lt;ul>
+&lt;li>linuxfs-i2c&lt;/li>
+&lt;li>linuxfs-pwm&lt;/li>
+&lt;li>Under construction
+&lt;ul>
+&lt;li>linuxfs-digital-input&lt;/li>
+&lt;li>linuxfs-digital-output&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>To use the LinuxFS provider include the following dependencies:&lt;/p></description></item><item><title>PiGpio Provider</title><link>https://pi4j.com/documentation/providers/pigpio/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/providers/pigpio/</guid><description>&lt;p>The current implementation of the PiGpio exposes the GPIO functions available on the Raspberry Pi (see Note Pi5 below).
+This implementation is developed/supported by a team separate of Pi4j. Pi4j is a consumer of that PiGpio work.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>Pi5 At the present time the PiGpio implementation does not support the new Pi5 board. 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>- This new Pi5 RP1 chip will require a large development effort. There is no known plan &lt;span style="color:#66d9ef">for&lt;/span> this develoment. 
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Providers in the PiGpio plugin:&lt;/p></description></item><item><title>Inter-Integrated Circuit (I²C)</title><link>https://pi4j.com/documentation/io-examples/i2c/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/io-examples/i2c/</guid><description>&lt;h2 id="what-is-it">What is it?&lt;/h2>
+&lt;p>I²C (spoken as I-Squared-C) is a bus originally invented by Philips.
+It is designed as a classic master-slave bus. A data transfer is always i
+nitiated by a master. It can also be set up in a multi-master system.
+I²C is connected via two signal lines (data line and clock line).
+The transmission rate of the bus can be between 0.1 Mbit/s up to 3.4 Mbit/s
+depending on the clock rate. If only a unidirectional connection is required,
+even 5.0 Mbit/s would be possible. It should be noted: the higher the clock rate,
+the more susceptible to failure the overall system becomes. The low operating
+voltage of only 3.3V does not contribute to interference resistance either.&lt;/p></description></item><item><title>I²C Clock Stretching</title><link>https://pi4j.com/documentation/io-examples/i2c/clock-stretching/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/io-examples/i2c/clock-stretching/</guid><description>&lt;h2 id="clock-stretching">Clock Stretching&lt;/h2>
+
+&lt;div class="notices warning" >&lt;p>Please be aware there are some hardware issues when using
+the Raspberry Pi with devices that expect to be able to use clock stretching,
+for more info see
+&lt;a href="https://www.recantha.co.uk/blog/?p=19880" target="_blank" rel="noopener">&amp;ldquo;Adventures in I2C: clock stretching on the Raspberry Pi&amp;rdquo;&lt;/a>
+and &lt;a href="https://www.raspberrypi.org/forums/viewtopic.php?t=220428" target="_blank" rel="noopener">&amp;ldquo;I2C stretch bug. Been fixed or not?&amp;rdquo;&lt;/a>.&lt;/p>
+&lt;/div>
+
+&lt;p>&lt;a href="https://en.wikipedia.org/wiki/I%C2%B2C#Clock_stretching_using_SCL" target="_blank" rel="noopener">Clock stretching&lt;/a>
+in I2C allows a slave device to halt the master before a more data is sent. This
+is often the case when the slave device writes to an EEPROM etc. which takes
+longer than a usual read or write to a register.&lt;/p></description></item><item><title>Ongoing I2C Improvements</title><link>https://pi4j.com/blog/2024/20240418_i2c_improvements/</link><pubDate>Thu, 18 Apr 2024 00:00:00 +0000</pubDate><guid>https://pi4j.com/blog/2024/20240418_i2c_improvements/</guid><description>&lt;p>2024-04-17, by Frank Delporte&lt;/p>
+&lt;p>Robert von Burg is working on improvements of the I2C implementation in Pi4J in preparation for the next release. The changes are in &lt;a href="https://github.com/Pi4J/pi4j-v2/pull/351/files" target="_blank" rel="noopener">pull request #351&lt;/a>. It&amp;rsquo;s still work-in-progress but will bring these improvements:&lt;/p>
+&lt;ul>
+&lt;li>New &lt;code>I2C.execute(Callable)&lt;/code> method to allow to atomically execute multiple I2C calls in a thread in a safe way.&lt;/li>
+&lt;li>New &lt;code>I2C.writeRead(byte[], byte[])&lt;/code> method to atomically perform a &lt;code>write&lt;/code>, immediately followed by a &lt;code>read&lt;/code> on the I2C bus.&lt;/li>
+&lt;li>Fix an issue where the &lt;code>LinuxFsI2CBus&lt;/code> was closed when closing an I2C device. This can lead to errors as another device might still be open on the same bus, and an operation on the underlying &lt;code>RandomAccessFile&lt;/code> would lead to exceptions.&lt;/li>
+&lt;li>Fix a workaround that required an &lt;code>I2C.read()&lt;/code> on a newly created &lt;code>LinuxFsI2C&lt;/code> device, if the first call was an &lt;code>ioctl&lt;/code>. The device was not selected prior to the &lt;code>ioctl&lt;/code> call.&lt;/li>
+&lt;li>Additional code cleanup and more to come&amp;hellip;&lt;/li>
+&lt;/ul>
+&lt;p>This kind of methods is hard to test in unit tests as they interact with real components and need to handle the data and I2C devices depending on the interaction. As a solution, Robert is using a &lt;a href="https://github.com/eitch/pi4j-test/tree/feature/eitch-leds" target="_blank" rel="noopener">test project&lt;/a> that has an implementation for an OLED display over I2C, using these commands.&lt;/p></description></item></channel></rss>

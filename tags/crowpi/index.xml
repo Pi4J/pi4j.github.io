@@ -1,7 +1,138 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CrowPi on Pi4J</title><link>https://pi4j.com/tags/crowpi/</link><description>Recent content in CrowPi on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://pi4j.com/tags/crowpi/index.xml" rel="self" type="application/rss+xml"/><item><title>Develop with Intellij IDEA</title><link>https://pi4j.com/examples/crowpi/develop-crowpi-with-intellij/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/crowpi/develop-crowpi-with-intellij/</guid><description>The CrowPi example project contains settings to make it easy to develop on a PC with IntelliJ IDEA and execute the application on the CrowPi. The articles, instructions and pictures are created accordingly. IntelliJ IDEA is from available Jetbrains in different versions. The community version has enough functionality for development with the CrowPi and is available for Windows, MacOS and Linux, but NOT for Raspberry Pi. The download can be found here.</description></item><item><title>CrowPi examples</title><link>https://pi4j.com/examples/crowpi/crowpi-examples/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/crowpi/crowpi-examples/</guid><description> GITHUB PROJECT: https://github.com/Pi4J/pi4j-example-crowpi
-The CrowPi example code contains examples for the following components. The links in this table will bring you to the German documentation written by the students who created these examples.
-Component Link 7-Segment Display seven-segment Button button Button Matrix button-matrix Buzzer buzzer Infrared Receiver ir-receiver LCD Display lcd-display LED Matrix led-matrix Light sensor light-sensor PIR Motion Sensor pir-motion-sensor Relais relay RFID rfid Step motor step-motor Servomotor servo-motor Sound Sensor sound-sensor Temperature and humidity sensor humi-temp-sens Tilt Sensor tilt-sensor Touch Sensor touch-sensor Ultrasonic distance sensor ultrasonic-sensor Vibration motor vibration-motor</description></item><item><title>Electronics with CrowPi</title><link>https://pi4j.com/examples/crowpi/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/crowpi/</guid><description>The CrowPi is an electronics starter kit in a laptop-housing. Of course, you can get any electronics starter kit for this purpose or buy separate components. That&amp;rsquo;s the fun of electronics: components are inexpensive and easy to find on ebay or one of the many web shops.
-CrowPi 1
-CrowPi 2
-Example electronics starter kit
-As the CrowPi contains a lot of components, its use is described on the following subpages:</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CrowPi on Pi4J</title><link>https://pi4j.com/tags/crowpi/</link><description>Recent content in CrowPi on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://pi4j.com/tags/crowpi/index.xml" rel="self" type="application/rss+xml"/><item><title>Develop with Intellij IDEA</title><link>https://pi4j.com/examples/crowpi/develop-crowpi-with-intellij/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/crowpi/develop-crowpi-with-intellij/</guid><description>&lt;p>The CrowPi example project contains settings to make it easy to develop on a PC with IntelliJ IDEA and execute the application on the CrowPi. The articles, instructions and pictures are created accordingly.
+IntelliJ IDEA is from available Jetbrains in different versions. The community version has enough functionality for development
+with the CrowPi and is available for Windows, MacOS and Linux, but NOT for Raspberry Pi. The
+&lt;a href="https://www.jetbrains.com/idea/download/" target="_blank" rel="noopener">download can be found here&lt;/a>.&lt;/p></description></item><item><title>CrowPi examples</title><link>https://pi4j.com/examples/crowpi/crowpi-examples/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/crowpi/crowpi-examples/</guid><description>&lt;div class="notices tip" >&lt;p>GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-example-crowpi" target="_blank" rel="noopener">https://github.com/Pi4J/pi4j-example-crowpi&lt;/a>&lt;/p>
+&lt;/div>
+
+&lt;p>The CrowPi example code contains examples for the following components. The links in this table will bring you to the German documentation written by the students who created these examples.&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">Component&lt;/th>
+ &lt;th style="text-align: left">Link&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">7-Segment Display&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://fhnw-ip5-ip6.github.io/CrowPiGoesJavaTutorial/de/components/seven-segment/" target="_blank" rel="noopener">seven-segment&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Button&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://fhnw-ip5-ip6.github.io/CrowPiGoesJavaTutorial/de/components/button/" target="_blank" rel="noopener">button&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Button Matrix&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://fhnw-ip5-ip6.github.io/CrowPiGoesJavaTutorial/de/components/button-matrix/" target="_blank" rel="noopener">button-matrix&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Buzzer&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://fhnw-ip5-ip6.github.io/CrowPiGoesJavaTutorial/de/components/buzzer/" target="_blank" rel="noopener">buzzer&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Infrared Receiver&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://fhnw-ip5-ip6.github.io/CrowPiGoesJavaTutorial/de/components/ir-receiver/" target="_blank" rel="noopener">ir-receiver&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">LCD Display&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://fhnw-ip5-ip6.github.io/CrowPiGoesJavaTutorial/de/components/lcd-display/" target="_blank" rel="noopener">lcd-display&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">LED Matrix&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://fhnw-ip5-ip6.github.io/CrowPiGoesJavaTutorial/de/components/led-matrix/" target="_blank" rel="noopener">led-matrix&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Light sensor&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://fhnw-ip5-ip6.github.io/CrowPiGoesJavaTutorial/de/components/light-sensor/" target="_blank" rel="noopener">light-sensor&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">PIR Motion Sensor&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://fhnw-ip5-ip6.github.io/CrowPiGoesJavaTutorial/de/components/pir-motion-sensor/" target="_blank" rel="noopener">pir-motion-sensor&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Relais&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://fhnw-ip5-ip6.github.io/CrowPiGoesJavaTutorial/de/components/relay/" target="_blank" rel="noopener">relay&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">RFID&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://fhnw-ip5-ip6.github.io/CrowPiGoesJavaTutorial/de/components/rfid/" target="_blank" rel="noopener">rfid&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Step motor&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://fhnw-ip5-ip6.github.io/CrowPiGoesJavaTutorial/de/components/step-motor/" target="_blank" rel="noopener">step-motor&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Servomotor&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://fhnw-ip5-ip6.github.io/CrowPiGoesJavaTutorial/de/components/servo-motor/" target="_blank" rel="noopener">servo-motor&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Sound Sensor&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://fhnw-ip5-ip6.github.io/CrowPiGoesJavaTutorial/de/components/sound-sensor/" target="_blank" rel="noopener">sound-sensor&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Temperature and humidity sensor&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://fhnw-ip5-ip6.github.io/CrowPiGoesJavaTutorial/de/components/humi-temp-sens/" target="_blank" rel="noopener">humi-temp-sens&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Tilt Sensor&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://fhnw-ip5-ip6.github.io/CrowPiGoesJavaTutorial/de/components/tilt-sensor/" target="_blank" rel="noopener">tilt-sensor&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Touch Sensor&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://fhnw-ip5-ip6.github.io/CrowPiGoesJavaTutorial/de/components/touch-sensor/" target="_blank" rel="noopener">touch-sensor&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Ultrasonic distance sensor&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://fhnw-ip5-ip6.github.io/CrowPiGoesJavaTutorial/de/components/ultrasonic-sensor/" target="_blank" rel="noopener">ultrasonic-sensor&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Vibration motor&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://fhnw-ip5-ip6.github.io/CrowPiGoesJavaTutorial/de/components/vibration-motor/" target="_blank" rel="noopener">vibration-motor&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table></description></item><item><title>Electronics with CrowPi</title><link>https://pi4j.com/examples/crowpi/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/crowpi/</guid><description>&lt;p>The &lt;a href="https://www.elecrow.com/crowpi.html" target="_blank" rel="noopener">CrowPi is an electronics starter kit in a laptop-housing&lt;/a>.
+Of course, you can get any electronics starter kit for this purpose or buy separate components. That&amp;rsquo;s the fun of
+electronics: components are inexpensive and easy to find on ebay or one of the many web shops.&lt;/p>
+&lt;p>
+
+
+&lt;div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+	 
+
+&lt;link rel="stylesheet" href="https://pi4j.com/css/hugo-easy-gallery.css" />
+&lt;div class="box fancy-figure caption-position-center caption-effect-fade" >
+ &lt;figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+ &lt;div class="img" style="background-image: url('/assets/examples/crowpi/crowpi1.jpg');">
+ &lt;img itemprop="thumbnail" src="https://pi4j.com/assets/examples/crowpi/crowpi1.jpg" alt="CrowPi 1"/>
+ &lt;/div>
+ &lt;a href="https://pi4j.com/assets/examples/crowpi/crowpi1.jpg" itemprop="contentUrl">&lt;/a>
+ &lt;figcaption>
+ &lt;p>CrowPi 1&lt;/p>
+ &lt;/figcaption>
+ &lt;/figure>
+&lt;/div>
+
+
+
+&lt;div class="box fancy-figure caption-position-center caption-effect-fade" >
+ &lt;figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+ &lt;div class="img" style="background-image: url('/assets/examples/crowpi/crowpi2.jpg');">
+ &lt;img itemprop="thumbnail" src="https://pi4j.com/assets/examples/crowpi/crowpi2.jpg" alt="CrowPi 2"/>
+ &lt;/div>
+ &lt;a href="https://pi4j.com/assets/examples/crowpi/crowpi2.jpg" itemprop="contentUrl">&lt;/a>
+ &lt;figcaption>
+ &lt;p>CrowPi 2&lt;/p>
+ &lt;/figcaption>
+ &lt;/figure>
+&lt;/div>
+
+
+
+&lt;div class="box fancy-figure caption-position-center caption-effect-fade" >
+ &lt;figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+ &lt;div class="img" style="background-image: url('/assets/examples/crowpi/electronics-starter-kit.jpg');">
+ &lt;img itemprop="thumbnail" src="https://pi4j.com/assets/examples/crowpi/electronics-starter-kit.jpg" alt="Example electronics starter kit"/>
+ &lt;/div>
+ &lt;a href="https://pi4j.com/assets/examples/crowpi/electronics-starter-kit.jpg" itemprop="contentUrl">&lt;/a>
+ &lt;figcaption>
+ &lt;p>Example electronics starter kit&lt;/p></description></item></channel></rss>

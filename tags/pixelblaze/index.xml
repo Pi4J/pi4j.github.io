@@ -1,9 +1,103 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pixelblaze on Pi4J</title><link>https://pi4j.com/tags/pixelblaze/</link><description>Recent content in Pixelblaze on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://pi4j.com/tags/pixelblaze/index.xml" rel="self" type="application/rss+xml"/><item><title>Pixelblaze Output Expander</title><link>https://pi4j.com/examples/jbang/pixelblaze_output_expander/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/jbang/pixelblaze_output_expander/</guid><description>GITHUB PROJECT: github.com/Pi4J/pi4j-jbang &amp;gt; PixelblazeOutputExpander.java
-One of the most &amp;ldquo;fancy&amp;rdquo; electronic components is definitely a LED strip. It&amp;rsquo;s really cool to control a long strip of lights with only a few lines of code&amp;hellip; But, there is a problem. The timing of the signals is crucial to reliably control these strips. Both Python and Java on a Raspberry Pi can struggle with these timings as they are running on Linux, a non-real-time operating system.</description></item><item><title>Controlling a LED Matrix</title><link>https://pi4j.com/examples/jbang/pixelblaze_output_expander_image/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/jbang/pixelblaze_output_expander_image/</guid><description>GITHUB PROJECT: github.com/Pi4J/pi4j-jbang &amp;gt; PixelblazeOutputExpanderImageMatrix8x32.java
-A LED strip doesn&amp;rsquo;t only exist as a single strip, the same system is also used in a LED matrix. In this example, we will control such a 8*32 LED matrix.
-Full LED strip code walkthrough, and additional info in this live session with Robert (aka Eitch) and Frank:
-Intro This example is based on the Pixelblaze Output Expander (PBOE) JBang example. Make sure to check out the PBOE example, so you fully understand how to set up and use JBang, and connect and control a LED strip via a PBOE.</description></item><item><title>LED strip with a JavaFX UI</title><link>https://pi4j.com/examples/jbang/pixelblaze_output_expander_javafx/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/jbang/pixelblaze_output_expander_javafx/</guid><description>GITHUB PROJECT: github.com/Pi4J/pi4j-jbang &amp;gt; PixelblazeOutputExpanderJavaFX.java
-We already know how to control a LED strip, so let&amp;rsquo;s add a JavaFX User Interface to control the colors on each of the LEDs on the strip.
-Demo of the JavaFX UI
-Full LED strip code walkthrough, and additional info in this live session with Robert (aka Eitch) and Frank:
-Intro This example is based on the Pixelblaze Output Expander (PBOE) JBang example. Make sure to check out the PBOE example, so you fully understand how to set up and use JBang, and connect and control a LED strip via a PBOE.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pixelblaze on Pi4J</title><link>https://pi4j.com/tags/pixelblaze/</link><description>Recent content in Pixelblaze on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://pi4j.com/tags/pixelblaze/index.xml" rel="self" type="application/rss+xml"/><item><title>Pixelblaze Output Expander</title><link>https://pi4j.com/examples/jbang/pixelblaze_output_expander/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/jbang/pixelblaze_output_expander/</guid><description>&lt;div class="notices tip" >&lt;p>GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-jbang/blob/main/PixelblazeOutputExpander.java" target="_blank" rel="noopener">github.com/Pi4J/pi4j-jbang &amp;gt; PixelblazeOutputExpander.java&lt;/a>&lt;/p>
+&lt;/div>
+
+&lt;p>One of the most &amp;ldquo;fancy&amp;rdquo; electronic components is definitely a LED strip. It&amp;rsquo;s really cool to control a long strip of lights with only a few lines of code&amp;hellip; But, there is a problem. The timing of the signals is crucial to reliably control these strips. Both Python and Java on a Raspberry Pi can struggle with these timings as they are running on Linux, a non-real-time operating system. So pauses in the garbage collection of the Java virtual machine, or any glitch in the operating system can cause unexpected effects on the LED strips. That&amp;rsquo;s why in most projects, a microcontroller (Arduino, Raspberry Pi Pico, ESP32,&amp;hellip;) is used to drive the LED strip.&lt;/p></description></item><item><title>Controlling a LED Matrix</title><link>https://pi4j.com/examples/jbang/pixelblaze_output_expander_image/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/jbang/pixelblaze_output_expander_image/</guid><description>&lt;div class="notices tip" >&lt;p>GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-jbang/blob/main/PixelblazeOutputExpanderImageMatrix8x32.java" target="_blank" rel="noopener">github.com/Pi4J/pi4j-jbang &amp;gt; PixelblazeOutputExpanderImageMatrix8x32.java&lt;/a>&lt;/p>
+&lt;/div>
+
+&lt;p>A LED strip doesn&amp;rsquo;t only exist as a single strip, the same system is also used in a LED matrix. In this example, we will control such a &lt;a href="https://www.amazon.nl/dp/B0B81R484Z" target="_blank" rel="noopener">8*32 LED matrix&lt;/a>.&lt;/p>
+&lt;p>Full LED strip code walkthrough, and additional info in this live session with Robert (aka Eitch) and Frank:&lt;/p>
+
+
+ 
+ &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/eToIXACqSuY?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+ >&lt;/iframe>
+ &lt;/div>
+
+&lt;h2 id="intro">Intro&lt;/h2>
+&lt;p>This example is based on the &lt;a href="https://pi4j.com/examples/jbang/pixelblaze_output_expander/">Pixelblaze Output Expander (PBOE) JBang example&lt;/a>. Make sure to check out the PBOE example, so you fully understand how to set up and use JBang, and connect and control a LED strip via a PBOE.&lt;/p></description></item><item><title>LED strip with a JavaFX UI</title><link>https://pi4j.com/examples/jbang/pixelblaze_output_expander_javafx/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/jbang/pixelblaze_output_expander_javafx/</guid><description>&lt;div class="notices tip" >&lt;p>GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-jbang/blob/main/PixelblazeOutputExpanderJavaFX.java" target="_blank" rel="noopener">github.com/Pi4J/pi4j-jbang &amp;gt; PixelblazeOutputExpanderJavaFX.java&lt;/a>&lt;/p>
+&lt;/div>
+
+&lt;p>We already know how to control a LED strip, so let&amp;rsquo;s add a JavaFX User Interface to control the colors on each of the LEDs on the strip.&lt;/p>
+&lt;p>
+
+
+&lt;div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+	 
+
+&lt;link rel="stylesheet" href="https://pi4j.com/css/hugo-easy-gallery.css" />
+&lt;div class="box fancy-figure caption-position-center caption-effect-fade" >
+ &lt;figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+ &lt;div class="img" style="background-image: url('/assets/examples/jbang/pixelblaze/javafx-ui.png');">
+ &lt;img itemprop="thumbnail" src="https://pi4j.com/assets/examples/jbang/pixelblaze/javafx-ui.png" alt="Demo of the JavaFX UI"/>
+ &lt;/div>
+ &lt;a href="https://pi4j.com/assets/examples/jbang/pixelblaze/javafx-ui.png" itemprop="contentUrl">&lt;/a>
+ &lt;figcaption>
+ &lt;p>Demo of the JavaFX UI&lt;/p>
+ &lt;/figcaption>
+ &lt;/figure>
+&lt;/div>
+
+
+&lt;/div>
+
+
+
+
+
+ 
+
+
+&lt;script src="https://pi4j.com/js/load-photoswipe.js">&lt;/script>
+
+
+&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" />
+&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" />
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js" integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=" crossorigin="anonymous">&lt;/script>
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js" integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=" crossorigin="anonymous">&lt;/script>
+
+
+&lt;div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+&lt;div class="pswp__bg">&lt;/div>
+
+&lt;div class="pswp__scroll-wrap">
+ 
+ &lt;div class="pswp__container">
+ &lt;div class="pswp__item">&lt;/div>
+ &lt;div class="pswp__item">&lt;/div>
+ &lt;div class="pswp__item">&lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="pswp__ui pswp__ui--hidden">
+ &lt;div class="pswp__top-bar">
+ 
+ &lt;div class="pswp__counter">&lt;/div>
+ &lt;button class="pswp__button pswp__button--close" title="Close (Esc)">&lt;/button>
+ &lt;button class="pswp__button pswp__button--share" title="Share">&lt;/button>
+ &lt;button class="pswp__button pswp__button--fs" title="Toggle fullscreen">&lt;/button>
+ &lt;button class="pswp__button pswp__button--zoom" title="Zoom in/out">&lt;/button>
+ 
+ 
+ &lt;div class="pswp__preloader">
+ &lt;div class="pswp__preloader__icn">
+ &lt;div class="pswp__preloader__cut">
+ &lt;div class="pswp__preloader__donut">&lt;/div>
+ &lt;/div>
+ &lt;/div>
+ &lt;/div>
+ &lt;/div>
+ &lt;div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+ &lt;div class="pswp__share-tooltip">&lt;/div>
+ &lt;/div>
+ &lt;button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+ &lt;/button>
+ &lt;button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+ &lt;/button>
+ &lt;div class="pswp__caption">
+ &lt;div class="pswp__caption__center">&lt;/div>
+ &lt;/div>
+ &lt;/div>
+ &lt;/div>
+&lt;/div>
+&lt;/p></description></item></channel></rss>

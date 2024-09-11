@@ -1,5 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Gradle on Pi4J</title><link>https://pi4j.com/tags/gradle/</link><description>Recent content in Gradle on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://pi4j.com/tags/gradle/index.xml" rel="self" type="application/rss+xml"/><item><title>Minimal example application</title><link>https://pi4j.com/getting-started/minimal-example-application/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/getting-started/minimal-example-application/</guid><description>GITHUB PROJECT: https://github.com/Pi4J/pi4j-example-minimal
-In the &amp;ldquo;pi4j-example-minimal&amp;rdquo; GitHub project you can find a project which contains the minimal code to control a digital input and output with Pi4J. The project is further described on this page. The application will toggle an LED on/off and each time you press the button, the toggling speed increases. When you have pushed the button 5 times, the application stops.
-Wiring This minimal example application uses this wiring:</description></item><item><title>Build Java modules with Gradle</title><link>https://pi4j.com/documentation/building/modules-gradle/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/building/modules-gradle/</guid><description>GITHUB PROJECT: https://github.com/Pi4J/pi4j-example-minimal
-The Pi4J V.2 project itself uses Maven and most example projects also use this build tool. But if you prefer to use Gradle, you can start with a copy of the &amp;ldquo;Minimal example application&amp;rdquo; which includes all the required files to build with Gradle.
-Use Gradle version 6.6 (or later) and Java 11 OpenJDK (or later). The Gradle wrapper is used as described on docs.gradle.org. The Gradle configuration file build.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Gradle on Pi4J</title><link>https://pi4j.com/tags/gradle/</link><description>Recent content in Gradle on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://pi4j.com/tags/gradle/index.xml" rel="self" type="application/rss+xml"/><item><title>Minimal example application</title><link>https://pi4j.com/getting-started/minimal-example-application/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/getting-started/minimal-example-application/</guid><description>&lt;div class="notices tip" >&lt;p>GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-example-minimal" target="_blank" rel="noopener">https://github.com/Pi4J/pi4j-example-minimal&lt;/a>&lt;/p>
+&lt;/div>
+
+&lt;p>In the &lt;a href="https://github.com/Pi4J/pi4j-example-minimal" target="_blank" rel="noopener">&amp;ldquo;pi4j-example-minimal&amp;rdquo; GitHub project&lt;/a> you can
+find a project which contains the minimal code to control a digital input and output with Pi4J. The project is further
+described on this page. The application will toggle an LED on/off and each time you press the button, the toggling
+speed increases. When you have pushed the button 5 times, the application stops.&lt;/p>
+
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+ &lt;iframe src="https://player.vimeo.com/video/525570174" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="vimeo video" webkitallowfullscreen mozallowfullscreen allowfullscreen>&lt;/iframe>
+&lt;/div>
+
+&lt;h2 id="wiring">Wiring&lt;/h2>
+&lt;p>This minimal example application uses this wiring:&lt;/p></description></item><item><title>Build Java modules with Gradle</title><link>https://pi4j.com/documentation/building/modules-gradle/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/building/modules-gradle/</guid><description>&lt;div class="notices tip" >&lt;p>GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-example-minimal" target="_blank" rel="noopener">https://github.com/Pi4J/pi4j-example-minimal&lt;/a>&lt;/p>
+&lt;/div>
+
+&lt;p>The Pi4J V.2 project itself uses Maven and most example projects also use this build tool. But if you prefer to use Gradle,
+you can start with a copy of the &lt;a href="https://pi4j.com/getting-started/minimal-example-application/">&amp;ldquo;Minimal example application&amp;rdquo;&lt;/a> which includes
+all the required files to build with Gradle.&lt;/p>
+&lt;p>Use Gradle version 6.6 (or later) and Java 11 OpenJDK (or later). The Gradle wrapper is used as described on
+&lt;a href="https://docs.gradle.org/current/userguide/gradle_wrapper.html" target="_blank" rel="noopener">docs.gradle.org&lt;/a>. The Gradle configuration file
+&lt;a href="https://github.com/Pi4J/pi4j-example-minimal/blob/master/build.gradle" target="_blank" rel="noopener">build.gradle-file&lt;/a> is included in the sources.&lt;/p></description></item></channel></rss>

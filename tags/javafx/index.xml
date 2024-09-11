@@ -1,16 +1,119 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>JavaFX on Pi4J</title><link>https://pi4j.com/tags/javafx/</link><description>Recent content in JavaFX on Pi4J</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 31 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://pi4j.com/tags/javafx/index.xml" rel="self" type="application/rss+xml"/><item><title>User interface with JavaFX</title><link>https://pi4j.com/getting-started/user-interface-with-javafx/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/getting-started/user-interface-with-javafx/</guid><description>GITHUB PROJECT: https://github.com/Pi4J/pi4j-example-javafx
-JavaFX is a framework to create user interfaces for desktop (Windows, Mac, Linux) and mobile phones. JavaFX is an opensource project which is documented on openjfx.io and the sources are available in this GitHub project.
-The main goal of Java has always been to be able to create applications which are &amp;ldquo;write once, run everywhere&amp;rdquo;. JavaFX promises the same for Graphical User Interface applications.
-Gluon is the main maintainer of the OpenJFX project and offers commercial support to companies who want to use JavaFX in critical applications.</description></item><item><title>Game development with FXGL</title><link>https://pi4j.com/getting-started/fxgl/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/getting-started/fxgl/</guid><description>GITHUB PROJECT: https://github.com/Pi4J/pi4j-example-fxgl
-As described on the previous page you can use JavaFX to build user interfaces which behave exactly the same on your PC and Raspberry Pi. Let&amp;rsquo;s go a step further and make a game with an &amp;ldquo;Arcade&amp;rdquo; controller.
-For this project, we will be using FXGL, an opensource library on top of JavaFX to build games.
-The image of the crowpi project has every prerequisite installed to work with javaFX/FXGL</description></item><item><title>JavaFX GUI and MVC template</title><link>https://pi4j.com/getting-started/javafx-mvc-template/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/getting-started/javafx-mvc-template/</guid><description>GITHUB PROJECT: https://github.com/Pi4J/pi4j-template-javafx
-The FHNW University created a template project which is now part of the Pi4J example repositories.
-The goal of this project is to:
-Provide a clear step-by-step how to prepare your Raspberry Pi Provide multiple test and start applications Explain the use of a MVC-model (Model-View-Controller) to clearly split data, actions and user interface Explain the use of JUnit test Sources and info Please check the README of the sources of the project for a full description of the setup process of the Raspberry Pi and to fully understand the example applications and the MVC-model.</description></item><item><title>LED strip with a JavaFX UI</title><link>https://pi4j.com/examples/jbang/pixelblaze_output_expander_javafx/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/jbang/pixelblaze_output_expander_javafx/</guid><description>GITHUB PROJECT: github.com/Pi4J/pi4j-jbang &amp;gt; PixelblazeOutputExpanderJavaFX.java
-We already know how to control a LED strip, so let&amp;rsquo;s add a JavaFX User Interface to control the colors on each of the LEDs on the strip.
-Demo of the JavaFX UI
-Full LED strip code walkthrough, and additional info in this live session with Robert (aka Eitch) and Frank:
-Intro This example is based on the Pixelblaze Output Expander (PBOE) JBang example. Make sure to check out the PBOE example, so you fully understand how to set up and use JBang, and connect and control a LED strip via a PBOE.</description></item><item><title>Pi4J Operating System</title><link>https://pi4j.com/blog/2023/20230731_pi4j_os/</link><pubDate>Mon, 31 Jul 2023 00:00:00 +0000</pubDate><guid>https://pi4j.com/blog/2023/20230731_pi4j_os/</guid><description>2023-07-31, by Frank Delporte and Dieter Holz
-Yes, the Raspberry Pi Operating System is awesome! But the Pi4J project made it if even more awesome by adding &amp;ldquo;goodies&amp;rdquo; for Java developers! Pi4J OS is not yet another OS, but the official Raspberry Pi OS, with additional tools and preconfigurations to make it the ideal OS for any Java and JavaFX developer who wants to use a Raspberry Pi.
-The project is shared on GitHub and documented on the Pi4J website.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>JavaFX on Pi4J</title><link>https://pi4j.com/tags/javafx/</link><description>Recent content in JavaFX on Pi4J</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 31 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://pi4j.com/tags/javafx/index.xml" rel="self" type="application/rss+xml"/><item><title>User interface with JavaFX</title><link>https://pi4j.com/getting-started/user-interface-with-javafx/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/getting-started/user-interface-with-javafx/</guid><description>&lt;div class="notices tip" >&lt;p>GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-example-javafx" target="_blank" rel="noopener">https://github.com/Pi4J/pi4j-example-javafx&lt;/a>&lt;/p>
+&lt;/div>
+
+&lt;p>JavaFX is a framework to create user interfaces for desktop (Windows, Mac, Linux) and mobile phones. JavaFX is
+an opensource project which is documented on &lt;a href="https://openjfx.io/" target="_blank" rel="noopener">openjfx.io&lt;/a> and the sources are available
+in &lt;a href="https://github.com/openjdk/jfx" target="_blank" rel="noopener">this GitHub project&lt;/a>.&lt;/p>
+&lt;p>The main goal of Java has always been to be able to create applications which are &lt;strong>&amp;ldquo;write once, run everywhere&amp;rdquo;&lt;/strong>.
+JavaFX promises the same for Graphical User Interface applications.&lt;/p>
+&lt;p>&lt;a href="https://gluonhq.com/" target="_blank" rel="noopener">Gluon&lt;/a> is the main maintainer of the OpenJFX project and offers commercial support to
+companies who want to use JavaFX in critical applications. They also provide &lt;a href="https://gluonhq.com/products/" target="_blank" rel="noopener">tools to build and compile Java
+code to native applications for all platforms&lt;/a>.&lt;/p></description></item><item><title>Game development with FXGL</title><link>https://pi4j.com/getting-started/fxgl/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/getting-started/fxgl/</guid><description>&lt;div class="notices tip" >&lt;p>GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-example-fxgl" target="_blank" rel="noopener">https://github.com/Pi4J/pi4j-example-fxgl&lt;/a>&lt;/p>
+&lt;/div>
+
+&lt;p>As described on &lt;a href="https://pi4j.com/getting-started/user-interface-with-javafx/">the previous page&lt;/a> you can use JavaFX to build
+user interfaces which behave exactly the same on your PC and Raspberry Pi. Let&amp;rsquo;s go a step further and make
+a game with an &amp;ldquo;Arcade&amp;rdquo; controller.&lt;/p>
+&lt;p>For this project, we will be using &lt;a href="https://github.com/AlmasB/FXGL" target="_blank" rel="noopener">FXGL&lt;/a>, an opensource library on top of
+JavaFX to build games.&lt;/p>
+&lt;p>The image of the crowpi project has every prerequisite installed to work with javaFX/FXGL&lt;/p></description></item><item><title>JavaFX GUI and MVC template</title><link>https://pi4j.com/getting-started/javafx-mvc-template/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/getting-started/javafx-mvc-template/</guid><description>&lt;div class="notices tip" >&lt;p>GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-template-javafx" target="_blank" rel="noopener">https://github.com/Pi4J/pi4j-template-javafx&lt;/a>&lt;/p>
+&lt;/div>
+
+&lt;p>The &lt;a href="https://www.fhnw.ch" target="_blank" rel="noopener">FHNW University&lt;/a> created a template project which is now part of the Pi4J example repositories.&lt;/p>
+&lt;p>The goal of this project is to:&lt;/p>
+&lt;ul>
+&lt;li>Provide a clear step-by-step how to prepare your Raspberry Pi&lt;/li>
+&lt;li>Provide multiple test and start applications&lt;/li>
+&lt;li>Explain the use of a MVC-model (Model-View-Controller) to clearly split data, actions and user interface&lt;/li>
+&lt;li>Explain the use of JUnit test&lt;/li>
+&lt;/ul>
+&lt;h2 id="sources-and-info">Sources and info&lt;/h2>
+&lt;p>Please check the README of the sources of the project for a full description of the setup process of the Raspberry Pi
+and to fully understand the example applications and the MVC-model. This page is only intended to give you a quick overview.&lt;/p></description></item><item><title>LED strip with a JavaFX UI</title><link>https://pi4j.com/examples/jbang/pixelblaze_output_expander_javafx/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/jbang/pixelblaze_output_expander_javafx/</guid><description>&lt;div class="notices tip" >&lt;p>GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-jbang/blob/main/PixelblazeOutputExpanderJavaFX.java" target="_blank" rel="noopener">github.com/Pi4J/pi4j-jbang &amp;gt; PixelblazeOutputExpanderJavaFX.java&lt;/a>&lt;/p>
+&lt;/div>
+
+&lt;p>We already know how to control a LED strip, so let&amp;rsquo;s add a JavaFX User Interface to control the colors on each of the LEDs on the strip.&lt;/p>
+&lt;p>
+
+
+&lt;div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+	 
+
+&lt;link rel="stylesheet" href="https://pi4j.com/css/hugo-easy-gallery.css" />
+&lt;div class="box fancy-figure caption-position-center caption-effect-fade" >
+ &lt;figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+ &lt;div class="img" style="background-image: url('/assets/examples/jbang/pixelblaze/javafx-ui.png');">
+ &lt;img itemprop="thumbnail" src="https://pi4j.com/assets/examples/jbang/pixelblaze/javafx-ui.png" alt="Demo of the JavaFX UI"/>
+ &lt;/div>
+ &lt;a href="https://pi4j.com/assets/examples/jbang/pixelblaze/javafx-ui.png" itemprop="contentUrl">&lt;/a>
+ &lt;figcaption>
+ &lt;p>Demo of the JavaFX UI&lt;/p>
+ &lt;/figcaption>
+ &lt;/figure>
+&lt;/div>
+
+
+&lt;/div>
+
+
+
+
+
+ 
+
+
+&lt;script src="https://pi4j.com/js/load-photoswipe.js">&lt;/script>
+
+
+&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" />
+&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" />
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js" integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=" crossorigin="anonymous">&lt;/script>
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js" integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=" crossorigin="anonymous">&lt;/script>
+
+
+&lt;div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+&lt;div class="pswp__bg">&lt;/div>
+
+&lt;div class="pswp__scroll-wrap">
+ 
+ &lt;div class="pswp__container">
+ &lt;div class="pswp__item">&lt;/div>
+ &lt;div class="pswp__item">&lt;/div>
+ &lt;div class="pswp__item">&lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="pswp__ui pswp__ui--hidden">
+ &lt;div class="pswp__top-bar">
+ 
+ &lt;div class="pswp__counter">&lt;/div>
+ &lt;button class="pswp__button pswp__button--close" title="Close (Esc)">&lt;/button>
+ &lt;button class="pswp__button pswp__button--share" title="Share">&lt;/button>
+ &lt;button class="pswp__button pswp__button--fs" title="Toggle fullscreen">&lt;/button>
+ &lt;button class="pswp__button pswp__button--zoom" title="Zoom in/out">&lt;/button>
+ 
+ 
+ &lt;div class="pswp__preloader">
+ &lt;div class="pswp__preloader__icn">
+ &lt;div class="pswp__preloader__cut">
+ &lt;div class="pswp__preloader__donut">&lt;/div>
+ &lt;/div>
+ &lt;/div>
+ &lt;/div>
+ &lt;/div>
+ &lt;div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+ &lt;div class="pswp__share-tooltip">&lt;/div>
+ &lt;/div>
+ &lt;button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+ &lt;/button>
+ &lt;button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+ &lt;/button>
+ &lt;div class="pswp__caption">
+ &lt;div class="pswp__caption__center">&lt;/div>
+ &lt;/div>
+ &lt;/div>
+ &lt;/div>
+&lt;/div>
+&lt;/p></description></item><item><title>Pi4J Operating System</title><link>https://pi4j.com/blog/2023/20230731_pi4j_os/</link><pubDate>Mon, 31 Jul 2023 00:00:00 +0000</pubDate><guid>https://pi4j.com/blog/2023/20230731_pi4j_os/</guid><description>&lt;p>2023-07-31, by Frank Delporte and Dieter Holz&lt;/p>
+&lt;p>Yes, the Raspberry Pi Operating System is awesome! But the Pi4J project made it if even more awesome by adding &amp;ldquo;goodies&amp;rdquo; for Java developers! Pi4J OS is not yet another OS, but the official Raspberry Pi OS, with additional tools and preconfigurations to make it the ideal OS for any Java and JavaFX developer who wants to use a Raspberry Pi.&lt;/p>
+&lt;p>The project is shared on &lt;a href="https://github.com/Pi4J/pi4j-os" target="_blank" rel="noopener">GitHub&lt;/a> and documented on &lt;a href="https://pi4j.com/pi4j-os/" target="_blank" rel="noopener">the Pi4J website&lt;/a>. The zip-compressed archives of released versions can be downloaded from &lt;a href="https://pi4j-download.com" target="_blank" rel="noopener">pi4j-download.com&lt;/a>.&lt;/p></description></item></channel></rss>

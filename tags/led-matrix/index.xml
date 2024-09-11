@@ -1,7 +1,103 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>LED Matrix on Pi4J</title><link>https://pi4j.com/tags/led-matrix/</link><description>Recent content in LED Matrix on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://pi4j.com/tags/led-matrix/index.xml" rel="self" type="application/rss+xml"/><item><title>Component Examples</title><link>https://pi4j.com/examples/components/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/components/</guid><description>The FHNW University contributed a full project with example implementations of the following devices.
-Current available components Device(s) Developed by Link Simple Button Reto Stutz, Mike Schoder Example Devices Simple LED Reto Stutz, Mike Schoder Example Devices AD Converter ADS1115 Reto Stutz, Mike Schoder Example Devices Buzzer Reto Stutz, Mike Schoder Example Devices Camera Reto Stutz, Mike Schoder Example Devices Joystick Reto Stutz, Mike Schoder Example Devices Joystick Analog Reto Stutz, Mike Schoder Example Devices LCD Display Reto Stutz, Mike Schoder Example Devices LED Button Reto Stutz, Mike Schoder Example Devices LED Matrix Reto Stutz, Mike Schoder Example Devices LED Strip Reto Stutz, Mike Schoder Example Devices Potentiometer Reto Stutz, Mike Schoder Example Devices Servo Motor Reto Stutz, Mike Schoder Example Devices Simple Implementation For a Simple Implementation, the recommendation is to use the Launcher Class.</description></item><item><title>8x8 LED Matrix</title><link>https://pi4j.com/examples/jbang/jbang_pi4j_spi_led_matrix/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/jbang/jbang_pi4j_spi_led_matrix/</guid><description>Controlling a 8x8 LED Matrix with MAX7219 via SPI GITHUB PROJECT: github.com/Pi4J/pi4j-jbang &amp;gt; Pi4JLedMatrixSpi.java
-This example is explained in the following video:
-Intro Before proceeding with this example, make sure that you have a Raspberry Pi prepared to execute Java code with JBang as explained here.
-Wiring SPI requires four connections, but as we don&amp;rsquo;t read data back, we only connect three of them plus power and ground.
-BCM 10 (MOSI) to DIN BCM 11 (SCLK) to CLK BCM 8 (CE0) to CS 5V to VCC Ground to ground Wiring between Raspberry Pi and matrix</description></item><item><title>LED Matrix</title><link>https://pi4j.com/examples/components/ledmatrix/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/components/ledmatrix/</guid><description>Although this example is still valid, an easier approach for the control of an array of LEDs can be achieved with the PixelBlaze Output Expander as described here.
-Description The LedMatrix is a template class, that you can use in your own Java-project. It is an extension of the class LEDStrip. An LED matrix can be built from one LED strip. To do this, separate the LED strip at the desired point and place the individual strips under each other or next to each other.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>LED Matrix on Pi4J</title><link>https://pi4j.com/tags/led-matrix/</link><description>Recent content in LED Matrix on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://pi4j.com/tags/led-matrix/index.xml" rel="self" type="application/rss+xml"/><item><title>Component Examples</title><link>https://pi4j.com/examples/components/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/components/</guid><description>&lt;p>The FHNW University contributed a full project with example implementations of the following devices.&lt;/p>
+&lt;h3 id="current-available-components">Current available components&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">Device(s)&lt;/th>
+ &lt;th style="text-align: left">Developed by&lt;/th>
+ &lt;th style="text-align: left">Link&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;a href="https://pi4j.com/examples/components/simplebutton">Simple Button&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Reto Stutz, Mike Schoder&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/SimpleButton_App.java" target="_blank" rel="noopener">Example Devices&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;a href="https://pi4j.com/examples/components/simpleled">Simple LED&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Reto Stutz, Mike Schoder&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/SimpleLed_App.java" target="_blank" rel="noopener">Example Devices&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;a href="https://pi4j.com/examples/components/ads1115">AD Converter ADS1115&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Reto Stutz, Mike Schoder&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/Ads1115_App.java" target="_blank" rel="noopener">Example Devices&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;a href="https://pi4j.com/examples/components/buzzer">Buzzer&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Reto Stutz, Mike Schoder&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/Buzzer_App.java" target="_blank" rel="noopener">Example Devices&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;a href="https://pi4j.com/examples/components/camera">Camera&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Reto Stutz, Mike Schoder&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/Camera_App.java" target="_blank" rel="noopener">Example Devices&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;a href="https://pi4j.com/examples/components/joystick">Joystick&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Reto Stutz, Mike Schoder&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/Joystick_App.java" target="_blank" rel="noopener">Example Devices&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;a href="https://pi4j.com/examples/components/joystickanalog">Joystick Analog&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Reto Stutz, Mike Schoder&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/JoystickAnalog_App.java" target="_blank" rel="noopener">Example Devices&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;a href="https://pi4j.com/examples/components/lcddisplay">LCD Display&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Reto Stutz, Mike Schoder&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/LcdDisplay_App.java" target="_blank" rel="noopener">Example Devices&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;a href="https://pi4j.com/examples/components/ledbutton">LED Button&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Reto Stutz, Mike Schoder&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/LedButton_App.java" target="_blank" rel="noopener">Example Devices&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;a href="https://pi4j.com/examples/components/ledmatrix">LED Matrix&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Reto Stutz, Mike Schoder&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/LedMatrix_App.java" target="_blank" rel="noopener">Example Devices&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;a href="https://pi4j.com/examples/components/ledstrip">LED Strip&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Reto Stutz, Mike Schoder&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/LedStrip_App.java" target="_blank" rel="noopener">Example Devices&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;a href="https://pi4j.com/examples/components/potentiometer">Potentiometer&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Reto Stutz, Mike Schoder&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/Potentiometer_App.java" target="_blank" rel="noopener">Example Devices&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;a href="https://pi4j.com/examples/components/servo">Servo Motor&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Reto Stutz, Mike Schoder&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/Servo_App.java" target="_blank" rel="noopener">Example Devices&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="simple-implementation">Simple Implementation&lt;/h3>
+&lt;p>For a Simple Implementation, the recommendation is to use the &lt;a href="https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog/Launcher.java" target="_blank" rel="noopener">Launcher Class&lt;/a>.
+With this, a simple application can be started.&lt;/p></description></item><item><title>8x8 LED Matrix</title><link>https://pi4j.com/examples/jbang/jbang_pi4j_spi_led_matrix/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/jbang/jbang_pi4j_spi_led_matrix/</guid><description>&lt;h2 id="controlling-a-8x8-led-matrix-with-max7219-via-spi">Controlling a 8x8 LED Matrix with MAX7219 via SPI&lt;/h2>
+
+&lt;div class="notices tip" >&lt;p>GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-jbang/blob/main/Pi4JLedMatrixSpi.java" target="_blank" rel="noopener">github.com/Pi4J/pi4j-jbang &amp;gt; Pi4JLedMatrixSpi.java&lt;/a>&lt;/p>
+&lt;/div>
+
+&lt;p>This example is explained in the following video:&lt;/p>
+
+
+ 
+ &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/BXOqXuh50KI?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+ >&lt;/iframe>
+ &lt;/div>
+
+&lt;h2 id="intro">Intro&lt;/h2>
+
+&lt;div class="notices warning" >&lt;p>Before proceeding with this example, make sure that you have a Raspberry Pi prepared to execute Java code with JBang as &lt;a href="https://pi4j.com/examples/jbang/" target="_blank" rel="noopener">explained here&lt;/a>.&lt;/p></description></item><item><title>LED Matrix</title><link>https://pi4j.com/examples/components/ledmatrix/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/components/ledmatrix/</guid><description>&lt;div class="notices note" >&lt;p>Although this example is still valid, an easier approach for the control of an array of LEDs can be achieved with the PixelBlaze Output Expander as described &lt;a href="https://pi4j.com/examples/jbang/pixelblaze_output_expander/" target="_blank" rel="noopener">here&lt;/a>.&lt;/p>
+&lt;/div>
+
+&lt;h3 id="description">Description&lt;/h3>
+&lt;p>The &lt;a href="https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j//catalog/components/LedMatrix.java" target="_blank" rel="noopener">LedMatrix&lt;/a> is a template class, that you can use in your own Java-project.
+It is an extension of the class &lt;a href="https://pi4j.com/examples/components/ledstrip/" target="_blank" rel="noopener">LEDStrip&lt;/a>. An LED matrix can be built from one LED strip. To do this, separate the LED strip at the desired point and place the individual strips under each other or next to each other. The individual ends can then be connected to each other with a wire.
+The constructor can be passed either as a rectangular matrix or a user-defined matrix with different numbers of LEDs in the individual strips. A software compatible LED strip is for example the WS28xx-chip set LED Strip.&lt;/p></description></item></channel></rss>

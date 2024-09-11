@@ -1,2 +1,125 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>DHT22 on Pi4J</title><link>https://pi4j.com/tags/dht22/</link><description>Recent content in DHT22 on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://pi4j.com/tags/dht22/index.xml" rel="self" type="application/rss+xml"/><item><title>Community Implementations</title><link>https://pi4j.com/examples/communityimplementation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/communityimplementation/</guid><description>On this page we want to keep a list of projects which contain implementation code for specific devices using the Pi4J V.2 core library. Please let us know via Pi4J V.2 Discussions if you want to have your project added to this list.
-Current available device support projects Device(s) Developed by Link 1602A LCD HD44780U Thomas Aarts github.com/Pi4J/pi4j-example-devices 1602A_LCD_PCF8574A I2C Controller Thomas Aarts github.com/Pi4J/pi4j-example-devices 1602A LCD MCP23017 I2C Controller Thomas Aarts github.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>DHT22 on Pi4J</title><link>https://pi4j.com/tags/dht22/</link><description>Recent content in DHT22 on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://pi4j.com/tags/dht22/index.xml" rel="self" type="application/rss+xml"/><item><title>Community Implementations</title><link>https://pi4j.com/examples/communityimplementation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/communityimplementation/</guid><description>&lt;p>On this page we want to keep a list of projects which contain implementation code for specific devices using the Pi4J
+V.2 core library. Please let us know via &lt;a href="https://github.com/Pi4J/pi4j-v2/discussions" target="_blank" rel="noopener">Pi4J V.2 Discussions&lt;/a> if you want to have your project added
+to this list.&lt;/p>
+&lt;h3 id="current-available-device-support-projects">Current available device support projects&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">Device(s)&lt;/th>
+ &lt;th style="text-align: left">Developed by&lt;/th>
+ &lt;th style="text-align: left">Link&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">1602A LCD HD44780U&lt;/td>
+ &lt;td style="text-align: left">Thomas Aarts&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-devices" target="_blank" rel="noopener">github.com/Pi4J/pi4j-example-devices&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">1602A_LCD_PCF8574A I2C Controller&lt;/td>
+ &lt;td style="text-align: left">Thomas Aarts&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-devices" target="_blank" rel="noopener">github.com/Pi4J/pi4j-example-devices&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">1602A LCD MCP23017 I2C Controller&lt;/td>
+ &lt;td style="text-align: left">Thomas Aarts&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-devices" target="_blank" rel="noopener">github.com/Pi4J/pi4j-example-devices&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">ADS1256 24bit A-to-D&lt;/td>
+ &lt;td style="text-align: left">Thomas Aarts&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-devices" target="_blank" rel="noopener">github.com/Pi4J/pi4j-example-devices&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">AT24c512 SEEPROM&lt;/td>
+ &lt;td style="text-align: left">Thomas Aarts&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-devices" target="_blank" rel="noopener">github.com/Pi4J/pi4j-example-devices&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">BME280 Sensor Temperature and Pressure&lt;/td>
+ &lt;td style="text-align: left">Thomas Aarts&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-devices" target="_blank" rel="noopener">github.com/Pi4J/pi4j-example-devices&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;a href="examples/communityimplementation/bmp280/">BMP280 Temperature and Pressure Sensor&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Thomas Aarts&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-devices" target="_blank" rel="noopener">github.com/Pi4J/pi4j-example-devices&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">DAC8552 16bit DAC SPI connected&lt;/td>
+ &lt;td style="text-align: left">Thomas Aarts&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-devices" target="_blank" rel="noopener">github.com/Pi4J/pi4j-example-devices&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">DHT22 Temp/Humidity sensor&lt;/td>
+ &lt;td style="text-align: left">Thomas Aarts&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-devices" target="_blank" rel="noopener">github.com/Pi4J/pi4j-example-devices&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">IS31FL3731 matrix controller&lt;/td>
+ &lt;td style="text-align: left">Thomas Aarts&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-devices" target="_blank" rel="noopener">github.com/Pi4J/pi4j-example-devices&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">MCP23008 drive and read chip GPIOs&lt;/td>
+ &lt;td style="text-align: left">Thomas Aarts&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-devices" target="_blank" rel="noopener">github.com/Pi4J/pi4j-example-devices&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">MCP23008 and MCP23017 Pin monitoring&lt;/td>
+ &lt;td style="text-align: left">Thomas Aarts&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-devices" target="_blank" rel="noopener">github.com/Pi4J/pi4j-example-devices&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">MCP23017 drive and read chip GPIOs&lt;/td>
+ &lt;td style="text-align: left">Thomas Aarts&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-devices" target="_blank" rel="noopener">github.com/Pi4J/pi4j-example-devices&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">MCP3008 A/D 10bit converter&lt;/td>
+ &lt;td style="text-align: left">Thomas Aarts&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-devices" target="_blank" rel="noopener">github.com/Pi4J/pi4j-example-devices&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">MCP4725 12 bit DAC&lt;/td>
+ &lt;td style="text-align: left">Thomas Aarts&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-devices" target="_blank" rel="noopener">github.com/Pi4J/pi4j-example-devices&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">MPL3115A2 Altitude&lt;/td>
+ &lt;td style="text-align: left">Thomas Aarts&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-devices" target="_blank" rel="noopener">github.com/Pi4J/pi4j-example-devices&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">NeoPixel LED strip&lt;/td>
+ &lt;td style="text-align: left">Thomas Aarts&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-devices" target="_blank" rel="noopener">github.com/Pi4J/pi4j-example-devices&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">RotaryEncoder5880&lt;/td>
+ &lt;td style="text-align: left">Thomas Aarts&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-devices" target="_blank" rel="noopener">github.com/Pi4J/pi4j-example-devices&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">SN74HC595 8 Bit shift register&lt;/td>
+ &lt;td style="text-align: left">Thomas Aarts&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-devices" target="_blank" rel="noopener">github.com/Pi4J/pi4j-example-devices&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">SSD1306 OLED Display&lt;/td>
+ &lt;td style="text-align: left">Thomas Aarts&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-devices" target="_blank" rel="noopener">github.com/Pi4J/pi4j-example-devices&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">TCA9548 (1x8 I2C switch)&lt;/td>
+ &lt;td style="text-align: left">Thomas Aarts&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-devices" target="_blank" rel="noopener">github.com/Pi4J/pi4j-example-devices&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">VL53L0X TimeOfFlight device&lt;/td>
+ &lt;td style="text-align: left">Thomas Aarts&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-devices" target="_blank" rel="noopener">github.com/Pi4J/pi4j-example-devices&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table></description></item></channel></rss>

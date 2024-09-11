@@ -1,5 +1,145 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>BMP280 on Pi4J</title><link>https://pi4j.com/tags/bmp280/</link><description>Recent content in BMP280 on Pi4J</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 25 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://pi4j.com/tags/bmp280/index.xml" rel="self" type="application/rss+xml"/><item><title>Community Implementations</title><link>https://pi4j.com/examples/communityimplementation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/communityimplementation/</guid><description>On this page we want to keep a list of projects which contain implementation code for specific devices using the Pi4J V.2 core library. Please let us know via Pi4J V.2 Discussions if you want to have your project added to this list.
-Current available device support projects Device(s) Developed by Link 1602A LCD HD44780U Thomas Aarts github.com/Pi4J/pi4j-example-devices 1602A_LCD_PCF8574A I2C Controller Thomas Aarts github.com/Pi4J/pi4j-example-devices 1602A LCD MCP23017 I2C Controller Thomas Aarts github.</description></item><item><title>BMP280 Sensor</title><link>https://pi4j.com/examples/communityimplementation/bmp280/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/communityimplementation/bmp280/</guid><description>Description The BMP280 is a Pressure and temperature sensor accessed via I2C or SPI. The BMP280 is a simple device that requires the connection of few wires to operate. Because of this simplicity the device can serve as a very easy project for initial Pi and Pi4j usage. This document will explain the more simple means to connect the sensor and access the device with existing software requiring no coding. The document will also explain minimal coding required to allow greater flexibility.</description></item><item><title>BME280 Sensor</title><link>https://pi4j.com/examples/jbang/bme280_temperature_humidity_pressure/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/jbang/bme280_temperature_humidity_pressure/</guid><description>BME280 Sensor (temp, humidity, pressure) via Pi4J, I2C, and JBang GITHUB PROJECT: github.com/Pi4J/pi4j-jbang &amp;gt; Pi4JTempHumPressI2C.java and github.com/Pi4J/pi4j-jbang &amp;gt; Pi4JTempHumPressSpi.java
-Intro This is an example project to demonstrate how to read the temperature, humidity and pressure from a BME280 sensor, installed on an Adafruit board that can be controlled via I2C and SPI. Such a sensor itself is a very tiny component that can be integrated in phones and many other types of devices.</description></item><item><title>Bosch sensor gas measurement</title><link>https://pi4j.com/blog/2024/20240517_bosch_sensor_gas_measurement/</link><pubDate>Thu, 25 Apr 2024 00:00:00 +0000</pubDate><guid>https://pi4j.com/blog/2024/20240517_bosch_sensor_gas_measurement/</guid><description>2024-05-17, by Frank Delporte
-Bosch has several sensors which are extremely small to measure temperature, humidity, pressure, and gas. We also have several example implementations documented on the Pi4J website:
-BME280 Sensor (temp, humidity, pressure) via Pi4J, I2C, and JBang. BMP280 Sensor, example implementation by Thomas Aarts. LED Matrix with SPI MAX7219, work-in-progress for a weather station. Sensor drivers, project by Juraj Veverka. You can find easy-to-use boards with such a sensor, for instance, on:</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>BMP280 on Pi4J</title><link>https://pi4j.com/tags/bmp280/</link><description>Recent content in BMP280 on Pi4J</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 25 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://pi4j.com/tags/bmp280/index.xml" rel="self" type="application/rss+xml"/><item><title>Community Implementations</title><link>https://pi4j.com/examples/communityimplementation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/communityimplementation/</guid><description>&lt;p>On this page we want to keep a list of projects which contain implementation code for specific devices using the Pi4J
+V.2 core library. Please let us know via &lt;a href="https://github.com/Pi4J/pi4j-v2/discussions" target="_blank" rel="noopener">Pi4J V.2 Discussions&lt;/a> if you want to have your project added
+to this list.&lt;/p>
+&lt;h3 id="current-available-device-support-projects">Current available device support projects&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">Device(s)&lt;/th>
+ &lt;th style="text-align: left">Developed by&lt;/th>
+ &lt;th style="text-align: left">Link&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">1602A LCD HD44780U&lt;/td>
+ &lt;td style="text-align: left">Thomas Aarts&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-devices" target="_blank" rel="noopener">github.com/Pi4J/pi4j-example-devices&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">1602A_LCD_PCF8574A I2C Controller&lt;/td>
+ &lt;td style="text-align: left">Thomas Aarts&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-devices" target="_blank" rel="noopener">github.com/Pi4J/pi4j-example-devices&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">1602A LCD MCP23017 I2C Controller&lt;/td>
+ &lt;td style="text-align: left">Thomas Aarts&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-devices" target="_blank" rel="noopener">github.com/Pi4J/pi4j-example-devices&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">ADS1256 24bit A-to-D&lt;/td>
+ &lt;td style="text-align: left">Thomas Aarts&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-devices" target="_blank" rel="noopener">github.com/Pi4J/pi4j-example-devices&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">AT24c512 SEEPROM&lt;/td>
+ &lt;td style="text-align: left">Thomas Aarts&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-devices" target="_blank" rel="noopener">github.com/Pi4J/pi4j-example-devices&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">BME280 Sensor Temperature and Pressure&lt;/td>
+ &lt;td style="text-align: left">Thomas Aarts&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-devices" target="_blank" rel="noopener">github.com/Pi4J/pi4j-example-devices&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;a href="examples/communityimplementation/bmp280/">BMP280 Temperature and Pressure Sensor&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Thomas Aarts&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-devices" target="_blank" rel="noopener">github.com/Pi4J/pi4j-example-devices&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">DAC8552 16bit DAC SPI connected&lt;/td>
+ &lt;td style="text-align: left">Thomas Aarts&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-devices" target="_blank" rel="noopener">github.com/Pi4J/pi4j-example-devices&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">DHT22 Temp/Humidity sensor&lt;/td>
+ &lt;td style="text-align: left">Thomas Aarts&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-devices" target="_blank" rel="noopener">github.com/Pi4J/pi4j-example-devices&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">IS31FL3731 matrix controller&lt;/td>
+ &lt;td style="text-align: left">Thomas Aarts&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-devices" target="_blank" rel="noopener">github.com/Pi4J/pi4j-example-devices&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">MCP23008 drive and read chip GPIOs&lt;/td>
+ &lt;td style="text-align: left">Thomas Aarts&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-devices" target="_blank" rel="noopener">github.com/Pi4J/pi4j-example-devices&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">MCP23008 and MCP23017 Pin monitoring&lt;/td>
+ &lt;td style="text-align: left">Thomas Aarts&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-devices" target="_blank" rel="noopener">github.com/Pi4J/pi4j-example-devices&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">MCP23017 drive and read chip GPIOs&lt;/td>
+ &lt;td style="text-align: left">Thomas Aarts&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-devices" target="_blank" rel="noopener">github.com/Pi4J/pi4j-example-devices&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">MCP3008 A/D 10bit converter&lt;/td>
+ &lt;td style="text-align: left">Thomas Aarts&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-devices" target="_blank" rel="noopener">github.com/Pi4J/pi4j-example-devices&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">MCP4725 12 bit DAC&lt;/td>
+ &lt;td style="text-align: left">Thomas Aarts&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-devices" target="_blank" rel="noopener">github.com/Pi4J/pi4j-example-devices&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">MPL3115A2 Altitude&lt;/td>
+ &lt;td style="text-align: left">Thomas Aarts&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-devices" target="_blank" rel="noopener">github.com/Pi4J/pi4j-example-devices&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">NeoPixel LED strip&lt;/td>
+ &lt;td style="text-align: left">Thomas Aarts&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-devices" target="_blank" rel="noopener">github.com/Pi4J/pi4j-example-devices&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">RotaryEncoder5880&lt;/td>
+ &lt;td style="text-align: left">Thomas Aarts&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-devices" target="_blank" rel="noopener">github.com/Pi4J/pi4j-example-devices&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">SN74HC595 8 Bit shift register&lt;/td>
+ &lt;td style="text-align: left">Thomas Aarts&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-devices" target="_blank" rel="noopener">github.com/Pi4J/pi4j-example-devices&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">SSD1306 OLED Display&lt;/td>
+ &lt;td style="text-align: left">Thomas Aarts&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-devices" target="_blank" rel="noopener">github.com/Pi4J/pi4j-example-devices&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">TCA9548 (1x8 I2C switch)&lt;/td>
+ &lt;td style="text-align: left">Thomas Aarts&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-devices" target="_blank" rel="noopener">github.com/Pi4J/pi4j-example-devices&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">VL53L0X TimeOfFlight device&lt;/td>
+ &lt;td style="text-align: left">Thomas Aarts&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-devices" target="_blank" rel="noopener">github.com/Pi4J/pi4j-example-devices&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table></description></item><item><title>BMP280 Sensor</title><link>https://pi4j.com/examples/communityimplementation/bmp280/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/communityimplementation/bmp280/</guid><description>&lt;h3 id="description">Description&lt;/h3>
+&lt;p>The BMP280 is a Pressure and temperature sensor accessed via I2C or SPI. The BMP280
+is a simple device that requires the connection of few wires to operate.
+Because of this simplicity the device can serve as a very easy project for initial Pi and
+Pi4j usage. This document will explain the more simple means to connect the sensor and
+access the device with existing software requiring no coding. The document will
+also explain minimal coding required to allow greater flexibility.&lt;/p></description></item><item><title>BME280 Sensor</title><link>https://pi4j.com/examples/jbang/bme280_temperature_humidity_pressure/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/jbang/bme280_temperature_humidity_pressure/</guid><description>&lt;h2 id="bme280-sensor-temp-humidity-pressure-via-pi4j-i2c-and-jbang">BME280 Sensor (temp, humidity, pressure) via Pi4J, I2C, and JBang&lt;/h2>
+
+&lt;div class="notices tip" >&lt;p>GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-jbang/blob/main/Pi4JTempHumPressI2C.java" target="_blank" rel="noopener">github.com/Pi4J/pi4j-jbang &amp;gt; Pi4JTempHumPressI2C.java&lt;/a> and &lt;a href="https://github.com/Pi4J/pi4j-jbang/blob/main/Pi4JTempHumPressSpi.java" target="_blank" rel="noopener">github.com/Pi4J/pi4j-jbang &amp;gt; Pi4JTempHumPressSpi.java&lt;/a>&lt;/p>
+&lt;/div>
+
+&lt;h2 id="intro">Intro&lt;/h2>
+&lt;p>This is an example project to demonstrate how to read the temperature, humidity and pressure from a &lt;a href="https://www.adafruit.com/product/2652" target="_blank" rel="noopener">BME280 sensor, installed on an Adafruit board&lt;/a> that can be controlled via I2C and SPI. Such a sensor itself is a very tiny component that can be integrated in phones and many other types of devices.&lt;/p></description></item><item><title>Bosch sensor gas measurement</title><link>https://pi4j.com/blog/2024/20240517_bosch_sensor_gas_measurement/</link><pubDate>Thu, 25 Apr 2024 00:00:00 +0000</pubDate><guid>https://pi4j.com/blog/2024/20240517_bosch_sensor_gas_measurement/</guid><description>&lt;p>2024-05-17, by Frank Delporte&lt;/p>
+&lt;p>Bosch has several sensors which are extremely small to measure temperature, humidity, pressure, and gas. We also have several example implementations documented on the Pi4J website:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://pi4j.com/examples/jbang/bme280_temperature_humidity_pressure/">BME280 Sensor (temp, humidity, pressure) via Pi4J, I2C, and JBang&lt;/a>.&lt;/li>
+&lt;li>&lt;a href="https://pi4j.com/examples/communityimplementation/bmp280/">BMP280 Sensor&lt;/a>, example implementation by Thomas Aarts.&lt;/li>
+&lt;li>&lt;a href="https://pi4j.com/blog/2024/20240417_led_matrix_max7219_spi_web/">LED Matrix with SPI MAX7219&lt;/a>, work-in-progress for a weather station.&lt;/li>
+&lt;li>&lt;a href="https://pi4j.com/featured-projects/sensor-drivers/">Sensor drivers&lt;/a>, project by Juraj Veverka.&lt;/li>
+&lt;/ul>
+&lt;p>You can find easy-to-use boards with such a sensor, for instance, on:&lt;/p></description></item></channel></rss>

@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Javac on Pi4J</title><link>https://pi4j.com/tags/javac/</link><description>Recent content in Javac on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://pi4j.com/tags/javac/index.xml" rel="self" type="application/rss+xml"/><item><title>Building with javac</title><link>https://pi4j.com/documentation/building/javac/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/building/javac/</guid><description>You can build a Pi4J project using only java and javac.
-Wiring No wiring is needed for this minimal example as it only demonstrates how to create a minimal application which initializes Pi4J.
-Java release Any Java release over 11 is enough, check it with this command:
-$ java -version java 17.0.1 2021-10-19 LTS Java(TM) SE Runtime Environment (build 17.0.1+12-LTS-39) Java HotSpot(TM) 64-Bit Server VM (build 17.0.1+12-LTS-39, mixed mode, sharing) PI4J jar files You will need to download the Pi4J distribution from the Maven repository:</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Javac on Pi4J</title><link>https://pi4j.com/tags/javac/</link><description>Recent content in Javac on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://pi4j.com/tags/javac/index.xml" rel="self" type="application/rss+xml"/><item><title>Building with javac</title><link>https://pi4j.com/documentation/building/javac/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/building/javac/</guid><description>&lt;p>You can build a Pi4J project using only java and javac.&lt;/p>
+&lt;h2 id="wiring">Wiring&lt;/h2>
+&lt;p>No wiring is needed for this minimal example as it only demonstrates how to create a minimal application which initializes
+Pi4J.&lt;/p>
+&lt;h2 id="java-release">Java release&lt;/h2>
+&lt;p>Any Java release over 11 is enough, check it with this command:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>$ java -version
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>java 17.0.1 2021-10-19 LTS
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Java&lt;span style="color:#f92672">(&lt;/span>TM&lt;span style="color:#f92672">)&lt;/span> SE Runtime Environment &lt;span style="color:#f92672">(&lt;/span>build 17.0.1+12-LTS-39&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Java HotSpot&lt;span style="color:#f92672">(&lt;/span>TM&lt;span style="color:#f92672">)&lt;/span> 64-Bit Server VM &lt;span style="color:#f92672">(&lt;/span>build 17.0.1+12-LTS-39, mixed mode, sharing&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="pi4j-jar-files">PI4J jar files&lt;/h2>
+&lt;p>You will need to download the Pi4J distribution from the Maven repository:&lt;/p></description></item></channel></rss>
