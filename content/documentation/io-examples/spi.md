@@ -34,6 +34,35 @@ As already mentioned in the first section, multiple slaves can also be connected
 The number available depends on the hardware used. On the Raspberry Pi, the standard SPI0
 with two different slaves use what is called Chip Select Pins is controlled.
 
+Command line to list interfaces:
+```
+root@rp5:~# ls -l /dev/*spi*
+ls: cannot access '/dev/*spi*': No such file or directory
+root@rp5:~# 
+```
+
+If none show up:
+```
+root@rp5:~# raspi-config
+    Interface Options
+        SPI
+            Would you like the SPI interface to be enabled?
+            Yes
+```
+
+```
+root@rp5:~# ls -l /dev/*spi*
+crw-rw---- 1 root spi 153, 0 Sep 11 09:58 /dev/spidev0.0
+root@rp5:~#
+```
+
+Here is 1 interface that can be accessed 2 ways:
+```
+/dev/spidev0.0 drives CE0 Low
+/dev/spidev0.1 drives CE1 Low
+```
+
+
 ## Additional Information
 
 - [Wikipedia SPI](https://en.wikipedia.org/wiki/Serial_Peripheral_Interface)
