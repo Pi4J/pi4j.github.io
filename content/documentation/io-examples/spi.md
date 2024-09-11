@@ -19,7 +19,7 @@ depending on the desired topology.
 ## Uses
 
 In addition to communication between microcontrollers, SPI is also used to address 
-numerous sensors and actuators. Similar to I²C, a large number of control commands and 
+many sensors and actuators. Similar to I²C, a large number of control commands and 
 data can be transmitted in both directions with a relatively high clock rate over 3 lines. 
 A particular advantage here is the support for “full duplex”, ie the simultaneous 
 transmission of data in both directions.
@@ -30,38 +30,39 @@ consoles via the Game Boy Link Cable.
 
 ## Addressing
 
-As already mentioned in the first section, multiple slaves can also be connected to SPI. 
-The number available depends on the hardware used. On the Raspberry Pi, the standard SPI0
-with two different slaves use what is called Chip Select Pins is controlled.
+As already mentioned in the first section, multiple slaves can be connected to SPI. 
+The number of available SPI-buses depends on the hardware being used. On the Raspberry Pi, the standard SPI0 with two different slaves, uses what is called "Chip Select Pins".
 
-Command line to list interfaces:
-```
-root@rp5:~# ls -l /dev/*spi*
+With the following command you can list the available interfaces:
+
+```shell
+$ ls -l /dev/*spi*
 ls: cannot access '/dev/*spi*': No such file or directory
-root@rp5:~# 
 ```
 
-If none show up:
-```
-root@rp5:~# raspi-config
+If none show up, you need to enable SPI with `raspi-config`:
+
+```shell
+$ raspi-config
     Interface Options
         SPI
             Would you like the SPI interface to be enabled?
             Yes
 ```
 
-```
-root@rp5:~# ls -l /dev/*spi*
+Now when you list the available interfaces, you should get a result like this:
+
+```shell
+$ ls -l /dev/*spi*
 crw-rw---- 1 root spi 153, 0 Sep 11 09:58 /dev/spidev0.0
-root@rp5:~#
 ```
 
-Here is 1 interface that can be accessed 2 ways:
-```
+There is one interface that can be accessed in two ways:
+
+```shell
 /dev/spidev0.0 drives CE0 Low
 /dev/spidev0.1 drives CE1 Low
 ```
-
 
 ## Additional Information
 
