@@ -1,0 +1,444 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+
+    <title>#JavaOnRaspberryPi</title>
+
+    <link href="dist/reset.css" rel="stylesheet">
+    <link href="dist/reveal.css" rel="stylesheet">
+    <link href="dist/theme/black.css" rel="stylesheet">
+
+    <!-- Theme used for syntax highlighted code -->
+    <link href="plugin/highlight/monokai.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="reveal">
+    <div class="slides">
+        <section data-background-image="images/electronics/segment_display_and_screen.jpg" >
+            <h3 style="color: #ffffff; text-shadow: 1px 1px 2px black;">Building Smart Devices<br>With Java on the
+                Raspberry Pi</h3>
+            <h4 style="color: #ffffff; text-shadow: 1px 1px 2px black;">An intro to Pi4J</h4>
+
+            <aside class="notes">
+            </aside>
+        </section>
+        
+        <!-- What is Raspberry Pi -->
+        <section>
+            <img data-src="images/raspberrypi/raspberrypi_logo.png" style="height: 100px;">
+            <img data-src="images/raspberrypi/models.png"/>
+
+            <aside class="notes">
+            </aside>
+        </section>
+
+        <section>
+            <img data-src="images/raspberrypi/raspberry_pi_5.png" style="height: 600px;"/>
+        </section>
+
+        <section>
+            <h3>Raspberry Pi Pico</h3>
+            <img data-src="images/raspberrypi/rpi-3-picos.webp" style="height: 500px;"/>
+
+            <aside class="notes">
+                For completeness, but this is a microcontroller -> Arduino
+                4 and 6$
+            </aside>
+        </section>
+
+        <section>
+            <img data-src="images/raspberrypi/raspberrypi_logo.png" style="height: 100px;">
+            <h4 class="fragment fade-up">Single board computer</h4>
+            <h4 class="fragment fade-up">Full Linux server or desktop</h4>
+            <h4 class="fragment fade-up">Many OS versions (32/64-bit)</h4>
+            <h4 class="fragment fade-up">400.000/month</h4>
+            <h4 class="fragment fade-up">www.rpilocator.com</h4>
+
+            <aside class="notes">
+            </aside>
+        </section>
+
+        <section>
+            <h3>Chris Bensen - @chrisbensen</h3>
+            <div class="r-hstack justify-center">
+                <div data-id="box1"><img data-src="images/piprojects/1024-cluster-3.jpg" width="600"/></div>
+                <div data-id="box1"><img data-src="images/piprojects/2.jpg" width="600"/></div>
+            </div>
+
+            <aside class="notes">
+                Chris Bensen
+                I invent and make stuff for myself and Oracle
+            </aside>
+        </section>
+
+        <section>
+            <h3>Ivan Kuleshov - @Merocle</h3>
+            <div class="r-hstack justify-center">
+                <div data-id="box1"><img data-src="images/piprojects/blade-1.jpg" width="600"/></div>
+                <div data-id="box2"><img data-src="images/piprojects/blade-2.jpg" width="600"/></div>
+            </div>
+
+            <aside class="notes">
+                Ivan Kuleshov
+                JetBrains Systems Engineer. Hardware hacker.
+            </aside>
+        </section>
+
+        <section>
+            <h3>Ivan Kuleshov - @Merocle</h3>
+            <div class="r-hstack justify-center">
+                <div data-id="box1"><img data-src="images/piprojects/blade-in-rack-1.jpg"/></div>
+                <div data-id="box2"><img data-src="images/piprojects/blade-in-rack-2.jpg"/></div>
+            </div>
+
+            <aside class="notes">
+                Up to 40 Raspberry Pi CM4 with NVMe SSDs. 160 ARM Cortex-A76 cores and 320Gb RAM
+                Only two units (2U)
+            </aside>
+        </section>
+
+        <!-- Why Java on Raspberry Pi -->
+        <section>
+            <h3>Why Java on the Raspberry Pi?</h3>
+
+            <aside class="notes">
+                Why Java on the Raspberry Pi?
+                Why use Java - the server language - on such a small device?
+                Well, actually, for me, there are many different reasons...
+            </aside>
+        </section>
+
+        <section>
+            <h3>Raspberry Pi Header</h3>
+            <h4>The connection to electronic components</h4>
+            <img data-src="images/raspberrypi/header.png"/>
+        </section>
+
+        <section>
+            <h3>Why?</h3>
+            <h4>Because it's my language and want to learn more</h4>
+
+            <aside class="notes">
+                First of all, it's my language. I have been mainly Java programming for over 10 years now and I feel
+                most comfortable with it. Yes I've used C# and Python, Qt, JavaScript, but still I always return to Java
+                as that allows me to do all the things I need to do the quickest way.
+
+                I can imagine there is a lot of Java love in this room too, so why not extend your knowledge and enter
+                the world of electronics
+            </aside>
+        </section>
+
+        <section>
+            <div class="r-hstack justify-center">
+                <div data-id="box1"><img data-src="images/electronics/lcd-output.jpg" width="400px"/></div>
+                <div data-id="box2"><img data-src="images/electronics/segment_display_and_screen.jpg" width="400px"/>
+                </div>
+            </div>
+            <div class="r-hstack justify-center">
+                <div data-id="box1"><img data-src="images/electronics/running-app-with-chart.png" width="400px"/></div>
+                <div data-id="box2"><img data-src="images/electronics/matrix-output.jpg" width="400px"/></div>
+            </div>
+        </section>
+
+        <section>
+            <h3>Why?</h3>
+            <h4>Because it's energy efficient</h4>
+
+            <aside class="notes">
+                But a remarkable fact that most of us are not aware of, is that the amount of energy needed by a
+                program,
+                is highly different for the same kind of task for each programming language.
+            </aside>
+        </section>
+
+        <section>
+            <img data-src="images/java/energy.png"/>
+            <p>https://thenewstack.io/which-programming-languages-use-the-least-electricity/</p>
+
+            <aside class="notes">
+                This is scientific research, not some Java nerd coming up with some numbers...
+
+                Compare Java with for instance Python...
+            </aside>
+        </section>
+
+        <section>
+            <h3>Why?</h3>
+            <h4>Because of JavaFX</h4>
+
+            <aside class="notes">
+                I know there are not a lot of us, but I do love JavaFX.
+
+                Sorry, for the JavaScripties, but building an app with millions of dependencies and 16 different
+                frameworks
+                and tools is a nightmare...
+            </aside>
+        </section>
+
+        <section>
+            <div class="v-hstack justify-center">
+                <div data-id="box1"><img data-src="images/javafx/fxribbon.png"/></div>
+                <div class="r-hstack justify-center" data-id="box2">
+                    <div data-id="box1"><img data-src="images/javafx/tilesfx.png" width="600px"/></div>
+                    <div data-id="box2"><img data-src="images/javafx/fxgl.png" width="600px"/></div>
+                </div>
+            </div>
+
+            <aside class="notes">
+                There are numerous great libraries to build user interfaces, although I have to admit there are more
+                for other languages and JavaFX has to catchup and needs a bigger user base...
+
+                These are only a few, free, opensource.
+            </aside>
+        </section>
+
+        <section>
+            <h3>Why?</h3>
+            <h4>Because of the libraries, community, and tools</h4>
+
+            <aside class="notes">
+                And of course, it's not only the JavaFX libraries...
+                It's all the others on top of that and the amazing tools, all provided by a very big and friendly
+                community.
+                Please look around, you're all part of it.
+            </aside>
+        </section>
+
+        <section>
+            <img data-src="images/foojay/raspberry.png"/>
+
+            <aside class="notes">
+                Vaadin mobile friendly web user interface, 100% written in Java.
+                JBang: running Java code with dependencies like you are used to run bash scripts, without installing
+                Java and Maven
+                SDKMAN: switch between any Java version from all providers on all Linux and Mac platforms
+                JavaFX: build desktop and mobile applications with 100% Java.
+            </aside>
+        </section>
+
+        <section>
+            <h3>Why?</h3>
+            <h4>Because of the evolution with the 6-months release cycle</h4>
+        </section>
+
+        <section>
+            <img data-src="images/java/history_java_releases.png"/>
+
+            <aside class="notes">
+                Each new release brings new features, cleaner code and better performance.
+                Yes, also on the Raspberry Pi!
+                Also JavaFX follows the same release cycle and each time includes improvements for embedded.
+            </aside>
+        </section>
+
+        <section>
+            <h3>Why?</h3>
+            <h3>Focus on one thing to learn</h3>
+
+            <aside class="notes">
+                This is probably the most important reason for us, people interested in technology, Java especially, and
+                always want to learn more.
+            </aside>
+        </section>
+
+        <!-- Pi4J -->
+        <section>
+            <img data-src="images/pi4j/Pi4J_Logo.png">
+            <h4 class="fragment fade-up">www.pi4j.com</h4>
+
+            <aside class="notes">
+                And while writing my book I got into contact with the creator of Pi4J. It's one of those libraries
+                that makes Java even better. Pi4J allows you to make the connection between your code and electronic
+                components.
+
+                For my next slide I need to inform you that I followed a course about presentation skills and story
+                telling,
+                and I learned you are allowed to have one slide with too many text. So this is that one slide...
+            </aside>
+        </section>
+
+        <section>
+            <img data-src="images/pi4j/Pi4J_Logo.png" style="height: 100px;">
+
+            <p style="margin: 50px;">
+                This project is intended to provide a <b>friendly object-oriented I/O API</b> and implementation
+                <b>libraries for Java programmers</b> to access the <b>full I/O capabilities of the Raspberry Pi
+                platform</b>.
+                This project abstracts the low-level native integration and interrupt monitoring to enable Java
+                programmers to
+                <b>focus on implementing their application business logic</b>.
+            </p>
+
+            <aside class="notes">
+                What is Pi4J exactly?
+
+                READ IT
+            </aside>
+        </section>
+
+        <section>
+            <img data-src="images/pi4j/pi4j-overview.jpg">
+        </section>
+
+        <section>
+            <section data-auto-animate>
+                <h3>api.pi4j.com</h3>
+                <img data-src="images/api-pi4j/library-enum.png">
+            </section>
+            <section data-auto-animate>
+                <h3>api.pi4j.com</h3>
+                <img data-src="images/api-pi4j/vaadin-board-model4b.png">
+            </section>
+            <section data-auto-animate>
+                <h3>api.pi4j.com</h3>
+                <img data-src="images/api-pi4j/vaadin-board-header.png">
+            </section>
+            <section data-auto-animate>
+                <h3>api.pi4j.com</h3>
+                <img data-src="images/api-pi4j/swagger.png">
+            </section>
+            <section data-auto-animate>
+                <h3>api.pi4j.com</h3>
+                <img data-src="images/api-pi4j/json-from-api.png">
+            </section>
+            <section data-auto-animate>
+                <h3>Thanks to FinalTek.com</h3>
+                <img data-src="images/api-pi4j/finaltek.png">
+            </section>
+        </section>
+
+        <section>
+            <h3>Real world examples</h3>
+
+            <div class="r-hstack justify-center">
+                <div data-id="box1"><img data-src="images/raspberrypi/realworld_conveyor.jpg" width="400px"/></div>
+                <div data-id="box2"><img data-src="images/raspberrypi/realworld_medicin_cabinet.jpg" width="400px"/></div>
+                <div data-id="box3"><img data-src="images/raspberrypi/realworld_didier.jpg" width="400px"/></div>
+            </div>
+
+            <aside class="notes">
+                * Sorting machine
+                * Cabinet for medicines
+                * Straat artist robot Didier
+            </aside>
+        </section>
+
+        <section>
+            <h3>pi4j.com</h3>
+            <img data-src="images/pi4j/website-home.png">
+        </section>
+
+        <section>
+            <h3>Minimal example</h3>
+            <img data-src="images/pi4j/led-button_bb.png">
+        </section>
+
+        <section>
+            <h3>Blink a LED</h3>
+            <section data-auto-animate>
+						<pre data-id="code"><code class="java" data-line-numbers data-trim>
+    &lt;dependency>
+        &lt;groupId>com.pi4j&lt;/groupId>
+        &lt;artifactId>pi4j-core&lt;/artifactId>
+        &lt;version>${pi4j.version}&lt;/version>
+    &lt;/dependency>
+
+    &lt;dependency>
+        &lt;groupId>com.pi4j&lt;/groupId>
+        &lt;artifactId>pi4j-plugin-raspberrypi&lt;/artifactId>
+        &lt;version>${pi4j.version}&lt;/version>
+    &lt;/dependency>
+    &lt;dependency>
+        &lt;groupId>com.pi4j&lt;/groupId>
+        &lt;artifactId>pi4j-plugin-pigpio&lt;/artifactId>
+        &lt;version>${pi4j.version}&lt;/version>
+    &lt;/dependency>
+						</code></pre>
+            </section>
+            <section data-auto-animate>
+						<pre data-id="code"><code class="java" data-line-numbers data-trim>
+var pi4j = Pi4J.newAutoContext();
+						</code></pre>
+            </section>
+            <section data-auto-animate>
+						<pre data-id="code"><code class="java" data-line-numbers data-trim>
+private static final int PIN_LED = 22; // PIN 15 = BCM 22
+
+var ledConfig = DigitalOutput.newConfigBuilder(pi4j)
+      .id("led")
+      .name("LED Flasher")
+      .address(PIN_LED)
+      .shutdown(DigitalState.LOW)
+      .initial(DigitalState.LOW);
+
+var led = pi4j.create(ledConfig);
+						</code></pre>
+            </section>
+            <section data-auto-animate>
+						<pre data-id="code"><code class="java" data-line-numbers data-trim>
+while (true) {
+      if (led.equals(DigitalState.HIGH)) {
+           led.low();
+      } else {
+           led.high();
+      }
+      Thread.sleep(500);
+}
+						</code></pre>
+            </section>
+        </section>
+
+        <section data-background-video="video/pi4j_minimal_example.mp4">
+        </section>
+
+        <!-- Conclusion -->
+        <section>
+            <div class="r-hstack justify-center" style="margin-right: 25px;">
+                <div data-id="box1">
+                    <h3>What's next?</h3>
+                    <h4 class="fragment fade-up" style="text-transform: none;">#JavaOnRaspberryPi</h4>
+                    <h4 class="fragment fade-up">Visit pi4j.com</h4>
+                    <h4 class="fragment fade-up">Experiment, Fail, Learn, Repeat</h4>
+                    <h4 class="fragment fade-up">Have fun!</h4>
+                </div>
+                <div data-id="box2"><img data-src="images/book/cover.png" style="margin-left: 50px; width: 300px;"/></div>
+            </div>
+
+            <aside class="notes">
+            </aside>
+        </section>
+    </div>
+</div>
+
+<script src="dist/reveal.js"></script>
+<script src="plugin/notes/notes.js"></script>
+<script src="plugin/markdown/markdown.js"></script>
+<script src="plugin/highlight/highlight.js"></script>
+<script>
+    // More info about initialization & config:
+    // - https://revealjs.com/initialization/
+    // - https://revealjs.com/config/
+    Reveal.initialize({
+        hash: true,
+
+        autoPlayMedia: true,
+        transition: 'fade',
+        slideNumber: 'c/t',
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+
+        // Factor of the display size that should remain empty around
+        // the content
+        margin: 0, // 0.04
+
+        // Bounds for smallest/largest possible scale to apply to content
+        minScale: 0.2,
+        maxScale: 5.0 // 2.0
+    });
+</script>
+</body>
+</html>
