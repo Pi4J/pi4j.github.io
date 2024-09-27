@@ -1302,7 +1302,7 @@ with &lt;a href="https://www.oracle.com/java/duke.html" target="_blank" rel="noo
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// Output&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Byte value 10001111: &lt;span style="color:#f92672">-&lt;/span>113
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>You can use &lt;code>Byte.toUnsignedInt(b)&lt;/code> to get the expected, unsigned value:&lt;/p></description></item><item><title>Bosch sensor gas measurement</title><link>https://pi4j.com/blog/2024/20240517_bosch_sensor_gas_measurement/</link><pubDate>Thu, 25 Apr 2024 00:00:00 +0000</pubDate><guid>https://pi4j.com/blog/2024/20240517_bosch_sensor_gas_measurement/</guid><description>&lt;p>2024-05-17, by Frank Delporte&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>You can use &lt;code>Byte.toUnsignedInt(b)&lt;/code> to get the expected, unsigned value:&lt;/p></description></item><item><title>Bosch sensor gas measurement</title><link>https://pi4j.com/blog/2024/20240517_bosch_sensor_gas_measurement/</link><pubDate>Fri, 17 May 2024 00:00:00 +0000</pubDate><guid>https://pi4j.com/blog/2024/20240517_bosch_sensor_gas_measurement/</guid><description>&lt;p>2024-05-17, by Frank Delporte&lt;/p>
 &lt;p>Bosch has several sensors which are extremely small to measure temperature, humidity, pressure, and gas. We also have several example implementations documented on the Pi4J website:&lt;/p>
 &lt;ul>
 &lt;li>&lt;a href="https://pi4j.com/examples/jbang/bme280_temperature_humidity_pressure/">BME280 Sensor (temp, humidity, pressure) via Pi4J, I2C, and JBang&lt;/a>.&lt;/li>
