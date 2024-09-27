@@ -1,5 +1,5 @@
 ---
-title: "Signed versus unsigned byte values"
+title: "Signed versus unsigned values"
 date: 2024-09-27
 tags: ["Signed", "Unsigned"]
 ---
