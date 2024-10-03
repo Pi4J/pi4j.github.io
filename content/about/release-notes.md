@@ -5,6 +5,29 @@ weight: 40
 
 All releases of Pi4J V.2 are listed on [github.com/Pi4J/pi4j-v2/releases](https://github.com/Pi4J/pi4j-v2/releases).
 
+## 2024-10-03 - V2.7.0
+
+* Libraries are loaded depending on the platform, by calling `BoardInfoHelper.runningOnRaspberryPi()`.
+* `BoardModel` has been extended with 2Gb Raspberry Pi 5, Raspberry Pi Pico 2, and extra board codes for the Compute Module 4. 
+* Allowing configuration of the shutdown hook. It's disabled by default.
+* [Issue #354](https://github.com/Pi4J/pi4j-v2/issues/354): Gracefully handle UnsatisfiedLinkError on newAutoContext.
+* [Issue #368](https://github.com/Pi4J/pi4j-v2/issues/368): Mock providers don't seem to be loaded on an non-RPi system.
+* [Issue #369](https://github.com/Pi4J/pi4j-v2/issues/369): WARN noise in the log about Ignoring providers on every startup. 
+  * Removed unnecessary String concatenations in logging statements.
+  * Reduced log output and reviewed `warn` levels to reduce to `info` where more applicable.
+* [Issue #383](https://github.com/Pi4J/pi4j-v2/issues/383): Increase amount of write bytes to SPI devices over 65535. `spiWrite` has been modified to write data in chunks of 4096 bytes so it can handle larger messages.
+* [Issue #388](https://github.com/Pi4J/pi4j-v2/issues/388): I2C writeRead method compares written to writeOffset instead of writeSize.
+
+Because of the changes in the loading of the mock providers, if you want to load them on a Raspberry Pi board, you need to use the following context builder:
+
+```java
+var pi4j = Pi4J.newContextBuilder().autoDetectMockPlugins().build();
+```
+
+Thanks to contributions by [@ylexus](https://github.com/ylexus), [@mores](https://github.com/mores), [@taartspi](https://github.com/taartspi), [@eitch](https://github.com/eitch), [@fdelporte](https://github.com/fdelporte).
+
+All changes: https://github.com/Pi4J/pi4j-v2/compare/2.6.1...2.7.0
+
 ## 2024-07-29 - V2.6.1
 
 This is a minor bug fix release to allow a smoother integration in a Spring Boot Starter by allowing to run on PC for testing without initialization errors and with reduced logging of the I2C Mock plugin.
