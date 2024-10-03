@@ -57,13 +57,23 @@ of the more traditional and commonly used Broadcom pin numbering scheme. This pi
 confusion for a number of years, especially with beginners and is somewhat cumbersome to maintain as new Raspberry Pi
 models are introduces with differing or added GPIO pins. Moving forward, Pi4J will only use the Broadcom (BCM) pin
 numbering scheme.&lt;/p></description></item><item><title>Release Notes</title><link>https://pi4j.com/about/release-notes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/about/release-notes/</guid><description>&lt;p>All releases of Pi4J V.2 are listed on &lt;a href="https://github.com/Pi4J/pi4j-v2/releases" target="_blank" rel="noopener">github.com/Pi4J/pi4j-v2/releases&lt;/a>.&lt;/p>
-&lt;h2 id="2024-07-29---v261">2024-07-29 - V2.6.1&lt;/h2>
-&lt;p>This is a minor bug fix release to allow a smoother integration in a Spring Boot Starter by allowing to run on PC for testing without initialization errors and with reduced logging of the I2C Mock plugin.&lt;/p>
+&lt;h2 id="2024-10-03---v270">2024-10-03 - V2.7.0&lt;/h2>
 &lt;ul>
-&lt;li>&lt;a href="https://github.com/Pi4J/pi4j-v2/issues/354" target="_blank" rel="noopener">Issue #354&lt;/a>: Gracefully handle UnsatisfiedLinkError on newAutoContext when not running on a Raspberry Pi, for instance, when testing on Windows or macOS.&lt;/li>
-&lt;li>Clean up of logs in &lt;code>MockI2C.java&lt;/code>.&lt;/li>
+&lt;li>Libraries are loaded depending on the platform, by calling &lt;code>BoardInfoHelper.runningOnRaspberryPi()&lt;/code>.&lt;/li>
+&lt;li>&lt;code>BoardModel&lt;/code> has been extended with 2Gb Raspberry Pi 5, Raspberry Pi Pico 2, and extra board codes for the Compute Module 4.&lt;/li>
+&lt;li>Allowing configuration of the shutdown hook. It&amp;rsquo;s disabled by default.&lt;/li>
+&lt;li>&lt;a href="https://github.com/Pi4J/pi4j-v2/issues/354" target="_blank" rel="noopener">Issue #354&lt;/a>: Gracefully handle UnsatisfiedLinkError on newAutoContext.&lt;/li>
+&lt;li>&lt;a href="https://github.com/Pi4J/pi4j-v2/issues/368" target="_blank" rel="noopener">Issue #368&lt;/a>: Mock providers don&amp;rsquo;t seem to be loaded on an non-RPi system.&lt;/li>
+&lt;li>&lt;a href="https://github.com/Pi4J/pi4j-v2/issues/369" target="_blank" rel="noopener">Issue #369&lt;/a>: WARN noise in the log about Ignoring providers on every startup.
+&lt;ul>
+&lt;li>Removed unnecessary String concatenations in logging statements.&lt;/li>
+&lt;li>Reduced log output and reviewed &lt;code>warn&lt;/code> levels to reduce to &lt;code>info&lt;/code> where more applicable.&lt;/li>
 &lt;/ul>
-&lt;p>All changes: &lt;a href="https://github.com/Pi4J/pi4j-v2/compare/2.6.0...2.6.1" target="_blank" rel="noopener">https://github.com/Pi4J/pi4j-v2/compare/2.6.0...2.6.1&lt;/a>&lt;/p></description></item><item><title>Pi4J Downloads</title><link>https://pi4j.com/about/download/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/about/download/</guid><description>&lt;p>All downloads provided by the project can be found on &lt;a href="https://pi4j.com/download/" target="_blank" rel="noopener">pi4j.com/download&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>&lt;a href="https://github.com/Pi4J/pi4j-v2/issues/383" target="_blank" rel="noopener">Issue #383&lt;/a>: Increase amount of write bytes to SPI devices over 65535. &lt;code>spiWrite&lt;/code> has been modified to write data in chunks of 4096 bytes so it can handle larger messages.&lt;/li>
+&lt;li>&lt;a href="https://github.com/Pi4J/pi4j-v2/issues/388" target="_blank" rel="noopener">Issue #388&lt;/a>: I2C writeRead method compares written to writeOffset instead of writeSize.&lt;/li>
+&lt;/ul>
+&lt;p>Because of the changes in the loading of the mock providers, if you want to load them on a Raspberry Pi board, you need to use the following context builder:&lt;/p></description></item><item><title>Pi4J Downloads</title><link>https://pi4j.com/about/download/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/about/download/</guid><description>&lt;p>All downloads provided by the project can be found on &lt;a href="https://pi4j.com/download/" target="_blank" rel="noopener">pi4j.com/download&lt;/a>.&lt;/p>
 &lt;p>The compiled artifacts (releases and snapshots) are available in the
 &lt;a href="https://oss.sonatype.org/index.html#nexus-search;gav~com.pi4j~~~~" target="_blank" rel="noopener">Sonatype Maven repository&lt;/a>.&lt;/p>
 &lt;iframe src="https://pi4j.com/download" style="width: 100%; height: 100vh;">&lt;/iframe></description></item><item><title>License (Open Source)</title><link>https://pi4j.com/about/license/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/about/license/</guid><description>&lt;p>The Pi4J Version 2.0 project is distributed and licensed under the &lt;strong>Apache License, Version 2.0&lt;/strong> license
