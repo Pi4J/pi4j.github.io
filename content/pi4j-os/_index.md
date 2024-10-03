@@ -13,10 +13,15 @@ Yes, Raspberry Pi OS is great! And we made if even more awesome by adding some "
 GITHUB PROJECT: [https://github.com/Pi4J/pi4j-os](https://github.com/Pi4J/pi4j-os)
 {{% /notice %}}
 
-{{% notice warning %}}
-Pi4j OS doesn't work on the Raspberry Pi 5. Instead, on a Raspberry Pi 5, do a standard install, as [described here](https://www.raspberrypi.com/software/).
+## For Raspberry Pi 3 and 4
 
-After starting the Raspberry Pi, you can install Java and everything you need to build Pi4J on the Raspberry Pi, using the following script:
+{{% notice warning %}}
+Pi4j OS doesn't work on the Raspberry Pi 5.
+{{% /notice %}}
+
+Because of changes in the Raspberry Pi Operating System related to the release of the Raspberry Pi 5, the Pi4J OS is currently only compatible with the Raspberry Pi 3 and 4.
+
+For the Raspberry Pi 5, you can achieve the same kind of features by starting with a standard installation as [described here](https://www.raspberrypi.com/software/). After starting the Raspberry Pi, you can install Java and everything you need to build Pi4J on the Raspberry Pi, using the following script:
 
 ```shell
 #!/bin/bash -e
@@ -44,9 +49,8 @@ You can execute all this with one script using the following command:
 ```shell
 curl -s "https://raw.githubusercontent.com/eitch/pi4j-test/develop/src/assembly/setup.sh" | bash
 ```
-{{% /notice %}}
 
-## Additional Feature on top of Raspberry Pi OS
+## Additional Features on top of Raspberry Pi OS
 
 This project provides pre-built versions of OS images with all you need to develop 100% pure Java applications for specific Raspberry Pi setups. They are based on the latest official [Raspberry Pi OS](https://www.raspberrypi.org/software/) and are automatically built using Packer. 
 
