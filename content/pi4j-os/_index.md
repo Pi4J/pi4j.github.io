@@ -13,6 +13,39 @@ Yes, Raspberry Pi OS is great! And we made if even more awesome by adding some "
 GITHUB PROJECT: [https://github.com/Pi4J/pi4j-os](https://github.com/Pi4J/pi4j-os)
 {{% /notice %}}
 
+{{% notice warning %}}
+Pi4j OS doesn't work on the Raspberry Pi 5. Instead, on a Raspberry Pi 5, do a standard install, as [described here](https://www.raspberrypi.com/software/).
+
+After starting the Raspberry Pi, you can install Java and everything you need to build Pi4J on the Raspberry Pi, using the following script:
+
+```shell
+#!/bin/bash -e
+sudo raspi-config nonint do_i2c 0
+sudo raspi-config nonint do_ssh 0
+sudo raspi-config nonint do_serial_hw 0
+sudo raspi-config nonint do_serial_cons 1
+sudo raspi-config nonint do_onewire 0
+sudo systemctl disable hciuart
+echo "dtoverlay=disable-bt" | sudo tee -a /boot/firmware/config.txt
+
+sudo apt install -y i2c-tools vim git java-common libxi6 libxrender1 libxtst6
+curl -s "https://get.sdkman.io" | bash
+source .bashrc
+sdk install maven
+
+mkdir -p ~/Downloads
+cd ~/Downloads
+wget https://cdn.azul.com/zulu/bin/zulu21.34.19-ca-jdk21.0.3-linux_arm64.deb
+sudo dpkg -i zulu21.34.19-ca-jdk21.0.3-linux_arm64.deb
+```
+
+You can execute all this with one script using the following command:
+
+```shell
+curl -s "https://raw.githubusercontent.com/eitch/pi4j-test/develop/src/assembly/setup.sh" | bash
+```
+{{% /notice %}}
+
 ## Additional Feature on top of Raspberry Pi OS
 
 This project provides pre-built versions of OS images with all you need to develop 100% pure Java applications for specific Raspberry Pi setups. They are based on the latest official [Raspberry Pi OS](https://www.raspberrypi.org/software/) and are automatically built using Packer. 
@@ -29,7 +62,7 @@ By using these images, you will get:
 * User account `pi`, password `pi4j`.
   * You have to set the corresponding preferences in Raspberry Pi Imager.
 * Default WLAN connection.
-  * Setup a hotspot, for example on your smartphone, and you are ready to go.
+  * Setup a hotspot, for example on your smartphone, and you’re ready to go.
     * SSID: `Pi4J-Spot`.
     * Password: `MayTheSourceBeWithYou!`.
   * Your laptop has to be in the same WLAN as the Rasperry Pi.
