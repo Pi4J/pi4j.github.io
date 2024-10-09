@@ -18,7 +18,7 @@ to this list.
 | ADS1256 24bit A-to-D                                                               | Thomas Aarts          | [github.com/Pi4J/pi4j-example-devices](https://github.com/Pi4J/pi4j-example-devices) |
 | AT24c512 SEEPROM                                                                   | Thomas Aarts          | [github.com/Pi4J/pi4j-example-devices](https://github.com/Pi4J/pi4j-example-devices) |
 | BME280 Sensor Temperature and Pressure                                             | Thomas Aarts          | [github.com/Pi4J/pi4j-example-devices](https://github.com/Pi4J/pi4j-example-devices) |
-| [BMP280 Temperature and Pressure Sensor](examples/communityimplementation/bmp280/) | Thomas Aarts          | [github.com/Pi4J/pi4j-example-devices](https://github.com/Pi4J/pi4j-example-devices) |
+| [BMP280 Temperature and Pressure Sensor](/examples/communityimplementation/bmp280/) | Thomas Aarts          | [github.com/Pi4J/pi4j-example-devices](https://github.com/Pi4J/pi4j-example-devices) |
 | DAC8552 16bit DAC SPI connected                                                    | Thomas Aarts          | [github.com/Pi4J/pi4j-example-devices](https://github.com/Pi4J/pi4j-example-devices) |
 | DHT22 Temp/Humidity sensor                                                         | Thomas Aarts          | [github.com/Pi4J/pi4j-example-devices](https://github.com/Pi4J/pi4j-example-devices) |
 | IS31FL3731 matrix controller                                                       | Thomas Aarts          | [github.com/Pi4J/pi4j-example-devices](https://github.com/Pi4J/pi4j-example-devices) |
