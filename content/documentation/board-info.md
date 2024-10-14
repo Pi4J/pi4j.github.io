@@ -7,7 +7,7 @@ weight: 99
 GITHUB Sources of BoardInfoHelper.java and the data model: [pi4j-v2/pi4j-core/src/main/java/com/pi4j/boardinfo/util/BoardInfoHelper.java](https://github.com/Pi4J/pi4j-v2/blob/develop/pi4j-core/src/main/java/com/pi4j/boardinfo/util/BoardInfoHelper.java)
 {{% /notice %}}
 
-V2.6.0 provides a new class `BoardInfoHelper` that can provide the following info:
+Since V2.6.0, the new class `BoardInfoHelper` provides the following info:
 
 * Type of Raspberry Pi board as a `BoardInfo` object.
 * If the system uses a RP1 chip with `usesRP1()` (Raspberry Pi 5 only at this moment).
@@ -16,6 +16,22 @@ V2.6.0 provides a new class `BoardInfoHelper` that can provide the following inf
 * Info about volt, temperature, etc. as a `BoardReading` object.
 
 The board info is used in some of the plugins to set the correct priority, based on the use of a Raspberry Pi 5 ([with RP1](https://www.raspberrypi.com/documentation/microcontrollers/rp1.html)) versus earlier board (without RP1).
+
+## How the Board Model is Detected
+
+The model is detected based on the board version number that is written inside the board and can be read with:
+
+```shell
+$ cat /proc/cpuinfo | grep 'Revision' | awk '{print $3}'
+```
+
+For instance, for a Raspberry Pi Compute 4, multiple version numbers are possible:
+
+```java
+COMPUTE_4("Compute Module 4", STACK_ON_COMPUTER,
+        Arrays.asList("a03140", "b03140", "c03140", "d03140", "a03141", "b03141", "c03141", "d03141"),
+        ...)
+```
 
 ## Demo Use on api.pi4j.com
 
