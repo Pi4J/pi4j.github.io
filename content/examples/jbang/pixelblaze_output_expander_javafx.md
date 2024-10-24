@@ -69,6 +69,10 @@ private PixelBlazeOutputExpanderHelper helper;
 
 @Override
 public void start(Stage stage) {
+    // Depending on the type of board and the connection you are using 
+    // (GPIO pin, or other serial connection), this can be a different port. 
+    // Most probably it will be `/dev/ttyS0` (Raspberry Pi 4 or earlier), 
+    // or `/dev/ttyAMA0` (Raspberry Pi 5).
     helper = new PixelBlazeOutputExpanderHelper("/dev/ttyS0");
 
     VBox holder = new VBox();

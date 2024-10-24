@@ -130,7 +130,7 @@ Before proceeding with this example, make sure that you have a Raspberry Pi prep
 
 Jeff Vyduna and Ben Hencke of ElectroMage, the creators of Pixelblaze, provided example Java code for this project. The serial data format is [documented on GitHub](https://github.com/simap/pixelblaze_output_expander/tree/v3.x). What the code is doing in short:
 
-* Open serial communication to `/dev/ttyS0`. Pi5 uses "/dev/ttyAMA0"
+* Open serial communication. Depending on the type of board and the connection you are using (GPIO pin, or other serial connection), this can be a different port. Most probably it will be `/dev/ttyS0` (Raspberry Pi 4 or earlier), or `/dev/ttyAMA0` (Raspberry Pi 5).
 * Use BaudRate `2000000`, this is a hard requirement for the PBOE.
 * Send a byte array of RGB values for each LED.
 * Send a `drawAll` command to put the values on the LEDs.
@@ -275,11 +275,13 @@ The main method needs to initialize the helper and contains a helper method to s
     private static PixelBlazeOutputExpanderHelper helper;
     
     public static void main(String[] args) throws InterruptedException {
+        // Depending on the type of board and the connection you are using 
+        // (GPIO pin, or other serial connection), this can be a different port. 
+        // Most probably it will be `/dev/ttyS0` (Raspberry Pi 4 or earlier), 
+        // or `/dev/ttyAMA0` (Raspberry Pi 5).
         helper = new PixelBlazeOutputExpanderHelper("/dev/ttyS0");
-        //  Pi5 uses "/dev/ttyAMA0"
-        // helper = new PixelBlazeOutputExpanderHelper("/dev/ttyAMA0");
         
-      // RGB commands will be added here
+        // RGB commands will be added here
 
         helper.closePort();
     }
