@@ -32,8 +32,16 @@ This project can be built with Apache Maven 3.6 (or later) and Java 17 OpenJDK (
 installed prior to building this project as described on the previous pages. The following command can be used to 
 download all project dependencies and compile the Java module. You can build this project directly on a Raspberry Pi with Java 17+.
 
+On Linux:
+
 ```
-mvn clean package
+./mvnw clean package
+```
+
+On Windows:
+
+```
+mvnw.bat clean package
 ```
 
 ### Gradle
@@ -207,7 +215,7 @@ OpenJDK 64-Bit Server VM (build 17.0.7+7-Debian-1deb11u1, mixed mode, sharing)
 ```shell
 $ git clone https://github.com/Pi4J/pi4j-example-minimal.git
 $ cd pi4j-example-minimal/
-$ mvn clean package
+$ ./mvnw clean package
 ``` 
 
 * Change to the distribution directory where you can find the generated package and required Java-modules. 
