@@ -1,5 +1,10 @@
 ---
 title: Debugging Failures
+weight: 36
+tags: ["Pi4J OS"]
+aliases:
+  - /getting-started/crowpi/crowpi-os
+  - /getting-started/crowpi/crowpi-os/
 ---
 
 Combining software with hardware can fail on many levels. You need the correct version of the Operating Systems, the good version of the Pi4J library, the wiring between the Raspberry Pi and the electronic components must be correct, and so on...
