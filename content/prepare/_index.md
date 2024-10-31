@@ -11,7 +11,7 @@ aliases:
 
 The Raspberry Pi is a powerful machine with many use-cases. A lot of this power is based on the 
 operating system you use. In all the documentation here for Pi4J we use the official Raspberry Pi Operating System (formerly known as "Raspbian OS"). But there is a long list of other possibilities which is listed,
-for example, on the["Awesome Raspberry Pi" list on GitHub](https://github.com/thibmaek/awesome-raspberry-pi/blob/master/README.md).
+for example, on the ["Awesome Raspberry Pi" list on GitHub](https://github.com/thibmaek/awesome-raspberry-pi/blob/master/README.md).
 
 ## Material list
 
@@ -34,10 +34,9 @@ one of the components on the board.
 
 The following steps:
 
-* [Prepare the SD card](sd-card.md)
-* [First boot and updates](first-boot.md)
-* [Install Java and related tools](install-java.md)
-* Continue to the [Getting Started](../getting-started/_index.md) section for your first Pi4J experiments.
+{{% children %}}
+
+After these steps, you can continue to the [Getting Started with Pi4J](/getting-started/) section for your first experiments with Java and electronic components.
 
 ## Pi4J OS
 
