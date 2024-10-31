@@ -11,9 +11,9 @@ Combining software with hardware can fail on many levels. You need the correct v
 
 ## Startup Failures
 
-Always make sure that you log errors in the terminal or into a file! When the Pi4J library initializes, a lot of useful info is outputted. A successfull start looks like this:
+Always make sure that you log errors in the terminal or into a file! When the Pi4J library initializes, a lot of useful info is outputted. A **successful start** looks like this:
 
-```
+```shell
 Pi4J - New auto context
 Pi4J - New context builder
 BoardInfoHelper - Detected OS: Name: Linux, version: 6.6.20+rpt-rpi-v8, architecture: aarch64
@@ -31,7 +31,7 @@ DefaultRuntime - Pi4J context/runtime successfully initialized.
 
 When the error `GLIBC_2.33 not found` is shown in the startup log, you need to update the Operating System as the required dependencies are not available to communicate with the GPIOs.
 
-```
+```shell
 [main] ERROR com.pi4j.library.gpiod.util.NativeLibraryLoader - Unable to load [libgpiod.so] using path: [/lib/aarch64/pi4j-gpiod/libgpiod.so]
 java.lang.UnsatisfiedLinkError: /tmp/libgpiod14998985341386605622.so: /lib/aarch64-linux-gnu/libc.so.6: version GLIBC_2.33' not found (required by /tmp/libgpiod14998985341386605622.so) at java.base/jdk.internal.loader.NativeLibraries.load(Native Method) at java.base/jdk.internal.loader. 
 ... 
