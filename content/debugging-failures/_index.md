@@ -27,7 +27,7 @@ DefaultRuntime - Initializing Pi4J context/runtime...
 DefaultRuntime - Pi4J context/runtime successfully initialized.
 ```
 
-### Error GLIBC_2.33 not found
+### Error `GLIBC_2.33 not found`
 
 When the error `GLIBC_2.33 not found` is shown in the startup log, you need to update the Operating System as the required dependencies are not available to communicate with the GPIOs.
 
@@ -36,6 +36,20 @@ When the error `GLIBC_2.33 not found` is shown in the startup log, you need to u
 java.lang.UnsatisfiedLinkError: /tmp/libgpiod14998985341386605622.so: /lib/aarch64-linux-gnu/libc.so.6: version GLIBC_2.33' not found (required by /tmp/libgpiod14998985341386605622.so) at java.base/jdk.internal.loader.NativeLibraries.load(Native Method) at java.base/jdk.internal.loader. 
 ... 
 Exception in thread "main" java.lang.UnsatisfiedLinkError: Pi4J was unable to extract and load the native library [/lib/aarch64/pi4j-gpiod/libgpiod.so] from the embedded resources inside this JAR [/home/pi/maven/pi4j-example-minimal/target/distribution/./pi4j-library-gpiod-2.7.0.jar]. to a temporary location on this system.  You can alternatively define the 'pi4j.library.path' system property to override this behavior and specify the library path. 
+```
+
+### Error `pigpio initialisation failed`
+
+For some Pi4J functionality, `root` privileges are required. If you get an error like this, you need to execute your application with `sudo`:
+
+```shell
+[main] INFO com.pi4j.util.Console -
+[main] WARN com.pi4j.library.pigpio.impl.PiGpioNativeImpl - PIGPIO ERROR: PI_INIT_FAILED; pigpio initialisation failed
+Exception in thread "main" java.lang.reflect.UndeclaredThrowableException
+...
+Caused by: java.lang.reflect.InvocationTargetException
+...
+Caused by: com.pi4j.library.pigpio.PiGpioException: PIGPIO ERROR: PI_INIT_FAILED; pigpio initialisation failed
 ```
 
 ## Unexpected Results on Electronic Components
