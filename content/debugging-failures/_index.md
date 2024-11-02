@@ -27,6 +27,21 @@ DefaultRuntime - Initializing Pi4J context/runtime...
 DefaultRuntime - Pi4J context/runtime successfully initialized.
 ```
 
+### Error `Pi4J provider [xxx-yy] could not be found`
+
+You can get this error with a new application, or after you upgraded your code base to use Pi4J 2.6.0 or newer.
+
+From version 2.6.0 on, each IO-Type has a single provider loaded. For example, you can no longer have `linuxfs-i2c` and `pigpio-i2c` loaded at the same time. When your application starts, you can check the logging output which will show the decisions used to select which providers are loaded. For example:
+
+```bash
+DefaultRuntime - Ignoring provider DIGITAL_INPUT RaspberryPi Digital Input (GPIO) Provider with priority 0 as lower priority than GpioD Digital Input (GPIO) Provider which has priority 150
+DefaultRuntime - Ignoring provider DIGITAL_OUTPUT RaspberryPi Digital Output (GPIO) Provider with priority 0 as lower priority than GpioD Digital Output (GPIO) Provider which has priority 150
+```
+
+If you encounter this error, and the provider used in your code is not available, edit your `pom.xml to contain the provider you require and remove the other provider of the same IO-Type.
+
+See [Choosing an I/O Provider](/documentation/providers/) for a more complete explanation.
+
 ### Error `GLIBC_2.33 not found`
 
 When the error `GLIBC_2.33 not found` is shown in the startup log, you need to update the Operating System as the required dependencies are not available to communicate with the GPIOs.
