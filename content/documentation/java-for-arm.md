@@ -1,33 +1,32 @@
 ---
 title: Java for ARMv6/7/8
 weight: 50
+aliases:
+  - /documentation/java-installation/
 ---
 
-{{% notice note %}}Raspberry Pi OS Full comes with Java 11 pre-installed. But this version only works on board-versions with an 
-**ARMv7 or ARMv8**. In some cases you will need to do some additional steps to install a Java version which works
-on your board.{{% /notice %}}
+You can choose from a long list of Java versions and distributions if you use the 64-bit version of the Raspberry Pi Operating System. But this 64-bit OS is only available for Raspberry Pi board versions with an **ARMv7 or ARMv8** processor. 
 
-### Board versions
+## Board versions
 
-#### With ARMv6 processor
+### With ARMv6 processor
 
 * Raspberry Pi 1 A and A+
 * Raspberry Pi 1 B and B+
 * Compute Module 1
 * Zero 1.2, 1.3 and W
 
-#### With ARMv7 or ARMv8 processor
+### With ARMv7 or ARMv8 processor
 
 * Model A+, version 3
 * Model B, version 2, 3 and 4
 * Compute Module, version 3
 
-### How to check and install Java
+## How to Check and Install Java
 
-#### Check the current version
+### Check the Current Version
 
-If you prepared a microSD card with the latest version of Raspbian OS (full version), Java is already installed!
-You can check the installed Java version in the terminal. On a board with ARMv7 or ARMv8 you will get this result:
+You can check the installed Java version in the terminal. On a board with ARMv7 or ARMv8, with a correctly installed JDK, you will get this result:
 
 ```
 $ java -version
@@ -44,10 +43,9 @@ Error occurred during initialization of VM
 Server VM is only supported on ARMv7+ VFP
 ```
 
-#### Check your board version
+### Check your board version
 
-If you are not sure which type of board you have, you can check this in the terminal with `cat /proc/cpuinfo`, 
-for instance for a Raspberry Pi B+ 1.2:
+If you are not sure which type of board you have, you can check this in the terminal with `cat /proc/cpuinfo`, for instance for a Raspberry Pi B+ 1.2:
 
 ```
 $ cat /proc/cpuinfo
@@ -68,7 +66,7 @@ Serial		: 000000005f9ba615
 Model		: Raspberry Pi Model B Plus Rev 1.2
 ```
 
-#### Install Java 11 on ARMv6
+### Install Java 11 on ARMv6
 
 The sources for Java are available as open-source on [OpenJDK](https://openjdk.java.net/), which means, if you can't find the correct version for a specific board, it is possible to compile it yourself. Luckily there are different suppliers providing ready-made packages of the JDK for multiple platforms. But only Azul seems to have one which is a perfect fit for Raspberry Pi's with an ARMv6: [the Zulu community edition of JDK 11](https://www.azul.com/downloads/zulu-community/?version=java-11-lts&os=linux&architecture=arm-32-bit-hf&package=jdk).
 
@@ -90,8 +88,8 @@ drwxrwxr-x 10  111  122 4096 Jul 10 16:50 zulu11.41.75-ca-jdk11.0.8-linux_aarch3
 Now we have the JDK11 ready to be used, but it still needs to be configured so the OS is aware of it.
 
 ```
-$ sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/zulu11.41.75-ca-jdk11.0.8-linux_aarch32hf/bin/java 1
-$ sudo update-alternatives --install /usr/bin/javac javac /usr/lib/jvm/zulu11.41.75-ca-jdk11.0.8-linux_aarch32hf/bin/javac 1
+$ sudo update-alternatives --install /usr/bin/java java /usr/lib/java/bin/java 1
+$ sudo update-alternatives --install /usr/bin/javac javac /usr/lib/java/bin/javac 1
 ```
 
 At this moment we can select the new JDK to link it to the “java” and “javac” command.

@@ -10,31 +10,23 @@ Our Raspberry Pi has started for the first time and we are now ready to add some
 Let's start with some helper tools that will be useful later.
 
 ```shell
-sudo apt install -y i2c-tools vim git java-common libxi6 libxrender1 libxtst6
+$ sudo apt install -y i2c-tools vim git java-common libxi6 libxrender1 libxtst6
 ```
 
 ## Install Java
 
-There are many ways you can install Java. The easiest way to make Java available for both normal use and as root user (`sudo`), is the following approach:
-
-### For 64-bit Operating System
+There are many ways you can install Java. The easiest way to make Java available for both normal use and as root user (`sudo`), is the following approach which downloads one of the many distributions that are available.
 
 ```shell
-cd ~/Downloads
-wget https://cdn.azul.com/zulu/bin/zulu21.38.21-ca-jdk21.0.5-linux_arm64.deb
-sudo dpkg -i zulu21.38.21-ca-jdk21.0.5-linux_arm64.deb
+$ cd ~/Downloads
+$ wget https://cdn.azul.com/zulu/bin/zulu21.38.21-ca-jdk21.0.5-linux_arm64.deb
+$ sudo dpkg -i zulu21.38.21-ca-jdk21.0.5-linux_arm64.deb
+$ rm zulu21.38.21-ca-jdk21.0.5-linux_arm64.deb
 ```
 
-### For 32-bit Operating System
-
-To be used when you selected a 32-bit version of the Operating System in the Imager tool
-
-```shell
-mkdir -p ~/Downloads
-cd ~/Downloads
-wget https://cdn.azul.com/zulu-embedded/bin/zulu17.52.17-ca-jdk17.0.12-c2-linux_aarch32hf.tar.gz
-TODO
-```
+{{% notice warning %}}
+This approach only works a 64-bit system as you can see from the `arm64` in the file name. For more info about running Java on a 32-bit system, check [Java for ARMv6/7/8](/documentation/java-for-arm/).
+{{% /notice %}}
 
 ### Test Java Installation
 
