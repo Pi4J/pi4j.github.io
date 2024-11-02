@@ -25,7 +25,7 @@ $ rm zulu21.38.21-ca-jdk21.0.5-linux_arm64.deb
 ```
 
 {{% notice warning %}}
-This approach only works a 64-bit system as you can see from the `arm64` in the file name. For more info about running Java on a 32-bit system, check [Java for ARMv6/7/8](/documentation/java-for-arm/).
+This approach only works on a 64-bit system as you can see from the `arm64` in the file name. For more info about running Java on a 32-bit system, check [Java for ARMv6/7/8](/documentation/java-for-arm/).
 {{% /notice %}}
 
 ### Test Java Installation

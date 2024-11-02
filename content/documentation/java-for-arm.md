@@ -13,14 +13,15 @@ You can choose from a long list of Java versions and distributions if you use th
 
 * Raspberry Pi 1 A and A+
 * Raspberry Pi 1 B and B+
-* Compute Module 1
 * Zero 1.2, 1.3 and W
+* Compute Module 1
 
 ### With ARMv7 or ARMv8 processor
 
 * Model A+, version 3
-* Model B, version 2, 3 and 4
-* Compute Module, version 3
+* Model B, version 2, 3, 4 and 5
+* Zero 2 and 2W
+* Compute Module, version 3, 4, and 5
 
 ## How to Check and Install Java
 
