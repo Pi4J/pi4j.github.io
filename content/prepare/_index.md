@@ -10,22 +10,35 @@ aliases:
 ---
 
 The Raspberry Pi is a powerful machine with many use-cases. A lot of this power is based on the 
-operating system you use. In all the documentation here for Pi4J we use the official Raspberry Pi Operating System (formerly known as "Raspbian OS"). But there is a long list of other possibilities which is listed,
-for example, on the ["Awesome Raspberry Pi" list on GitHub](https://github.com/thibmaek/awesome-raspberry-pi/blob/master/README.md).
+operating system you use. In all the documentation here for Pi4J, we use the official Raspberry Pi Operating System (formerly known as "Raspbian OS"). But there is a long list of other possibilities which is listed, for example, on the ["Awesome Raspberry Pi" list on GitHub](https://github.com/thibmaek/awesome-raspberry-pi/blob/master/README.md).
 
-## Material list
+{{% notice tip %}}
+Do you already have a Raspberry Pi with an up-to-date Operating System, and Java 17 or newer? Then you are good to go and can skip forward to the [Getting Started with Pi4J](/getting-started/) section! The information given in this part of our website is mainly focusing on anyone starting with Java on the Raspberry Pi.
+{{% /notice %}}
 
-* Raspberry Pi
-* Micro SD card, minimally 16Gb b
+## What Do We Need?
+
+The Raspberry Pi doesn't come with a hard disk like typical computers. The operating system needs to be "burned" onto an SD Card. 
+
+{{% notice tip %}}
+Instead of an SC Card you can use an NVMe SSD disk. This requires an additional connection cable or hat, for instance, the [Raspberry Pi SSD Kit](https://www.raspberrypi.com/products/ssd-kit/). The advantage of such a system is a faster startup and disc access, but is not required for any of the examples explained on this website.
+{{% /notice %}}
+
+### Material list
+
+This is the list of materials needed to get you started:
+
+* Raspberry Pi (4, 5, or Pi Zero 2 is recommended, but older versions also work with Java and Pi4J!)
+* Micro SD card, minimally 16Gb
 * PC (or other Raspberry Pi) with an SD card slot (maybe you will need an SD card adapter)
-* Power supply (5V, 2 or 3A)
+* Power supply (5V, a Raspberry Pi 5 needs one that can provide 5A = 25W)
 * Monitor, keyboard, mouse
 
-## Step-by-step
+### Step-by-step
 
 First step: take your new Raspberry Pi out of the box of course :-)
 
-Take a good look at it, what you are holding in your hands is a true master piece. A wonder of technical
+Take a good look at it, what you are holding in your hands is a true masterpiece. A wonder of technical
 engineering with a perfect mix of powerful yet inexpensive components.
 
 But be aware! This is also a sensitive piece of electronics! It's always a good idea to first touch
