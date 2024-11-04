@@ -86,11 +86,11 @@ drwxr-xr-x  2 root root 4096 Aug 20 11:41 openjdk-11
 drwxrwxr-x 10  111  122 4096 Jul 10 16:50 zulu11.41.75-ca-jdk11.0.8-linux_aarch32hf
 ```
 
-Now we have the JDK11 ready to be used, but it still needs to be configured so the OS is aware of it.
+Now we have the JDK11 ready to be used, but it still needs to be configured, so the OS is aware of it.
 
 ```
-$ sudo update-alternatives --install /usr/bin/java java /usr/lib/java/bin/java 1
-$ sudo update-alternatives --install /usr/bin/javac javac /usr/lib/java/bin/javac 1
+$ sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/zulu11.41.75-ca-jdk11.0.8-linux_aarch32hf/bin/java 1
+$ sudo update-alternatives --install /usr/bin/javac javac /usr/lib/jvm/zulu11.41.75-ca-jdk11.0.8-linux_aarch32hf/bin/javac 1
 ```
 
 At this moment we can select the new JDK to link it to the “java” and “javac” command.
