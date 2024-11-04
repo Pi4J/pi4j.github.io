@@ -21,7 +21,7 @@ This minimal example application uses this wiring:
 
 ![Wiring of a LED and button for the minimal example application](/assets/getting-started/minimal/led-button_bb.png)
 
-## Building the application
+## Building the Application
 
 The main build tool used by the Pi4J project is Maven, but for this example we provided both the Maven and Gradle approach,
 so you can select the tool you prefer.
@@ -63,7 +63,7 @@ On Windows:
 gradlew.bat build
 ```
 
-## Dependency in pom.xml
+## Dependency in `pom.xml`
 
 For the Maven approach, a pom.xml file defines all the dependencies, and the build process.
 
@@ -114,7 +114,7 @@ These are the dependencies we need:
 </dependencies>
 ``` 
 
-## Pi4J code blocks which are used
+## Pi4J Code Blocks
 
 ### Initialization
 
@@ -128,7 +128,7 @@ method will automatically load all available Pi4J extensions found in the applic
 var pi4j = Pi4J.newAutoContext();
 ```
 
-### Output Pi4J Context information
+### Output Pi4J Context Information
 
 The library contains helper functions to output info about the available and used platforms and providers. To keep the 
 example code clean, these are part of the `PrintInfo.java` class. For example to print the loaded platforms:
@@ -161,7 +161,7 @@ while (pressCount < 5) {
 }
 ```
 
-### Handle the button presses
+### Handle the Button Presses
 
 To handle digital input events, some more configuration is needed, and we use a config builder. With that configuration, Pi4J can create the object for us and the state changes can be handled.
 
@@ -188,7 +188,7 @@ button.addListener(e -> {
 });
 ```
 
-### Closing the application
+### Closing the Application
 
 Before the application quits, we need to call the `shutdown()` function on the Pi4J static helper class. This will ensure 
 that all I/O instances are properly shutdown, released by the system and shutdown in the appropriate manner. Termination 
@@ -198,7 +198,7 @@ will also ensure that any background threads/processes are cleanly shutdown and 
 pi4j.shutdown();
 ``` 
 
-## Steps to run this application on your Raspberry Pi
+## Steps to Run on Your Raspberry Pi
 
 * Attach a LED and button as shown in the image above
 * Use a recent Raspbian OS image which has Java 17 or newer. To check if you have the correct Java version in the terminal:

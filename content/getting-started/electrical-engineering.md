@@ -1,14 +1,35 @@
 ---
 title: Electrical Engineering
 weight: 40
+aliases:
+  - /getting-started/electricalengeneering/
 ---
 
-## Resistor dimensioning
+The goal of the Pi4J project is to combine sofware (Java) with hardware (electronic components). On this page we give you some tips and tricks for the electronics part.
+
+## Breadboard
+
+A breadboard is the basic for each experiment. It allows you to easily connect several components to each other and the Raspberry Pi. Here is a video that explains the basics of breadboards:
+
+{{< youtube 6WReFkfrUIk >}}
+
+{{< gallery >}}
+{{< figure link="/assets/getting-started/electricalEngineering/breadboard.jpeg" caption="Breadboard" caption-position="center" caption-effect="fade" >}}
+{{< /gallery >}}
+{{< load-photoswipe >}}
+
+{{% notice note %}}
+The red and blue lines on the side show which pins are connected. Be aware that red and blue can also be swapped, because not all suppliers use them in the same position.<br>
+On some boards these lines are interrupted in the middle (see picture breadboard).
+This means at this point, the pins are interrupted and not electrically connected.
+{{% /notice %}}
+
+## Resistor Dimensioning
 
 Resistors can be used for different effects. One application is to improve the stability of the application with PullUp and PullDown resistors. Another application is to use resistors to protect the PI against voltage peaks or short circuit currents.
 
-
 ### PullUp PullDown
+
 In electronic logic circuits, a pull-up resistor or pull-down resistor is a resistor used to ensure a known state for a signal. It is typically used in combination with components
 such as switches and transistors, which physically interrupt the connection of subsequent components to ground or to VCC. Closing the switch creates a direct connection to ground or VCC,
 but when the switch is open, the rest of the circuit would be left floating (i.e., it would have an indeterminate voltage).
@@ -27,8 +48,8 @@ consumption in the open state. The higher the resistance, the less current is co
 {{< /gallery >}}
 {{< load-photoswipe >}}
 
+### Voltage Divider
 
-### Voltage divider
 If components have a lower operating voltage than the 3.3V of the Raspberry Pi, a voltage divider can be used to achieve the desired voltage.
 For example, a red LED has an operating voltage of 1.8V. This means that 1.5V must drop across a second load. If we assume that the LED needs 20mA of current, this means that we should connect a resistor of 75 Ohm in series to the LED.
 
@@ -40,7 +61,8 @@ If the required current and the required voltage of the load are known, the exac
 {{< /gallery >}}
 {{< load-photoswipe >}}
 
-### 3.3V <--> 5V level shifter
+### 3.3V <--> 5V Level Shifter
+
 To protect the Pi from 5V devices, a level shift/conversion can be done with the "Adafruit TXB0104 Bi-Directional Level Shifter" component. The bi-directional level shifter works for an I2C bus, 
 for a TTL serial connection, for a slow <2MHz SPI connection and any other digital interface both uni- and bidirectional. 
 
@@ -49,8 +71,8 @@ for a TTL serial connection, for a slow <2MHz SPI connection and any other digit
 {{< /gallery >}}
 {{< load-photoswipe >}}
 
+## Additional Power Supply
 
-## Additional power supply
 If one or more large loads are required for the project, it may be necessary to use an additional power supply. A solution for this is the Mini Power Supply Module 
 HW-131 Breadboard Power Module which provides two voltages 3.3V and 5V and a maximum output current of 700mA.
 
@@ -68,23 +90,15 @@ Do not use the USB port of the computer to power the electronics. Errors in the 
 In case of an additional power supply, the ground of the Raspberry Pi and the ground of the power supply must be connected to each other.
 {{% /notice %}}
 
-## Breadboard
-[Here](https://www.youtube.com/watch?v=6WReFkfrUIk) is a short video that explains the basics of breadboards. 
-{{< gallery >}}
-{{< figure link="/assets/getting-started/electricalEngineering/breadboard.jpeg" caption="Breadboard" caption-position="center" caption-effect="fade" >}}
-{{< /gallery >}}
-{{< load-photoswipe >}}
+## Soldering Tutorial
 
-{{% notice note %}}
-The red and blue lines on the side show which pins are connected. Be aware that red and blue can also be swapped, because not all suppliers use them in the same position.<br>
-On some boards these lines are interrupted in the middle (see picture breadboard). 
-This means at this point, the pins are interrupted and not electrically connected.
-{{% /notice %}}
+A video that explains the basics of soldering:
 
-## Soldering tutorial
-[Here](https://www.youtube.com/watch?v=Qps9woUGkvI) is a short video that explains the basics of soldering. 
+{{< youtube Qps9woUGkvI >}}
 
-[Here](https://www.youtube.com/watch?v=bG7yW9FigJA) is a short video that explains how to remove solder. 
+A video that explains how to remove solder:
+
+{{< youtube bG7yW9FigJA >}}
 
 {{% notice note %}}
 If a breakout with two pin headers like the TXB0104 is used, the pin headers can be mounted on the breadboard first, then the breakout is placed on the pin headers and finally 
@@ -97,16 +111,22 @@ everything can be soldered. So the pin headers are mounted exactly in 90° angle
 {{< /gallery >}}
 {{< load-photoswipe >}}
 
-## Automatic wire stripper
-[Here](https://www.youtube.com/watch?v=dvFS_ZEzwKg) is a short video that explains how the automatic wire stripper works.
+## Automatic Wire Stripper
+
+A video that explains how the automatic wire stripper works:
+
+{{< youtube dvFS_ZEzwKg >}}
 
 {{< gallery >}}
 {{< figure link="/assets/getting-started/electricalEngineering/automaticWireStripper.png" caption="Automatic Wire Stripper" caption-position="center" caption-effect="fade" >}}
 {{< /gallery >}}
 {{< load-photoswipe >}}
 
-## Crimping tutorial
-[Here](https://www.youtube.com/watch?v=WFvEeWHDt1E) is a short video that explains the basics of crimping wires. 
+## Crimping Tutorial
+
+A video that explains the basics of crimping wires:
+
+{{< youtube WFvEeWHDt1E >}}
 
 {{< gallery >}}
 {{< figure link="/assets/getting-started/electricalEngineering/crimping.png" caption="Crimping Tool" caption-position="center" caption-effect="fade" >}}
@@ -128,8 +148,11 @@ If the crimp connection does not hold, the following measures can lead to a bett
 {{< /gallery >}}
 {{< load-photoswipe >}}
 
-## Crimping ferrules tutorial
-[Here](https://www.youtube.com/watch?v=bJk0mzaATI4) is a short video that explains the basics of crimping ferrules to wires. 
+## Crimping Ferrules Tutorial
+
+A video that explains the basics of crimping ferrules to wires:
+
+{{< youtube bJk0mzaATI4 >}}
 
 {{< gallery >}}
 {{< figure link="/assets/getting-started/electricalEngineering/crimpingFerrules.png" caption="Crimping Ferrules Tool" caption-position="center" caption-effect="fade" >}}

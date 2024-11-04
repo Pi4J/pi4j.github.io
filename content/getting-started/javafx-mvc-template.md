@@ -17,12 +17,12 @@ The goal of this project is to:
 * Explain the use of a MVC-model (Model-View-Controller) to clearly split data, actions and user interface
 * Explain the use of JUnit test
 
-## Sources and info
+## Sources and Info
 
 Please check the README of the sources of the project for a full description of the setup process of the Raspberry Pi 
 and to fully understand the example applications and the MVC-model. This page is only intended to give you a quick overview.
 
-## Example applications
+## Example Applications
 
 ### HelloFX
 

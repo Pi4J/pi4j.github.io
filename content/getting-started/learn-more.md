@@ -12,7 +12,7 @@ create a pull request!
 Please share your personal or professional projects where you combine Java and the Raspberry Pi 
 [on Twitter with the hashtag #JavaOnRaspberryPi](https://twitter.com/search?q=javaonraspberrypi&src=typed_query&f=live).
 
-## Online articles
+## Online Articles
 
 * Foojay.io is a place for friends of OpenJDK, providing articles, updated analyses, selected highlights, and 
   categorized lists on all things Java. 

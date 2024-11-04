@@ -17,7 +17,7 @@ The repository ["pi4j-example-fatjar" GitHub project](https://github.com/Pi4J/pi
 with identical wiring, dependencies and build command to the "Minimal example application", but results in such a FAT JAR 
 instead of separate Java modules.
 
-## Maven plugins
+## Maven Plugins
 
 By using three build plugins the FAT JAR is created:
 
@@ -27,7 +27,7 @@ By using three build plugins the FAT JAR is created:
 
 For the full description, take a look at the README.md in the sources and the page ["Build as a FAT JAR with Maven"](/documentation/building/fat-jar/).
 
-## Building and running
+## Building and Running
 
 Build with:
 

@@ -1,5 +1,5 @@
 ---
-title: Getting started with Pi4J
+title: Getting Started With Pi4J
 weight: 20
 ---
 

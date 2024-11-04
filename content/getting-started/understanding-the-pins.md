@@ -9,11 +9,11 @@ course important to be aware of the correct numbering to not connect components 
 
 ![Numbering of the pins](/assets/getting-started/pins/headernumber-on-board.jpg)
 
-## Type of pins
+## Type of Pins
 
 The pins have different uses
 
-### Power and ground
+### Power and Ground
 
 Both 5V and 3.3V are available as power pins and, of course, also ground pins. Anytime the board is powered you have a 
 fixed power supply available for your components. You have to take into account not to connect devices that need a lot 
