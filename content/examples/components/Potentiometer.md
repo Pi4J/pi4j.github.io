@@ -65,10 +65,6 @@ ads1115.reset();
 System.out.println("Potentiometer demo finished");
 ```
 
-### Further application
-
-The class is implemented in the sample project [Theremin](https://github.com/DieterHolz/RaspPiTheremin).
-
 ### Further project ideas
 
 - An application, to control the brightness of some lights.

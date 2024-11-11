@@ -67,10 +67,6 @@ final var servoMotor = new ServoMotor(pi4j, PIN.PWM18, 50, -90.0f, 90.0f, 2.0f, 
  servoMotor.reset();
 ```
 
-### Further application
-
-The class is implemented in the two sample projects [Theremin](https://github.com/DieterHolz/RaspPiTheremin) and [Photobooth](https://github.com/DieterHolz/PhotoBooth).
-
 ### Further project ideas
 
 - As a Servo can cover up to 180 degrees, it could be used as a steering-wheel hooked to a potentiometer

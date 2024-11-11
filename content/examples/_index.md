@@ -22,7 +22,6 @@ In this section, we want to provide you example implementations of several devic
 
 For a simple implementation of a project with one of the components, the recommendation is to use the [Template-Project](https://github.com/Pi4J/pi4j-template-javafx).
 The Readme.md describes how to get started with the project.
-To get a better understanding, look at one of those finished template-projects: [Theremin](https://github.com/DieterHolz/RaspPiTheremin) or [Photobooth](https://github.com/DieterHolz/PhotoBooth)
 
 ### Electrical Engineering
 

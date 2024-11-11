@@ -179,10 +179,6 @@ If you want to create an own character or symbol, then use the following tutoria
 [Create an own Symbol](https://www.8051projects.net/lcd-interfacing/lcd-custom-character.php)
 {{% /notice %}}
 
-### Further application
-
-The class is implemented in the sample project [Photobooth](https://github.com/DieterHolz/PhotoBooth).
-
 ### Further project ideas
 
 - A Temperature Sensor hooked to a display, where it constantly shows how warm it is
