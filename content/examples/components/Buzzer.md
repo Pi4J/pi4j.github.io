@@ -88,10 +88,6 @@ public class Buzzer_App implements Application {
 }
 ```
 
-### Further application
-
-The class is implemented in the sample project [Theremin](https://github.com/DieterHolz/RaspPiTheremin).
-
 ### Further project ideas
 
 - An application, which triggers if you walk by and starts beeping, like an alarm.

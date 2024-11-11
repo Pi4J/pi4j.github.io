@@ -41,10 +41,6 @@ final var button = new SimpleButton(pi4j, PIN.D26, Boolean.FALSE);
  button.reset();
 ```
 
-### Further application
-
-The class is implemented in the two sample projects [Theremin](https://github.com/DieterHolz/RaspPiTheremin) and [Photobooth](https://github.com/DieterHolz/PhotoBooth).
-
 ### Further project ideas
 
 - An application, which includes a button. if the button is pressed, the app will order you a crate of beer from your favorite store.

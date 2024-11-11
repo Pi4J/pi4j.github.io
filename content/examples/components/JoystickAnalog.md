@@ -57,10 +57,6 @@ joystick.onMove((xPos, yPos) -> System.out.printf("Current position of joystick 
  joystick.reset();
 ```
 
-### Further application
-
-The class is implemented in the sample project [Theremin](https://github.com/DieterHolz/RaspPiTheremin).
-
 ### Further project ideas
 
 - create your own PlayStation controller

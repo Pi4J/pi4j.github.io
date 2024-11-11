@@ -75,10 +75,6 @@ System.out.println("Color "+ ledStrip.getPixelColor(0));
 System.out.println("LED strip app done.");
 ```
 
-### Further application
-
-The class is implemented in the sample project [Photobooth](https://github.com/DieterHolz/PhotoBooth).
-
 ### Further project ideas
 
 - A suit with LED-Strips sewn on, on which different animations can run.

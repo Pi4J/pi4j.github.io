@@ -49,10 +49,6 @@ ledButton.reset();
 System.out.println("LED button demo finished.");
 ```
 
-### Further application
-
-The class is implemented in the two sample projects [Theremin](https://github.com/DieterHolz/RaspPiTheremin) and [Photobooth](https://github.com/DieterHolz/PhotoBooth).
-
 ### Further project ideas
 
 - An application, which includes a button. if the button is pressed, the app will order you a crate of beer from your favorite store.

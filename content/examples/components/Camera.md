@@ -59,10 +59,6 @@ camera.recordVideo(vidconfig);
 camera.reset();
 ```
 
-### Further application
-
-The class is implemented in the sample project [Photobooth](https://github.com/DieterHolz/PhotoBooth).
-
 ### Further project ideas
 
 - Use a camera and a motion-sensor to create a wildlife-camera
