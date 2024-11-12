@@ -15,7 +15,9 @@ $ sudo apt install -y i2c-tools vim git java-common libxi6 libxrender1 libxtst6
 
 ## Install Java
 
-There are many ways you can install Java. The easiest way to make Java available for both normal use and as root user (`sudo`), is the following approach which downloads one of the many distributions that are available.
+There are many ways you can install Java. The easiest way to make Java available for both normal use and as root user (`sudo`), is the following approach which downloads one of the many distributions that are available. 
+
+With the following commands you can get Java 21 installed. Pi4J needs Java 11, which means you can also use a newer runtime.
 
 ```shell
 $ cd ~/Downloads

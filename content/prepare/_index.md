@@ -13,7 +13,7 @@ The Raspberry Pi is a powerful machine with many use-cases. A lot of this power 
 operating system you use. In all the documentation here for Pi4J, we use the official Raspberry Pi Operating System (formerly known as "Raspbian OS"). But there is a long list of other possibilities which is listed, for example, on the ["Awesome Raspberry Pi" list on GitHub](https://github.com/thibmaek/awesome-raspberry-pi/blob/master/README.md).
 
 {{% notice tip %}}
-Do you already have a Raspberry Pi with an up-to-date Operating System, and Java 17 or newer? Then you are good to go and can skip forward to the [Getting Started with Pi4J](/getting-started/) section! The information given in this part of our website is mainly focusing on anyone starting with Java on the Raspberry Pi.
+Do you already have a Raspberry Pi with an up-to-date Operating System, and Java 11 or newer? Then you are good to go and can skip forward to the [Getting Started with Pi4J](/getting-started/) section! The information given in this part of our website is mainly focusing on anyone starting with Java on the Raspberry Pi.
 {{% /notice %}}
 
 ## What Do We Need?
@@ -21,7 +21,7 @@ Do you already have a Raspberry Pi with an up-to-date Operating System, and Java
 The Raspberry Pi doesn't come with a hard disk like typical computers. The operating system needs to be "burned" onto an SD Card. 
 
 {{% notice tip %}}
-Instead of an SC Card you can use an NVMe SSD disk. This requires an additional connection cable or hat, for instance, the [Raspberry Pi SSD Kit](https://www.raspberrypi.com/products/ssd-kit/). The advantage of such a system is a faster startup and disc access, but is not required for any of the examples explained on this website.
+Instead of an SD Card you can use an NVMe SSD disk. This requires an additional connection cable or hat, for instance, the [Raspberry Pi SSD Kit](https://www.raspberrypi.com/products/ssd-kit/). The advantage of such a system is a faster startup and disc access, but is not required for any of the examples explained on this website.
 {{% /notice %}}
 
 ### Material list
