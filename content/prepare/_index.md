@@ -10,7 +10,7 @@ aliases:
 ---
 
 The Raspberry Pi is a powerful machine with many use-cases. A lot of this power is based on the 
-operating system you use. In all the documentation here for Pi4J, we use the official Raspberry Pi Operating System (formerly known as "Raspbian OS"). But there is a long list of other possibilities which is listed, for example, on the ["Awesome Raspberry Pi" list on GitHub](https://github.com/thibmaek/awesome-raspberry-pi/blob/master/README.md).
+operating system you use. In all the documentation here for Pi4J, we use the official Raspberry Pi Operating System (formerly known as "Raspbian OS"). But there is a long list of other possibilities which is listed, for example, on the ["Awesome Raspberry Pi" list on GitHub](https://github.com/thibmaek/awesome-raspberry-pi/blob/main/README.md#os-images).
 
 {{% notice tip %}}
 Do you already have a Raspberry Pi with an up-to-date Operating System, and Java 11 or newer? Then you are good to go and can skip forward to the [Getting Started with Pi4J](/getting-started/) section! The information given in this part of our website is mainly focusing on anyone starting with Java on the Raspberry Pi.
