@@ -19,7 +19,7 @@ JavaFX promises the same for Graphical User Interface applications.
 companies who want to use JavaFX in critical applications. They also provide [tools to build and compile Java 
 code to native applications for all platforms](https://gluonhq.com/products/).
 
-## Developing a JavaFX application
+## Developing a JavaFX Application
 
 The best part of Java is the "Write Once, Run Everywhere". This means you can develop your application on any PC
 (Windows, Mac, Linux) and run it on any other one of these (yes 
@@ -62,7 +62,7 @@ $ unzip openjfx.zip
 $ sudo mv javafx-sdk-17/ /opt/javafx-sdk-17/
 ```
 
-### Start an application 
+### Start an Application 
 
 Now the OpenJFX-runtime is available on our Raspberry Pi, we can start each Java application which was compiled
 to a JAR with some additional parameters to run it with the best rendering support.
@@ -82,7 +82,7 @@ java \
   --module {YOUR_MAIN_CLASS} $@
 ```
 
-## Minimal example application
+## Minimal Example Application
 
 ### Sources
 
@@ -98,7 +98,7 @@ a single LED and button.
 {{< /gallery >}}
 {{< load-photoswipe >}}
 
-### Steps to test the application
+### Steps to Test the Application
 
 1. Download the sources to your Raspberry Pi
 

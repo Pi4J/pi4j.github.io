@@ -8,7 +8,7 @@ tags: ["Maven"]
 GITHUB PROJECT: [https://github.com/Pi4J/pi4j-maven-archetype](https://github.com/Pi4J/pi4j-maven-archetype)
 {{% /notice %}}
 
-## Developing Java programs using a remote PC workstation
+## Developing Java Programs Using a Remote PC Workstation
 
 Writing your Java program, compiling and running it directly on the Raspberry Pi board
 as shown in the previous chapter is perfectly fine, of course,
@@ -33,7 +33,7 @@ the Java JDK (JRE it is enough), Maven and the other development tools.
 - Cons:
     - You can't run Web applications (using a web container like Tomcat or similar)
 
-## Setting up
+## Setting Up
 
 ### Configure the RPi for Headless mode
 
@@ -70,7 +70,7 @@ Let suppose you want to begin the new wonderful PI4J V.2 project _my-project_, t
 - `mvn archetype:generate -DarchetypeCatalog=local`
 - answer to the questions the archetype asks you (see below for details)
 
-### Configuring your new project
+### Configuring Your New Project
 
 Before starting the new project generation, the archetype asks some configuration data. The list of question
 and the replies are shown here below:
@@ -91,7 +91,7 @@ After the list confirmation, the archetype generates a new maven project templat
 You should be able to open the new project with your preferred java IDE. The IDE should be able
 to recognize the project as a valid Maven project.
 
-#### Note on the Java runtime
+#### Note on the Java Runtime
 
 If you are not using the default Raspberry Pi OS full edition and/or included Java, you may get this kind of error:
 
@@ -119,7 +119,7 @@ Zulu JDK, you will need to change the configuration to:
 target.remote.jre=/usr/lib/jvm/zulu11.41.75-ca-jdk11.0.8-linux_aarch32hf
 ```
 
-### Explore the new project template
+### Explore the New Project Template
 
 Feel free to explore the new project familiarizing with the folder structure. These are the most important features:
 
