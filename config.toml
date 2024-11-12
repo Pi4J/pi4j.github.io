@@ -116,9 +116,9 @@ url = "https://foojay.social/@pi4j"
 weight = 15
 
 [[menu.shortcuts]]
-name = "<i class='fab more-tag fa-twitter'></i> Twitter @pi4j"
-identifier = "twitter"
-url = "https://twitter.com/pi4J"
+name = "<i class='fab more-tag fa-linkedin'></i> LinkedIn @pi4j"
+identifier = "linkedin"
+url = "https://www.linkedin.com/company/pi4j/"
 weight = 20
 
 [[menu.shortcuts]]
