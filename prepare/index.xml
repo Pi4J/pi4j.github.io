@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Prepare a Raspberry Pi on Pi4J</title><link>https://pi4j.com/prepare/</link><description>Recent content in Prepare a Raspberry Pi on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://pi4j.com/prepare/index.xml" rel="self" type="application/rss+xml"/><item><title>Write OS to SD card</title><link>https://pi4j.com/prepare/sd-card/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/prepare/sd-card/</guid><description>&lt;p>The SD card will hold the operating system. On the Raspberry Pi website, &lt;a href="https://www.raspberrypi.org/software/" target="_blank" rel="noopener">on the download page, you can
+find the Imager tool&lt;/a>. Select the version for your computer, download, and install it.&lt;/p>
+&lt;p>&lt;img src="https://pi4j.com/assets/getting-started/setup/download-imager.png" alt="Imager download">&lt;/p>
+&lt;p>Start the Imager and follow these steps:&lt;/p>
+&lt;ol>
+&lt;li>Put the SD Card in your computer&lt;/li>
+&lt;li>Click &amp;ldquo;Choose Device&amp;rdquo; and select your type of board&lt;/li>
+&lt;li>Click &amp;ldquo;Choose OS&amp;rdquo; &amp;gt; &amp;ldquo;Raspberry Pi OS (64-bit)&amp;rdquo; (or 32-bit for an older board)&lt;/li>
+&lt;li>Click &amp;ldquo;Choose Storage&amp;rdquo; and select your SD card&lt;/li>
+&lt;li>Click &amp;ldquo;Next&amp;rdquo;&lt;/li>
+&lt;li>In the &amp;ldquo;Use OS customisation?&amp;rdquo; screen, click &amp;ldquo;Edit Settings&amp;rdquo;&lt;/li>
+&lt;li>In &amp;ldquo;General&amp;rdquo;, fill in a name for your board, login, password, wifi settings, etc.&lt;/li>
+&lt;li>In &amp;ldquo;Services&amp;rdquo;, enable SSH with password authentication&lt;/li>
+&lt;li>In &amp;ldquo;Options&amp;rdquo; you can disable telemetry.&lt;/li>
+&lt;li>Back in the &amp;ldquo;Use OS customisation?&amp;rdquo; screen, click &amp;ldquo;Yes&amp;rdquo;&lt;/li>
+&lt;li>Confirm with &amp;ldquo;Yes&amp;rdquo; that all data on the SD Card can be overwritten&lt;/li>
+&lt;li>Wait until &amp;ldquo;Writing&amp;rdquo; and &amp;ldquo;Verifying&amp;rdquo; are finished&lt;/li>
+&lt;li>You can now take the SD Card out of your computer, and put it in the Raspberry Pi&lt;/li>
+&lt;/ol>
+&lt;p>
+
+
+&lt;div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+	 
+
+&lt;link rel="stylesheet" href="https://pi4j.com/css/hugo-easy-gallery.css" />
+&lt;div class="box fancy-figure caption-position-center caption-effect-fade" >
+ &lt;figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+ &lt;div class="img" style="background-image: url('/assets/getting-started/setup/imager-start.png');">
+ &lt;img itemprop="thumbnail" src="https://pi4j.com/assets/getting-started/setup/imager-start.png" alt="Imager start screen"/>
+ &lt;/div>
+ &lt;a href="https://pi4j.com/assets/getting-started/setup/imager-start.png" itemprop="contentUrl">&lt;/a>
+ &lt;figcaption>
+ &lt;p>Imager start screen&lt;/p></description></item><item><title>The First Boot</title><link>https://pi4j.com/prepare/first-boot/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/prepare/first-boot/</guid><description>&lt;p>Put the SD Card with the operating system into the Raspberry Pi, connect a keyboard, mouse, and screen, and power it up!&lt;/p>
+
+&lt;div class="notices tip" >&lt;p>If you configured the login, password, WiFi, and SSH settings in the &amp;ldquo;Use OS customisation?&amp;rdquo; part of the Imager tool, you can connect to the Raspberry Pi from another PC via SSH with the username and hostname you filled in: &lt;code>ssh USERNAME@HOSTNAME.local&lt;/code>.&lt;/p>
+&lt;/div>
+
+&lt;h2 id="update-the-system">Update the System&lt;/h2>
+&lt;p>Yes, even when you just created the SD Card with the latest OS provided by the Imager tool, it is possible that there are updates available. Run the following commands in the terminal to make sure your system is fully up-to-date. The output in this example will most probably be different on your system:&lt;/p></description></item><item><title>Install Java and Tools</title><link>https://pi4j.com/prepare/install-java/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/prepare/install-java/</guid><description>&lt;p>Our Raspberry Pi has started for the first time and we are now ready to add some Java to it!&lt;/p>
+&lt;h2 id="add-missing-dependencies">Add Missing Dependencies&lt;/h2>
+&lt;p>Let&amp;rsquo;s start with some helper tools that will be useful later.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>$ sudo apt install -y i2c-tools vim git java-common libxi6 libxrender1 libxtst6
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="install-java">Install Java&lt;/h2>
+&lt;p>There are many ways you can install Java. The easiest way to make Java available for both normal use and as root user (&lt;code>sudo&lt;/code>), is the following approach which downloads one of the many distributions that are available.&lt;/p></description></item></channel></rss>

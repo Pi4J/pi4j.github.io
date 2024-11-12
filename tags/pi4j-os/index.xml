@@ -1,9 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pi4J OS on Pi4J</title><link>https://pi4j.com/tags/pi4j-os/</link><description>Recent content in Pi4J OS on Pi4J</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 31 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://pi4j.com/tags/pi4j-os/index.xml" rel="self" type="application/rss+xml"/><item><title>Prepare SD with Pi4J OS</title><link>https://pi4j.com/pi4j-os/prepare-sd-with-pi4j-os/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/pi4j-os/prepare-sd-with-pi4j-os/</guid><description>&lt;p>To prepare an SD-card with one of these flavors, download the latest build from &lt;a href="https://pi4j.com/download/" target="_blank" rel="noopener">pi4j.com/download&lt;/a> and follow the steps described in &lt;a href="https://pi4j.com/getting-started/set-up-a-new-raspberry-pi/">&amp;ldquo;Set up a new Raspberry Pi&lt;/a>, but instead of selecting one of the OS&amp;rsquo;s predefined in the Imager tool, select &amp;ldquo;Choose OS &amp;gt; Use custom&amp;rdquo;, and selected the downloaded file.&lt;/p>
-&lt;h2 id="install-the-raspberry-pi-imager">Install the Raspberry Pi Imager&lt;/h2>
-&lt;p>The official Imager Tool can be downloaded directly from the &lt;a href="https://www.raspberrypi.org/software/" target="_blank" rel="noopener">Raspberry Pi website&lt;/a>.
-This simple tool works on all common operating systems and can be installed very easily with just a few keystrokes.
-More detailed instructions for installation are also available on the homepage of the Raspberry Pi website or here
-on &lt;a href="https://pi4j.com/getting-started/set-up-a-new-raspberry-pi/">&amp;ldquo;Set up a new Raspberry Pi&amp;rdquo;&lt;/a>.&lt;/p></description></item><item><title>Develop with Intellij IDEA</title><link>https://pi4j.com/examples/crowpi/develop-crowpi-with-intellij/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/crowpi/develop-crowpi-with-intellij/</guid><description>&lt;p>The CrowPi example project contains settings to make it easy to develop on a PC with IntelliJ IDEA and execute the application on the CrowPi. The articles, instructions and pictures are created accordingly.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pi4J OS on Pi4J</title><link>https://pi4j.com/tags/pi4j-os/</link><description>Recent content in Pi4J OS on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://pi4j.com/tags/pi4j-os/index.xml" rel="self" type="application/rss+xml"/><item><title>Develop with Intellij IDEA</title><link>https://pi4j.com/examples/crowpi/develop-crowpi-with-intellij/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/crowpi/develop-crowpi-with-intellij/</guid><description>&lt;p>The CrowPi example project contains settings to make it easy to develop on a PC with IntelliJ IDEA and execute the application on the CrowPi. The articles, instructions and pictures are created accordingly.
 IntelliJ IDEA is from available Jetbrains in different versions. The community version has enough functionality for development
 with the CrowPi and is available for Windows, MacOS and Linux, but NOT for Raspberry Pi. The
 &lt;a href="https://www.jetbrains.com/idea/download/" target="_blank" rel="noopener">download can be found here&lt;/a>.&lt;/p></description></item><item><title>CrowPi examples</title><link>https://pi4j.com/examples/crowpi/crowpi-examples/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/crowpi/crowpi-examples/</guid><description>&lt;div class="notices tip" >&lt;p>GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-example-crowpi" target="_blank" rel="noopener">https://github.com/Pi4J/pi4j-example-crowpi&lt;/a>&lt;/p>
@@ -95,70 +90,6 @@ with the CrowPi and is available for Windows, MacOS and Linux, but NOT for Raspb
  &lt;td style="text-align: left">&lt;a href="https://fhnw-ip5-ip6.github.io/CrowPiGoesJavaTutorial/de/components/vibration-motor/" target="_blank" rel="noopener">vibration-motor&lt;/a>&lt;/td>
  &lt;/tr>
  &lt;/tbody>
-&lt;/table></description></item><item><title>Test Pi4J Basic OS</title><link>https://pi4j.com/pi4j-os/test-pi4j-basic-os/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/pi4j-os/test-pi4j-basic-os/</guid><description>&lt;p>The Pi4J Basic OS contains two simple applications in directory &lt;code>java-examples&lt;/code> and a sample file to test the audio channel. As Pi4J CrowPi OS and Pi4J Picade OS are based on Pi4J Basic OS, they also contain these tests.&lt;/p>
-&lt;p>You can start the tests via &lt;code>ssh&lt;/code>.&lt;/p>
-&lt;h3 id="audio-test">Audio Test&lt;/h3>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>cd /home/pi
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>nvlc Music/StarTrekTheme.mp3
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="pure-javafx-application">Pure JavaFX Application&lt;/h3>
-&lt;p>Compile the JavaFX application&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>cd /home/pi/java-examples/pure-javafx
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>javac --module-path /opt/javafx-sdk/lib --add-modules&lt;span style="color:#f92672">=&lt;/span>javafx.controls,javafx.media hellofx/HelloFX.java
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>To start &lt;code>HelloFX&lt;/code> in X11-Mode&lt;/p></description></item><item><title>Debugging Failures</title><link>https://pi4j.com/debugging-failures/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/debugging-failures/</guid><description>&lt;p>Combining software with hardware can fail on many levels. You need the correct version of the Operating Systems, the good version of the Pi4J library, the wiring between the Raspberry Pi and the electronic components must be correct, and so on&amp;hellip;&lt;/p>
+&lt;/table></description></item><item><title>Debugging Failures</title><link>https://pi4j.com/debugging-failures/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/debugging-failures/</guid><description>&lt;p>Combining software with hardware can fail on many levels. You need the correct version of the Operating Systems, the good version of the Pi4J library, the wiring between the Raspberry Pi and the electronic components must be correct, and so on&amp;hellip;&lt;/p>
 &lt;h2 id="startup-failures">Startup Failures&lt;/h2>
-&lt;p>Always make sure that you log errors in the terminal or into a file! When the Pi4J library initializes, a lot of useful info is outputted. A &lt;strong>successful start&lt;/strong> looks like this:&lt;/p></description></item><item><title>Pi4J Operating System</title><link>https://pi4j.com/pi4j-os/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/pi4j-os/</guid><description>&lt;p>Yes, Raspberry Pi OS is great! And we made if even more awesome by adding some &amp;ldquo;goodies&amp;rdquo; for Java developers! So, to be clear, Pi4J OS is not yet another OS. It&amp;rsquo;s the official Raspberry Pi OS, with additional tools and preconfigurations to make it the ideal OS for any Java developer who wants to use a Raspberry Pi.&lt;/p>
-
-&lt;div class="notices tip" >&lt;p>GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-os" target="_blank" rel="noopener">https://github.com/Pi4J/pi4j-os&lt;/a>&lt;/p>
-&lt;/div>
-
-&lt;h2 id="for-raspberry-pi-3-and-4">For Raspberry Pi 3 and 4&lt;/h2>
-
-&lt;div class="notices warning" >&lt;p>Pi4j OS doesn&amp;rsquo;t work on the Raspberry Pi 5.&lt;/p></description></item><item><title>Test Pi4J Picade OS</title><link>https://pi4j.com/pi4j-os/test-pi4j-picade-os/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/pi4j-os/test-pi4j-picade-os/</guid><description>&lt;p>Pi4J Picade OS contains an additional Test and the audio test should use the internal loudspeaker.&lt;/p>
-&lt;p>Compile the JavaFX application&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>cd /home/pi/java-examples/pure-picade
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>javac --module-path /opt/javafx-sdk/lib --add-modules&lt;span style="color:#f92672">=&lt;/span>javafx.controls,javafx.media hellopicade/HelloPicade.java
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>To start &lt;code>HelloPicade&lt;/code> in X11-Mode&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>DISPLAY&lt;span style="color:#f92672">=&lt;/span>:0 XAUTHORITY&lt;span style="color:#f92672">=&lt;/span>/home/pi/.Xauthority sudo -E java --module-path /opt/javafx-sdk/lib --add-modules javafx.controls,javafx.media -Dglass.platform&lt;span style="color:#f92672">=&lt;/span>gtk hellopicade.HelloPicade
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>To start &lt;code>HelloPicade&lt;/code> in DRM&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>sudo java-kiosk hellopicade.HelloPicade
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Check the mapping of the Picade buttons to JavaFX KeyCodes:&lt;/p>
-&lt;table>
- &lt;thead>
- &lt;tr>
- &lt;th style="text-align: left">Picade&lt;/th>
- &lt;th style="text-align: left">KeyCode&lt;/th>
- &lt;/tr>
- &lt;/thead>
- &lt;tbody>
- &lt;tr>
- &lt;td style="text-align: left">Joystick up&lt;/td>
- &lt;td style="text-align: left">KeyCode.UP&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">Joystick down&lt;/td>
- &lt;td style="text-align: left">KeyCode.DOWN&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">Joystick left&lt;/td>
- &lt;td style="text-align: left">KeyCode.LEFT&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">Joystick right&lt;/td>
- &lt;td style="text-align: left">KeyCode.RIGHT&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">right side black button&lt;/td>
- &lt;td style="text-align: left">KeyCode.ENTER&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">left side black button&lt;/td>
- &lt;td style="text-align: left">KeyCode.ESCAPE&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">all other buttons&lt;/td>
- &lt;td style="text-align: left">no mapping&lt;/td>
- &lt;/tr>
- &lt;/tbody>
-&lt;/table></description></item><item><title>Pi4J Operating System</title><link>https://pi4j.com/blog/2023/20230731_pi4j_os/</link><pubDate>Mon, 31 Jul 2023 00:00:00 +0000</pubDate><guid>https://pi4j.com/blog/2023/20230731_pi4j_os/</guid><description>&lt;p>2023-07-31, by Frank Delporte and Dieter Holz&lt;/p>
-&lt;p>Yes, the Raspberry Pi Operating System is awesome! But the Pi4J project made it if even more awesome by adding &amp;ldquo;goodies&amp;rdquo; for Java developers! Pi4J OS is not yet another OS, but the official Raspberry Pi OS, with additional tools and preconfigurations to make it the ideal OS for any Java and JavaFX developer who wants to use a Raspberry Pi.&lt;/p>
-&lt;p>The project is shared on &lt;a href="https://github.com/Pi4J/pi4j-os" target="_blank" rel="noopener">GitHub&lt;/a> and documented on &lt;a href="https://pi4j.com/pi4j-os/" target="_blank" rel="noopener">the Pi4J website&lt;/a>. The zip-compressed archives of released versions can be downloaded from &lt;a href="https://pi4j-download.com" target="_blank" rel="noopener">pi4j-download.com&lt;/a>.&lt;/p></description></item></channel></rss>
+&lt;p>Always make sure that you log errors in the terminal or into a file! When the Pi4J library initializes, a lot of useful info is outputted. A &lt;strong>successful start&lt;/strong> looks like this:&lt;/p></description></item></channel></rss>

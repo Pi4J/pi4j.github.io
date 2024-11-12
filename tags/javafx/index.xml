@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>JavaFX on Pi4J</title><link>https://pi4j.com/tags/javafx/</link><description>Recent content in JavaFX on Pi4J</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 31 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://pi4j.com/tags/javafx/index.xml" rel="self" type="application/rss+xml"/><item><title>User interface with JavaFX</title><link>https://pi4j.com/getting-started/user-interface-with-javafx/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/getting-started/user-interface-with-javafx/</guid><description>&lt;div class="notices tip" >&lt;p>GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-example-javafx" target="_blank" rel="noopener">https://github.com/Pi4J/pi4j-example-javafx&lt;/a>&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>JavaFX on Pi4J</title><link>https://pi4j.com/tags/javafx/</link><description>Recent content in JavaFX on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://pi4j.com/tags/javafx/index.xml" rel="self" type="application/rss+xml"/><item><title>User interface with JavaFX</title><link>https://pi4j.com/getting-started/user-interface-with-javafx/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/getting-started/user-interface-with-javafx/</guid><description>&lt;div class="notices tip" >&lt;p>GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-example-javafx" target="_blank" rel="noopener">https://github.com/Pi4J/pi4j-example-javafx&lt;/a>&lt;/p>
 &lt;/div>
 
 &lt;p>JavaFX is a framework to create user interfaces for desktop (Windows, Mac, Linux) and mobile phones. JavaFX is
@@ -27,7 +27,7 @@ JavaFX to build games.&lt;/p>
 &lt;li>Explain the use of a MVC-model (Model-View-Controller) to clearly split data, actions and user interface&lt;/li>
 &lt;li>Explain the use of JUnit test&lt;/li>
 &lt;/ul>
-&lt;h2 id="sources-and-info">Sources and info&lt;/h2>
+&lt;h2 id="sources-and-info">Sources and Info&lt;/h2>
 &lt;p>Please check the README of the sources of the project for a full description of the setup process of the Raspberry Pi
 and to fully understand the example applications and the MVC-model. This page is only intended to give you a quick overview.&lt;/p></description></item><item><title>LED strip with a JavaFX UI</title><link>https://pi4j.com/examples/jbang/pixelblaze_output_expander_javafx/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/jbang/pixelblaze_output_expander_javafx/</guid><description>&lt;div class="notices tip" >&lt;p>GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-jbang/blob/main/PixelblazeOutputExpanderJavaFX.java" target="_blank" rel="noopener">github.com/Pi4J/pi4j-jbang &amp;gt; PixelblazeOutputExpanderJavaFX.java&lt;/a>&lt;/p>
 &lt;/div>
@@ -114,6 +114,4 @@ and to fully understand the example applications and the MVC-model. This page is
  &lt;/div>
  &lt;/div>
 &lt;/div>
-&lt;/p></description></item><item><title>Pi4J Operating System</title><link>https://pi4j.com/blog/2023/20230731_pi4j_os/</link><pubDate>Mon, 31 Jul 2023 00:00:00 +0000</pubDate><guid>https://pi4j.com/blog/2023/20230731_pi4j_os/</guid><description>&lt;p>2023-07-31, by Frank Delporte and Dieter Holz&lt;/p>
-&lt;p>Yes, the Raspberry Pi Operating System is awesome! But the Pi4J project made it if even more awesome by adding &amp;ldquo;goodies&amp;rdquo; for Java developers! Pi4J OS is not yet another OS, but the official Raspberry Pi OS, with additional tools and preconfigurations to make it the ideal OS for any Java and JavaFX developer who wants to use a Raspberry Pi.&lt;/p>
-&lt;p>The project is shared on &lt;a href="https://github.com/Pi4J/pi4j-os" target="_blank" rel="noopener">GitHub&lt;/a> and documented on &lt;a href="https://pi4j.com/pi4j-os/" target="_blank" rel="noopener">the Pi4J website&lt;/a>. The zip-compressed archives of released versions can be downloaded from &lt;a href="https://pi4j-download.com" target="_blank" rel="noopener">pi4j-download.com&lt;/a>.&lt;/p></description></item></channel></rss>
+&lt;/p></description></item></channel></rss>

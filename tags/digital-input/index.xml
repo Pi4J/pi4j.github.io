@@ -41,7 +41,7 @@ code to native applications for all platforms&lt;/a>.&lt;/p></description></item
 &lt;li>Explain the use of a MVC-model (Model-View-Controller) to clearly split data, actions and user interface&lt;/li>
 &lt;li>Explain the use of JUnit test&lt;/li>
 &lt;/ul>
-&lt;h2 id="sources-and-info">Sources and info&lt;/h2>
+&lt;h2 id="sources-and-info">Sources and Info&lt;/h2>
 &lt;p>Please check the README of the sources of the project for a full description of the setup process of the Raspberry Pi
 and to fully understand the example applications and the MVC-model. This page is only intended to give you a quick overview.&lt;/p></description></item><item><title>GpioD Provider</title><link>https://pi4j.com/documentation/providers/gpiod/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/providers/gpiod/</guid><description>&lt;p>The GpioD plugin provider was added in Pi4J 2.5.0 to be able to support the Raspberry Pi 5 with the new &lt;a href="https://www.raspberrypi.com/documentation/microcontrollers/rp1.html" target="_blank" rel="noopener">GPIO chip RP1&lt;/a>.&lt;/p>
 &lt;p>Providers in the GpioD plugin:&lt;/p>

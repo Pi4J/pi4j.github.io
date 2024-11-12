@@ -1,9 +1,48 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Welcome to Pi4J on Pi4J</title><link>https://pi4j.com/</link><description>Recent content in Welcome to Pi4J on Pi4J</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 04 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://pi4j.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Prepare SD with Pi4J OS</title><link>https://pi4j.com/pi4j-os/prepare-sd-with-pi4j-os/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/pi4j-os/prepare-sd-with-pi4j-os/</guid><description>&lt;p>To prepare an SD-card with one of these flavors, download the latest build from &lt;a href="https://pi4j.com/download/" target="_blank" rel="noopener">pi4j.com/download&lt;/a> and follow the steps described in &lt;a href="https://pi4j.com/getting-started/set-up-a-new-raspberry-pi/">&amp;ldquo;Set up a new Raspberry Pi&lt;/a>, but instead of selecting one of the OS&amp;rsquo;s predefined in the Imager tool, select &amp;ldquo;Choose OS &amp;gt; Use custom&amp;rdquo;, and selected the downloaded file.&lt;/p>
-&lt;h2 id="install-the-raspberry-pi-imager">Install the Raspberry Pi Imager&lt;/h2>
-&lt;p>The official Imager Tool can be downloaded directly from the &lt;a href="https://www.raspberrypi.org/software/" target="_blank" rel="noopener">Raspberry Pi website&lt;/a>.
-This simple tool works on all common operating systems and can be installed very easily with just a few keystrokes.
-More detailed instructions for installation are also available on the homepage of the Raspberry Pi website or here
-on &lt;a href="https://pi4j.com/getting-started/set-up-a-new-raspberry-pi/">&amp;ldquo;Set up a new Raspberry Pi&amp;rdquo;&lt;/a>.&lt;/p></description></item><item><title>Develop with Intellij IDEA</title><link>https://pi4j.com/examples/crowpi/develop-crowpi-with-intellij/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/crowpi/develop-crowpi-with-intellij/</guid><description>&lt;p>The CrowPi example project contains settings to make it easy to develop on a PC with IntelliJ IDEA and execute the application on the CrowPi. The articles, instructions and pictures are created accordingly.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Welcome to Pi4J on Pi4J</title><link>https://pi4j.com/</link><description>Recent content in Welcome to Pi4J on Pi4J</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 04 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://pi4j.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Write OS to SD card</title><link>https://pi4j.com/prepare/sd-card/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/prepare/sd-card/</guid><description>&lt;p>The SD card will hold the operating system. On the Raspberry Pi website, &lt;a href="https://www.raspberrypi.org/software/" target="_blank" rel="noopener">on the download page, you can
+find the Imager tool&lt;/a>. Select the version for your computer, download, and install it.&lt;/p>
+&lt;p>&lt;img src="https://pi4j.com/assets/getting-started/setup/download-imager.png" alt="Imager download">&lt;/p>
+&lt;p>Start the Imager and follow these steps:&lt;/p>
+&lt;ol>
+&lt;li>Put the SD Card in your computer&lt;/li>
+&lt;li>Click &amp;ldquo;Choose Device&amp;rdquo; and select your type of board&lt;/li>
+&lt;li>Click &amp;ldquo;Choose OS&amp;rdquo; &amp;gt; &amp;ldquo;Raspberry Pi OS (64-bit)&amp;rdquo; (or 32-bit for an older board)&lt;/li>
+&lt;li>Click &amp;ldquo;Choose Storage&amp;rdquo; and select your SD card&lt;/li>
+&lt;li>Click &amp;ldquo;Next&amp;rdquo;&lt;/li>
+&lt;li>In the &amp;ldquo;Use OS customisation?&amp;rdquo; screen, click &amp;ldquo;Edit Settings&amp;rdquo;&lt;/li>
+&lt;li>In &amp;ldquo;General&amp;rdquo;, fill in a name for your board, login, password, wifi settings, etc.&lt;/li>
+&lt;li>In &amp;ldquo;Services&amp;rdquo;, enable SSH with password authentication&lt;/li>
+&lt;li>In &amp;ldquo;Options&amp;rdquo; you can disable telemetry.&lt;/li>
+&lt;li>Back in the &amp;ldquo;Use OS customisation?&amp;rdquo; screen, click &amp;ldquo;Yes&amp;rdquo;&lt;/li>
+&lt;li>Confirm with &amp;ldquo;Yes&amp;rdquo; that all data on the SD Card can be overwritten&lt;/li>
+&lt;li>Wait until &amp;ldquo;Writing&amp;rdquo; and &amp;ldquo;Verifying&amp;rdquo; are finished&lt;/li>
+&lt;li>You can now take the SD Card out of your computer, and put it in the Raspberry Pi&lt;/li>
+&lt;/ol>
+&lt;p>
+
+
+&lt;div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+	 
+
+&lt;link rel="stylesheet" href="https://pi4j.com/css/hugo-easy-gallery.css" />
+&lt;div class="box fancy-figure caption-position-center caption-effect-fade" >
+ &lt;figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+ &lt;div class="img" style="background-image: url('/assets/getting-started/setup/imager-start.png');">
+ &lt;img itemprop="thumbnail" src="https://pi4j.com/assets/getting-started/setup/imager-start.png" alt="Imager start screen"/>
+ &lt;/div>
+ &lt;a href="https://pi4j.com/assets/getting-started/setup/imager-start.png" itemprop="contentUrl">&lt;/a>
+ &lt;figcaption>
+ &lt;p>Imager start screen&lt;/p></description></item><item><title>The First Boot</title><link>https://pi4j.com/prepare/first-boot/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/prepare/first-boot/</guid><description>&lt;p>Put the SD Card with the operating system into the Raspberry Pi, connect a keyboard, mouse, and screen, and power it up!&lt;/p>
+
+&lt;div class="notices tip" >&lt;p>If you configured the login, password, WiFi, and SSH settings in the &amp;ldquo;Use OS customisation?&amp;rdquo; part of the Imager tool, you can connect to the Raspberry Pi from another PC via SSH with the username and hostname you filled in: &lt;code>ssh USERNAME@HOSTNAME.local&lt;/code>.&lt;/p>
+&lt;/div>
+
+&lt;h2 id="update-the-system">Update the System&lt;/h2>
+&lt;p>Yes, even when you just created the SD Card with the latest OS provided by the Imager tool, it is possible that there are updates available. Run the following commands in the terminal to make sure your system is fully up-to-date. The output in this example will most probably be different on your system:&lt;/p></description></item><item><title>Install Java and Tools</title><link>https://pi4j.com/prepare/install-java/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/prepare/install-java/</guid><description>&lt;p>Our Raspberry Pi has started for the first time and we are now ready to add some Java to it!&lt;/p>
+&lt;h2 id="add-missing-dependencies">Add Missing Dependencies&lt;/h2>
+&lt;p>Let&amp;rsquo;s start with some helper tools that will be useful later.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>$ sudo apt install -y i2c-tools vim git java-common libxi6 libxrender1 libxtst6
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="install-java">Install Java&lt;/h2>
+&lt;p>There are many ways you can install Java. The easiest way to make Java available for both normal use and as root user (&lt;code>sudo&lt;/code>), is the following approach which downloads one of the many distributions that are available.&lt;/p></description></item><item><title>Develop with Intellij IDEA</title><link>https://pi4j.com/examples/crowpi/develop-crowpi-with-intellij/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/crowpi/develop-crowpi-with-intellij/</guid><description>&lt;p>The CrowPi example project contains settings to make it easy to develop on a PC with IntelliJ IDEA and execute the application on the CrowPi. The articles, instructions and pictures are created accordingly.
 IntelliJ IDEA is from available Jetbrains in different versions. The community version has enough functionality for development
 with the CrowPi and is available for Windows, MacOS and Linux, but NOT for Raspberry Pi. The
 &lt;a href="https://www.jetbrains.com/idea/download/" target="_blank" rel="noopener">download can be found here&lt;/a>.&lt;/p></description></item><item><title>Download/Install</title><link>https://pi4j.com/architecture/about-the-code/download-sources/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/architecture/about-the-code/download-sources/</guid><description>&lt;p>You can build the project from sources available on &lt;a href="https://github.com/Pi4J/pi4j-v2" target="_blank" rel="noopener">GitHub&lt;/a>.&lt;/p>
@@ -187,21 +226,7 @@ already installed, configuired and cached.&lt;/p>
  &lt;td style="text-align: left">&lt;a href="https://fhnw-ip5-ip6.github.io/CrowPiGoesJavaTutorial/de/components/vibration-motor/" target="_blank" rel="noopener">vibration-motor&lt;/a>&lt;/td>
  &lt;/tr>
  &lt;/tbody>
-&lt;/table></description></item><item><title>Set up a new Raspberry Pi</title><link>https://pi4j.com/getting-started/set-up-a-new-raspberry-pi/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/getting-started/set-up-a-new-raspberry-pi/</guid><description>&lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>The Raspberry Pi is a powerful machine with many use-cases. A lot of this power is based on the
-operating system you use. For our &amp;ldquo;Getting Started&amp;rdquo; examples we will be using the &amp;ldquo;official Raspberry
-Pi OS&amp;rdquo; (formerly known as &amp;ldquo;Raspbian OS&amp;rdquo;) but there is a long list of other possibilities which is listed
-for example on the&lt;a href="https://github.com/thibmaek/awesome-raspberry-pi/blob/master/README.md" target="_blank" rel="noopener">&amp;ldquo;Awesome Raspberry Pi&amp;rdquo; list on GitHub&lt;/a>.&lt;/p>
-&lt;p>In this article we start with a brand new Raspberry Pi board.&lt;/p></description></item><item><title>Test Pi4J Basic OS</title><link>https://pi4j.com/pi4j-os/test-pi4j-basic-os/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/pi4j-os/test-pi4j-basic-os/</guid><description>&lt;p>The Pi4J Basic OS contains two simple applications in directory &lt;code>java-examples&lt;/code> and a sample file to test the audio channel. As Pi4J CrowPi OS and Pi4J Picade OS are based on Pi4J Basic OS, they also contain these tests.&lt;/p>
-&lt;p>You can start the tests via &lt;code>ssh&lt;/code>.&lt;/p>
-&lt;h3 id="audio-test">Audio Test&lt;/h3>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>cd /home/pi
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>nvlc Music/StarTrekTheme.mp3
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="pure-javafx-application">Pure JavaFX Application&lt;/h3>
-&lt;p>Compile the JavaFX application&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>cd /home/pi/java-examples/pure-javafx
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>javac --module-path /opt/javafx-sdk/lib --add-modules&lt;span style="color:#f92672">=&lt;/span>javafx.controls,javafx.media hellofx/HelloFX.java
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>To start &lt;code>HelloFX&lt;/code> in X11-Mode&lt;/p></description></item><item><title>What's New (V.2)</title><link>https://pi4j.com/about/new-in-v2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/about/new-in-v2/</guid><description>&lt;h2 id="whats-new-in-20">What&amp;rsquo;s New in 2.0?&lt;/h2>
+&lt;/table></description></item><item><title>What's New (V.2)</title><link>https://pi4j.com/about/new-in-v2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/about/new-in-v2/</guid><description>&lt;h2 id="whats-new-in-20">What&amp;rsquo;s New in 2.0?&lt;/h2>
 &lt;p>Pi4J version 2.0 brings with it many new features, and an entirely new architecture that focuses on
 extensibility, simplified integration and a modern Java API including the following:&lt;/p>
 &lt;ul>
@@ -226,13 +251,33 @@ numbering scheme.&lt;/p></description></item><item><title>Understanding the GPIO
 pins has &amp;ldquo;grown&amp;rdquo; between the different Raspberry Pi board versions, but all recent ones have a 40-pin header. It&amp;rsquo;s of
 course important to be aware of the correct numbering to not connect components the wrong way.&lt;/p>
 &lt;p>&lt;img src="https://pi4j.com/assets/getting-started/pins/headernumber-on-board.jpg" alt="Numbering of the pins">&lt;/p>
-&lt;h2 id="type-of-pins">Type of pins&lt;/h2>
-&lt;p>The pins have different uses&lt;/p></description></item><item><title>Electrical Engineering</title><link>https://pi4j.com/getting-started/electricalengeneering/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/getting-started/electricalengeneering/</guid><description>&lt;h2 id="resistor-dimensioning">Resistor dimensioning&lt;/h2>
-&lt;p>Resistors can be used for different effects. One application is to improve the stability of the application with PullUp and PullDown resistors. Another application is to use resistors to protect the PI against voltage peaks or short circuit currents.&lt;/p>
-&lt;h3 id="pullup-pulldown">PullUp PullDown&lt;/h3>
-&lt;p>In electronic logic circuits, a pull-up resistor or pull-down resistor is a resistor used to ensure a known state for a signal. It is typically used in combination with components
-such as switches and transistors, which physically interrupt the connection of subsequent components to ground or to VCC. Closing the switch creates a direct connection to ground or VCC,
-but when the switch is open, the rest of the circuit would be left floating (i.e., it would have an indeterminate voltage).&lt;/p></description></item><item><title>Java development with VSC</title><link>https://pi4j.com/getting-started/java-development-on-the-raspberry-pi-with-vsc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/getting-started/java-development-on-the-raspberry-pi-with-vsc/</guid><description>&lt;h2 id="java-on-the-raspberry-pi">Java on the Raspberry Pi&lt;/h2>
+&lt;h2 id="type-of-pins">Type of Pins&lt;/h2>
+&lt;p>The pins have different uses&lt;/p></description></item><item><title>Electrical Engineering</title><link>https://pi4j.com/getting-started/electrical-engineering/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/getting-started/electrical-engineering/</guid><description>&lt;p>The goal of the Pi4J project is to combine sofware (Java) with hardware (electronic components). On this page we give you some tips and tricks for the electronics part.&lt;/p>
+&lt;h2 id="breadboard">Breadboard&lt;/h2>
+&lt;p>A breadboard is the basic for each experiment. It allows you to easily connect several components to each other and the Raspberry Pi. Here is a video that explains the basics of breadboards:&lt;/p>
+
+
+ 
+ &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/6WReFkfrUIk?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+ >&lt;/iframe>
+ &lt;/div>
+
+&lt;p>
+
+
+&lt;div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+	 
+
+&lt;link rel="stylesheet" href="https://pi4j.com/css/hugo-easy-gallery.css" />
+&lt;div class="box fancy-figure caption-position-center caption-effect-fade" >
+ &lt;figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+ &lt;div class="img" style="background-image: url('/assets/getting-started/electricalEngineering/breadboard.jpeg');">
+ &lt;img itemprop="thumbnail" src="https://pi4j.com/assets/getting-started/electricalEngineering/breadboard.jpeg" alt="Breadboard"/>
+ &lt;/div>
+ &lt;a href="https://pi4j.com/assets/getting-started/electricalEngineering/breadboard.jpeg" itemprop="contentUrl">&lt;/a>
+ &lt;figcaption>
+ &lt;p>Breadboard&lt;/p></description></item><item><title>Java development with VSC</title><link>https://pi4j.com/getting-started/java-development-on-the-raspberry-pi-with-vsc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/getting-started/java-development-on-the-raspberry-pi-with-vsc/</guid><description>&lt;h2 id="java-on-the-raspberry-pi">Java on the Raspberry Pi&lt;/h2>
 &lt;p>To use Pi4J V.2 you&amp;rsquo;ll need Java 11 or newer. Luckily this version is included in the current version of Raspberry Pi OS.
 In the release notes you can see that the version of 2019-06-20 includes OpenJDK Java 11:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>2019-06-20:
@@ -269,56 +314,10 @@ the more well-known BCM numbering is being used now.&lt;/p>
 &lt;li>&lt;a href="https://github.com/Pi4J/pi4j-v2/issues/383" target="_blank" rel="noopener">Issue #383&lt;/a>: Increase amount of write bytes to SPI devices over 65535. &lt;code>spiWrite&lt;/code> has been modified to write data in chunks of 4096 bytes so it can handle larger messages.&lt;/li>
 &lt;li>&lt;a href="https://github.com/Pi4J/pi4j-v2/issues/388" target="_blank" rel="noopener">Issue #388&lt;/a>: I2C writeRead method compares written to writeOffset instead of writeSize.&lt;/li>
 &lt;/ul>
-&lt;p>Because of the changes in the loading of the mock providers, if you want to load them on a Raspberry Pi board, you need to use the following context builder:&lt;/p></description></item><item><title>Test Pi4J Picade OS</title><link>https://pi4j.com/pi4j-os/test-pi4j-picade-os/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/pi4j-os/test-pi4j-picade-os/</guid><description>&lt;p>Pi4J Picade OS contains an additional Test and the audio test should use the internal loudspeaker.&lt;/p>
-&lt;p>Compile the JavaFX application&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>cd /home/pi/java-examples/pure-picade
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>javac --module-path /opt/javafx-sdk/lib --add-modules&lt;span style="color:#f92672">=&lt;/span>javafx.controls,javafx.media hellopicade/HelloPicade.java
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>To start &lt;code>HelloPicade&lt;/code> in X11-Mode&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>DISPLAY&lt;span style="color:#f92672">=&lt;/span>:0 XAUTHORITY&lt;span style="color:#f92672">=&lt;/span>/home/pi/.Xauthority sudo -E java --module-path /opt/javafx-sdk/lib --add-modules javafx.controls,javafx.media -Dglass.platform&lt;span style="color:#f92672">=&lt;/span>gtk hellopicade.HelloPicade
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>To start &lt;code>HelloPicade&lt;/code> in DRM&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>sudo java-kiosk hellopicade.HelloPicade
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Check the mapping of the Picade buttons to JavaFX KeyCodes:&lt;/p>
-&lt;table>
- &lt;thead>
- &lt;tr>
- &lt;th style="text-align: left">Picade&lt;/th>
- &lt;th style="text-align: left">KeyCode&lt;/th>
- &lt;/tr>
- &lt;/thead>
- &lt;tbody>
- &lt;tr>
- &lt;td style="text-align: left">Joystick up&lt;/td>
- &lt;td style="text-align: left">KeyCode.UP&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">Joystick down&lt;/td>
- &lt;td style="text-align: left">KeyCode.DOWN&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">Joystick left&lt;/td>
- &lt;td style="text-align: left">KeyCode.LEFT&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">Joystick right&lt;/td>
- &lt;td style="text-align: left">KeyCode.RIGHT&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">right side black button&lt;/td>
- &lt;td style="text-align: left">KeyCode.ENTER&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">left side black button&lt;/td>
- &lt;td style="text-align: left">KeyCode.ESCAPE&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">all other buttons&lt;/td>
- &lt;td style="text-align: left">no mapping&lt;/td>
- &lt;/tr>
- &lt;/tbody>
-&lt;/table></description></item><item><title>Developing on a remote PC</title><link>https://pi4j.com/getting-started/developing-on-a-remote-pc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/getting-started/developing-on-a-remote-pc/</guid><description>&lt;div class="notices tip" >&lt;p>GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-maven-archetype" target="_blank" rel="noopener">https://github.com/Pi4J/pi4j-maven-archetype&lt;/a>&lt;/p>
+&lt;p>Because of the changes in the loading of the mock providers, if you want to load them on a Raspberry Pi board, you need to use the following context builder:&lt;/p></description></item><item><title>Developing on a remote PC</title><link>https://pi4j.com/getting-started/developing-on-a-remote-pc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/getting-started/developing-on-a-remote-pc/</guid><description>&lt;div class="notices tip" >&lt;p>GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-maven-archetype" target="_blank" rel="noopener">https://github.com/Pi4J/pi4j-maven-archetype&lt;/a>&lt;/p>
 &lt;/div>
 
-&lt;h2 id="developing-java-programs-using-a-remote-pc-workstation">Developing Java programs using a remote PC workstation&lt;/h2>
+&lt;h2 id="developing-java-programs-using-a-remote-pc-workstation">Developing Java Programs Using a Remote PC Workstation&lt;/h2>
 &lt;p>Writing your Java program, compiling and running it directly on the Raspberry Pi board
 as shown in the previous chapter is perfectly fine, of course,
 but there is an alternative way to arrange your developing laboratory, using a normal
@@ -410,29 +409,25 @@ Arduino Due&amp;hellip; To be further investigated!&lt;/p>
 
 &lt;p>To minimize the required time and efforts to test a new release, V.2 aims to include an automated test which performs
 I/O testing on each I/O interface on each model of RPi. Ideally this would happen as part of the unit testing sequence
-for each code commit or at least as part of the release cycle.&lt;/p></description></item><item><title>Java for ARMv6/7/8</title><link>https://pi4j.com/documentation/java-installation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/java-installation/</guid><description>&lt;div class="notices note" >&lt;p>Raspberry Pi OS Full comes with Java 11 pre-installed. But this version only works on board-versions with an
-&lt;strong>ARMv7 or ARMv8&lt;/strong>. In some cases you will need to do some additional steps to install a Java version which works
-on your board.&lt;/p>
-&lt;/div>
-
-&lt;h3 id="board-versions">Board versions&lt;/h3>
-&lt;h4 id="with-armv6-processor">With ARMv6 processor&lt;/h4>
+for each code commit or at least as part of the release cycle.&lt;/p></description></item><item><title>Java for ARMv6/7/8</title><link>https://pi4j.com/documentation/java-for-arm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/java-for-arm/</guid><description>&lt;p>You can choose from a long list of Java versions and distributions if you use the 64-bit version of the Raspberry Pi Operating System. But this 64-bit OS is only available for Raspberry Pi board versions with an &lt;strong>ARMv7 or ARMv8&lt;/strong> processor.&lt;/p>
+&lt;h2 id="board-versions">Board versions&lt;/h2>
+&lt;h3 id="with-armv6-processor">With ARMv6 processor&lt;/h3>
 &lt;ul>
 &lt;li>Raspberry Pi 1 A and A+&lt;/li>
 &lt;li>Raspberry Pi 1 B and B+&lt;/li>
-&lt;li>Compute Module 1&lt;/li>
 &lt;li>Zero 1.2, 1.3 and W&lt;/li>
+&lt;li>Compute Module 1&lt;/li>
 &lt;/ul>
-&lt;h4 id="with-armv7-or-armv8-processor">With ARMv7 or ARMv8 processor&lt;/h4>
+&lt;h3 id="with-armv7-or-armv8-processor">With ARMv7 or ARMv8 processor&lt;/h3>
 &lt;ul>
 &lt;li>Model A+, version 3&lt;/li>
-&lt;li>Model B, version 2, 3 and 4&lt;/li>
-&lt;li>Compute Module, version 3&lt;/li>
+&lt;li>Model B, version 2, 3, 4 and 5&lt;/li>
+&lt;li>Zero 2 and 2W&lt;/li>
+&lt;li>Compute Module, version 3, 4, and 5&lt;/li>
 &lt;/ul>
-&lt;h3 id="how-to-check-and-install-java">How to check and install Java&lt;/h3>
-&lt;h4 id="check-the-current-version">Check the current version&lt;/h4>
-&lt;p>If you prepared a microSD card with the latest version of Raspbian OS (full version), Java is already installed!
-You can check the installed Java version in the terminal. On a board with ARMv7 or ARMv8 you will get this result:&lt;/p></description></item><item><title>License (Open Source)</title><link>https://pi4j.com/about/license/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/about/license/</guid><description>&lt;p>The Pi4J Version 2.0 project is distributed and licensed under the &lt;strong>Apache License, Version 2.0&lt;/strong> license
+&lt;h2 id="how-to-check-and-install-java">How to Check and Install Java&lt;/h2>
+&lt;h3 id="check-the-current-version">Check the Current Version&lt;/h3>
+&lt;p>You can check the installed Java version in the terminal. On a board with ARMv7 or ARMv8, with a correctly installed JDK, you will get this result:&lt;/p></description></item><item><title>License (Open Source)</title><link>https://pi4j.com/about/license/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/about/license/</guid><description>&lt;p>The Pi4J Version 2.0 project is distributed and licensed under the &lt;strong>Apache License, Version 2.0&lt;/strong> license
 (&lt;em>A business-friendly OSS license&lt;/em>).&lt;/p>
 &lt;ul>
 &lt;li>&lt;a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank" rel="noopener">apache.org/licenses/LICENSE-2.0&lt;/a>&lt;/li>
@@ -780,7 +775,7 @@ The JavaFX application is using Direct Rendering Mode (DRM) to be visualized. An
 &lt;li>Explain the use of a MVC-model (Model-View-Controller) to clearly split data, actions and user interface&lt;/li>
 &lt;li>Explain the use of JUnit test&lt;/li>
 &lt;/ul>
-&lt;h2 id="sources-and-info">Sources and info&lt;/h2>
+&lt;h2 id="sources-and-info">Sources and Info&lt;/h2>
 &lt;p>Please check the README of the sources of the project for a full description of the setup process of the Raspberry Pi
 and to fully understand the example applications and the MVC-model. This page is only intended to give you a quick overview.&lt;/p></description></item><item><title>GpioD Provider</title><link>https://pi4j.com/documentation/providers/gpiod/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/providers/gpiod/</guid><description>&lt;p>The GpioD plugin provider was added in Pi4J 2.5.0 to be able to support the Raspberry Pi 5 with the new &lt;a href="https://www.raspberrypi.com/documentation/microcontrollers/rp1.html" target="_blank" rel="noopener">GPIO chip RP1&lt;/a>.&lt;/p>
 &lt;p>Providers in the GpioD plugin:&lt;/p>
@@ -835,7 +830,7 @@ create a pull request!&lt;/p>
 &lt;h2 id="twitter">Twitter&lt;/h2>
 &lt;p>Please share your personal or professional projects where you combine Java and the Raspberry Pi
 &lt;a href="https://twitter.com/search?q=javaonraspberrypi&amp;amp;src=typed_query&amp;amp;f=live" target="_blank" rel="noopener">on Twitter with the hashtag #JavaOnRaspberryPi&lt;/a>.&lt;/p>
-&lt;h2 id="online-articles">Online articles&lt;/h2>
+&lt;h2 id="online-articles">Online Articles&lt;/h2>
 &lt;ul>
 &lt;li>Foojay.io is a place for friends of OpenJDK, providing articles, updated analyses, selected highlights, and
 categorized lists on all things Java.
@@ -1337,9 +1332,7 @@ with &lt;a href="https://www.oracle.com/java/duke.html" target="_blank" rel="noo
 &lt;p>This kind of methods is hard to test in unit tests as they interact with real components and need to handle the data and I2C devices depending on the interaction. As a solution, Robert is using a &lt;a href="https://github.com/eitch/pi4j-test/tree/feature/eitch-leds" target="_blank" rel="noopener">test project&lt;/a> that has an implementation for an OLED display over I2C, using these commands.&lt;/p></description></item><item><title>LED Matrix with SPI MAX7219</title><link>https://pi4j.com/blog/2024/20240417_led_matrix_max7219_spi_web/</link><pubDate>Wed, 17 Apr 2024 00:00:00 +0000</pubDate><guid>https://pi4j.com/blog/2024/20240417_led_matrix_max7219_spi_web/</guid><description>&lt;p>2024-04-18, by Frank Delporte&lt;/p>
 &lt;p>Roberto Marquez shared a project with us that uses Java to interface with a MAX7219 SPI device to control an LED matrix. It&amp;rsquo;s inspired by the blog &lt;a href="https://www.hackerspacetech.com/raspberry-pi-and-spi-8x8-led-matrix-example-with-java-and-pi4j/" target="_blank" rel="noopener">Raspberry Pi and SPI 8×8 LED matrix example with Java and Pi4j&lt;/a>, but differs in that it is Web-enabled via Spring Boot. This project is the starting point to create a weather station in combination with the BMP280, see &lt;a href="https://pi4j.com/examples/jbang/bme280_temperature_humidity_pressure/" target="_blank" rel="noopener">BME280 Sensor (temp, humidity, pressure) via Pi4J, I2C, and JBang&lt;/a>.&lt;/p></description></item><item><title>Alexander Liggesmeyer and RPi5</title><link>https://pi4j.com/blog/2024/20240318_interview_alexander_liggesmeyer/</link><pubDate>Mon, 18 Mar 2024 00:00:00 +0000</pubDate><guid>https://pi4j.com/blog/2024/20240318_interview_alexander_liggesmeyer/</guid><description>&lt;p>2024-03-18, by Frank Delporte&lt;/p>
 &lt;h2 id="interview-with-alexander-liggesmeyer-about-pi4j-for-raspberry-pi-5">Interview with Alexander Liggesmeyer about Pi4J for Raspberry Pi 5&lt;/h2>
-&lt;p>Today, &lt;a href="https://pi4j.com/about/release-notes/">version 2.5.0 of Pi4J got released with many changes, fixes and improvements&lt;/a>. The most important one being support for the &lt;a href="https://www.raspberrypi.com/products/raspberry-pi-5/" target="_blank" rel="noopener">Raspberry Pi 5&lt;/a>. Short after the release of this new board, &lt;a href="https://github.com/Pi4J/pi4j-v2/issues/321" target="_blank" rel="noopener">several issues were raised on GitHub&lt;/a> as Pi4J was not compatible. The Raspberry Pi 5 uses a completely new way to interact with the GPIOs: the &lt;a href="https://www.raspberrypi.com/documentation/microcontrollers/rp1.html" target="_blank" rel="noopener">RP1 chip&lt;/a>. Thanks to this chip, GPIO, SPI, I2C, USB, ethernet,&amp;hellip; are seperated from the SoC to make it easier to develop newer boards. But this new approach wasn&amp;rsquo;t supported by the PiGpio library used in Pi4J V2&amp;hellip; Until Alexander Liggesmeyer took up the challenge to find a solution!&lt;/p></description></item><item><title>Pi4J Operating System</title><link>https://pi4j.com/blog/2023/20230731_pi4j_os/</link><pubDate>Mon, 31 Jul 2023 00:00:00 +0000</pubDate><guid>https://pi4j.com/blog/2023/20230731_pi4j_os/</guid><description>&lt;p>2023-07-31, by Frank Delporte and Dieter Holz&lt;/p>
-&lt;p>Yes, the Raspberry Pi Operating System is awesome! But the Pi4J project made it if even more awesome by adding &amp;ldquo;goodies&amp;rdquo; for Java developers! Pi4J OS is not yet another OS, but the official Raspberry Pi OS, with additional tools and preconfigurations to make it the ideal OS for any Java and JavaFX developer who wants to use a Raspberry Pi.&lt;/p>
-&lt;p>The project is shared on &lt;a href="https://github.com/Pi4J/pi4j-os" target="_blank" rel="noopener">GitHub&lt;/a> and documented on &lt;a href="https://pi4j.com/pi4j-os/" target="_blank" rel="noopener">the Pi4J website&lt;/a>. The zip-compressed archives of released versions can be downloaded from &lt;a href="https://pi4j-download.com" target="_blank" rel="noopener">pi4j-download.com&lt;/a>.&lt;/p></description></item><item><title>LED strip with Pi4J and JBang</title><link>https://pi4j.com/blog/2022/20221128_led_strip_with_jbang/</link><pubDate>Mon, 28 Nov 2022 00:00:00 +0000</pubDate><guid>https://pi4j.com/blog/2022/20221128_led_strip_with_jbang/</guid><description>&lt;p>2022-11-28, by Robert von Burg&lt;/p>
+&lt;p>Today, &lt;a href="https://pi4j.com/about/release-notes/">version 2.5.0 of Pi4J got released with many changes, fixes and improvements&lt;/a>. The most important one being support for the &lt;a href="https://www.raspberrypi.com/products/raspberry-pi-5/" target="_blank" rel="noopener">Raspberry Pi 5&lt;/a>. Short after the release of this new board, &lt;a href="https://github.com/Pi4J/pi4j-v2/issues/321" target="_blank" rel="noopener">several issues were raised on GitHub&lt;/a> as Pi4J was not compatible. The Raspberry Pi 5 uses a completely new way to interact with the GPIOs: the &lt;a href="https://www.raspberrypi.com/documentation/microcontrollers/rp1.html" target="_blank" rel="noopener">RP1 chip&lt;/a>. Thanks to this chip, GPIO, SPI, I2C, USB, ethernet,&amp;hellip; are seperated from the SoC to make it easier to develop newer boards. But this new approach wasn&amp;rsquo;t supported by the PiGpio library used in Pi4J V2&amp;hellip; Until Alexander Liggesmeyer took up the challenge to find a solution!&lt;/p></description></item><item><title>LED strip with Pi4J and JBang</title><link>https://pi4j.com/blog/2022/20221128_led_strip_with_jbang/</link><pubDate>Mon, 28 Nov 2022 00:00:00 +0000</pubDate><guid>https://pi4j.com/blog/2022/20221128_led_strip_with_jbang/</guid><description>&lt;p>2022-11-28, by Robert von Burg&lt;/p>
 &lt;h2 id="intro">Intro&lt;/h2>
 &lt;p>In an earlier post, JBang and Pi4J were used to control a LED and button connected to a Raspberry Pi.&lt;/p>
 &lt;p>This week Robert von Burg, one of the main contributors of the Pi4J project, &lt;a href="https://mstdn.gsi.li/@eitch/109324090007015888" target="_blank" rel="noopener">shared on Mastodon&lt;/a> another project where a LED strip is controlled via I2C.&lt;/p>

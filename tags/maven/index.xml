@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Maven on Pi4J</title><link>https://pi4j.com/tags/maven/</link><description>Recent content in Maven on Pi4J</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 04 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://pi4j.com/tags/maven/index.xml" rel="self" type="application/rss+xml"/><item><title>Developing on a remote PC</title><link>https://pi4j.com/getting-started/developing-on-a-remote-pc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/getting-started/developing-on-a-remote-pc/</guid><description>&lt;div class="notices tip" >&lt;p>GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-maven-archetype" target="_blank" rel="noopener">https://github.com/Pi4J/pi4j-maven-archetype&lt;/a>&lt;/p>
 &lt;/div>
 
-&lt;h2 id="developing-java-programs-using-a-remote-pc-workstation">Developing Java programs using a remote PC workstation&lt;/h2>
+&lt;h2 id="developing-java-programs-using-a-remote-pc-workstation">Developing Java Programs Using a Remote PC Workstation&lt;/h2>
 &lt;p>Writing your Java program, compiling and running it directly on the Raspberry Pi board
 as shown in the previous chapter is perfectly fine, of course,
 but there is an alternative way to arrange your developing laboratory, using a normal
@@ -43,7 +43,7 @@ code to native applications for all platforms&lt;/a>.&lt;/p></description></item
 &lt;li>Explain the use of a MVC-model (Model-View-Controller) to clearly split data, actions and user interface&lt;/li>
 &lt;li>Explain the use of JUnit test&lt;/li>
 &lt;/ul>
-&lt;h2 id="sources-and-info">Sources and info&lt;/h2>
+&lt;h2 id="sources-and-info">Sources and Info&lt;/h2>
 &lt;p>Please check the README of the sources of the project for a full description of the setup process of the Raspberry Pi
 and to fully understand the example applications and the MVC-model. This page is only intended to give you a quick overview.&lt;/p></description></item><item><title>Build Java modules with Maven</title><link>https://pi4j.com/documentation/building/modules-maven/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/building/modules-maven/</guid><description>&lt;div class="notices tip" >&lt;p>GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-example-minimal" target="_blank" rel="noopener">https://github.com/Pi4J/pi4j-example-minimal&lt;/a>&lt;/p>
 &lt;/div>
