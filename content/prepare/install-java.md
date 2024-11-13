@@ -13,6 +13,11 @@ Let's start with some helper tools that will be useful later.
 $ sudo apt install -y i2c-tools vim git java-common libxi6 libxrender1 libxtst6
 ```
 
+* `i2c-tools`: Tool to help you with I2C commands.
+* `vim`: Text editor like `nano`, preferred by some, hated by others ;-) 
+* `git`: Tool to interact with a Git repository, like GitHub.
+* `java-common libxi6 libxrender1 libxtst6`: Dependencies of the JDK Debian package.
+
 ## Install Java
 
 There are many ways you can install Java. The easiest way to make Java available for both normal use and as root user (`sudo`), is the following approach which downloads one of the many distributions that are available. 
@@ -54,7 +59,7 @@ If you want to use JavaFX on your Raspberry Pi, you have a few choices:
 For some of the examples, [Maven](https://maven.apache.org/) and/or [JBang](https://www.jbang.dev/) are used. The easiest way to install these, is by using [SDKMAN](https://sdkman.io/):
 
 ```shell
-# Instal SDKMAN
+# Install SDKMAN
 $ curl -s "https://get.sdkman.io" | bash
 $ source "$HOME/.sdkman/bin/sdkman-init.sh"
 
