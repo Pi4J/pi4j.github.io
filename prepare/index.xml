@@ -41,5 +41,11 @@ find the Imager tool&lt;/a>. Select the version for your computer, download, and
 &lt;h2 id="add-missing-dependencies">Add Missing Dependencies&lt;/h2>
 &lt;p>Let&amp;rsquo;s start with some helper tools that will be useful later.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>$ sudo apt install -y i2c-tools vim git java-common libxi6 libxrender1 libxtst6
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="install-java">Install Java&lt;/h2>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;li>&lt;code>i2c-tools&lt;/code>: Tool to help you with I2C commands.&lt;/li>
+&lt;li>&lt;code>vim&lt;/code>: Text editor like &lt;code>nano&lt;/code>, preferred by some, hated by others ;-)&lt;/li>
+&lt;li>&lt;code>git&lt;/code>: Tool to interact with a Git repository, like GitHub.&lt;/li>
+&lt;li>&lt;code>java-common libxi6 libxrender1 libxtst6&lt;/code>: Dependencies of the JDK Debian package.&lt;/li>
+&lt;/ul>
+&lt;h2 id="install-java">Install Java&lt;/h2>
 &lt;p>There are many ways you can install Java. The easiest way to make Java available for both normal use and as root user (&lt;code>sudo&lt;/code>), is the following approach which downloads one of the many distributions that are available.&lt;/p></description></item></channel></rss>
