@@ -5,6 +5,16 @@ weight: 40
 
 All releases of Pi4J V.2 are listed on [github.com/Pi4J/pi4j-v2/releases](https://github.com/Pi4J/pi4j-v2/releases).
 
+## 2024-??-?? - V2.7.1
+
+* 
+
+Thanks to contributions by TODO, [@dariuszzbyrad](https://github.com/dariuszzbyrad), [@taartspi](https://github.com/taartspi), [@eitch](https://github.com/eitch), [@fdelporte](https://github.com/fdelporte).
+
+Special thanks to [Dariusz Zbyrad](https://github.com/dariuszzbyrad) for joining the project and improving the Maven builds with a wrapper for more consistency, for example, in the [pi4j-example-devices repository](https://github.com/Pi4J/pi4j-example-devices).
+
+All changes: https://github.com/Pi4J/pi4j-v2/compare/2.7.0...2.7.1
+
 ## 2024-10-03 - V2.7.0
 
 * Libraries are loaded depending on the platform, by calling `BoardInfoHelper.runningOnRaspberryPi()`.
