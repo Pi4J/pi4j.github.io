@@ -67,6 +67,23 @@ Caused by: java.lang.reflect.InvocationTargetException
 Caused by: com.pi4j.library.pigpio.PiGpioException: PIGPIO ERROR: PI_INIT_FAILED; pigpio initialisation failed
 ```
 
+### Error: `Could not execute cat /proc/cpuinfo | grep 'Revision' | awk '{print $3}' to detect the board model`
+
+This error occurs in Pi4J **version 2.7.0**, due to a problem where a shell command is used to detect the board model, but fails with a permission error (`IOException: Cannot run program "sh": error=13, Permission denied`).
+
+**Solutions:**
+1. **Upgrade to Pi4J Version 2.7.1 or Newer:**
+In version 2.7.1, this issue has been resolved. The `/proc/cpuinfo` file is read directly in Java without using shell commands, avoiding the permission issue entirely.
+
+2. **Grant Execution Permission to** `jspawnhelper`:
+If upgrading is not immediately possible, you can manually fix the issue by ensuring the `jspawnhelper` utility in the Java runtime has execution permissions. Run the following command:
+
+```shell
+chmod +x JAVA_HOME/lib/jspawnhelper
+```
+
+Replace `JAVA_HOME` with the actual path to your Java installation. This ensures that Java can execute shell commands without permission errors.
+
 ## Unexpected Results on Electronic Components
 
 If your software starts OK, and the log output shows that everything works as expected, but you still don't get the desired result on the connected electronic component, check:
