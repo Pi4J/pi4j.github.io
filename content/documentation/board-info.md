@@ -19,11 +19,16 @@ The board info is used in some of the plugins to set the correct priority, based
 
 ## How the Board Model is Detected
 
-The model is detected based on the board version number that is written inside the board and can be read with:
+### Previous Method (< 2.7.1 version)
+In earlier versions, the board model was determined by reading the board version number from the `/proc/cpuinfo` file using shell commands:
 
 ```shell
 $ cat /proc/cpuinfo | grep 'Revision' | awk '{print $3}'
 ```
+
+### Updated Method (>= 2.7.1 version)
+Starting with version 2.7.1, the board version number is determined programmatically in Java using the [CpuInfoReader](https://github.com/Pi4J/pi4j-v2/blob/develop/pi4j-core/src/main/java/com/pi4j/boardinfo/datareader/CpuInfoReader.java) class. This method reads and processes the `/proc/cpuinfo` file to extract the CPU revision.
+
 
 For instance, for a Raspberry Pi Compute 4, multiple version numbers are possible:
 
