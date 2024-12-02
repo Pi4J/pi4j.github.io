@@ -135,14 +135,14 @@ with the CrowPi and is available for Windows, MacOS and Linux, but NOT for Raspb
 &lt;li>&lt;a href="https://pi4j.com/1.0/index.html">Documentation website V1.0&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Build Instructions</title><link>https://pi4j.com/architecture/about-the-code/build-instructions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/architecture/about-the-code/build-instructions/</guid><description>&lt;p>Building the Pi4J Project is simple and requires minimal effort. Pi4J is primarily built using Apache Maven and Java 11.
 Pi4J can be built directly on your host computer or inside a Docker container where all toolchains and dependencies are
-already installed, configuired and cached.&lt;/p>
+already installed, configured and cached.&lt;/p>
 
 &lt;div class="notices note" >&lt;p>If you wish to build using a Docker container, please skip ahead to the
 &lt;a href="#building-with-docker">&lt;em>Building with Docker&lt;/em>&lt;/a> topic.&lt;/p>
 &lt;/div>
 
 &lt;hr>
-&lt;h3 id="prerequsites">Prerequsites&lt;/h3>
+&lt;h3 id="prerequisites">Prerequisites&lt;/h3>
 &lt;p>In order to build Pi4J, the host system must have the following toolchains pre-installed.&lt;/p></description></item><item><title>CrowPi examples</title><link>https://pi4j.com/examples/crowpi/crowpi-examples/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/crowpi/crowpi-examples/</guid><description>&lt;div class="notices tip" >&lt;p>GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-example-crowpi" target="_blank" rel="noopener">https://github.com/Pi4J/pi4j-example-crowpi&lt;/a>&lt;/p>
 &lt;/div>
 
