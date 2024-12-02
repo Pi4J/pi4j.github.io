@@ -14,7 +14,7 @@ inputs at the same time.
 
 As of Pi4J 2.5 multiple providers for the same I/O type is no longer supported. During the Context initialization it will
 ensure only a single provider for an I/O type is loaded. In addition the Mock Providers are not loaded unless 
-expressly requested when creating the Context.  [See Create Context](../create-context.md)
+expressly requested when creating the Context.  [See Create Context](../create-context/)
 
 Current supported providers:
 
