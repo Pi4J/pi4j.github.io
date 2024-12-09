@@ -11,7 +11,9 @@ All releases of Pi4J V.2 are listed on [github.com/Pi4J/pi4j-v2/releases](https:
 * Issue [#406](https://github.com/Pi4J/pi4j-v2/issues/406): Old boards not auto detected. Missing codes have been added for Model 1 boards.
 * Improvements in loading the Mock providers to build and test Pi4J on a Raspberry Pi. 
 * Issue [#421](https://github.com/Pi4J/pi4j-v2/issues/421): Unable to detect board type. Several improvements have been integrated in the board detection to prevent errors when reading the board code. 
-* The Raspberry Pi Compute 5 is added to `BoardModel`. But only the board code `c04180` for the 4Gb has been confirmed by Jeff Geerling. The other types are not documented yet. We assume they are `a04180`, `b04180`, and `d04180`, similar to the Compute 4, but will adjust whenever more info is available.
+* Added to `BoardModel`:
+  * The Raspberry Pi Compute 5. Only the board code `c04180` for the 4Gb has been confirmed by Jeff Geerling. The other types are not documented yet. We assume they are `a04180`, `b04180`, and `d04180`, similar to the Compute 4, but will adjust whenever more info is available.
+  * The Raspberry Pi 500 with the board code `d04190`, again confirmed by Jeff Geerling who received an evaluation device.
 
 Thanks to contributions by [@cniesen](https://github.com/cniesen), [@geerlingguy](https://github.com/geerlingguy), [@dariuszzbyrad](https://github.com/dariuszzbyrad), [@taartspi](https://github.com/taartspi), [@eitch](https://github.com/eitch), [@fdelporte](https://github.com/fdelporte).
 
