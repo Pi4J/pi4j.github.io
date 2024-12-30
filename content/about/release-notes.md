@@ -5,6 +5,24 @@ weight: 40
 
 All releases of Pi4J V.2 are listed on [github.com/Pi4J/pi4j-v2/releases](https://github.com/Pi4J/pi4j-v2/releases).
 
+## 2024-??-?? - V2.7.1
+
+* Several code and JavaDoc improvements by adding the checkstyle plugin
+* Issue [#406](https://github.com/Pi4J/pi4j-v2/issues/406): Old boards not auto detected. Missing codes have been added for Model 1 boards.
+* Improvements in loading the Mock providers to build and test Pi4J on a Raspberry Pi. 
+* Issue [#421](https://github.com/Pi4J/pi4j-v2/issues/421): Unable to detect board type. Several improvements have been integrated in the board detection to prevent errors when reading the board code. 
+* Added to `BoardModel`:
+  * The Raspberry Pi Compute 5. Only the board code `c04180` for the 4Gb has been confirmed by Jeff Geerling. The other types are not documented yet. We assume they are `a04180`, `b04180`, and `d04180`, similar to the Compute 4, but will adjust whenever more info is available.
+  * The Raspberry Pi 500 with the board code `d04190`, again confirmed by Jeff Geerling who received an evaluation device.
+* Added to `BoardReading`:
+  * Pull request [#432](https://github.com/Pi4J/pi4j-v2/pull/432): Add Support for Throttled State Parsing and Retrieval
+
+Thanks to contributions by [@cniesen](https://github.com/cniesen), [@geerlingguy](https://github.com/geerlingguy), [@dariuszzbyrad](https://github.com/dariuszzbyrad), [@taartspi](https://github.com/taartspi), [@eitch](https://github.com/eitch), [@fdelporte](https://github.com/fdelporte).
+
+Special thanks to [Dariusz Zbyrad](https://github.com/dariuszzbyrad) for joining the project and improving the Maven builds with a wrapper for more consistency, for example, in the [pi4j-example-devices repository](https://github.com/Pi4J/pi4j-example-devices), and other contributions.
+
+All changes: https://github.com/Pi4J/pi4j-v2/compare/2.7.0...2.7.1
+
 ## 2024-10-03 - V2.7.0
 
 * Libraries are loaded depending on the platform, by calling `BoardInfoHelper.runningOnRaspberryPi()`.
