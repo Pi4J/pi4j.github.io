@@ -16,6 +16,7 @@ All releases of Pi4J V.2 are listed on [github.com/Pi4J/pi4j-v2/releases](https:
   * The Raspberry Pi 500 with the board code `d04190`, again confirmed by Jeff Geerling who received an evaluation device.
 * Added to `BoardReading`:
   * Pull request [#432](https://github.com/Pi4J/pi4j-v2/pull/432): Add Support for Throttled State Parsing and Retrieval
+* Pull Request [#433](https://github.com/Pi4J/pi4j-v2/pull/433): Enhance LinuxFsI2CBus validation with detailed exception messages and comprehensive Javadocs.
 
 Thanks to contributions by [@cniesen](https://github.com/cniesen), [@geerlingguy](https://github.com/geerlingguy), [@dariuszzbyrad](https://github.com/dariuszzbyrad), [@taartspi](https://github.com/taartspi), [@eitch](https://github.com/eitch), [@fdelporte](https://github.com/fdelporte).
 
