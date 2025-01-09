@@ -14,6 +14,7 @@ All releases of Pi4J V.2 are listed on [github.com/Pi4J/pi4j-v2/releases](https:
 * Added to `BoardModel`:
   * The Raspberry Pi Compute 5. Only the board code `c04180` for the 4Gb has been confirmed by Jeff Geerling. The other types are not documented yet. We assume they are `a04180`, `b04180`, and `d04180`, similar to the Compute 4, but will adjust whenever more info is available.
   * The Raspberry Pi 500 with the board code `d04190`, again confirmed by Jeff Geerling who received an evaluation device.
+  * The Raspberry Pi 5 with 16GB memory with the board code `e04171` (thanks again Jeff).
 * Added to `BoardReading`:
   * Pull request [#432](https://github.com/Pi4J/pi4j-v2/pull/432): Add Support for Throttled State Parsing and Retrieval
 * Pull Request [#433](https://github.com/Pi4J/pi4j-v2/pull/433): Enhance LinuxFsI2CBus validation with detailed exception messages and comprehensive Javadocs.
