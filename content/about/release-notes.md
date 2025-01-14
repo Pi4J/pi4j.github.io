@@ -17,11 +17,13 @@ All releases of Pi4J V.2 are listed on [github.com/Pi4J/pi4j-v2/releases](https:
   * The Raspberry Pi 5 with 16GB memory with the board code `e04171` (thanks again Jeff).
 * Added to `BoardReading`:
   * Pull request [#432](https://github.com/Pi4J/pi4j-v2/pull/432): Add Support for Throttled State Parsing and Retrieval
-* Pull Request [#433](https://github.com/Pi4J/pi4j-v2/pull/433): Enhance LinuxFsI2CBus validation with detailed exception messages and comprehensive Javadocs.
+* Improvements in the LinuxFS provider (for Raspberry Pi 5):
+  * Pull Request [#433](https://github.com/Pi4J/pi4j-v2/pull/433): Enhance LinuxFsI2CBus validation with detailed exception messages and comprehensive Javadocs.
+  * Pull Request [#434](https://github.com/Pi4J/pi4j-v2/pull/434): Add SPI support in LinuxFS.
 
-Thanks to contributions by [@cniesen](https://github.com/cniesen), [@geerlingguy](https://github.com/geerlingguy), [@dariuszzbyrad](https://github.com/dariuszzbyrad), [@taartspi](https://github.com/taartspi), [@eitch](https://github.com/eitch), [@fdelporte](https://github.com/fdelporte).
+Thanks to contributions by [@mpilone](https://github.com/mpilone), [@cniesen](https://github.com/cniesen), [@geerlingguy](https://github.com/geerlingguy), [@dariuszzbyrad](https://github.com/dariuszzbyrad), [@taartspi](https://github.com/taartspi), [@eitch](https://github.com/eitch), [@fdelporte](https://github.com/fdelporte).
 
-Special thanks to [Dariusz Zbyrad](https://github.com/dariuszzbyrad) for joining the project and improving the Maven builds with a wrapper for more consistency, for example, in the [pi4j-example-devices repository](https://github.com/Pi4J/pi4j-example-devices), and other contributions.
+Special thanks to [Dariusz Zbyrad](https://github.com/dariuszzbyrad) for joining the project and improving the Maven builds with a wrapper for more consistency, for example, in the [pi4j-example-devices repository](https://github.com/Pi4J/pi4j-example-devices), and other contributions. And also to [Mike Pilone](https://github.com/mpilone) for the initial work for LinuxFS SPI.
 
 All changes: https://github.com/Pi4J/pi4j-v2/compare/2.7.0...2.7.1
 
