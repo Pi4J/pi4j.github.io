@@ -43,7 +43,7 @@ All changes: https://github.com/Pi4J/pi4j-v2/compare/2.7.0...2.7.1
 Because of the changes in the loading of the mock providers, if you want to load them on a Raspberry Pi board, you need to use the following context builder:
 
 ```java
-var pi4j = Pi4J.newContextBuilder().autoDetectMockPlugins().build();
+var pi4j = Pi4J.newContextBuilder().autoDetectMockPlugins().autoDetectPlatforms().build();
 ```
 
 Thanks to contributions by [@ylexus](https://github.com/ylexus), [@mores](https://github.com/mores), [@taartspi](https://github.com/taartspi), [@eitch](https://github.com/eitch), [@fdelporte](https://github.com/fdelporte).
