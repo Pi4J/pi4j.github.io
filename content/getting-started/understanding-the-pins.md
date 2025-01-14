@@ -29,7 +29,7 @@ Most of the GPIOs have an internal pull-up or pull-down resistor which can be en
 
 {{% notice warning %}}
 Many electronic components need a different voltage level! For instance, some components created for Arduino, operate on 5V. They will not work reliably with a Raspberry Pi as the GPIOs only provide or expect 3.3V. If you need to connect components with a different voltage, you'll need to use a "Level Shifter", for instance: [
-Adafruit QT 3V to 5V Level Booster Breakout](https://learn.adafruit.com/adafruit-qt-3v-to-5v-level-booster-breakout)".
+Adafruit QT 3V to 5V Level Booster Breakout](https://learn.adafruit.com/adafruit-qt-3v-to-5v-level-booster-breakout).
 {{% /notice %}}
 
 ## Overview 
