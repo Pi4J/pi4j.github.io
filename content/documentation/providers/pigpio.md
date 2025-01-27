@@ -12,7 +12,6 @@ Pi5  At the present time the PiGpio implementation does not support the new Pi5 
 - This new Pi5 RP1 chip will require a large development effort. There is no known plan for this develoment.   
 ```
 
-
 Providers in the PiGpio plugin:
 
 * pigpio-digital-input
@@ -32,7 +31,6 @@ When you don't use `sudo`, you'll see an error like this:
 WARN com.pi4j.library.pigpio.impl.PiGpioNativeImpl 
     - PIGPIO ERROR: PI_INIT_FAILED; pigpio initialisation failed
 ```
-
 
 To use the PiGpio provider include the following dependencies:
 

@@ -5,7 +5,7 @@ weight: 40
 
 All releases of Pi4J V.2 are listed on [github.com/Pi4J/pi4j-v2/releases](https://github.com/Pi4J/pi4j-v2/releases).
 
-## 2024-??-?? - V2.7.1
+## 2025-??-?? - V2.7.1
 
 * Several code and JavaDoc improvements by adding the checkstyle plugin
 * Issue [#406](https://github.com/Pi4J/pi4j-v2/issues/406): Old boards not auto detected. Missing codes have been added for Model 1 boards.
@@ -19,11 +19,11 @@ All releases of Pi4J V.2 are listed on [github.com/Pi4J/pi4j-v2/releases](https:
   * Pull request [#432](https://github.com/Pi4J/pi4j-v2/pull/432): Add Support for Throttled State Parsing and Retrieval
 * Improvements in the LinuxFS provider (for Raspberry Pi 5):
   * Pull Request [#433](https://github.com/Pi4J/pi4j-v2/pull/433): Enhance LinuxFsI2CBus validation with detailed exception messages and comprehensive Javadocs.
-  * Pull Request [#434](https://github.com/Pi4J/pi4j-v2/pull/434): Add SPI support in LinuxFS.
+  * Pull Request [#434](https://github.com/Pi4J/pi4j-v2/pull/434): Add SPI support in LinuxFS. No `sudo` is needed to use SPI.
 
 Thanks to contributions by [@mpilone](https://github.com/mpilone), [@cniesen](https://github.com/cniesen), [@geerlingguy](https://github.com/geerlingguy), [@dariuszzbyrad](https://github.com/dariuszzbyrad), [@taartspi](https://github.com/taartspi), [@eitch](https://github.com/eitch), [@fdelporte](https://github.com/fdelporte).
 
-Special thanks to [Dariusz Zbyrad](https://github.com/dariuszzbyrad) for joining the project and improving the Maven builds with a wrapper for more consistency, for example, in the [pi4j-example-devices repository](https://github.com/Pi4J/pi4j-example-devices), and other contributions. And also to [Mike Pilone](https://github.com/mpilone) for the initial work for LinuxFS SPI.
+Special thanks to [Dariusz Zbyrad](https://github.com/dariuszzbyrad) for joining the project and improving the Maven builds with a wrapper for more consistency, for example, in the [pi4j-example-devices repository](https://github.com/Pi4J/pi4j-example-devices), and other contributions. And also special thanks to [Mike Pilone](https://github.com/mpilone) for the initial work for LinuxFS SPI.
 
 All changes: https://github.com/Pi4J/pi4j-v2/compare/2.7.0...2.7.1
 
