@@ -3,7 +3,7 @@ The providers also allow to separate the internal logic of the Pi4J core from th
 on which they are used.&lt;/p>
 &lt;p>Pi4J 2.0 - 2.4: Multiple providers for the same I/O type can be loaded into a Pi4J context concurrently. For example a
 &amp;ldquo;RaspberryPi-DigitalInputProvider&amp;rdquo; and &amp;ldquo;GertBoard-DigitalInputProvider&amp;rdquo; could both be loaded and both providing digital
-inputs at the same time.&lt;/p></description></item><item><title>LinuxFS Provider</title><link>https://pi4j.com/documentation/providers/linuxfs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/providers/linuxfs/</guid><description>&lt;p>The current implementation of the LinuxFS plugin implements a file based I2C and PWM provider. The file based I2C provider opens
+inputs at the same time.&lt;/p></description></item><item><title>LinuxFS Provider</title><link>https://pi4j.com/documentation/providers/linuxfs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/providers/linuxfs/</guid><description>&lt;p>The current implementation of the LinuxFS plugin implements a file based I2C, SPI, and PWM provider. The file based I2C provider opens
 &lt;code>/dev/i2c-1&lt;/code> using a &lt;code>RandomAccessFile&lt;/code> to perform I2C reads and writes. The file based PWM provider opens
 &lt;code>/sys/class/pwm/pwmchip?&lt;/code> using a &lt;code>RandomAccessFile&lt;/code> to perform PWM operations.&lt;/p>
 
@@ -13,6 +13,7 @@ inputs at the same time.&lt;/p></description></item><item><title>LinuxFS Provide
 &lt;p>Providers in the LinuxFS plugin:&lt;/p>
 &lt;ul>
 &lt;li>linuxfs-i2c&lt;/li>
+&lt;li>linuxfx-spi&lt;/li>
 &lt;li>linuxfs-pwm&lt;/li>
 &lt;li>Under construction
 &lt;ul>

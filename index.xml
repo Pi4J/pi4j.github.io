@@ -301,23 +301,32 @@ This scheme was incompatibility with other pin diagrams and pin numbering used b
 &lt;p>As Pi4J V.2 is build as a &amp;ldquo;pass thru library&amp;rdquo;, and uses &lt;a href="http://abyz.me.uk/rpi/pigpio/index.html" target="_blank" rel="noopener">PiGpio&lt;/a> as the underlying framework,
 the more well-known BCM numbering is being used now.&lt;/p>
 &lt;p>This drawing shows the different numbers for WiringPi and BCM in a 40-pins Raspberry Pi header:&lt;/p></description></item><item><title>Release Notes</title><link>https://pi4j.com/about/release-notes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/about/release-notes/</guid><description>&lt;p>All releases of Pi4J V.2 are listed on &lt;a href="https://github.com/Pi4J/pi4j-v2/releases" target="_blank" rel="noopener">github.com/Pi4J/pi4j-v2/releases&lt;/a>.&lt;/p>
-&lt;h2 id="2024-10-03---v270">2024-10-03 - V2.7.0&lt;/h2>
+&lt;h2 id="2025-01-28---v280">2025-01-28 - V2.8.0&lt;/h2>
 &lt;ul>
-&lt;li>Libraries are loaded depending on the platform, by calling &lt;code>BoardInfoHelper.runningOnRaspberryPi()&lt;/code>.&lt;/li>
-&lt;li>&lt;code>BoardModel&lt;/code> has been extended with 2Gb Raspberry Pi 5, Raspberry Pi Pico 2, and extra board codes for the Compute Module 4.&lt;/li>
-&lt;li>Allowing configuration of the shutdown hook. It&amp;rsquo;s disabled by default.&lt;/li>
-&lt;li>&lt;a href="https://github.com/Pi4J/pi4j-v2/issues/354" target="_blank" rel="noopener">Issue #354&lt;/a>: Gracefully handle UnsatisfiedLinkError on newAutoContext.&lt;/li>
-&lt;li>&lt;a href="https://github.com/Pi4J/pi4j-v2/issues/368" target="_blank" rel="noopener">Issue #368&lt;/a>: Mock providers don&amp;rsquo;t seem to be loaded on an non-RPi system.&lt;/li>
-&lt;li>&lt;a href="https://github.com/Pi4J/pi4j-v2/issues/369" target="_blank" rel="noopener">Issue #369&lt;/a>: WARN noise in the log about Ignoring providers on every startup.
+&lt;li>Several code and JavaDoc improvements by adding the checkstyle plugin.&lt;/li>
+&lt;li>Improvements in loading the Mock providers to build and test Pi4J on a Raspberry Pi.&lt;/li>
+&lt;li>Issue &lt;a href="https://github.com/Pi4J/pi4j-v2/issues/421" target="_blank" rel="noopener">#421&lt;/a>: Unable to detect board type. Several improvements have been integrated in the board detection to prevent errors when reading the board code.&lt;/li>
+&lt;li>Added to &lt;code>BoardModel&lt;/code>:
 &lt;ul>
-&lt;li>Removed unnecessary String concatenations in logging statements.&lt;/li>
-&lt;li>Reduced log output and reviewed &lt;code>warn&lt;/code> levels to reduce to &lt;code>info&lt;/code> where more applicable.&lt;/li>
+&lt;li>Issue &lt;a href="https://github.com/Pi4J/pi4j-v2/issues/406" target="_blank" rel="noopener">#406&lt;/a>: Old boards not auto detected. Missing codes have been added for Model 1 boards.&lt;/li>
+&lt;li>The Raspberry Pi Compute 5. Only the board code &lt;code>c04180&lt;/code> for the 4Gb has been confirmed by Jeff Geerling. The other types are not documented yet. We assume they are &lt;code>a04180&lt;/code>, &lt;code>b04180&lt;/code>, and &lt;code>d04180&lt;/code>, similar to the Compute 4, but will adjust whenever more info is available.&lt;/li>
+&lt;li>The Raspberry Pi 500 with the board code &lt;code>d04190&lt;/code>, again confirmed by Jeff who received an evaluation device.&lt;/li>
+&lt;li>The Raspberry Pi 5 with 16GB memory with the board code &lt;code>e04171&lt;/code> (thanks again Jeff).&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>&lt;a href="https://github.com/Pi4J/pi4j-v2/issues/383" target="_blank" rel="noopener">Issue #383&lt;/a>: Increase amount of write bytes to SPI devices over 65535. &lt;code>spiWrite&lt;/code> has been modified to write data in chunks of 4096 bytes so it can handle larger messages.&lt;/li>
-&lt;li>&lt;a href="https://github.com/Pi4J/pi4j-v2/issues/388" target="_blank" rel="noopener">Issue #388&lt;/a>: I2C writeRead method compares written to writeOffset instead of writeSize.&lt;/li>
+&lt;li>Added to &lt;code>BoardReading&lt;/code>:
+&lt;ul>
+&lt;li>Pull request &lt;a href="https://github.com/Pi4J/pi4j-v2/pull/432" target="_blank" rel="noopener">#432&lt;/a>: Add Support for Throttled State Parsing and Retrieval&lt;/li>
 &lt;/ul>
-&lt;p>Because of the changes in the loading of the mock providers, if you want to load them on a Raspberry Pi board, you need to use the following context builder:&lt;/p></description></item><item><title>Developing on a remote PC</title><link>https://pi4j.com/getting-started/developing-on-a-remote-pc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/getting-started/developing-on-a-remote-pc/</guid><description>&lt;div class="notices tip" >&lt;p>GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-maven-archetype" target="_blank" rel="noopener">https://github.com/Pi4J/pi4j-maven-archetype&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>Improvements in the LinuxFS provider (for Raspberry Pi 5):
+&lt;ul>
+&lt;li>Pull Request &lt;a href="https://github.com/Pi4J/pi4j-v2/pull/433" target="_blank" rel="noopener">#433&lt;/a>: Enhance LinuxFsI2CBus validation with detailed exception messages and comprehensive Javadocs.&lt;/li>
+&lt;li>Pull Request &lt;a href="https://github.com/Pi4J/pi4j-v2/pull/434" target="_blank" rel="noopener">#434&lt;/a>: Add SPI support in LinuxFS. No &lt;code>sudo&lt;/code> is needed to use SPI.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>Thanks to contributions by &lt;a href="https://github.com/mpilone" target="_blank" rel="noopener">@mpilone&lt;/a>, &lt;a href="https://github.com/cniesen" target="_blank" rel="noopener">@cniesen&lt;/a>, &lt;a href="https://github.com/geerlingguy" target="_blank" rel="noopener">@geerlingguy&lt;/a>, &lt;a href="https://github.com/dariuszzbyrad" target="_blank" rel="noopener">@dariuszzbyrad&lt;/a>, &lt;a href="https://github.com/taartspi" target="_blank" rel="noopener">@taartspi&lt;/a>, &lt;a href="https://github.com/eitch" target="_blank" rel="noopener">@eitch&lt;/a>, &lt;a href="https://github.com/fdelporte" target="_blank" rel="noopener">@fdelporte&lt;/a>.&lt;/p></description></item><item><title>Developing on a remote PC</title><link>https://pi4j.com/getting-started/developing-on-a-remote-pc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/getting-started/developing-on-a-remote-pc/</guid><description>&lt;div class="notices tip" >&lt;p>GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-maven-archetype" target="_blank" rel="noopener">https://github.com/Pi4J/pi4j-maven-archetype&lt;/a>&lt;/p>
 &lt;/div>
 
 &lt;h2 id="developing-java-programs-using-a-remote-pc-workstation">Developing Java Programs Using a Remote PC Workstation&lt;/h2>
@@ -792,7 +801,7 @@ and to fully understand the example applications and the MVC-model. This page is
 
 &lt;p>If you get an error at startup with the following content, your OS is outdated for the GpioD implementation used in Pi4J:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>UNDERLYING EXCEPTION: &lt;span style="color:#f92672">[&lt;/span>java.lang.UnsatisfiedLinkError&lt;span style="color:#f92672">]=&lt;/span>/tmp/libgpiod368899536808039438.so: /lib/aarch64-linux-gnu/libc.so.6: version &lt;span style="color:#e6db74">`&lt;/span>GLIBC_2.33&lt;span style="color:#960050;background-color:#1e0010">&amp;#39;&lt;/span> not found &lt;span style="color:#f92672">(&lt;/span>required by /tmp/libgpiod368899536808039438.so&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>To use the GpioD provider include the following dependencies:&lt;/p></description></item><item><title>LinuxFS Provider</title><link>https://pi4j.com/documentation/providers/linuxfs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/providers/linuxfs/</guid><description>&lt;p>The current implementation of the LinuxFS plugin implements a file based I2C and PWM provider. The file based I2C provider opens
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>To use the GpioD provider include the following dependencies:&lt;/p></description></item><item><title>LinuxFS Provider</title><link>https://pi4j.com/documentation/providers/linuxfs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/providers/linuxfs/</guid><description>&lt;p>The current implementation of the LinuxFS plugin implements a file based I2C, SPI, and PWM provider. The file based I2C provider opens
 &lt;code>/dev/i2c-1&lt;/code> using a &lt;code>RandomAccessFile&lt;/code> to perform I2C reads and writes. The file based PWM provider opens
 &lt;code>/sys/class/pwm/pwmchip?&lt;/code> using a &lt;code>RandomAccessFile&lt;/code> to perform PWM operations.&lt;/p>
 
@@ -802,6 +811,7 @@ and to fully understand the example applications and the MVC-model. This page is
 &lt;p>Providers in the LinuxFS plugin:&lt;/p>
 &lt;ul>
 &lt;li>linuxfs-i2c&lt;/li>
+&lt;li>linuxfx-spi&lt;/li>
 &lt;li>linuxfs-pwm&lt;/li>
 &lt;li>Under construction
 &lt;ul>

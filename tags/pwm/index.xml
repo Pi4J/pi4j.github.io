@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>PWM on Pi4J</title><link>https://pi4j.com/tags/pwm/</link><description>Recent content in PWM on Pi4J</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 23 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://pi4j.com/tags/pwm/index.xml" rel="self" type="application/rss+xml"/><item><title>LinuxFS Provider</title><link>https://pi4j.com/documentation/providers/linuxfs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/providers/linuxfs/</guid><description>&lt;p>The current implementation of the LinuxFS plugin implements a file based I2C and PWM provider. The file based I2C provider opens
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>PWM on Pi4J</title><link>https://pi4j.com/tags/pwm/</link><description>Recent content in PWM on Pi4J</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 23 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://pi4j.com/tags/pwm/index.xml" rel="self" type="application/rss+xml"/><item><title>LinuxFS Provider</title><link>https://pi4j.com/documentation/providers/linuxfs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/providers/linuxfs/</guid><description>&lt;p>The current implementation of the LinuxFS plugin implements a file based I2C, SPI, and PWM provider. The file based I2C provider opens
 &lt;code>/dev/i2c-1&lt;/code> using a &lt;code>RandomAccessFile&lt;/code> to perform I2C reads and writes. The file based PWM provider opens
 &lt;code>/sys/class/pwm/pwmchip?&lt;/code> using a &lt;code>RandomAccessFile&lt;/code> to perform PWM operations.&lt;/p>
 
@@ -8,6 +8,7 @@
 &lt;p>Providers in the LinuxFS plugin:&lt;/p>
 &lt;ul>
 &lt;li>linuxfs-i2c&lt;/li>
+&lt;li>linuxfx-spi&lt;/li>
 &lt;li>linuxfs-pwm&lt;/li>
 &lt;li>Under construction
 &lt;ul>
