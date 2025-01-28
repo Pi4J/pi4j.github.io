@@ -5,7 +5,7 @@ weight: 40
 
 All releases of Pi4J V.2 are listed on [github.com/Pi4J/pi4j-v2/releases](https://github.com/Pi4J/pi4j-v2/releases).
 
-## 2025-??-?? - V2.7.1
+## 2025-01-28 - V2.8.0
 
 * Several code and JavaDoc improvements by adding the checkstyle plugin
 * Issue [#406](https://github.com/Pi4J/pi4j-v2/issues/406): Old boards not auto detected. Missing codes have been added for Model 1 boards.
