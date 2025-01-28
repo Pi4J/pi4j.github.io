@@ -65,7 +65,10 @@ pi4j.shutdown();
 
 ## SPI
 
-The buffer size for this SPI implementation is 4096. This can be configured in `config.txt`
+The buffer size for this SPI implementation is 4096 bytes. This can be configured in `config.txt`:
+
+* Debian Bullseye OS: `/boot/config.txt`
+* Raspberry Pi OS, based on Debian Bookworm: `/boot/firmware/config.txt`
 
 ## PWM
 
