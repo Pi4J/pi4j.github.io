@@ -4,7 +4,7 @@ weight: 93
 tags: ["LinuxFS", "PWM", "I2C"]
 ---
 
-The current implementation of the LinuxFS plugin implements a file based I2C and PWM provider. The file based I2C provider opens 
+The current implementation of the LinuxFS plugin implements a file based I2C, SPI, and PWM provider. The file based I2C provider opens 
 `/dev/i2c-1` using a `RandomAccessFile` to perform I2C reads and writes. The file based PWM provider opens
 `/sys/class/pwm/pwmchip?` using a `RandomAccessFile` to perform PWM operations.
 
@@ -15,6 +15,7 @@ The Linuxfs provider linuxfs-pwm requires minimum kernel Bullseye 6.1.21 and Boo
 Providers in the LinuxFS plugin:
 
 * linuxfs-i2c
+* linuxfx-spi
 * linuxfs-pwm
 * Under construction
   * linuxfs-digital-input
@@ -40,7 +41,9 @@ To use the LinuxFS provider include the following dependencies:
 </dependency>
 ```
 
-And then one can get access to the I2C provider as follows:
+## I2C 
+
+Example on how to use I2C with LinuxFS:
 
 ``` java
 Context pi4j = Pi4J.newAutoContext();
@@ -60,7 +63,17 @@ try (I2C tca9534Dev = i2CProvider.create(i2cConfig)) {
 pi4j.shutdown();
 ```
 
-And then one can get access to the PWM provider as follows:
+## SPI
+
+The buffer size for this SPI implementation is 4096 bytes. This can be configured in `config.txt`:
+
+* Debian Bullseye OS: `/boot/config.txt`
+* Raspberry Pi OS, based on Debian Bookworm: `/boot/firmware/config.txt`
+
+## PWM
+
+Example on how to use PWM with LinuxFS:
+
 ```java
   /**
      * Builds a new PWM configuration for the buzzer
