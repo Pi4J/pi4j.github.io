@@ -124,7 +124,7 @@ weight = 20
 [[menu.shortcuts]]
 name = "<i class='fab more-tag fa-github'></i> Pi4J V2 Discussions"
 identifier = "discussions"
-url = "https://github.com/Pi4J/pi4j-v2/discussions"
+url = "https://github.com/Pi4J/pi4j/discussions"
 weight = 30
 
 [[menu.shortcuts]]

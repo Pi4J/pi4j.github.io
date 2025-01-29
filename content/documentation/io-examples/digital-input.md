@@ -20,7 +20,7 @@ To access the Hardware a concrete Provider is required.
 See [Providers](/documentation/providers/)
 
 Examples of the various methods and approaches which can be used to provision the I/O needs [are available in the examples project](
-https://github.com/Pi4J/pi4j-v2-examples/tree/master/src/main/java/com/pi4j/example/gpio/digital/input).
+https://github.com/Pi4J/pi4j-examples/tree/master/src/main/java/com/pi4j/example/gpio/digital/input).
 
 ```java
 Properties properties = new Properties();

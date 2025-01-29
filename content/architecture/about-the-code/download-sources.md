@@ -3,13 +3,11 @@ title: Download/Install
 weight: 20
 ---
 
-You can build the project from sources available on [GitHub](https://github.com/Pi4J/pi4j-v2).
+You can build the project from sources available on [GitHub](https://github.com/Pi4J/pi4j).
 
-## Pi4J V.2
-
-* Checkout the project [pi4j-v2](https://github.com/Pi4J/pi4j-v2)
-* Select JDK11, e.g. `sdk use java 11.0.16.1-zulu`
-* In the root of pi4j-v2 run `mvn clean install`
+* Checkout the project [pi4j](https://github.com/Pi4J/pi4j)
+* Use a JDK version 21 or newer, e.g. `sdk use java 21.0.6-zulu`
+* In the root of pi4j run `mvn clean install`
 
 ```
 [INFO] Executed tasks
@@ -38,7 +36,7 @@ You can build the project from sources available on [GitHub](https://github.com/
 ### Building the example application
 
 * Checkout the project [Pi4J V.2 - Telegraph Demo Project](https://github.com/Pi4J/pi4j-demo-telegraph)
-* Select JDK11, e.g. `sdk use java 11.0.16.1-zulu`
+* Select JDK 21, e.g. `sdk use java 21.0.6-zulu`
 * In the root of pi4j-demo-telegraph run `mvn clean install`
 * Check the directory target\distribution --> this contains all the files to be copied to the Raspberry Pi
 

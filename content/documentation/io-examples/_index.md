@@ -7,7 +7,7 @@ Here you can find detailed examples for the different functionalities of Pi4J pe
 
 {{% children %}}
 
-The supported low-level I/O interface types are defined in the core library as [an enumerated list](https://github.com/Pi4J/pi4j-v2/blob/master/pi4j-core/src/main/java/com/pi4j/io/IOType.java). 
+The supported low-level I/O interface types are defined in the core library as [an enumerated list](https://github.com/Pi4J/pi4j/blob/master/pi4j-core/src/main/java/com/pi4j/io/IOType.java). 
 
 ```java
 ANALOG_INPUT(AnalogInputProvider.class, AnalogInput.class, AnalogInputConfig.class, AnalogInputConfigBuilder.class),

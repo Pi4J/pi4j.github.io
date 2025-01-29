@@ -9,11 +9,11 @@ isolated test, example and plugin projects.
 On this page we want to give you an overview of the projects which are part of the 
 [GitHub Pi4J Project](https://github.com/Pi4J).
 
-![Pi4J V.2 code structure](https://raw.githubusercontent.com/Pi4J/pi4j-v2/master/assets/draw.io/pi4j-v2-code-structure.jpg)
+![Pi4J V.2 code structure](https://raw.githubusercontent.com/Pi4J/pi4j/master/assets/draw.io/pi4j-code-structure.jpg)
 
 ## Pi4J V.2 Main project
 
-* [github.com/Pi4J/pi4j-v2](https://github.com/Pi4J/pi4j-v2)
+* [github.com/Pi4J/pi4j](https://github.com/Pi4J/pi4j)
 * This is the main Pi4J V.2 project providing all (basic) I/O functionalities.
 
 ### Pi4J Parent POM 
@@ -59,7 +59,7 @@ On this page we want to give you an overview of the projects which are part of t
 * /plugins/*
 * This folder contains any plugins for use with Pi4J such as IO providers, platforms, or extensions.  
 * Plugins must implement the Pi4J Plugin Interface (com.pi4j.extension.Plugin) and declare the implementation class using the "provides" directive in the module info class. 
-* See for an example in [/plugins/pi4j-plugin-mock/src/main/java/module-info.java](https://github.com/Pi4J/pi4j-v2/blob/master/plugins/pi4j-plugin-mock/src/main/java/module-info.java)
+* See for an example in [/plugins/pi4j-plugin-mock/src/main/java/module-info.java](https://github.com/Pi4J/pi4j/blob/master/plugins/pi4j-plugin-mock/src/main/java/module-info.java)
 
 #### Pi4J Libraries Parent POM
  

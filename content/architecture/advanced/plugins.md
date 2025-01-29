@@ -16,7 +16,7 @@ Plugins are extensible service modules that interact with or augment the Pi4J in
 
 Plugins are implemented as Java modules using [Service Provider Interfaces (SPI)](https://docs.oracle.com/javase/tutorial/sound/SPI-intro.html).
 
-Plugins must declare their pluggable interface in their "module-info.java" config file.  Example from [the Raspberry plugin](https://github.com/Pi4J/pi4j-v2/blob/master/plugins/pi4j-plugin-raspberrypi/src/main/java/module-info.java):
+Plugins must declare their pluggable interface in their "module-info.java" config file.  Example from [the Raspberry plugin](https://github.com/Pi4J/pi4j/blob/master/plugins/pi4j-plugin-raspberrypi/src/main/java/module-info.java):
 
 ```java
 module com.pi4j.plugin.raspberrypi {

@@ -36,17 +36,9 @@ capabilities of embedded platforms such as the Raspberry Pi.
 
 The Pi4j project has evolved in all these years as the whole Java eco-system and Raspberry Pi systems have been evolving.
 
-This resulted in two main versions.
+This resulted in the following main versions:
 
-#### Version 1
+* [V1.X.X](/about/info-v1): Deprecated, based on Java 8, later Java 11.
+* [V2.X.X](/about/info-v2): Completely reworked code base, based on Java 11.
+* [V3.X.X](/about/license): Based on latest V2, based on Java 21.
 
-The original library which started in 2012 and got a last release in 2021. Up till **version 1.3 the library targets Java 8**, while **version 1.4 relies on Java 11**. 
-
-More info is provided on ["Previous versions (V.1)"](/about/previous-version-v1/).
-
-#### Version 2
-
-As of Version 2.0, Pi4J **no longer includes support for peripheral devices and
-add-on chipsets/boards** as part of the core project. A new plugin model has been introduced in version 2.0 that helps to enable third-party development and support third-party add-ons which can be developed and maintained independently of the core Pi4J project.
-
-More info is provided on ["What's New (V.2)"](/about/new-in-v2/).

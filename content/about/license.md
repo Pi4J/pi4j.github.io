@@ -7,7 +7,7 @@ The Pi4J Version 2.0 project is distributed and licensed under the **Apache Lice
 (_A business-friendly OSS license_).
 
 * [apache.org/licenses/LICENSE-2.0](https://www.apache.org/licenses/LICENSE-2.0)
-* [github.com/Pi4J/pi4j-v2/blob/master/LICENSE.txt](https://github.com/Pi4J/pi4j-v2/blob/master/LICENSE.txt)
+* [github.com/Pi4J/pi4j/blob/master/LICENSE.txt](https://github.com/Pi4J/pi4j/blob/master/LICENSE.txt)
 
 <div style="max-width: 650px; margin-left: auto; margin-right: auto;" >
 <pre>

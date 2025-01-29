@@ -3,7 +3,7 @@ title: Build Instructions
 weight: 30
 ---
 
-Building the Pi4J Project is simple and requires minimal effort.  Pi4J is primarily built using Apache Maven and Java 11. 
+Building the Pi4J Project is simple and requires minimal effort.  Pi4J is primarily built using Apache Maven and Java 21. 
 Pi4J can be built directly on your host computer or inside a Docker container where all toolchains and dependencies are 
 already installed, configured and cached.   
 
@@ -86,7 +86,7 @@ the <code>pi4j-native</code> project containing native libraries which will be c
 <li>
 <p><strong><a href="https://hub.docker.com/repository/docker/pi4j/pi4j-builder:2.0" rel="nofollow">Pi4J v2.0 Builder</a></strong> <code>pi4j/pi4j-builder:2.0</code> :
 This image is derived from <code>pi4j/pi4j-builder-native</code> and additionally includes pre-cached Maven
-build plugins and dependencies for <a href="http://github.com/Pi4J/pi4j-v2">Pi4J v2.0</a> builds.  This image's
+build plugins and dependencies for <a href="http://github.com/Pi4J/pi4j">Pi4J v2.0</a> builds.  This image's
 entry point is a Maven shell.  If not explicitly provided, the default maven build arguments will be:
 <code>clean install -DskipTests -native</code>.  This will effectively build all Pi4J projects including
 the native library projects which will be cross-compiled for RaspberryPi/ARM (32-bit &amp; 64-bit) devices.</p>
@@ -110,7 +110,7 @@ mvn clean install -Pnative,cross-compile
 more information about the profiles illustrated in these commands.{{% /notice %}}
 
 Additional information about Docker Builds vs Cross-Compiler builds can be found here:
-https://github.com/Pi4J/pi4j-v2/issues/21#issuecomment-651976487
+https://github.com/Pi4J/pi4j/issues/21#issuecomment-651976487
 
 ---
 

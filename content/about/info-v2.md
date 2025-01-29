@@ -1,7 +1,13 @@
 ---
-title: 'What''s New (V.2)'
-weight: 30
+title: 'What''s New in V.2'
+weight: 21
 ---
+
+As of versions 2.X.X, Pi4J **no longer includes support for peripheral devices and add-on chipsets/boards** as part of the core project. A new plugin model has been introduced in version 2.0 that helps to enable third-party development and support third-party add-ons which can be developed and maintained independently of the core Pi4J project. **V2-versions of Pi4J require Java 11** or higher.
+
+More info is provided on ["What's New (V.2)"](/about/new-in-v2/).
+
+[The sources of V2 can be found in the GitHub repository `pi4j/pi4j`](https://github.com/Pi4J/pi4j).
 
 ## What's New in 2.0?
 
@@ -50,12 +56,12 @@ The following features have been removed from the Pi4J library:
 
 ## Sources
 
-The Pi4J V.2 source code is available in this GitHub repository: [Pi4J V.2 GitHub Repository](https://github.com/Pi4J/pi4j-v2)
+The Pi4J V.2 source code is available in this GitHub repository: [`pi4j/pi4j` GitHub Repository](https://github.com/Pi4J/pi4j)
 
 ```shell
-git clone https://github.com/Pi4J/pi4j-v2
+git clone https://github.com/Pi4J/pi4j
 ```
 
 Pi4J V.2 had the first release in August 2021. Rework from V.1 to V.2 took quit some time and will never be finished, but
 we are confident this is a great library to develop Java application on the Raspberry Pi. Any remarks and contributions
-are welcome as either bug reports or discussions in the [GitHub repository](https://github.com/Pi4J/pi4j-v2).
+are welcome as either bug reports or discussions in the [GitHub repository](https://github.com/Pi4J/pi4j).

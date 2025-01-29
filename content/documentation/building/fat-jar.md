@@ -111,7 +111,7 @@ As a jar-file is actually a zip-file, we can easily check the contents of the FA
 Pi4J V.2 uses ServiceLoader to detect which modules are available to communicate with the GPIOs. This allows to very 
 dynamically extend the possibilities of the framework.
 
-Code extract from [pi4j-core/src/.../runtime/impl/DefaultRuntime.java](https://github.com/Pi4J/pi4j-v2/blob/develop/pi4j-core/src/main/java/com/pi4j/runtime/impl/DefaultRuntime.java#L224):
+Code extract from [pi4j-core/src/.../runtime/impl/DefaultRuntime.java](https://github.com/Pi4J/pi4j/blob/develop/pi4j-core/src/main/java/com/pi4j/runtime/impl/DefaultRuntime.java#L224):
 
 ```java
 // detect available Pi4J Plugins by scanning the classpath looking for plugin instances
