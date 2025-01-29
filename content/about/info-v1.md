@@ -5,8 +5,6 @@ weight: 20
 
 The original library which started in 2012 and got a last release in 2021. Up till **version 1.3.0 the library targets Java 8**, while **version 1.4.0 relies on Java 11**.
 
-More info is provided on ["Previous versions (V.1)"](/about/previous-version-v1/).
-
 [The sources of V1 can be found in the read-only GitHub repository `pi4j/pi4j-v1`](https://github.com/Pi4J/pi4j-v1).
 
 ## Documentation of the 1.X versions

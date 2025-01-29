@@ -5,8 +5,6 @@ weight: 21
 
 As of versions 2.X.X, Pi4J **no longer includes support for peripheral devices and add-on chipsets/boards** as part of the core project. A new plugin model has been introduced in version 2.0 that helps to enable third-party development and support third-party add-ons which can be developed and maintained independently of the core Pi4J project. **V2-versions of Pi4J require Java 11** or higher.
 
-More info is provided on ["What's New (V.2)"](/about/new-in-v2/).
-
 [The sources of V2 can be found in the GitHub repository `pi4j/pi4j`](https://github.com/Pi4J/pi4j).
 
 ## What's New in 2.0?
