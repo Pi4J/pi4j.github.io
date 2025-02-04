@@ -8,7 +8,7 @@ title: Welcome to Pi4J
 Pi4J is moving to Java version 21! Please [read this blog post for more info](/blog/2025/20250205-welcome-java-21/).
 {{% /notice %}}
 
-**Latest release: V2.7.0 (2024-10-03, see [Release Notes](/about/release-notes/)).**
+**Latest release: V2.8.0 (2025-01-28, see [Release Notes](/about/release-notes/)).**
 
 This project is intended to provide **a friendly object-oriented I/O API and implementation libraries for Java Programmers** to access the **full I/O capabilities of the Raspberry Pi platform**. This project abstracts the low-level native integration and interrupt monitoring to enable Java programmers to **focus on implementing their application business logic**.
 
@@ -44,5 +44,5 @@ This resulted in the following main versions:
 
 * [V1.X.X](/about/info-v1): Deprecated, based on Java 8, later Java 11.
 * [V2.X.X](/about/info-v2): Completely reworked code base, based on Java 11.
-* [V3.X.X](/about/info-v3): Based on latest V2, based on Java 21.
+* [V3.X.X](/about/info-v3): Based on latest V2 and Java 21.
 
