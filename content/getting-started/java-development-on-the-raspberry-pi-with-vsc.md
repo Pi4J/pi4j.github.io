@@ -6,25 +6,19 @@ tags: ["Visual Studio Code"]
 
 ## Java on the Raspberry Pi
 
-To use Pi4J V3+ you'll need Java 21 or newer. 
-
-Keep in mind this version is **only compatible with ARMv7 or higher** and doesn't support all 
-Raspberry Pi board versions. If you have a Raspberry Pi A (version 3), B (version 2 or higher), 
-or Compute (version 3 or higher), you are good to go! For all other boards you will need some additional steps 
-that are described on ["Java for ARMv6/7/8"](/documentation/java-installation/).
-
-If you prepared a microSD card with the latest version of Raspberry Pi OS (full version), as described on 
-["Set up a new Raspberry Pi"](/getting-started/set-up-a-new-raspberry-pi/), you can check the installed Java version 
-in the terminal. On a board with ARMv7 or ARMv8 you will get this result:
+You need Java 21 or newer to use Pi4J V3+. Please check the [Prepare a Raspberry Pi](/prepare/install-java/) and [Install Java and Tools](/prepare/install-java/) instructions. On a board with ARMv7 or ARMv8 you will get this result:
 
 ```shell
 $ java -version
-openjdk version "11.0.3" 2019-04-16
-OpenJDK Runtime Environment (build 11.0.3+7-post-Raspbian-5)
-OpenJDK Server VM (build 11.0.3+7-post-Raspbian-5, mixed mode)
+openjdk version "21.0.5" 2024-10-15 LTS
+OpenJDK Runtime Environment Zulu21.38+21-CA (build 21.0.5+11-LTS)
+OpenJDK 64-Bit Server VM Zulu21.38+21-CA (build 21.0.5+11-LTS, mixed mode, sharing)
 ```
 
-If you get an error like below, you'll need to follow the steps described on ["Java for ARMv6/7/8"](/documentation/java-installation/).
+Keep in mind this version is **only compatible with ARMv7 or higher** and doesn't support all
+Raspberry Pi board versions. If you have a Raspberry Pi A (version 3), B (version 2 or higher),
+or Compute (version 3 or higher), you are good to go! For all other boards, or if you get the error below, you will need some additional steps
+that are described on [Java for ARMv6/7/8](/documentation/java-installation/).
 
 ```shell
 $ java -version
@@ -48,9 +42,7 @@ Maven home: /usr/share/maven
 ## Visual Studio Code
 
 Visual Studio Code (VSC) is the free IDE (Integrated Developer Environment) by Microsoft. It's designed as a universal
-tool that you can use for multiple programming languages with extensions. On your Raspberry Pi open a web browser,
-go to the ["VSC Download page (code.visualstudio.com/Download)"](https://code.visualstudio.com/Download) and 
-select the "Linux .deb ARM" version.
+tool that you can use for multiple programming languages with extensions. 
 
 {{< gallery >}}
 {{< figure link="/assets/getting-started/vsc/visualstudiocode-download.png" caption="Download page for VSC" caption-position="center" caption-effect="fade" >}}
@@ -59,15 +51,8 @@ select the "Linux .deb ARM" version.
 {{< /gallery >}}
 {{< load-photoswipe >}}
 
-When the download is finished, open a terminal, go to the Download directory and install the downloaded deb-file like this:
-
-```shell
-$ cd /home/pi/Downloads
-$ sudo apt install ./code_1.53.0-1612367698_armhf.deb 
-```
-
-Since 02/2021 there is even an easier way, as Visual Studio Code is now available as a Raspberry Pi OS apt package. 
-Use the following commands:
+Visual Studio Code is available as a Raspberry Pi OS apt package. 
+Use the following commands to install it:
 
 ```shell
 $ sudo apt update
