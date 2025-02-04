@@ -64,8 +64,8 @@ System.setProperty("pi4j.library.path", "local");
 ```
 
 {{% notice note %}}For more details about the native library loading behavior, please see the 
-[`NativeLibraryLoader.java`](https://github.com/Pi4J/pi4j-v2/blob/master/libraries/pi4j-library-pigpio/src/main/java/com/pi4j/library/pigpio/util/NativeLibraryLoader.java) 
-class:  https://github.com/Pi4J/pi4j-v2/blob/master/libraries/pi4j-library-pigpio/src/main/java/com/pi4j/library/pigpio/util/NativeLibraryLoader.java{{% /notice %}}
+[`NativeLibraryLoader.java`](https://github.com/Pi4J/pi4j/blob/master/libraries/pi4j-library-pigpio/src/main/java/com/pi4j/library/pigpio/util/NativeLibraryLoader.java) 
+class:  https://github.com/Pi4J/pi4j/blob/master/libraries/pi4j-library-pigpio/src/main/java/com/pi4j/library/pigpio/util/NativeLibraryLoader.java{{% /notice %}}
 
 ---
 

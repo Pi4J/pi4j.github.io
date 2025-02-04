@@ -4,7 +4,7 @@ weight: 99
 ---
 
 {{% notice tip %}}
-GITHUB Sources of BoardInfoHelper.java and the data model: [pi4j-v2/pi4j-core/src/main/java/com/pi4j/boardinfo/util/BoardInfoHelper.java](https://github.com/Pi4J/pi4j-v2/blob/develop/pi4j-core/src/main/java/com/pi4j/boardinfo/util/BoardInfoHelper.java)
+GITHUB Sources of BoardInfoHelper.java and the data model: [pi4j/pi4j-core/src/main/java/com/pi4j/boardinfo/util/BoardInfoHelper.java](https://github.com/Pi4J/pi4j/blob/develop/pi4j-core/src/main/java/com/pi4j/boardinfo/util/BoardInfoHelper.java)
 {{% /notice %}}
 
 Since V2.6.0, the new class `BoardInfoHelper` provides the following info:
@@ -27,7 +27,7 @@ $ cat /proc/cpuinfo | grep 'Revision' | awk '{print $3}'
 ```
 
 ### Updated Method (>= 2.7.1 version)
-Starting with version 2.7.1, the board version number is determined programmatically in Java using the [CpuInfoReader](https://github.com/Pi4J/pi4j-v2/blob/develop/pi4j-core/src/main/java/com/pi4j/boardinfo/datareader/CpuInfoReader.java) class. This method reads and processes the `/proc/cpuinfo` file to extract the CPU revision.
+Starting with version 2.7.1, the board version number is determined programmatically in Java using the [CpuInfoReader](https://github.com/Pi4J/pi4j/blob/develop/pi4j-core/src/main/java/com/pi4j/boardinfo/datareader/CpuInfoReader.java) class. This method reads and processes the `/proc/cpuinfo` file to extract the CPU revision.
 
 
 For instance, for a Raspberry Pi Compute 4, multiple version numbers are possible:

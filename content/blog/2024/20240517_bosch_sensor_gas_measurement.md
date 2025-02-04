@@ -20,7 +20,7 @@ You can find easy-to-use boards with such a sensor, for instance, on:
 
 ## Important Information Regarding Gas Measurements
 
-On the [Pi4J GitHub Discussion page, there is an interesting discussion going on about the BME688 gas sensor](https://github.com/Pi4J/pi4j-v2/discussions/353) that I want to share here... [**crogialli**](https://github.com/crogialli) shared the following info:
+On the [Pi4J GitHub Discussion page, there is an interesting discussion going on about the BME688 gas sensor](https://github.com/Pi4J/pi4j/discussions/353) that I want to share here... [**crogialli**](https://github.com/crogialli) shared the following info:
 
 _I've been using BME680 in my application for a year, and I am also implementing BME 688.
 It is entirely possible to read Temp, Pressure, Humidity and gas resistances from plain Java code (I do it, and I can submit my code for that, albeit I have an abstraction layer between the BME68X management and Pi4J so that the code could be not immediately usable). Readings for temp, pressure and humidity from BME68X are astonishingly accurate and quick._

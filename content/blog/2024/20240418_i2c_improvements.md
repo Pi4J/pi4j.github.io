@@ -6,7 +6,7 @@ tags: ["Pi4J", "I2C"]
 
 2024-04-17, by Frank Delporte
 
-Robert von Burg is working on improvements of the I2C implementation in Pi4J in preparation for the next release. The changes are in [pull request #351](https://github.com/Pi4J/pi4j-v2/pull/351/files). It's still work-in-progress but will bring these improvements:
+Robert von Burg is working on improvements of the I2C implementation in Pi4J in preparation for the next release. The changes are in [pull request #351](https://github.com/Pi4J/pi4j/pull/351/files). It's still work-in-progress but will bring these improvements:
 
 * New `I2C.execute(Callable)` method to allow to atomically execute multiple I2C calls in a thread in a safe way.
 * New `I2C.writeRead(byte[], byte[])` method to atomically perform a `write`, immediately followed by a `read` on the I2C bus.

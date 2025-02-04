@@ -22,7 +22,7 @@ Enough reasons for us to bring it over to the RaspberryPi Community!
 
 ## Pi4J-Kotlin
 
-Our latest project, [Pi4J-Kotlin](https://github.com/Pi4J/pi4j-kotlin), provides a Kotlin DSL for the already-mature & capable Pi4J V2 API. You can take full advantage of Kotlin on the RaspberryPi and write even more capable and concise code for your projects.
+Our latest project, [Pi4J-Kotlin](https://github.com/Pi4J/pi4j-kotlin), provides a Kotlin DSL for the already-mature & capable Pi4J V2+ API. You can take full advantage of Kotlin on the RaspberryPi and write even more capable and concise code for your projects.
 Blink if you can hear me
 
 A blinking LED example is a benchmark for code simplicity (at least for me, just pretend). Here’s how to blink with Pi4J-Kotlin:

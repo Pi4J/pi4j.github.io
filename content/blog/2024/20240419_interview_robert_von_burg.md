@@ -6,7 +6,7 @@ tags: ["Interview", "Pi4J"]
 
 2024-04-19, by Frank Delporte
 
-The Pi4J project has two important Roberts. The first one is **Robert Savage** (living in the US), who started the Pi4J development. You can read more about him and the reason Pi4J was created in [this interview on Foojay](https://foojay.io/today/interviews-with-robert-savage-and-johan-vos-on-the-state-of-java-on-raspberry-pi/). He also created V2 of Pi4J, but hasn't been involved a lot in the project since its release. Luckily, we have another Robert in [the Pi4J team](https://pi4j.com/about/team/)! **Robert von Burg** (living in Switzerland), also known as **Eitch**, is the [main maintainer now of the Pi4J V2 sources](https://github.com/Pi4J/pi4j-v2) and takes care of the releases.
+The Pi4J project has two important Roberts. The first one is **Robert Savage** (living in the US), who started the Pi4J development. You can read more about him and the reason Pi4J was created in [this interview on Foojay](https://foojay.io/today/interviews-with-robert-savage-and-johan-vos-on-the-state-of-java-on-raspberry-pi/). He also created V2 of Pi4J, but hasn't been involved a lot in the project since its release. Luckily, we have another Robert in [the Pi4J team](https://pi4j.com/about/team/)! **Robert von Burg** (living in Switzerland), also known as **Eitch**, is the [main maintainer now of the Pi4J V2 sources](https://github.com/Pi4J/pi4j) and takes care of the releases.
 
 Let's learn more about him...
 

@@ -16,7 +16,7 @@ but there is an alternative way to arrange your developing laboratory, using a n
 desktop computer as Remote Developing Workstation (RDW).
 
 This [Maven Archetype](https://github.com/Pi4J/pi4j-maven-archetype "raspimaven-archetype") will give you
-a tool to generate Pi4J V.2 skeleton Java projects. You can use it for your next Pi4j project and you will be able 
+a tool to generate Pi4J V2+ skeleton Java projects. You can use it for your next Pi4j project and you will be able 
 to develop your program on the remote workstation (RDW), compile them, transmit the executable 
 code on the target Pi board and run it. You can also start a remote debugging session.
 
@@ -63,7 +63,7 @@ _Congratulation ! - Now you are ready to generate your first **Project Template*
 
 ### Generate a new Project Template
 
-Let suppose you want to begin the new wonderful PI4J V.2 project _my-project_, to do this follow these steps:
+Let suppose you want to begin the new wonderful PI4J project _my-project_, to do this follow these steps:
 
 - `mkdir my-project`
 - `cd my-project`
@@ -125,7 +125,7 @@ Feel free to explore the new project familiarizing with the folder structure. Th
 
 - The file README.md contains the intruction to configure the connection(s) to your RPi board(s) and the decription of the Maven
 commands to build your project, transfer the executable code to the target RPi, run it and also open a debugger session.
-- The _pom.xml_ file already includes the dependencies needed to compile your program with the Pi4J V.2 libraries.
+- The _pom.xml_ file already includes the dependencies needed to compile your program with the Pi4J libraries.
 - The _platform_ folder contains an example configuration file for connecting to you RPi board. Read the README.md explanation,
 open the _platform/raspberry.properties_ file (or copy it to a new file) and edit it to describe how to connect to your RPi
 

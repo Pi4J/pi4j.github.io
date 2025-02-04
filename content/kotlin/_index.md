@@ -20,6 +20,7 @@ dependencies {
 ```
 
 If you want to use the [Console DSL](kotlin-api-docs/#console) to [log with SLF4J](/documentation/logging/), add the dependency:
+
 ``` kotlin
 implementation("org.slf4j:slf4j-api:1.7.32")
 implementation("org.slf4j:slf4j-simple:1.7.32")
