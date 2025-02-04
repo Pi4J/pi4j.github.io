@@ -1,5 +1,5 @@
 ---
-title: 'Info about V.1'
+title: 'Info about V1'
 weight: 20
 ---
 
@@ -19,7 +19,7 @@ The original library which started in 2012 and got a last release in 2021. Up ti
 * Removed pi4j-device and pi4j-gpio-extension library
 * Removed platform support for Odroid, BananaPi, BPi, NanoPi, OrangePi
 * Various improvements and bug fixes listed here: [GitHub Issues (v1.4)](https://github.com/Pi4J/pi4j-v1/milestone/9?closed=1)
-* Not using Java-modules yet, this will be part of the V.2
+* Not using Java-modules yet, this will be part of the V2
 * [Documentation website V1.4](/1.4/index.html)
 
 ### Pi4J Version 1.3

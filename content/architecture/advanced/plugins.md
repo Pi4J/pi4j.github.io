@@ -2,7 +2,7 @@
 title: Plug-ins
 ---
 
-The goal of Pi4J V.2 is to provide a solid base with all required "minimal functionality" while at the same time, promote third-party development and extensibility, thus enabling developers to build and maintain their extensions outside of the Pi4J core projects codebase. 
+The goal of Pi4J V2+ is to provide a solid base with all required "minimal functionality" while at the same time, promote third-party development and extensibility, thus enabling developers to build and maintain their extensions outside of the Pi4J core projects codebase. 
 
 This will enable us to deliver a stable, fully tested framework as the number of features inside of Pi4J can be limited and support for specific I/O hardware can be provided with an extension for Pi4J.
 
@@ -34,7 +34,6 @@ module com.pi4j.plugin.raspberrypi {
 }
 ```
 
-
 ServiceLoader overview by [Piotr Mińkowski](https://twitter.com/piotr_minkowski).
 
-![Pi4J V.2 architecture](/assets/architecture/serviceloader-overview.jpg)
+![Pi4J V2+ architecture](/assets/architecture/serviceloader-overview.jpg)

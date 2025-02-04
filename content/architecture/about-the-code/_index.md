@@ -3,18 +3,18 @@ title: Project source structure
 weight: 10
 ---
 
-To ensure the Pi4J V.2 project is easy to maintain, there is a clear separation between the core functions and 
+To ensure the Pi4J V2+ project is easy to maintain, there is a clear separation between the core functions and 
 isolated test, example and plugin projects.
 
 On this page we want to give you an overview of the projects which are part of the 
 [GitHub Pi4J Project](https://github.com/Pi4J).
 
-![Pi4J V.2 code structure](https://raw.githubusercontent.com/Pi4J/pi4j/master/assets/draw.io/pi4j-code-structure.jpg)
+![Pi4J V2+ code structure](https://raw.githubusercontent.com/Pi4J/pi4j/refs/heads/develop/assets/draw.io/pi4j-v2-architecture.jpg)
 
-## Pi4J V.2 Main project
+## Pi4J V2+ Main project
 
 * [github.com/Pi4J/pi4j](https://github.com/Pi4J/pi4j)
-* This is the main Pi4J V.2 project providing all (basic) I/O functionalities.
+* This is the main Pi4J V2 project providing all (basic) I/O functionalities.
 
 ### Pi4J Parent POM 
 * /pom.xml
@@ -44,7 +44,7 @@ On this page we want to give you an overview of the projects which are part of t
 ### Pi4J Core Library
 
 * /pi4j-core
-* This is the Pi4J V.2 API and core implementation of the framework and runtime.   
+* This is the Pi4J V2 API and core implementation of the framework and runtime.   
 * Doesn't contain any actual I/O providers, platforms or IO/platform implementation --> those are all provided via extensions/plugins.  
 
 ### Pi4J Unit/Integration Test 

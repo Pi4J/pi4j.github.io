@@ -1,5 +1,5 @@
 ---
-title: 'What''s New in V.3'
+title: 'What''s New in V3'
 weight: 22
 ---
 
@@ -17,13 +17,13 @@ Pi4J version 3.0.0 is a continuation of 2.8.0, but bumps the minimal Java versio
 
 ## Sources
 
-The Pi4J V.3 source code is available in this GitHub repository: [`pi4j/pi4j` GitHub Repository](https://github.com/Pi4J/pi4j)
+The Pi4J V3 source code is available in this GitHub repository: [`pi4j/pi4j` GitHub Repository](https://github.com/Pi4J/pi4j)
 
 ```shell
 git clone https://github.com/Pi4J/pi4j
 ```
 
-Pi4J V.3 is not yet released, but can already use version `3.0.0-SNAPSHOT` for testing if you add the snapshot Maven repository to your pom-file.
+Pi4J V3 is not yet released, but can already use version `3.0.0-SNAPSHOT` for testing if you add the snapshot Maven repository to your pom-file.
 
 ```xml
 <repositories>

@@ -9,7 +9,7 @@ means any type of device which can toggle between 3.3V and 0V, can generate an i
 most basic example is a toggle button. If you use other components, always check which is the voltage provided by the device.
 Or if you use a power pin from the Raspberry Pi itself, to use a 3.3V pin and not a 5V pin.
 
-V.2 provides a declarative style of configuration for I/O provisioning instead of the hard-coded approach offered in V.1.
+V2+ provides a declarative style of configuration for I/O provisioning instead of the hard-coded approach offered in V1.
 
 The following example shows the minimal code to configure the `DIGITAL_INPUT_PIN`  
 as an input pin and monitor the pin state with by adding a Listener.  The code uses methods which are 

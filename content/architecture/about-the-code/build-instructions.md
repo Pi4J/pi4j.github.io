@@ -84,9 +84,9 @@ the <code>pi4j-native</code> project containing native libraries which will be c
 (32-bit &amp; 64-bit) devices.</p>
 </li>
 <li>
-<p><strong><a href="https://hub.docker.com/repository/docker/pi4j/pi4j-builder:2.0" rel="nofollow">Pi4J v2.0 Builder</a></strong> <code>pi4j/pi4j-builder:2.0</code> :
+<p><strong><a href="https://hub.docker.com/repository/docker/pi4j/pi4j-builder:2.0" rel="nofollow">Pi4J V2+ Builder</a></strong> <code>pi4j/pi4j-builder:2.0</code> :
 This image is derived from <code>pi4j/pi4j-builder-native</code> and additionally includes pre-cached Maven
-build plugins and dependencies for <a href="http://github.com/Pi4J/pi4j">Pi4J v2.0</a> builds.  This image's
+build plugins and dependencies for <a href="http://github.com/Pi4J/pi4j">Pi4J V2+</a> builds.  This image's
 entry point is a Maven shell.  If not explicitly provided, the default maven build arguments will be:
 <code>clean install -DskipTests -native</code>.  This will effectively build all Pi4J projects including
 the native library projects which will be cross-compiled for RaspberryPi/ARM (32-bit &amp; 64-bit) devices.</p>
@@ -98,7 +98,7 @@ the native library projects which will be cross-compiled for RaspberryPi/ARM (32
 
 ### Building Pi4J Native Libraries
 
-Pi4J V.2 also includes native libraries that will need to be compiled if you are modifying any native code.  Most users will never need to compile the native libraries as these artifacts are automatically downloaded  when building the Pi4J JARs from Maven repositories. One of the following commands can be used to build the Pi4J JARs and Native Libraries:
+Pi4J V2+ also includes native libraries that will need to be compiled if you are modifying any native code.  Most users will never need to compile the native libraries as these artifacts are automatically downloaded  when building the Pi4J JARs from Maven repositories. One of the following commands can be used to build the Pi4J JARs and Native Libraries:
 
 ```
 mvn clean install -Pnative

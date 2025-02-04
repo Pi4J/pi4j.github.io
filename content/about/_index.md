@@ -5,8 +5,8 @@ weight: 10
 
 ## Project Status/Summary
 
-Pi4J V.2 is a complete re-write and **does not maintain API compatibility** with previous 
-versions.  It is not intended to be a drop-in replacement for previous versions of Pi4J.  Pi4J V.2 is 
+Pi4J V2+ is a complete re-write and **does not maintain API compatibility** with previous 
+versions.  It is not intended to be a drop-in replacement for previous versions of Pi4J.  Pi4J V2+ is 
 a completely new **design bringing modern conventions, development practices, extensibility support 
 and simplified integration experience** for Pi4J users.
 

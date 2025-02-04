@@ -3,8 +3,8 @@ title: Example Implementations
 weight: 35
 ---
 
-The core Pi4J V.2 library doesn't contain any specific support for devices like buttons, motors, LCD... This was part of 
-V.1 but made the project much more difficult to maintain and fully test the library.
+The core Pi4J V2+ library doesn't contain any specific support for devices like buttons, motors, LCD... This was part of 
+V1 but made the project much more difficult to maintain and fully test the library.
 
 In this section, we want to provide you example implementations of several devices that are maintained by the community.
 

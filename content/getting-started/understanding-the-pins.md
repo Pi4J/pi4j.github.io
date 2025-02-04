@@ -41,7 +41,7 @@ being used:
 2. **BCM**: the number to be used in your Java code to specify the GPIO to be used. BCM refers to the "Broadcom SOC channel" number, 
    which is the numbering inside the chip which is used on the Raspberry Pi. These numbers changed between board versions 
    as you can see in the previous tables for the 26-pin header type 1 versus 2, and or not sequential.
-3. **WPI**: WiringPi number which was used by V.1 of Pi4J. The WiringPi numbering has a "historical reason". When development 
+3. **WPI**: WiringPi number which was used by V1 of Pi4J. The WiringPi numbering has a "historical reason". When development 
    for the very first Raspberry Pi's was ongoing, only 8 pin-numbers were foreseen. But, when the designs further evolved 
    and more pins were added, the numbering in WiringPi was extended to be able to address the extra pins.
 

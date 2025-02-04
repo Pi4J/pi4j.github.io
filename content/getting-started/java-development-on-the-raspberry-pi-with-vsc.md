@@ -6,16 +6,9 @@ tags: ["Visual Studio Code"]
 
 ## Java on the Raspberry Pi
 
-To use Pi4J V.2 you'll need Java 11 or newer. Luckily this version is included in the current version of Raspberry Pi OS. 
-In the release notes you can see that the version of 2019-06-20 includes OpenJDK Java 11:
+To use Pi4J V3+ you'll need Java 21 or newer. 
 
-```shell
-2019-06-20:
-Based on Debian Buster
-Oracle Java 7 and 8 replaced with OpenJDK 11
-```
-
-But you will need to keep in mind this version is **only compatible with ARMv7 or higher** and doesn't support all 
+Keep in mind this version is **only compatible with ARMv7 or higher** and doesn't support all 
 Raspberry Pi board versions. If you have a Raspberry Pi A (version 3), B (version 2 or higher), 
 or Compute (version 3 or higher), you are good to go! For all other boards you will need some additional steps 
 that are described on ["Java for ARMv6/7/8"](/documentation/java-installation/).

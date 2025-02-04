@@ -5,7 +5,7 @@ tags: ["1602A", "ADS1256", "BMP280", "DAC8552", "DHT22", "IS31FL3731", "MCP23008
 ---
 
 On this page we want to keep a list of projects which contain implementation code for specific devices using the Pi4J 
-V.2 core library. Please let us know via [Pi4J V.2 Discussions](https://github.com/Pi4J/pi4j/discussions) if you want to have your project added 
+V2+ core library. Please let us know via [Pi4J Discussions](https://github.com/Pi4J/pi4j/discussions) if you want to have your project added 
 to this list.
 
 ### Current available device support projects

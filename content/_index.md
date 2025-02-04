@@ -40,5 +40,5 @@ This resulted in the following main versions:
 
 * [V1.X.X](/about/info-v1): Deprecated, based on Java 8, later Java 11.
 * [V2.X.X](/about/info-v2): Completely reworked code base, based on Java 11.
-* [V3.X.X](/about/license): Based on latest V2, based on Java 21.
+* [V3.X.X](/about/info-v3): Based on latest V2, based on Java 21.
 
