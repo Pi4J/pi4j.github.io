@@ -18,7 +18,7 @@ We [asked our users](https://github.com/Pi4J/pi4j/discussions/409) which minimal
 * When critical bugs are found, we can still backport them to V2 and make a new release. This is also used in the OpenJDK development, as described in [JEP 14: The Tip & Tail Model of Library Development](https://openjdk.org/jeps/14).
 * This documentation website got reviewed:
   * To have the correct links to the renamed repository.
-  * Make it clear that V1 is depecrated and a separate repository.
+  * Make it clear that V1 is deprecated and a separate repository.
   * V2, V3, and future versions are based on the same repository.
 * With this bump to Java 21, we are also preparing to more easily bump to the next LTS, which will be Java 25 in September 2025. 
 * Bumping to the latest LTS makes it possible to make use of many newer Java language and runtime improvements, simplify some of the code, etc.
