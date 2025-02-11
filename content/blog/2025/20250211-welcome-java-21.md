@@ -4,7 +4,7 @@ date: 2025-02-05
 tags: ["Java"]
 ---
 
-2025-02-05 by Frank Delporte
+2025-02-11 by Frank Delporte
 
 The development of the Pi4J library faced a decision point...
 
