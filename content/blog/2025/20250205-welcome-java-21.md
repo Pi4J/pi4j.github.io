@@ -25,6 +25,8 @@ We [asked our users](https://github.com/Pi4J/pi4j/discussions/409) which minimal
 * With this bump to Java 21, we are also preparing to more easily bump to the next LTS, which will be Java 25 in September 2025. 
 * Bumping to the latest LTS makes it possible to make use of many newer Java language and runtime improvements, simplify some of the code, etc.
 
+**3.0.0-SNAPSHOT of Pi4J is already available for testing from the Maven Repository if you enable snapshots in your pom-file.** See [Pi4J Downloads > Snapshot Archives](https://www.pi4j.com/download/) for more info.
+
 More info about V3 will be documented on the page [What's New in V3](/about/info-v3/).
 
 

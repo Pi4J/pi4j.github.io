@@ -6,6 +6,8 @@ title: Welcome to Pi4J
 
 {{% notice warning %}}
 Pi4J is moving to Java version 21! Please [read this blog post for more info](/blog/2025/20250205-welcome-java-21/).
+
+**3.0.0-SNAPSHOT of Pi4J is already available for testing from the Maven Repository if you enable snapshots in your pom-file.** See [Pi4J Downloads > Snapshot Archives](https://www.pi4j.com/download/) for more info.
 {{% /notice %}}
 
 **Latest release: V2.8.0 (2025-01-28, see [Release Notes](/about/release-notes/)).**
