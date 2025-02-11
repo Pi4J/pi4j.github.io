@@ -6,13 +6,11 @@ tags: ["Java"]
 
 2025-02-11 by Frank Delporte
 
-The development of the Pi4J library faced a decision point...
-
-_**Stick to Java 11 for existing projects and old Raspberry Pi's ([with ARMv6](/documentation/java-for-arm/)), versus moving on and making use of better and more performant Java code with the latest Long Term Support (LTS) version?**_
+_**The development of the Pi4J library faced a decision point...: "_Should we stick to Java 11 for existing projects and old Raspberry Pi's ([with ARMv6](/documentation/java-for-arm/)), versus moving on and making use of better and more performant Java code with the latest Long Term Support (LTS) version?_"**_
 
 We actually wanted to move on to Java 22, as it brings a new way of interacting with C-code, thanks to [JEP 454: Foreign Function & Memory API](https://openjdk.org/jeps/454). As this is the core behavior of Pi4J to interact with the GPIOs, it would make it much easier to implement new ways to control electronics, as confirmed [with a first test by Robert "Eitch"](https://github.com/eitch/pi4j-test/blob/develop/src/main/java/ch/eitchnet/pi4j/test/LibGPIODController.java). But as Java 22 is not an LTS release, we won't make this move yet.
 
-We [asked our users](https://github.com/Pi4J/pi4j/discussions/409) which minimal Java version we should use, but there was no one clear answer, as expected ;-) So with the core team we made a few decisions who are allowing us to bring the project up to "the next level".
+We [asked our users](https://github.com/Pi4J/pi4j/discussions/409) which minimal Java version we should use, but there was no one clear answer, as expected ;-) So **with the core team we made a few decisions that are allowing us to bring the project to "the next level" and... Java 21!**.
 
 * We renamed the repository with the sources of Pi4J V2+ from `pi4j-v2` to `pi4j` as it holds the sources of all V2 and future V3, V4,... versions.
 * The minimal supported Java version for future releases (V3 and newer) is 21.
