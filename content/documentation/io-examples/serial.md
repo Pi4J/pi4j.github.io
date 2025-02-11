@@ -69,7 +69,7 @@ functionality within the PiGpio library will require changes within the Pi4J cod
 
 The following example demonstrates how you can connect to a GPS module to read the data. This example is based on an 
 example from the book ["The Definitive Guide to Modern Java Clients with JavaFX" by Stephen Chin, Johan Vos and James Weaver](https://www.apress.com/gp/book/9781484249253).
-That example uses V1 of Pi4J with a listener provided by the library. In V.2 this listener is no longer provided but can 
+That example uses V1 of Pi4J with a listener provided by the library. In V2+ this listener is no longer provided but can 
 easily be achieved with a Thread to handle the incoming data.
 
 {{% notice tip %}}

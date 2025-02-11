@@ -2,9 +2,9 @@
 title: 'Dependency injection'
 ---
 
-{{% notice warning %}}To simplify the initial V.2 version, the DI implementation has be removed so it could be 
+{{% notice warning %}}To simplify the initial V2 version, the DI implementation has be removed so it could be 
 refactored and extended later. It is still available in the branch 
-[#22-annotations](https://github.com/Pi4J/pi4j-v2/tree/feature/%2322-annotations){{% /notice %}}
+[#22-annotations](https://github.com/Pi4J/pi4j/tree/feature/%2322-annotations){{% /notice %}}
 
 Along with the annotated I/O configuration the ability to support I/O provisioning via dependency injection also 
 makes a lot of sense. There is some basic brute-force stuff working but this needs more work to make this a compatible

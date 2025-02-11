@@ -1,7 +1,11 @@
 ---
-title: 'Previous versions (V.1)'
+title: 'Info about V1'
 weight: 20
 ---
+
+The original library which started in 2012 and got a last release in 2021. Up till **version 1.3.0 the library targets Java 8**, while **version 1.4.0 relies on Java 11**.
+
+[The sources of V1 can be found in the read-only GitHub repository `pi4j/pi4j-v1`](https://github.com/Pi4J/pi4j-v1).
 
 ## Documentation of the 1.X versions
 
@@ -15,7 +19,7 @@ weight: 20
 * Removed pi4j-device and pi4j-gpio-extension library
 * Removed platform support for Odroid, BananaPi, BPi, NanoPi, OrangePi
 * Various improvements and bug fixes listed here: [GitHub Issues (v1.4)](https://github.com/Pi4J/pi4j-v1/milestone/9?closed=1)
-* Not using Java-modules yet, this will be part of the V.2
+* Not using Java-modules yet, this will be part of the V2
 * [Documentation website V1.4](/1.4/index.html)
 
 ### Pi4J Version 1.3
