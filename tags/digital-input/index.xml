@@ -15,7 +15,7 @@ speed increases. When you have pushed the button 5 times, the application stops.
 &lt;/div>
 
 &lt;p>The &lt;a href="https://pi4j.com/getting-started/minimal-example-application/">&amp;ldquo;Minimal example application&amp;rdquo;&lt;/a> uses one LED and button to demonstrate
-the basic use of Pi4J V.2. When building that project with Maven, all the required Java modules are copied to the
+the basic use of Pi4J. When building that project with Maven, all the required Java modules are copied to the
 &lt;code>target/distribution&lt;/code> directory. But a lot of developers like to produce a single, executable JAR that contains
 all dependencies, also known as a &amp;ldquo;FAT JAR&amp;rdquo;.&lt;/p>
 &lt;p>The repository &lt;a href="https://github.com/Pi4J/pi4j-example-fatjar" target="_blank" rel="noopener">&amp;ldquo;pi4j-example-fatjar&amp;rdquo; GitHub project&lt;/a> contains a Maven project

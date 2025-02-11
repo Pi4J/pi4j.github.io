@@ -2,7 +2,7 @@
 &lt;/div>
 
 &lt;p>The &lt;a href="https://pi4j.com/getting-started/minimal-example-application/">&amp;ldquo;Minimal example application&amp;rdquo;&lt;/a> uses one LED and button to demonstrate
-the basic use of Pi4J V.2. When building that project with Maven, all the required Java modules are copied to the
+the basic use of Pi4J. When building that project with Maven, all the required Java modules are copied to the
 &lt;code>target/distribution&lt;/code> directory. But a lot of developers like to produce a single, executable JAR that contains
 all dependencies, also known as a &amp;ldquo;FAT JAR&amp;rdquo;.&lt;/p>
 &lt;p>The repository &lt;a href="https://github.com/Pi4J/pi4j-example-fatjar" target="_blank" rel="noopener">&amp;ldquo;pi4j-example-fatjar&amp;rdquo; GitHub project&lt;/a> contains a Maven project
@@ -13,5 +13,5 @@ instead of separate Java modules.&lt;/p></description></item><item><title>Build 
 &lt;h2 id="about-fat-jars">About FAT JARs&lt;/h2>
 &lt;p>With Pi4J V1 you can create a so-called FAT JAR, which packages all the dependencies into one jar-file. That way it is
 very easy to build your project on one computer and distribute your application as a single file to one or more clients.&lt;/p>
-&lt;p>Because of the modular approach and how Pi4J V.2 loads it dependencies at runtime, this approach can be achieved by using
+&lt;p>Because of the modular approach and how Pi4J V2+ loads it dependencies at runtime, this approach can be achieved by using
 the maven-shade-plugin.&lt;/p></description></item></channel></rss>

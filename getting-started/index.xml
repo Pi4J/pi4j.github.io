@@ -6,8 +6,7 @@ course important to be aware of the correct numbering to not connect components 
 &lt;p>The pins have different uses&lt;/p></description></item><item><title>Electrical Engineering</title><link>https://pi4j.com/getting-started/electrical-engineering/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/getting-started/electrical-engineering/</guid><description>&lt;p>The goal of the Pi4J project is to combine sofware (Java) with hardware (electronic components). On this page we give you some tips and tricks for the electronics part.&lt;/p>
 &lt;h2 id="breadboard">Breadboard&lt;/h2>
 &lt;p>A breadboard is the basic for each experiment. It allows you to easily connect several components to each other and the Raspberry Pi. Here is a video that explains the basics of breadboards:&lt;/p>
-
- &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
  &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/6WReFkfrUIk?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
  &lt;/div>
 
@@ -26,15 +25,15 @@ course important to be aware of the correct numbering to not connect components 
  &lt;a href="https://pi4j.com/assets/getting-started/electricalEngineering/breadboard.jpeg" itemprop="contentUrl">&lt;/a>
  &lt;figcaption>
  &lt;p>Breadboard&lt;/p></description></item><item><title>Java development with VSC</title><link>https://pi4j.com/getting-started/java-development-on-the-raspberry-pi-with-vsc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/getting-started/java-development-on-the-raspberry-pi-with-vsc/</guid><description>&lt;h2 id="java-on-the-raspberry-pi">Java on the Raspberry Pi&lt;/h2>
-&lt;p>To use Pi4J V.2 you&amp;rsquo;ll need Java 11 or newer. Luckily this version is included in the current version of Raspberry Pi OS.
-In the release notes you can see that the version of 2019-06-20 includes OpenJDK Java 11:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>2019-06-20:
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Based on Debian Buster
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Oracle Java &lt;span style="color:#ae81ff">7&lt;/span> and &lt;span style="color:#ae81ff">8&lt;/span> replaced with OpenJDK &lt;span style="color:#ae81ff">11&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>But you will need to keep in mind this version is &lt;strong>only compatible with ARMv7 or higher&lt;/strong> and doesn&amp;rsquo;t support all
+&lt;p>You need Java 21 or newer to use Pi4J V3+. Please check the &lt;a href="https://pi4j.com/prepare/install-java/">Prepare a Raspberry Pi&lt;/a> and &lt;a href="https://pi4j.com/prepare/install-java/">Install Java and Tools&lt;/a> instructions. On a board with ARMv7 or ARMv8 you will get this result:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>$ java -version
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>openjdk version &lt;span style="color:#e6db74">&amp;#34;21.0.5&amp;#34;&lt;/span> 2024-10-15 LTS
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>OpenJDK Runtime Environment Zulu21.38+21-CA &lt;span style="color:#f92672">(&lt;/span>build 21.0.5+11-LTS&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>OpenJDK 64-Bit Server VM Zulu21.38+21-CA &lt;span style="color:#f92672">(&lt;/span>build 21.0.5+11-LTS, mixed mode, sharing&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Keep in mind this version is &lt;strong>only compatible with ARMv7 or higher&lt;/strong> and doesn&amp;rsquo;t support all
 Raspberry Pi board versions. If you have a Raspberry Pi A (version 3), B (version 2 or higher),
-or Compute (version 3 or higher), you are good to go! For all other boards you will need some additional steps
-that are described on &lt;a href="https://pi4j.com/documentation/java-installation/">&amp;ldquo;Java for ARMv6/7/8&amp;rdquo;&lt;/a>.&lt;/p></description></item><item><title>Developing on a remote PC</title><link>https://pi4j.com/getting-started/developing-on-a-remote-pc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/getting-started/developing-on-a-remote-pc/</guid><description>&lt;div class="notices tip" >&lt;p>GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-maven-archetype" target="_blank" rel="noopener">https://github.com/Pi4J/pi4j-maven-archetype&lt;/a>&lt;/p>
+or Compute (version 3 or higher), you are good to go! For all other boards, or if you get the error below, you will need some additional steps
+that are described on &lt;a href="https://pi4j.com/documentation/java-installation/">Java for ARMv6/7/8&lt;/a>.&lt;/p></description></item><item><title>Developing on a remote PC</title><link>https://pi4j.com/getting-started/developing-on-a-remote-pc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/getting-started/developing-on-a-remote-pc/</guid><description>&lt;div class="notices tip" >&lt;p>GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-maven-archetype" target="_blank" rel="noopener">https://github.com/Pi4J/pi4j-maven-archetype&lt;/a>&lt;/p>
 &lt;/div>
 
 &lt;h2 id="developing-java-programs-using-a-remote-pc-workstation">Developing Java Programs Using a Remote PC Workstation&lt;/h2>
@@ -43,7 +42,7 @@ as shown in the previous chapter is perfectly fine, of course,
 but there is an alternative way to arrange your developing laboratory, using a normal
 desktop computer as Remote Developing Workstation (RDW).&lt;/p>
 &lt;p>This &lt;a href="https://github.com/Pi4J/pi4j-maven-archetype" title="raspimaven-archetype" target="_blank" rel="noopener">Maven Archetype&lt;/a> will give you
-a tool to generate Pi4J V.2 skeleton Java projects. You can use it for your next Pi4j project and you will be able
+a tool to generate Pi4J V2+ skeleton Java projects. You can use it for your next Pi4j project and you will be able
 to develop your program on the remote workstation (RDW), compile them, transmit the executable
 code on the target Pi board and run it. You can also start a remote debugging session.&lt;/p></description></item><item><title>Minimal example application</title><link>https://pi4j.com/getting-started/minimal-example-application/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/getting-started/minimal-example-application/</guid><description>&lt;div class="notices tip" >&lt;p>GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-example-minimal" target="_blank" rel="noopener">https://github.com/Pi4J/pi4j-example-minimal&lt;/a>&lt;/p>
 &lt;/div>
@@ -62,7 +61,7 @@ speed increases. When you have pushed the button 5 times, the application stops.
 &lt;/div>
 
 &lt;p>The &lt;a href="https://pi4j.com/getting-started/minimal-example-application/">&amp;ldquo;Minimal example application&amp;rdquo;&lt;/a> uses one LED and button to demonstrate
-the basic use of Pi4J V.2. When building that project with Maven, all the required Java modules are copied to the
+the basic use of Pi4J. When building that project with Maven, all the required Java modules are copied to the
 &lt;code>target/distribution&lt;/code> directory. But a lot of developers like to produce a single, executable JAR that contains
 all dependencies, also known as a &amp;ldquo;FAT JAR&amp;rdquo;.&lt;/p>
 &lt;p>The repository &lt;a href="https://github.com/Pi4J/pi4j-example-fatjar" target="_blank" rel="noopener">&amp;ldquo;pi4j-example-fatjar&amp;rdquo; GitHub project&lt;/a> contains a Maven project

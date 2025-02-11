@@ -14,9 +14,9 @@ speed increases. When you have pushed the button 5 times, the application stops.
 &lt;p>This minimal example application uses this wiring:&lt;/p></description></item><item><title>Build Java modules with Gradle</title><link>https://pi4j.com/documentation/building/modules-gradle/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/building/modules-gradle/</guid><description>&lt;div class="notices tip" >&lt;p>GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-example-minimal" target="_blank" rel="noopener">https://github.com/Pi4J/pi4j-example-minimal&lt;/a>&lt;/p>
 &lt;/div>
 
-&lt;p>The Pi4J V.2 project itself uses Maven and most example projects also use this build tool. But if you prefer to use Gradle,
+&lt;p>The Pi4J project itself uses Maven and most example projects also use this build tool. But if you prefer to use Gradle,
 you can start with a copy of the &lt;a href="https://pi4j.com/getting-started/minimal-example-application/">&amp;ldquo;Minimal example application&amp;rdquo;&lt;/a> which includes
 all the required files to build with Gradle.&lt;/p>
-&lt;p>Use Gradle version 6.6 (or later) and Java 11 OpenJDK (or later). The Gradle wrapper is used as described on
+&lt;p>Use Gradle version 6.6 (or later) and Java 21 OpenJDK (or later). The Gradle wrapper is used as described on
 &lt;a href="https://docs.gradle.org/current/userguide/gradle_wrapper.html" target="_blank" rel="noopener">docs.gradle.org&lt;/a>. The Gradle configuration file
 &lt;a href="https://github.com/Pi4J/pi4j-example-minimal/blob/master/build.gradle" target="_blank" rel="noopener">build.gradle-file&lt;/a> is included in the sources.&lt;/p></description></item></channel></rss>

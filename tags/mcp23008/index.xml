@@ -9,7 +9,7 @@
 Note: there are two PCF8575 IC used in this design. This IC is used as it can provide the current flow to
 directly control the LED. Alternative IC like the MCP23017 with less current capability would require a NPN
 transistor in the circuit.&lt;/p></description></item><item><title>Community Implementations</title><link>https://pi4j.com/examples/communityimplementation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/communityimplementation/</guid><description>&lt;p>On this page we want to keep a list of projects which contain implementation code for specific devices using the Pi4J
-V.2 core library. Please let us know via &lt;a href="https://github.com/Pi4J/pi4j-v2/discussions" target="_blank" rel="noopener">Pi4J V.2 Discussions&lt;/a> if you want to have your project added
+V2+ core library. Please let us know via &lt;a href="https://github.com/Pi4J/pi4j/discussions" target="_blank" rel="noopener">Pi4J Discussions&lt;/a> if you want to have your project added
 to this list.&lt;/p>
 &lt;h3 id="current-available-device-support-projects">Current available device support projects&lt;/h3>
 &lt;table>

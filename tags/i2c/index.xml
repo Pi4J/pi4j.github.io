@@ -43,7 +43,7 @@ and &lt;a href="https://www.raspberrypi.org/forums/viewtopic.php?t=220428" targe
 in I2C allows a slave device to halt the master before a more data is sent. This
 is often the case when the slave device writes to an EEPROM etc. which takes
 longer than a usual read or write to a register.&lt;/p></description></item><item><title>Ongoing I2C Improvements</title><link>https://pi4j.com/blog/2024/20240418_i2c_improvements/</link><pubDate>Thu, 18 Apr 2024 00:00:00 +0000</pubDate><guid>https://pi4j.com/blog/2024/20240418_i2c_improvements/</guid><description>&lt;p>2024-04-17, by Frank Delporte&lt;/p>
-&lt;p>Robert von Burg is working on improvements of the I2C implementation in Pi4J in preparation for the next release. The changes are in &lt;a href="https://github.com/Pi4J/pi4j-v2/pull/351/files" target="_blank" rel="noopener">pull request #351&lt;/a>. It&amp;rsquo;s still work-in-progress but will bring these improvements:&lt;/p>
+&lt;p>Robert von Burg is working on improvements of the I2C implementation in Pi4J in preparation for the next release. The changes are in &lt;a href="https://github.com/Pi4J/pi4j/pull/351/files" target="_blank" rel="noopener">pull request #351&lt;/a>. It&amp;rsquo;s still work-in-progress but will bring these improvements:&lt;/p>
 &lt;ul>
 &lt;li>New &lt;code>I2C.execute(Callable)&lt;/code> method to allow to atomically execute multiple I2C calls in a thread in a safe way.&lt;/li>
 &lt;li>New &lt;code>I2C.writeRead(byte[], byte[])&lt;/code> method to atomically perform a &lt;code>write&lt;/code>, immediately followed by a &lt;code>read&lt;/code> on the I2C bus.&lt;/li>

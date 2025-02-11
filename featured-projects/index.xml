@@ -151,7 +151,7 @@ The sources are shared on &lt;a href="https://github.com/duvamduvam/didier-java"
 &lt;h2 id="difference-between-analog-and-digital-signals">Difference between Analog and Digital signals?&lt;/h2>
 &lt;p>&lt;img src="https://user-images.githubusercontent.com/60224159/157847529-3b46c3e9-8d39-428c-91a1-f3018cb9f9e3.png" alt="image">&lt;/p></description></item><item><title>Sensor drivers</title><link>https://pi4j.com/featured-projects/sensor-drivers/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/featured-projects/sensor-drivers/</guid><description>&lt;p>In case you want to read the data from various I2C sensors connected to Raspberry Pi
 the difficult part is usually writing a piece of code which talks to the I2C sensor.&lt;/p>
-&lt;p>&lt;a href="https://github.com/jveverka/rpi-projects/tree/pi4j-v2/rpi-drivers" target="_blank" rel="noopener">rpi-drivers&lt;/a>
+&lt;p>&lt;a href="https://github.com/jveverka/rpi-projects/tree/pi4j/rpi-drivers" target="_blank" rel="noopener">rpi-drivers&lt;/a>
 is a Java library implementing simple APIs and communication code for some
 widely used I2C sensors. You can easily measure temperature, pressure and humidity,
 get ambient light intensity or measure voltage in your java Raspberry Pi projects.&lt;/p></description></item></channel></rss>

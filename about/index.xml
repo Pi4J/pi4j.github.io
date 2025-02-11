@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>About on Pi4J</title><link>https://pi4j.com/about/</link><description>Recent content in About on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://pi4j.com/about/index.xml" rel="self" type="application/rss+xml"/><item><title>Previous versions (V.1)</title><link>https://pi4j.com/about/previous-version-v1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/about/previous-version-v1/</guid><description>&lt;h2 id="documentation-of-the-1x-versions">Documentation of the 1.X versions&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>About on Pi4J</title><link>https://pi4j.com/about/</link><description>Recent content in About on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://pi4j.com/about/index.xml" rel="self" type="application/rss+xml"/><item><title>Info about V1</title><link>https://pi4j.com/about/info-v1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/about/info-v1/</guid><description>&lt;p>The original library which started in 2012 and got a last release in 2021. Up till &lt;strong>version 1.3.0 the library targets Java 8&lt;/strong>, while &lt;strong>version 1.4.0 relies on Java 11&lt;/strong>.&lt;/p>
+&lt;p>&lt;a href="https://github.com/Pi4J/pi4j-v1" target="_blank" rel="noopener">The sources of V1 can be found in the read-only GitHub repository &lt;code>pi4j/pi4j-v1&lt;/code>&lt;/a>.&lt;/p>
+&lt;h2 id="documentation-of-the-1x-versions">Documentation of the 1.X versions&lt;/h2>
 &lt;h3 id="pi4j-version-14">Pi4J Version 1.4&lt;/h3>
 &lt;ul>
 &lt;li>Released 2021-03-03&lt;/li>
@@ -9,7 +11,7 @@
 &lt;li>Removed pi4j-device and pi4j-gpio-extension library&lt;/li>
 &lt;li>Removed platform support for Odroid, BananaPi, BPi, NanoPi, OrangePi&lt;/li>
 &lt;li>Various improvements and bug fixes listed here: &lt;a href="https://github.com/Pi4J/pi4j-v1/milestone/9?closed=1" target="_blank" rel="noopener">GitHub Issues (v1.4)&lt;/a>&lt;/li>
-&lt;li>Not using Java-modules yet, this will be part of the V.2&lt;/li>
+&lt;li>Not using Java-modules yet, this will be part of the V2&lt;/li>
 &lt;li>&lt;a href="https://pi4j.com/1.4/index.html">Documentation website V1.4&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h3 id="pi4j-version-13">Pi4J Version 1.3&lt;/h3>
@@ -35,36 +37,17 @@
 &lt;ul>
 &lt;li>Released 2015-04-18&lt;/li>
 &lt;li>&lt;a href="https://pi4j.com/1.0/index.html">Documentation website V1.0&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>What's New (V.2)</title><link>https://pi4j.com/about/new-in-v2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/about/new-in-v2/</guid><description>&lt;h2 id="whats-new-in-20">What&amp;rsquo;s New in 2.0?&lt;/h2>
-&lt;p>Pi4J version 2.0 brings with it many new features, and an entirely new architecture that focuses on
-extensibility, simplified integration and a modern Java API including the following:&lt;/p>
-&lt;ul>
-&lt;li>Fluent APIs/Interfaces&lt;/li>
-&lt;li>Immutable Runtime Context&lt;/li>
-&lt;li>Extensible Provider/Platform/Plug-in Architecture&lt;/li>
-&lt;li>Builder-patterns for creating new I/O instances&lt;/li>
-&lt;li>Well-documented source code&lt;/li>
-&lt;li>Hardware PWM Support&lt;/li>
-&lt;li>Java 11&lt;/li>
-&lt;/ul>
-&lt;p>Future plans:&lt;/p>
-&lt;ul>
-&lt;li>Dependency Injection via Pi4J Annotations&lt;/li>
-&lt;li>Remote I/O Support (via TCP/IP)&lt;/li>
-&lt;/ul>
-&lt;p>In addition to the features listed above, Pi4J version 2.0 also abandons the old WiringPi pin numbering scheme in favor
-of the more traditional and commonly used Broadcom pin numbering scheme. This pin numbering scheme has been a source of
-confusion for a number of years, especially with beginners and is somewhat cumbersome to maintain as new Raspberry Pi
-models are introduces with differing or added GPIO pins. Moving forward, Pi4J will only use the Broadcom (BCM) pin
-numbering scheme.&lt;/p></description></item><item><title>Release Notes</title><link>https://pi4j.com/about/release-notes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/about/release-notes/</guid><description>&lt;p>All releases of Pi4J V.2 are listed on &lt;a href="https://github.com/Pi4J/pi4j-v2/releases" target="_blank" rel="noopener">github.com/Pi4J/pi4j-v2/releases&lt;/a>.&lt;/p>
+&lt;/ul></description></item><item><title>What's New in V2</title><link>https://pi4j.com/about/info-v2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/about/info-v2/</guid><description>&lt;p>As of versions 2.X.X, Pi4J &lt;strong>no longer includes support for peripheral devices and add-on chipsets/boards&lt;/strong> as part of the core project. A new plugin model has been introduced in version 2.0 that helps to enable third-party development and support third-party add-ons which can be developed and maintained independently of the core Pi4J project. &lt;strong>V2-versions of Pi4J require Java 11&lt;/strong> or higher.&lt;/p>
+&lt;p>&lt;a href="https://github.com/Pi4J/pi4j" target="_blank" rel="noopener">The sources of V2+ can be found in the GitHub repository &lt;code>pi4j/pi4j&lt;/code>&lt;/a>.&lt;/p></description></item><item><title>What's New in V3</title><link>https://pi4j.com/about/info-v3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/about/info-v3/</guid><description>&lt;p>Versions 3.0.0 is based on 2.8.0 (released in January 2025), but bumps the &lt;strong>Java version to 21&lt;/strong> or newer! We &lt;a href="https://github.com/Pi4J/pi4j/discussions/409" target="_blank" rel="noopener">asked our users&lt;/a> which minimal Java version we should use, but there was no one clear answer, as expected ;-)&lt;/p>
+&lt;p>The current/latest Long Term Support (LTS) version of Java is version 21. So it makes sense to jump forward from 11 to 21. This will also prepare us for a the next LTS, which will be Java 25 in September 2025. Bumping to the latest LTS makes it possible to make use of many newer Java language and runtime improvements, simplify some of the code, etc.&lt;/p></description></item><item><title>Release Notes</title><link>https://pi4j.com/about/release-notes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/about/release-notes/</guid><description>&lt;p>All releases of Pi4J V2+ are listed on &lt;a href="https://github.com/Pi4J/pi4j/releases" target="_blank" rel="noopener">github.com/Pi4J/pi4j/releases&lt;/a>.&lt;/p>
 &lt;h2 id="2025-01-28---v280">2025-01-28 - V2.8.0&lt;/h2>
 &lt;ul>
 &lt;li>Several code and JavaDoc improvements by adding the checkstyle plugin.&lt;/li>
 &lt;li>Improvements in loading the Mock providers to build and test Pi4J on a Raspberry Pi.&lt;/li>
-&lt;li>Issue &lt;a href="https://github.com/Pi4J/pi4j-v2/issues/421" target="_blank" rel="noopener">#421&lt;/a>: Unable to detect board type. Several improvements have been integrated in the board detection to prevent errors when reading the board code.&lt;/li>
+&lt;li>Issue &lt;a href="https://github.com/Pi4J/pi4j/issues/421" target="_blank" rel="noopener">#421&lt;/a>: Unable to detect board type. Several improvements have been integrated in the board detection to prevent errors when reading the board code.&lt;/li>
 &lt;li>Added to &lt;code>BoardModel&lt;/code>:
 &lt;ul>
-&lt;li>Issue &lt;a href="https://github.com/Pi4J/pi4j-v2/issues/406" target="_blank" rel="noopener">#406&lt;/a>: Old boards not auto detected. Missing codes have been added for Model 1 boards.&lt;/li>
+&lt;li>Issue &lt;a href="https://github.com/Pi4J/pi4j/issues/406" target="_blank" rel="noopener">#406&lt;/a>: Old boards not auto detected. Missing codes have been added for Model 1 boards.&lt;/li>
 &lt;li>The Raspberry Pi Compute 5. Only the board code &lt;code>c04180&lt;/code> for the 4Gb has been confirmed by Jeff Geerling. The other types are not documented yet. We assume they are &lt;code>a04180&lt;/code>, &lt;code>b04180&lt;/code>, and &lt;code>d04180&lt;/code>, similar to the Compute 4, but will adjust whenever more info is available.&lt;/li>
 &lt;li>The Raspberry Pi 500 with the board code &lt;code>d04190&lt;/code>, again confirmed by Jeff who received an evaluation device.&lt;/li>
 &lt;li>The Raspberry Pi 5 with 16GB memory with the board code &lt;code>e04171&lt;/code> (thanks again Jeff).&lt;/li>
@@ -72,13 +55,13 @@ numbering scheme.&lt;/p></description></item><item><title>Release Notes</title><
 &lt;/li>
 &lt;li>Added to &lt;code>BoardReading&lt;/code>:
 &lt;ul>
-&lt;li>Pull request &lt;a href="https://github.com/Pi4J/pi4j-v2/pull/432" target="_blank" rel="noopener">#432&lt;/a>: Add Support for Throttled State Parsing and Retrieval&lt;/li>
+&lt;li>Pull request &lt;a href="https://github.com/Pi4J/pi4j/pull/432" target="_blank" rel="noopener">#432&lt;/a>: Add Support for Throttled State Parsing and Retrieval&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>Improvements in the LinuxFS provider (for Raspberry Pi 5):
 &lt;ul>
-&lt;li>Pull Request &lt;a href="https://github.com/Pi4J/pi4j-v2/pull/433" target="_blank" rel="noopener">#433&lt;/a>: Enhance LinuxFsI2CBus validation with detailed exception messages and comprehensive Javadocs.&lt;/li>
-&lt;li>Pull Request &lt;a href="https://github.com/Pi4J/pi4j-v2/pull/434" target="_blank" rel="noopener">#434&lt;/a>: Add SPI support in LinuxFS. No &lt;code>sudo&lt;/code> is needed to use SPI.&lt;/li>
+&lt;li>Pull Request &lt;a href="https://github.com/Pi4J/pi4j/pull/433" target="_blank" rel="noopener">#433&lt;/a>: Enhance LinuxFsI2CBus validation with detailed exception messages and comprehensive Javadocs.&lt;/li>
+&lt;li>Pull Request &lt;a href="https://github.com/Pi4J/pi4j/pull/434" target="_blank" rel="noopener">#434&lt;/a>: Add SPI support in LinuxFS. No &lt;code>sudo&lt;/code> is needed to use SPI.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
@@ -89,7 +72,7 @@ numbering scheme.&lt;/p></description></item><item><title>Release Notes</title><
 (&lt;em>A business-friendly OSS license&lt;/em>).&lt;/p>
 &lt;ul>
 &lt;li>&lt;a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank" rel="noopener">apache.org/licenses/LICENSE-2.0&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://github.com/Pi4J/pi4j-v2/blob/master/LICENSE.txt" target="_blank" rel="noopener">github.com/Pi4J/pi4j-v2/blob/master/LICENSE.txt&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/Pi4J/pi4j/blob/master/LICENSE.txt" target="_blank" rel="noopener">github.com/Pi4J/pi4j/blob/master/LICENSE.txt&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;div style="max-width: 650px; margin-left: auto; margin-right: auto;" >
 &lt;pre>
@@ -113,11 +96,11 @@ the copyright owner that is granting the License.&lt;/p></description></item><it
  &lt;tbody>
  &lt;tr>
  &lt;td style="text-align: center">&lt;img src="https://pi4j.com/assets/about/team/robert-savage.png" alt="">&lt;/td>
- &lt;td style="text-align: left">&lt;strong>&lt;a href="https://twitter.com/savageautomate" target="_blank" rel="noopener">Robert Savage&lt;/a>, Project Founder, Architect, Lead Developer&lt;/strong>.&lt;br>&lt;br>Principal Software Architect/Engineer. Consultant, technology enthusiast, entrepreneur, open source contributor, technology &lt;a href="http://www.savagehomeautomation.com/" target="_blank" rel="noopener">blogger&lt;/a>. Founder at shadeBlue, LLC and SavageSoftware, LLC. Robert has a more than 20 year career working in the professional audio visual and home/commercial automation industry and an extensive background in developing technology solutions with a special focus on home automation and hardware/firmware/software integration. In 2012, Robert created the Pi4J project which provides Java developers an easy to use Java library enabling access to low-level I/O functionality (GPIO, I2C, SPI, Serial, etc.) of embedded systems like the Raspberry Pi. I created Pi4J to empower Java programmers to get involved with embedded platforms such as the Raspberry Pi and provide an easy to use and accessible Java-centric object-oriented library enabling control of real world (physical) &amp;ldquo;things&amp;rdquo;. Pi4J V.2 brings an entirely new and modern approach to Java I/O programming for embedded systems. I&amp;rsquo;m excited to get V.2 released and see what additional creative projects emerge. &lt;br>&lt;br>Read more about &lt;a href="https://foojay.io/today/interviews-with-robert-savage-and-johan-vos-on-the-state-of-java-on-raspberry-pi/" target="_blank" rel="noopener">Robert Savage in this interview on Foojay.io&lt;/a>.&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>&lt;a href="https://twitter.com/savageautomate" target="_blank" rel="noopener">Robert Savage&lt;/a>, Project Founder, Architect, Lead Developer&lt;/strong>.&lt;br>&lt;br>Principal Software Architect/Engineer. Consultant, technology enthusiast, entrepreneur, open source contributor, technology &lt;a href="http://www.savagehomeautomation.com/" target="_blank" rel="noopener">blogger&lt;/a>. Founder at shadeBlue, LLC and SavageSoftware, LLC. Robert has a more than 20 year career working in the professional audio visual and home/commercial automation industry and an extensive background in developing technology solutions with a special focus on home automation and hardware/firmware/software integration. In 2012, Robert created the Pi4J project which provides Java developers an easy to use Java library enabling access to low-level I/O functionality (GPIO, I2C, SPI, Serial, etc.) of embedded systems like the Raspberry Pi. I created Pi4J to empower Java programmers to get involved with embedded platforms such as the Raspberry Pi and provide an easy to use and accessible Java-centric object-oriented library enabling control of real world (physical) &amp;ldquo;things&amp;rdquo;. Pi4J V2 brings an entirely new and modern approach to Java I/O programming for embedded systems. I&amp;rsquo;m excited to get V2 released and see what additional creative projects emerge. &lt;br>&lt;br>Read more about &lt;a href="https://foojay.io/today/interviews-with-robert-savage-and-johan-vos-on-the-state-of-java-on-raspberry-pi/" target="_blank" rel="noopener">Robert Savage in this interview on Foojay.io&lt;/a>.&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td style="text-align: center">&lt;img src="https://pi4j.com/assets/about/team/frank.jpg" alt="">&lt;/td>
- &lt;td style="text-align: left">&lt;strong>&lt;a href="https://twitter.com/frankdelporte" target="_blank" rel="noopener">Frank Delporte&lt;/a>, Project organization, Documenter, Developer&lt;/strong>.&lt;br>&lt;br>Java and Raspberry Pi-enthousiast, &lt;a href="https://webtechie.be/" target="_blank" rel="noopener">blogger on webtechie.be&lt;/a> and author of the book &lt;a href="https://webtechie.be/books/" target="_blank" rel="noopener">&amp;ldquo;Getting Started with Java on Raspberry Pi&amp;rdquo;&lt;/a>. Technical writer at &lt;a href="https://www.azul.com/" target="_blank" rel="noopener">Azul&lt;/a>. Lead coach &lt;a href="https://www.coderdojobelgium.be" target="_blank" rel="noopener">CoderDojo&lt;/a> in Ieper, Belgium. Software developer with more than 25 years of experience in video, multimedia, technical project management, digital signage and (web) programming. I&amp;rsquo;m a strong believer in the power and fun of Java on the Raspberry Pi. My goal is to make it as easy as possible to get started for new and experienced Java developers who want to start there first hardware experiment. That was the reason I wrote a book about this subject and share my experiments on my blog and GitHub. Pi4J V.2 brings a lot of improvements to an already great project, and - just one example - the use of the BCM pin numbers will make it even a lot easier to use the GPIO&amp;rsquo;s. That&amp;rsquo;s why I join this great team to assist in delivering this V.2 and extend it further so we can bring even more Java to the Raspberry Pi. &lt;br>&lt;br>Read more about &lt;a href="https://foojay.io/today/unlocking-java-secrets-with-frank-delporte-insights-stories-and-tips-for-success/" target="_blank" rel="noopener">Frank Delporte in this interview on Foojay.io&lt;/a>.&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>&lt;a href="https://twitter.com/frankdelporte" target="_blank" rel="noopener">Frank Delporte&lt;/a>, Project organization, Documenter, Developer&lt;/strong>.&lt;br>&lt;br>Java and Raspberry Pi-enthousiast, &lt;a href="https://webtechie.be/" target="_blank" rel="noopener">blogger on webtechie.be&lt;/a> and author of the book &lt;a href="https://webtechie.be/books/" target="_blank" rel="noopener">&amp;ldquo;Getting Started with Java on Raspberry Pi&amp;rdquo;&lt;/a>. Technical writer at &lt;a href="https://www.azul.com/" target="_blank" rel="noopener">Azul&lt;/a>. Lead coach &lt;a href="https://www.coderdojobelgium.be" target="_blank" rel="noopener">CoderDojo&lt;/a> in Ieper, Belgium. Software developer with more than 25 years of experience in video, multimedia, technical project management, digital signage and (web) programming. I&amp;rsquo;m a strong believer in the power and fun of Java on the Raspberry Pi. My goal is to make it as easy as possible to get started for new and experienced Java developers who want to start there first hardware experiment. That was the reason I wrote a book about this subject and share my experiments on my blog and GitHub. Pi4J V2 brings a lot of improvements to an already great project, and - just one example - the use of the BCM pin numbers will make it even a lot easier to use the GPIO&amp;rsquo;s. That&amp;rsquo;s why I join this great team to assist in delivering this V2 and extend it further so we can bring even more Java to the Raspberry Pi. &lt;br>&lt;br>Read more about &lt;a href="https://foojay.io/today/unlocking-java-secrets-with-frank-delporte-insights-stories-and-tips-for-success/" target="_blank" rel="noopener">Frank Delporte in this interview on Foojay.io&lt;/a>.&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td style="text-align: center">&lt;img src="https://pi4j.com/assets/about/team/eitch.jpg" alt="">&lt;/td>

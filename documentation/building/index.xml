@@ -3,11 +3,11 @@
 &lt;p>No wiring is needed for this minimal example as it only demonstrates how to create a minimal application which initializes
 Pi4J.&lt;/p>
 &lt;h2 id="java-release">Java release&lt;/h2>
-&lt;p>Any Java release over 11 is enough, check it with this command:&lt;/p>
+&lt;p>Any Java release over 21 is enough, check it with this command:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>$ java -version
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>java 17.0.1 2021-10-19 LTS
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Java&lt;span style="color:#f92672">(&lt;/span>TM&lt;span style="color:#f92672">)&lt;/span> SE Runtime Environment &lt;span style="color:#f92672">(&lt;/span>build 17.0.1+12-LTS-39&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Java HotSpot&lt;span style="color:#f92672">(&lt;/span>TM&lt;span style="color:#f92672">)&lt;/span> 64-Bit Server VM &lt;span style="color:#f92672">(&lt;/span>build 17.0.1+12-LTS-39, mixed mode, sharing&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>openjdk version &lt;span style="color:#e6db74">&amp;#34;21.0.1&amp;#34;&lt;/span> 2023-10-17 LTS
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>OpenJDK Runtime Environment Zulu21.30+15-CA &lt;span style="color:#f92672">(&lt;/span>build 21.0.1+12-LTS&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>OpenJDK 64-Bit Server VM Zulu21.30+15-CA &lt;span style="color:#f92672">(&lt;/span>build 21.0.1+12-LTS, mixed mode, sharing&lt;span style="color:#f92672">)&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="pi4j-jar-files">PI4J jar files&lt;/h2>
 &lt;p>You will need to download the Pi4J distribution from the Maven repository:&lt;/p></description></item><item><title>Build as a FAT JAR with Maven</title><link>https://pi4j.com/documentation/building/fat-jar/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/building/fat-jar/</guid><description>&lt;div class="notices tip" >&lt;p>EXAMPLE PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-example-fatjar" target="_blank" rel="noopener">https://github.com/Pi4J/pi4j-example-fatjar&lt;/a>&lt;/p>
 &lt;/div>
@@ -15,21 +15,21 @@ Pi4J.&lt;/p>
 &lt;h2 id="about-fat-jars">About FAT JARs&lt;/h2>
 &lt;p>With Pi4J V1 you can create a so-called FAT JAR, which packages all the dependencies into one jar-file. That way it is
 very easy to build your project on one computer and distribute your application as a single file to one or more clients.&lt;/p>
-&lt;p>Because of the modular approach and how Pi4J V.2 loads it dependencies at runtime, this approach can be achieved by using
+&lt;p>Because of the modular approach and how Pi4J V2+ loads it dependencies at runtime, this approach can be achieved by using
 the maven-shade-plugin.&lt;/p></description></item><item><title>Build Java modules with Maven</title><link>https://pi4j.com/documentation/building/modules-maven/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/building/modules-maven/</guid><description>&lt;div class="notices tip" >&lt;p>GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-example-minimal" target="_blank" rel="noopener">https://github.com/Pi4J/pi4j-example-minimal&lt;/a>&lt;/p>
 &lt;/div>
 
-&lt;p>Because the Pi4J V.2 project follows the modular approach of Java, the functionality of the framework has been split into
+&lt;p>Because the Pi4J V2+ project follows the modular approach of Java, the functionality of the framework has been split into
 different modules, each with their own responsibility.&lt;/p>
 &lt;p>The easiest way to start a new project, is to copy one of the example projects which include a full Maven pom.xml-file
 with all the required steps and configurations to build the project with all its modules into the &lt;code>target/distribution&lt;/code>
 directory.&lt;/p></description></item><item><title>Build Java modules with Gradle</title><link>https://pi4j.com/documentation/building/modules-gradle/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/building/modules-gradle/</guid><description>&lt;div class="notices tip" >&lt;p>GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-example-minimal" target="_blank" rel="noopener">https://github.com/Pi4J/pi4j-example-minimal&lt;/a>&lt;/p>
 &lt;/div>
 
-&lt;p>The Pi4J V.2 project itself uses Maven and most example projects also use this build tool. But if you prefer to use Gradle,
+&lt;p>The Pi4J project itself uses Maven and most example projects also use this build tool. But if you prefer to use Gradle,
 you can start with a copy of the &lt;a href="https://pi4j.com/getting-started/minimal-example-application/">&amp;ldquo;Minimal example application&amp;rdquo;&lt;/a> which includes
 all the required files to build with Gradle.&lt;/p>
-&lt;p>Use Gradle version 6.6 (or later) and Java 11 OpenJDK (or later). The Gradle wrapper is used as described on
+&lt;p>Use Gradle version 6.6 (or later) and Java 21 OpenJDK (or later). The Gradle wrapper is used as described on
 &lt;a href="https://docs.gradle.org/current/userguide/gradle_wrapper.html" target="_blank" rel="noopener">docs.gradle.org&lt;/a>. The Gradle configuration file
 &lt;a href="https://github.com/Pi4J/pi4j-example-minimal/blob/master/build.gradle" target="_blank" rel="noopener">build.gradle-file&lt;/a> is included in the sources.&lt;/p></description></item><item><title>Running Pi4J with JBang</title><link>https://pi4j.com/documentation/building/jbang/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/building/jbang/</guid><description>&lt;p>JBang allows you to execute Java code with dependencies as a single file without the need for a full Maven or Gradle project. You also don&amp;rsquo;t need to compile your code. So it&amp;rsquo;s a very easy way to get started with Java and Pi4J.&lt;/p>
 &lt;p>Multiple examples and more information is available in the section &lt;a href="https://pi4j.com/examples/jbang/">&amp;ldquo;Example Implementations &amp;gt; JBang Examples&amp;rdquo;&lt;/a>.&lt;/p></description></item></channel></rss>

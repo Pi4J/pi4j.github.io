@@ -86,8 +86,7 @@ With this, a simple application can be started.&lt;/p></description></item><item
 
 &lt;p>A LED strip doesn&amp;rsquo;t only exist as a single strip, the same system is also used in a LED matrix. In this example, we will control such a &lt;a href="https://www.amazon.nl/dp/B0B81R484Z" target="_blank" rel="noopener">8*32 LED matrix&lt;/a>.&lt;/p>
 &lt;p>Full LED strip code walkthrough, and additional info in this live session with Robert (aka Eitch) and Frank:&lt;/p>
-
- &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
  &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/eToIXACqSuY?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
  &lt;/div>
 
