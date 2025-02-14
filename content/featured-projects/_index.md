@@ -10,6 +10,6 @@ of the product or project you are working on.{{% /notice %}}
 
 ---
 
-{{% children description="true" %}}
+{{% children %}}
 
 ---
