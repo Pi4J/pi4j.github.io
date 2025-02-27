@@ -51,7 +51,7 @@ On devices like industrial Raspberry Pis and the Raspberry Pi 5 that are equippe
 
 ### Checking GPIO Chips
 
-You can check the list of GPIO chips installed on the system using the gpiodetect command.
+You can check the list of GPIO chips installed on the system using the `gpiodetect` command.
 
 ```shell
 $ sudo gpiodetect
