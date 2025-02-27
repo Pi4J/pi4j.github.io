@@ -778,13 +778,15 @@ and to fully understand the example applications and the MVC-model. This page is
 &lt;li>gpiod-digital-input&lt;/li>
 &lt;li>gpiod-digital-output&lt;/li>
 &lt;/ul>
+&lt;h2 id="supported-operating-system-versions">Supported Operating System Versions&lt;/h2>
 
 &lt;div class="notices warning" >&lt;p>The GpioD provider requires minimum kernel Bullseye 6.1.21 and Bookworm 6.6.22 !&lt;/p>
 &lt;/div>
 
 &lt;p>If you get an error at startup with the following content, your OS is outdated for the GpioD implementation used in Pi4J:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>UNDERLYING EXCEPTION: &lt;span style="color:#f92672">[&lt;/span>java.lang.UnsatisfiedLinkError&lt;span style="color:#f92672">]=&lt;/span>/tmp/libgpiod368899536808039438.so: /lib/aarch64-linux-gnu/libc.so.6: version &lt;span style="color:#e6db74">`&lt;/span>GLIBC_2.33&lt;span style="color:#960050;background-color:#1e0010">&amp;#39;&lt;/span> not found &lt;span style="color:#f92672">(&lt;/span>required by /tmp/libgpiod368899536808039438.so&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>To use the GpioD provider include the following dependencies:&lt;/p></description></item><item><title>LinuxFS Provider</title><link>https://pi4j.com/documentation/providers/linuxfs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/providers/linuxfs/</guid><description>&lt;p>The current implementation of the LinuxFS plugin implements a file based I2C, SPI, and PWM provider. The file based I2C provider opens
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="dependencies">Dependencies&lt;/h2>
+&lt;p>To use the GpioD provider include the following dependencies:&lt;/p></description></item><item><title>LinuxFS Provider</title><link>https://pi4j.com/documentation/providers/linuxfs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/providers/linuxfs/</guid><description>&lt;p>The current implementation of the LinuxFS plugin implements a file based I2C, SPI, and PWM provider. The file based I2C provider opens
 &lt;code>/dev/i2c-1&lt;/code> using a &lt;code>RandomAccessFile&lt;/code> to perform I2C reads and writes. The file based PWM provider opens
 &lt;code>/sys/class/pwm/pwmchip?&lt;/code> using a &lt;code>RandomAccessFile&lt;/code> to perform PWM operations.&lt;/p>
 
