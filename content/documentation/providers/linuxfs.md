@@ -70,6 +70,20 @@ The buffer size for this SPI implementation is 4096 bytes. This can be configure
 * Debian Bullseye OS: `/boot/config.txt`
 * Raspberry Pi OS, based on Debian Bookworm: `/boot/firmware/config.txt`
 
+```java
+      var spiConfig = Spi.newConfigBuilder(pi4j)
+        .id(SPI_PROVIDER_ID)
+        .name(SPI_PROVIDER_NAME)
+        .bus(spiBus)
+        .chipSelect(chipSelect)
+        .baud(Spi.DEFAULT_BAUD)
+        .mode(SpiMode.MODE_0)
+        .provider("linuxfs-spi")
+        .build();
+var spi = pi4j.create(spiConfig);
+
+```
+
 ## PWM
 
 Example on how to use PWM with LinuxFS:

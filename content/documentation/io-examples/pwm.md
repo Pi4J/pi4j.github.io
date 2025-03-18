@@ -79,6 +79,7 @@ As of version 2.6.0 of Pi4J, `linuxfs-pwm` also supports hardware PMW on the Ras
 Only hardware PWM is supported.
 
 ### PWM GPIOs
+The channel number in the following charts are supplied as the buildPwmConfig config value ```address```.
 
 The user must modify `config.txt` to enable PWM. 
 

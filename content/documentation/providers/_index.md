@@ -28,7 +28,7 @@ Current supported providers:
   * Pro
     * Works on Raspberry Pi 5
     * Generic for any SoC supporting LinuxFS
-    * Supports I2C, and PWM Hardware
+    * Supports I2C, SPI, and PWM Hardware
     * Doesn't need `sudo`
   * Contra
     * Doesn't provide serial and SPI 
