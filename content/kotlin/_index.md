@@ -1,32 +1,22 @@
 ---
-title: Pi4J Kotlin DSL
-description: "Pi4J Kotlin DSL & API Example & Documentation"
+title: Pi4J with Kotlin
 weight: 45
 ---
 
-Pi4J-Kotlin (aka Pi4K) is an implementation on top of Pi4J to facilitate the development of Kotlin applications for the Raspberry Pi that can interact with the GPIOs.
+## Java and Kotlin: Similarities and Differences
 
-Kotlin makes extensive use of Domain Specific Language (DSL) to provide APIs that are cleaner, easier to read, and more structured. The DSLs provided here on top of Pi4J make it very easy to use this library in a Kotlin application. These Kotlin DSLs don't introduce added runtime overhead of a new layer when used. DSL builders are always inlined on Compile-Time.
+As a software developer, you may be familiar with Java and Kotlin, two popular programming languages used for developing applications on many different platforms. While both languages share some similarities, they also have distinct differences that can impact your coding experience.
 
-### Installation
-Install the Pi4J dependency and `pi4j-ktx` in your app's `build.gradle.ktx` file:
-``` kotlin
-dependencies {
-    implementation("com.pi4j:pi4j-ktx:2.4.0") // Kotlin DSL
-    implementation("com.pi4j:pi4j-core:2.3.0")
-    implementation("com.pi4j:pi4j-plugin-raspberrypi:2.3.0")
-    implementation("com.pi4j:pi4j-plugin-pigpio:2.3.0")
-}
-```
+One of the main similarities between Java and Kotlin is their ability to run on the Raspberry Pi. Both languages are supported by the Pi4J library, which provides a set of APIs for interacting with the GPIOs. This means you can use either language to develop applications that control and interact with the Raspberry Pi's hardware components.
 
-If you want to use the [Console DSL](kotlin-api-docs/#console) to [log with SLF4J](/documentation/logging/), add the dependency:
+### Kotlin DSL: Simplifying Development
 
-``` kotlin
-implementation("org.slf4j:slf4j-api:1.7.32")
-implementation("org.slf4j:slf4j-simple:1.7.32")
-```
+Kotlin stands out from Java due to its Domain Specific Language (DSL) capabilities. The Pi4J-Kotlin library provides a set of DSLs that simplify the development process by providing cleaner, easier-to-read APIs. These DSLs are inlined at compile-time, eliminating any runtime overhead.
 
-### GitHub projects:
+### Kotlin Examples
 
-* Kotlin Interface & DSL for Pi4J V2: [Pi4J-Kotlin](https://github.com/Pi4J/pi4j-kotlin)  
-* For Pi4J V1 Kotlin Bindings, check [Pi4K](https://github.com/mhashim6/Pi4K)
+Thanks to the examples created by [Oleksandr Neiko](https://www.linkedin.com/in/alexander-neiko/), a full set of Pi4J + Kotlin examples are available.
+
+## Read More
+
+{{% children depth="3" %}}
