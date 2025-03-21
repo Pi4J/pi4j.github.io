@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pi4J Kotlin DSL on Pi4J</title><link>https://pi4j.com/kotlin/kotlin-dsl/</link><description>Recent content in Pi4J Kotlin DSL on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://pi4j.com/kotlin/kotlin-dsl/index.xml" rel="self" type="application/rss+xml"/><item><title>Minimal Kotlin Pi4J example</title><link>https://pi4j.com/kotlin/kotlin-dsl/minimal-kotlin-example/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/kotlin/kotlin-dsl/minimal-kotlin-example/</guid><description>&lt;div class="notices tip" >&lt;p>Full Example on GitHub: &lt;a href="https://github.com/Pi4J/pi4j-kotlin/blob/master/example/src/main/kotlin/MinimalExample.kt" target="_blank" rel="noopener">https://github.com/Pi4J/pi4j-kotlin/blob/master/example/src/main/kotlin/MinimalExample.kt&lt;/a>&lt;/p>
+&lt;/div>
+
+
+&lt;div class="notices tip" >&lt;p>For full documentation, visit the &lt;a href="https://pi4j.com/kotlin/kotlin-api-docs/" target="_blank" rel="noopener">Kotlin Docs&lt;/a>&lt;/p>
+&lt;/div>
+
+&lt;p>This is a minimal working example, make sure to check it out from the link above for the full introduction and comments.&lt;/p>
+&lt;p>It does exactly the same functionality of the Minimal Example &lt;a href="https://pi4j.com/getting-started/minimal-example-application/">using the Java API&lt;/a>:&lt;/p>
+&lt;blockquote>
+&lt;p>The application will toggle an LED on/off and each time you press the button, the toggling speed increases. When you have pushed the button 5 times, the application stops.&lt;/p></description></item><item><title>Kotlin API &amp; DSL Documentation</title><link>https://pi4j.com/kotlin/kotlin-dsl/kotlin-api-docs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/kotlin/kotlin-dsl/kotlin-api-docs/</guid><description>&lt;div class="notices info" >&lt;p>Here you can find the provided APIs and the dead-simple DSLs of the Kotlin package.&lt;/p>
+&lt;/div>
+
+&lt;h2 id="components">Components&lt;/h2>
+&lt;h3 id="context">Context&lt;/h3>
+&lt;p>To create a new Pi4J context, use the &lt;code>pi4j&lt;/code> function. It creates a new &lt;em>auto&lt;/em> &lt;code>Context&lt;/code> object and uses it as a
+receiver
+for your lambda:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span style="display:flex;">&lt;span>pi4j {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// You have access to a newly created auto context 
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> describe()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>You don&amp;rsquo;t need to call &lt;code>shutdown()&lt;/code>, it&amp;rsquo;s called automatically at the end of the block.&lt;br>
+You can think of the &lt;code>pi4j&lt;/code> block as your entire routine/ program.&lt;/p></description></item><item><title>Coroutines Support</title><link>https://pi4j.com/kotlin/kotlin-dsl/coroutines/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/kotlin/kotlin-dsl/coroutines/</guid><description>&lt;h2 id="pi4jasync">pi4jAsync&lt;/h2>
+&lt;p>Same with the &lt;code>pi4j&lt;/code> DSL, you can create a pi4j block to execute within a &lt;code>CoroutineScope&lt;/code> using the &lt;code>pi4jAsync&lt;/code> DSL.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span style="display:flex;">&lt;span>pi4jAsync {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> delay(&lt;span style="color:#ae81ff">100&lt;/span>) &lt;span style="color:#75715e">// suspended call
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> describe()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Inside &lt;code>pi4jAsync&lt;/code> you have access to a newly created auto context and you can run your code in the provided &lt;code>CoroutineScope&lt;/code>.&lt;/p>
+&lt;h2 id="custom-coroutinescope">Custom CoroutineScope&lt;/h2>
+&lt;p>You can also use a custom &lt;code>CoroutineScope&lt;/code> instance.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span style="display:flex;">&lt;span>pi4jAsync(CoroutineScope(&lt;span style="color:#a6e22e">Dispatchers&lt;/span>.Default)) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> delay(&lt;span style="color:#ae81ff">100&lt;/span>) &lt;span style="color:#75715e">// suspended call
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> describe()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="minimal-example-with-coroutines">Minimal Example with Coroutines&lt;/h2>
+
+&lt;div class="notices info" >&lt;p>This is a the same as the &lt;a href="https://pi4j.com/kotlin/minimal-kotlin-example/">minimal example&lt;/a>, but leveraging Kotlin&amp;rsquo;s Coroutines&lt;/p></description></item><item><title>I²C Kotlin DSL</title><link>https://pi4j.com/kotlin/kotlin-dsl/i2c/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/kotlin/kotlin-dsl/i2c/</guid><description>&lt;div class="notices info" >&lt;p>Feel free to checkout the &lt;a href="https://pi4j.com/documentation/io-examples/i2c/">Pi4J docs on I²C&lt;/a>&lt;/p>
+&lt;/div>
+
+&lt;h2 id="installation">Installation&lt;/h2>
+&lt;p>Add LinuxFs dependency&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span style="display:flex;">&lt;span>dependencies {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> implementation(&lt;span style="color:#e6db74">&amp;#34;com.pi4j:pi4j-plugin-linuxfs:2.3.0&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="ic-dsl">I²C DSL&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span style="display:flex;">&lt;span>i2c(&lt;span style="color:#ae81ff">1&lt;/span>, &lt;span style="color:#ae81ff">0x3f&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> id(&lt;span style="color:#e6db74">&amp;#34;TCA9534&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> linuxFsI2CProvider()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}.use { tca9534Dev &lt;span style="color:#f92672">-&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// use here. Will auto close
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="writing">Writing&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>i2c(&lt;span style="color:#ae81ff">1&lt;/span>, &lt;span style="color:#ae81ff">0x3f&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> id(&lt;span style="color:#e6db74">&amp;#34;TCA9534&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> linuxFsI2CProvider()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}.use { tca9534Dev &lt;span style="color:#f92672">-&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">val&lt;/span> newState = tca9534Dev.setPin(currentState, pin = &lt;span style="color:#ae81ff">8&lt;/span>, TCA9534_REG_ADDR_OUT_PORT)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="minimal-ic-example">Minimal I²C Example&lt;/h2>
+
+&lt;div class="notices info" >&lt;p>This is the Kotlin DSL version of the same &lt;a href="https://pi4j.com/documentation/io-examples/i2c#code-example">I²C example here&lt;/a>, but leveraging the Kotlin DSL&lt;/p></description></item><item><title>Serial Kotlin DSL</title><link>https://pi4j.com/kotlin/kotlin-dsl/serial/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/kotlin/kotlin-dsl/serial/</guid><description>&lt;div class="notices tip" >&lt;p>Feel free to checkout the &lt;a href="https://pi4j.com/documentation/io-examples/serial/">Pi4J docs on Serial&lt;/a>&lt;/p>
+&lt;/div>
+
+&lt;h2 id="installation">Installation&lt;/h2>
+&lt;p>Add PiGPIO dependency&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span style="display:flex;">&lt;span>dependencies {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> implementation(&lt;span style="color:#e6db74">&amp;#34;com.pi4j:pi4j-plugin-pigpio:2.3.0&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="serial-dsl">Serial DSL&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span style="display:flex;">&lt;span>serial(&lt;span style="color:#e6db74">&amp;#34;/dev/ttyS0&amp;#34;&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> use_9600_N81()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> dataBits_8()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> parity(&lt;span style="color:#a6e22e">Parity&lt;/span>.NONE)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> stopBits(&lt;span style="color:#a6e22e">StopBits&lt;/span>._1)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> flowControl(&lt;span style="color:#a6e22e">FlowControl&lt;/span>.NONE)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> piGpioSerialProvider()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}.&lt;span style="color:#66d9ef">open&lt;/span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// use here. 
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="minimal-serial-example">Minimal Serial Example&lt;/h2>
+
+&lt;div class="notices info" >&lt;p>This is the Kotlin DSL version of the same &lt;a href="https://pi4j.com/documentation/io-examples/serial#code-example">Serial example here&lt;/a>, but leveraging the Kotlin DSL&lt;/p>
+&lt;/div>
+
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>serial(&lt;span style="color:#e6db74">&amp;#34;/dev/ttyS0&amp;#34;&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// ..
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>}.&lt;span style="color:#66d9ef">open&lt;/span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> console {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> +&lt;span style="color:#e6db74">&amp;#34;Waiting till serial port is open&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">while&lt;/span> (&lt;span style="color:#f92672">!is&lt;/span>Open) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> print(&lt;span style="color:#e6db74">&amp;#34;.&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> sleep(&lt;span style="color:#ae81ff">250&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> println()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> +&lt;span style="color:#e6db74">&amp;#34;Serial port is open&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> startDaemon {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> inputStream.bufferedReader().use {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">while&lt;/span> (&lt;span style="color:#66d9ef">true&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span> (available() &lt;span style="color:#f92672">!=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>) sleep(&lt;span style="color:#ae81ff">10&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">else&lt;/span> buildString {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> (&lt;span style="color:#ae81ff">0&lt;/span> until available()).forEach { _ &lt;span style="color:#f92672">-&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> readByte().let { b &lt;span style="color:#f92672">-&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// All non-string bytes are handled as line breaks
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#66d9ef">if&lt;/span> (b &amp;lt; &lt;span style="color:#ae81ff">32&lt;/span>) &lt;span style="color:#66d9ef">return&lt;/span>&lt;span style="color:#a6e22e">@forEach&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">else&lt;/span> append(b.toInt().toChar())
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }.also { +&lt;span style="color:#e6db74">&amp;#34;Data: &amp;#39;&lt;/span>&lt;span style="color:#e6db74">$it&lt;/span>&lt;span style="color:#e6db74">&amp;#39;&amp;#34;&lt;/span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">while&lt;/span> (isOpen) sleep(&lt;span style="color:#ae81ff">500&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>And &lt;code>startDaemon&lt;/code> is defined as:&lt;/p></description></item></channel></rss>
