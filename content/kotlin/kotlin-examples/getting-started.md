@@ -9,4 +9,4 @@ GITHUB PROJECT: [https://github.com/RoboticsLife/Lesson01-Gpio-Kotlin-Pi4J](http
 
 In this video we go through the process of setting up the project in IntelliJIDEA.
 
-{{< youtube jqTopQ4keUw >}}
+{{< youtube SkpH_MdL6hc >}}
