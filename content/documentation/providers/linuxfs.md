@@ -88,7 +88,7 @@ var spi = pi4j.create(spiConfig);
 
 To use PWM with the LinuxFS provider, it's important to understand the config builder needs the **channel number**, not the BCM number! This channel number, is different depending on the type of board you are using. 
 
-For instance, on a Raspberry Pi 5 with the `dtoverlay=pwm-2chan` setting in `config.txt`, a PWM connection on BCM 19, must be configured used as `channel=3`. 
+For instance, on a Raspberry Pi 5 with the `dtoverlay=pwm-2chan` setting in `config.txt`, a PWM connection on BCM 19 must be configured as `channel=3`. 
 
 See the [Pulse Width Modulation (PWM)](/documentation/io-examples/pwm/#linuxfs-provider-linuxfs-pwm) page on how to configure hardware PWM and which channels are available per board.
 
