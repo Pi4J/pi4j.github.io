@@ -1,12 +1,12 @@
 ---
-title: Useful Tips
-weight: 2
+title: Basic Project Setup
+weight: 11
 ---
 
 {{% notice note %}}
-GITHUB PROJECT: [https://github.com/RoboticsLife/Lesson02-Gpio-Kotlin-Pi4J](https://github.com/RoboticsLife/Lesson02-Gpio-Kotlin-Pi4J)
+GITHUB PROJECT: [https://github.com/RoboticsLife/Lesson01-Gpio-Kotlin-Pi4J](https://github.com/RoboticsLife/Lesson01-Gpio-Kotlin-Pi4J)
 {{% /notice %}}
 
+In this video we go through the process of setting up the project in IntelliJIDEA.
 
-
-{{< youtube bYqifO31qI0 >}}
+{{< youtube jqTopQ4keUw >}}
