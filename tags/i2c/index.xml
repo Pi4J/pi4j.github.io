@@ -12,7 +12,7 @@
 &lt;ul>
 &lt;li>linuxfs-i2c&lt;/li>
 &lt;li>linuxfx-spi&lt;/li>
-&lt;li>linuxfs-pwm&lt;/li>
+&lt;li>linuxfs-pwm &amp;ndash;&amp;gt; check below for more info about important channel info!&lt;/li>
 &lt;li>Under construction
 &lt;ul>
 &lt;li>linuxfs-digital-input&lt;/li>
