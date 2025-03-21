@@ -278,17 +278,17 @@ public class BuzzerComponent extends Component {
             .shutdown(0)
             .build();
     }
-     /**
-      *  Builds a new PWM configuration for the buzzer using linuxfs-pwm
-     * @param pi4j    Pi4J context
-     * @param address Channel
-     * @return PWM configuration
-     */
-  protected static PwmConfig buildPwmConfig(Context pi4j, int address) {
-    return Pwm.newConfigBuilder(pi4j)
-            .id("Channel" + address)
+    
+    /**  Builds a new PWM configuration for the buzzer using linuxfs-pwm
+    * @param pi4j    Pi4J context
+    * @param channel Channel
+    * @return PWM configuration
+    */
+    protected static PwmConfig buildPwmConfig(Context pi4j, int channel) {
+        return Pwm.newConfigBuilder(pi4j)
+            .id("Channel" + channel)
             .name("Buzzer")
-            .address(address)
+            .address(channel)
             .pwmType(PwmType.HARDWARE)
             .provider("linuxfs-pwm")
             .initial(0)
