@@ -16,7 +16,7 @@ Providers in the LinuxFS plugin:
 
 * linuxfs-i2c
 * linuxfx-spi
-* linuxfs-pwm --> check below for more info about important channel info!
+* linuxfs-pwm --> check below for important info about the channel configuration!
 * Under construction
   * linuxfs-digital-input
   * linuxfs-digital-output
