@@ -16,7 +16,7 @@ Providers in the LinuxFS plugin:
 
 * linuxfs-i2c
 * linuxfx-spi
-* linuxfs-pwm
+* linuxfs-pwm --> check below for more info about important channel info!
 * Under construction
   * linuxfs-digital-input
   * linuxfs-digital-output
@@ -86,6 +86,12 @@ var spi = pi4j.create(spiConfig);
 
 ## PWM
 
+To use PWM with the LinuxFS provider, it's important to understand the config builder needs the **channel number**, not the BCM number! This channel number, is different depending on the type of board you are using. 
+
+For instance, on a Raspberry Pi 5 with the `dtoverlay=pwm-2chan` setting in `config.txt`, a PWM connection on BCM 19, must be configured used as `channel=3`. 
+
+See the [Pulse Width Modulation (PWM)](/documentation/io-examples/pwm/#linuxfs-provider-linuxfs-pwm) page on how to configure hardware PWM and which channels are available per board.
+
 Example on how to use PWM with LinuxFS:
 
 ```java
@@ -93,14 +99,14 @@ Example on how to use PWM with LinuxFS:
      * Builds a new PWM configuration for the buzzer
      *
      * @param pi4j    Pi4J context
-     * @param address BCM pin address
+     * @param channel Channel number of the PWM
      * @return PWM configuration
      */
-    protected static PwmConfig buildPwmConfig(Context pi4j, int address) {
+    protected static PwmConfig buildPwmConfig(Context pi4j, int channel) {
         return Pwm.newConfigBuilder(pi4j)
-            .id("BCM" + address)
+            .id("PWMChannel" + channel)
             .name("Buzzer")
-            .address(address)
+            .address(channel)
             .pwmType(PwmType.HARDWARE)
             .provider("linuxfs-pwm")
             .initial(0)
