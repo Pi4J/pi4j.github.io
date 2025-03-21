@@ -106,6 +106,16 @@ dtoverlay=pwm-2chan
 dtoverlay=pwm-2chan,pin=12,func=4,pin2=13,func2=4
 # GPIO 12 = channel 0
 # GPIO 13 = channel 1
+```
+
+You can test the PWM channels in the terminal like this:
+
+```bash
+# With dtoverlay=pwm-2chan in config.txt
+$ pinctrl get 18
+18: a5    pd | lo // GPIO18 = PWM0_0
+$ pinctrl get 19
+19: a5    pd | lo // GPIO19 = PWM0_1
 
 ```
 
@@ -131,6 +141,16 @@ Dtoverlay=pwm-2chan,pin=12,func=4,pin2=13,func2=4
 
 The statement added to `config.txt` will determine which GPIOs will exhibit the PWM behavior.
 The channel number in the above charts are supplied as the `buildPwmConfig` value for the `address`.
+
+You can test the PWM channels in the terminal like this:
+
+```bash
+# With dtoverlay=pwm-2chan in config.txt
+$ pinctrl get 18
+18: a3    pd | lo // GPIO18 = PWM0_CHAN2
+$ pinctrl get 19
+19: a3    pd | lo // GPIO19 = PWM0_CHAN3
+```
 
 ## Technical implementation
 
