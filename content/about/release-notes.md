@@ -5,6 +5,24 @@ weight: 40
 
 All releases of Pi4J V2+ are listed on [github.com/Pi4J/pi4j/releases](https://github.com/Pi4J/pi4j/releases).
 
+## 2025-03-?? - V3.0.0
+
+This is the first release of Pi4J that requires the Java runtime 21 or higher. Check the blog post [Pi4J welcomes Java 21](/blog/2025/20250211-welcome-java-21/) to understand why we needed this change to make the project ready for the future...
+
+* Bump Java version to 21, and update many dependencies, Maven plugin, etc.
+* Added JNA dependency (needed for Java 21).
+* Added Maven wrapper.
+* Improved lifecycle shutdown handling for registry elements: Updated the `Lifecycle` interface to clarify shutdown behavior and added tests to ensure proper element recreation after shutdown. These enhancements make the shutdown process more robust and intuitive.
+* Issue [#308](https://github.com/Pi4J/pi4j/discussions/308): Remove serial support from Pi4J. All serial methods are marked as `@Deprecated(forRemoval = true)`. We advise to use [jSerialComm](https://fazecast.github.io/jSerialComm/) for all serial communication.
+* Pull request [#438](https://github.com/Pi4J/pi4j/pull/438): Extra unit test for shutdown and re-creation of a DigitalInput.
+* Issue [#439](https://github.com/Pi4J/pi4j/issues/439): Allow Specifying GPIO Chip for GpioDContext. For more info on how to use, see [Specifying the GPIO Chip](/documentation/providers/gpiod/).
+* Pull request [#449](https://github.com/Pi4J/pi4j/pull/449): Fixes a minor bug in DigitalOutput where pulseAsync ignored the given state and always pulsed high.
+* Pull request [#452](https://github.com/Pi4J/pi4j/pull/452): PWM linuxfs failed if the first interface call was off().
+
+Thanks to contributions by [@stefanhaustein](https://github.com/stefanhaustein), [@Haruka0522](https://github.com/Haruka0522), [@mpilone](https://github.com/mpilone), [@dariuszzbyrad](https://github.com/dariuszzbyrad), [@taartspi](https://github.com/taartspi), [@eitch](https://github.com/eitch), [@fdelporte](https://github.com/fdelporte).
+
+All changes: https://github.com/Pi4J/pi4j/compare/2.8.0...3.0.0
+
 ## 2025-01-28 - V2.8.0
 
 * Several code and JavaDoc improvements by adding the checkstyle plugin.
