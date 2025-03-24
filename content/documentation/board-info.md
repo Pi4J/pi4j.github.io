@@ -123,28 +123,28 @@ var pi4j = Pi4J.newContextBuilder()
 Two generic boards where created for this use-case, but of course, you can also use one of the other [BoardModel](https://github.com/Pi4J/pi4j/blob/develop/pi4j-core/src/main/java/com/pi4j/boardinfo/definition/BoardModel.java) enum values.
 
 ```java
-    // Generic model, this can be used to force the library
-    // to load Raspberry Pi plugins on other board types
-    GENERIC("Generic board compatible with Raspberry Pi 4", SINGLE_BOARD_COMPUTER,
-        new ArrayList<>(),
-        PiModel.MODEL_B,
-        HeaderVersion.TYPE_3,
-        LocalDate.now(),
-        Soc.UNKNOWN,
-        Cpu.UNKNOWN, 4,
-        new ArrayList<>(),
-        new ArrayList<>()),
-    GENERIC_RP1("Generic board compatible with Raspberry Pi 5", SINGLE_BOARD_COMPUTER,
-        new ArrayList<>(),
-        PiModel.MODEL_B,
-        HeaderVersion.TYPE_3,
-        LocalDate.now(),
-        Soc.UNKNOWN,
-        Cpu.UNKNOWN, 4,
-        new ArrayList<>(),
-        new ArrayList<>(),
-        new ArrayList<>(),
-        true),
+// Generic model, this can be used to force the library
+// to load Raspberry Pi plugins on other board types
+GENERIC("Generic board compatible with Raspberry Pi 4", SINGLE_BOARD_COMPUTER,
+    new ArrayList<>(),
+    PiModel.MODEL_B,
+    HeaderVersion.TYPE_3,
+    LocalDate.now(),
+    Soc.UNKNOWN,
+    Cpu.UNKNOWN, 4,
+    new ArrayList<>(),
+    new ArrayList<>()),
+GENERIC_RP1("Generic board compatible with Raspberry Pi 5", SINGLE_BOARD_COMPUTER,
+    new ArrayList<>(),
+    PiModel.MODEL_B,
+    HeaderVersion.TYPE_3,
+    LocalDate.now(),
+    Soc.UNKNOWN,
+    Cpu.UNKNOWN, 4,
+    new ArrayList<>(),
+    new ArrayList<>(),
+    new ArrayList<>(),
+    true),
 ```
 
 
