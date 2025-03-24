@@ -3,7 +3,7 @@ title: 'What''s New in V3'
 weight: 22
 ---
 
-Versions 3.0.0 is based on 2.8.0 (released in January 2025), but bumps the **Java version to 21**!
+Versions 3.0.1 is based on 2.8.0 (released in January 2025), but bumps the **Java version to 21**!
 
 We [asked our users](https://github.com/Pi4J/pi4j/discussions/409) which minimal Java version we should use, but there was no one clear answer, as expected ;-)
 
