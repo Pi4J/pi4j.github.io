@@ -11,20 +11,20 @@ Requires Java 21, see [What's New in V3](/about/info-v3/) for more info.
 
 ### 2025-03-24 - V3.0.1
 
-This is the first release of Pi4J that requires the Java runtime 21 or higher. Check the blog post [Pi4J welcomes Java 21](/blog/2025/20250211-welcome-java-21/) to understand why we needed this change to make the project ready for the future...
+This is the first release of Pi4J that requires Java runtime 21 or higher. Check the blog post [Pi4J welcomes Java 21](/blog/2025/20250211-welcome-java-21/) to understand why we needed this change to prepare the project for the future...
 
-Because of a last-minute change to improve the detection of Raspberry Pi 5, 500 and Compute 5, **release 3.0.0 has been skipped**.
+Because of a last-minute change to improve the detection of Raspberry Pi 5, 500, and Compute 5, **release 3.0.0 has been skipped**.
 
-* Bump Java version to 21, and update many dependencies, Maven plugin, etc.
+* Bump the Java version to 21 and update many dependencies, such as the Maven plugin.
 * Added JNA dependency (needed for Java 21).
 * Added Maven wrapper.
 * Improved lifecycle shutdown handling for registry elements: Updated the `Lifecycle` interface to clarify shutdown behavior and added tests to ensure proper element recreation after shutdown. These enhancements make the shutdown process more robust and intuitive.
-* Issue [#308](https://github.com/Pi4J/pi4j/discussions/308): Remove serial support from Pi4J. All serial methods are marked as `@Deprecated(forRemoval = true)`. We advise to use [jSerialComm](https://fazecast.github.io/jSerialComm/) for all serial communication.
+* Issue [#308](https://github.com/Pi4J/pi4j/discussions/308): Remove serial support from Pi4J. All serial methods are marked as `@Deprecated(forRemoval = true)`. We advise using [jSerialComm](https://fazecast.github.io/jSerialComm/) for all serial communication.
 * Pull request [#438](https://github.com/Pi4J/pi4j/pull/438): Extra unit test for shutdown and re-creation of a DigitalInput.
 * Issue [#439](https://github.com/Pi4J/pi4j/issues/439): Allow Specifying GPIO Chip for GpioDContext. For more info on how to use, see [Specifying the GPIO Chip](/documentation/providers/gpiod/).
 * Pull request [#449](https://github.com/Pi4J/pi4j/pull/449): Fixes a minor bug in DigitalOutput where pulseAsync ignored the given state and always pulsed high.
 * Pull request [#452](https://github.com/Pi4J/pi4j/pull/452): PWM linuxfs failed if the first interface call was off().
-* Pull request [#453](https://github.com/Pi4J/pi4j/pull/453) for issue [#296](https://github.com/Pi4J/pi4j/discussions/296): Generic BoardModels (with and without RP1) have been added, with a new method `BoardInfoHelper.current().setBoardModel(BoardModel.GENERIC);` to make it possible to **use Pi4J on other types of boards**. The goal of the Pi4J project is still to focus on the Raspberry Pi. However, this should allow testing the compatibility of the library with other boards with a similar architecture. We are looking forward to feedback from the community and possible improvements to this approach.
+* Pull request [#453](https://github.com/Pi4J/pi4j/pull/453) for issue [#296](https://github.com/Pi4J/pi4j/discussions/296): Generic BoardModels (with and without RP1) have been added, with a new method `BoardInfoHelper.current().setBoardModel(BoardModel.GENERIC);` to make it possible to **use Pi4J on other types of boards**. The goal of the Pi4J project is still to focus on the Raspberry Pi. However, this should allow testing the library's compatibility with other boards with similar architecture. We are excited to hear from the community about possible improvements to this approach.
 
 Thanks to contributions by [@stefanhaustein](https://github.com/stefanhaustein), [@Haruka0522](https://github.com/Haruka0522), [@mpilone](https://github.com/mpilone), [@dariuszzbyrad](https://github.com/dariuszzbyrad), [@taartspi](https://github.com/taartspi), [@eitch](https://github.com/eitch), [@fdelporte](https://github.com/fdelporte).
 
