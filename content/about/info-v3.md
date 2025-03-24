@@ -13,9 +13,9 @@ We would like to move to Java 22 as this would allow us to easier call C code to
 
 [The sources of V3 can be found in the GitHub repository `pi4j/pi4j`](https://github.com/Pi4J/pi4j).
 
-## What's New in 3.0?
+## What's New in V3?
 
-Pi4J version 3.0.0 is a continuation of 2.8.0, but bumps the **minimal Java version to 21**.
+The first V3-release of Pi4J, version 3.0.1, is a continuation of 2.8.0, but bumps the **minimal Java version to 21** and includes some improvements, see the [release notes](/about/release-notes/#2025-03-24---v301).
 
 ## Sources
 
