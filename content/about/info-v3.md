@@ -11,8 +11,6 @@ The current/latest Long Term Support (LTS) version of Java is version 21. So it 
 
 We would like to move to Java 22 as this would allow us to easier call C code to interact with the GPIOs, thanks to [JEP 454: Foreign Function & Memory API](https://openjdk.org/jeps/454). Unfortunately, 22, is not a LTS, so it would force us to bump the version every six months with each new release, up till 25.
 
-[The sources of V3 can be found in the GitHub repository `pi4j/pi4j`](https://github.com/Pi4J/pi4j).
-
 ## What's New in V3?
 
 The first V3-release of Pi4J, version 3.0.1, is a continuation of 2.8.0, but bumps the **minimal Java version to 21** and includes some improvements, see the [release notes](/about/release-notes/#2025-03-24---v301).

@@ -5,13 +5,14 @@ weight: 20
 
 The original library which started in 2012 and got a last release in 2021. Up till **version 1.3.0 the library targets Java 8**, while **version 1.4.0 relies on Java 11**.
 
+## Archived Sources
+
 [The sources of V1 can be found in the read-only GitHub repository `pi4j/pi4j-v1`](https://github.com/Pi4J/pi4j-v1).
 
-## Documentation of the 1.X versions
+## Release Notes V1.X
 
-### Pi4J Version 1.4
+### Pi4J Version 1.4 - 2021-03-03
 
-* Released 2021-03-03
 * Support for JDK/JRE 11 and 64-bit ARM platforms
 * This release is the final release for the Pi4J Version 1.x codebase
 * The Pi4J project is now prioritizing focus on providing Java programs access, control and communication with the core I/O capabilities of the Raspberry Pi platform
@@ -22,26 +23,22 @@ The original library which started in 2012 and got a last release in 2021. Up ti
 * Not using Java-modules yet, this will be part of the V2
 * [Documentation website V1.4](/1.4/index.html)
 
-### Pi4J Version 1.3
+### Pi4J Version 1.3 - 2021-01-29
 
-* Released 2021-01-29
 * Added support for Raspberry Pi 4B, 400, and Compute Module 4
 * Various improvements and bug fixes listed here: [GitHub Issues (v1.3)](https://github.com/Pi4J/pi4j-v1/milestone/10?closed=1)
 * Based on JDK8
 * [Documentation website V1.3](/1.3/index.html)
 
-### Pi4J Version 1.2
+### Pi4J Version 1.2 - 2019-02-26
 
-* Released 2019-02-26
 * Based on Java 8
 * [Documentation website V1.2](/1.2/index.html)
 
-### Pi4J Version 1.1
+### Pi4J Version 1.1 - 2016-07-26
 
-* Released 2016-07-26
 * [Documentation webiste V1.1](/1.1/index.html)
 
-### Pi4J Version 1.0
+### Pi4J Version 1.0 - 2015-04-18
 
-* Released 2015-04-18
 * [Documentation website V1.0](/1.0/index.html)

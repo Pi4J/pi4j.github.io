@@ -3,13 +3,13 @@ title: 'What''s New in V2'
 weight: 21
 ---
 
-As of versions 2.X.X, Pi4J **no longer includes support for peripheral devices and add-on chipsets/boards** as part of the core project. A new plugin model has been introduced in version 2.0 that helps to enable third-party development and support third-party add-ons which can be developed and maintained independently of the core Pi4J project. **V2-versions of Pi4J require Java 11** or higher.
+As of versions 2.X.X, Pi4J **no longer includes support for peripheral devices and add-on chipsets/boards** as part of the core project. A new plugin model has been introduced in version 2.0 that helps to enable third-party development and support third-party add-ons which can be developed and maintained independently of the core Pi4J project. 
 
-[The sources of V2+ can be found in the GitHub repository `pi4j/pi4j`](https://github.com/Pi4J/pi4j).
+**V2-versions of Pi4J require Java 11** or higher.
 
-## What's New in 2.0?
+## What's New in V2?
 
-Pi4J version 2.0 brings with it many new features, and an entirely new architecture that focuses on 
+Pi4J V2 brings with it many new features, and an entirely new architecture that focuses on 
 extensibility, simplified integration and a modern Java API including the following:
 
 * Fluent APIs/Interfaces
@@ -60,6 +60,4 @@ The Pi4J V2+ source code is available in this GitHub repository: [`pi4j/pi4j` Gi
 git clone https://github.com/Pi4J/pi4j
 ```
 
-Pi4J V2 had the first release in August 2021. Rework from V1 to V2 took quit some time and will never be finished, but
-we are confident this is a great library to develop Java application on the Raspberry Pi. Any remarks and contributions
-are welcome as either bug reports or discussions in the [GitHub repository](https://github.com/Pi4J/pi4j).
+Pi4J V2 had the first release in August 2021. Rework from V1 to V2 took quit some time and will never be finished, but we are confident this is a great library to develop Java application on the Raspberry Pi. Any remarks and contributions are welcome as either bug reports or discussions in the [GitHub repository](https://github.com/Pi4J/pi4j).
