@@ -48,7 +48,9 @@ The new `BoardInfoHelper` class and the related enums and methods are used as th
 {{< /gallery >}}
 {{< load-photoswipe >}}
 
-## Example Code
+## Examples
+
+### Example Code
 
 ```java
 var console = new Console();
