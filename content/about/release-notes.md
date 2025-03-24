@@ -5,7 +5,36 @@ weight: 40
 
 All releases of Pi4J V2+ are listed on [github.com/Pi4J/pi4j/releases](https://github.com/Pi4J/pi4j/releases).
 
-## 2025-01-28 - V2.8.0
+## V3
+
+Requires Java 21, see [What's New in V3](/about/info-v3/) for more info.
+
+### 2025-03-24 - V3.0.1
+
+This is the first release of Pi4J that requires the Java runtime 21 or higher. Check the blog post [Pi4J welcomes Java 21](/blog/2025/20250211-welcome-java-21/) to understand why we needed this change to make the project ready for the future...
+
+Because of a last-minute change to improve the detection of Raspberry Pi 5, 500 and Compute 5, **release 3.0.0 has been skipped**.
+
+* Bump Java version to 21, and update many dependencies, Maven plugin, etc.
+* Added JNA dependency (needed for Java 21).
+* Added Maven wrapper.
+* Improved lifecycle shutdown handling for registry elements: Updated the `Lifecycle` interface to clarify shutdown behavior and added tests to ensure proper element recreation after shutdown. These enhancements make the shutdown process more robust and intuitive.
+* Issue [#308](https://github.com/Pi4J/pi4j/discussions/308): Remove serial support from Pi4J. All serial methods are marked as `@Deprecated(forRemoval = true)`. We advise to use [jSerialComm](https://fazecast.github.io/jSerialComm/) for all serial communication.
+* Pull request [#438](https://github.com/Pi4J/pi4j/pull/438): Extra unit test for shutdown and re-creation of a DigitalInput.
+* Issue [#439](https://github.com/Pi4J/pi4j/issues/439): Allow Specifying GPIO Chip for GpioDContext. For more info on how to use, see [Specifying the GPIO Chip](/documentation/providers/gpiod/).
+* Pull request [#449](https://github.com/Pi4J/pi4j/pull/449): Fixes a minor bug in DigitalOutput where pulseAsync ignored the given state and always pulsed high.
+* Pull request [#452](https://github.com/Pi4J/pi4j/pull/452): PWM linuxfs failed if the first interface call was off().
+* Pull request [#453](https://github.com/Pi4J/pi4j/pull/453) for issue [#296](https://github.com/Pi4J/pi4j/discussions/296): Generic BoardModels (with and without RP1) have been added, with a new method `BoardInfoHelper.current().setBoardModel(BoardModel.GENERIC);` to make it possible to **use Pi4J on other types of boards**. The goal of the Pi4J project is still to focus on the Raspberry Pi. However, this should allow testing the compatibility of the library with other boards with a similar architecture. We are looking forward to feedback from the community and possible improvements to this approach.
+
+Thanks to contributions by [@stefanhaustein](https://github.com/stefanhaustein), [@Haruka0522](https://github.com/Haruka0522), [@mpilone](https://github.com/mpilone), [@dariuszzbyrad](https://github.com/dariuszzbyrad), [@taartspi](https://github.com/taartspi), [@eitch](https://github.com/eitch), [@fdelporte](https://github.com/fdelporte).
+
+All changes: https://github.com/Pi4J/pi4j/compare/2.8.0...3.0.1
+
+## V2
+
+Requires Java 11, see [What's New in V2](/about/info-v2/) for more info.
+
+### 2025-01-28 - V2.8.0
 
 * Several code and JavaDoc improvements by adding the checkstyle plugin.
 * Improvements in loading the Mock providers to build and test Pi4J on a Raspberry Pi. 
@@ -27,7 +56,7 @@ Special thanks to [Dariusz Zbyrad](https://github.com/dariuszzbyrad) for joining
 
 All changes: https://github.com/Pi4J/pi4j/compare/2.7.0...2.8.0
 
-## 2025-01-28 - V2.8.0
+### 2025-01-28 - V2.8.0
 
 * Several code and JavaDoc improvements by adding the checkstyle plugin.
 * Improvements in loading the Mock providers to build and test Pi4J on a Raspberry Pi. 
@@ -49,7 +78,7 @@ Special thanks to [Dariusz Zbyrad](https://github.com/dariuszzbyrad) for joining
 
 All changes: https://github.com/Pi4J/pi4j/compare/2.7.0...2.8.0
 
-## 2024-10-03 - V2.7.0
+### 2024-10-03 - V2.7.0
 
 * Libraries are loaded depending on the platform, by calling `BoardInfoHelper.runningOnRaspberryPi()`.
 * `BoardModel` has been extended with 2Gb Raspberry Pi 5, Raspberry Pi Pico 2, and extra board codes for the Compute Module 4. 
@@ -72,7 +101,7 @@ Thanks to contributions by [@ylexus](https://github.com/ylexus), [@mores](https:
 
 All changes: https://github.com/Pi4J/pi4j/compare/2.6.1...2.7.0
 
-## 2024-07-29 - V2.6.1
+### 2024-07-29 - V2.6.1
 
 This is a minor bug fix release to allow a smoother integration in a Spring Boot Starter by allowing to run on PC for testing without initialization errors and with reduced logging of the I2C Mock plugin.
 
@@ -81,7 +110,7 @@ This is a minor bug fix release to allow a smoother integration in a Spring Boot
 
 All changes: https://github.com/Pi4J/pi4j/compare/2.6.0...2.6.1
 
-## 2024-04-29 - V2.6.0
+### 2024-04-29 - V2.6.0
 
 * New hardware PWM provider added to the GpioD plugin, see: 
   * [Blog: PWM Hardware Support on RPi5](https://pi4j.com/blog/2024/20240423_pwm_rpi5/).
@@ -103,13 +132,13 @@ Make sure to also read the interviews with [Robert von Burg](https://pi4j.com/bl
 
 All changes: https://github.com/Pi4J/pi4j/compare/2.5.1...2.6.0
 
-## 2024-03-18 - V2.5.1
+### 2024-03-18 - V2.5.1
 
 Sorry! Because of a configuration error, the wrong native code is included in 2.5.0 for the new GpioD Provider. But [thanks to the lightning fast action](https://github.com/Pi4J/pi4j/commit/6ac458ec2d9b38a20b2195f4ecc03a65fbdebff7) of [Robert von Burg](https://github.com/eitch) we have a fixed version for you to enjoy :-)
 
 All changes: https://github.com/Pi4J/pi4j/compare/2.5.0...2.5.1
 
-## 2024-03-18 - V2.5.0
+### 2024-03-18 - V2.5.0
 
 With over 100 commits from multiple branches, this is a major release with many improvements! With many thanks to the core team ([Robert von Burg](https://github.com/eitch), [Tom Aarts](https://github.com/taartspi)), and a major addition of [Alexander Liggesmeyer](https://github.com/alex9849), Pi4J is again lifted to a higher level!
 
@@ -119,7 +148,7 @@ You can find out [more about Alexander in this blog post](/blog/2024/20240318_in
 The new GpioD Provider needs the latest Raspberry Pi OS version (`Debian GNU/Linux 12 (bookworm)`).
 {{% /notice %}}
 
-### Changes in 2.5.0
+#### Changes in 2.5.0
 
 * A new GpioD Provider adds **support for the Raspberry Pi 5**.
   * Issues [#321](https://github.com/Pi4J/pi4j/issues/321), [#320](https://github.com/Pi4J/pi4j/issues/320), [#317](https://github.com/Pi4J/pi4j/issues/317)
@@ -138,11 +167,11 @@ The new GpioD Provider needs the latest Raspberry Pi OS version (`Debian GNU/Lin
 
 All changes: https://github.com/Pi4J/pi4j/compare/2.4.0...2.5.0
 
-### Known Issue
+#### Known Issue
 
 * _java.io.IOException: Remote I/O error java.base/java.io.RandomAccessFile.writeBytes(Native Method). Using linuxfs-i2c, dependent upon i2c operations this exception can occur_: If the program initially uses read or write, and later uses readRegister or writeRegister there is no exception. However, if the program initially uses readRegister or writeRegister subsequent write or read may encounter this exception. For more info and the temporary fix, check [#335](https://github.com/Pi4J/pi4j/issues/335).
 
-## 2023-10-24 - V2.4.0
+### 2023-10-24 - V2.4.0
 
 * Extended LinuxFS plugin
   * PWM provider
@@ -167,7 +196,7 @@ Thanks to [@GeVanCo](https://github.com/GeVanCo), [@MMMMMNG](https://github.com/
 
 All changes: https://github.com/Pi4J/pi4j/compare/2.3.0...2.4.0
 
-## 2023-02-06 - V2.3.0
+### 2023-02-06 - V2.3.0
 
 * Improvements for PIGPIO.gpioCfgInterfaces by [@bwaldvogel](https://github.com/bwaldvogel).
 * New i2c interface to support multibyte register address by [@taartspi](https://github.com/taartspi).
@@ -176,7 +205,7 @@ All changes: https://github.com/Pi4J/pi4j/compare/2.3.0...2.4.0
 
 All changes: https://github.com/Pi4J/pi4j/compare/2.2.1...2.3.0
 
-## 2022-10-17 - V2.2.1
+### 2022-10-17 - V2.2.1
 
 Multiple fixes by [@taartspi](https://github.com/taartspi):
 
@@ -187,17 +216,17 @@ Multiple fixes by [@taartspi](https://github.com/taartspi):
 
 All changes: https://github.com/Pi4J/pi4j/compare/2.2.0...2.2.1
 
-## 2022-08-30 - V2.2.0
+### 2022-08-30 - V2.2.0
 
 What an amazing achievement! No major issues were found in the previous release, but several small fixes were added by more people than ever before in the Pi4J-history. This is a real confirmation of the openness of this project and how a community can work together to further improve a project. 
 
 A big thank you to everyone who experimented with Pi4J, took part in the discussions, filed an issue, created a merge request, added examples,...!
 
-### New example implementations
+#### New example implementations
 
 Thanks to the work of FHNW students and @taartspi, the list of available example implementations has become larger and larger. We even moved them to their own section of this documentation website! Take a look at [Example implementations](/examples/) if you need a quick-start to use a buzzer, camera, LED strip, TCA9548, MCP4725,... or any of the other examples.
 
-### Changes in V2.2.0
+#### Changes in V2.2.0
 
 Multiple improvements were added in this release (and others are already in progress for the next one!):
 
@@ -213,6 +242,6 @@ Multiple improvements were added in this release (and others are already in prog
 
 All the differences can be checked by comparing with the previous release 2.1.1 via [this link](https://github.com/Pi4J/pi4j/compare/2.1.1...2.2.0).
 
-## Earlier release notes
+## V1
 
-Release notes of the previous releases of Pi4J V2+ are available on [github.com/Pi4J/pi4j/releases](https://github.com/Pi4J/pi4j/releases).
+Up till version 1.3.0 requires Java 8, while version 1.4.0 requires Java 11. See [Info about V1](/about/info-v1/) for more info.
