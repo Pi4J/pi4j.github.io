@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>About on Pi4J</title><link>https://pi4j.com/about/</link><description>Recent content in About on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://pi4j.com/about/index.xml" rel="self" type="application/rss+xml"/><item><title>Info about V1</title><link>https://pi4j.com/about/info-v1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/about/info-v1/</guid><description>&lt;p>The original library which started in 2012 and got a last release in 2021. Up till &lt;strong>version 1.3.0 the library targets Java 8&lt;/strong>, while &lt;strong>version 1.4.0 relies on Java 11&lt;/strong>.&lt;/p>
+&lt;h2 id="archived-sources">Archived Sources&lt;/h2>
 &lt;p>&lt;a href="https://github.com/Pi4J/pi4j-v1" target="_blank" rel="noopener">The sources of V1 can be found in the read-only GitHub repository &lt;code>pi4j/pi4j-v1&lt;/code>&lt;/a>.&lt;/p>
-&lt;h2 id="documentation-of-the-1x-versions">Documentation of the 1.X versions&lt;/h2>
-&lt;h3 id="pi4j-version-14">Pi4J Version 1.4&lt;/h3>
+&lt;h2 id="release-notes-v1x">Release Notes V1.X&lt;/h2>
+&lt;h3 id="pi4j-version-14---2021-03-03">Pi4J Version 1.4 - 2021-03-03&lt;/h3>
 &lt;ul>
-&lt;li>Released 2021-03-03&lt;/li>
 &lt;li>Support for JDK/JRE 11 and 64-bit ARM platforms&lt;/li>
 &lt;li>This release is the final release for the Pi4J Version 1.x codebase&lt;/li>
 &lt;li>The Pi4J project is now prioritizing focus on providing Java programs access, control and communication with the core I/O capabilities of the Raspberry Pi platform&lt;/li>
@@ -14,31 +14,30 @@
 &lt;li>Not using Java-modules yet, this will be part of the V2&lt;/li>
 &lt;li>&lt;a href="https://pi4j.com/1.4/index.html">Documentation website V1.4&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;h3 id="pi4j-version-13">Pi4J Version 1.3&lt;/h3>
+&lt;h3 id="pi4j-version-13---2021-01-29">Pi4J Version 1.3 - 2021-01-29&lt;/h3>
 &lt;ul>
-&lt;li>Released 2021-01-29&lt;/li>
 &lt;li>Added support for Raspberry Pi 4B, 400, and Compute Module 4&lt;/li>
 &lt;li>Various improvements and bug fixes listed here: &lt;a href="https://github.com/Pi4J/pi4j-v1/milestone/10?closed=1" target="_blank" rel="noopener">GitHub Issues (v1.3)&lt;/a>&lt;/li>
 &lt;li>Based on JDK8&lt;/li>
 &lt;li>&lt;a href="https://pi4j.com/1.3/index.html">Documentation website V1.3&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;h3 id="pi4j-version-12">Pi4J Version 1.2&lt;/h3>
+&lt;h3 id="pi4j-version-12---2019-02-26">Pi4J Version 1.2 - 2019-02-26&lt;/h3>
 &lt;ul>
-&lt;li>Released 2019-02-26&lt;/li>
 &lt;li>Based on Java 8&lt;/li>
 &lt;li>&lt;a href="https://pi4j.com/1.2/index.html">Documentation website V1.2&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;h3 id="pi4j-version-11">Pi4J Version 1.1&lt;/h3>
+&lt;h3 id="pi4j-version-11---2016-07-26">Pi4J Version 1.1 - 2016-07-26&lt;/h3>
 &lt;ul>
-&lt;li>Released 2016-07-26&lt;/li>
 &lt;li>&lt;a href="https://pi4j.com/1.1/index.html">Documentation webiste V1.1&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;h3 id="pi4j-version-10">Pi4J Version 1.0&lt;/h3>
+&lt;h3 id="pi4j-version-10---2015-04-18">Pi4J Version 1.0 - 2015-04-18&lt;/h3>
 &lt;ul>
-&lt;li>Released 2015-04-18&lt;/li>
 &lt;li>&lt;a href="https://pi4j.com/1.0/index.html">Documentation website V1.0&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>What's New in V2</title><link>https://pi4j.com/about/info-v2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/about/info-v2/</guid><description>&lt;p>As of versions 2.X.X, Pi4J &lt;strong>no longer includes support for peripheral devices and add-on chipsets/boards&lt;/strong> as part of the core project. A new plugin model has been introduced in version 2.0 that helps to enable third-party development and support third-party add-ons which can be developed and maintained independently of the core Pi4J project. &lt;strong>V2-versions of Pi4J require Java 11&lt;/strong> or higher.&lt;/p>
-&lt;p>&lt;a href="https://github.com/Pi4J/pi4j" target="_blank" rel="noopener">The sources of V2+ can be found in the GitHub repository &lt;code>pi4j/pi4j&lt;/code>&lt;/a>.&lt;/p></description></item><item><title>What's New in V3</title><link>https://pi4j.com/about/info-v3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/about/info-v3/</guid><description>&lt;p>Versions 3.0.1 is based on 2.8.0 (released in January 2025), but bumps the &lt;strong>Java version to 21&lt;/strong>!&lt;/p>
+&lt;/ul></description></item><item><title>What's New in V2</title><link>https://pi4j.com/about/info-v2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/about/info-v2/</guid><description>&lt;p>As of versions 2.X.X, Pi4J &lt;strong>no longer includes support for peripheral devices and add-on chipsets/boards&lt;/strong> as part of the core project. A new plugin model has been introduced in version 2.0 that helps to enable third-party development and support third-party add-ons which can be developed and maintained independently of the core Pi4J project.&lt;/p>
+&lt;p>&lt;strong>V2-versions of Pi4J require Java 11&lt;/strong> or higher.&lt;/p>
+&lt;h2 id="whats-new-in-v2">What&amp;rsquo;s New in V2?&lt;/h2>
+&lt;p>Pi4J V2 brings with it many new features, and an entirely new architecture that focuses on
+extensibility, simplified integration and a modern Java API including the following:&lt;/p></description></item><item><title>What's New in V3</title><link>https://pi4j.com/about/info-v3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/about/info-v3/</guid><description>&lt;p>Versions 3.0.1 is based on 2.8.0 (released in January 2025), but bumps the &lt;strong>Java version to 21&lt;/strong>!&lt;/p>
 &lt;p>We &lt;a href="https://github.com/Pi4J/pi4j/discussions/409" target="_blank" rel="noopener">asked our users&lt;/a> which minimal Java version we should use, but there was no one clear answer, as expected ;-)&lt;/p>
 &lt;p>The current/latest Long Term Support (LTS) version of Java is version 21. So it makes sense to jump forward from 11 to 21. This will also prepare us for the next LTS, which will be Java 25 in September 2025. Bumping to the latest LTS makes it possible to make use of many newer Java language and runtime improvements, simplify parts of the code, etc.&lt;/p></description></item><item><title>Release Notes</title><link>https://pi4j.com/about/release-notes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/about/release-notes/</guid><description>&lt;p>All releases of Pi4J V2+ are listed on &lt;a href="https://github.com/Pi4J/pi4j/releases" target="_blank" rel="noopener">github.com/Pi4J/pi4j/releases&lt;/a>.&lt;/p>
 &lt;h2 id="v3">V3&lt;/h2>
