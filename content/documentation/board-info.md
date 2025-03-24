@@ -100,3 +100,49 @@ console.println("Throttled states description: " + BoardInfoHelper.getBoardReadi
 [main] INFO com.pi4j.util.Console -  - SOFT_TEMPERATURE_LIMIT_ACTIVE
 [main] INFO com.pi4j.util.Console - Throttled states description: Under-voltage detected, Soft temperature limit active
 ```
+
+## Overriding the Detected Board
+
+In case the detected board is wrong or unknown, you can override it since V3.0.1 with the following method. Make sure to do this before the Pi4J context is initialized, so the correct plugins are loaded.
+
+```java
+// With default GpioD chip
+BoardInfoHelper.current().setBoardModel(BoardModel.GENERIC);
+var pi4j = Pi4J.newAutoContext();
+
+// Or if you want to use a specific chip name
+BoardInfoHelper.current().setBoardModel(BoardModel.GENERIC);
+var pi4j = Pi4J.newContextBuilder()
+    .add(GpioDDigitalInputProvider.newInstance())
+    .setGpioChipName("gpiochip2")
+    .build();
+```
+
+Two generic boards where created for this use-case, but of course, you can also use one of the other [BoardModel](https://github.com/Pi4J/pi4j/blob/develop/pi4j-core/src/main/java/com/pi4j/boardinfo/definition/BoardModel.java) enum values.
+
+```java
+    // Generic model, this can be used to force the library
+    // to load Raspberry Pi plugins on other board types
+    GENERIC("Generic board compatible with Raspberry Pi 4", SINGLE_BOARD_COMPUTER,
+        new ArrayList<>(),
+        PiModel.MODEL_B,
+        HeaderVersion.TYPE_3,
+        LocalDate.now(),
+        Soc.UNKNOWN,
+        Cpu.UNKNOWN, 4,
+        new ArrayList<>(),
+        new ArrayList<>()),
+    GENERIC_RP1("Generic board compatible with Raspberry Pi 5", SINGLE_BOARD_COMPUTER,
+        new ArrayList<>(),
+        PiModel.MODEL_B,
+        HeaderVersion.TYPE_3,
+        LocalDate.now(),
+        Soc.UNKNOWN,
+        Cpu.UNKNOWN, 4,
+        new ArrayList<>(),
+        new ArrayList<>(),
+        new ArrayList<>(),
+        true),
+```
+
+
