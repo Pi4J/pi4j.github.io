@@ -1,5 +1,5 @@
 ---
-title: Shutting down the Pi4J Context
+title: Shutdown (cleanup)
 weight: 150
 ---
 
