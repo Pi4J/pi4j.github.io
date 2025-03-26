@@ -72,7 +72,7 @@ PWM expander board/chip (controlled by I2C/SPI) to provide additional PWM suppor
 
 ## Linuxfs Provider (linuxfs-pwm)
 
-As of version 2.6.0 of Pi4J, `linuxfs-pwm` also supports hardware PMW on the Raspberry Pi 5. More information and an example implementation is available in the blog post [PWM Hardware Support on Raspberry Pi5](/blog/2024/20240423_pwm_rpi5/).
+As of version 2.6.0 of Pi4J, `linuxfs-pwm` also supports hardware PWM on the Raspberry Pi 5. More information and an example implementation is available in the blog post [PWM Hardware Support on Raspberry Pi5](/blog/2024/20240423_pwm_rpi5/).
 
 ### Hardware only
 
