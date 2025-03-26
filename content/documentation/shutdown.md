@@ -33,8 +33,6 @@ public void testShutdownAndRecreate() throws Pi4JException {
 
     // create a new input, then shutdown
     var input = pi4j.create(inputConfig);
-
-    input.shutdown(pi4j);
     pi4j.shutdown(input.id());
 
     // shouldn't fail when recreating
