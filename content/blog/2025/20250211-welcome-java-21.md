@@ -1,7 +1,6 @@
 ---
 title: "Pi4J welcomes Java 21"
 date: 2025-02-05
-tags: ["Java"]
 ---
 
 2025-02-11 by Frank Delporte
