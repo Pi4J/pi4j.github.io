@@ -22,13 +22,18 @@ much more the master can choose at any time with which slave he would like to ex
 &lt;p>In order to address only one slave, a total of 3 signal lines are required, two of which
 are used for bidirectional data transmission and one as a clock generator for serial
 transmission. If further slaves are to be addressed, additional signal lines are required
-depending on the desired topology.&lt;/p></description></item><item><title>Serial (UART/RS232)</title><link>https://pi4j.com/documentation/io-examples/serial/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/io-examples/serial/</guid><description>&lt;div class="notices tip" >&lt;p>GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/SerialGps_App.java" target="_blank" rel="noopener">https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/SerialGps_App.java&lt;/a>&lt;/p>
+depending on the desired topology.&lt;/p></description></item><item><title>Serial (UART/RS232)</title><link>https://pi4j.com/documentation/io-examples/serial/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/io-examples/serial/</guid><description>&lt;div class="notices warning" >&lt;p>As of version 3 of the Pi4J library, the serial methods have been marked as deprecated, and we advise to use the &lt;a href="https://fazecast.github.io/jSerialComm/" target="_blank" rel="noopener">jSerialComm library&lt;/a>, as discussed in &lt;a href="https://github.com/Pi4J/pi4j/discussions/308" target="_blank" rel="noopener">#308: Remove serial support from Pi4J?&lt;/a>. The example code below is still applicable, but serial support will be fully removed in later versions of Pi4J.&lt;/p>
 &lt;/div>
 
+&lt;p>&lt;strong>
+&lt;div class="notices tip" >&lt;p>GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/SerialGps_App.java" target="_blank" rel="noopener">https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/SerialGps_App.java&lt;/a>&lt;/p>
+&lt;/div>
+&lt;/strong>&lt;/p>
 &lt;h2 id="what-is-it">What is it?&lt;/h2>
 &lt;p>Serial communication can be used to transfer data between different boards, devices, etc. Data is transfered bit-by-bit
 in a sequence, through a single wire from a transmitter (= TX) to a receiver (= RX). On the receiver side the bits are
-combined to bytes.&lt;/p>
-&lt;p>When you need two-way communication, two wires are needed between RX and TX from both sides:&lt;/p>
-&lt;p>&lt;img src="https://pi4j.com/assets/documentation/serial-two-devices.jpg" alt="Two-way serial communication">&lt;/p>
-&lt;p>The communication between these two devices can happen in different ways:&lt;/p></description></item></channel></rss>
+combined to bytes.&lt;/p></description></item><item><title>1-Wire</title><link>https://pi4j.com/documentation/io-examples/1-wire/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/io-examples/1-wire/</guid><description>&lt;h2 id="what-is-it">What is it?&lt;/h2>
+&lt;p>Based on &lt;a href="https://en.wikipedia.org/wiki/1-Wire" target="_blank" rel="noopener">Wikipedia&lt;/a>:&lt;/p>
+&lt;p>&lt;em>1-Wire is a wired half-duplex serial bus that provides low-speed (16.3 kbit/s) data communication and supply voltage over a single conductor. It&amp;rsquo;s similar in concept to I2C, but with lower data rates and longer range. It is typically used to communicate with small inexpensive devices such as digital thermometers and weather instruments.&lt;/em>&lt;/p>
+&lt;h2 id="receive-data">Receive Data&lt;/h2>
+&lt;p>At this moment, 1-Wire is not supported by Pi4J, but there is work-in-progress, see &lt;a href="https://github.com/Pi4J/pi4j/pull/435/files" target="_blank" rel="noopener">draft pull request #435&lt;/a>.&lt;/p></description></item></channel></rss>
