@@ -4,9 +4,13 @@ weight: 250
 tags: ["Serial"]
 ---
 
-{{% notice tip %}}
-GITHUB PROJECT: [https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/SerialGps_App.java](https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/SerialGps_App.java)
+{{% notice warning %}}
+As of version 3 of the Pi4J library, the serial methods have been marked as deprecated, and we advise to use the [jSerialComm library](https://fazecast.github.io/jSerialComm/), as discussed in [#308: Remove serial support from Pi4J?](https://github.com/Pi4J/pi4j/discussions/308). The example code below is still applicable, but serial support will be fully removed in later versions of Pi4J.
 {{% /notice %}}
+
+**{{% notice tip %}}
+GITHUB PROJECT: [https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/SerialGps_App.java](https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/SerialGps_App.java)
+{{% /notice %}}**
 
 ## What is it?
 
