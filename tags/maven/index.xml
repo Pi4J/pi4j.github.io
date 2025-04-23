@@ -17,9 +17,13 @@ find a project which contains the minimal code to control a digital input and ou
 described on this page. The application will toggle an LED on/off and each time you press the button, the toggling
 speed increases. When you have pushed the button 5 times, the application stops.&lt;/p>
 
-&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
- &lt;iframe src="https://player.vimeo.com/video/525570174" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="vimeo video" webkitallowfullscreen mozallowfullscreen allowfullscreen>&lt;/iframe>
-&lt;/div>
+ &lt;div
+ style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+ &lt;iframe
+ src="https://player.vimeo.com/video/525570174?dnt=0"
+ style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allow="fullscreen" loading="eager" title="Vimeo video">
+ &lt;/iframe>
+ &lt;/div>
 
 &lt;h2 id="wiring">Wiring&lt;/h2>
 &lt;p>This minimal example application uses this wiring:&lt;/p></description></item><item><title>User interface with JavaFX</title><link>https://pi4j.com/getting-started/user-interface-with-javafx/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/getting-started/user-interface-with-javafx/</guid><description>&lt;div class="notices tip" >&lt;p>GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-example-javafx" target="_blank" rel="noopener">https://github.com/Pi4J/pi4j-example-javafx&lt;/a>&lt;/p>

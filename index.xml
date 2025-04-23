@@ -3,12 +3,12 @@
 
 &lt;p>In this video we go through the process of setting up the project in IntelliJIDEA to be able to do remote debugging between PC and a Raspberry Pi.&lt;/p>
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/SkpH_MdL6hc?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/SkpH_MdL6hc?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
  &lt;/div></description></item><item><title>Useful Tips</title><link>https://pi4j.com/kotlin/kotlin-examples/useful-tips/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/kotlin/kotlin-examples/useful-tips/</guid><description>&lt;div class="notices note" >&lt;p>GITHUB PROJECT: &lt;a href="https://github.com/RoboticsLife/Lesson02-Gpio-Kotlin-Pi4J" target="_blank" rel="noopener">https://github.com/RoboticsLife/Lesson02-Gpio-Kotlin-Pi4J&lt;/a>&lt;/p>
 &lt;/div>
 
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/bYqifO31qI0?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/bYqifO31qI0?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
  &lt;/div></description></item><item><title>Write OS to SD card</title><link>https://pi4j.com/prepare/sd-card/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/prepare/sd-card/</guid><description>&lt;p>The SD card will hold the operating system. On the Raspberry Pi website, &lt;a href="https://www.raspberrypi.org/software/" target="_blank" rel="noopener">on the download page, you can
 find the Imager tool&lt;/a>. Select the version for your computer, download, and install it.&lt;/p>
 &lt;p>&lt;img src="https://pi4j.com/assets/getting-started/setup/download-imager.png" alt="Imager download">&lt;/p>
@@ -257,7 +257,7 @@ course important to be aware of the correct numbering to not connect components 
 &lt;h2 id="breadboard">Breadboard&lt;/h2>
 &lt;p>A breadboard is the basic for each experiment. It allows you to easily connect several components to each other and the Raspberry Pi. Here is a video that explains the basics of breadboards:&lt;/p>
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/6WReFkfrUIk?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/6WReFkfrUIk?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
  &lt;/div>
 
 &lt;p>
@@ -437,9 +437,13 @@ find a project which contains the minimal code to control a digital input and ou
 described on this page. The application will toggle an LED on/off and each time you press the button, the toggling
 speed increases. When you have pushed the button 5 times, the application stops.&lt;/p>
 
-&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
- &lt;iframe src="https://player.vimeo.com/video/525570174" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="vimeo video" webkitallowfullscreen mozallowfullscreen allowfullscreen>&lt;/iframe>
-&lt;/div>
+ &lt;div
+ style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+ &lt;iframe
+ src="https://player.vimeo.com/video/525570174?dnt=0"
+ style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allow="fullscreen" loading="eager" title="Vimeo video">
+ &lt;/iframe>
+ &lt;/div>
 
 &lt;h2 id="wiring">Wiring&lt;/h2>
 &lt;p>This minimal example application uses this wiring:&lt;/p></description></item><item><title>Minimal example as FAT JAR</title><link>https://pi4j.com/getting-started/minimal-example-application-fatjar/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/getting-started/minimal-example-application-fatjar/</guid><description>&lt;div class="notices tip" >&lt;p>GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-example-fatjar" target="_blank" rel="noopener">https://github.com/Pi4J/pi4j-example-fatjar&lt;/a>&lt;/p>
@@ -872,7 +876,7 @@ also explain minimal coding required to allow greater flexibility.&lt;/p></descr
 
 &lt;p>This example is explained in the following video:&lt;/p>
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/BXOqXuh50KI?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/BXOqXuh50KI?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
  &lt;/div>
 
 &lt;h2 id="intro">Intro&lt;/h2>
@@ -926,7 +930,7 @@ all the required files to build with Gradle.&lt;/p>
 &lt;p>A LED strip doesn&amp;rsquo;t only exist as a single strip, the same system is also used in a LED matrix. In this example, we will control such a &lt;a href="https://www.amazon.nl/dp/B0B81R484Z" target="_blank" rel="noopener">8*32 LED matrix&lt;/a>.&lt;/p>
 &lt;p>Full LED strip code walkthrough, and additional info in this live session with Robert (aka Eitch) and Frank:&lt;/p>
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/eToIXACqSuY?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/eToIXACqSuY?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
  &lt;/div>
 
 &lt;h2 id="intro">Intro&lt;/h2>
@@ -1333,9 +1337,13 @@ with &lt;a href="https://www.oracle.com/java/duke.html" target="_blank" rel="noo
 &lt;p>This week Robert von Burg, one of the main contributors of the Pi4J project, &lt;a href="https://mstdn.gsi.li/@eitch/109324090007015888" target="_blank" rel="noopener">shared on Mastodon&lt;/a> another project where a LED strip is controlled via I2C.&lt;/p>
 &lt;p>This is the result, notice the Foojay.io startup artwork 😉&lt;/p>
 
-&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
- &lt;iframe src="https://player.vimeo.com/video/771087170" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="vimeo video" webkitallowfullscreen mozallowfullscreen allowfullscreen>&lt;/iframe>
-&lt;/div>
+ &lt;div
+ style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+ &lt;iframe
+ src="https://player.vimeo.com/video/771087170?dnt=0"
+ style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allow="fullscreen" loading="eager" title="Vimeo video">
+ &lt;/iframe>
+ &lt;/div>
 
 &lt;h2 id="wiring">Wiring&lt;/h2>
 &lt;p>The Raspberry Pi in the video is attached to a custom PCB used by Robert in &lt;a href="https://pi4j.com/featured-projects/soft-real-time-plc-written-in-strolch/" target="_blank" rel="noopener">medical cabinets&lt;/a>.&lt;/p></description></item><item><title>Kotlin on the Raspberry Pi</title><link>https://pi4j.com/blog/2022/20221117_kotlin_on_raspberrypi/</link><pubDate>Thu, 17 Nov 2022 00:00:00 +0000</pubDate><guid>https://pi4j.com/blog/2022/20221117_kotlin_on_raspberrypi/</guid><description>&lt;p>2022-11-17, by Muhammad Hashim&lt;/p>

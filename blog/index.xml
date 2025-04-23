@@ -42,9 +42,13 @@
 &lt;p>This week Robert von Burg, one of the main contributors of the Pi4J project, &lt;a href="https://mstdn.gsi.li/@eitch/109324090007015888" target="_blank" rel="noopener">shared on Mastodon&lt;/a> another project where a LED strip is controlled via I2C.&lt;/p>
 &lt;p>This is the result, notice the Foojay.io startup artwork 😉&lt;/p>
 
-&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
- &lt;iframe src="https://player.vimeo.com/video/771087170" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="vimeo video" webkitallowfullscreen mozallowfullscreen allowfullscreen>&lt;/iframe>
-&lt;/div>
+ &lt;div
+ style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+ &lt;iframe
+ src="https://player.vimeo.com/video/771087170?dnt=0"
+ style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allow="fullscreen" loading="eager" title="Vimeo video">
+ &lt;/iframe>
+ &lt;/div>
 
 &lt;h2 id="wiring">Wiring&lt;/h2>
 &lt;p>The Raspberry Pi in the video is attached to a custom PCB used by Robert in &lt;a href="https://pi4j.com/featured-projects/soft-real-time-plc-written-in-strolch/" target="_blank" rel="noopener">medical cabinets&lt;/a>.&lt;/p></description></item><item><title>Kotlin on the Raspberry Pi</title><link>https://pi4j.com/blog/2022/20221117_kotlin_on_raspberrypi/</link><pubDate>Thu, 17 Nov 2022 00:00:00 +0000</pubDate><guid>https://pi4j.com/blog/2022/20221117_kotlin_on_raspberrypi/</guid><description>&lt;p>2022-11-17, by Muhammad Hashim&lt;/p>
