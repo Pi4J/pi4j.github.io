@@ -6,9 +6,9 @@ tags: ["UI"]
 
 2025-05-07 by Frank Delporte
 
-**Richard Norrie** created an oscilloscope with Pi4J and was looking for a way to start his application with a desktop icon. Unfortunately, he ran into a few issues as the icon led to "Java not found" error.
+**Richard Norrie** created an oscilloscope with Pi4J and was looking for a way to start his application with a desktop icon. Unfortunately, he ran into a few issues as the icon led to "Java not found" error. This was likely due to environment variables not being properly set in the desktop launcher context. 
 
-This was likely due to environment variables not being properly set in the desktop launcher context. Here are the steps how this got fixed as you can see in this screenshot:
+Here are the steps how this got fixed as you can see in this screenshot:
 
 ![](/assets/blogs/desktop-icon/oscilloscope.png)
 
@@ -45,7 +45,7 @@ chmod +x /path/to/your/script.sh
 chmod +x /path/to/your/oscilloscope.desktop
 ```
 
-4. Your shell script should use the full path to Java:
+4. Your shell script should point to the full path of your `.jar` file:
 
 ```text
 #!/bin/bash
