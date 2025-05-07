@@ -52,4 +52,4 @@ chmod +x /path/to/your/oscilloscope.desktop
 java -jar /full/path/to/oscilloscope.jar
 ```
 
-With this approach ensures all necessary environment variables are properly set regardless of how the application is launched.
+This approach ensures all necessary environment variables are properly set regardless of how the application is launched.
