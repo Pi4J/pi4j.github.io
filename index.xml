@@ -1,14 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Welcome to Pi4J on Pi4J</title><link>https://pi4j.com/</link><description>Recent content in Welcome to Pi4J on Pi4J</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 05 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://pi4j.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Basic Project Setup</title><link>https://pi4j.com/kotlin/kotlin-examples/getting-started/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/kotlin/kotlin-examples/getting-started/</guid><description>&lt;div class="notices note" >&lt;p>GITHUB PROJECT: &lt;a href="https://github.com/RoboticsLife/Lesson01-Gpio-Kotlin-Pi4J" target="_blank" rel="noopener">https://github.com/RoboticsLife/Lesson01-Gpio-Kotlin-Pi4J&lt;/a>&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Welcome to Pi4J on Pi4J</title><link>https://pi4j.com/</link><description>Recent content in Welcome to Pi4J on Pi4J</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 07 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://pi4j.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Basic Project Setup</title><link>https://pi4j.com/kotlin/kotlin-examples/getting-started/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/kotlin/kotlin-examples/getting-started/</guid><description>&lt;div class="notices note" >&lt;p>GITHUB PROJECT: &lt;a href="https://github.com/RoboticsLife/Lesson01-Gpio-Kotlin-Pi4J" target="_blank" rel="noopener">https://github.com/RoboticsLife/Lesson01-Gpio-Kotlin-Pi4J&lt;/a>&lt;/p>
 &lt;/div>
 
 &lt;p>In this video we go through the process of setting up the project in IntelliJIDEA to be able to do remote debugging between PC and a Raspberry Pi.&lt;/p>
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/SkpH_MdL6hc?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/SkpH_MdL6hc?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
  &lt;/div></description></item><item><title>Useful Tips</title><link>https://pi4j.com/kotlin/kotlin-examples/useful-tips/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/kotlin/kotlin-examples/useful-tips/</guid><description>&lt;div class="notices note" >&lt;p>GITHUB PROJECT: &lt;a href="https://github.com/RoboticsLife/Lesson02-Gpio-Kotlin-Pi4J" target="_blank" rel="noopener">https://github.com/RoboticsLife/Lesson02-Gpio-Kotlin-Pi4J&lt;/a>&lt;/p>
 &lt;/div>
 
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/bYqifO31qI0?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/bYqifO31qI0?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
  &lt;/div></description></item><item><title>Write OS to SD card</title><link>https://pi4j.com/prepare/sd-card/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/prepare/sd-card/</guid><description>&lt;p>The SD card will hold the operating system. On the Raspberry Pi website, &lt;a href="https://www.raspberrypi.org/software/" target="_blank" rel="noopener">on the download page, you can
 find the Imager tool&lt;/a>. Select the version for your computer, download, and install it.&lt;/p>
 &lt;p>&lt;img src="https://pi4j.com/assets/getting-started/setup/download-imager.png" alt="Imager download">&lt;/p>
@@ -257,7 +257,7 @@ course important to be aware of the correct numbering to not connect components 
 &lt;h2 id="breadboard">Breadboard&lt;/h2>
 &lt;p>A breadboard is the basic for each experiment. It allows you to easily connect several components to each other and the Raspberry Pi. Here is a video that explains the basics of breadboards:&lt;/p>
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/6WReFkfrUIk?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/6WReFkfrUIk?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
  &lt;/div>
 
 &lt;p>
@@ -441,7 +441,7 @@ speed increases. When you have pushed the button 5 times, the application stops.
  style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
  &lt;iframe
  src="https://player.vimeo.com/video/525570174?dnt=0"
- style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allow="fullscreen" loading="eager" title="Vimeo video">
+ style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allow="fullscreen">
  &lt;/iframe>
  &lt;/div>
 
@@ -876,7 +876,7 @@ also explain minimal coding required to allow greater flexibility.&lt;/p></descr
 
 &lt;p>This example is explained in the following video:&lt;/p>
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/BXOqXuh50KI?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/BXOqXuh50KI?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
  &lt;/div>
 
 &lt;h2 id="intro">Intro&lt;/h2>
@@ -930,7 +930,7 @@ all the required files to build with Gradle.&lt;/p>
 &lt;p>A LED strip doesn&amp;rsquo;t only exist as a single strip, the same system is also used in a LED matrix. In this example, we will control such a &lt;a href="https://www.amazon.nl/dp/B0B81R484Z" target="_blank" rel="noopener">8*32 LED matrix&lt;/a>.&lt;/p>
 &lt;p>Full LED strip code walkthrough, and additional info in this live session with Robert (aka Eitch) and Frank:&lt;/p>
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/eToIXACqSuY?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/eToIXACqSuY?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
  &lt;/div>
 
 &lt;h2 id="intro">Intro&lt;/h2>
@@ -1293,7 +1293,26 @@ combined to bytes.&lt;/p></description></item><item><title>1-Wire</title><link>h
 
 &lt;p>The Pi4J logo has been designed by &lt;a href="https://twitter.com/hansolo_" target="_blank" rel="noopener">Gerrit Grunwald&lt;/a> and is nicely combines a raspberry pie
 with &lt;a href="https://www.oracle.com/java/duke.html" target="_blank" rel="noopener">Duke, the Java Masqot&lt;/a>.&lt;/p>
-&lt;img src="https://pi4j.com/assets/pi4j-logo.png" style="width: 400px; height: 400px;" /></description></item><item><title>Pi4J welcomes Java 21</title><link>https://pi4j.com/blog/2025/20250211-welcome-java-21/</link><pubDate>Wed, 05 Feb 2025 00:00:00 +0000</pubDate><guid>https://pi4j.com/blog/2025/20250211-welcome-java-21/</guid><description>&lt;p>2025-02-11 by Frank Delporte&lt;/p>
+&lt;img src="https://pi4j.com/assets/pi4j-logo.png" style="width: 400px; height: 400px;" /></description></item><item><title>Starting with a Desktop Icon</title><link>https://pi4j.com/blog/2025/20250507-start-program-with-desktop-icon/</link><pubDate>Wed, 07 May 2025 00:00:00 +0000</pubDate><guid>https://pi4j.com/blog/2025/20250507-start-program-with-desktop-icon/</guid><description>&lt;p>2025-05-07 by Frank Delporte&lt;/p>
+&lt;p>Richard Norrie created an oscilloscope with Pi4J and was looking for a way to start his application with a desktop icon. Unfortunately, he ran into a few issues as the icon led to &amp;ldquo;Java not found&amp;rdquo; error.&lt;/p>
+&lt;p>This was likely due to environment variables not being properly set in the desktop launcher context. Here are the steps how this got fixed.&lt;/p>
+&lt;ol>
+&lt;li>Ensure Java is properly installed and the PATH is set system-wide:&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>echo &lt;span style="color:#e6db74">&amp;#39;export JAVA_HOME=/path/to/your/java&amp;#39;&lt;/span> &amp;gt;&amp;gt; ~/.bashrc
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>echo &lt;span style="color:#e6db74">&amp;#39;export PATH=$JAVA_HOME/bin:$PATH&amp;#39;&lt;/span> &amp;gt;&amp;gt; ~/.bashrc
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>source ~/.bashrc
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="2">
+&lt;li>Create a desktop entry file (with &lt;code>.desktop extension&lt;/code>) in &lt;code>~/.local/share/applications/&lt;/code> or &lt;code>/usr/share/applications/&lt;/code>:&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-text" data-lang="text">&lt;span style="display:flex;">&lt;span>[Desktop Entry]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Name=Oscilloscope
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Type=Application
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Exec=bash -ic &amp;#39;/path/to/your/script.sh&amp;#39;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Icon=/path/to/an/icon.png
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Terminal=false
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Categories=Application
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The key parts here are:&lt;/p></description></item><item><title>Pi4J welcomes Java 21</title><link>https://pi4j.com/blog/2025/20250211-welcome-java-21/</link><pubDate>Wed, 05 Feb 2025 00:00:00 +0000</pubDate><guid>https://pi4j.com/blog/2025/20250211-welcome-java-21/</guid><description>&lt;p>2025-02-11 by Frank Delporte&lt;/p>
 &lt;p>&lt;strong>The development of the Pi4J library faced a decision point&amp;hellip;: &amp;ldquo;&lt;em>Should we stick to Java 11 for existing projects and old Raspberry Pi&amp;rsquo;s (&lt;a href="https://pi4j.com/documentation/java-for-arm/">with ARMv6&lt;/a>), versus moving on and making use of better and more performant Java code with the latest Long Term Support (LTS) version?&lt;/em>&amp;rdquo;&lt;/strong>&lt;/p>
 &lt;p>We actually wanted to move on to Java 22, as it brings a new way of interacting with C-code, thanks to &lt;a href="https://openjdk.org/jeps/454" target="_blank" rel="noopener">JEP 454: Foreign Function &amp;amp; Memory API&lt;/a>. As this is the core behavior of Pi4J to interact with the GPIOs, it would make it much easier to implement new ways to control electronics, as confirmed &lt;a href="https://github.com/eitch/pi4j-test/blob/develop/src/main/java/ch/eitchnet/pi4j/test/LibGPIODController.java" target="_blank" rel="noopener">with a first test by Robert &amp;ldquo;Eitch&amp;rdquo;&lt;/a>. But as Java 22 is not an LTS release, we won&amp;rsquo;t make this move yet.&lt;/p></description></item><item><title>Pi4J presentation for Miami JUG</title><link>https://pi4j.com/blog/2025/20250115-miami-jug/</link><pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate><guid>https://pi4j.com/blog/2025/20250115-miami-jug/</guid><description>&lt;p>2025-01-15 by Frank Delporte&lt;/p>
 &lt;p>Frank Delporte was invited by the Miami JVM Group to present his journey into Java development on the Raspberry Pi. This video contains the part of the presentation that introduces Pi4J, some of its history, and its current state. We also look at a basic and more extended example, with a demo of a Vaadin and Spring Boot application controlling several electronic components.&lt;/p>
@@ -1341,7 +1360,7 @@ with &lt;a href="https://www.oracle.com/java/duke.html" target="_blank" rel="noo
  style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
  &lt;iframe
  src="https://player.vimeo.com/video/771087170?dnt=0"
- style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allow="fullscreen" loading="eager" title="Vimeo video">
+ style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allow="fullscreen">
  &lt;/iframe>
  &lt;/div>
 

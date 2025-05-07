@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>UI on Pi4J</title><link>https://pi4j.com/tags/ui/</link><description>Recent content in UI on Pi4J</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 07 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://pi4j.com/tags/ui/index.xml" rel="self" type="application/rss+xml"/><item><title>Starting with a Desktop Icon</title><link>https://pi4j.com/blog/2025/20250507-start-program-with-desktop-icon/</link><pubDate>Wed, 07 May 2025 00:00:00 +0000</pubDate><guid>https://pi4j.com/blog/2025/20250507-start-program-with-desktop-icon/</guid><description>&lt;p>2025-05-07 by Frank Delporte&lt;/p>
+&lt;p>Richard Norrie created an oscilloscope with Pi4J and was looking for a way to start his application with a desktop icon. Unfortunately, he ran into a few issues as the icon led to &amp;ldquo;Java not found&amp;rdquo; error.&lt;/p>
+&lt;p>This was likely due to environment variables not being properly set in the desktop launcher context. Here are the steps how this got fixed.&lt;/p>
+&lt;ol>
+&lt;li>Ensure Java is properly installed and the PATH is set system-wide:&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>echo &lt;span style="color:#e6db74">&amp;#39;export JAVA_HOME=/path/to/your/java&amp;#39;&lt;/span> &amp;gt;&amp;gt; ~/.bashrc
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>echo &lt;span style="color:#e6db74">&amp;#39;export PATH=$JAVA_HOME/bin:$PATH&amp;#39;&lt;/span> &amp;gt;&amp;gt; ~/.bashrc
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>source ~/.bashrc
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="2">
+&lt;li>Create a desktop entry file (with &lt;code>.desktop extension&lt;/code>) in &lt;code>~/.local/share/applications/&lt;/code> or &lt;code>/usr/share/applications/&lt;/code>:&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-text" data-lang="text">&lt;span style="display:flex;">&lt;span>[Desktop Entry]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Name=Oscilloscope
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Type=Application
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Exec=bash -ic &amp;#39;/path/to/your/script.sh&amp;#39;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Icon=/path/to/an/icon.png
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Terminal=false
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Categories=Application
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The key parts here are:&lt;/p></description></item></channel></rss>
