@@ -6,7 +6,7 @@ tags: ["UI"]
 
 2025-05-07 by Frank Delporte
 
-Richard Norrie created an oscilloscope with Pi4J and was looking for a way to start his application with a desktop icon. Unfortunately, he ran into a few issues as the icon led to "Java not found" error.
+**Richard Norrie** created an oscilloscope with Pi4J and was looking for a way to start his application with a desktop icon. Unfortunately, he ran into a few issues as the icon led to "Java not found" error.
 
 This was likely due to environment variables not being properly set in the desktop launcher context. Here are the steps how this got fixed as you can see in this screenshot:
 
