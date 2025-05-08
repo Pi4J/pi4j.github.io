@@ -10,7 +10,7 @@ tags: ["UI"]
 
 Here are the steps how this got fixed as you can see in this screenshot:
 
-![](/assets/blogs/desktop-icon/oscilloscope.png)
+![](/assets/blogs/desktop-icon/oscilloscope-v2.png)
 
 1. Ensure Java is properly installed and the PATH is set system-wide:
 
