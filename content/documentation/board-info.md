@@ -29,7 +29,6 @@ $ cat /proc/cpuinfo | grep 'Revision' | awk '{print $3}'
 ### Updated Method (>= 2.7.1 version)
 Starting with version 2.7.1, the board version number is determined programmatically in Java using the [CpuInfoReader](https://github.com/Pi4J/pi4j/blob/develop/pi4j-core/src/main/java/com/pi4j/boardinfo/datareader/CpuInfoReader.java) class. This method reads and processes the `/proc/cpuinfo` file to extract the CPU revision.
 
-
 For instance, for a Raspberry Pi Compute 4, multiple version numbers are possible:
 
 ```java
@@ -105,7 +104,13 @@ console.println("Throttled states description: " + BoardInfoHelper.getBoardReadi
 
 ## Overriding the Detected Board
 
-In case the detected board is wrong or unknown, you can override it since V3.0.1 with the following method. Make sure to do this before the Pi4J context is initialized, so the correct plugins are loaded.
+In some cases, you may want to overrule the detected board:
+
+* Testing on another platform.
+* Correct Raspberry Pi is not detected, for instance, a new type of board has not been added to [BoardModel](https://github.com/Pi4J/pi4j/blob/develop/pi4j-core/src/main/java/com/pi4j/boardinfo/definition/BoardModel.java) yet.
+* You want to use Pi4J on another type of board, for instance, [Orange Pi](http://www.orangepi.org/).
+
+Since V3.0.2, you can overrule the detected board in the `BoardInfoHelper` singleton. Make sure to do this before the Pi4J context is initialized, so the correct plugins are loaded.
 
 ```java
 // With default GpioD chip

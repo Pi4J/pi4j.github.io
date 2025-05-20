@@ -9,6 +9,18 @@ All releases of Pi4J V2+ are listed on [github.com/Pi4J/pi4j/releases](https://g
 
 Requires Java 21, see [What's New in V3](/about/info-v3/) for more info.
 
+### 2025-05-20 - V3.0.2
+
+* Board model can now be forced to allow the use of Pi4J on other/unrecognized boards. See [Overriding the Detected Board](/documentation/board-info/#overriding-the-detected-board) for more info.
+* `BoardInfoHelper.usesRP1()` has been improved as more boards use this RP1 (5, 500, Compute 5), and even more are expected in the future.
+* [Issue #455](https://github.com/Pi4J/pi4j/issues/455): GpioDDigitalInput may never start monitoring line events. Fixed by simplifying and improving the wait for the input listener loop to exit on shutdown.
+* [APIdia badge and link](https://apidia.net/mvn/com.pi4j/pi4j) added to README.md
+* [Pull request #461](https://github.com/Pi4J/pi4j/pull/461): Removal in the core code of the SpiChipSelect to enforce a PiGpio limitation of the values 0, 1, or 2. 
+
+Thanks to contributions by [@ylexus](https://github.com/ylexus), [@taartspi](https://github.com/taartspi), [@eitch](https://github.com/eitch), [@fdelporte](https://github.com/fdelporte).
+
+All changes: https://github.com/Pi4J/pi4j/compare/3.0.1...3.0.2
+
 ### 2025-03-24 - V3.0.1
 
 This is the first release of Pi4J that requires Java runtime 21 or higher. Check the blog post [Pi4J welcomes Java 21](/blog/2025/20250211-welcome-java-21/) to understand why we needed this change to prepare the project for the future...
