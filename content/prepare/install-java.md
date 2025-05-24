@@ -5,12 +5,8 @@ weight: 18
 
 Our Raspberry Pi has started for the first time and we are now ready to add some Java to it!
 
-{{% notice info %}}
-As described on the previous page "The First Boot" a script can be executed that will do all this at once!
-
-```shell
-curl -sL https://raw.githubusercontent.com/Pi4J/pi4j-os/main/script/prepare-for-java.sh | bash
-```
+{{% notice tip %}}
+As described on the previous page "The First Boot" a script can be executed that will do all this at once: `curl -sL https://raw.githubusercontent.com/Pi4J/pi4j-os/main/script/prepare-for-java.sh | bash`.
 {{% /notice %}}
 
 ## Add Missing Dependencies
