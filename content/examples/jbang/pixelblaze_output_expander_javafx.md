@@ -1,7 +1,7 @@
 ---
 title: LED strip with a JavaFX UI
 weight: 172
-tags: ["JBang", "Pixelblaze", "LED Strip", "JavaFX"]
+tags: ["JBang", "Pixelblaze", "LED Strip", "JavaFX", "SDKMAN"]
 ---
 
 {{% notice tip %}}

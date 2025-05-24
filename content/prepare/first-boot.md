@@ -1,6 +1,7 @@
 ---
 title: The First Boot
 weight: 17
+tags: ["Pi4J OS"]
 ---
 
 Put the SD Card with the operating system into the Raspberry Pi, connect a keyboard, mouse, and screen, and power it up!

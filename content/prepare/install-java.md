@@ -1,6 +1,7 @@
 ---
 title: Install Java and Tools
 weight: 18
+tags: ["Pi4J OS", "Java", "JavaFX", "JBang", "Maven", "SDKMAN"]
 ---
 
 Our Raspberry Pi has started for the first time and we are now ready to add some Java to it!

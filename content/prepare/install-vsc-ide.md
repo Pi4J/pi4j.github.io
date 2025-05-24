@@ -1,6 +1,7 @@
 ---
 title: Install Visual Studio Code
 weight: 19
+tags: ["Visual Studio Code"]
 ---
 
 You can develop Java applications on any computer and transfer the code or the compiled JAR-file to a Raspberry Pi to execute it. But Raspberry Pi 4 and 5 are definitely powerful enough to run an Integrated Development Environment (IDE)!
