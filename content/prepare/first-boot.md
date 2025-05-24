@@ -15,9 +15,7 @@ If you configured the login, password, WiFi, and SSH settings in the "Use OS cus
 Yes, even when you just created the SD Card with the latest OS provided by the Imager tool, it is possible that there are updates available. 
 
 {{% notice tip %}}
-Everything on this (and the next) page can be done with one command! It will download a script from the Pi4J OS GitHub project and execute all the different steps automatically. 
-
-Execute this: `shell
+Everything on this (and the next) page can be done with one command! It will download a script from the Pi4J OS GitHub project and execute all the different steps automatically. Execute this: `shell
 curl -sL https://raw.githubusercontent.com/Pi4J/pi4j-os/main/script/prepare-for-java.sh | bash`.
 {{% /notice %}}
 
