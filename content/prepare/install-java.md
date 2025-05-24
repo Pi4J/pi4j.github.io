@@ -5,6 +5,14 @@ weight: 18
 
 Our Raspberry Pi has started for the first time and we are now ready to add some Java to it!
 
+{{% notice info %}}
+As described on the previous page "The First Boot" a script can be executed that will do all this at once!
+
+```shell
+curl -sL https://raw.githubusercontent.com/Pi4J/pi4j-os/main/script/prepare-for-java.sh | bash
+```
+{{% /notice %}}
+
 ## Add Missing Dependencies
 
 Let's start with some helper tools that will be useful later.
@@ -54,7 +62,7 @@ If you want to use JavaFX on your Raspberry Pi, you have a few choices:
 * Install a JDK with JavaFX included with SDKMAN, e.g. with `sdk install java 21.0.5.fx-zulu`.
 * Use a script to download the JavaFX runtime from Gluon, e.g. from the [GitHub project pi4j-example-javafx](https://github.com/Pi4J/pi4j-example-javafx/tree/main) > `download_openjfx.bat` or `download_openjfx.sh` script.
 
-## Install SDKMAN and Other Tools
+## Install SDKMAN, Maven, and JBang
 
 For some of the examples, [Maven](https://maven.apache.org/) and/or [JBang](https://www.jbang.dev/) are used. The easiest way to install these, is by using [SDKMAN](https://sdkman.io/):
 
