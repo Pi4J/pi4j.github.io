@@ -41,21 +41,5 @@ Maven home: /usr/share/maven
 
 ## Visual Studio Code
 
-Visual Studio Code (VSC) is the free IDE (Integrated Developer Environment) by Microsoft. It's designed as a universal
-tool that you can use for multiple programming languages with extensions. 
-
-{{< gallery >}}
-{{< figure link="/assets/getting-started/vsc/visualstudiocode-download.png" caption="Download page for VSC" caption-position="center" caption-effect="fade" >}}
-{{< figure link="/assets/getting-started/vsc/programming-tools.png" caption="VSC in the list of programming tools" caption-position="center" caption-effect="fade" >}}
-{{< figure link="/assets/getting-started/vsc/vsc-on-raspberry-pi.png" caption="VSC running on the Raspberry Pi with Maven and Java Extension Pack" caption-position="center" caption-effect="fade" >}}
-{{< /gallery >}}
-{{< load-photoswipe >}}
-
-Visual Studio Code is available as a Raspberry Pi OS apt package. 
-Use the following commands to install it:
-
-```shell
-$ sudo apt update
-$ sudo apt install code -y
-```
+Please check [Prepare a Raspberry Pi > Install Visual Studio Code](/prepare/install-vsc-ide) for more info if you want to develop Java code directly on the Raspberry Pi.
 
