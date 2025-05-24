@@ -1,5 +1,5 @@
 ---
-title: Install VSC IDE
+title: Install Visual Studio Code
 weight: 19
 ---
 
