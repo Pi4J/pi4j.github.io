@@ -3,7 +3,7 @@ title: 'Didier the street artist robot'
 weight: 70
 ---
 
-Meet ["Didier"](https://duvam.net/didier/) the street artist robot, a project by [Duvam](https://duvam.net/contact/). 
+Meet ["Didier"](https://duvam.net/didier/) the street artist robot, a project by [**Duvam**](https://duvam.net/contact/). 
 The sources are shared on [github.com/duvamduvam/didier-java](https://github.com/duvamduvam/didier-java).
 
 {{< gallery >}}

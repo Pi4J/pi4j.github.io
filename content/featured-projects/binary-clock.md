@@ -8,7 +8,7 @@ tags: ["LED", "PCF8575", "MCP23008", "MCP23017"]
 GITHUB PROJECT: [github.com/taartspi/pi4j-binary-clock](https://github.com/taartspi/pi4j-binary-clock)
 {{% /notice %}}
 
-This project by Tom Aarts (published on May 15, 2024), is a binary clock created with LEDs on a breadboard. In the video below you see it incrementing to the next minute and hour.  What you see is the Hour Minute and Second displayed in BCD (Binary Coded Decimal):
+This project by **Tom Aarts** (published on May 15, 2024), is a binary clock created with LEDs on a breadboard. In the video below you see it incrementing to the next minute and hour.  What you see is the Hour Minute and Second displayed in BCD (Binary Coded Decimal):
 
 <video controls width="800">
   <source src="/assets/featured-projects/binaryclock/binaryclock.mp4" />

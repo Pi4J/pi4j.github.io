@@ -3,7 +3,7 @@ title: 'CocktailPi'
 weight: 65
 ---
 
-The CocktailPi is a cocktail mixing machine by Alexander Liggesmeyer. It can 
+The CocktailPi is a cocktail mixing machine by **Alexander Liggesmeyer**. It can 
 control as many pumps as the RaspberryPi provides GPIO pins. For every pump that gets added to the system, the user has 
 to provide the amount of time that that pump needs to pump one centiliter in milliseconds. The machine uses peristaltic 
 pumps. So that number is perfectly accurate. The flow rate won't vary over time. It uses a relay board for closing the 

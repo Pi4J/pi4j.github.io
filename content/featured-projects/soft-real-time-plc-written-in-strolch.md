@@ -18,7 +18,7 @@ These are projects by [the company atexxi.ch](https://www.atexxi.ch/).
 
 ### A soft real time PLC written in Java running on Strolch
 
-This PLC project by [Robert von Burg](https://twitter.com/eitchme) combines Pi4j, Strolch and the Raspberry Pi. 
+This PLC project by [**Robert von Burg**](https://twitter.com/eitchme) combines Pi4j, Strolch and the Raspberry Pi. 
 
 It is being used in a material flow controller which coordinates FromStock orders with a medical dispensing robot and dispenses 
 the packets into containers. These containers are then moved by a Strolch based PLC. The containers travel on a 12m long conveyor with 

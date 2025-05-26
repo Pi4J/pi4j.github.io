@@ -8,7 +8,7 @@ tags: ["I2C", "SPI", "Serial"]
 PROJECT WEBSITE: [smartcoop.tech](https://www.smartcoop.tech)
 {{% /notice %}}
 
-Dave Duncanson, an ex Royal Australian Airforce (RAAF) electronics technician and embedded software developer, created the **SmartCoop**. It's a fully automated Chicken Coop Controller solution which uses a Raspberry Pi and a ESP32-S3 Processor located on a custom designed Surface Mount Designed (SMD) PCB. The goal of this project was to significantly reduce the amount of regular and routine tasks required to keep a small flock (~30) of chickens on a hobby farm located in NSW just outside of Canberra Australia. 
+**Dave Duncanson**, an ex Royal Australian Airforce (RAAF) electronics technician and embedded software developer, created the **SmartCoop**. It's a fully automated Chicken Coop Controller solution which uses a Raspberry Pi and a ESP32-S3 Processor located on a custom designed Surface Mount Designed (SMD) PCB. The goal of this project was to significantly reduce the amount of regular and routine tasks required to keep a small flock (~30) of chickens on a hobby farm located in NSW just outside of Canberra Australia. 
 
 The 4th generation of this solution is based on over ten years in development with a lot of trail and error along the way. Just one example was the need to run all of the wiring harness within Conduit otherwise the local cockatoos will eat the wiring. There are no plans to commercialize this project, and all sources and hardware designs [are available on BitBucket](https://bitbucket.org/DaveDuncanson/smartcoop.tech/src/master/README.md).
 
