@@ -78,7 +78,16 @@
 &lt;/table>
 &lt;h3 id="simple-implementation">Simple Implementation&lt;/h3>
 &lt;p>For a Simple Implementation, the recommendation is to use the &lt;a href="https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog/Launcher.java" target="_blank" rel="noopener">Launcher Class&lt;/a>.
-With this, a simple application can be started.&lt;/p></description></item><item><title>Buzzer</title><link>https://pi4j.com/examples/components/buzzer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/components/buzzer/</guid><description>&lt;h3 id="description">Description&lt;/h3>
+With this, a simple application can be started.&lt;/p></description></item><item><title>Spring Boot Alarm System</title><link>https://pi4j.com/featured-projects/spring-boot-alarm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/featured-projects/spring-boot-alarm/</guid><description>&lt;div class="notices tip" >&lt;p>GITHUB PROJECT: &lt;a href="https://github.com/bmike2047/springboot-rpi-alarm-system" target="_blank" rel="noopener">github.com/bmike2047/springboot-rpi-alarm-system&lt;/a>&lt;/p>
+&lt;/div>
+
+&lt;p>This project by &lt;strong>Mihai Buleandra&lt;/strong>, uses Spring Boot to create a simple wired alarm system. Most examples on this website use Maven, but this project is a nice example of how to configure a Gradle project to use Pi4J. Mihai also uses Thymeleaf and Bootstrap for the web user interface, that has live updates showing the state of the alarm system.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/xRUWgISEngM?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+ &lt;/div>
+
+&lt;p>The alarm system makes use of Java&amp;rsquo;s multithreading capabilities, as it&amp;rsquo;s based on a non-blocking Finite State Machine. This means each state runs in its own thread allowing the web interface to not block while waiting for different operations. Multi-threaded reusable Java drivers for the Raspberry Pi are implemented using the Pi4J library for the keypad, Passive Infrared sensor (PIR), LED and Buzzer.
+Keypad driver includes debounce implementation also.&lt;/p></description></item><item><title>Buzzer</title><link>https://pi4j.com/examples/components/buzzer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/components/buzzer/</guid><description>&lt;h3 id="description">Description&lt;/h3>
 &lt;p>The &lt;a href="https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog/components/Buzzer.java" target="_blank" rel="noopener">Buzzer&lt;/a> is a template class, that you can use in your own Java-project.&lt;/p>
 &lt;p>The Template Class gives you the option to play a note, and to create your own little melodies to play. The buzzer is controlled via a PWM output. The dutycycle is fixed at 50% and with the frequency the desired sound can be reproduced.&lt;/p>
 &lt;h3 id="layout">Layout&lt;/h3>

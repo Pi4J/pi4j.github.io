@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>MCP23017 on Pi4J</title><link>https://pi4j.com/tags/mcp23017/</link><description>Recent content in MCP23017 on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://pi4j.com/tags/mcp23017/index.xml" rel="self" type="application/rss+xml"/><item><title>Binary Clock</title><link>https://pi4j.com/featured-projects/binary-clock/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/featured-projects/binary-clock/</guid><description>&lt;div class="notices tip" >&lt;p>GITHUB PROJECT: &lt;a href="https://github.com/taartspi/pi4j-binary-clock" target="_blank" rel="noopener">github.com/taartspi/pi4j-binary-clock&lt;/a>&lt;/p>
 &lt;/div>
 
-&lt;p>This project by Tom Aarts (published on May 15, 2024), is a binary clock created with LEDs on a breadboard. In the video below you see it incrementing to the next minute and hour. What you see is the Hour Minute and Second displayed in BCD (Binary Coded Decimal):&lt;/p>
+&lt;p>This project by &lt;strong>Tom Aarts&lt;/strong> (published on May 15, 2024), is a binary clock created with LEDs on a breadboard. In the video below you see it incrementing to the next minute and hour. What you see is the Hour Minute and Second displayed in BCD (Binary Coded Decimal):&lt;/p>
 &lt;video controls width="800">
  &lt;source src="https://pi4j.com/assets/featured-projects/binaryclock/binaryclock.mp4" />
 &lt;/video>

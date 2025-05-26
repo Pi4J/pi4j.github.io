@@ -80,8 +80,8 @@
 &lt;p>For a Simple Implementation, the recommendation is to use the &lt;a href="https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog/Launcher.java" target="_blank" rel="noopener">Launcher Class&lt;/a>.
 With this, a simple application can be started.&lt;/p></description></item><item><title>Sensor drivers</title><link>https://pi4j.com/featured-projects/sensor-drivers/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/featured-projects/sensor-drivers/</guid><description>&lt;p>In case you want to read the data from various I2C sensors connected to Raspberry Pi
 the difficult part is usually writing a piece of code which talks to the I2C sensor.&lt;/p>
-&lt;p>&lt;a href="https://github.com/jveverka/rpi-projects/tree/pi4j/rpi-drivers" target="_blank" rel="noopener">rpi-drivers&lt;/a>
-is a Java library implementing simple APIs and communication code for some
+&lt;p>&lt;a href="https://github.com/jveverka/rpi-projects/tree/pi4j-v2/rpi-drivers" target="_blank" rel="noopener">rpi-drivers&lt;/a>
+is a Java library by &lt;strong>Juraj Veverka&lt;/strong> implementing simple APIs and communication code for some
 widely used I2C sensors. You can easily measure temperature, pressure and humidity,
 get ambient light intensity or measure voltage in your java Raspberry Pi projects.&lt;/p></description></item><item><title>AD Converter ADS1115</title><link>https://pi4j.com/examples/components/ads1115/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/components/ads1115/</guid><description>&lt;h3 id="description">Description&lt;/h3>
 &lt;p>The Analog Digital Converter &lt;a href="https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog/components/Ads1115.java" target="_blank" rel="noopener">Ads1115&lt;/a> is a template class, that you can use in your own Java-project.
