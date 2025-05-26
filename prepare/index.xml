@@ -39,7 +39,7 @@ find the Imager tool&lt;/a>. Select the version for your computer, download, and
 &lt;h2 id="update-the-system">Update the System&lt;/h2>
 &lt;p>Yes, even when you just created the SD Card with the latest OS provided by the Imager tool, it is possible that there are updates available.&lt;/p></description></item><item><title>Install Java and Tools</title><link>https://pi4j.com/prepare/install-java/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/prepare/install-java/</guid><description>&lt;p>Our Raspberry Pi has started for the first time and we are now ready to add some Java to it!&lt;/p>
 
-&lt;div class="notices tip" >&lt;p>As described on the previous page &amp;ldquo;The First Boot&amp;rdquo; a script can be executed that will do all this at once: &lt;code>curl -sL https://raw.githubusercontent.com/Pi4J/pi4j-os/main/script/prepare-for-java.sh | bash&lt;/code>.&lt;/p>
+&lt;div class="notices tip" >&lt;p>As described on the previous page &amp;ldquo;The First Boot&amp;rdquo;, a script can be executed that will do all this at once: &lt;code>curl -sL https://raw.githubusercontent.com/Pi4J/pi4j-os/main/script/prepare-for-java.sh | bash&lt;/code>.&lt;/p>
 &lt;/div>
 
 &lt;h2 id="add-missing-dependencies">Add Missing Dependencies&lt;/h2>
