@@ -16,3 +16,5 @@ The alarm system makes use of Java's multithreading capabilities, as it's based 
 Keypad driver includes debounce implementation also.
 
 ![](/assets/featured-projects/spring-boot-alarm/rpi-alarm-bb.png)
+
+The code and more info is available in the [GitHub project](https://github.com/bmike2047/springboot-rpi-alarm-system).
