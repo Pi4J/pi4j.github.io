@@ -7,7 +7,7 @@ tags: ["Pi4J OS", "Java", "JavaFX", "JBang", "Maven", "SDKMAN"]
 Our Raspberry Pi has started for the first time and we are now ready to add some Java to it!
 
 {{% notice tip %}}
-As described on the previous page "The First Boot" a script can be executed that will do all this at once: `curl -sL https://raw.githubusercontent.com/Pi4J/pi4j-os/main/script/prepare-for-java.sh | bash`.
+As described on the previous page "The First Boot", a script can be executed that will do all this at once: `curl -sL https://raw.githubusercontent.com/Pi4J/pi4j-os/main/script/prepare-for-java.sh | bash`.
 {{% /notice %}}
 
 ## Add Missing Dependencies
