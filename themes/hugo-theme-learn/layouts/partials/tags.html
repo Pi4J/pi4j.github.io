@@ -1,7 +1,11 @@
 {{ if .Params.tags }}
 <div class="tags">
-{{range .Params.tags}}
-  <a class="tag-link" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
-{{end}}
+  {{- $tags := slice -}}
+    {{- range .Params.tags -}}
+  {{- $tags = $tags | append . -}}
+  {{- end -}}
+  {{- range sort (apply $tags "lower" ".") -}}
+    <a class="tag-link" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+  {{- end -}}
 </div>
 {{end}}

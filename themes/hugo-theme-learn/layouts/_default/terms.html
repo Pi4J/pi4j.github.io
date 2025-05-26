@@ -1,0 +1,17 @@
+{{ partial "header.html" . }}
+
+<ul>
+    {{- $terms := slice -}}
+    {{- range $key, $value := .Data.Terms -}}
+    {{- $terms = $terms | append $key -}}
+    {{- end -}}
+
+    {{- range sort $terms -}}
+    <li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/">{{ . }}</a></li>
+    {{- end -}}
+</ul>
+
+{{ partial "footer.html" . }}
+
+
+
