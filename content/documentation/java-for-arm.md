@@ -67,6 +67,37 @@ Serial		: 000000005f9ba615
 Model		: Raspberry Pi Model B Plus Rev 1.2
 ```
 
+### Running Java 21+ on Raspberry Pi Zero 2
+
+Because of changes in OpenJDK 21 (and newer), Java applications have problems on the Raspberry Pi Zero 2, 64-bit OS. These are a few example error messages, but depending on your code, the message could be different:
+
+```bash
+$ java HelloWorld.java
+
+An exception has occurred in the compiler ((version info not available)). Please file a bug against the Java compiler via the Java bug reporting page (https://bugreport.java.com) after checking the Bug Database (https://bugs.java.com) for duplicates. Include your program, the following diagnostic, and the parameters passed to the Java compiler in your report. Thank you.
+
+java.lang.NoClassDefFoundError: com/sun/tools/javac/processing/JavacProcessingEnvironment$DiscoveredProcessors
+	at jdk.compiler/com.sun.tools.javac.processing.JavacProcessingEnvironment.initProcessorIterator(JavacProcessingEnvironment.java:331)
+	...
+	
+$ javac HelloWorld.java
+
+Exception in thread "main" java.lang.InternalError: Cannot find requested resource bundle for locale en_US
+	at jdk.compiler/com.sun.tools.javac.util.JavacMessages.getBundles(JavacMessages.java:145)
+	...
+```
+
+Until the root problem is fixed in OpenJDK, you can fix this problem by adding a few command-line options to disable the intrinsic that speeds up hash calculation. It contains a bug which only affects the ARM Cortex-A53 only. The code interpreter and JIT compiler are unaffected.
+
+```bash
+java -XX:+UnlockDiagnosticVMOptions -XX:-UseVectorizedHashCodeIntrinsic HelloWorld.java
+Hello World
+```
+
+This will be fixed in the release of July 2025, based on the info in this bug report: [[AArch64] Incorrect result of VectorizedHashCode intrinsic on Cortex-A53](https://bugs.openjdk.org/browse/JDK-8353237)
+
+To read more about this problem, check the blog post [/blog/2025/20250625-java-21-not-working-on-zero-2](Java 21+ Not Working on Zero 2).
+
 ### Install Java 11 on ARMv6
 
 The sources for Java are available as open-source on [OpenJDK](https://openjdk.java.net/), which means, if you can't find the correct version for a specific board, it is possible to compile it yourself. Luckily there are different suppliers providing ready-made packages of the JDK for multiple platforms. But only Azul seems to have one which is a perfect fit for Raspberry Pi's with an ARMv6: [the Zulu community edition of JDK 11](https://www.azul.com/downloads/zulu-community/?version=java-11-lts&os=linux&architecture=arm-32-bit-hf&package=jdk).
