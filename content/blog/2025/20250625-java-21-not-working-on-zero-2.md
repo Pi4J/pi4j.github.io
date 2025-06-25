@@ -6,7 +6,7 @@ tags: ["Zero 2"]
 
 2025-06-25 by Frank Delporte
 
-**Dieter Holz** reported an issue was experimenting with Pi4J V3 on a Raspberry Pi Zero 2. Because this version requires Java 21 or newer, he upgraded his OS to a newer Java version and found out that no Java code could be executed. He tried with both Java 21 and 24 and none of these worked correctly, although Java 17 runs without problems. 
+**Dieter Holz** was experimenting with Pi4J V3 on a Raspberry Pi Zero 2. Because this version requires Java 21 or newer, he upgraded his OS to a newer Java version and found out that no Java code could be executed. He tried with both Java 21 and 24 and none of these worked correctly, although Java 17 runs without problems. 
 
 The same SD card with Java 24, which didn't work on the Zero 2, worked perfectly on a Raspberry Pi 4. So what is happening under the hoods? What is the difference between these two boards causing this problem? Let's dive in...
 
