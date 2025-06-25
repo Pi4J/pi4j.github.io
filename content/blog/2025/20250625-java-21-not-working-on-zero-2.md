@@ -72,7 +72,7 @@ If you want to dive deep into the details of the JIT, you can read this [technic
 
 ## Workaround
 
-As described on [Running Java 21+ on Raspberry Pi Zero 2](/documentation/java-for-arm/#how-to-check-and-install-java), a workaround is available to execute Java code until the fix is included in the next release:
+As described on [Running Java 21+ on Raspberry Pi Zero 2](/documentation/java-for-arm/#running-java-21-on-raspberry-pi-zero-2), a workaround is available to execute Java code until the fix is included in the next release:
 
 ```bash
 java -XX:+UnlockDiagnosticVMOptions -XX:-UseVectorizedHashCodeIntrinsic HelloWorld.java
