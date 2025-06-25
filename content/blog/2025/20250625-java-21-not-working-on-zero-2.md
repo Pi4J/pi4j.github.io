@@ -12,7 +12,7 @@ The same SD card with Java 24, which didn't work on the Zero 2, worked perfectly
 
 ## Differences Between RPi Zero 2 and RPi 4
 
-As the same SD card was used to test on two different boards, the problem has to be related to the board itself and not the software. I repeated the test as done by Dieter, and used the latest Azul Zulu version [24.30.13, based on OpenJDK 24.0.1](https://cdn.azul.com/zulu/bin/zulu24.30.13-ca-fx-jdk24.0.1-linux_arm64.deb).
+As the same SD card was used to test on two different boards, the problem has to be related to the board itself and not the software. I repeated the test as done by Dieter, and used the latest Azul Zulu version [24.30.13, based on OpenJDK 24.0.1](https://www.azul.com/downloads/?version=java-24&os=linux&architecture=arm-64-bit&package=jdk-fx#zulu).
 
 On both boards, the Java version could be read without any issues:
 
@@ -54,7 +54,7 @@ Bingo! `lscpu` shows a different type of ARM processor. Could this be the reason
 
 ## Changes in Java 21
 
-Thanks to my colleagues at Azul it immediately became clear it's indeed the Cortex-A53 which causes Java to fail...
+Thanks to my colleagues at **Azul** it immediately became clear it's indeed the Cortex-A53 which causes Java to fail...
 
 In Java 21 the Just-In-Time (JIT) compiler has been improved, but this change doesn't work correctly on the ARM Cortex-A53 processor as used in the Zero 2. This is another type of processor compared to, for instance, the Raspberry Pi 4 (Cortex-A72) and 5 (Cortex-A76).
 
@@ -75,7 +75,7 @@ If you want to dive deep into the details of the JIT, you can read this [technic
 As described on [Running Java 21+ on Raspberry Pi Zero 2](/documentation/java-for-arm/#running-java-21-on-raspberry-pi-zero-2), a workaround is available to execute Java code until the fix is included in the next release:
 
 ```bash
-java -XX:+UnlockDiagnosticVMOptions -XX:-UseVectorizedHashCodeIntrinsic HelloWorld.java
+$ java -XX:+UnlockDiagnosticVMOptions -XX:-UseVectorizedHashCodeIntrinsic HelloWorld.java
 Hello World
 ```
 
