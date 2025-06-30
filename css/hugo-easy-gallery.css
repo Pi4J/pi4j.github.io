@@ -41,6 +41,13 @@ Grid Layout Styles
    }
 }
 
+.box .img a img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+    margin: 0 !important;
+}
+
 /*
 Transition styles
 */
