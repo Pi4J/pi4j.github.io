@@ -83,6 +83,14 @@ body {
   margin-right: 0.5rem !important;
 }
 
+.dd-item.visited ul li.dd-item[data-nav-id] ul {
+    display: none !important;
+}
+
+.dd-item.visited ul .dd-item.active.visited a ~ ul , .dd-item.visited ul .dd-item.parent.visited a ~ ul{
+    display: block !important;
+}
+
 #sidebar-toggle-span {
   border-right: thin solid #DAD8D8 !important;
   padding-right: 0.5rem !important;
