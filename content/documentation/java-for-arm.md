@@ -94,7 +94,7 @@ java -XX:+UnlockDiagnosticVMOptions -XX:-UseVectorizedHashCodeIntrinsic HelloWor
 Hello World
 ```
 
-This will be fixed in the release of July 2025, based on the info in this bug report: [[AArch64] Incorrect result of VectorizedHashCode intrinsic on Cortex-A53](https://bugs.openjdk.org/browse/JDK-8353237)
+This will be fixed in a future release, based on the info in this bug report: [[AArch64] Incorrect result of VectorizedHashCode intrinsic on Cortex-A53](https://bugs.openjdk.org/browse/JDK-8353237)
 
 To read more about this problem, check the blog post [Java 21+ Not Working on Zero 2](/blog/2025/20250625-java-21-not-working-on-zero-2/).
 
