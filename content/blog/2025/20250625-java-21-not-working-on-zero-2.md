@@ -58,7 +58,7 @@ Thanks to my colleagues at **Azul**, it immediately became clear that the Cortex
 
 In Java 21 the Just-In-Time (JIT) compiler has been improved, but this change doesn't work correctly on the ARM Cortex-A53 processor as used in the Zero 2. This is another type of processor compared to, for instance, the Raspberry Pi 4 (Cortex-A72) and 5 (Cortex-A76).
 
-A bug has been reported in the OpenJDK project: [[AArch64] Incorrect result of VectorizedHashCode intrinsic on Cortex-A53](https://bugs.openjdk.org/browse/JDK-8353237). At this moment, it's already marked as "Resolved" and will be included in the July '25 update releases for versions 21, 24, and 25.
+A bug has been reported in the OpenJDK project: [[AArch64] Incorrect result of VectorizedHashCode intrinsic on Cortex-A53](https://bugs.openjdk.org/browse/JDK-8353237). At this moment, it's already marked as "Resolved" and ~~will be included in the July '25 update releases for versions 21, 24, and 25~~ is expected to be included in the 25 GA release (September '25).
 
 The issue stems from the fact that the VectorizedHashCode intrinsic was implemented with assumptions about ARM64 processors that don't hold true for the Cortex-A53 specifically. The Cortex-A53 has different microarchitectural characteristics compared to other ARM64 processors, and the vectorized hash code implementation doesn't account for these differences.
 
