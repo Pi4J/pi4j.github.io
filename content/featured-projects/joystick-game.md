@@ -160,8 +160,8 @@ It's very hard to give you a full overview of how to create a jmonkeyengine vehi
 
 ## More at sources
 
-- ADC overview : https://www.electronics-tutorials.ws/combination/analogue-to-digital-converter.html
-- MCP3008 ADC : https://www.microchip.com/en-us/product/MCP3008
-- SPI overview : https://learn.sparkfun.com/tutorials/serial-peripheral-interface-spi/all
-- Gradle lib : https://github.com/Scrappers-glitch/JoyStickModule
-- Testcase : https://github.com/Scrappers-glitch/JmeCarPhysicsTestRPI
+- [ADC overview](https://www.electronics-tutorials.ws/combination/analogue-to-digital-converter.html)
+- [MCP3008 ADC](https://www.microchip.com/en-us/product/MCP3008)
+- [SPI overview](https://learn.sparkfun.com/tutorials/serial-peripheral-interface-spi/all)
+- [RPI Joystick Gradle library](https://github.com/Electrostat-Lab/JoyStickModule)
+- [Tech-demo](https://github.com/Electrostat-Lab/JmeCarPhysicsTestRPI)
