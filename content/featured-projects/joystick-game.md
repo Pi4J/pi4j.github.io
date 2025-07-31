@@ -1,7 +1,7 @@
 ---
 title: 'JMonkeyEngine with Joystick'
 weight: 75
-tags: ["MCP3008", "SPI", "Joystick", "Analog"]
+tags: ["MCP3008", "SPI", "Joystick", "Analog", "ADC"]
 ---
 
 [**Pavl G.**](https://github.com/pavly-gerges) created a Java Gradle library to control a car in a [JMonkeyEngine](https://jmonkeyengine.org/) game with an arduino joystick module connected to a Raspberry Pi4 model B, using GPIO digital pins and SPI interfacing through MCP3008 ADC (Analog~Digital Converter).

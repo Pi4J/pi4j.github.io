@@ -1,7 +1,7 @@
 ---
 title: Joystick Analog
 weight: 210
-tags: ["Joystick", "Analog", "ADS1115"]
+tags: ["Joystick", "Analog", "ADS1115", "ADC"]
 ---
 
 ### Description

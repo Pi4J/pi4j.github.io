@@ -1,7 +1,7 @@
 ---
 title: Potentiometer
 weight: 210
-tags: ["Potentiometer"]
+tags: ["Potentiometer", "ADC", "ADS1115"]
 ---
 
 ### Description
