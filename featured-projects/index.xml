@@ -150,7 +150,7 @@ The sources are shared on &lt;a href="https://github.com/duvamduvam/didier-java"
  &lt;/div>
  &lt;/div>
 &lt;/div>
-&lt;/p></description></item><item><title>JMonkeyEngine with Joystick</title><link>https://pi4j.com/featured-projects/joystick-game/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/featured-projects/joystick-game/</guid><description>&lt;p>&lt;a href="https://www.linkedin.com/in/pavl-g-420b81228/" target="_blank" rel="noopener">&lt;strong>Pavl G.&lt;/strong>&lt;/a> created a Java Gradle library to control a car in a &lt;a href="https://jmonkeyengine.org/" target="_blank" rel="noopener">JMonkeyEngine&lt;/a> game with an arduino joystick module connected to a Raspberry Pi4 model B, using GPIO digital pins and SPI interfacing through MCP3008 ADC (Analog~Digital Converter).&lt;/p>
+&lt;/p></description></item><item><title>JMonkeyEngine with Joystick</title><link>https://pi4j.com/featured-projects/joystick-game/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/featured-projects/joystick-game/</guid><description>&lt;p>&lt;a href="https://github.com/pavly-gerges" target="_blank" rel="noopener">&lt;strong>Pavl G.&lt;/strong>&lt;/a> created a Java Gradle library to control a car in a &lt;a href="https://jmonkeyengine.org/" target="_blank" rel="noopener">JMonkeyEngine&lt;/a> game with an arduino joystick module connected to a Raspberry Pi4 model B, using GPIO digital pins and SPI interfacing through MCP3008 ADC (Analog~Digital Converter).&lt;/p>
 &lt;h2 id="requirements">Requirements&lt;/h2>
 &lt;ul>
 &lt;li>Raspberry Pi with arm processor (pi3, pi4, piZero) with a working java8 (preferred).&lt;/li>
