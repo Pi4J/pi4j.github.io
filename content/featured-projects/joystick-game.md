@@ -3,7 +3,7 @@ title: 'JMonkeyEngine with Joystick'
 weight: 75
 ---
 
-[**Pavl G.**](https://www.linkedin.com/in/pavl-g-420b81228/) created a Java Gradle library to control a car in a [JMonkeyEngine](https://jmonkeyengine.org/) game with an arduino joystick module connected to a Raspberry Pi4 model B, using GPIO digital pins and SPI interfacing through MCP3008 ADC (Analog~Digital Converter).
+[**Pavl G.**](https://github.com/pavly-gerges) created a Java Gradle library to control a car in a [JMonkeyEngine](https://jmonkeyengine.org/) game with an arduino joystick module connected to a Raspberry Pi4 model B, using GPIO digital pins and SPI interfacing through MCP3008 ADC (Analog~Digital Converter).
 
 ## Requirements
 
@@ -160,8 +160,8 @@ It's very hard to give you a full overview of how to create a jmonkeyengine vehi
 
 ## More at sources
 
-- ADC overview : https://www.electronics-tutorials.ws/combination/analogue-to-digital-converter.html
-- MCP3008 ADC : https://www.microchip.com/en-us/product/MCP3008
-- SPI overview : https://learn.sparkfun.com/tutorials/serial-peripheral-interface-spi/all
-- Gradle lib : https://github.com/Scrappers-glitch/JoyStickModule
-- Testcase : https://github.com/Scrappers-glitch/JmeCarPhysicsTestRPI
+- [ADC overview](https://www.electronics-tutorials.ws/combination/analogue-to-digital-converter.html)
+- [MCP3008 ADC](https://www.microchip.com/en-us/product/MCP3008)
+- [SPI overview](https://learn.sparkfun.com/tutorials/serial-peripheral-interface-spi/all)
+- [RPI Joystick Gradle library](https://github.com/Electrostat-Lab/JoyStickModule)
+- [Tech-demo](https://github.com/Electrostat-Lab/JmeCarPhysicsTestRPI)
