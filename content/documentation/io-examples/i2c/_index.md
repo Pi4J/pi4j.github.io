@@ -43,7 +43,7 @@ i2c-11	i2c       	107d508200.i2c                  	I2C adapter
 i2c-12	i2c       	107d508280.i2c                  	I2C adapter
 ```
 
-If you are not seeinging i2c-1, then you might have missed a few steps in [The First Boot](/prepare/first-boot.md).
+If you are not seeinging i2c-1, then you might have missed a few steps in [The First Boot](../../../prepare/first-boot.md).
 The specific line needed to enable i2c is:
 ```shell
 root@rp5:~# raspi-config nonint do_i2c 0
