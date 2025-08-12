@@ -173,6 +173,7 @@ These two values can be controlled via the Pi4J library and are also used intern
 - [Choosing an I/O Provider](../providers/_index.md)
 - [Wikipedia on PWM](https://en.wikipedia.org/wiki/Pulse-width_modulation)
 - [Wikipedia with audio frequencies](https://en.wikipedia.org/wiki/Piano_key_frequencies)
+- [Possible exception](../../blog/2025/20250811-Pi5-PWM-not-working--NoSuchFileException)
 
 ### Code example
 
