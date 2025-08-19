@@ -7,7 +7,7 @@ Pi4J is a real community project! On this page you find the main contributors, i
 
 <h2 style="clear: both;"><a href="https://twitter.com/savageautomate" target="_blank">Robert Savage</a></h2>
 
-<img src="/assets/about/team/robert-savage.png" style="float: left; margin-right: 15px; margin-bottom: 10px; max-width: 125px; max-height: 150px;">
+<img src="/assets/about/team/robert-savage.png" style="float: left; margin: 0 15px 10px 0; max-width: 125px; max-height: 150px;">
 
 **Project Founder, Architect, ("Retired") Lead Developer**
 
@@ -17,7 +17,7 @@ Read more about [Robert Savage in this interview on Foojay.io](https://foojay.io
 
 <h2 style="clear: both;"><a href="https://www.linkedin.com/in/frankdelporte/" target="_blank">Frank Delporte</a></h2>
 
-<img src="/assets/about/team/frank.jpg" style="float: left; margin-right: 15px; margin-bottom: 10px; max-width: 125px; max-height: 150px;">
+<img src="/assets/about/team/frank.jpg" style="float: left; margin-right: 15px; margin: 0 15px 10px 0; max-height: 150px;">
 
 **Project organization, Documenter, Developer**
 
@@ -27,7 +27,7 @@ Read more about [Frank Delporte in this interview on Foojay.io](https://foojay.i
 
 <h2 style="clear: both;"><a href="https://mstdn.gsi.li/@eitch" target="_blank">Robert von Burg (aka Eitch)</a></h2>
 
-<img src="/assets/about/team/eitch.jpg" style="float: left; margin-right: 15px; margin-bottom: 10px; max-width: 125px; max-height: 150px;">
+<img src="/assets/about/team/eitch.jpg" style="float: left; margin: 0 15px 10px 0; max-width: 125px; max-height: 150px;">
 
 **Lead Developer V2+, Releaser**
 
@@ -35,7 +35,7 @@ As lead developer for [strolch.li](https://strolch.li) we use Raspberry Pi as ou
 
 <h2 style="clear: both;"><a href="https://www.linkedin.com/in/dieter-holz-24761524/" target="_blank">Dr. Dieter Holz</a></h2>
 
-<img src="/assets/about/team/dieter-holz.png" style="float: left; margin-right: 15px; margin-bottom: 10px; max-width: 125px; max-height: 150px;">
+<img src="/assets/about/team/dieter-holz.png" style="float: left; margin: 0 15px 10px 0; max-width: 125px; max-height: 150px;">
 
 **Lecturer, Software Developer, Pi4J OS, Example Implementations**
 
@@ -47,7 +47,7 @@ Read more about [Dieter Holz in this interview on Foojay.io](https://foojay.io/t
 
 <h2 style="clear: both;">Thomas Aarts (aka Tom)</h2>
 
-<img src="/assets/about/team/tom.jpg" style="float: left; margin-right: 15px; margin-bottom: 10px; max-width: 125px; max-height: 150px;">
+<img src="/assets/about/team/tom.jpg" style="float: left; margin: 0 15px 10px 0; max-width: 125px; max-height: 150px;">
 
 **Developer, Example and Drivers Implementations**
 
@@ -57,7 +57,7 @@ Read more about [Tom Aarts in this interview](https://pi4j.com/blog/2024/2024042
 
 <h2 style="clear: both;"><a href="https://twitter.com/UpsideDownTrees" target="_blank">Muhammad Hashim (aka mhashim6)</a></h2>
 
-<img src="/assets/about/team/muhammad.jpg" style="float: left; margin-right: 15px; margin-bottom: 10px; max-width: 125px; max-height: 150px;">
+<img src="/assets/about/team/muhammad.jpg" style="float: left; margin: 0 15px 10px 0; max-width: 125px; max-height: 150px;">
 
 **Developer, Kotlin DSL**
 
@@ -65,7 +65,7 @@ I'm a Software Engineer at [Instabug](https://www.instabug.com/), Writer & Blogg
 
 <h2 style="clear: both;"><a href="https://www.linkedin.com/in/alexander-liggesmeyer/" target="_blank">Alexander Liggesmeyer</a></h2>
 
-<img src="/assets/about/team/alexander.jpg" style="float: left; margin-right: 15px; margin-bottom: 10px; max-width: 125px; max-height: 150px;">
+<img src="/assets/about/team/alexander.jpg" style="float: left; margin: 0 15px 10px 0; max-width: 125px; max-height: 150px;">
 
 **Developer, Created the RPi5 Plugin**
 
