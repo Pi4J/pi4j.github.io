@@ -33,6 +33,8 @@ Read more about [Frank Delporte in this interview on Foojay.io](https://foojay.i
 
 As lead developer for [strolch.li](https://strolch.li) we use Raspberry Pi as our platform to connect with products, and to implement a PLC in Java. The Pi4J project allows us to encapsulate the low level aspects of communicating with the hardware, and stay in our preferred choice. The [strolch.li/plc.html](https://strolch.li/plc.html) project allows us to also stay in the same DSL for writing server applications, as well as communicating with low level devices. Since I love open source projects, it felt natural to me to start investing time in the Pi4J projects to assist in the further development.
 
+Read more about [Robert von Burg in this interview on Foojay.io](https://foojay.io/today/evolutions-in-the-pi4j-library-by-tom-aarts-and-robert-von-burg/).
+
 <h2 style="clear: both;"><a href="https://www.linkedin.com/in/dieter-holz-24761524/" target="_blank">Dr. Dieter Holz</a></h2>
 
 <img src="/assets/about/team/dieter-holz.png" style="float: left; margin: 0 15px 10px 0; max-width: 125px; max-height: 150px;">
@@ -61,7 +63,9 @@ Read more about [Tom Aarts in this interview](https://pi4j.com/blog/2024/2024042
 
 **Developer, Kotlin DSL**
 
-I'm a Software Engineer at [Instabug](https://www.instabug.com/), Writer & Blogger at [The Upside-Down Trees](https://blog.mhashim6.me) & [The Unhappy Folk](https://blog.unhappyfolk.org). I go by *"Timeless, Placeless"* As it better reflects the crafts I do; my art and interests; and my life. I've joined the team to bring Kotlin to Pi4J; The project that brought the JVM to the Raspberry Pi. 
+I'm a Software Engineer at [Instabug](https://www.instabug.com/), Writer & Blogger at [The Upside-Down Trees](https://blog.mhashim6.me) & [The Unhappy Folk](https://blog.unhappyfolk.org). I go by *"Timeless, Placeless"* As it better reflects the crafts I do; my art and interests; and my life. I've joined the team to bring Kotlin to Pi4J; The project that brought the JVM to the Raspberry Pi.
+
+Muhammad has written about his [Pi4J Kotlin implementations on Foojay.io](https://foojay.io/today/author/mhashim6/).
 
 <h2 style="clear: both;"><a href="https://www.linkedin.com/in/alexander-liggesmeyer/" target="_blank">Alexander Liggesmeyer</a></h2>
 
