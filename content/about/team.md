@@ -5,7 +5,7 @@ weight: 60
 
 Pi4J is a real community project! On this page you find the main contributors, in the order they joined the project. But there are many more, as you can see [in the list with Pi4J library contributors](https://github.com/Pi4J/pi4j/graphs/contributors), and in the many other [Pi4J repositories with example implementations](https://github.com/orgs/Pi4J/repositories).
 
-<h2 style="clear: both;"><a href="https://twitter.com/savageautomate" target="_blank">Robert Savage</a></h2>
+<h3 style="clear: both;"><a href="https://twitter.com/savageautomate" target="_blank">Robert Savage</a></h3>
 
 <img src="/assets/about/team/robert-savage.png" style="float: left; margin: 0 15px 10px 0; max-width: 125px; max-height: 150px;">
 
@@ -15,7 +15,7 @@ Principal Software Architect/Engineer. Consultant, technology enthusiast, entrep
 
 Read more about [Robert Savage in this interview on Foojay.io](https://foojay.io/today/interviews-with-robert-savage-and-johan-vos-on-the-state-of-java-on-raspberry-pi/).
 
-<h2 style="clear: both;"><a href="https://www.linkedin.com/in/frankdelporte/" target="_blank">Frank Delporte</a></h2>
+<h3 style="clear: both;"><a href="https://www.linkedin.com/in/frankdelporte/" target="_blank">Frank Delporte</a></h3>
 
 <img src="/assets/about/team/frank-delporte-xs.jpg" style="float: left; margin-right: 15px; margin: 0 15px 10px 0; max-height: 150px;">
 
@@ -25,7 +25,7 @@ Java and Raspberry Pi-enthousiast, [blogger on webtechie.be](https://webtechie.b
 
 Read more about [Frank Delporte in this interview on Foojay.io](https://foojay.io/today/unlocking-java-secrets-with-frank-delporte-insights-stories-and-tips-for-success/). 
 
-<h2 style="clear: both;"><a href="https://mstdn.gsi.li/@eitch" target="_blank">Robert von Burg (aka Eitch)</a></h2>
+<h3 style="clear: both;"><a href="https://mstdn.gsi.li/@eitch" target="_blank">Robert von Burg (aka Eitch)</a></h3>
 
 <img src="/assets/about/team/eitch.jpg" style="float: left; margin: 0 15px 10px 0; max-width: 125px; max-height: 150px;">
 
@@ -35,7 +35,7 @@ As lead developer for [strolch.li](https://strolch.li) we use Raspberry Pi as ou
 
 Read more about [Robert von Burg in this interview on Foojay.io](https://foojay.io/today/evolutions-in-the-pi4j-library-by-tom-aarts-and-robert-von-burg/).
 
-<h2 style="clear: both;"><a href="https://www.linkedin.com/in/dieter-holz-24761524/" target="_blank">Dr. Dieter Holz</a></h2>
+<h3 style="clear: both;"><a href="https://www.linkedin.com/in/dieter-holz-24761524/" target="_blank">Dr. Dieter Holz</a></h3>
 
 <img src="/assets/about/team/dieter-holz.png" style="float: left; margin: 0 15px 10px 0; max-width: 125px; max-height: 150px;">
 
@@ -47,7 +47,7 @@ Together with his students, Dieter created the [CrowPi example implementations](
 
 Read more about [Dieter Holz in this interview on Foojay.io](https://foojay.io/today/java-in-education-combining-java-with-raspberry-pi-and-the-pi4j-library/).
 
-<h2 style="clear: both;">Thomas Aarts (aka Tom)</h2>
+<h3 style="clear: both;">Thomas Aarts (aka Tom)</h3>
 
 <img src="/assets/about/team/tom.jpg" style="float: left; margin: 0 15px 10px 0; max-width: 125px; max-height: 150px;">
 
@@ -57,7 +57,7 @@ My previous work entailed a decade in Alaska involving HF through Microwave comm
 
 Read more about [Tom Aarts in this interview](https://pi4j.com/blog/2024/20240425_interview_tom_aarts/).
 
-<h2 style="clear: both;"><a href="https://twitter.com/UpsideDownTrees" target="_blank">Muhammad Hashim (aka mhashim6)</a></h2>
+<h3 style="clear: both;"><a href="https://twitter.com/UpsideDownTrees" target="_blank">Muhammad Hashim (aka mhashim6)</a></h3>
 
 <img src="/assets/about/team/muhammad.jpg" style="float: left; margin: 0 15px 10px 0; max-width: 125px; max-height: 150px;">
 
@@ -67,7 +67,7 @@ I'm a Software Engineer at [Instabug](https://www.instabug.com/), Writer & Blogg
 
 Muhammad has written about his [Pi4J Kotlin implementations on Foojay.io](https://foojay.io/today/author/mhashim6/).
 
-<h2 style="clear: both;"><a href="https://www.linkedin.com/in/alexander-liggesmeyer/" target="_blank">Alexander Liggesmeyer</a></h2>
+<h3 style="clear: both;"><a href="https://www.linkedin.com/in/alexander-liggesmeyer/" target="_blank">Alexander Liggesmeyer</a></h3>
 
 <img src="/assets/about/team/alexander.jpg" style="float: left; margin: 0 15px 10px 0; max-width: 125px; max-height: 150px;">
 
