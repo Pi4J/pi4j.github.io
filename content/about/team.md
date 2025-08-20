@@ -17,7 +17,7 @@ Read more about [Robert Savage in this interview on Foojay.io](https://foojay.io
 
 <h2 style="clear: both;"><a href="https://www.linkedin.com/in/frankdelporte/" target="_blank">Frank Delporte</a></h2>
 
-<img src="/assets/about/team/frank.jpg" style="float: left; margin-right: 15px; margin: 0 15px 10px 0; max-height: 150px;">
+<img src="/assets/about/team/frank-delporte-xs.jpg" style="float: left; margin-right: 15px; margin: 0 15px 10px 0; max-height: 150px;">
 
 **Project organization, Documenter, Developer**
 
