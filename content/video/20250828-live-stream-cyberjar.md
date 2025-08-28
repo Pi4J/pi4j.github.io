@@ -5,7 +5,7 @@ tags: ["Video"]
 
 ## Chatting about Java, JavaFX, and Experiments on the Raspberry Pi
 
-**20250828 - Live Stream with Catherine Edelveis (CyberJAR) and Frank Delporte **
+**20250828 - Live Stream with Catherine Edelveis (CyberJAR) and Frank Delporte**
 
 {{< youtube axbx2kTuJf0 >}}
 
