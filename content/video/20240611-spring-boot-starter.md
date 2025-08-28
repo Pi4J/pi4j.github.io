@@ -5,7 +5,7 @@ tags: ["Video"]
 
 ## Pi4J Spring Boot Starter
 
-**20240611 - Live Stream with DaShaun Carter**
+**20240611 - Live Stream with DaShaun Carter and Frank Delporte**
 
 {{< youtube I62IviQLNts >}}
 
