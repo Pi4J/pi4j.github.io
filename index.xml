@@ -1404,12 +1404,18 @@ exception details will state &lt;code&gt;/sys/class/pwm/pwmchip2/npwm was not fo
  &lt;/div&gt;
 
 &lt;p&gt;Java is not only the server language running on heavy machines! You can do amazing stuff with it on a small single-board computer and gain new knowledge simultaneously, like controlling electronic components and different communication protocols.&lt;/p&gt;</description></item><item><title>2024 Spring Boot Starter</title><link>https://pi4j.com/video/20240611-spring-boot-starter/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/video/20240611-spring-boot-starter/</guid><description>&lt;h2 id="pi4j-spring-boot-starter"&gt;Pi4J Spring Boot Starter&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;20240611 - Live Stream with DaShaun Carter&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;20240611 - Live Stream with DaShaun Carter and Frank Delporte&lt;/strong&gt;&lt;/p&gt;
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
  &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/I62IviQLNts?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
  &lt;/div&gt;
 
-&lt;p&gt;Creating a Spring Boot Starter to use Pi4J in a Spring Boot application.&lt;/p&gt;</description></item><item><title>Annotated provisioning</title><link>https://pi4j.com/architecture/advanced/annotated-provisioning/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/architecture/advanced/annotated-provisioning/</guid><description>&lt;div class="notices warning" &gt;&lt;p&gt;To simplify the initial V2 version, the DI implementation has be removed so it could be
+&lt;p&gt;Creating a Spring Boot Starter to use Pi4J in a Spring Boot application.&lt;/p&gt;</description></item><item><title>2025 Live Stream CyberJAR</title><link>https://pi4j.com/video/20250828-live-stream-cyberjar/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/video/20250828-live-stream-cyberjar/</guid><description>&lt;h2 id="chatting-about-java-javafx-and-experiments-on-the-raspberry-pi"&gt;Chatting about Java, JavaFX, and Experiments on the Raspberry Pi&lt;/h2&gt;
+&lt;p&gt;**20250828 - Live Stream with Catherine Edelveis (CyberJAR) and Frank Delporte **&lt;/p&gt;
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/axbx2kTuJf0?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
+
+&lt;p&gt;Java on a tiny board? JavaFX on touchscreens? In this session, Catherine is joined by Frank Delporte, Java Champion and author of &amp;lsquo;Getting started with Java on Raspberry Pi,&amp;rsquo; to explore how JavaFX fits into modern IoT/embedded workflows on Raspberry Pi.&lt;/p&gt;</description></item><item><title>Annotated provisioning</title><link>https://pi4j.com/architecture/advanced/annotated-provisioning/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/architecture/advanced/annotated-provisioning/</guid><description>&lt;div class="notices warning" &gt;&lt;p&gt;To simplify the initial V2 version, the DI implementation has be removed so it could be
 refactored and extended later. It is still available in the branch
 &lt;a href="https://github.com/Pi4J/pi4j/tree/feature/%2322-annotations" target="_blank" rel="noopener"&gt;#22-annotations&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
