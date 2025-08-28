@@ -1,7 +1,7 @@
 ---
 title: Pulse Width Modulation (PWM)
 weight: 220
-tags: ["PWM"]
+tags: ["PWM", "CrowPi"]
 ---
 
 ## What is it?
@@ -116,7 +116,6 @@ $ pinctrl get 18
 18: a5    pd | lo // GPIO18 = PWM0_0
 $ pinctrl get 19
 19: a5    pd | lo // GPIO19 = PWM0_1
-
 ```
 
 #### Raspberry Pi 5
@@ -150,6 +149,23 @@ $ pinctrl get 18
 18: a3    pd | lo // GPIO18 = PWM0_CHAN2
 $ pinctrl get 19
 19: a3    pd | lo // GPIO19 = PWM0_CHAN3
+```
+
+When needed, you can also configure a combination of, for example, GPIO12 and GPIO18 as needed on the CrowPi 2 to control both the buzzer (18) and RGB LED Matrix (12):
+
+```bash
+# In config.txt
+dtoverlay=pwm-2chan,pin=18,func=2,pin2=12,func2=4
+
+# Reboot and test
+$ pinctrl get 12
+12: a0    pd | lo // GPIO12 = PWM0_CHAN0
+$ pinctrl get 13
+13: no    pd | -- // GPIO13 = none
+$ pinctrl get 18
+18: a3    pd | lo // GPIO18 = PWM0_CHAN2
+$ pinctrl get 19
+19: no    pd | -- // GPIO19 = none
 ```
 
 ## Technical implementation
