@@ -1,44 +1,44 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>LinuxFS on Pi4J</title><link>https://pi4j.com/tags/linuxfs/</link><description>Recent content in LinuxFS on Pi4J</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 11 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://pi4j.com/tags/linuxfs/index.xml" rel="self" type="application/rss+xml"/><item><title>Choosing an I/O Provider</title><link>https://pi4j.com/documentation/providers/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/providers/</guid><description>&lt;p>Providers are extensible service modules responsible for the concrete implementation of a specific I/O type.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>LinuxFS on Pi4J</title><link>https://pi4j.com/tags/linuxfs/</link><description>Recent content in LinuxFS on Pi4J</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 11 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://pi4j.com/tags/linuxfs/index.xml" rel="self" type="application/rss+xml"/><item><title>Choosing an I/O Provider</title><link>https://pi4j.com/documentation/providers/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/providers/</guid><description>&lt;p&gt;Providers are extensible service modules responsible for the concrete implementation of a specific I/O type.
 The providers also allow to separate the internal logic of the Pi4J core from the concrete implementation of the board
-on which they are used.&lt;/p>
-&lt;p>Pi4J 2.0 - 2.4: Multiple providers for the same I/O type can be loaded into a Pi4J context concurrently. For example a
+on which they are used.&lt;/p&gt;
+&lt;p&gt;Pi4J 2.0 - 2.4: Multiple providers for the same I/O type can be loaded into a Pi4J context concurrently. For example a
 &amp;ldquo;RaspberryPi-DigitalInputProvider&amp;rdquo; and &amp;ldquo;GertBoard-DigitalInputProvider&amp;rdquo; could both be loaded and both providing digital
-inputs at the same time.&lt;/p></description></item><item><title>LinuxFS Provider</title><link>https://pi4j.com/documentation/providers/linuxfs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/providers/linuxfs/</guid><description>&lt;p>The current implementation of the LinuxFS plugin implements a file based I2C, SPI, and PWM provider. The file based I2C provider opens
-&lt;code>/dev/i2c-1&lt;/code> using a &lt;code>RandomAccessFile&lt;/code> to perform I2C reads and writes. The file based PWM provider opens
-&lt;code>/sys/class/pwm/pwmchip?&lt;/code> using a &lt;code>RandomAccessFile&lt;/code> to perform PWM operations.&lt;/p>
+inputs at the same time.&lt;/p&gt;</description></item><item><title>LinuxFS Provider</title><link>https://pi4j.com/documentation/providers/linuxfs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/providers/linuxfs/</guid><description>&lt;p&gt;The current implementation of the LinuxFS plugin implements a file based I2C, SPI, and PWM provider. The file based I2C provider opens
+&lt;code&gt;/dev/i2c-1&lt;/code&gt; using a &lt;code&gt;RandomAccessFile&lt;/code&gt; to perform I2C reads and writes. The file based PWM provider opens
+&lt;code&gt;/sys/class/pwm/pwmchip?&lt;/code&gt; using a &lt;code&gt;RandomAccessFile&lt;/code&gt; to perform PWM operations.&lt;/p&gt;
 
-&lt;div class="notices warning" >&lt;p>The Linuxfs provider linuxfs-pwm requires minimum kernel Bullseye 6.1.21 and Bookworm 6.6.22 !&lt;/p>
-&lt;/div>
+&lt;div class="notices warning" &gt;&lt;p&gt;The Linuxfs provider linuxfs-pwm requires minimum kernel Bullseye 6.1.21 and Bookworm 6.6.22 !&lt;/p&gt;
+&lt;/div&gt;
 
-&lt;p>Providers in the LinuxFS plugin:&lt;/p>
-&lt;ul>
-&lt;li>linuxfs-i2c&lt;/li>
-&lt;li>linuxfx-spi&lt;/li>
-&lt;li>linuxfs-pwm &amp;ndash;&amp;gt; check below for important info about the channel configuration!&lt;/li>
-&lt;li>Under construction
-&lt;ul>
-&lt;li>linuxfs-digital-input&lt;/li>
-&lt;li>linuxfs-digital-output&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;p>To use the LinuxFS provider include the following dependencies:&lt;/p></description></item><item><title>RPi5 PWM Fails with NoSuchFileException</title><link>https://pi4j.com/blog/2025/20250811-rpi5-pwm-not-working/</link><pubDate>Mon, 11 Aug 2025 00:00:00 +0000</pubDate><guid>https://pi4j.com/blog/2025/20250811-rpi5-pwm-not-working/</guid><description>&lt;p>2025-08-11, by Tom Aarts&lt;/p>
-&lt;p>On the Pi5, Pi kernel updates may result in failing PWM. The
-exception details will state &lt;code>/sys/class/pwm/pwmchip2/npwm was not found&lt;/code>.&lt;/p>
-&lt;p>A kernel code update (6.12) resulted in the objects within &lt;code>/sys/class/pwm&lt;/code> being numbered differently. It is most likely the PWM is using &lt;code>/sys/class/pwm/pwmchip0&lt;/code>.&lt;/p>
-&lt;p>Until a proper fix is available, the following change to your application should resolve this error:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-java" data-lang="java">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// Add imports&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">import&lt;/span> com.pi4j.plugin.linuxfs.provider.pwm.LinuxFsPwmProvider;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">import&lt;/span> com.pi4j.plugin.linuxfs.provider.pwm.LinuxFsPwmProviderImpl;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// Replace newAutoContext&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// Instead of:&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// Context pi4j = Pi4J.newAutoContext();&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// Use:&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Context pi4j &lt;span style="color:#f92672">=&lt;/span> Pi4J.&lt;span style="color:#a6e22e">newContextBuilder&lt;/span>()
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> .&lt;span style="color:#a6e22e">add&lt;/span>(&lt;span style="color:#66d9ef">new&lt;/span> LinuxFsPwmProviderImpl(&lt;span style="color:#e6db74">&amp;#34;/sys/class/pwm/&amp;#34;&lt;/span>, 0) )
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> .&lt;span style="color:#a6e22e">build&lt;/span>();
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>PWM Hardware Support on RPi5</title><link>https://pi4j.com/blog/2024/20240423_pwm_rpi5/</link><pubDate>Tue, 23 Apr 2024 00:00:00 +0000</pubDate><guid>https://pi4j.com/blog/2024/20240423_pwm_rpi5/</guid><description>&lt;p>2024-04-23, by Tom Aarts&lt;/p>
-&lt;p>The next version of Pi4J (are now already in 2.5.2-SNAPSHOT) will add PWM support via a new provider &lt;code>linuxfs-pwm&lt;/code>. The previous PWM PiGpio provider does not support the Raspberry Pi 5 RP1 chip. To use this new provider, changes are required in your &lt;code>pom.xml&lt;/code> dependencies and Java code. The details of using this new provider are explained in the Pi4J documentation in &lt;a href="https://pi4j.com/documentation/io-examples/pwm/">Pulse Width Modulation&lt;/a>. In this blog post, I want to provide extra details and an example implementation. This post reference changes when using the Bookworm OS on a Raspberry Pi 5. If you are using the &lt;code>linuxfs-pwm&lt;/code> provider on a Raspberry Pi 4, consult the &lt;a href="https://pi4j.com/documentation/io-examples/pwm/">Pulse Width Modulation&lt;/a> for &lt;code>config.sys&lt;/code> and channel differences.&lt;/p></description></item></channel></rss>
+&lt;p&gt;Providers in the LinuxFS plugin:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;linuxfs-i2c&lt;/li&gt;
+&lt;li&gt;linuxfx-spi&lt;/li&gt;
+&lt;li&gt;linuxfs-pwm &amp;ndash;&amp;gt; check below for important info about the channel configuration!&lt;/li&gt;
+&lt;li&gt;Under construction
+&lt;ul&gt;
+&lt;li&gt;linuxfs-digital-input&lt;/li&gt;
+&lt;li&gt;linuxfs-digital-output&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To use the LinuxFS provider include the following dependencies:&lt;/p&gt;</description></item><item><title>RPi5 PWM Fails with NoSuchFileException</title><link>https://pi4j.com/blog/2025/20250811-rpi5-pwm-not-working/</link><pubDate>Mon, 11 Aug 2025 00:00:00 +0000</pubDate><guid>https://pi4j.com/blog/2025/20250811-rpi5-pwm-not-working/</guid><description>&lt;p&gt;2025-08-11, by Tom Aarts&lt;/p&gt;
+&lt;p&gt;On the Pi5, Pi kernel updates may result in failing PWM. The
+exception details will state &lt;code&gt;/sys/class/pwm/pwmchip2/npwm was not found&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;A kernel code update (6.12) resulted in the objects within &lt;code&gt;/sys/class/pwm&lt;/code&gt; being numbered differently. It is most likely the PWM is using &lt;code&gt;/sys/class/pwm/pwmchip0&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Until a proper fix is available, the following change to your application should resolve this error:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-java" data-lang="java"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;// Add imports&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;import&lt;/span&gt; com.pi4j.plugin.linuxfs.provider.pwm.LinuxFsPwmProvider;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;import&lt;/span&gt; com.pi4j.plugin.linuxfs.provider.pwm.LinuxFsPwmProviderImpl;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;// Replace newAutoContext&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;// Instead of:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;// Context pi4j = Pi4J.newAutoContext();&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;// Use:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Context pi4j &lt;span style="color:#f92672"&gt;=&lt;/span&gt; Pi4J.&lt;span style="color:#a6e22e"&gt;newContextBuilder&lt;/span&gt;()
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; .&lt;span style="color:#a6e22e"&gt;add&lt;/span&gt;(&lt;span style="color:#66d9ef"&gt;new&lt;/span&gt; LinuxFsPwmProviderImpl(&lt;span style="color:#e6db74"&gt;&amp;#34;/sys/class/pwm/&amp;#34;&lt;/span&gt;, 0) )
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; .&lt;span style="color:#a6e22e"&gt;build&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>PWM Hardware Support on RPi5</title><link>https://pi4j.com/blog/2024/20240423_pwm_rpi5/</link><pubDate>Tue, 23 Apr 2024 00:00:00 +0000</pubDate><guid>https://pi4j.com/blog/2024/20240423_pwm_rpi5/</guid><description>&lt;p&gt;2024-04-23, by Tom Aarts&lt;/p&gt;
+&lt;p&gt;The next version of Pi4J (are now already in 2.5.2-SNAPSHOT) will add PWM support via a new provider &lt;code&gt;linuxfs-pwm&lt;/code&gt;. The previous PWM PiGpio provider does not support the Raspberry Pi 5 RP1 chip. To use this new provider, changes are required in your &lt;code&gt;pom.xml&lt;/code&gt; dependencies and Java code. The details of using this new provider are explained in the Pi4J documentation in &lt;a href="https://pi4j.com/documentation/io-examples/pwm/"&gt;Pulse Width Modulation&lt;/a&gt;. In this blog post, I want to provide extra details and an example implementation. This post reference changes when using the Bookworm OS on a Raspberry Pi 5. If you are using the &lt;code&gt;linuxfs-pwm&lt;/code&gt; provider on a Raspberry Pi 4, consult the &lt;a href="https://pi4j.com/documentation/io-examples/pwm/"&gt;Pulse Width Modulation&lt;/a&gt; for &lt;code&gt;config.sys&lt;/code&gt; and channel differences.&lt;/p&gt;</description></item></channel></rss>

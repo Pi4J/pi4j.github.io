@@ -1,17 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>FatJAR on Pi4J</title><link>https://pi4j.com/tags/fatjar/</link><description>Recent content in FatJAR on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://pi4j.com/tags/fatjar/index.xml" rel="self" type="application/rss+xml"/><item><title>Minimal example as FAT JAR</title><link>https://pi4j.com/getting-started/minimal-example-application-fatjar/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/getting-started/minimal-example-application-fatjar/</guid><description>&lt;div class="notices tip" >&lt;p>GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-example-fatjar" target="_blank" rel="noopener">https://github.com/Pi4J/pi4j-example-fatjar&lt;/a>&lt;/p>
-&lt;/div>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>FatJAR on Pi4J</title><link>https://pi4j.com/tags/fatjar/</link><description>Recent content in FatJAR on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://pi4j.com/tags/fatjar/index.xml" rel="self" type="application/rss+xml"/><item><title>Minimal example as FAT JAR</title><link>https://pi4j.com/getting-started/minimal-example-application-fatjar/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/getting-started/minimal-example-application-fatjar/</guid><description>&lt;div class="notices tip" &gt;&lt;p&gt;GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-example-fatjar" target="_blank" rel="noopener"&gt;https://github.com/Pi4J/pi4j-example-fatjar&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
 
-&lt;p>The &lt;a href="https://pi4j.com/getting-started/minimal-example-application/">&amp;ldquo;Minimal example application&amp;rdquo;&lt;/a> uses one LED and button to demonstrate
+&lt;p&gt;The &lt;a href="https://pi4j.com/getting-started/minimal-example-application/"&gt;&amp;ldquo;Minimal example application&amp;rdquo;&lt;/a&gt; uses one LED and button to demonstrate
 the basic use of Pi4J. When building that project with Maven, all the required Java modules are copied to the
-&lt;code>target/distribution&lt;/code> directory. But a lot of developers like to produce a single, executable JAR that contains
-all dependencies, also known as a &amp;ldquo;FAT JAR&amp;rdquo;.&lt;/p>
-&lt;p>The repository &lt;a href="https://github.com/Pi4J/pi4j-example-fatjar" target="_blank" rel="noopener">&amp;ldquo;pi4j-example-fatjar&amp;rdquo; GitHub project&lt;/a> contains a Maven project
+&lt;code&gt;target/distribution&lt;/code&gt; directory. But a lot of developers like to produce a single, executable JAR that contains
+all dependencies, also known as a &amp;ldquo;FAT JAR&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;The repository &lt;a href="https://github.com/Pi4J/pi4j-example-fatjar" target="_blank" rel="noopener"&gt;&amp;ldquo;pi4j-example-fatjar&amp;rdquo; GitHub project&lt;/a&gt; contains a Maven project
 with identical wiring, dependencies and build command to the &amp;ldquo;Minimal example application&amp;rdquo;, but results in such a FAT JAR
-instead of separate Java modules.&lt;/p></description></item><item><title>Build as a FAT JAR with Maven</title><link>https://pi4j.com/documentation/building/fat-jar/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/building/fat-jar/</guid><description>&lt;div class="notices tip" >&lt;p>EXAMPLE PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-example-fatjar" target="_blank" rel="noopener">https://github.com/Pi4J/pi4j-example-fatjar&lt;/a>&lt;/p>
-&lt;/div>
+instead of separate Java modules.&lt;/p&gt;</description></item><item><title>Build as a FAT JAR with Maven</title><link>https://pi4j.com/documentation/building/fat-jar/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/building/fat-jar/</guid><description>&lt;div class="notices tip" &gt;&lt;p&gt;EXAMPLE PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-example-fatjar" target="_blank" rel="noopener"&gt;https://github.com/Pi4J/pi4j-example-fatjar&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
 
-&lt;h2 id="about-fat-jars">About FAT JARs&lt;/h2>
-&lt;p>With Pi4J V1 you can create a so-called FAT JAR, which packages all the dependencies into one jar-file. That way it is
-very easy to build your project on one computer and distribute your application as a single file to one or more clients.&lt;/p>
-&lt;p>Because of the modular approach and how Pi4J V2+ loads it dependencies at runtime, this approach can be achieved by using
-the maven-shade-plugin.&lt;/p></description></item></channel></rss>
+&lt;h2 id="about-fat-jars"&gt;About FAT JARs&lt;/h2&gt;
+&lt;p&gt;With Pi4J V1 you can create a so-called FAT JAR, which packages all the dependencies into one jar-file. That way it is
+very easy to build your project on one computer and distribute your application as a single file to one or more clients.&lt;/p&gt;
+&lt;p&gt;Because of the modular approach and how Pi4J V2+ loads it dependencies at runtime, this approach can be achieved by using
+the maven-shade-plugin.&lt;/p&gt;</description></item></channel></rss>

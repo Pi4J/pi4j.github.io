@@ -1,35 +1,35 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Gradle on Pi4J</title><link>https://pi4j.com/tags/gradle/</link><description>Recent content in Gradle on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://pi4j.com/tags/gradle/index.xml" rel="self" type="application/rss+xml"/><item><title>Minimal example application</title><link>https://pi4j.com/getting-started/minimal-example-application/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/getting-started/minimal-example-application/</guid><description>&lt;div class="notices tip" >&lt;p>GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-example-minimal" target="_blank" rel="noopener">https://github.com/Pi4J/pi4j-example-minimal&lt;/a>&lt;/p>
-&lt;/div>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Gradle on Pi4J</title><link>https://pi4j.com/tags/gradle/</link><description>Recent content in Gradle on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://pi4j.com/tags/gradle/index.xml" rel="self" type="application/rss+xml"/><item><title>Minimal example application</title><link>https://pi4j.com/getting-started/minimal-example-application/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/getting-started/minimal-example-application/</guid><description>&lt;div class="notices tip" &gt;&lt;p&gt;GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-example-minimal" target="_blank" rel="noopener"&gt;https://github.com/Pi4J/pi4j-example-minimal&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
 
-&lt;p>In the &lt;a href="https://github.com/Pi4J/pi4j-example-minimal" target="_blank" rel="noopener">&amp;ldquo;pi4j-example-minimal&amp;rdquo; GitHub project&lt;/a> you can
+&lt;p&gt;In the &lt;a href="https://github.com/Pi4J/pi4j-example-minimal" target="_blank" rel="noopener"&gt;&amp;ldquo;pi4j-example-minimal&amp;rdquo; GitHub project&lt;/a&gt; you can
 find a project which contains the minimal code to control a digital input and output with Pi4J. The project is further
 described on this page. The application will toggle an LED on/off and each time you press the button, the toggling
-speed increases. When you have pushed the button 5 times, the application stops.&lt;/p>
+speed increases. When you have pushed the button 5 times, the application stops.&lt;/p&gt;
 
  &lt;div
- style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+ style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
  &lt;iframe
  src="https://player.vimeo.com/video/525570174?dnt=0"
- style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allow="fullscreen">
- &lt;/iframe>
- &lt;/div>
+ style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allow="fullscreen"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;
 
-&lt;h2 id="wiring">Wiring&lt;/h2>
-&lt;p>This minimal example application uses this wiring:&lt;/p></description></item><item><title>Spring Boot Alarm System</title><link>https://pi4j.com/featured-projects/spring-boot-alarm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/featured-projects/spring-boot-alarm/</guid><description>&lt;div class="notices tip" >&lt;p>GITHUB PROJECT: &lt;a href="https://github.com/bmike2047/springboot-rpi-alarm-system" target="_blank" rel="noopener">github.com/bmike2047/springboot-rpi-alarm-system&lt;/a>&lt;/p>
-&lt;/div>
+&lt;h2 id="wiring"&gt;Wiring&lt;/h2&gt;
+&lt;p&gt;This minimal example application uses this wiring:&lt;/p&gt;</description></item><item><title>Spring Boot Alarm System</title><link>https://pi4j.com/featured-projects/spring-boot-alarm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/featured-projects/spring-boot-alarm/</guid><description>&lt;div class="notices tip" &gt;&lt;p&gt;GITHUB PROJECT: &lt;a href="https://github.com/bmike2047/springboot-rpi-alarm-system" target="_blank" rel="noopener"&gt;github.com/bmike2047/springboot-rpi-alarm-system&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
 
-&lt;p>This project by &lt;strong>Mihai Buleandra&lt;/strong>, uses Spring Boot to create a simple wired alarm system. Most examples on this website use Maven, but this project is a nice example of how to configure a Gradle project to use Pi4J. Mihai also uses Thymeleaf and Bootstrap for the web user interface, that has live updates showing the state of the alarm system.&lt;/p>
-&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/xRUWgISEngM?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
- &lt;/div>
+&lt;p&gt;This project by &lt;strong&gt;Mihai Buleandra&lt;/strong&gt;, uses Spring Boot to create a simple wired alarm system. Most examples on this website use Maven, but this project is a nice example of how to configure a Gradle project to use Pi4J. Mihai also uses Thymeleaf and Bootstrap for the web user interface, that has live updates showing the state of the alarm system.&lt;/p&gt;
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/xRUWgISEngM?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
 
-&lt;p>The alarm system makes use of Java&amp;rsquo;s multithreading capabilities, as it&amp;rsquo;s based on a non-blocking Finite State Machine. This means each state runs in its own thread allowing the web interface to not block while waiting for different operations. Multi-threaded reusable Java drivers for the Raspberry Pi are implemented using the Pi4J library for the keypad, Passive Infrared sensor (PIR), LED and Buzzer.
-Keypad driver includes debounce implementation also.&lt;/p></description></item><item><title>Build Java modules with Gradle</title><link>https://pi4j.com/documentation/building/modules-gradle/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/building/modules-gradle/</guid><description>&lt;div class="notices tip" >&lt;p>GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-example-minimal" target="_blank" rel="noopener">https://github.com/Pi4J/pi4j-example-minimal&lt;/a>&lt;/p>
-&lt;/div>
+&lt;p&gt;The alarm system makes use of Java&amp;rsquo;s multithreading capabilities, as it&amp;rsquo;s based on a non-blocking Finite State Machine. This means each state runs in its own thread allowing the web interface to not block while waiting for different operations. Multi-threaded reusable Java drivers for the Raspberry Pi are implemented using the Pi4J library for the keypad, Passive Infrared sensor (PIR), LED and Buzzer.
+Keypad driver includes debounce implementation also.&lt;/p&gt;</description></item><item><title>Build Java modules with Gradle</title><link>https://pi4j.com/documentation/building/modules-gradle/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/building/modules-gradle/</guid><description>&lt;div class="notices tip" &gt;&lt;p&gt;GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-example-minimal" target="_blank" rel="noopener"&gt;https://github.com/Pi4J/pi4j-example-minimal&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
 
-&lt;p>The Pi4J project itself uses Maven and most example projects also use this build tool. But if you prefer to use Gradle,
-you can start with a copy of the &lt;a href="https://pi4j.com/getting-started/minimal-example-application/">&amp;ldquo;Minimal example application&amp;rdquo;&lt;/a> which includes
-all the required files to build with Gradle.&lt;/p>
-&lt;p>Use Gradle version 6.6 (or later) and Java 21 OpenJDK (or later). The Gradle wrapper is used as described on
-&lt;a href="https://docs.gradle.org/current/userguide/gradle_wrapper.html" target="_blank" rel="noopener">docs.gradle.org&lt;/a>. The Gradle configuration file
-&lt;a href="https://github.com/Pi4J/pi4j-example-minimal/blob/master/build.gradle" target="_blank" rel="noopener">build.gradle-file&lt;/a> is included in the sources.&lt;/p></description></item></channel></rss>
+&lt;p&gt;The Pi4J project itself uses Maven and most example projects also use this build tool. But if you prefer to use Gradle,
+you can start with a copy of the &lt;a href="https://pi4j.com/getting-started/minimal-example-application/"&gt;&amp;ldquo;Minimal example application&amp;rdquo;&lt;/a&gt; which includes
+all the required files to build with Gradle.&lt;/p&gt;
+&lt;p&gt;Use Gradle version 6.6 (or later) and Java 21 OpenJDK (or later). The Gradle wrapper is used as described on
+&lt;a href="https://docs.gradle.org/current/userguide/gradle_wrapper.html" target="_blank" rel="noopener"&gt;docs.gradle.org&lt;/a&gt;. The Gradle configuration file
+&lt;a href="https://github.com/Pi4J/pi4j-example-minimal/blob/master/build.gradle" target="_blank" rel="noopener"&gt;build.gradle-file&lt;/a&gt; is included in the sources.&lt;/p&gt;</description></item></channel></rss>

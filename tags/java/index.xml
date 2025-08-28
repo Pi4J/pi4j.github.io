@@ -1,16 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Java on Pi4J</title><link>https://pi4j.com/tags/java/</link><description>Recent content in Java on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://pi4j.com/tags/java/index.xml" rel="self" type="application/rss+xml"/><item><title>Install Java and Tools</title><link>https://pi4j.com/prepare/install-java/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/prepare/install-java/</guid><description>&lt;p>Our Raspberry Pi has started for the first time and we are now ready to add some Java to it!&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Java on Pi4J</title><link>https://pi4j.com/tags/java/</link><description>Recent content in Java on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://pi4j.com/tags/java/index.xml" rel="self" type="application/rss+xml"/><item><title>Install Java and Tools</title><link>https://pi4j.com/prepare/install-java/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/prepare/install-java/</guid><description>&lt;p&gt;Our Raspberry Pi has started for the first time and we are now ready to add some Java to it!&lt;/p&gt;
 
-&lt;div class="notices tip" >&lt;p>As described on the previous page &amp;ldquo;The First Boot&amp;rdquo;, a script can be executed that will do all this at once: &lt;code>curl -sL https://raw.githubusercontent.com/Pi4J/pi4j-os/main/script/prepare-for-java.sh | bash&lt;/code>.&lt;/p>
-&lt;/div>
+&lt;div class="notices tip" &gt;&lt;p&gt;As described on the previous page &amp;ldquo;The First Boot&amp;rdquo;, a script can be executed that will do all this at once: &lt;code&gt;curl -sL https://raw.githubusercontent.com/Pi4J/pi4j-os/main/script/prepare-for-java.sh | bash&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
 
-&lt;h2 id="add-missing-dependencies">Add Missing Dependencies&lt;/h2>
-&lt;p>Let&amp;rsquo;s start with some helper tools that will be useful later.&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>$ sudo apt install -y i2c-tools vim git java-common libxi6 libxrender1 libxtst6
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
-&lt;li>&lt;code>i2c-tools&lt;/code>: Tool to help you with I2C commands.&lt;/li>
-&lt;li>&lt;code>vim&lt;/code>: Text editor like &lt;code>nano&lt;/code>, preferred by some, hated by others ;-)&lt;/li>
-&lt;li>&lt;code>git&lt;/code>: Tool to interact with a Git repository, like GitHub.&lt;/li>
-&lt;li>&lt;code>java-common libxi6 libxrender1 libxtst6&lt;/code>: Dependencies of the JDK Debian package.&lt;/li>
-&lt;/ul>
-&lt;h2 id="install-java">Install Java&lt;/h2>
-&lt;p>There are many ways you can install Java. The easiest way to make Java available for both normal use and as root user (&lt;code>sudo&lt;/code>), is the following approach which downloads one of the many distributions that are available.&lt;/p></description></item></channel></rss>
+&lt;h2 id="add-missing-dependencies"&gt;Add Missing Dependencies&lt;/h2&gt;
+&lt;p&gt;Let&amp;rsquo;s start with some helper tools that will be useful later.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;$ sudo apt install -y i2c-tools vim git java-common libxi6 libxrender1 libxtst6
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;i2c-tools&lt;/code&gt;: Tool to help you with I2C commands.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;vim&lt;/code&gt;: Text editor like &lt;code&gt;nano&lt;/code&gt;, preferred by some, hated by others ;-)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git&lt;/code&gt;: Tool to interact with a Git repository, like GitHub.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;java-common libxi6 libxrender1 libxtst6&lt;/code&gt;: Dependencies of the JDK Debian package.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="install-java"&gt;Install Java&lt;/h2&gt;
+&lt;p&gt;There are many ways you can install Java. The easiest way to make Java available for both normal use and as root user (&lt;code&gt;sudo&lt;/code&gt;), is the following approach which downloads one of the many distributions that are available.&lt;/p&gt;</description></item></channel></rss>

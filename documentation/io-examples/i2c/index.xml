@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Inter-Integrated Circuit (I²C) on Pi4J</title><link>https://pi4j.com/documentation/io-examples/i2c/</link><description>Recent content in Inter-Integrated Circuit (I²C) on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://pi4j.com/documentation/io-examples/i2c/index.xml" rel="self" type="application/rss+xml"/><item><title>I²C Clock Stretching</title><link>https://pi4j.com/documentation/io-examples/i2c/clock-stretching/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/io-examples/i2c/clock-stretching/</guid><description>&lt;h2 id="clock-stretching">Clock Stretching&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Inter-Integrated Circuit (I²C) on Pi4J</title><link>https://pi4j.com/documentation/io-examples/i2c/</link><description>Recent content in Inter-Integrated Circuit (I²C) on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://pi4j.com/documentation/io-examples/i2c/index.xml" rel="self" type="application/rss+xml"/><item><title>I²C Clock Stretching</title><link>https://pi4j.com/documentation/io-examples/i2c/clock-stretching/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/io-examples/i2c/clock-stretching/</guid><description>&lt;h2 id="clock-stretching"&gt;Clock Stretching&lt;/h2&gt;
 
-&lt;div class="notices warning" >&lt;p>Please be aware there are some hardware issues when using
+&lt;div class="notices warning" &gt;&lt;p&gt;Please be aware there are some hardware issues when using
 the Raspberry Pi with devices that expect to be able to use clock stretching,
 for more info see
-&lt;a href="https://www.recantha.co.uk/blog/?p=19880" target="_blank" rel="noopener">&amp;ldquo;Adventures in I2C: clock stretching on the Raspberry Pi&amp;rdquo;&lt;/a>
-and &lt;a href="https://www.raspberrypi.org/forums/viewtopic.php?t=220428" target="_blank" rel="noopener">&amp;ldquo;I2C stretch bug. Been fixed or not?&amp;rdquo;&lt;/a>.&lt;/p>
-&lt;/div>
+&lt;a href="https://www.recantha.co.uk/blog/?p=19880" target="_blank" rel="noopener"&gt;&amp;ldquo;Adventures in I2C: clock stretching on the Raspberry Pi&amp;rdquo;&lt;/a&gt;
+and &lt;a href="https://www.raspberrypi.org/forums/viewtopic.php?t=220428" target="_blank" rel="noopener"&gt;&amp;ldquo;I2C stretch bug. Been fixed or not?&amp;rdquo;&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
 
-&lt;p>&lt;a href="https://en.wikipedia.org/wiki/I%C2%B2C#Clock_stretching_using_SCL" target="_blank" rel="noopener">Clock stretching&lt;/a>
+&lt;p&gt;&lt;a href="https://en.wikipedia.org/wiki/I%C2%B2C#Clock_stretching_using_SCL" target="_blank" rel="noopener"&gt;Clock stretching&lt;/a&gt;
 in I2C allows a slave device to halt the master before a more data is sent. This
 is often the case when the slave device writes to an EEPROM etc. which takes
-longer than a usual read or write to a register.&lt;/p></description></item></channel></rss>
+longer than a usual read or write to a register.&lt;/p&gt;</description></item></channel></rss>

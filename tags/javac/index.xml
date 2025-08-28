@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Javac on Pi4J</title><link>https://pi4j.com/tags/javac/</link><description>Recent content in Javac on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://pi4j.com/tags/javac/index.xml" rel="self" type="application/rss+xml"/><item><title>Building with javac</title><link>https://pi4j.com/documentation/building/javac/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/building/javac/</guid><description>&lt;p>You can build a Pi4J project using only java and javac.&lt;/p>
-&lt;h2 id="wiring">Wiring&lt;/h2>
-&lt;p>No wiring is needed for this minimal example as it only demonstrates how to create a minimal application which initializes
-Pi4J.&lt;/p>
-&lt;h2 id="java-release">Java release&lt;/h2>
-&lt;p>Any Java release over 21 is enough, check it with this command:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>$ java -version
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>openjdk version &lt;span style="color:#e6db74">&amp;#34;21.0.1&amp;#34;&lt;/span> 2023-10-17 LTS
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>OpenJDK Runtime Environment Zulu21.30+15-CA &lt;span style="color:#f92672">(&lt;/span>build 21.0.1+12-LTS&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>OpenJDK 64-Bit Server VM Zulu21.30+15-CA &lt;span style="color:#f92672">(&lt;/span>build 21.0.1+12-LTS, mixed mode, sharing&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="pi4j-jar-files">PI4J jar files&lt;/h2>
-&lt;p>You will need to download the Pi4J distribution from the Maven repository:&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Javac on Pi4J</title><link>https://pi4j.com/tags/javac/</link><description>Recent content in Javac on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://pi4j.com/tags/javac/index.xml" rel="self" type="application/rss+xml"/><item><title>Building with javac</title><link>https://pi4j.com/documentation/building/javac/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/building/javac/</guid><description>&lt;p&gt;You can build a Pi4J project using only java and javac.&lt;/p&gt;
+&lt;h2 id="wiring"&gt;Wiring&lt;/h2&gt;
+&lt;p&gt;No wiring is needed for this minimal example as it only demonstrates how to create a minimal application which initializes
+Pi4J.&lt;/p&gt;
+&lt;h2 id="java-release"&gt;Java release&lt;/h2&gt;
+&lt;p&gt;Any Java release over 21 is enough, check it with this command:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;$ java -version
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;openjdk version &lt;span style="color:#e6db74"&gt;&amp;#34;21.0.1&amp;#34;&lt;/span&gt; 2023-10-17 LTS
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;OpenJDK Runtime Environment Zulu21.30+15-CA &lt;span style="color:#f92672"&gt;(&lt;/span&gt;build 21.0.1+12-LTS&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;OpenJDK 64-Bit Server VM Zulu21.30+15-CA &lt;span style="color:#f92672"&gt;(&lt;/span&gt;build 21.0.1+12-LTS, mixed mode, sharing&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="pi4j-jar-files"&gt;PI4J jar files&lt;/h2&gt;
+&lt;p&gt;You will need to download the Pi4J distribution from the Maven repository:&lt;/p&gt;</description></item></channel></rss>

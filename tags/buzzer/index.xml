@@ -1,109 +1,109 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Buzzer on Pi4J</title><link>https://pi4j.com/tags/buzzer/</link><description>Recent content in Buzzer on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://pi4j.com/tags/buzzer/index.xml" rel="self" type="application/rss+xml"/><item><title>Component Examples</title><link>https://pi4j.com/examples/components/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/components/</guid><description>&lt;p>The FHNW University contributed a full project with example implementations of the following devices.&lt;/p>
-&lt;h3 id="current-available-components">Current available components&lt;/h3>
-&lt;table>
- &lt;thead>
- &lt;tr>
- &lt;th style="text-align: left">Device(s)&lt;/th>
- &lt;th style="text-align: left">Developed by&lt;/th>
- &lt;th style="text-align: left">Link&lt;/th>
- &lt;/tr>
- &lt;/thead>
- &lt;tbody>
- &lt;tr>
- &lt;td style="text-align: left">&lt;a href="https://pi4j.com/examples/components/simplebutton">Simple Button&lt;/a>&lt;/td>
- &lt;td style="text-align: left">Reto Stutz, Mike Schoder&lt;/td>
- &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/SimpleButton_App.java" target="_blank" rel="noopener">Example Devices&lt;/a>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">&lt;a href="https://pi4j.com/examples/components/simpleled">Simple LED&lt;/a>&lt;/td>
- &lt;td style="text-align: left">Reto Stutz, Mike Schoder&lt;/td>
- &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/SimpleLed_App.java" target="_blank" rel="noopener">Example Devices&lt;/a>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">&lt;a href="https://pi4j.com/examples/components/ads1115">AD Converter ADS1115&lt;/a>&lt;/td>
- &lt;td style="text-align: left">Reto Stutz, Mike Schoder&lt;/td>
- &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/Ads1115_App.java" target="_blank" rel="noopener">Example Devices&lt;/a>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">&lt;a href="https://pi4j.com/examples/components/buzzer">Buzzer&lt;/a>&lt;/td>
- &lt;td style="text-align: left">Reto Stutz, Mike Schoder&lt;/td>
- &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/Buzzer_App.java" target="_blank" rel="noopener">Example Devices&lt;/a>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">&lt;a href="https://pi4j.com/examples/components/camera">Camera&lt;/a>&lt;/td>
- &lt;td style="text-align: left">Reto Stutz, Mike Schoder&lt;/td>
- &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/Camera_App.java" target="_blank" rel="noopener">Example Devices&lt;/a>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">&lt;a href="https://pi4j.com/examples/components/joystick">Joystick&lt;/a>&lt;/td>
- &lt;td style="text-align: left">Reto Stutz, Mike Schoder&lt;/td>
- &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/Joystick_App.java" target="_blank" rel="noopener">Example Devices&lt;/a>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">&lt;a href="https://pi4j.com/examples/components/joystickanalog">Joystick Analog&lt;/a>&lt;/td>
- &lt;td style="text-align: left">Reto Stutz, Mike Schoder&lt;/td>
- &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/JoystickAnalog_App.java" target="_blank" rel="noopener">Example Devices&lt;/a>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">&lt;a href="https://pi4j.com/examples/components/lcddisplay">LCD Display&lt;/a>&lt;/td>
- &lt;td style="text-align: left">Reto Stutz, Mike Schoder&lt;/td>
- &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/LcdDisplay_App.java" target="_blank" rel="noopener">Example Devices&lt;/a>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">&lt;a href="https://pi4j.com/examples/components/ledbutton">LED Button&lt;/a>&lt;/td>
- &lt;td style="text-align: left">Reto Stutz, Mike Schoder&lt;/td>
- &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/LedButton_App.java" target="_blank" rel="noopener">Example Devices&lt;/a>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">&lt;a href="https://pi4j.com/examples/components/ledmatrix">LED Matrix&lt;/a>&lt;/td>
- &lt;td style="text-align: left">Reto Stutz, Mike Schoder&lt;/td>
- &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/LedMatrix_App.java" target="_blank" rel="noopener">Example Devices&lt;/a>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">&lt;a href="https://pi4j.com/examples/components/ledstrip">LED Strip&lt;/a>&lt;/td>
- &lt;td style="text-align: left">Reto Stutz, Mike Schoder&lt;/td>
- &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/LedStrip_App.java" target="_blank" rel="noopener">Example Devices&lt;/a>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">&lt;a href="https://pi4j.com/examples/components/potentiometer">Potentiometer&lt;/a>&lt;/td>
- &lt;td style="text-align: left">Reto Stutz, Mike Schoder&lt;/td>
- &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/Potentiometer_App.java" target="_blank" rel="noopener">Example Devices&lt;/a>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">&lt;a href="https://pi4j.com/examples/components/servo">Servo Motor&lt;/a>&lt;/td>
- &lt;td style="text-align: left">Reto Stutz, Mike Schoder&lt;/td>
- &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/Servo_App.java" target="_blank" rel="noopener">Example Devices&lt;/a>&lt;/td>
- &lt;/tr>
- &lt;/tbody>
-&lt;/table>
-&lt;h3 id="simple-implementation">Simple Implementation&lt;/h3>
-&lt;p>For a Simple Implementation, the recommendation is to use the &lt;a href="https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog/Launcher.java" target="_blank" rel="noopener">Launcher Class&lt;/a>.
-With this, a simple application can be started.&lt;/p></description></item><item><title>Spring Boot Alarm System</title><link>https://pi4j.com/featured-projects/spring-boot-alarm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/featured-projects/spring-boot-alarm/</guid><description>&lt;div class="notices tip" >&lt;p>GITHUB PROJECT: &lt;a href="https://github.com/bmike2047/springboot-rpi-alarm-system" target="_blank" rel="noopener">github.com/bmike2047/springboot-rpi-alarm-system&lt;/a>&lt;/p>
-&lt;/div>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Buzzer on Pi4J</title><link>https://pi4j.com/tags/buzzer/</link><description>Recent content in Buzzer on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://pi4j.com/tags/buzzer/index.xml" rel="self" type="application/rss+xml"/><item><title>Component Examples</title><link>https://pi4j.com/examples/components/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/components/</guid><description>&lt;p&gt;The FHNW University contributed a full project with example implementations of the following devices.&lt;/p&gt;
+&lt;h3 id="current-available-components"&gt;Current available components&lt;/h3&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th style="text-align: left"&gt;Device(s)&lt;/th&gt;
+ &lt;th style="text-align: left"&gt;Developed by&lt;/th&gt;
+ &lt;th style="text-align: left"&gt;Link&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://pi4j.com/examples/components/simplebutton"&gt;Simple Button&lt;/a&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;Reto Stutz, Mike Schoder&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/SimpleButton_App.java" target="_blank" rel="noopener"&gt;Example Devices&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://pi4j.com/examples/components/simpleled"&gt;Simple LED&lt;/a&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;Reto Stutz, Mike Schoder&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/SimpleLed_App.java" target="_blank" rel="noopener"&gt;Example Devices&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://pi4j.com/examples/components/ads1115"&gt;AD Converter ADS1115&lt;/a&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;Reto Stutz, Mike Schoder&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/Ads1115_App.java" target="_blank" rel="noopener"&gt;Example Devices&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://pi4j.com/examples/components/buzzer"&gt;Buzzer&lt;/a&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;Reto Stutz, Mike Schoder&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/Buzzer_App.java" target="_blank" rel="noopener"&gt;Example Devices&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://pi4j.com/examples/components/camera"&gt;Camera&lt;/a&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;Reto Stutz, Mike Schoder&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/Camera_App.java" target="_blank" rel="noopener"&gt;Example Devices&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://pi4j.com/examples/components/joystick"&gt;Joystick&lt;/a&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;Reto Stutz, Mike Schoder&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/Joystick_App.java" target="_blank" rel="noopener"&gt;Example Devices&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://pi4j.com/examples/components/joystickanalog"&gt;Joystick Analog&lt;/a&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;Reto Stutz, Mike Schoder&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/JoystickAnalog_App.java" target="_blank" rel="noopener"&gt;Example Devices&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://pi4j.com/examples/components/lcddisplay"&gt;LCD Display&lt;/a&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;Reto Stutz, Mike Schoder&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/LcdDisplay_App.java" target="_blank" rel="noopener"&gt;Example Devices&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://pi4j.com/examples/components/ledbutton"&gt;LED Button&lt;/a&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;Reto Stutz, Mike Schoder&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/LedButton_App.java" target="_blank" rel="noopener"&gt;Example Devices&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://pi4j.com/examples/components/ledmatrix"&gt;LED Matrix&lt;/a&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;Reto Stutz, Mike Schoder&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/LedMatrix_App.java" target="_blank" rel="noopener"&gt;Example Devices&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://pi4j.com/examples/components/ledstrip"&gt;LED Strip&lt;/a&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;Reto Stutz, Mike Schoder&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/LedStrip_App.java" target="_blank" rel="noopener"&gt;Example Devices&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://pi4j.com/examples/components/potentiometer"&gt;Potentiometer&lt;/a&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;Reto Stutz, Mike Schoder&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/Potentiometer_App.java" target="_blank" rel="noopener"&gt;Example Devices&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://pi4j.com/examples/components/servo"&gt;Servo Motor&lt;/a&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;Reto Stutz, Mike Schoder&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/Servo_App.java" target="_blank" rel="noopener"&gt;Example Devices&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id="simple-implementation"&gt;Simple Implementation&lt;/h3&gt;
+&lt;p&gt;For a Simple Implementation, the recommendation is to use the &lt;a href="https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog/Launcher.java" target="_blank" rel="noopener"&gt;Launcher Class&lt;/a&gt;.
+With this, a simple application can be started.&lt;/p&gt;</description></item><item><title>Spring Boot Alarm System</title><link>https://pi4j.com/featured-projects/spring-boot-alarm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/featured-projects/spring-boot-alarm/</guid><description>&lt;div class="notices tip" &gt;&lt;p&gt;GITHUB PROJECT: &lt;a href="https://github.com/bmike2047/springboot-rpi-alarm-system" target="_blank" rel="noopener"&gt;github.com/bmike2047/springboot-rpi-alarm-system&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
 
-&lt;p>This project by &lt;strong>Mihai Buleandra&lt;/strong>, uses Spring Boot to create a simple wired alarm system. Most examples on this website use Maven, but this project is a nice example of how to configure a Gradle project to use Pi4J. Mihai also uses Thymeleaf and Bootstrap for the web user interface, that has live updates showing the state of the alarm system.&lt;/p>
-&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/xRUWgISEngM?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
- &lt;/div>
+&lt;p&gt;This project by &lt;strong&gt;Mihai Buleandra&lt;/strong&gt;, uses Spring Boot to create a simple wired alarm system. Most examples on this website use Maven, but this project is a nice example of how to configure a Gradle project to use Pi4J. Mihai also uses Thymeleaf and Bootstrap for the web user interface, that has live updates showing the state of the alarm system.&lt;/p&gt;
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/xRUWgISEngM?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
 
-&lt;p>The alarm system makes use of Java&amp;rsquo;s multithreading capabilities, as it&amp;rsquo;s based on a non-blocking Finite State Machine. This means each state runs in its own thread allowing the web interface to not block while waiting for different operations. Multi-threaded reusable Java drivers for the Raspberry Pi are implemented using the Pi4J library for the keypad, Passive Infrared sensor (PIR), LED and Buzzer.
-Keypad driver includes debounce implementation also.&lt;/p></description></item><item><title>Buzzer</title><link>https://pi4j.com/examples/components/buzzer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/components/buzzer/</guid><description>&lt;h3 id="description">Description&lt;/h3>
-&lt;p>The &lt;a href="https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog/components/Buzzer.java" target="_blank" rel="noopener">Buzzer&lt;/a> is a template class, that you can use in your own Java-project.&lt;/p>
-&lt;p>The Template Class gives you the option to play a note, and to create your own little melodies to play. The buzzer is controlled via a PWM output. The dutycycle is fixed at 50% and with the frequency the desired sound can be reproduced.&lt;/p>
-&lt;h3 id="layout">Layout&lt;/h3>
-&lt;p>&lt;img src="https://pi4j.com/assets/examples/components/components/Layout-Buzzer.png" alt="Buzzer Layout">&lt;/p>
-&lt;p>
+&lt;p&gt;The alarm system makes use of Java&amp;rsquo;s multithreading capabilities, as it&amp;rsquo;s based on a non-blocking Finite State Machine. This means each state runs in its own thread allowing the web interface to not block while waiting for different operations. Multi-threaded reusable Java drivers for the Raspberry Pi are implemented using the Pi4J library for the keypad, Passive Infrared sensor (PIR), LED and Buzzer.
+Keypad driver includes debounce implementation also.&lt;/p&gt;</description></item><item><title>Buzzer</title><link>https://pi4j.com/examples/components/buzzer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/components/buzzer/</guid><description>&lt;h3 id="description"&gt;Description&lt;/h3&gt;
+&lt;p&gt;The &lt;a href="https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog/components/Buzzer.java" target="_blank" rel="noopener"&gt;Buzzer&lt;/a&gt; is a template class, that you can use in your own Java-project.&lt;/p&gt;
+&lt;p&gt;The Template Class gives you the option to play a note, and to create your own little melodies to play. The buzzer is controlled via a PWM output. The dutycycle is fixed at 50% and with the frequency the desired sound can be reproduced.&lt;/p&gt;
+&lt;h3 id="layout"&gt;Layout&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://pi4j.com/assets/examples/components/components/Layout-Buzzer.png" alt="Buzzer Layout"&gt;&lt;/p&gt;
+&lt;p&gt;
 
 
-&lt;div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+&lt;div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery"&gt;
 	 
 
-&lt;link rel="stylesheet" href="https://pi4j.com/css/hugo-easy-gallery.css" />
-&lt;div class="box fancy-figure caption-position-center caption-effect-fade" >
- &lt;figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
- &lt;div class="img" style="background-image: url('/assets/examples/components/components/pictures/BuzzerActiveBreadboard.png');">
- &lt;img itemprop="thumbnail" src="https://pi4j.com/assets/examples/components/components/pictures/BuzzerActiveBreadboard.png" alt="Buzzer Acitve Breadboard"/>
- &lt;/div>
- &lt;a href="https://pi4j.com/assets/examples/components/components/pictures/BuzzerActiveBreadboard.png" itemprop="contentUrl">&lt;/a>
- &lt;figcaption>
- &lt;p>Buzzer Acitve Breadboard&lt;/p></description></item></channel></rss>
+&lt;link rel="stylesheet" href="https://pi4j.com/css/hugo-easy-gallery.css" /&gt;
+&lt;div class="box fancy-figure caption-position-center caption-effect-fade" &gt;
+ &lt;figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"&gt;
+ &lt;div class="img" style="background-image: url('/assets/examples/components/components/pictures/BuzzerActiveBreadboard.png');"&gt;
+ &lt;img itemprop="thumbnail" src="https://pi4j.com/assets/examples/components/components/pictures/BuzzerActiveBreadboard.png" alt="Buzzer Acitve Breadboard"/&gt;
+ &lt;/div&gt;
+ &lt;a href="https://pi4j.com/assets/examples/components/components/pictures/BuzzerActiveBreadboard.png" itemprop="contentUrl"&gt;&lt;/a&gt;
+ &lt;figcaption&gt;
+ &lt;p&gt;Buzzer Acitve Breadboard&lt;/p&gt;</description></item></channel></rss>

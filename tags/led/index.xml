@@ -1,150 +1,150 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>LED on Pi4J</title><link>https://pi4j.com/tags/led/</link><description>Recent content in LED on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://pi4j.com/tags/led/index.xml" rel="self" type="application/rss+xml"/><item><title>Component Examples</title><link>https://pi4j.com/examples/components/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/components/</guid><description>&lt;p>The FHNW University contributed a full project with example implementations of the following devices.&lt;/p>
-&lt;h3 id="current-available-components">Current available components&lt;/h3>
-&lt;table>
- &lt;thead>
- &lt;tr>
- &lt;th style="text-align: left">Device(s)&lt;/th>
- &lt;th style="text-align: left">Developed by&lt;/th>
- &lt;th style="text-align: left">Link&lt;/th>
- &lt;/tr>
- &lt;/thead>
- &lt;tbody>
- &lt;tr>
- &lt;td style="text-align: left">&lt;a href="https://pi4j.com/examples/components/simplebutton">Simple Button&lt;/a>&lt;/td>
- &lt;td style="text-align: left">Reto Stutz, Mike Schoder&lt;/td>
- &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/SimpleButton_App.java" target="_blank" rel="noopener">Example Devices&lt;/a>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">&lt;a href="https://pi4j.com/examples/components/simpleled">Simple LED&lt;/a>&lt;/td>
- &lt;td style="text-align: left">Reto Stutz, Mike Schoder&lt;/td>
- &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/SimpleLed_App.java" target="_blank" rel="noopener">Example Devices&lt;/a>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">&lt;a href="https://pi4j.com/examples/components/ads1115">AD Converter ADS1115&lt;/a>&lt;/td>
- &lt;td style="text-align: left">Reto Stutz, Mike Schoder&lt;/td>
- &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/Ads1115_App.java" target="_blank" rel="noopener">Example Devices&lt;/a>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">&lt;a href="https://pi4j.com/examples/components/buzzer">Buzzer&lt;/a>&lt;/td>
- &lt;td style="text-align: left">Reto Stutz, Mike Schoder&lt;/td>
- &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/Buzzer_App.java" target="_blank" rel="noopener">Example Devices&lt;/a>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">&lt;a href="https://pi4j.com/examples/components/camera">Camera&lt;/a>&lt;/td>
- &lt;td style="text-align: left">Reto Stutz, Mike Schoder&lt;/td>
- &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/Camera_App.java" target="_blank" rel="noopener">Example Devices&lt;/a>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">&lt;a href="https://pi4j.com/examples/components/joystick">Joystick&lt;/a>&lt;/td>
- &lt;td style="text-align: left">Reto Stutz, Mike Schoder&lt;/td>
- &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/Joystick_App.java" target="_blank" rel="noopener">Example Devices&lt;/a>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">&lt;a href="https://pi4j.com/examples/components/joystickanalog">Joystick Analog&lt;/a>&lt;/td>
- &lt;td style="text-align: left">Reto Stutz, Mike Schoder&lt;/td>
- &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/JoystickAnalog_App.java" target="_blank" rel="noopener">Example Devices&lt;/a>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">&lt;a href="https://pi4j.com/examples/components/lcddisplay">LCD Display&lt;/a>&lt;/td>
- &lt;td style="text-align: left">Reto Stutz, Mike Schoder&lt;/td>
- &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/LcdDisplay_App.java" target="_blank" rel="noopener">Example Devices&lt;/a>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">&lt;a href="https://pi4j.com/examples/components/ledbutton">LED Button&lt;/a>&lt;/td>
- &lt;td style="text-align: left">Reto Stutz, Mike Schoder&lt;/td>
- &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/LedButton_App.java" target="_blank" rel="noopener">Example Devices&lt;/a>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">&lt;a href="https://pi4j.com/examples/components/ledmatrix">LED Matrix&lt;/a>&lt;/td>
- &lt;td style="text-align: left">Reto Stutz, Mike Schoder&lt;/td>
- &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/LedMatrix_App.java" target="_blank" rel="noopener">Example Devices&lt;/a>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">&lt;a href="https://pi4j.com/examples/components/ledstrip">LED Strip&lt;/a>&lt;/td>
- &lt;td style="text-align: left">Reto Stutz, Mike Schoder&lt;/td>
- &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/LedStrip_App.java" target="_blank" rel="noopener">Example Devices&lt;/a>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">&lt;a href="https://pi4j.com/examples/components/potentiometer">Potentiometer&lt;/a>&lt;/td>
- &lt;td style="text-align: left">Reto Stutz, Mike Schoder&lt;/td>
- &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/Potentiometer_App.java" target="_blank" rel="noopener">Example Devices&lt;/a>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">&lt;a href="https://pi4j.com/examples/components/servo">Servo Motor&lt;/a>&lt;/td>
- &lt;td style="text-align: left">Reto Stutz, Mike Schoder&lt;/td>
- &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/Servo_App.java" target="_blank" rel="noopener">Example Devices&lt;/a>&lt;/td>
- &lt;/tr>
- &lt;/tbody>
-&lt;/table>
-&lt;h3 id="simple-implementation">Simple Implementation&lt;/h3>
-&lt;p>For a Simple Implementation, the recommendation is to use the &lt;a href="https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog/Launcher.java" target="_blank" rel="noopener">Launcher Class&lt;/a>.
-With this, a simple application can be started.&lt;/p></description></item><item><title>Spring Boot Alarm System</title><link>https://pi4j.com/featured-projects/spring-boot-alarm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/featured-projects/spring-boot-alarm/</guid><description>&lt;div class="notices tip" >&lt;p>GITHUB PROJECT: &lt;a href="https://github.com/bmike2047/springboot-rpi-alarm-system" target="_blank" rel="noopener">github.com/bmike2047/springboot-rpi-alarm-system&lt;/a>&lt;/p>
-&lt;/div>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>LED on Pi4J</title><link>https://pi4j.com/tags/led/</link><description>Recent content in LED on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://pi4j.com/tags/led/index.xml" rel="self" type="application/rss+xml"/><item><title>Component Examples</title><link>https://pi4j.com/examples/components/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/components/</guid><description>&lt;p&gt;The FHNW University contributed a full project with example implementations of the following devices.&lt;/p&gt;
+&lt;h3 id="current-available-components"&gt;Current available components&lt;/h3&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th style="text-align: left"&gt;Device(s)&lt;/th&gt;
+ &lt;th style="text-align: left"&gt;Developed by&lt;/th&gt;
+ &lt;th style="text-align: left"&gt;Link&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://pi4j.com/examples/components/simplebutton"&gt;Simple Button&lt;/a&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;Reto Stutz, Mike Schoder&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/SimpleButton_App.java" target="_blank" rel="noopener"&gt;Example Devices&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://pi4j.com/examples/components/simpleled"&gt;Simple LED&lt;/a&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;Reto Stutz, Mike Schoder&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/SimpleLed_App.java" target="_blank" rel="noopener"&gt;Example Devices&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://pi4j.com/examples/components/ads1115"&gt;AD Converter ADS1115&lt;/a&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;Reto Stutz, Mike Schoder&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/Ads1115_App.java" target="_blank" rel="noopener"&gt;Example Devices&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://pi4j.com/examples/components/buzzer"&gt;Buzzer&lt;/a&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;Reto Stutz, Mike Schoder&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/Buzzer_App.java" target="_blank" rel="noopener"&gt;Example Devices&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://pi4j.com/examples/components/camera"&gt;Camera&lt;/a&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;Reto Stutz, Mike Schoder&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/Camera_App.java" target="_blank" rel="noopener"&gt;Example Devices&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://pi4j.com/examples/components/joystick"&gt;Joystick&lt;/a&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;Reto Stutz, Mike Schoder&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/Joystick_App.java" target="_blank" rel="noopener"&gt;Example Devices&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://pi4j.com/examples/components/joystickanalog"&gt;Joystick Analog&lt;/a&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;Reto Stutz, Mike Schoder&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/JoystickAnalog_App.java" target="_blank" rel="noopener"&gt;Example Devices&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://pi4j.com/examples/components/lcddisplay"&gt;LCD Display&lt;/a&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;Reto Stutz, Mike Schoder&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/LcdDisplay_App.java" target="_blank" rel="noopener"&gt;Example Devices&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://pi4j.com/examples/components/ledbutton"&gt;LED Button&lt;/a&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;Reto Stutz, Mike Schoder&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/LedButton_App.java" target="_blank" rel="noopener"&gt;Example Devices&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://pi4j.com/examples/components/ledmatrix"&gt;LED Matrix&lt;/a&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;Reto Stutz, Mike Schoder&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/LedMatrix_App.java" target="_blank" rel="noopener"&gt;Example Devices&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://pi4j.com/examples/components/ledstrip"&gt;LED Strip&lt;/a&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;Reto Stutz, Mike Schoder&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/LedStrip_App.java" target="_blank" rel="noopener"&gt;Example Devices&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://pi4j.com/examples/components/potentiometer"&gt;Potentiometer&lt;/a&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;Reto Stutz, Mike Schoder&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/Potentiometer_App.java" target="_blank" rel="noopener"&gt;Example Devices&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://pi4j.com/examples/components/servo"&gt;Servo Motor&lt;/a&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;Reto Stutz, Mike Schoder&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/Servo_App.java" target="_blank" rel="noopener"&gt;Example Devices&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id="simple-implementation"&gt;Simple Implementation&lt;/h3&gt;
+&lt;p&gt;For a Simple Implementation, the recommendation is to use the &lt;a href="https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog/Launcher.java" target="_blank" rel="noopener"&gt;Launcher Class&lt;/a&gt;.
+With this, a simple application can be started.&lt;/p&gt;</description></item><item><title>Spring Boot Alarm System</title><link>https://pi4j.com/featured-projects/spring-boot-alarm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/featured-projects/spring-boot-alarm/</guid><description>&lt;div class="notices tip" &gt;&lt;p&gt;GITHUB PROJECT: &lt;a href="https://github.com/bmike2047/springboot-rpi-alarm-system" target="_blank" rel="noopener"&gt;github.com/bmike2047/springboot-rpi-alarm-system&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
 
-&lt;p>This project by &lt;strong>Mihai Buleandra&lt;/strong>, uses Spring Boot to create a simple wired alarm system. Most examples on this website use Maven, but this project is a nice example of how to configure a Gradle project to use Pi4J. Mihai also uses Thymeleaf and Bootstrap for the web user interface, that has live updates showing the state of the alarm system.&lt;/p>
-&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/xRUWgISEngM?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
- &lt;/div>
+&lt;p&gt;This project by &lt;strong&gt;Mihai Buleandra&lt;/strong&gt;, uses Spring Boot to create a simple wired alarm system. Most examples on this website use Maven, but this project is a nice example of how to configure a Gradle project to use Pi4J. Mihai also uses Thymeleaf and Bootstrap for the web user interface, that has live updates showing the state of the alarm system.&lt;/p&gt;
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/xRUWgISEngM?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
 
-&lt;p>The alarm system makes use of Java&amp;rsquo;s multithreading capabilities, as it&amp;rsquo;s based on a non-blocking Finite State Machine. This means each state runs in its own thread allowing the web interface to not block while waiting for different operations. Multi-threaded reusable Java drivers for the Raspberry Pi are implemented using the Pi4J library for the keypad, Passive Infrared sensor (PIR), LED and Buzzer.
-Keypad driver includes debounce implementation also.&lt;/p></description></item><item><title>Binary Clock</title><link>https://pi4j.com/featured-projects/binary-clock/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/featured-projects/binary-clock/</guid><description>&lt;div class="notices tip" >&lt;p>GITHUB PROJECT: &lt;a href="https://github.com/taartspi/pi4j-binary-clock" target="_blank" rel="noopener">github.com/taartspi/pi4j-binary-clock&lt;/a>&lt;/p>
-&lt;/div>
+&lt;p&gt;The alarm system makes use of Java&amp;rsquo;s multithreading capabilities, as it&amp;rsquo;s based on a non-blocking Finite State Machine. This means each state runs in its own thread allowing the web interface to not block while waiting for different operations. Multi-threaded reusable Java drivers for the Raspberry Pi are implemented using the Pi4J library for the keypad, Passive Infrared sensor (PIR), LED and Buzzer.
+Keypad driver includes debounce implementation also.&lt;/p&gt;</description></item><item><title>Binary Clock</title><link>https://pi4j.com/featured-projects/binary-clock/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/featured-projects/binary-clock/</guid><description>&lt;div class="notices tip" &gt;&lt;p&gt;GITHUB PROJECT: &lt;a href="https://github.com/taartspi/pi4j-binary-clock" target="_blank" rel="noopener"&gt;github.com/taartspi/pi4j-binary-clock&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
 
-&lt;p>This project by &lt;strong>Tom Aarts&lt;/strong> (published on May 15, 2024), is a binary clock created with LEDs on a breadboard. In the video below you see it incrementing to the next minute and hour. What you see is the Hour Minute and Second displayed in BCD (Binary Coded Decimal):&lt;/p>
-&lt;video controls width="800">
- &lt;source src="https://pi4j.com/assets/featured-projects/binaryclock/binaryclock.mp4" />
-&lt;/video>
-&lt;p>Design document describing the LED PCF8575 connections, and the Java implementation that drives the clock LEDs.
+&lt;p&gt;This project by &lt;strong&gt;Tom Aarts&lt;/strong&gt; (published on May 15, 2024), is a binary clock created with LEDs on a breadboard. In the video below you see it incrementing to the next minute and hour. What you see is the Hour Minute and Second displayed in BCD (Binary Coded Decimal):&lt;/p&gt;
+&lt;video controls width="800"&gt;
+ &lt;source src="https://pi4j.com/assets/featured-projects/binaryclock/binaryclock.mp4" /&gt;
+&lt;/video&gt;
+&lt;p&gt;Design document describing the LED PCF8575 connections, and the Java implementation that drives the clock LEDs.
 Note: there are two PCF8575 IC used in this design. This IC is used as it can provide the current flow to
 directly control the LED. Alternative IC like the MCP23017 with less current capability would require a NPN
-transistor in the circuit.&lt;/p></description></item><item><title>Minimal Example</title><link>https://pi4j.com/examples/jbang/jbang_minimal_example/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/jbang/jbang_minimal_example/</guid><description>&lt;h2 id="minimal-pi4j-with-jbang-example">Minimal Pi4J with JBang example&lt;/h2>
+transistor in the circuit.&lt;/p&gt;</description></item><item><title>Minimal Example</title><link>https://pi4j.com/examples/jbang/jbang_minimal_example/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/jbang/jbang_minimal_example/</guid><description>&lt;h2 id="minimal-pi4j-with-jbang-example"&gt;Minimal Pi4J with JBang example&lt;/h2&gt;
 
-&lt;div class="notices tip" >&lt;p>GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-jbang/blob/main/Pi4JMinimalExample.java" target="_blank" rel="noopener">github.com/Pi4J/pi4j-jbang &amp;gt; Pi4JMinimalExample.java&lt;/a>&lt;/p>
-&lt;/div>
+&lt;div class="notices tip" &gt;&lt;p&gt;GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-jbang/blob/main/Pi4JMinimalExample.java" target="_blank" rel="noopener"&gt;github.com/Pi4J/pi4j-jbang &amp;gt; Pi4JMinimalExample.java&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
 
-&lt;h2 id="intro">Intro&lt;/h2>
+&lt;h2 id="intro"&gt;Intro&lt;/h2&gt;
 
-&lt;div class="notices warning" >&lt;p>Before proceeding with this example, make sure that you have a Raspberry Pi prepared to execute Java code with JBang as &lt;a href="https://pi4j.com/examples/jbang/" target="_blank" rel="noopener">explained here&lt;/a>.&lt;/p>
-&lt;/div>
+&lt;div class="notices warning" &gt;&lt;p&gt;Before proceeding with this example, make sure that you have a Raspberry Pi prepared to execute Java code with JBang as &lt;a href="https://pi4j.com/examples/jbang/" target="_blank" rel="noopener"&gt;explained here&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
 
-&lt;p>The following example is based on the &lt;a href="http://localhost:49905/getting-started/minimal-example-application/" target="_blank" rel="noopener">&amp;ldquo;Minimal example application&amp;rdquo;&lt;/a>, and uses the same wiring with a button and LED. By using JBang we can run this project with a single file without the need of a full Maven or Gradle project, or compiling the Java code.&lt;/p></description></item><item><title>8x8 LED Matrix</title><link>https://pi4j.com/examples/jbang/jbang_pi4j_spi_led_matrix/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/jbang/jbang_pi4j_spi_led_matrix/</guid><description>&lt;h2 id="controlling-a-8x8-led-matrix-with-max7219-via-spi">Controlling a 8x8 LED Matrix with MAX7219 via SPI&lt;/h2>
+&lt;p&gt;The following example is based on the &lt;a href="http://localhost:49905/getting-started/minimal-example-application/" target="_blank" rel="noopener"&gt;&amp;ldquo;Minimal example application&amp;rdquo;&lt;/a&gt;, and uses the same wiring with a button and LED. By using JBang we can run this project with a single file without the need of a full Maven or Gradle project, or compiling the Java code.&lt;/p&gt;</description></item><item><title>8x8 LED Matrix</title><link>https://pi4j.com/examples/jbang/jbang_pi4j_spi_led_matrix/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/jbang/jbang_pi4j_spi_led_matrix/</guid><description>&lt;h2 id="controlling-a-8x8-led-matrix-with-max7219-via-spi"&gt;Controlling a 8x8 LED Matrix with MAX7219 via SPI&lt;/h2&gt;
 
-&lt;div class="notices tip" >&lt;p>GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-jbang/blob/main/Pi4JLedMatrixSpi.java" target="_blank" rel="noopener">github.com/Pi4J/pi4j-jbang &amp;gt; Pi4JLedMatrixSpi.java&lt;/a>&lt;/p>
-&lt;/div>
+&lt;div class="notices tip" &gt;&lt;p&gt;GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-jbang/blob/main/Pi4JLedMatrixSpi.java" target="_blank" rel="noopener"&gt;github.com/Pi4J/pi4j-jbang &amp;gt; Pi4JLedMatrixSpi.java&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
 
-&lt;p>This example is explained in the following video:&lt;/p>
-&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/BXOqXuh50KI?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
- &lt;/div>
+&lt;p&gt;This example is explained in the following video:&lt;/p&gt;
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/BXOqXuh50KI?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
 
-&lt;h2 id="intro">Intro&lt;/h2>
+&lt;h2 id="intro"&gt;Intro&lt;/h2&gt;
 
-&lt;div class="notices warning" >&lt;p>Before proceeding with this example, make sure that you have a Raspberry Pi prepared to execute Java code with JBang as &lt;a href="https://pi4j.com/examples/jbang/" target="_blank" rel="noopener">explained here&lt;/a>.&lt;/p></description></item><item><title>Simple LED</title><link>https://pi4j.com/examples/components/simpleled/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/components/simpleled/</guid><description>&lt;h3 id="description">Description&lt;/h3>
-&lt;p>The &lt;a href="https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog/components/SimpleLed.java" target="_blank" rel="noopener">SimpleLed&lt;/a> is a template class, that you can use in your own Java-project.&lt;/p>
-&lt;p>The template Class gives you the option to switch off, switch on or toggle the state of the LED.&lt;/p>
-&lt;h3 id="layout">Layout&lt;/h3>
-&lt;p>&lt;img src="https://pi4j.com/assets/examples/components/components/Layout-SimpleLED.png" alt="Simple LED Layout">&lt;/p>
-&lt;p>
+&lt;div class="notices warning" &gt;&lt;p&gt;Before proceeding with this example, make sure that you have a Raspberry Pi prepared to execute Java code with JBang as &lt;a href="https://pi4j.com/examples/jbang/" target="_blank" rel="noopener"&gt;explained here&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Simple LED</title><link>https://pi4j.com/examples/components/simpleled/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/components/simpleled/</guid><description>&lt;h3 id="description"&gt;Description&lt;/h3&gt;
+&lt;p&gt;The &lt;a href="https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog/components/SimpleLed.java" target="_blank" rel="noopener"&gt;SimpleLed&lt;/a&gt; is a template class, that you can use in your own Java-project.&lt;/p&gt;
+&lt;p&gt;The template Class gives you the option to switch off, switch on or toggle the state of the LED.&lt;/p&gt;
+&lt;h3 id="layout"&gt;Layout&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://pi4j.com/assets/examples/components/components/Layout-SimpleLED.png" alt="Simple LED Layout"&gt;&lt;/p&gt;
+&lt;p&gt;
 
 
-&lt;div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+&lt;div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery"&gt;
 	 
 
-&lt;link rel="stylesheet" href="https://pi4j.com/css/hugo-easy-gallery.css" />
-&lt;div class="box fancy-figure caption-position-center caption-effect-fade" >
- &lt;figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
- &lt;div class="img" style="background-image: url('/assets/examples/components/components/pictures/SimpleLedBreadboard.png');">
- &lt;img itemprop="thumbnail" src="https://pi4j.com/assets/examples/components/components/pictures/SimpleLedBreadboard.png" alt="Simple Led Breadboard"/>
- &lt;/div>
- &lt;a href="https://pi4j.com/assets/examples/components/components/pictures/SimpleLedBreadboard.png" itemprop="contentUrl">&lt;/a>
- &lt;figcaption>
- &lt;p>Simple Led Breadboard&lt;/p>
- &lt;/figcaption>
- &lt;/figure>
-&lt;/div>
+&lt;link rel="stylesheet" href="https://pi4j.com/css/hugo-easy-gallery.css" /&gt;
+&lt;div class="box fancy-figure caption-position-center caption-effect-fade" &gt;
+ &lt;figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"&gt;
+ &lt;div class="img" style="background-image: url('/assets/examples/components/components/pictures/SimpleLedBreadboard.png');"&gt;
+ &lt;img itemprop="thumbnail" src="https://pi4j.com/assets/examples/components/components/pictures/SimpleLedBreadboard.png" alt="Simple Led Breadboard"/&gt;
+ &lt;/div&gt;
+ &lt;a href="https://pi4j.com/assets/examples/components/components/pictures/SimpleLedBreadboard.png" itemprop="contentUrl"&gt;&lt;/a&gt;
+ &lt;figcaption&gt;
+ &lt;p&gt;Simple Led Breadboard&lt;/p&gt;
+ &lt;/figcaption&gt;
+ &lt;/figure&gt;
+&lt;/div&gt;
 
 
-&lt;/div>
+&lt;/div&gt;
 
 
 
@@ -153,59 +153,59 @@ transistor in the circuit.&lt;/p></description></item><item><title>Minimal Examp
  
 
 
-&lt;script src="https://pi4j.com/js/load-photoswipe.js">&lt;/script>
+&lt;script src="https://pi4j.com/js/load-photoswipe.js"&gt;&lt;/script&gt;
 
 
-&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" />
-&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" />
-&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js" integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=" crossorigin="anonymous">&lt;/script>
-&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js" integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=" crossorigin="anonymous">&lt;/script>
+&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" /&gt;
+&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" /&gt;
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js" integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=" crossorigin="anonymous"&gt;&lt;/script&gt;
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js" integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=" crossorigin="anonymous"&gt;&lt;/script&gt;
 
 
-&lt;div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+&lt;div class="pswp" tabindex="-1" role="dialog" aria-hidden="true"&gt;
 
-&lt;div class="pswp__bg">&lt;/div>
+&lt;div class="pswp__bg"&gt;&lt;/div&gt;
 
-&lt;div class="pswp__scroll-wrap">
+&lt;div class="pswp__scroll-wrap"&gt;
  
- &lt;div class="pswp__container">
- &lt;div class="pswp__item">&lt;/div>
- &lt;div class="pswp__item">&lt;/div>
- &lt;div class="pswp__item">&lt;/div>
- &lt;/div>
+ &lt;div class="pswp__container"&gt;
+ &lt;div class="pswp__item"&gt;&lt;/div&gt;
+ &lt;div class="pswp__item"&gt;&lt;/div&gt;
+ &lt;div class="pswp__item"&gt;&lt;/div&gt;
+ &lt;/div&gt;
  
- &lt;div class="pswp__ui pswp__ui--hidden">
- &lt;div class="pswp__top-bar">
+ &lt;div class="pswp__ui pswp__ui--hidden"&gt;
+ &lt;div class="pswp__top-bar"&gt;
  
- &lt;div class="pswp__counter">&lt;/div>
- &lt;button class="pswp__button pswp__button--close" title="Close (Esc)">&lt;/button>
- &lt;button class="pswp__button pswp__button--share" title="Share">&lt;/button>
- &lt;button class="pswp__button pswp__button--fs" title="Toggle fullscreen">&lt;/button>
- &lt;button class="pswp__button pswp__button--zoom" title="Zoom in/out">&lt;/button>
+ &lt;div class="pswp__counter"&gt;&lt;/div&gt;
+ &lt;button class="pswp__button pswp__button--close" title="Close (Esc)"&gt;&lt;/button&gt;
+ &lt;button class="pswp__button pswp__button--share" title="Share"&gt;&lt;/button&gt;
+ &lt;button class="pswp__button pswp__button--fs" title="Toggle fullscreen"&gt;&lt;/button&gt;
+ &lt;button class="pswp__button pswp__button--zoom" title="Zoom in/out"&gt;&lt;/button&gt;
  
  
- &lt;div class="pswp__preloader">
- &lt;div class="pswp__preloader__icn">
- &lt;div class="pswp__preloader__cut">
- &lt;div class="pswp__preloader__donut">&lt;/div>
- &lt;/div>
- &lt;/div>
- &lt;/div>
- &lt;/div>
- &lt;div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
- &lt;div class="pswp__share-tooltip">&lt;/div>
- &lt;/div>
- &lt;button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
- &lt;/button>
- &lt;button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
- &lt;/button>
- &lt;div class="pswp__caption">
- &lt;div class="pswp__caption__center">&lt;/div>
- &lt;/div>
- &lt;/div>
- &lt;/div>
-&lt;/div>
-&lt;/p></description></item><item><title>LED Button</title><link>https://pi4j.com/examples/components/ledbutton/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/components/ledbutton/</guid><description>&lt;h3 id="description">Description&lt;/h3>
-&lt;p>The &lt;a href="https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog/components/LedButton.java" target="_blank" rel="noopener">LedButton&lt;/a> is a template class, that you can use in your own Java-project.
-You can take any Button with a LED you want to. Like for example the big button bellow in the picture gallery.&lt;/p>
-&lt;p>The Template Class gives you the option to check the state of the button, and to create simple events if the button is pressed or depressed, or the whole time is is being pressed. Also it lets you control the LED.&lt;/p></description></item></channel></rss>
+ &lt;div class="pswp__preloader"&gt;
+ &lt;div class="pswp__preloader__icn"&gt;
+ &lt;div class="pswp__preloader__cut"&gt;
+ &lt;div class="pswp__preloader__donut"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"&gt;
+ &lt;div class="pswp__share-tooltip"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"&gt;
+ &lt;/button&gt;
+ &lt;button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"&gt;
+ &lt;/button&gt;
+ &lt;div class="pswp__caption"&gt;
+ &lt;div class="pswp__caption__center"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+&lt;/p&gt;</description></item><item><title>LED Button</title><link>https://pi4j.com/examples/components/ledbutton/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/components/ledbutton/</guid><description>&lt;h3 id="description"&gt;Description&lt;/h3&gt;
+&lt;p&gt;The &lt;a href="https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog/components/LedButton.java" target="_blank" rel="noopener"&gt;LedButton&lt;/a&gt; is a template class, that you can use in your own Java-project.
+You can take any Button with a LED you want to. Like for example the big button bellow in the picture gallery.&lt;/p&gt;
+&lt;p&gt;The Template Class gives you the option to check the state of the button, and to create simple events if the button is pressed or depressed, or the whole time is is being pressed. Also it lets you control the LED.&lt;/p&gt;</description></item></channel></rss>

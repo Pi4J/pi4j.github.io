@@ -1,20 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>GpioD on Pi4J</title><link>https://pi4j.com/tags/gpiod/</link><description>Recent content in GpioD on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://pi4j.com/tags/gpiod/index.xml" rel="self" type="application/rss+xml"/><item><title>Choosing an I/O Provider</title><link>https://pi4j.com/documentation/providers/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/providers/</guid><description>&lt;p>Providers are extensible service modules responsible for the concrete implementation of a specific I/O type.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>GpioD on Pi4J</title><link>https://pi4j.com/tags/gpiod/</link><description>Recent content in GpioD on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://pi4j.com/tags/gpiod/index.xml" rel="self" type="application/rss+xml"/><item><title>Choosing an I/O Provider</title><link>https://pi4j.com/documentation/providers/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/providers/</guid><description>&lt;p&gt;Providers are extensible service modules responsible for the concrete implementation of a specific I/O type.
 The providers also allow to separate the internal logic of the Pi4J core from the concrete implementation of the board
-on which they are used.&lt;/p>
-&lt;p>Pi4J 2.0 - 2.4: Multiple providers for the same I/O type can be loaded into a Pi4J context concurrently. For example a
+on which they are used.&lt;/p&gt;
+&lt;p&gt;Pi4J 2.0 - 2.4: Multiple providers for the same I/O type can be loaded into a Pi4J context concurrently. For example a
 &amp;ldquo;RaspberryPi-DigitalInputProvider&amp;rdquo; and &amp;ldquo;GertBoard-DigitalInputProvider&amp;rdquo; could both be loaded and both providing digital
-inputs at the same time.&lt;/p></description></item><item><title>GpioD Provider</title><link>https://pi4j.com/documentation/providers/gpiod/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/providers/gpiod/</guid><description>&lt;p>The GpioD plugin provider was added in Pi4J 2.5.0 to be able to support the Raspberry Pi 5 with the new &lt;a href="https://www.raspberrypi.com/documentation/microcontrollers/rp1.html" target="_blank" rel="noopener">GPIO chip RP1&lt;/a>.&lt;/p>
-&lt;p>Providers in the GpioD plugin:&lt;/p>
-&lt;ul>
-&lt;li>gpiod-digital-input&lt;/li>
-&lt;li>gpiod-digital-output&lt;/li>
-&lt;/ul>
-&lt;h2 id="supported-operating-system-versions">Supported Operating System Versions&lt;/h2>
+inputs at the same time.&lt;/p&gt;</description></item><item><title>GpioD Provider</title><link>https://pi4j.com/documentation/providers/gpiod/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/providers/gpiod/</guid><description>&lt;p&gt;The GpioD plugin provider was added in Pi4J 2.5.0 to be able to support the Raspberry Pi 5 with the new &lt;a href="https://www.raspberrypi.com/documentation/microcontrollers/rp1.html" target="_blank" rel="noopener"&gt;GPIO chip RP1&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Providers in the GpioD plugin:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;gpiod-digital-input&lt;/li&gt;
+&lt;li&gt;gpiod-digital-output&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="supported-operating-system-versions"&gt;Supported Operating System Versions&lt;/h2&gt;
 
-&lt;div class="notices warning" >&lt;p>The GpioD provider requires minimum kernel Bullseye 6.1.21 and Bookworm 6.6.22 !&lt;/p>
-&lt;/div>
+&lt;div class="notices warning" &gt;&lt;p&gt;The GpioD provider requires minimum kernel Bullseye 6.1.21 and Bookworm 6.6.22 !&lt;/p&gt;
+&lt;/div&gt;
 
-&lt;p>If you get an error at startup with the following content, your OS is outdated for the GpioD implementation used in Pi4J:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>UNDERLYING EXCEPTION: &lt;span style="color:#f92672">[&lt;/span>java.lang.UnsatisfiedLinkError&lt;span style="color:#f92672">]=&lt;/span>/tmp/libgpiod368899536808039438.so: /lib/aarch64-linux-gnu/libc.so.6: version &lt;span style="color:#e6db74">`&lt;/span>GLIBC_2.33&lt;span style="color:#960050;background-color:#1e0010">&amp;#39;&lt;/span> not found &lt;span style="color:#f92672">(&lt;/span>required by /tmp/libgpiod368899536808039438.so&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="dependencies">Dependencies&lt;/h2>
-&lt;p>To use the GpioD provider include the following dependencies:&lt;/p></description></item></channel></rss>
+&lt;p&gt;If you get an error at startup with the following content, your OS is outdated for the GpioD implementation used in Pi4J:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;UNDERLYING EXCEPTION: &lt;span style="color:#f92672"&gt;[&lt;/span&gt;java.lang.UnsatisfiedLinkError&lt;span style="color:#f92672"&gt;]=&lt;/span&gt;/tmp/libgpiod368899536808039438.so: /lib/aarch64-linux-gnu/libc.so.6: version &lt;span style="color:#e6db74"&gt;`&lt;/span&gt;GLIBC_2.33&lt;span style="color:#960050;background-color:#1e0010"&gt;&amp;#39;&lt;/span&gt; not found &lt;span style="color:#f92672"&gt;(&lt;/span&gt;required by /tmp/libgpiod368899536808039438.so&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="dependencies"&gt;Dependencies&lt;/h2&gt;
+&lt;p&gt;To use the GpioD provider include the following dependencies:&lt;/p&gt;</description></item></channel></rss>

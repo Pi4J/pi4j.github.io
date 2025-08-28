@@ -1,78 +1,78 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>About on Pi4J</title><link>https://pi4j.com/about/</link><description>Recent content in About on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://pi4j.com/about/index.xml" rel="self" type="application/rss+xml"/><item><title>Info about V1</title><link>https://pi4j.com/about/info-v1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/about/info-v1/</guid><description>&lt;p>The original library which started in 2012 and got a last release in 2021. Up till &lt;strong>version 1.3.0 the library targets Java 8&lt;/strong>, while &lt;strong>version 1.4.0 relies on Java 11&lt;/strong>.&lt;/p>
-&lt;h2 id="archived-sources">Archived Sources&lt;/h2>
-&lt;p>&lt;a href="https://github.com/Pi4J/pi4j-v1" target="_blank" rel="noopener">The sources of V1 can be found in the read-only GitHub repository &lt;code>pi4j/pi4j-v1&lt;/code>&lt;/a>.&lt;/p>
-&lt;h2 id="release-notes-v1x">Release Notes V1.X&lt;/h2>
-&lt;h3 id="pi4j-version-14---2021-03-03">Pi4J Version 1.4 - 2021-03-03&lt;/h3>
-&lt;ul>
-&lt;li>Support for JDK/JRE 11 and 64-bit ARM platforms&lt;/li>
-&lt;li>This release is the final release for the Pi4J Version 1.x codebase&lt;/li>
-&lt;li>The Pi4J project is now prioritizing focus on providing Java programs access, control and communication with the core I/O capabilities of the Raspberry Pi platform&lt;/li>
-&lt;li>Changed project to Apache License, Version 2.0&lt;/li>
-&lt;li>Removed pi4j-device and pi4j-gpio-extension library&lt;/li>
-&lt;li>Removed platform support for Odroid, BananaPi, BPi, NanoPi, OrangePi&lt;/li>
-&lt;li>Various improvements and bug fixes listed here: &lt;a href="https://github.com/Pi4J/pi4j-v1/milestone/9?closed=1" target="_blank" rel="noopener">GitHub Issues (v1.4)&lt;/a>&lt;/li>
-&lt;li>Not using Java-modules yet, this will be part of the V2&lt;/li>
-&lt;li>&lt;a href="https://pi4j.com/1.4/index.html">Documentation website V1.4&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h3 id="pi4j-version-13---2021-01-29">Pi4J Version 1.3 - 2021-01-29&lt;/h3>
-&lt;ul>
-&lt;li>Added support for Raspberry Pi 4B, 400, and Compute Module 4&lt;/li>
-&lt;li>Various improvements and bug fixes listed here: &lt;a href="https://github.com/Pi4J/pi4j-v1/milestone/10?closed=1" target="_blank" rel="noopener">GitHub Issues (v1.3)&lt;/a>&lt;/li>
-&lt;li>Based on JDK8&lt;/li>
-&lt;li>&lt;a href="https://pi4j.com/1.3/index.html">Documentation website V1.3&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h3 id="pi4j-version-12---2019-02-26">Pi4J Version 1.2 - 2019-02-26&lt;/h3>
-&lt;ul>
-&lt;li>Based on Java 8&lt;/li>
-&lt;li>&lt;a href="https://pi4j.com/1.2/index.html">Documentation website V1.2&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h3 id="pi4j-version-11---2016-07-26">Pi4J Version 1.1 - 2016-07-26&lt;/h3>
-&lt;ul>
-&lt;li>&lt;a href="https://pi4j.com/1.1/index.html">Documentation webiste V1.1&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h3 id="pi4j-version-10---2015-04-18">Pi4J Version 1.0 - 2015-04-18&lt;/h3>
-&lt;ul>
-&lt;li>&lt;a href="https://pi4j.com/1.0/index.html">Documentation website V1.0&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>What's New in V2</title><link>https://pi4j.com/about/info-v2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/about/info-v2/</guid><description>&lt;p>As of versions 2.X.X, Pi4J &lt;strong>no longer includes support for peripheral devices and add-on chipsets/boards&lt;/strong> as part of the core project. A new plugin model has been introduced in version 2.0 that helps to enable third-party development and support third-party add-ons which can be developed and maintained independently of the core Pi4J project.&lt;/p>
-&lt;p>&lt;strong>V2-versions of Pi4J require Java 11&lt;/strong> or higher.&lt;/p>
-&lt;h2 id="whats-new-in-v2">What&amp;rsquo;s New in V2?&lt;/h2>
-&lt;p>Pi4J V2 brings with it many new features, and an entirely new architecture that focuses on
-extensibility, simplified integration and a modern Java API including the following:&lt;/p></description></item><item><title>What's New in V3</title><link>https://pi4j.com/about/info-v3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/about/info-v3/</guid><description>&lt;p>Versions 3.0.1 is based on 2.8.0 (released in January 2025), but bumps the &lt;strong>Java version to 21&lt;/strong>!&lt;/p>
-&lt;p>We &lt;a href="https://github.com/Pi4J/pi4j/discussions/409" target="_blank" rel="noopener">asked our users&lt;/a> which minimal Java version we should use, but there was no one clear answer, as expected ;-)&lt;/p>
-&lt;p>The current/latest Long Term Support (LTS) version of Java is version 21. So it makes sense to jump forward from 11 to 21. This will also prepare us for the next LTS, which will be Java 25 in September 2025. Bumping to the latest LTS makes it possible to make use of many newer Java language and runtime improvements, simplify parts of the code, etc.&lt;/p></description></item><item><title>Release Notes</title><link>https://pi4j.com/about/release-notes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/about/release-notes/</guid><description>&lt;p>All releases of Pi4J V2+ are listed on &lt;a href="https://github.com/Pi4J/pi4j/releases" target="_blank" rel="noopener">github.com/Pi4J/pi4j/releases&lt;/a>.&lt;/p>
-&lt;h2 id="v3">V3&lt;/h2>
-&lt;p>Requires Java 21, see &lt;a href="https://pi4j.com/about/info-v3/">What&amp;rsquo;s New in V3&lt;/a> for more info.&lt;/p>
-&lt;h3 id="2025-05-20---v302">2025-05-20 - V3.0.2&lt;/h3>
-&lt;ul>
-&lt;li>Board model can now be forced to allow the use of Pi4J on other/unrecognized boards. See &lt;a href="https://pi4j.com/documentation/board-info/#overriding-the-detected-board">Overriding the Detected Board&lt;/a> for more info.&lt;/li>
-&lt;li>&lt;code>BoardInfoHelper.usesRP1()&lt;/code> has been improved as more boards use this RP1 (5, 500, Compute 5), and even more are expected in the future.&lt;/li>
-&lt;li>&lt;a href="https://github.com/Pi4J/pi4j/issues/455" target="_blank" rel="noopener">Issue #455&lt;/a>: GpioDDigitalInput may never start monitoring line events. Fixed by simplifying and improving the wait for the input listener loop to exit on shutdown.&lt;/li>
-&lt;li>&lt;a href="https://apidia.net/mvn/com.pi4j/pi4j" target="_blank" rel="noopener">APIdia badge and link&lt;/a> added to README.md&lt;/li>
-&lt;li>&lt;a href="https://github.com/Pi4J/pi4j/pull/461" target="_blank" rel="noopener">Pull request #461&lt;/a>: Removal in the core code of the SpiChipSelect to enforce a PiGpio limitation of the values 0, 1, or 2.&lt;/li>
-&lt;/ul>
-&lt;p>Thanks to contributions by &lt;a href="https://github.com/ylexus" target="_blank" rel="noopener">@ylexus&lt;/a>, &lt;a href="https://github.com/taartspi" target="_blank" rel="noopener">@taartspi&lt;/a>, &lt;a href="https://github.com/eitch" target="_blank" rel="noopener">@eitch&lt;/a>, &lt;a href="https://github.com/fdelporte" target="_blank" rel="noopener">@fdelporte&lt;/a>.&lt;/p></description></item><item><title>Pi4J Downloads</title><link>https://pi4j.com/about/download/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/about/download/</guid><description>&lt;p>All downloads provided by the project can be found on &lt;a href="https://pi4j.com/download/" target="_blank" rel="noopener">pi4j.com/download&lt;/a>.&lt;/p>
-&lt;p>The compiled artifacts (releases and snapshots) are available in the
-&lt;a href="https://oss.sonatype.org/index.html#nexus-search;gav~com.pi4j~~~~" target="_blank" rel="noopener">Sonatype Maven repository&lt;/a>.&lt;/p>
-&lt;iframe src="https://pi4j.com/download" style="width: 100%; height: 100vh;">&lt;/iframe></description></item><item><title>License (Open Source)</title><link>https://pi4j.com/about/license/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/about/license/</guid><description>&lt;p>The Pi4J Version 2.0 project is distributed and licensed under the &lt;strong>Apache License, Version 2.0&lt;/strong> license
-(&lt;em>A business-friendly OSS license&lt;/em>).&lt;/p>
-&lt;ul>
-&lt;li>&lt;a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank" rel="noopener">apache.org/licenses/LICENSE-2.0&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://github.com/Pi4J/pi4j/blob/master/LICENSE.txt" target="_blank" rel="noopener">github.com/Pi4J/pi4j/blob/master/LICENSE.txt&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;div style="max-width: 650px; margin-left: auto; margin-right: auto;" >
-&lt;pre>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>About on Pi4J</title><link>https://pi4j.com/about/</link><description>Recent content in About on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://pi4j.com/about/index.xml" rel="self" type="application/rss+xml"/><item><title>Info about V1</title><link>https://pi4j.com/about/info-v1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/about/info-v1/</guid><description>&lt;p&gt;The original library which started in 2012 and got a last release in 2021. Up till &lt;strong&gt;version 1.3.0 the library targets Java 8&lt;/strong&gt;, while &lt;strong&gt;version 1.4.0 relies on Java 11&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id="archived-sources"&gt;Archived Sources&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://github.com/Pi4J/pi4j-v1" target="_blank" rel="noopener"&gt;The sources of V1 can be found in the read-only GitHub repository &lt;code&gt;pi4j/pi4j-v1&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="release-notes-v1x"&gt;Release Notes V1.X&lt;/h2&gt;
+&lt;h3 id="pi4j-version-14---2021-03-03"&gt;Pi4J Version 1.4 - 2021-03-03&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Support for JDK/JRE 11 and 64-bit ARM platforms&lt;/li&gt;
+&lt;li&gt;This release is the final release for the Pi4J Version 1.x codebase&lt;/li&gt;
+&lt;li&gt;The Pi4J project is now prioritizing focus on providing Java programs access, control and communication with the core I/O capabilities of the Raspberry Pi platform&lt;/li&gt;
+&lt;li&gt;Changed project to Apache License, Version 2.0&lt;/li&gt;
+&lt;li&gt;Removed pi4j-device and pi4j-gpio-extension library&lt;/li&gt;
+&lt;li&gt;Removed platform support for Odroid, BananaPi, BPi, NanoPi, OrangePi&lt;/li&gt;
+&lt;li&gt;Various improvements and bug fixes listed here: &lt;a href="https://github.com/Pi4J/pi4j-v1/milestone/9?closed=1" target="_blank" rel="noopener"&gt;GitHub Issues (v1.4)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Not using Java-modules yet, this will be part of the V2&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://pi4j.com/1.4/index.html"&gt;Documentation website V1.4&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="pi4j-version-13---2021-01-29"&gt;Pi4J Version 1.3 - 2021-01-29&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added support for Raspberry Pi 4B, 400, and Compute Module 4&lt;/li&gt;
+&lt;li&gt;Various improvements and bug fixes listed here: &lt;a href="https://github.com/Pi4J/pi4j-v1/milestone/10?closed=1" target="_blank" rel="noopener"&gt;GitHub Issues (v1.3)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Based on JDK8&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://pi4j.com/1.3/index.html"&gt;Documentation website V1.3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="pi4j-version-12---2019-02-26"&gt;Pi4J Version 1.2 - 2019-02-26&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Based on Java 8&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://pi4j.com/1.2/index.html"&gt;Documentation website V1.2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="pi4j-version-11---2016-07-26"&gt;Pi4J Version 1.1 - 2016-07-26&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://pi4j.com/1.1/index.html"&gt;Documentation webiste V1.1&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="pi4j-version-10---2015-04-18"&gt;Pi4J Version 1.0 - 2015-04-18&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://pi4j.com/1.0/index.html"&gt;Documentation website V1.0&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>What's New in V2</title><link>https://pi4j.com/about/info-v2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/about/info-v2/</guid><description>&lt;p&gt;As of versions 2.X.X, Pi4J &lt;strong&gt;no longer includes support for peripheral devices and add-on chipsets/boards&lt;/strong&gt; as part of the core project. A new plugin model has been introduced in version 2.0 that helps to enable third-party development and support third-party add-ons which can be developed and maintained independently of the core Pi4J project.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;V2-versions of Pi4J require Java 11&lt;/strong&gt; or higher.&lt;/p&gt;
+&lt;h2 id="whats-new-in-v2"&gt;What&amp;rsquo;s New in V2?&lt;/h2&gt;
+&lt;p&gt;Pi4J V2 brings with it many new features, and an entirely new architecture that focuses on
+extensibility, simplified integration and a modern Java API including the following:&lt;/p&gt;</description></item><item><title>What's New in V3</title><link>https://pi4j.com/about/info-v3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/about/info-v3/</guid><description>&lt;p&gt;Versions 3.0.1 is based on 2.8.0 (released in January 2025), but bumps the &lt;strong&gt;Java version to 21&lt;/strong&gt;!&lt;/p&gt;
+&lt;p&gt;We &lt;a href="https://github.com/Pi4J/pi4j/discussions/409" target="_blank" rel="noopener"&gt;asked our users&lt;/a&gt; which minimal Java version we should use, but there was no one clear answer, as expected ;-)&lt;/p&gt;
+&lt;p&gt;The current/latest Long Term Support (LTS) version of Java is version 21. So it makes sense to jump forward from 11 to 21. This will also prepare us for the next LTS, which will be Java 25 in September 2025. Bumping to the latest LTS makes it possible to make use of many newer Java language and runtime improvements, simplify parts of the code, etc.&lt;/p&gt;</description></item><item><title>Release Notes</title><link>https://pi4j.com/about/release-notes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/about/release-notes/</guid><description>&lt;p&gt;All releases of Pi4J V2+ are listed on &lt;a href="https://github.com/Pi4J/pi4j/releases" target="_blank" rel="noopener"&gt;github.com/Pi4J/pi4j/releases&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="v3"&gt;V3&lt;/h2&gt;
+&lt;p&gt;Requires Java 21, see &lt;a href="https://pi4j.com/about/info-v3/"&gt;What&amp;rsquo;s New in V3&lt;/a&gt; for more info.&lt;/p&gt;
+&lt;h3 id="2025-05-20---v302"&gt;2025-05-20 - V3.0.2&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Board model can now be forced to allow the use of Pi4J on other/unrecognized boards. See &lt;a href="https://pi4j.com/documentation/board-info/#overriding-the-detected-board"&gt;Overriding the Detected Board&lt;/a&gt; for more info.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;BoardInfoHelper.usesRP1()&lt;/code&gt; has been improved as more boards use this RP1 (5, 500, Compute 5), and even more are expected in the future.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/Pi4J/pi4j/issues/455" target="_blank" rel="noopener"&gt;Issue #455&lt;/a&gt;: GpioDDigitalInput may never start monitoring line events. Fixed by simplifying and improving the wait for the input listener loop to exit on shutdown.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://apidia.net/mvn/com.pi4j/pi4j" target="_blank" rel="noopener"&gt;APIdia badge and link&lt;/a&gt; added to README.md&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/Pi4J/pi4j/pull/461" target="_blank" rel="noopener"&gt;Pull request #461&lt;/a&gt;: Removal in the core code of the SpiChipSelect to enforce a PiGpio limitation of the values 0, 1, or 2.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Thanks to contributions by &lt;a href="https://github.com/ylexus" target="_blank" rel="noopener"&gt;@ylexus&lt;/a&gt;, &lt;a href="https://github.com/taartspi" target="_blank" rel="noopener"&gt;@taartspi&lt;/a&gt;, &lt;a href="https://github.com/eitch" target="_blank" rel="noopener"&gt;@eitch&lt;/a&gt;, &lt;a href="https://github.com/fdelporte" target="_blank" rel="noopener"&gt;@fdelporte&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Pi4J Downloads</title><link>https://pi4j.com/about/download/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/about/download/</guid><description>&lt;p&gt;All downloads provided by the project can be found on &lt;a href="https://pi4j.com/download/" target="_blank" rel="noopener"&gt;pi4j.com/download&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The compiled artifacts (releases and snapshots) are available in the
+&lt;a href="https://oss.sonatype.org/index.html#nexus-search;gav~com.pi4j~~~~" target="_blank" rel="noopener"&gt;Sonatype Maven repository&lt;/a&gt;.&lt;/p&gt;
+&lt;iframe src="https://pi4j.com/download" style="width: 100%; height: 100vh;"&gt;&lt;/iframe&gt;</description></item><item><title>License (Open Source)</title><link>https://pi4j.com/about/license/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/about/license/</guid><description>&lt;p&gt;The Pi4J Version 2.0 project is distributed and licensed under the &lt;strong&gt;Apache License, Version 2.0&lt;/strong&gt; license
+(&lt;em&gt;A business-friendly OSS license&lt;/em&gt;).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank" rel="noopener"&gt;apache.org/licenses/LICENSE-2.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/Pi4J/pi4j/blob/master/LICENSE.txt" target="_blank" rel="noopener"&gt;github.com/Pi4J/pi4j/blob/master/LICENSE.txt&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div style="max-width: 650px; margin-left: auto; margin-right: auto;" &gt;
+&lt;pre&gt;
  Apache License
  Version 2.0, January 2004
  http://www.apache.org/licenses/
-&lt;p>TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>Definitions.&lt;/p>
-&lt;p>&amp;ldquo;License&amp;rdquo; shall mean the terms and conditions for use, reproduction,
-and distribution as defined by Sections 1 through 9 of this document.&lt;/p>
-&lt;p>&amp;ldquo;Licensor&amp;rdquo; shall mean the copyright owner or entity authorized by
-the copyright owner that is granting the License.&lt;/p></description></item><item><title>The Team</title><link>https://pi4j.com/about/team/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/about/team/</guid><description>&lt;p>Pi4J is a real community project! On this page you find the main contributors, in the order they joined the project. But there are many more, as you can see &lt;a href="https://github.com/Pi4J/pi4j/graphs/contributors" target="_blank" rel="noopener">in the list with Pi4J library contributors&lt;/a>, and in the many other &lt;a href="https://github.com/orgs/Pi4J/repositories" target="_blank" rel="noopener">Pi4J repositories with example implementations&lt;/a>.&lt;/p>
-&lt;h3 style="clear: both;">&lt;a href="https://twitter.com/savageautomate" target="_blank">Robert Savage&lt;/a>&lt;/h3>
-&lt;img src="https://pi4j.com/assets/about/team/robert-savage.png" style="float: left; margin: 0 15px 10px 0; max-width: 125px; max-height: 150px;">
-&lt;p>&lt;strong>Project Founder, Architect, (&amp;ldquo;Retired&amp;rdquo;) Lead Developer&lt;/strong>&lt;/p>
-&lt;p>Principal Software Architect/Engineer. Consultant, technology enthusiast, entrepreneur, open source contributor, technology &lt;a href="http://www.savagehomeautomation.com/" target="_blank" rel="noopener">blogger&lt;/a>. Founder at shadeBlue, LLC and SavageSoftware, LLC. Robert has a more than 20 year career working in the professional audio visual and home/commercial automation industry and an extensive background in developing technology solutions with a special focus on home automation and hardware/firmware/software integration. In 2012, Robert created the Pi4J project which provides Java developers an easy to use Java library enabling access to low-level I/O functionality (GPIO, I2C, SPI, Serial, etc.) of embedded systems like the Raspberry Pi. I created Pi4J to empower Java programmers to get involved with embedded platforms such as the Raspberry Pi and provide an easy to use and accessible Java-centric object-oriented library enabling control of real world (physical) &amp;ldquo;things&amp;rdquo;. Pi4J V2 brings an entirely new and modern approach to Java I/O programming for embedded systems. I&amp;rsquo;m excited to get V2 released and see what additional creative projects emerge.&lt;/p></description></item></channel></rss>
+&lt;p&gt;TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Definitions.&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;License&amp;rdquo; shall mean the terms and conditions for use, reproduction,
+and distribution as defined by Sections 1 through 9 of this document.&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;Licensor&amp;rdquo; shall mean the copyright owner or entity authorized by
+the copyright owner that is granting the License.&lt;/p&gt;</description></item><item><title>The Team</title><link>https://pi4j.com/about/team/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/about/team/</guid><description>&lt;p&gt;Pi4J is a real community project! On this page you find the main contributors, in the order they joined the project. But there are many more, as you can see &lt;a href="https://github.com/Pi4J/pi4j/graphs/contributors" target="_blank" rel="noopener"&gt;in the list with Pi4J library contributors&lt;/a&gt;, and in the many other &lt;a href="https://github.com/orgs/Pi4J/repositories" target="_blank" rel="noopener"&gt;Pi4J repositories with example implementations&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 style="clear: both;"&gt;&lt;a href="https://twitter.com/savageautomate" target="_blank"&gt;Robert Savage&lt;/a&gt;&lt;/h3&gt;
+&lt;img src="https://pi4j.com/assets/about/team/robert-savage.png" style="float: left; margin: 0 15px 10px 0; max-width: 125px; max-height: 150px;"&gt;
+&lt;p&gt;&lt;strong&gt;Project Founder, Architect, (&amp;ldquo;Retired&amp;rdquo;) Lead Developer&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Principal Software Architect/Engineer. Consultant, technology enthusiast, entrepreneur, open source contributor, technology &lt;a href="http://www.savagehomeautomation.com/" target="_blank" rel="noopener"&gt;blogger&lt;/a&gt;. Founder at shadeBlue, LLC and SavageSoftware, LLC. Robert has a more than 20 year career working in the professional audio visual and home/commercial automation industry and an extensive background in developing technology solutions with a special focus on home automation and hardware/firmware/software integration. In 2012, Robert created the Pi4J project which provides Java developers an easy to use Java library enabling access to low-level I/O functionality (GPIO, I2C, SPI, Serial, etc.) of embedded systems like the Raspberry Pi. I created Pi4J to empower Java programmers to get involved with embedded platforms such as the Raspberry Pi and provide an easy to use and accessible Java-centric object-oriented library enabling control of real world (physical) &amp;ldquo;things&amp;rdquo;. Pi4J V2 brings an entirely new and modern approach to Java I/O programming for embedded systems. I&amp;rsquo;m excited to get V2 released and see what additional creative projects emerge.&lt;/p&gt;</description></item></channel></rss>

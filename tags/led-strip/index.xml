@@ -1,121 +1,121 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>LED Strip on Pi4J</title><link>https://pi4j.com/tags/led-strip/</link><description>Recent content in LED Strip on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://pi4j.com/tags/led-strip/index.xml" rel="self" type="application/rss+xml"/><item><title>Component Examples</title><link>https://pi4j.com/examples/components/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/components/</guid><description>&lt;p>The FHNW University contributed a full project with example implementations of the following devices.&lt;/p>
-&lt;h3 id="current-available-components">Current available components&lt;/h3>
-&lt;table>
- &lt;thead>
- &lt;tr>
- &lt;th style="text-align: left">Device(s)&lt;/th>
- &lt;th style="text-align: left">Developed by&lt;/th>
- &lt;th style="text-align: left">Link&lt;/th>
- &lt;/tr>
- &lt;/thead>
- &lt;tbody>
- &lt;tr>
- &lt;td style="text-align: left">&lt;a href="https://pi4j.com/examples/components/simplebutton">Simple Button&lt;/a>&lt;/td>
- &lt;td style="text-align: left">Reto Stutz, Mike Schoder&lt;/td>
- &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/SimpleButton_App.java" target="_blank" rel="noopener">Example Devices&lt;/a>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">&lt;a href="https://pi4j.com/examples/components/simpleled">Simple LED&lt;/a>&lt;/td>
- &lt;td style="text-align: left">Reto Stutz, Mike Schoder&lt;/td>
- &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/SimpleLed_App.java" target="_blank" rel="noopener">Example Devices&lt;/a>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">&lt;a href="https://pi4j.com/examples/components/ads1115">AD Converter ADS1115&lt;/a>&lt;/td>
- &lt;td style="text-align: left">Reto Stutz, Mike Schoder&lt;/td>
- &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/Ads1115_App.java" target="_blank" rel="noopener">Example Devices&lt;/a>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">&lt;a href="https://pi4j.com/examples/components/buzzer">Buzzer&lt;/a>&lt;/td>
- &lt;td style="text-align: left">Reto Stutz, Mike Schoder&lt;/td>
- &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/Buzzer_App.java" target="_blank" rel="noopener">Example Devices&lt;/a>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">&lt;a href="https://pi4j.com/examples/components/camera">Camera&lt;/a>&lt;/td>
- &lt;td style="text-align: left">Reto Stutz, Mike Schoder&lt;/td>
- &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/Camera_App.java" target="_blank" rel="noopener">Example Devices&lt;/a>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">&lt;a href="https://pi4j.com/examples/components/joystick">Joystick&lt;/a>&lt;/td>
- &lt;td style="text-align: left">Reto Stutz, Mike Schoder&lt;/td>
- &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/Joystick_App.java" target="_blank" rel="noopener">Example Devices&lt;/a>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">&lt;a href="https://pi4j.com/examples/components/joystickanalog">Joystick Analog&lt;/a>&lt;/td>
- &lt;td style="text-align: left">Reto Stutz, Mike Schoder&lt;/td>
- &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/JoystickAnalog_App.java" target="_blank" rel="noopener">Example Devices&lt;/a>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">&lt;a href="https://pi4j.com/examples/components/lcddisplay">LCD Display&lt;/a>&lt;/td>
- &lt;td style="text-align: left">Reto Stutz, Mike Schoder&lt;/td>
- &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/LcdDisplay_App.java" target="_blank" rel="noopener">Example Devices&lt;/a>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">&lt;a href="https://pi4j.com/examples/components/ledbutton">LED Button&lt;/a>&lt;/td>
- &lt;td style="text-align: left">Reto Stutz, Mike Schoder&lt;/td>
- &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/LedButton_App.java" target="_blank" rel="noopener">Example Devices&lt;/a>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">&lt;a href="https://pi4j.com/examples/components/ledmatrix">LED Matrix&lt;/a>&lt;/td>
- &lt;td style="text-align: left">Reto Stutz, Mike Schoder&lt;/td>
- &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/LedMatrix_App.java" target="_blank" rel="noopener">Example Devices&lt;/a>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">&lt;a href="https://pi4j.com/examples/components/ledstrip">LED Strip&lt;/a>&lt;/td>
- &lt;td style="text-align: left">Reto Stutz, Mike Schoder&lt;/td>
- &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/LedStrip_App.java" target="_blank" rel="noopener">Example Devices&lt;/a>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">&lt;a href="https://pi4j.com/examples/components/potentiometer">Potentiometer&lt;/a>&lt;/td>
- &lt;td style="text-align: left">Reto Stutz, Mike Schoder&lt;/td>
- &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/Potentiometer_App.java" target="_blank" rel="noopener">Example Devices&lt;/a>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">&lt;a href="https://pi4j.com/examples/components/servo">Servo Motor&lt;/a>&lt;/td>
- &lt;td style="text-align: left">Reto Stutz, Mike Schoder&lt;/td>
- &lt;td style="text-align: left">&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/Servo_App.java" target="_blank" rel="noopener">Example Devices&lt;/a>&lt;/td>
- &lt;/tr>
- &lt;/tbody>
-&lt;/table>
-&lt;h3 id="simple-implementation">Simple Implementation&lt;/h3>
-&lt;p>For a Simple Implementation, the recommendation is to use the &lt;a href="https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog/Launcher.java" target="_blank" rel="noopener">Launcher Class&lt;/a>.
-With this, a simple application can be started.&lt;/p></description></item><item><title>Pixelblaze Output Expander</title><link>https://pi4j.com/examples/jbang/pixelblaze_output_expander/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/jbang/pixelblaze_output_expander/</guid><description>&lt;div class="notices tip" >&lt;p>GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-jbang/blob/main/PixelblazeOutputExpander.java" target="_blank" rel="noopener">github.com/Pi4J/pi4j-jbang &amp;gt; PixelblazeOutputExpander.java&lt;/a>&lt;/p>
-&lt;/div>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>LED Strip on Pi4J</title><link>https://pi4j.com/tags/led-strip/</link><description>Recent content in LED Strip on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://pi4j.com/tags/led-strip/index.xml" rel="self" type="application/rss+xml"/><item><title>Component Examples</title><link>https://pi4j.com/examples/components/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/components/</guid><description>&lt;p&gt;The FHNW University contributed a full project with example implementations of the following devices.&lt;/p&gt;
+&lt;h3 id="current-available-components"&gt;Current available components&lt;/h3&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th style="text-align: left"&gt;Device(s)&lt;/th&gt;
+ &lt;th style="text-align: left"&gt;Developed by&lt;/th&gt;
+ &lt;th style="text-align: left"&gt;Link&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://pi4j.com/examples/components/simplebutton"&gt;Simple Button&lt;/a&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;Reto Stutz, Mike Schoder&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/SimpleButton_App.java" target="_blank" rel="noopener"&gt;Example Devices&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://pi4j.com/examples/components/simpleled"&gt;Simple LED&lt;/a&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;Reto Stutz, Mike Schoder&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/SimpleLed_App.java" target="_blank" rel="noopener"&gt;Example Devices&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://pi4j.com/examples/components/ads1115"&gt;AD Converter ADS1115&lt;/a&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;Reto Stutz, Mike Schoder&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/Ads1115_App.java" target="_blank" rel="noopener"&gt;Example Devices&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://pi4j.com/examples/components/buzzer"&gt;Buzzer&lt;/a&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;Reto Stutz, Mike Schoder&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/Buzzer_App.java" target="_blank" rel="noopener"&gt;Example Devices&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://pi4j.com/examples/components/camera"&gt;Camera&lt;/a&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;Reto Stutz, Mike Schoder&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/Camera_App.java" target="_blank" rel="noopener"&gt;Example Devices&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://pi4j.com/examples/components/joystick"&gt;Joystick&lt;/a&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;Reto Stutz, Mike Schoder&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/Joystick_App.java" target="_blank" rel="noopener"&gt;Example Devices&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://pi4j.com/examples/components/joystickanalog"&gt;Joystick Analog&lt;/a&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;Reto Stutz, Mike Schoder&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/JoystickAnalog_App.java" target="_blank" rel="noopener"&gt;Example Devices&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://pi4j.com/examples/components/lcddisplay"&gt;LCD Display&lt;/a&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;Reto Stutz, Mike Schoder&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/LcdDisplay_App.java" target="_blank" rel="noopener"&gt;Example Devices&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://pi4j.com/examples/components/ledbutton"&gt;LED Button&lt;/a&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;Reto Stutz, Mike Schoder&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/LedButton_App.java" target="_blank" rel="noopener"&gt;Example Devices&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://pi4j.com/examples/components/ledmatrix"&gt;LED Matrix&lt;/a&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;Reto Stutz, Mike Schoder&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/LedMatrix_App.java" target="_blank" rel="noopener"&gt;Example Devices&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://pi4j.com/examples/components/ledstrip"&gt;LED Strip&lt;/a&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;Reto Stutz, Mike Schoder&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/LedStrip_App.java" target="_blank" rel="noopener"&gt;Example Devices&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://pi4j.com/examples/components/potentiometer"&gt;Potentiometer&lt;/a&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;Reto Stutz, Mike Schoder&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/Potentiometer_App.java" target="_blank" rel="noopener"&gt;Example Devices&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://pi4j.com/examples/components/servo"&gt;Servo Motor&lt;/a&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;Reto Stutz, Mike Schoder&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/Servo_App.java" target="_blank" rel="noopener"&gt;Example Devices&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id="simple-implementation"&gt;Simple Implementation&lt;/h3&gt;
+&lt;p&gt;For a Simple Implementation, the recommendation is to use the &lt;a href="https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog/Launcher.java" target="_blank" rel="noopener"&gt;Launcher Class&lt;/a&gt;.
+With this, a simple application can be started.&lt;/p&gt;</description></item><item><title>Pixelblaze Output Expander</title><link>https://pi4j.com/examples/jbang/pixelblaze_output_expander/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/jbang/pixelblaze_output_expander/</guid><description>&lt;div class="notices tip" &gt;&lt;p&gt;GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-jbang/blob/main/PixelblazeOutputExpander.java" target="_blank" rel="noopener"&gt;github.com/Pi4J/pi4j-jbang &amp;gt; PixelblazeOutputExpander.java&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
 
-&lt;p>One of the most &amp;ldquo;fancy&amp;rdquo; electronic components is definitely a LED strip. It&amp;rsquo;s really cool to control a long strip of lights with only a few lines of code&amp;hellip; But, there is a problem. The timing of the signals is crucial to reliably control these strips. Both Python and Java on a Raspberry Pi can struggle with these timings as they are running on Linux, a non-real-time operating system. So pauses in the garbage collection of the Java virtual machine, or any glitch in the operating system can cause unexpected effects on the LED strips. That&amp;rsquo;s why in most projects, a microcontroller (Arduino, Raspberry Pi Pico, ESP32,&amp;hellip;) is used to drive the LED strip.&lt;/p></description></item><item><title>Controlling a LED Matrix</title><link>https://pi4j.com/examples/jbang/pixelblaze_output_expander_image/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/jbang/pixelblaze_output_expander_image/</guid><description>&lt;div class="notices tip" >&lt;p>GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-jbang/blob/main/PixelblazeOutputExpanderImageMatrix8x32.java" target="_blank" rel="noopener">github.com/Pi4J/pi4j-jbang &amp;gt; PixelblazeOutputExpanderImageMatrix8x32.java&lt;/a>&lt;/p>
-&lt;/div>
+&lt;p&gt;One of the most &amp;ldquo;fancy&amp;rdquo; electronic components is definitely a LED strip. It&amp;rsquo;s really cool to control a long strip of lights with only a few lines of code&amp;hellip; But, there is a problem. The timing of the signals is crucial to reliably control these strips. Both Python and Java on a Raspberry Pi can struggle with these timings as they are running on Linux, a non-real-time operating system. So pauses in the garbage collection of the Java virtual machine, or any glitch in the operating system can cause unexpected effects on the LED strips. That&amp;rsquo;s why in most projects, a microcontroller (Arduino, Raspberry Pi Pico, ESP32,&amp;hellip;) is used to drive the LED strip.&lt;/p&gt;</description></item><item><title>Controlling a LED Matrix</title><link>https://pi4j.com/examples/jbang/pixelblaze_output_expander_image/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/jbang/pixelblaze_output_expander_image/</guid><description>&lt;div class="notices tip" &gt;&lt;p&gt;GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-jbang/blob/main/PixelblazeOutputExpanderImageMatrix8x32.java" target="_blank" rel="noopener"&gt;github.com/Pi4J/pi4j-jbang &amp;gt; PixelblazeOutputExpanderImageMatrix8x32.java&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
 
-&lt;p>A LED strip doesn&amp;rsquo;t only exist as a single strip, the same system is also used in a LED matrix. In this example, we will control such a &lt;a href="https://www.amazon.nl/dp/B0B81R484Z" target="_blank" rel="noopener">8*32 LED matrix&lt;/a>.&lt;/p>
-&lt;p>Full LED strip code walkthrough, and additional info in this live session with Robert (aka Eitch) and Frank:&lt;/p>
-&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/eToIXACqSuY?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
- &lt;/div>
+&lt;p&gt;A LED strip doesn&amp;rsquo;t only exist as a single strip, the same system is also used in a LED matrix. In this example, we will control such a &lt;a href="https://www.amazon.nl/dp/B0B81R484Z" target="_blank" rel="noopener"&gt;8*32 LED matrix&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Full LED strip code walkthrough, and additional info in this live session with Robert (aka Eitch) and Frank:&lt;/p&gt;
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/eToIXACqSuY?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
 
-&lt;h2 id="intro">Intro&lt;/h2>
-&lt;p>This example is based on the &lt;a href="https://pi4j.com/examples/jbang/pixelblaze_output_expander/">Pixelblaze Output Expander (PBOE) JBang example&lt;/a>. Make sure to check out the PBOE example, so you fully understand how to set up and use JBang, and connect and control a LED strip via a PBOE.&lt;/p></description></item><item><title>LED strip with a JavaFX UI</title><link>https://pi4j.com/examples/jbang/pixelblaze_output_expander_javafx/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/jbang/pixelblaze_output_expander_javafx/</guid><description>&lt;div class="notices tip" >&lt;p>GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-jbang/blob/main/PixelblazeOutputExpanderJavaFX.java" target="_blank" rel="noopener">github.com/Pi4J/pi4j-jbang &amp;gt; PixelblazeOutputExpanderJavaFX.java&lt;/a>&lt;/p>
-&lt;/div>
+&lt;h2 id="intro"&gt;Intro&lt;/h2&gt;
+&lt;p&gt;This example is based on the &lt;a href="https://pi4j.com/examples/jbang/pixelblaze_output_expander/"&gt;Pixelblaze Output Expander (PBOE) JBang example&lt;/a&gt;. Make sure to check out the PBOE example, so you fully understand how to set up and use JBang, and connect and control a LED strip via a PBOE.&lt;/p&gt;</description></item><item><title>LED strip with a JavaFX UI</title><link>https://pi4j.com/examples/jbang/pixelblaze_output_expander_javafx/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/jbang/pixelblaze_output_expander_javafx/</guid><description>&lt;div class="notices tip" &gt;&lt;p&gt;GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-jbang/blob/main/PixelblazeOutputExpanderJavaFX.java" target="_blank" rel="noopener"&gt;github.com/Pi4J/pi4j-jbang &amp;gt; PixelblazeOutputExpanderJavaFX.java&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
 
-&lt;p>We already know how to control a LED strip, so let&amp;rsquo;s add a JavaFX User Interface to control the colors on each of the LEDs on the strip.&lt;/p>
-&lt;p>
+&lt;p&gt;We already know how to control a LED strip, so let&amp;rsquo;s add a JavaFX User Interface to control the colors on each of the LEDs on the strip.&lt;/p&gt;
+&lt;p&gt;
 
 
-&lt;div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+&lt;div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery"&gt;
 	 
 
-&lt;link rel="stylesheet" href="https://pi4j.com/css/hugo-easy-gallery.css" />
-&lt;div class="box fancy-figure caption-position-center caption-effect-fade" >
- &lt;figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
- &lt;div class="img" style="background-image: url('/assets/examples/jbang/pixelblaze/javafx-ui.png');">
- &lt;img itemprop="thumbnail" src="https://pi4j.com/assets/examples/jbang/pixelblaze/javafx-ui.png" alt="Demo of the JavaFX UI"/>
- &lt;/div>
- &lt;a href="https://pi4j.com/assets/examples/jbang/pixelblaze/javafx-ui.png" itemprop="contentUrl">&lt;/a>
- &lt;figcaption>
- &lt;p>Demo of the JavaFX UI&lt;/p>
- &lt;/figcaption>
- &lt;/figure>
-&lt;/div>
+&lt;link rel="stylesheet" href="https://pi4j.com/css/hugo-easy-gallery.css" /&gt;
+&lt;div class="box fancy-figure caption-position-center caption-effect-fade" &gt;
+ &lt;figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"&gt;
+ &lt;div class="img" style="background-image: url('/assets/examples/jbang/pixelblaze/javafx-ui.png');"&gt;
+ &lt;img itemprop="thumbnail" src="https://pi4j.com/assets/examples/jbang/pixelblaze/javafx-ui.png" alt="Demo of the JavaFX UI"/&gt;
+ &lt;/div&gt;
+ &lt;a href="https://pi4j.com/assets/examples/jbang/pixelblaze/javafx-ui.png" itemprop="contentUrl"&gt;&lt;/a&gt;
+ &lt;figcaption&gt;
+ &lt;p&gt;Demo of the JavaFX UI&lt;/p&gt;
+ &lt;/figcaption&gt;
+ &lt;/figure&gt;
+&lt;/div&gt;
 
 
-&lt;/div>
+&lt;/div&gt;
 
 
 
@@ -124,70 +124,70 @@ With this, a simple application can be started.&lt;/p></description></item><item
  
 
 
-&lt;script src="https://pi4j.com/js/load-photoswipe.js">&lt;/script>
+&lt;script src="https://pi4j.com/js/load-photoswipe.js"&gt;&lt;/script&gt;
 
 
-&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" />
-&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" />
-&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js" integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=" crossorigin="anonymous">&lt;/script>
-&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js" integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=" crossorigin="anonymous">&lt;/script>
+&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" /&gt;
+&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" /&gt;
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js" integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=" crossorigin="anonymous"&gt;&lt;/script&gt;
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js" integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=" crossorigin="anonymous"&gt;&lt;/script&gt;
 
 
-&lt;div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+&lt;div class="pswp" tabindex="-1" role="dialog" aria-hidden="true"&gt;
 
-&lt;div class="pswp__bg">&lt;/div>
+&lt;div class="pswp__bg"&gt;&lt;/div&gt;
 
-&lt;div class="pswp__scroll-wrap">
+&lt;div class="pswp__scroll-wrap"&gt;
  
- &lt;div class="pswp__container">
- &lt;div class="pswp__item">&lt;/div>
- &lt;div class="pswp__item">&lt;/div>
- &lt;div class="pswp__item">&lt;/div>
- &lt;/div>
+ &lt;div class="pswp__container"&gt;
+ &lt;div class="pswp__item"&gt;&lt;/div&gt;
+ &lt;div class="pswp__item"&gt;&lt;/div&gt;
+ &lt;div class="pswp__item"&gt;&lt;/div&gt;
+ &lt;/div&gt;
  
- &lt;div class="pswp__ui pswp__ui--hidden">
- &lt;div class="pswp__top-bar">
+ &lt;div class="pswp__ui pswp__ui--hidden"&gt;
+ &lt;div class="pswp__top-bar"&gt;
  
- &lt;div class="pswp__counter">&lt;/div>
- &lt;button class="pswp__button pswp__button--close" title="Close (Esc)">&lt;/button>
- &lt;button class="pswp__button pswp__button--share" title="Share">&lt;/button>
- &lt;button class="pswp__button pswp__button--fs" title="Toggle fullscreen">&lt;/button>
- &lt;button class="pswp__button pswp__button--zoom" title="Zoom in/out">&lt;/button>
+ &lt;div class="pswp__counter"&gt;&lt;/div&gt;
+ &lt;button class="pswp__button pswp__button--close" title="Close (Esc)"&gt;&lt;/button&gt;
+ &lt;button class="pswp__button pswp__button--share" title="Share"&gt;&lt;/button&gt;
+ &lt;button class="pswp__button pswp__button--fs" title="Toggle fullscreen"&gt;&lt;/button&gt;
+ &lt;button class="pswp__button pswp__button--zoom" title="Zoom in/out"&gt;&lt;/button&gt;
  
  
- &lt;div class="pswp__preloader">
- &lt;div class="pswp__preloader__icn">
- &lt;div class="pswp__preloader__cut">
- &lt;div class="pswp__preloader__donut">&lt;/div>
- &lt;/div>
- &lt;/div>
- &lt;/div>
- &lt;/div>
- &lt;div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
- &lt;div class="pswp__share-tooltip">&lt;/div>
- &lt;/div>
- &lt;button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
- &lt;/button>
- &lt;button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
- &lt;/button>
- &lt;div class="pswp__caption">
- &lt;div class="pswp__caption__center">&lt;/div>
- &lt;/div>
- &lt;/div>
- &lt;/div>
-&lt;/div>
-&lt;/p></description></item><item><title>LED Strip</title><link>https://pi4j.com/examples/components/ledstrip/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/components/ledstrip/</guid><description>&lt;div class="notices note" >&lt;p>Although this example is still valid, an easier approach for the control of an array of LEDs can be achieved with the PixelBlaze Output Expander as described &lt;a href="https://pi4j.com/examples/jbang/pixelblaze_output_expander/" target="_blank" rel="noopener">here&lt;/a>.&lt;/p>
-&lt;/div>
+ &lt;div class="pswp__preloader"&gt;
+ &lt;div class="pswp__preloader__icn"&gt;
+ &lt;div class="pswp__preloader__cut"&gt;
+ &lt;div class="pswp__preloader__donut"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"&gt;
+ &lt;div class="pswp__share-tooltip"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"&gt;
+ &lt;/button&gt;
+ &lt;button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"&gt;
+ &lt;/button&gt;
+ &lt;div class="pswp__caption"&gt;
+ &lt;div class="pswp__caption__center"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+&lt;/p&gt;</description></item><item><title>LED Strip</title><link>https://pi4j.com/examples/components/ledstrip/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/components/ledstrip/</guid><description>&lt;div class="notices note" &gt;&lt;p&gt;Although this example is still valid, an easier approach for the control of an array of LEDs can be achieved with the PixelBlaze Output Expander as described &lt;a href="https://pi4j.com/examples/jbang/pixelblaze_output_expander/" target="_blank" rel="noopener"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
 
-&lt;h3 id="description">Description&lt;/h3>
-&lt;p>The &lt;a href="https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog/components/LedStrip.java" target="_blank" rel="noopener">LedStrip&lt;/a> is a template class, that you can use in your own Java-project.
-You can take a LED Strip with the WS28xx-chip set.&lt;/p>
-&lt;p>The Template Class gives you the option to set the LED&amp;rsquo;s of the strip to a desired RGB-Color.
-If you have many strips, you can use the &lt;a href="https://pi4j.com/examples/components/ledmatrix/" target="_blank" rel="noopener">LEDMatrix&lt;/a>&lt;/p></description></item><item><title>2023 LED strips with JBang</title><link>https://pi4j.com/video/20231012-led-strips/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/video/20231012-led-strips/</guid><description>&lt;h2 id="having-fun-with-led-strips-with-java-on-the-raspberry-pi">Having fun with LED strips with Java on the Raspberry Pi&lt;/h2>
-&lt;p>&lt;strong>20231012 - Live Stream&lt;/strong>&lt;/p>
-&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/eToIXACqSuY?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
- &lt;/div>
+&lt;h3 id="description"&gt;Description&lt;/h3&gt;
+&lt;p&gt;The &lt;a href="https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog/components/LedStrip.java" target="_blank" rel="noopener"&gt;LedStrip&lt;/a&gt; is a template class, that you can use in your own Java-project.
+You can take a LED Strip with the WS28xx-chip set.&lt;/p&gt;
+&lt;p&gt;The Template Class gives you the option to set the LED&amp;rsquo;s of the strip to a desired RGB-Color.
+If you have many strips, you can use the &lt;a href="https://pi4j.com/examples/components/ledmatrix/" target="_blank" rel="noopener"&gt;LEDMatrix&lt;/a&gt;&lt;/p&gt;</description></item><item><title>2023 LED strips with JBang</title><link>https://pi4j.com/video/20231012-led-strips/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/video/20231012-led-strips/</guid><description>&lt;h2 id="having-fun-with-led-strips-with-java-on-the-raspberry-pi"&gt;Having fun with LED strips with Java on the Raspberry Pi&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;20231012 - Live Stream&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/eToIXACqSuY?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
 
-&lt;p>Frank Delporte and Robert von Burg (aka Eitch) take a look at examples using JBang and Pixelblaze, which are described on the Pi4J website at &lt;a href="https://www.pi4j.com/examples/jbang/pixelblaze_output_expander/" target="_blank" rel="noopener">https://www.pi4j.com/examples/jbang/pixelblaze_output_expander/&lt;/a>.&lt;/p>
-&lt;p>This was our first live stream using restream.io to see if we could create tutorials like this. This went smoothly for the first 44 minutes, and then I lost connection with Robert. But luckily, at that time, we had already explained almost everything we wanted to tell ;-)&lt;/p></description></item></channel></rss>
+&lt;p&gt;Frank Delporte and Robert von Burg (aka Eitch) take a look at examples using JBang and Pixelblaze, which are described on the Pi4J website at &lt;a href="https://www.pi4j.com/examples/jbang/pixelblaze_output_expander/" target="_blank" rel="noopener"&gt;https://www.pi4j.com/examples/jbang/pixelblaze_output_expander/&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This was our first live stream using restream.io to see if we could create tutorials like this. This went smoothly for the first 44 minutes, and then I lost connection with Robert. But luckily, at that time, we had already explained almost everything we wanted to tell ;-)&lt;/p&gt;</description></item></channel></rss>

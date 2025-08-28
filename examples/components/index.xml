@@ -1,62 +1,62 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Component Examples on Pi4J</title><link>https://pi4j.com/examples/components/</link><description>Recent content in Component Examples on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://pi4j.com/examples/components/index.xml" rel="self" type="application/rss+xml"/><item><title>Simple Button</title><link>https://pi4j.com/examples/components/simplebutton/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/components/simplebutton/</guid><description>&lt;h3 id="description">Description&lt;/h3>
-&lt;p>The &lt;a href="https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog/components/SimpleButton.java" target="_blank" rel="noopener">SimpleButton&lt;/a> is a template class, that you can use in your own Java-project.&lt;/p>
-&lt;p>The Template Class gives you the option to check the state of the button, and to create simple events if the button is pressed, depressed or while it is being pressed.&lt;/p>
-&lt;h3 id="layout">Layout&lt;/h3>
-&lt;p>&lt;img src="https://pi4j.com/assets/examples/components/components/Layout-SimpleButton.png" alt="Simple Button Layout">&lt;/p>
-&lt;p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Component Examples on Pi4J</title><link>https://pi4j.com/examples/components/</link><description>Recent content in Component Examples on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://pi4j.com/examples/components/index.xml" rel="self" type="application/rss+xml"/><item><title>Simple Button</title><link>https://pi4j.com/examples/components/simplebutton/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/components/simplebutton/</guid><description>&lt;h3 id="description"&gt;Description&lt;/h3&gt;
+&lt;p&gt;The &lt;a href="https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog/components/SimpleButton.java" target="_blank" rel="noopener"&gt;SimpleButton&lt;/a&gt; is a template class, that you can use in your own Java-project.&lt;/p&gt;
+&lt;p&gt;The Template Class gives you the option to check the state of the button, and to create simple events if the button is pressed, depressed or while it is being pressed.&lt;/p&gt;
+&lt;h3 id="layout"&gt;Layout&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://pi4j.com/assets/examples/components/components/Layout-SimpleButton.png" alt="Simple Button Layout"&gt;&lt;/p&gt;
+&lt;p&gt;
 
 
-&lt;div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+&lt;div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery"&gt;
 	 
 
-&lt;link rel="stylesheet" href="https://pi4j.com/css/hugo-easy-gallery.css" />
-&lt;div class="box fancy-figure caption-position-center caption-effect-fade" >
- &lt;figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
- &lt;div class="img" style="background-image: url('/assets/examples/components/components/pictures/SimpleButtonBreadboard.png');">
- &lt;img itemprop="thumbnail" src="https://pi4j.com/assets/examples/components/components/pictures/SimpleButtonBreadboard.png" alt="Simple Button Breadboard"/>
- &lt;/div>
- &lt;a href="https://pi4j.com/assets/examples/components/components/pictures/SimpleButtonBreadboard.png" itemprop="contentUrl">&lt;/a>
- &lt;figcaption>
- &lt;p>Simple Button Breadboard&lt;/p>
- &lt;/figcaption>
- &lt;/figure>
-&lt;/div>
+&lt;link rel="stylesheet" href="https://pi4j.com/css/hugo-easy-gallery.css" /&gt;
+&lt;div class="box fancy-figure caption-position-center caption-effect-fade" &gt;
+ &lt;figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"&gt;
+ &lt;div class="img" style="background-image: url('/assets/examples/components/components/pictures/SimpleButtonBreadboard.png');"&gt;
+ &lt;img itemprop="thumbnail" src="https://pi4j.com/assets/examples/components/components/pictures/SimpleButtonBreadboard.png" alt="Simple Button Breadboard"/&gt;
+ &lt;/div&gt;
+ &lt;a href="https://pi4j.com/assets/examples/components/components/pictures/SimpleButtonBreadboard.png" itemprop="contentUrl"&gt;&lt;/a&gt;
+ &lt;figcaption&gt;
+ &lt;p&gt;Simple Button Breadboard&lt;/p&gt;
+ &lt;/figcaption&gt;
+ &lt;/figure&gt;
+&lt;/div&gt;
 
 
 
-&lt;div class="box fancy-figure caption-position-center caption-effect-fade" >
- &lt;figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
- &lt;div class="img" style="background-image: url('/assets/examples/components/components/pictures/BigButton.png');">
- &lt;img itemprop="thumbnail" src="https://pi4j.com/assets/examples/components/components/pictures/BigButton.png" alt="Big Button"/>
- &lt;/div>
- &lt;a href="https://pi4j.com/assets/examples/components/components/pictures/BigButton.png" itemprop="contentUrl">&lt;/a>
- &lt;figcaption>
- &lt;p>Big Button&lt;/p></description></item><item><title>Simple LED</title><link>https://pi4j.com/examples/components/simpleled/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/components/simpleled/</guid><description>&lt;h3 id="description">Description&lt;/h3>
-&lt;p>The &lt;a href="https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog/components/SimpleLed.java" target="_blank" rel="noopener">SimpleLed&lt;/a> is a template class, that you can use in your own Java-project.&lt;/p>
-&lt;p>The template Class gives you the option to switch off, switch on or toggle the state of the LED.&lt;/p>
-&lt;h3 id="layout">Layout&lt;/h3>
-&lt;p>&lt;img src="https://pi4j.com/assets/examples/components/components/Layout-SimpleLED.png" alt="Simple LED Layout">&lt;/p>
-&lt;p>
+&lt;div class="box fancy-figure caption-position-center caption-effect-fade" &gt;
+ &lt;figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"&gt;
+ &lt;div class="img" style="background-image: url('/assets/examples/components/components/pictures/BigButton.png');"&gt;
+ &lt;img itemprop="thumbnail" src="https://pi4j.com/assets/examples/components/components/pictures/BigButton.png" alt="Big Button"/&gt;
+ &lt;/div&gt;
+ &lt;a href="https://pi4j.com/assets/examples/components/components/pictures/BigButton.png" itemprop="contentUrl"&gt;&lt;/a&gt;
+ &lt;figcaption&gt;
+ &lt;p&gt;Big Button&lt;/p&gt;</description></item><item><title>Simple LED</title><link>https://pi4j.com/examples/components/simpleled/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/components/simpleled/</guid><description>&lt;h3 id="description"&gt;Description&lt;/h3&gt;
+&lt;p&gt;The &lt;a href="https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog/components/SimpleLed.java" target="_blank" rel="noopener"&gt;SimpleLed&lt;/a&gt; is a template class, that you can use in your own Java-project.&lt;/p&gt;
+&lt;p&gt;The template Class gives you the option to switch off, switch on or toggle the state of the LED.&lt;/p&gt;
+&lt;h3 id="layout"&gt;Layout&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://pi4j.com/assets/examples/components/components/Layout-SimpleLED.png" alt="Simple LED Layout"&gt;&lt;/p&gt;
+&lt;p&gt;
 
 
-&lt;div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+&lt;div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery"&gt;
 	 
 
-&lt;link rel="stylesheet" href="https://pi4j.com/css/hugo-easy-gallery.css" />
-&lt;div class="box fancy-figure caption-position-center caption-effect-fade" >
- &lt;figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
- &lt;div class="img" style="background-image: url('/assets/examples/components/components/pictures/SimpleLedBreadboard.png');">
- &lt;img itemprop="thumbnail" src="https://pi4j.com/assets/examples/components/components/pictures/SimpleLedBreadboard.png" alt="Simple Led Breadboard"/>
- &lt;/div>
- &lt;a href="https://pi4j.com/assets/examples/components/components/pictures/SimpleLedBreadboard.png" itemprop="contentUrl">&lt;/a>
- &lt;figcaption>
- &lt;p>Simple Led Breadboard&lt;/p>
- &lt;/figcaption>
- &lt;/figure>
-&lt;/div>
+&lt;link rel="stylesheet" href="https://pi4j.com/css/hugo-easy-gallery.css" /&gt;
+&lt;div class="box fancy-figure caption-position-center caption-effect-fade" &gt;
+ &lt;figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"&gt;
+ &lt;div class="img" style="background-image: url('/assets/examples/components/components/pictures/SimpleLedBreadboard.png');"&gt;
+ &lt;img itemprop="thumbnail" src="https://pi4j.com/assets/examples/components/components/pictures/SimpleLedBreadboard.png" alt="Simple Led Breadboard"/&gt;
+ &lt;/div&gt;
+ &lt;a href="https://pi4j.com/assets/examples/components/components/pictures/SimpleLedBreadboard.png" itemprop="contentUrl"&gt;&lt;/a&gt;
+ &lt;figcaption&gt;
+ &lt;p&gt;Simple Led Breadboard&lt;/p&gt;
+ &lt;/figcaption&gt;
+ &lt;/figure&gt;
+&lt;/div&gt;
 
 
-&lt;/div>
+&lt;/div&gt;
 
 
 
@@ -65,156 +65,156 @@
  
 
 
-&lt;script src="https://pi4j.com/js/load-photoswipe.js">&lt;/script>
+&lt;script src="https://pi4j.com/js/load-photoswipe.js"&gt;&lt;/script&gt;
 
 
-&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" />
-&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" />
-&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js" integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=" crossorigin="anonymous">&lt;/script>
-&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js" integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=" crossorigin="anonymous">&lt;/script>
+&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" /&gt;
+&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" /&gt;
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js" integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=" crossorigin="anonymous"&gt;&lt;/script&gt;
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js" integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=" crossorigin="anonymous"&gt;&lt;/script&gt;
 
 
-&lt;div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+&lt;div class="pswp" tabindex="-1" role="dialog" aria-hidden="true"&gt;
 
-&lt;div class="pswp__bg">&lt;/div>
+&lt;div class="pswp__bg"&gt;&lt;/div&gt;
 
-&lt;div class="pswp__scroll-wrap">
+&lt;div class="pswp__scroll-wrap"&gt;
  
- &lt;div class="pswp__container">
- &lt;div class="pswp__item">&lt;/div>
- &lt;div class="pswp__item">&lt;/div>
- &lt;div class="pswp__item">&lt;/div>
- &lt;/div>
+ &lt;div class="pswp__container"&gt;
+ &lt;div class="pswp__item"&gt;&lt;/div&gt;
+ &lt;div class="pswp__item"&gt;&lt;/div&gt;
+ &lt;div class="pswp__item"&gt;&lt;/div&gt;
+ &lt;/div&gt;
  
- &lt;div class="pswp__ui pswp__ui--hidden">
- &lt;div class="pswp__top-bar">
+ &lt;div class="pswp__ui pswp__ui--hidden"&gt;
+ &lt;div class="pswp__top-bar"&gt;
  
- &lt;div class="pswp__counter">&lt;/div>
- &lt;button class="pswp__button pswp__button--close" title="Close (Esc)">&lt;/button>
- &lt;button class="pswp__button pswp__button--share" title="Share">&lt;/button>
- &lt;button class="pswp__button pswp__button--fs" title="Toggle fullscreen">&lt;/button>
- &lt;button class="pswp__button pswp__button--zoom" title="Zoom in/out">&lt;/button>
+ &lt;div class="pswp__counter"&gt;&lt;/div&gt;
+ &lt;button class="pswp__button pswp__button--close" title="Close (Esc)"&gt;&lt;/button&gt;
+ &lt;button class="pswp__button pswp__button--share" title="Share"&gt;&lt;/button&gt;
+ &lt;button class="pswp__button pswp__button--fs" title="Toggle fullscreen"&gt;&lt;/button&gt;
+ &lt;button class="pswp__button pswp__button--zoom" title="Zoom in/out"&gt;&lt;/button&gt;
  
  
- &lt;div class="pswp__preloader">
- &lt;div class="pswp__preloader__icn">
- &lt;div class="pswp__preloader__cut">
- &lt;div class="pswp__preloader__donut">&lt;/div>
- &lt;/div>
- &lt;/div>
- &lt;/div>
- &lt;/div>
- &lt;div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
- &lt;div class="pswp__share-tooltip">&lt;/div>
- &lt;/div>
- &lt;button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
- &lt;/button>
- &lt;button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
- &lt;/button>
- &lt;div class="pswp__caption">
- &lt;div class="pswp__caption__center">&lt;/div>
- &lt;/div>
- &lt;/div>
- &lt;/div>
-&lt;/div>
-&lt;/p></description></item><item><title>AD Converter ADS1115</title><link>https://pi4j.com/examples/components/ads1115/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/components/ads1115/</guid><description>&lt;h3 id="description">Description&lt;/h3>
-&lt;p>The Analog Digital Converter &lt;a href="https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog/components/Ads1115.java" target="_blank" rel="noopener">Ads1115&lt;/a> is a template class, that you can use in your own Java-project.
+ &lt;div class="pswp__preloader"&gt;
+ &lt;div class="pswp__preloader__icn"&gt;
+ &lt;div class="pswp__preloader__cut"&gt;
+ &lt;div class="pswp__preloader__donut"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"&gt;
+ &lt;div class="pswp__share-tooltip"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"&gt;
+ &lt;/button&gt;
+ &lt;button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"&gt;
+ &lt;/button&gt;
+ &lt;div class="pswp__caption"&gt;
+ &lt;div class="pswp__caption__center"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+&lt;/p&gt;</description></item><item><title>AD Converter ADS1115</title><link>https://pi4j.com/examples/components/ads1115/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/components/ads1115/</guid><description>&lt;h3 id="description"&gt;Description&lt;/h3&gt;
+&lt;p&gt;The Analog Digital Converter &lt;a href="https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog/components/Ads1115.java" target="_blank" rel="noopener"&gt;Ads1115&lt;/a&gt; is a template class, that you can use in your own Java-project.
 The ADS1115 device is a precision, low-power, 16-bit, I2C-compatible, analog-to-digital converter (ADCs). The ADS1115 device incorporates a low-drift voltage reference and an oscillator as well as a programmable gain amplifier (PGA) and
-a digital comparator. These features, along with a wide operating supply range, makes the ADS1115 well suited for power- and space-constrained, sensor measurement applications.&lt;/p></description></item><item><title>Buzzer</title><link>https://pi4j.com/examples/components/buzzer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/components/buzzer/</guid><description>&lt;h3 id="description">Description&lt;/h3>
-&lt;p>The &lt;a href="https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog/components/Buzzer.java" target="_blank" rel="noopener">Buzzer&lt;/a> is a template class, that you can use in your own Java-project.&lt;/p>
-&lt;p>The Template Class gives you the option to play a note, and to create your own little melodies to play. The buzzer is controlled via a PWM output. The dutycycle is fixed at 50% and with the frequency the desired sound can be reproduced.&lt;/p>
-&lt;h3 id="layout">Layout&lt;/h3>
-&lt;p>&lt;img src="https://pi4j.com/assets/examples/components/components/Layout-Buzzer.png" alt="Buzzer Layout">&lt;/p>
-&lt;p>
+a digital comparator. These features, along with a wide operating supply range, makes the ADS1115 well suited for power- and space-constrained, sensor measurement applications.&lt;/p&gt;</description></item><item><title>Buzzer</title><link>https://pi4j.com/examples/components/buzzer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/components/buzzer/</guid><description>&lt;h3 id="description"&gt;Description&lt;/h3&gt;
+&lt;p&gt;The &lt;a href="https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog/components/Buzzer.java" target="_blank" rel="noopener"&gt;Buzzer&lt;/a&gt; is a template class, that you can use in your own Java-project.&lt;/p&gt;
+&lt;p&gt;The Template Class gives you the option to play a note, and to create your own little melodies to play. The buzzer is controlled via a PWM output. The dutycycle is fixed at 50% and with the frequency the desired sound can be reproduced.&lt;/p&gt;
+&lt;h3 id="layout"&gt;Layout&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://pi4j.com/assets/examples/components/components/Layout-Buzzer.png" alt="Buzzer Layout"&gt;&lt;/p&gt;
+&lt;p&gt;
 
 
-&lt;div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+&lt;div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery"&gt;
 	 
 
-&lt;link rel="stylesheet" href="https://pi4j.com/css/hugo-easy-gallery.css" />
-&lt;div class="box fancy-figure caption-position-center caption-effect-fade" >
- &lt;figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
- &lt;div class="img" style="background-image: url('/assets/examples/components/components/pictures/BuzzerActiveBreadboard.png');">
- &lt;img itemprop="thumbnail" src="https://pi4j.com/assets/examples/components/components/pictures/BuzzerActiveBreadboard.png" alt="Buzzer Acitve Breadboard"/>
- &lt;/div>
- &lt;a href="https://pi4j.com/assets/examples/components/components/pictures/BuzzerActiveBreadboard.png" itemprop="contentUrl">&lt;/a>
- &lt;figcaption>
- &lt;p>Buzzer Acitve Breadboard&lt;/p></description></item><item><title>Camera</title><link>https://pi4j.com/examples/components/camera/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/components/camera/</guid><description>&lt;h3 id="description">Description&lt;/h3>
-&lt;p>The &lt;a href="https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog/components/Camera.java" target="_blank" rel="noopener">Camera&lt;/a> is a template class, that you can use in your own Java-project.
-Currently, the code is only tested with a &lt;a href="https://www.raspberrypi.com/documentation/accessories/camera.html#introducing-the-raspberry-pi-cameras" target="_blank" rel="noopener">Raspberry-Camera&lt;/a> and the &lt;a href="https://pi4j.com/getting-started/crowpi/crowpi-os/">crowpi-image&lt;/a>.
-You can take pictures or videos, with or without a preview.&lt;/p>
+&lt;link rel="stylesheet" href="https://pi4j.com/css/hugo-easy-gallery.css" /&gt;
+&lt;div class="box fancy-figure caption-position-center caption-effect-fade" &gt;
+ &lt;figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"&gt;
+ &lt;div class="img" style="background-image: url('/assets/examples/components/components/pictures/BuzzerActiveBreadboard.png');"&gt;
+ &lt;img itemprop="thumbnail" src="https://pi4j.com/assets/examples/components/components/pictures/BuzzerActiveBreadboard.png" alt="Buzzer Acitve Breadboard"/&gt;
+ &lt;/div&gt;
+ &lt;a href="https://pi4j.com/assets/examples/components/components/pictures/BuzzerActiveBreadboard.png" itemprop="contentUrl"&gt;&lt;/a&gt;
+ &lt;figcaption&gt;
+ &lt;p&gt;Buzzer Acitve Breadboard&lt;/p&gt;</description></item><item><title>Camera</title><link>https://pi4j.com/examples/components/camera/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/components/camera/</guid><description>&lt;h3 id="description"&gt;Description&lt;/h3&gt;
+&lt;p&gt;The &lt;a href="https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog/components/Camera.java" target="_blank" rel="noopener"&gt;Camera&lt;/a&gt; is a template class, that you can use in your own Java-project.
+Currently, the code is only tested with a &lt;a href="https://www.raspberrypi.com/documentation/accessories/camera.html#introducing-the-raspberry-pi-cameras" target="_blank" rel="noopener"&gt;Raspberry-Camera&lt;/a&gt; and the &lt;a href="https://pi4j.com/getting-started/crowpi/crowpi-os/"&gt;crowpi-image&lt;/a&gt;.
+You can take pictures or videos, with or without a preview.&lt;/p&gt;
 
-&lt;div class="notices note" >&lt;p>To connect the camera, use this &lt;a href="https://youtu.be/GImeVqHQzsE" target="_blank" rel="noopener">video&lt;/a>. The video is mentioned on the official &lt;a href="https://www.raspberrypi.com/documentation/accessories/camera.html" target="_blank" rel="noopener">website&lt;/a>.
-The camera class is using the bash-commands &amp;ldquo;libcamera-hello&amp;rdquo;, &amp;ldquo;libcamera-still&amp;rdquo; and &amp;ldquo;libcamera-vid&amp;rdquo;. To use them, set up the raspberry with the following &lt;a href="https://www.raspberrypi.com/documentation/accessories/camera.html#getting-started" target="_blank" rel="noopener">Introduction&lt;/a>&lt;/p></description></item><item><title>Joystick</title><link>https://pi4j.com/examples/components/joystick/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/components/joystick/</guid><description>&lt;h3 id="description">Description&lt;/h3>
-&lt;p>The &lt;a href="https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog/components/Joystick.java" target="_blank" rel="noopener">Joystick&lt;/a> is a template class, that you can use in your own Java-project.
+&lt;div class="notices note" &gt;&lt;p&gt;To connect the camera, use this &lt;a href="https://youtu.be/GImeVqHQzsE" target="_blank" rel="noopener"&gt;video&lt;/a&gt;. The video is mentioned on the official &lt;a href="https://www.raspberrypi.com/documentation/accessories/camera.html" target="_blank" rel="noopener"&gt;website&lt;/a&gt;.
+The camera class is using the bash-commands &amp;ldquo;libcamera-hello&amp;rdquo;, &amp;ldquo;libcamera-still&amp;rdquo; and &amp;ldquo;libcamera-vid&amp;rdquo;. To use them, set up the raspberry with the following &lt;a href="https://www.raspberrypi.com/documentation/accessories/camera.html#getting-started" target="_blank" rel="noopener"&gt;Introduction&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Joystick</title><link>https://pi4j.com/examples/components/joystick/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/components/joystick/</guid><description>&lt;h3 id="description"&gt;Description&lt;/h3&gt;
+&lt;p&gt;The &lt;a href="https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog/components/Joystick.java" target="_blank" rel="noopener"&gt;Joystick&lt;/a&gt; is a template class, that you can use in your own Java-project.
 The template is created for a digital joystick with 4 directions (up, right, down, left) and as an option additionally with a push button in direction down.
-A suitable hardware component is the arcade joystick in the picture bellow. But any joystick with switching contacts will meet the requirements.&lt;/p>
-&lt;p>The template class allows to query the individual joystick positions and can trigger a simple event when the joystick swings out in a direction or when it returns to the center position.&lt;/p></description></item><item><title>Joystick Analog</title><link>https://pi4j.com/examples/components/joystickanalog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/components/joystickanalog/</guid><description>&lt;h3 id="description">Description&lt;/h3>
-&lt;p>The &lt;a href="https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog/components/JoystickAnalog.java" target="_blank" rel="noopener">JoystickAnalog&lt;/a> is a template class, that you can use in your own Java-project.
-The template class is created for an analog joystick, for example the KY-023, which consists of two potentiometers, one for the X-axis and one for the Y-axis. But any joystick with two potentiometers will meet the requirements.&lt;/p>
-&lt;p>The basic functions of the template class are:&lt;/p>
-&lt;ul>
-&lt;li>return of a normalized value, optionally between 0 and 1 or between -1 and 1, of the X-axis and the Y-axis&lt;/li>
-&lt;li>creation of simple events at a value change of the X-axis or the Y-axis, simple event handlers for button pressed, button depressed, while button is pressed&lt;/li>
-&lt;li>calibration of the center position of the joystick (center position 0.5 at a normalized value between 0 and 1, center position 0 at a normalized value between -1 and 1)&lt;/li>
-&lt;/ul>
-&lt;h3 id="layout">Layout&lt;/h3>
-&lt;p>&lt;img src="https://pi4j.com/assets/examples/components/components/Layout-JoystickAnalog.png" alt="Joystick Layout">&lt;/p></description></item><item><title>LCD Display</title><link>https://pi4j.com/examples/components/lcddisplay/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/components/lcddisplay/</guid><description>&lt;h3 id="description">Description&lt;/h3>
-&lt;p>The &lt;a href="https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog/components/LcdDisplay.java" target="_blank" rel="noopener">LcdDisplay&lt;/a>
+A suitable hardware component is the arcade joystick in the picture bellow. But any joystick with switching contacts will meet the requirements.&lt;/p&gt;
+&lt;p&gt;The template class allows to query the individual joystick positions and can trigger a simple event when the joystick swings out in a direction or when it returns to the center position.&lt;/p&gt;</description></item><item><title>Joystick Analog</title><link>https://pi4j.com/examples/components/joystickanalog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/components/joystickanalog/</guid><description>&lt;h3 id="description"&gt;Description&lt;/h3&gt;
+&lt;p&gt;The &lt;a href="https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog/components/JoystickAnalog.java" target="_blank" rel="noopener"&gt;JoystickAnalog&lt;/a&gt; is a template class, that you can use in your own Java-project.
+The template class is created for an analog joystick, for example the KY-023, which consists of two potentiometers, one for the X-axis and one for the Y-axis. But any joystick with two potentiometers will meet the requirements.&lt;/p&gt;
+&lt;p&gt;The basic functions of the template class are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;return of a normalized value, optionally between 0 and 1 or between -1 and 1, of the X-axis and the Y-axis&lt;/li&gt;
+&lt;li&gt;creation of simple events at a value change of the X-axis or the Y-axis, simple event handlers for button pressed, button depressed, while button is pressed&lt;/li&gt;
+&lt;li&gt;calibration of the center position of the joystick (center position 0.5 at a normalized value between 0 and 1, center position 0 at a normalized value between -1 and 1)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="layout"&gt;Layout&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://pi4j.com/assets/examples/components/components/Layout-JoystickAnalog.png" alt="Joystick Layout"&gt;&lt;/p&gt;</description></item><item><title>LCD Display</title><link>https://pi4j.com/examples/components/lcddisplay/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/components/lcddisplay/</guid><description>&lt;h3 id="description"&gt;Description&lt;/h3&gt;
+&lt;p&gt;The &lt;a href="https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog/components/LcdDisplay.java" target="_blank" rel="noopener"&gt;LcdDisplay&lt;/a&gt;
 is a template class, that you can use in your own Java-project. It is used to show Numbers, Text and Symbols on a small Display.
-The Class supports only LCD Displays with the PCF8574T I2C Backpack. Supported display-dimensions are 40x2, 20x4, 20x2, 16x2, 16x1.&lt;/p>
+The Class supports only LCD Displays with the PCF8574T I2C Backpack. Supported display-dimensions are 40x2, 20x4, 20x2, 16x2, 16x1.&lt;/p&gt;
 
-&lt;div class="notices note" >&lt;p>IF YOU CAN&amp;rsquo;T SEE ANYTHING WRITTEN ON THE DISPLAY, TRY TO SET THE CONTRAST BY TURNING THE CONTRAST-SCREW AT THE BACK WITH A SCREWDRIVER.
-Also, check if I2C is enabled in your raspberry-config.&lt;/p></description></item><item><title>LED Button</title><link>https://pi4j.com/examples/components/ledbutton/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/components/ledbutton/</guid><description>&lt;h3 id="description">Description&lt;/h3>
-&lt;p>The &lt;a href="https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog/components/LedButton.java" target="_blank" rel="noopener">LedButton&lt;/a> is a template class, that you can use in your own Java-project.
-You can take any Button with a LED you want to. Like for example the big button bellow in the picture gallery.&lt;/p>
-&lt;p>The Template Class gives you the option to check the state of the button, and to create simple events if the button is pressed or depressed, or the whole time is is being pressed. Also it lets you control the LED.&lt;/p></description></item><item><title>LED Matrix</title><link>https://pi4j.com/examples/components/ledmatrix/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/components/ledmatrix/</guid><description>&lt;div class="notices note" >&lt;p>Although this example is still valid, an easier approach for the control of an array of LEDs can be achieved with the PixelBlaze Output Expander as described &lt;a href="https://pi4j.com/examples/jbang/pixelblaze_output_expander/" target="_blank" rel="noopener">here&lt;/a>.&lt;/p>
-&lt;/div>
+&lt;div class="notices note" &gt;&lt;p&gt;IF YOU CAN&amp;rsquo;T SEE ANYTHING WRITTEN ON THE DISPLAY, TRY TO SET THE CONTRAST BY TURNING THE CONTRAST-SCREW AT THE BACK WITH A SCREWDRIVER.
+Also, check if I2C is enabled in your raspberry-config.&lt;/p&gt;</description></item><item><title>LED Button</title><link>https://pi4j.com/examples/components/ledbutton/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/components/ledbutton/</guid><description>&lt;h3 id="description"&gt;Description&lt;/h3&gt;
+&lt;p&gt;The &lt;a href="https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog/components/LedButton.java" target="_blank" rel="noopener"&gt;LedButton&lt;/a&gt; is a template class, that you can use in your own Java-project.
+You can take any Button with a LED you want to. Like for example the big button bellow in the picture gallery.&lt;/p&gt;
+&lt;p&gt;The Template Class gives you the option to check the state of the button, and to create simple events if the button is pressed or depressed, or the whole time is is being pressed. Also it lets you control the LED.&lt;/p&gt;</description></item><item><title>LED Matrix</title><link>https://pi4j.com/examples/components/ledmatrix/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/components/ledmatrix/</guid><description>&lt;div class="notices note" &gt;&lt;p&gt;Although this example is still valid, an easier approach for the control of an array of LEDs can be achieved with the PixelBlaze Output Expander as described &lt;a href="https://pi4j.com/examples/jbang/pixelblaze_output_expander/" target="_blank" rel="noopener"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
 
-&lt;h3 id="description">Description&lt;/h3>
-&lt;p>The &lt;a href="https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j//catalog/components/LedMatrix.java" target="_blank" rel="noopener">LedMatrix&lt;/a> is a template class, that you can use in your own Java-project.
-It is an extension of the class &lt;a href="https://pi4j.com/examples/components/ledstrip/" target="_blank" rel="noopener">LEDStrip&lt;/a>. An LED matrix can be built from one LED strip. To do this, separate the LED strip at the desired point and place the individual strips under each other or next to each other. The individual ends can then be connected to each other with a wire.
-The constructor can be passed either as a rectangular matrix or a user-defined matrix with different numbers of LEDs in the individual strips. A software compatible LED strip is for example the WS28xx-chip set LED Strip.&lt;/p></description></item><item><title>LED Strip</title><link>https://pi4j.com/examples/components/ledstrip/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/components/ledstrip/</guid><description>&lt;div class="notices note" >&lt;p>Although this example is still valid, an easier approach for the control of an array of LEDs can be achieved with the PixelBlaze Output Expander as described &lt;a href="https://pi4j.com/examples/jbang/pixelblaze_output_expander/" target="_blank" rel="noopener">here&lt;/a>.&lt;/p>
-&lt;/div>
+&lt;h3 id="description"&gt;Description&lt;/h3&gt;
+&lt;p&gt;The &lt;a href="https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j//catalog/components/LedMatrix.java" target="_blank" rel="noopener"&gt;LedMatrix&lt;/a&gt; is a template class, that you can use in your own Java-project.
+It is an extension of the class &lt;a href="https://pi4j.com/examples/components/ledstrip/" target="_blank" rel="noopener"&gt;LEDStrip&lt;/a&gt;. An LED matrix can be built from one LED strip. To do this, separate the LED strip at the desired point and place the individual strips under each other or next to each other. The individual ends can then be connected to each other with a wire.
+The constructor can be passed either as a rectangular matrix or a user-defined matrix with different numbers of LEDs in the individual strips. A software compatible LED strip is for example the WS28xx-chip set LED Strip.&lt;/p&gt;</description></item><item><title>LED Strip</title><link>https://pi4j.com/examples/components/ledstrip/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/components/ledstrip/</guid><description>&lt;div class="notices note" &gt;&lt;p&gt;Although this example is still valid, an easier approach for the control of an array of LEDs can be achieved with the PixelBlaze Output Expander as described &lt;a href="https://pi4j.com/examples/jbang/pixelblaze_output_expander/" target="_blank" rel="noopener"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
 
-&lt;h3 id="description">Description&lt;/h3>
-&lt;p>The &lt;a href="https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog/components/LedStrip.java" target="_blank" rel="noopener">LedStrip&lt;/a> is a template class, that you can use in your own Java-project.
-You can take a LED Strip with the WS28xx-chip set.&lt;/p>
-&lt;p>The Template Class gives you the option to set the LED&amp;rsquo;s of the strip to a desired RGB-Color.
-If you have many strips, you can use the &lt;a href="https://pi4j.com/examples/components/ledmatrix/" target="_blank" rel="noopener">LEDMatrix&lt;/a>&lt;/p></description></item><item><title>Potentiometer</title><link>https://pi4j.com/examples/components/potentiometer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/components/potentiometer/</guid><description>&lt;h3 id="description">Description&lt;/h3>
-&lt;p>The &lt;a href="https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog/components/Potentiometer.java" target="_blank" rel="noopener">Potentiometer&lt;/a> is a template class, that you can use in your own Java-project.
-The constructor of the class requires an ADS1115 object. In addition, the channel, with which the AD converter evaluates the current position of the sliding contact must be defined. For normalization, the maximum voltage that can drop across the sliding contact must also be specified. Any commercially available potentiometer with three connections (fixed resistor and the slider) can be evaluated with this class.&lt;/p></description></item><item><title>ServoMotor</title><link>https://pi4j.com/examples/components/servo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/components/servo/</guid><description>&lt;h3 id="description">Description&lt;/h3>
-&lt;p>The &lt;a href="https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog/components/ServoMotor.java" target="_blank" rel="noopener">ServoMotor&lt;/a> is a template class, that you can use in your own Java-project.
-You can set the servo to a specific location, likewise to 110 degrees of it&amp;rsquo;s range.&lt;/p>
-&lt;p>You can use a wide variety of analog servo motors such as the SG92R or the SG-5010 (for a little more torque).&lt;/p>
-&lt;h3 id="layout">Layout&lt;/h3>
-&lt;p>&lt;img src="https://pi4j.com/assets/examples/components/components/Layout-Servo.png" alt="Servo Layout">&lt;/p>
-&lt;p>
+&lt;h3 id="description"&gt;Description&lt;/h3&gt;
+&lt;p&gt;The &lt;a href="https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog/components/LedStrip.java" target="_blank" rel="noopener"&gt;LedStrip&lt;/a&gt; is a template class, that you can use in your own Java-project.
+You can take a LED Strip with the WS28xx-chip set.&lt;/p&gt;
+&lt;p&gt;The Template Class gives you the option to set the LED&amp;rsquo;s of the strip to a desired RGB-Color.
+If you have many strips, you can use the &lt;a href="https://pi4j.com/examples/components/ledmatrix/" target="_blank" rel="noopener"&gt;LEDMatrix&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Potentiometer</title><link>https://pi4j.com/examples/components/potentiometer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/components/potentiometer/</guid><description>&lt;h3 id="description"&gt;Description&lt;/h3&gt;
+&lt;p&gt;The &lt;a href="https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog/components/Potentiometer.java" target="_blank" rel="noopener"&gt;Potentiometer&lt;/a&gt; is a template class, that you can use in your own Java-project.
+The constructor of the class requires an ADS1115 object. In addition, the channel, with which the AD converter evaluates the current position of the sliding contact must be defined. For normalization, the maximum voltage that can drop across the sliding contact must also be specified. Any commercially available potentiometer with three connections (fixed resistor and the slider) can be evaluated with this class.&lt;/p&gt;</description></item><item><title>ServoMotor</title><link>https://pi4j.com/examples/components/servo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/components/servo/</guid><description>&lt;h3 id="description"&gt;Description&lt;/h3&gt;
+&lt;p&gt;The &lt;a href="https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog/components/ServoMotor.java" target="_blank" rel="noopener"&gt;ServoMotor&lt;/a&gt; is a template class, that you can use in your own Java-project.
+You can set the servo to a specific location, likewise to 110 degrees of it&amp;rsquo;s range.&lt;/p&gt;
+&lt;p&gt;You can use a wide variety of analog servo motors such as the SG92R or the SG-5010 (for a little more torque).&lt;/p&gt;
+&lt;h3 id="layout"&gt;Layout&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://pi4j.com/assets/examples/components/components/Layout-Servo.png" alt="Servo Layout"&gt;&lt;/p&gt;
+&lt;p&gt;
 
 
-&lt;div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+&lt;div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery"&gt;
 	 
 
-&lt;link rel="stylesheet" href="https://pi4j.com/css/hugo-easy-gallery.css" />
-&lt;div class="box fancy-figure caption-position-center caption-effect-fade" >
- &lt;figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
- &lt;div class="img" style="background-image: url('/assets/examples/components/components/pictures/ServoBreadboard.png');">
- &lt;img itemprop="thumbnail" src="https://pi4j.com/assets/examples/components/components/pictures/ServoBreadboard.png" alt="Servo Breadboard"/>
- &lt;/div>
- &lt;a href="https://pi4j.com/assets/examples/components/components/pictures/ServoBreadboard.png" itemprop="contentUrl">&lt;/a>
- &lt;figcaption>
- &lt;p>Servo Breadboard&lt;/p>
- &lt;/figcaption>
- &lt;/figure>
-&lt;/div>
+&lt;link rel="stylesheet" href="https://pi4j.com/css/hugo-easy-gallery.css" /&gt;
+&lt;div class="box fancy-figure caption-position-center caption-effect-fade" &gt;
+ &lt;figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"&gt;
+ &lt;div class="img" style="background-image: url('/assets/examples/components/components/pictures/ServoBreadboard.png');"&gt;
+ &lt;img itemprop="thumbnail" src="https://pi4j.com/assets/examples/components/components/pictures/ServoBreadboard.png" alt="Servo Breadboard"/&gt;
+ &lt;/div&gt;
+ &lt;a href="https://pi4j.com/assets/examples/components/components/pictures/ServoBreadboard.png" itemprop="contentUrl"&gt;&lt;/a&gt;
+ &lt;figcaption&gt;
+ &lt;p&gt;Servo Breadboard&lt;/p&gt;
+ &lt;/figcaption&gt;
+ &lt;/figure&gt;
+&lt;/div&gt;
 
 
 
-&lt;div class="box fancy-figure caption-position-center caption-effect-fade" >
- &lt;figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
- &lt;div class="img" style="background-image: url('/assets/examples/components/components/pictures/ServoSG-5010-TopView.png');">
- &lt;img itemprop="thumbnail" src="https://pi4j.com/assets/examples/components/components/pictures/ServoSG-5010-TopView.png" alt="Servo SG-5010 Top View"/>
- &lt;/div>
- &lt;a href="https://pi4j.com/assets/examples/components/components/pictures/ServoSG-5010-TopView.png" itemprop="contentUrl">&lt;/a>
- &lt;figcaption>
- &lt;p>Servo SG-5010 Top View&lt;/p></description></item></channel></rss>
+&lt;div class="box fancy-figure caption-position-center caption-effect-fade" &gt;
+ &lt;figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"&gt;
+ &lt;div class="img" style="background-image: url('/assets/examples/components/components/pictures/ServoSG-5010-TopView.png');"&gt;
+ &lt;img itemprop="thumbnail" src="https://pi4j.com/assets/examples/components/components/pictures/ServoSG-5010-TopView.png" alt="Servo SG-5010 Top View"/&gt;
+ &lt;/div&gt;
+ &lt;a href="https://pi4j.com/assets/examples/components/components/pictures/ServoSG-5010-TopView.png" itemprop="contentUrl"&gt;&lt;/a&gt;
+ &lt;figcaption&gt;
+ &lt;p&gt;Servo SG-5010 Top View&lt;/p&gt;</description></item></channel></rss>

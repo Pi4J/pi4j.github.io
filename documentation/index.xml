@@ -1,67 +1,67 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Documentation on Pi4J</title><link>https://pi4j.com/documentation/</link><description>Recent content in Documentation on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://pi4j.com/documentation/index.xml" rel="self" type="application/rss+xml"/><item><title>Pi4J API JavaDoc</title><link>https://pi4j.com/documentation/javadoc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/javadoc/</guid><description>&lt;p>The source code of the Pi4J library is documented with JavaDoc. If you use the library in your IDE, you can download the library sources to have more code hints while coding.&lt;/p>
-&lt;p>Thanks to APIdia, this documentation is also available online on &lt;a href="https://apidia.net/mvn/com.pi4j/pi4j" target="_blank" rel="noopener">apidia.net/mvn/com.pi4j/pi4j&lt;/a>.&lt;/p>
-&lt;p>&lt;img src="https://pi4j.com/assets/documentation/apidia.png" alt="APIdia website">&lt;/p></description></item><item><title>Pin numbering</title><link>https://pi4j.com/documentation/pin-numbering/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/pin-numbering/</guid><description>&lt;p>Pi4J V1 took a pretty opinionated approach to pin numbering as the scheme was based on the underlying WiringPi.
-This scheme was incompatibility with other pin diagrams and pin numbering used by other development platforms and libraries.&lt;/p>
-&lt;p>As Pi4J V2+ is build as a &amp;ldquo;pass thru library&amp;rdquo;, and uses &lt;a href="http://abyz.me.uk/rpi/pigpio/index.html" target="_blank" rel="noopener">PiGpio&lt;/a> and other tools as the underlying framework. The more well-known BCM numbering is being used now.&lt;/p>
-&lt;p>This drawing shows the different numbers for WiringPi and BCM in a 40-pins Raspberry Pi header:&lt;/p></description></item><item><title>Java for ARMv6/7/8</title><link>https://pi4j.com/documentation/java-for-arm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/java-for-arm/</guid><description>&lt;p>You can choose from a long list of Java versions and distributions if you use the 64-bit version of the Raspberry Pi Operating System. But this 64-bit OS is only available for Raspberry Pi board versions with an &lt;strong>ARMv7 or ARMv8&lt;/strong> processor.&lt;/p>
-&lt;h2 id="board-versions">Board versions&lt;/h2>
-&lt;h3 id="with-armv6-processor">With ARMv6 processor&lt;/h3>
-&lt;ul>
-&lt;li>Raspberry Pi 1 A and A+&lt;/li>
-&lt;li>Raspberry Pi 1 B and B+&lt;/li>
-&lt;li>Zero 1.2, 1.3 and W&lt;/li>
-&lt;li>Compute Module 1&lt;/li>
-&lt;/ul>
-&lt;h3 id="with-armv7-or-armv8-processor">With ARMv7 or ARMv8 processor&lt;/h3>
-&lt;ul>
-&lt;li>Model A+, version 3&lt;/li>
-&lt;li>Model B, version 2, 3, 4 and 5&lt;/li>
-&lt;li>Zero 2 and 2W&lt;/li>
-&lt;li>Compute Module, version 3, 4, and 5&lt;/li>
-&lt;/ul>
-&lt;h2 id="how-to-check-and-install-java">How to Check and Install Java&lt;/h2>
-&lt;h3 id="check-the-current-version">Check the Current Version&lt;/h3>
-&lt;p>You can check the installed Java version in the terminal. On a board with ARMv7 or ARMv8, with a correctly installed JDK, you will get this result:&lt;/p></description></item><item><title>Logging with SLF4J</title><link>https://pi4j.com/documentation/logging/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/logging/</guid><description>&lt;p>Pi4J uses SLF4J for logging. To include it in your project, add this Maven dependency:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-xml" data-lang="xml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">&amp;lt;dependency&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;groupId&amp;gt;&lt;/span>org.slf4j&lt;span style="color:#f92672">&amp;lt;/groupId&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;artifactId&amp;gt;&lt;/span>slf4j-simple&lt;span style="color:#f92672">&amp;lt;/artifactId&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;version&amp;gt;&lt;/span>2.0.0-alpha0&lt;span style="color:#f92672">&amp;lt;/version&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">&amp;lt;/dependency&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>There are different ways to configure the logging output, as described on &lt;a href="http://www.slf4j.org/manual.html" target="_blank" rel="noopener">the SLF4J website&lt;/a>, but the shortest is probably with this property in your main-method:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-java" data-lang="java">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">static&lt;/span> &lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">main&lt;/span>(String&lt;span style="color:#f92672">[]&lt;/span> args) &lt;span style="color:#66d9ef">throws&lt;/span> Exception {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// Configure default logging level, accept a log level as the first program argument&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> System.&lt;span style="color:#a6e22e">setProperty&lt;/span>(&lt;span style="color:#e6db74">&amp;#34;org.slf4j.simpleLogger.defaultLogLevel&amp;#34;&lt;/span>, &lt;span style="color:#e6db74">&amp;#34;INFO&amp;#34;&lt;/span>);
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> 
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// Your code comes here&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Creating a Pi4J Context</title><link>https://pi4j.com/documentation/create-context/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/create-context/</guid><description>&lt;p>The context is an immutable runtime object that holds the configured state and manages the lifecycle of a Pi4J instance.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Documentation on Pi4J</title><link>https://pi4j.com/documentation/</link><description>Recent content in Documentation on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://pi4j.com/documentation/index.xml" rel="self" type="application/rss+xml"/><item><title>Pi4J API JavaDoc</title><link>https://pi4j.com/documentation/javadoc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/javadoc/</guid><description>&lt;p&gt;The source code of the Pi4J library is documented with JavaDoc. If you use the library in your IDE, you can download the library sources to have more code hints while coding.&lt;/p&gt;
+&lt;p&gt;Thanks to APIdia, this documentation is also available online on &lt;a href="https://apidia.net/mvn/com.pi4j/pi4j" target="_blank" rel="noopener"&gt;apidia.net/mvn/com.pi4j/pi4j&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://pi4j.com/assets/documentation/apidia.png" alt="APIdia website"&gt;&lt;/p&gt;</description></item><item><title>Pin numbering</title><link>https://pi4j.com/documentation/pin-numbering/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/pin-numbering/</guid><description>&lt;p&gt;Pi4J V1 took a pretty opinionated approach to pin numbering as the scheme was based on the underlying WiringPi.
+This scheme was incompatibility with other pin diagrams and pin numbering used by other development platforms and libraries.&lt;/p&gt;
+&lt;p&gt;As Pi4J V2+ is build as a &amp;ldquo;pass thru library&amp;rdquo;, and uses &lt;a href="http://abyz.me.uk/rpi/pigpio/index.html" target="_blank" rel="noopener"&gt;PiGpio&lt;/a&gt; and other tools as the underlying framework. The more well-known BCM numbering is being used now.&lt;/p&gt;
+&lt;p&gt;This drawing shows the different numbers for WiringPi and BCM in a 40-pins Raspberry Pi header:&lt;/p&gt;</description></item><item><title>Java for ARMv6/7/8</title><link>https://pi4j.com/documentation/java-for-arm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/java-for-arm/</guid><description>&lt;p&gt;You can choose from a long list of Java versions and distributions if you use the 64-bit version of the Raspberry Pi Operating System. But this 64-bit OS is only available for Raspberry Pi board versions with an &lt;strong&gt;ARMv7 or ARMv8&lt;/strong&gt; processor.&lt;/p&gt;
+&lt;h2 id="board-versions"&gt;Board versions&lt;/h2&gt;
+&lt;h3 id="with-armv6-processor"&gt;With ARMv6 processor&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Raspberry Pi 1 A and A+&lt;/li&gt;
+&lt;li&gt;Raspberry Pi 1 B and B+&lt;/li&gt;
+&lt;li&gt;Zero 1.2, 1.3 and W&lt;/li&gt;
+&lt;li&gt;Compute Module 1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="with-armv7-or-armv8-processor"&gt;With ARMv7 or ARMv8 processor&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Model A+, version 3&lt;/li&gt;
+&lt;li&gt;Model B, version 2, 3, 4 and 5&lt;/li&gt;
+&lt;li&gt;Zero 2 and 2W&lt;/li&gt;
+&lt;li&gt;Compute Module, version 3, 4, and 5&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="how-to-check-and-install-java"&gt;How to Check and Install Java&lt;/h2&gt;
+&lt;h3 id="check-the-current-version"&gt;Check the Current Version&lt;/h3&gt;
+&lt;p&gt;You can check the installed Java version in the terminal. On a board with ARMv7 or ARMv8, with a correctly installed JDK, you will get this result:&lt;/p&gt;</description></item><item><title>Logging with SLF4J</title><link>https://pi4j.com/documentation/logging/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/logging/</guid><description>&lt;p&gt;Pi4J uses SLF4J for logging. To include it in your project, add this Maven dependency:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-xml" data-lang="xml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;&amp;lt;dependency&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;&amp;lt;groupId&amp;gt;&lt;/span&gt;org.slf4j&lt;span style="color:#f92672"&gt;&amp;lt;/groupId&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;&amp;lt;artifactId&amp;gt;&lt;/span&gt;slf4j-simple&lt;span style="color:#f92672"&gt;&amp;lt;/artifactId&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;&amp;lt;version&amp;gt;&lt;/span&gt;2.0.0-alpha0&lt;span style="color:#f92672"&gt;&amp;lt;/version&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;&amp;lt;/dependency&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;There are different ways to configure the logging output, as described on &lt;a href="http://www.slf4j.org/manual.html" target="_blank" rel="noopener"&gt;the SLF4J website&lt;/a&gt;, but the shortest is probably with this property in your main-method:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-java" data-lang="java"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;public&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;static&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;void&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;main&lt;/span&gt;(String&lt;span style="color:#f92672"&gt;[]&lt;/span&gt; args) &lt;span style="color:#66d9ef"&gt;throws&lt;/span&gt; Exception {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;// Configure default logging level, accept a log level as the first program argument&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; System.&lt;span style="color:#a6e22e"&gt;setProperty&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;org.slf4j.simpleLogger.defaultLogLevel&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;INFO&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;// Your code comes here&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Creating a Pi4J Context</title><link>https://pi4j.com/documentation/create-context/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/create-context/</guid><description>&lt;p&gt;The context is an immutable runtime object that holds the configured state and manages the lifecycle of a Pi4J instance.
 It includes all loaded plugins, providers, platforms, I/O instance registry, environmental configuration and runtime
-objects including executor thread pools, I/O event listeners, etc.&lt;/p>
-&lt;p>Terminating/destroying the context stops and releases all resources, threads, listeners, and provisioned I/O instances
-held by the context.&lt;/p>
-&lt;p>Version 1 was implemented using a static singleton, while &lt;strong>version 2 uses a &amp;ldquo;Context&amp;rdquo; to avoid static singletons&lt;/strong>.&lt;/p></description></item><item><title>Using Board Info</title><link>https://pi4j.com/documentation/board-info/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/board-info/</guid><description>&lt;div class="notices tip" >&lt;p>GITHUB Sources of BoardInfoHelper.java and the data model: &lt;a href="https://github.com/Pi4J/pi4j/blob/develop/pi4j-core/src/main/java/com/pi4j/boardinfo/util/BoardInfoHelper.java" target="_blank" rel="noopener">pi4j/pi4j-core/src/main/java/com/pi4j/boardinfo/util/BoardInfoHelper.java&lt;/a>&lt;/p>
-&lt;/div>
+objects including executor thread pools, I/O event listeners, etc.&lt;/p&gt;
+&lt;p&gt;Terminating/destroying the context stops and releases all resources, threads, listeners, and provisioned I/O instances
+held by the context.&lt;/p&gt;
+&lt;p&gt;Version 1 was implemented using a static singleton, while &lt;strong&gt;version 2 uses a &amp;ldquo;Context&amp;rdquo; to avoid static singletons&lt;/strong&gt;.&lt;/p&gt;</description></item><item><title>Using Board Info</title><link>https://pi4j.com/documentation/board-info/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/board-info/</guid><description>&lt;div class="notices tip" &gt;&lt;p&gt;GITHUB Sources of BoardInfoHelper.java and the data model: &lt;a href="https://github.com/Pi4J/pi4j/blob/develop/pi4j-core/src/main/java/com/pi4j/boardinfo/util/BoardInfoHelper.java" target="_blank" rel="noopener"&gt;pi4j/pi4j-core/src/main/java/com/pi4j/boardinfo/util/BoardInfoHelper.java&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
 
-&lt;p>Since V2.6.0, the new class &lt;code>BoardInfoHelper&lt;/code> provides the following info:&lt;/p>
-&lt;ul>
-&lt;li>Type of Raspberry Pi board as a &lt;code>BoardInfo&lt;/code> object.&lt;/li>
-&lt;li>If the system uses a RP1 chip with &lt;code>usesRP1()&lt;/code> (Raspberry Pi 5 only at this moment).&lt;/li>
-&lt;li>If the system is 32-bit or 64-bit with &lt;code>is32bit()&lt;/code> and &lt;code>is64bit()&lt;/code>.&lt;/li>
-&lt;li>The amount of memory available and used by the JVM as a &lt;code>JvmMemory&lt;/code> object.&lt;/li>
-&lt;li>Info about volt, temperature, etc. as a &lt;code>BoardReading&lt;/code> object.&lt;/li>
-&lt;/ul>
-&lt;p>The board info is used in some of the plugins to set the correct priority, based on the use of a Raspberry Pi 5 (&lt;a href="https://www.raspberrypi.com/documentation/microcontrollers/rp1.html" target="_blank" rel="noopener">with RP1&lt;/a>) versus earlier board (without RP1).&lt;/p></description></item><item><title>Building an I/O Instance</title><link>https://pi4j.com/documentation/build-io/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/build-io/</guid><description>&lt;p>A GPIO can be configured with Pi4J in different ways, either short for default behavior, a bit longer with additional settings, or with a full custom configuration using a building pattern.&lt;/p>
-&lt;h2 id="io-initialization-examples">I/O Initialization Examples&lt;/h2>
-&lt;p>Before we can initialize an I/0, the Pi4J context must be initialized. The &lt;code>Pi4J&lt;/code> static class includes a few helper context creators for the most common use cases. The &lt;code>newAutoContext()&lt;/code> method will automatically load all available Pi4J extensions found in the application&amp;rsquo;s classpath which may include &lt;code>Platforms&lt;/code> and &lt;code>I/O Providers&lt;/code>.&lt;/p></description></item><item><title>I/O Registry</title><link>https://pi4j.com/documentation/registry/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/registry/</guid><description>&lt;p>An additional V2+ feature is an I/O registry where all I/O instances that have been created can be maintained, managed, re-accessed, etc. As the library keeps track of all the created I/O instances, they become publicly accessible through a registry where users can interrogate, iterate, identify and access all created I/O instances that Pi4J is managing.&lt;/p>
-&lt;p>This is very useful for add-ons/plugins that want to provide runtime information about the state of all I/O, for example a web app illustrating the current state of I/O.&lt;/p></description></item><item><title>Shutdown (cleanup)</title><link>https://pi4j.com/documentation/shutdown/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/shutdown/</guid><description>&lt;p>Pi4J has a &lt;code>shutdown&lt;/code> method that can be used for two different purposes.&lt;/p>
-&lt;h2 id="end-of-application">End Of Application&lt;/h2>
-&lt;p>At the end of our application, the context needs to be shutdown to release the I/O and clean up the used resources.&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-java" data-lang="java">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#960050;background-color:#1e0010">#&lt;/span> Start of program
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">var&lt;/span> pi4j &lt;span style="color:#f92672">=&lt;/span> Pi4J.&lt;span style="color:#a6e22e">newAutoContext&lt;/span>();
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#960050;background-color:#1e0010">#&lt;/span> YOUR CODE GOES HERE
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#960050;background-color:#1e0010">#&lt;/span> End of program
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>pi4j.&lt;span style="color:#a6e22e">shutdown&lt;/span>();
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="reuse-of-a-gpio">Reuse of a GPIO&lt;/h2>
-&lt;p>When you want to reuse a GPIO, it must be shutdown to clean it up. This can be done by shutting down the GPIO itself and providing the &lt;code>ID&lt;/code> to the &lt;code>shutdown&lt;/code> method. As an example, check &lt;a href="https://github.com/Pi4J/pi4j/blob/develop/pi4j-test/src/test/java/com/pi4j/test/registry/RegistryTest.java#L77" target="_blank" rel="noopener">this unit test&lt;/a>:&lt;/p></description></item></channel></rss>
+&lt;p&gt;Since V2.6.0, the new class &lt;code&gt;BoardInfoHelper&lt;/code&gt; provides the following info:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Type of Raspberry Pi board as a &lt;code&gt;BoardInfo&lt;/code&gt; object.&lt;/li&gt;
+&lt;li&gt;If the system uses a RP1 chip with &lt;code&gt;usesRP1()&lt;/code&gt; (Raspberry Pi 5 only at this moment).&lt;/li&gt;
+&lt;li&gt;If the system is 32-bit or 64-bit with &lt;code&gt;is32bit()&lt;/code&gt; and &lt;code&gt;is64bit()&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;The amount of memory available and used by the JVM as a &lt;code&gt;JvmMemory&lt;/code&gt; object.&lt;/li&gt;
+&lt;li&gt;Info about volt, temperature, etc. as a &lt;code&gt;BoardReading&lt;/code&gt; object.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The board info is used in some of the plugins to set the correct priority, based on the use of a Raspberry Pi 5 (&lt;a href="https://www.raspberrypi.com/documentation/microcontrollers/rp1.html" target="_blank" rel="noopener"&gt;with RP1&lt;/a&gt;) versus earlier board (without RP1).&lt;/p&gt;</description></item><item><title>Building an I/O Instance</title><link>https://pi4j.com/documentation/build-io/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/build-io/</guid><description>&lt;p&gt;A GPIO can be configured with Pi4J in different ways, either short for default behavior, a bit longer with additional settings, or with a full custom configuration using a building pattern.&lt;/p&gt;
+&lt;h2 id="io-initialization-examples"&gt;I/O Initialization Examples&lt;/h2&gt;
+&lt;p&gt;Before we can initialize an I/0, the Pi4J context must be initialized. The &lt;code&gt;Pi4J&lt;/code&gt; static class includes a few helper context creators for the most common use cases. The &lt;code&gt;newAutoContext()&lt;/code&gt; method will automatically load all available Pi4J extensions found in the application&amp;rsquo;s classpath which may include &lt;code&gt;Platforms&lt;/code&gt; and &lt;code&gt;I/O Providers&lt;/code&gt;.&lt;/p&gt;</description></item><item><title>I/O Registry</title><link>https://pi4j.com/documentation/registry/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/registry/</guid><description>&lt;p&gt;An additional V2+ feature is an I/O registry where all I/O instances that have been created can be maintained, managed, re-accessed, etc. As the library keeps track of all the created I/O instances, they become publicly accessible through a registry where users can interrogate, iterate, identify and access all created I/O instances that Pi4J is managing.&lt;/p&gt;
+&lt;p&gt;This is very useful for add-ons/plugins that want to provide runtime information about the state of all I/O, for example a web app illustrating the current state of I/O.&lt;/p&gt;</description></item><item><title>Shutdown (cleanup)</title><link>https://pi4j.com/documentation/shutdown/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/shutdown/</guid><description>&lt;p&gt;Pi4J has a &lt;code&gt;shutdown&lt;/code&gt; method that can be used for two different purposes.&lt;/p&gt;
+&lt;h2 id="end-of-application"&gt;End Of Application&lt;/h2&gt;
+&lt;p&gt;At the end of our application, the context needs to be shutdown to release the I/O and clean up the used resources.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-java" data-lang="java"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;#&lt;/span&gt; Start of program
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;var&lt;/span&gt; pi4j &lt;span style="color:#f92672"&gt;=&lt;/span&gt; Pi4J.&lt;span style="color:#a6e22e"&gt;newAutoContext&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;#&lt;/span&gt; YOUR CODE GOES HERE
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;#&lt;/span&gt; End of program
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;pi4j.&lt;span style="color:#a6e22e"&gt;shutdown&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="reuse-of-a-gpio"&gt;Reuse of a GPIO&lt;/h2&gt;
+&lt;p&gt;When you want to reuse a GPIO, it must be shutdown to clean it up. This can be done by shutting down the GPIO itself and providing the &lt;code&gt;ID&lt;/code&gt; to the &lt;code&gt;shutdown&lt;/code&gt; method. As an example, check &lt;a href="https://github.com/Pi4J/pi4j/blob/develop/pi4j-test/src/test/java/com/pi4j/test/registry/RegistryTest.java#L77" target="_blank" rel="noopener"&gt;this unit test&lt;/a&gt;:&lt;/p&gt;</description></item></channel></rss>

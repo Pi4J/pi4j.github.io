@@ -1,38 +1,38 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Choosing an I/O Provider on Pi4J</title><link>https://pi4j.com/documentation/providers/</link><description>Recent content in Choosing an I/O Provider on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://pi4j.com/documentation/providers/index.xml" rel="self" type="application/rss+xml"/><item><title>GpioD Provider</title><link>https://pi4j.com/documentation/providers/gpiod/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/providers/gpiod/</guid><description>&lt;p>The GpioD plugin provider was added in Pi4J 2.5.0 to be able to support the Raspberry Pi 5 with the new &lt;a href="https://www.raspberrypi.com/documentation/microcontrollers/rp1.html" target="_blank" rel="noopener">GPIO chip RP1&lt;/a>.&lt;/p>
-&lt;p>Providers in the GpioD plugin:&lt;/p>
-&lt;ul>
-&lt;li>gpiod-digital-input&lt;/li>
-&lt;li>gpiod-digital-output&lt;/li>
-&lt;/ul>
-&lt;h2 id="supported-operating-system-versions">Supported Operating System Versions&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Choosing an I/O Provider on Pi4J</title><link>https://pi4j.com/documentation/providers/</link><description>Recent content in Choosing an I/O Provider on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://pi4j.com/documentation/providers/index.xml" rel="self" type="application/rss+xml"/><item><title>GpioD Provider</title><link>https://pi4j.com/documentation/providers/gpiod/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/providers/gpiod/</guid><description>&lt;p&gt;The GpioD plugin provider was added in Pi4J 2.5.0 to be able to support the Raspberry Pi 5 with the new &lt;a href="https://www.raspberrypi.com/documentation/microcontrollers/rp1.html" target="_blank" rel="noopener"&gt;GPIO chip RP1&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Providers in the GpioD plugin:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;gpiod-digital-input&lt;/li&gt;
+&lt;li&gt;gpiod-digital-output&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="supported-operating-system-versions"&gt;Supported Operating System Versions&lt;/h2&gt;
 
-&lt;div class="notices warning" >&lt;p>The GpioD provider requires minimum kernel Bullseye 6.1.21 and Bookworm 6.6.22 !&lt;/p>
-&lt;/div>
+&lt;div class="notices warning" &gt;&lt;p&gt;The GpioD provider requires minimum kernel Bullseye 6.1.21 and Bookworm 6.6.22 !&lt;/p&gt;
+&lt;/div&gt;
 
-&lt;p>If you get an error at startup with the following content, your OS is outdated for the GpioD implementation used in Pi4J:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>UNDERLYING EXCEPTION: &lt;span style="color:#f92672">[&lt;/span>java.lang.UnsatisfiedLinkError&lt;span style="color:#f92672">]=&lt;/span>/tmp/libgpiod368899536808039438.so: /lib/aarch64-linux-gnu/libc.so.6: version &lt;span style="color:#e6db74">`&lt;/span>GLIBC_2.33&lt;span style="color:#960050;background-color:#1e0010">&amp;#39;&lt;/span> not found &lt;span style="color:#f92672">(&lt;/span>required by /tmp/libgpiod368899536808039438.so&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="dependencies">Dependencies&lt;/h2>
-&lt;p>To use the GpioD provider include the following dependencies:&lt;/p></description></item><item><title>LinuxFS Provider</title><link>https://pi4j.com/documentation/providers/linuxfs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/providers/linuxfs/</guid><description>&lt;p>The current implementation of the LinuxFS plugin implements a file based I2C, SPI, and PWM provider. The file based I2C provider opens
-&lt;code>/dev/i2c-1&lt;/code> using a &lt;code>RandomAccessFile&lt;/code> to perform I2C reads and writes. The file based PWM provider opens
-&lt;code>/sys/class/pwm/pwmchip?&lt;/code> using a &lt;code>RandomAccessFile&lt;/code> to perform PWM operations.&lt;/p>
+&lt;p&gt;If you get an error at startup with the following content, your OS is outdated for the GpioD implementation used in Pi4J:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;UNDERLYING EXCEPTION: &lt;span style="color:#f92672"&gt;[&lt;/span&gt;java.lang.UnsatisfiedLinkError&lt;span style="color:#f92672"&gt;]=&lt;/span&gt;/tmp/libgpiod368899536808039438.so: /lib/aarch64-linux-gnu/libc.so.6: version &lt;span style="color:#e6db74"&gt;`&lt;/span&gt;GLIBC_2.33&lt;span style="color:#960050;background-color:#1e0010"&gt;&amp;#39;&lt;/span&gt; not found &lt;span style="color:#f92672"&gt;(&lt;/span&gt;required by /tmp/libgpiod368899536808039438.so&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="dependencies"&gt;Dependencies&lt;/h2&gt;
+&lt;p&gt;To use the GpioD provider include the following dependencies:&lt;/p&gt;</description></item><item><title>LinuxFS Provider</title><link>https://pi4j.com/documentation/providers/linuxfs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/providers/linuxfs/</guid><description>&lt;p&gt;The current implementation of the LinuxFS plugin implements a file based I2C, SPI, and PWM provider. The file based I2C provider opens
+&lt;code&gt;/dev/i2c-1&lt;/code&gt; using a &lt;code&gt;RandomAccessFile&lt;/code&gt; to perform I2C reads and writes. The file based PWM provider opens
+&lt;code&gt;/sys/class/pwm/pwmchip?&lt;/code&gt; using a &lt;code&gt;RandomAccessFile&lt;/code&gt; to perform PWM operations.&lt;/p&gt;
 
-&lt;div class="notices warning" >&lt;p>The Linuxfs provider linuxfs-pwm requires minimum kernel Bullseye 6.1.21 and Bookworm 6.6.22 !&lt;/p>
-&lt;/div>
+&lt;div class="notices warning" &gt;&lt;p&gt;The Linuxfs provider linuxfs-pwm requires minimum kernel Bullseye 6.1.21 and Bookworm 6.6.22 !&lt;/p&gt;
+&lt;/div&gt;
 
-&lt;p>Providers in the LinuxFS plugin:&lt;/p>
-&lt;ul>
-&lt;li>linuxfs-i2c&lt;/li>
-&lt;li>linuxfx-spi&lt;/li>
-&lt;li>linuxfs-pwm &amp;ndash;&amp;gt; check below for important info about the channel configuration!&lt;/li>
-&lt;li>Under construction
-&lt;ul>
-&lt;li>linuxfs-digital-input&lt;/li>
-&lt;li>linuxfs-digital-output&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;p>To use the LinuxFS provider include the following dependencies:&lt;/p></description></item><item><title>PiGpio Provider</title><link>https://pi4j.com/documentation/providers/pigpio/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/providers/pigpio/</guid><description>&lt;p>The current implementation of the PiGpio exposes the GPIO functions available on the Raspberry Pi (see Note Pi5 below).
-This implementation is developed/supported by a team separate of Pi4j. Pi4j is a consumer of that PiGpio work.&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>Pi5 At the present time the PiGpio implementation does not support the new Pi5 board. 
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>- This new Pi5 RP1 chip will require a large development effort. There is no known plan &lt;span style="color:#66d9ef">for&lt;/span> this develoment. 
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Providers in the PiGpio plugin:&lt;/p></description></item></channel></rss>
+&lt;p&gt;Providers in the LinuxFS plugin:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;linuxfs-i2c&lt;/li&gt;
+&lt;li&gt;linuxfx-spi&lt;/li&gt;
+&lt;li&gt;linuxfs-pwm &amp;ndash;&amp;gt; check below for important info about the channel configuration!&lt;/li&gt;
+&lt;li&gt;Under construction
+&lt;ul&gt;
+&lt;li&gt;linuxfs-digital-input&lt;/li&gt;
+&lt;li&gt;linuxfs-digital-output&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To use the LinuxFS provider include the following dependencies:&lt;/p&gt;</description></item><item><title>PiGpio Provider</title><link>https://pi4j.com/documentation/providers/pigpio/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/providers/pigpio/</guid><description>&lt;p&gt;The current implementation of the PiGpio exposes the GPIO functions available on the Raspberry Pi (see Note Pi5 below).
+This implementation is developed/supported by a team separate of Pi4j. Pi4j is a consumer of that PiGpio work.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Pi5 At the present time the PiGpio implementation does not support the new Pi5 board. 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;- This new Pi5 RP1 chip will require a large development effort. There is no known plan &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; this develoment. 
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Providers in the PiGpio plugin:&lt;/p&gt;</description></item></channel></rss>

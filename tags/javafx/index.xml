@@ -1,74 +1,74 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>JavaFX on Pi4J</title><link>https://pi4j.com/tags/javafx/</link><description>Recent content in JavaFX on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://pi4j.com/tags/javafx/index.xml" rel="self" type="application/rss+xml"/><item><title>Install Java and Tools</title><link>https://pi4j.com/prepare/install-java/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/prepare/install-java/</guid><description>&lt;p>Our Raspberry Pi has started for the first time and we are now ready to add some Java to it!&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>JavaFX on Pi4J</title><link>https://pi4j.com/tags/javafx/</link><description>Recent content in JavaFX on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://pi4j.com/tags/javafx/index.xml" rel="self" type="application/rss+xml"/><item><title>Install Java and Tools</title><link>https://pi4j.com/prepare/install-java/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/prepare/install-java/</guid><description>&lt;p&gt;Our Raspberry Pi has started for the first time and we are now ready to add some Java to it!&lt;/p&gt;
 
-&lt;div class="notices tip" >&lt;p>As described on the previous page &amp;ldquo;The First Boot&amp;rdquo;, a script can be executed that will do all this at once: &lt;code>curl -sL https://raw.githubusercontent.com/Pi4J/pi4j-os/main/script/prepare-for-java.sh | bash&lt;/code>.&lt;/p>
-&lt;/div>
+&lt;div class="notices tip" &gt;&lt;p&gt;As described on the previous page &amp;ldquo;The First Boot&amp;rdquo;, a script can be executed that will do all this at once: &lt;code&gt;curl -sL https://raw.githubusercontent.com/Pi4J/pi4j-os/main/script/prepare-for-java.sh | bash&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
 
-&lt;h2 id="add-missing-dependencies">Add Missing Dependencies&lt;/h2>
-&lt;p>Let&amp;rsquo;s start with some helper tools that will be useful later.&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>$ sudo apt install -y i2c-tools vim git java-common libxi6 libxrender1 libxtst6
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
-&lt;li>&lt;code>i2c-tools&lt;/code>: Tool to help you with I2C commands.&lt;/li>
-&lt;li>&lt;code>vim&lt;/code>: Text editor like &lt;code>nano&lt;/code>, preferred by some, hated by others ;-)&lt;/li>
-&lt;li>&lt;code>git&lt;/code>: Tool to interact with a Git repository, like GitHub.&lt;/li>
-&lt;li>&lt;code>java-common libxi6 libxrender1 libxtst6&lt;/code>: Dependencies of the JDK Debian package.&lt;/li>
-&lt;/ul>
-&lt;h2 id="install-java">Install Java&lt;/h2>
-&lt;p>There are many ways you can install Java. The easiest way to make Java available for both normal use and as root user (&lt;code>sudo&lt;/code>), is the following approach which downloads one of the many distributions that are available.&lt;/p></description></item><item><title>User interface with JavaFX</title><link>https://pi4j.com/getting-started/user-interface-with-javafx/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/getting-started/user-interface-with-javafx/</guid><description>&lt;div class="notices tip" >&lt;p>GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-example-javafx" target="_blank" rel="noopener">https://github.com/Pi4J/pi4j-example-javafx&lt;/a>&lt;/p>
-&lt;/div>
+&lt;h2 id="add-missing-dependencies"&gt;Add Missing Dependencies&lt;/h2&gt;
+&lt;p&gt;Let&amp;rsquo;s start with some helper tools that will be useful later.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;$ sudo apt install -y i2c-tools vim git java-common libxi6 libxrender1 libxtst6
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;i2c-tools&lt;/code&gt;: Tool to help you with I2C commands.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;vim&lt;/code&gt;: Text editor like &lt;code&gt;nano&lt;/code&gt;, preferred by some, hated by others ;-)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git&lt;/code&gt;: Tool to interact with a Git repository, like GitHub.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;java-common libxi6 libxrender1 libxtst6&lt;/code&gt;: Dependencies of the JDK Debian package.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="install-java"&gt;Install Java&lt;/h2&gt;
+&lt;p&gt;There are many ways you can install Java. The easiest way to make Java available for both normal use and as root user (&lt;code&gt;sudo&lt;/code&gt;), is the following approach which downloads one of the many distributions that are available.&lt;/p&gt;</description></item><item><title>User interface with JavaFX</title><link>https://pi4j.com/getting-started/user-interface-with-javafx/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/getting-started/user-interface-with-javafx/</guid><description>&lt;div class="notices tip" &gt;&lt;p&gt;GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-example-javafx" target="_blank" rel="noopener"&gt;https://github.com/Pi4J/pi4j-example-javafx&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
 
-&lt;p>JavaFX is a framework to create user interfaces for desktop (Windows, Mac, Linux) and mobile phones. JavaFX is
-an opensource project which is documented on &lt;a href="https://openjfx.io/" target="_blank" rel="noopener">openjfx.io&lt;/a> and the sources are available
-in &lt;a href="https://github.com/openjdk/jfx" target="_blank" rel="noopener">this GitHub project&lt;/a>.&lt;/p>
-&lt;p>The main goal of Java has always been to be able to create applications which are &lt;strong>&amp;ldquo;write once, run everywhere&amp;rdquo;&lt;/strong>.
-JavaFX promises the same for Graphical User Interface applications.&lt;/p>
-&lt;p>&lt;a href="https://gluonhq.com/" target="_blank" rel="noopener">Gluon&lt;/a> is the main maintainer of the OpenJFX project and offers commercial support to
-companies who want to use JavaFX in critical applications. They also provide &lt;a href="https://gluonhq.com/products/" target="_blank" rel="noopener">tools to build and compile Java
-code to native applications for all platforms&lt;/a>.&lt;/p></description></item><item><title>Game development with FXGL</title><link>https://pi4j.com/getting-started/fxgl/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/getting-started/fxgl/</guid><description>&lt;div class="notices tip" >&lt;p>GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-example-fxgl" target="_blank" rel="noopener">https://github.com/Pi4J/pi4j-example-fxgl&lt;/a>&lt;/p>
-&lt;/div>
+&lt;p&gt;JavaFX is a framework to create user interfaces for desktop (Windows, Mac, Linux) and mobile phones. JavaFX is
+an opensource project which is documented on &lt;a href="https://openjfx.io/" target="_blank" rel="noopener"&gt;openjfx.io&lt;/a&gt; and the sources are available
+in &lt;a href="https://github.com/openjdk/jfx" target="_blank" rel="noopener"&gt;this GitHub project&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The main goal of Java has always been to be able to create applications which are &lt;strong&gt;&amp;ldquo;write once, run everywhere&amp;rdquo;&lt;/strong&gt;.
+JavaFX promises the same for Graphical User Interface applications.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://gluonhq.com/" target="_blank" rel="noopener"&gt;Gluon&lt;/a&gt; is the main maintainer of the OpenJFX project and offers commercial support to
+companies who want to use JavaFX in critical applications. They also provide &lt;a href="https://gluonhq.com/products/" target="_blank" rel="noopener"&gt;tools to build and compile Java
+code to native applications for all platforms&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Game development with FXGL</title><link>https://pi4j.com/getting-started/fxgl/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/getting-started/fxgl/</guid><description>&lt;div class="notices tip" &gt;&lt;p&gt;GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-example-fxgl" target="_blank" rel="noopener"&gt;https://github.com/Pi4J/pi4j-example-fxgl&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
 
-&lt;p>As described on &lt;a href="https://pi4j.com/getting-started/user-interface-with-javafx/">the previous page&lt;/a> you can use JavaFX to build
+&lt;p&gt;As described on &lt;a href="https://pi4j.com/getting-started/user-interface-with-javafx/"&gt;the previous page&lt;/a&gt; you can use JavaFX to build
 user interfaces which behave exactly the same on your PC and Raspberry Pi. Let&amp;rsquo;s go a step further and make
-a game with an &amp;ldquo;Arcade&amp;rdquo; controller.&lt;/p>
-&lt;p>For this project, we will be using &lt;a href="https://github.com/AlmasB/FXGL" target="_blank" rel="noopener">FXGL&lt;/a>, an opensource library on top of
-JavaFX to build games.&lt;/p>
-&lt;p>The image of the crowpi project has every prerequisite installed to work with javaFX/FXGL&lt;/p></description></item><item><title>JavaFX GUI and MVC template</title><link>https://pi4j.com/getting-started/javafx-mvc-template/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/getting-started/javafx-mvc-template/</guid><description>&lt;div class="notices tip" >&lt;p>GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-template-javafx" target="_blank" rel="noopener">https://github.com/Pi4J/pi4j-template-javafx&lt;/a>&lt;/p>
-&lt;/div>
+a game with an &amp;ldquo;Arcade&amp;rdquo; controller.&lt;/p&gt;
+&lt;p&gt;For this project, we will be using &lt;a href="https://github.com/AlmasB/FXGL" target="_blank" rel="noopener"&gt;FXGL&lt;/a&gt;, an opensource library on top of
+JavaFX to build games.&lt;/p&gt;
+&lt;p&gt;The image of the crowpi project has every prerequisite installed to work with javaFX/FXGL&lt;/p&gt;</description></item><item><title>JavaFX GUI and MVC template</title><link>https://pi4j.com/getting-started/javafx-mvc-template/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/getting-started/javafx-mvc-template/</guid><description>&lt;div class="notices tip" &gt;&lt;p&gt;GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-template-javafx" target="_blank" rel="noopener"&gt;https://github.com/Pi4J/pi4j-template-javafx&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
 
-&lt;p>The &lt;a href="https://www.fhnw.ch" target="_blank" rel="noopener">FHNW University&lt;/a> created a template project which is now part of the Pi4J example repositories.&lt;/p>
-&lt;p>The goal of this project is to:&lt;/p>
-&lt;ul>
-&lt;li>Provide a clear step-by-step how to prepare your Raspberry Pi&lt;/li>
-&lt;li>Provide multiple test and start applications&lt;/li>
-&lt;li>Explain the use of a MVC-model (Model-View-Controller) to clearly split data, actions and user interface&lt;/li>
-&lt;li>Explain the use of JUnit test&lt;/li>
-&lt;/ul>
-&lt;h2 id="sources-and-info">Sources and Info&lt;/h2>
-&lt;p>Please check the README of the sources of the project for a full description of the setup process of the Raspberry Pi
-and to fully understand the example applications and the MVC-model. This page is only intended to give you a quick overview.&lt;/p></description></item><item><title>LED strip with a JavaFX UI</title><link>https://pi4j.com/examples/jbang/pixelblaze_output_expander_javafx/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/jbang/pixelblaze_output_expander_javafx/</guid><description>&lt;div class="notices tip" >&lt;p>GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-jbang/blob/main/PixelblazeOutputExpanderJavaFX.java" target="_blank" rel="noopener">github.com/Pi4J/pi4j-jbang &amp;gt; PixelblazeOutputExpanderJavaFX.java&lt;/a>&lt;/p>
-&lt;/div>
+&lt;p&gt;The &lt;a href="https://www.fhnw.ch" target="_blank" rel="noopener"&gt;FHNW University&lt;/a&gt; created a template project which is now part of the Pi4J example repositories.&lt;/p&gt;
+&lt;p&gt;The goal of this project is to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Provide a clear step-by-step how to prepare your Raspberry Pi&lt;/li&gt;
+&lt;li&gt;Provide multiple test and start applications&lt;/li&gt;
+&lt;li&gt;Explain the use of a MVC-model (Model-View-Controller) to clearly split data, actions and user interface&lt;/li&gt;
+&lt;li&gt;Explain the use of JUnit test&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="sources-and-info"&gt;Sources and Info&lt;/h2&gt;
+&lt;p&gt;Please check the README of the sources of the project for a full description of the setup process of the Raspberry Pi
+and to fully understand the example applications and the MVC-model. This page is only intended to give you a quick overview.&lt;/p&gt;</description></item><item><title>LED strip with a JavaFX UI</title><link>https://pi4j.com/examples/jbang/pixelblaze_output_expander_javafx/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/jbang/pixelblaze_output_expander_javafx/</guid><description>&lt;div class="notices tip" &gt;&lt;p&gt;GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-jbang/blob/main/PixelblazeOutputExpanderJavaFX.java" target="_blank" rel="noopener"&gt;github.com/Pi4J/pi4j-jbang &amp;gt; PixelblazeOutputExpanderJavaFX.java&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
 
-&lt;p>We already know how to control a LED strip, so let&amp;rsquo;s add a JavaFX User Interface to control the colors on each of the LEDs on the strip.&lt;/p>
-&lt;p>
+&lt;p&gt;We already know how to control a LED strip, so let&amp;rsquo;s add a JavaFX User Interface to control the colors on each of the LEDs on the strip.&lt;/p&gt;
+&lt;p&gt;
 
 
-&lt;div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+&lt;div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery"&gt;
 	 
 
-&lt;link rel="stylesheet" href="https://pi4j.com/css/hugo-easy-gallery.css" />
-&lt;div class="box fancy-figure caption-position-center caption-effect-fade" >
- &lt;figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
- &lt;div class="img" style="background-image: url('/assets/examples/jbang/pixelblaze/javafx-ui.png');">
- &lt;img itemprop="thumbnail" src="https://pi4j.com/assets/examples/jbang/pixelblaze/javafx-ui.png" alt="Demo of the JavaFX UI"/>
- &lt;/div>
- &lt;a href="https://pi4j.com/assets/examples/jbang/pixelblaze/javafx-ui.png" itemprop="contentUrl">&lt;/a>
- &lt;figcaption>
- &lt;p>Demo of the JavaFX UI&lt;/p>
- &lt;/figcaption>
- &lt;/figure>
-&lt;/div>
+&lt;link rel="stylesheet" href="https://pi4j.com/css/hugo-easy-gallery.css" /&gt;
+&lt;div class="box fancy-figure caption-position-center caption-effect-fade" &gt;
+ &lt;figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"&gt;
+ &lt;div class="img" style="background-image: url('/assets/examples/jbang/pixelblaze/javafx-ui.png');"&gt;
+ &lt;img itemprop="thumbnail" src="https://pi4j.com/assets/examples/jbang/pixelblaze/javafx-ui.png" alt="Demo of the JavaFX UI"/&gt;
+ &lt;/div&gt;
+ &lt;a href="https://pi4j.com/assets/examples/jbang/pixelblaze/javafx-ui.png" itemprop="contentUrl"&gt;&lt;/a&gt;
+ &lt;figcaption&gt;
+ &lt;p&gt;Demo of the JavaFX UI&lt;/p&gt;
+ &lt;/figcaption&gt;
+ &lt;/figure&gt;
+&lt;/div&gt;
 
 
-&lt;/div>
+&lt;/div&gt;
 
 
 
@@ -77,56 +77,56 @@ and to fully understand the example applications and the MVC-model. This page is
  
 
 
-&lt;script src="https://pi4j.com/js/load-photoswipe.js">&lt;/script>
+&lt;script src="https://pi4j.com/js/load-photoswipe.js"&gt;&lt;/script&gt;
 
 
-&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" />
-&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" />
-&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js" integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=" crossorigin="anonymous">&lt;/script>
-&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js" integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=" crossorigin="anonymous">&lt;/script>
+&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" /&gt;
+&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" /&gt;
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js" integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=" crossorigin="anonymous"&gt;&lt;/script&gt;
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js" integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=" crossorigin="anonymous"&gt;&lt;/script&gt;
 
 
-&lt;div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+&lt;div class="pswp" tabindex="-1" role="dialog" aria-hidden="true"&gt;
 
-&lt;div class="pswp__bg">&lt;/div>
+&lt;div class="pswp__bg"&gt;&lt;/div&gt;
 
-&lt;div class="pswp__scroll-wrap">
+&lt;div class="pswp__scroll-wrap"&gt;
  
- &lt;div class="pswp__container">
- &lt;div class="pswp__item">&lt;/div>
- &lt;div class="pswp__item">&lt;/div>
- &lt;div class="pswp__item">&lt;/div>
- &lt;/div>
+ &lt;div class="pswp__container"&gt;
+ &lt;div class="pswp__item"&gt;&lt;/div&gt;
+ &lt;div class="pswp__item"&gt;&lt;/div&gt;
+ &lt;div class="pswp__item"&gt;&lt;/div&gt;
+ &lt;/div&gt;
  
- &lt;div class="pswp__ui pswp__ui--hidden">
- &lt;div class="pswp__top-bar">
+ &lt;div class="pswp__ui pswp__ui--hidden"&gt;
+ &lt;div class="pswp__top-bar"&gt;
  
- &lt;div class="pswp__counter">&lt;/div>
- &lt;button class="pswp__button pswp__button--close" title="Close (Esc)">&lt;/button>
- &lt;button class="pswp__button pswp__button--share" title="Share">&lt;/button>
- &lt;button class="pswp__button pswp__button--fs" title="Toggle fullscreen">&lt;/button>
- &lt;button class="pswp__button pswp__button--zoom" title="Zoom in/out">&lt;/button>
+ &lt;div class="pswp__counter"&gt;&lt;/div&gt;
+ &lt;button class="pswp__button pswp__button--close" title="Close (Esc)"&gt;&lt;/button&gt;
+ &lt;button class="pswp__button pswp__button--share" title="Share"&gt;&lt;/button&gt;
+ &lt;button class="pswp__button pswp__button--fs" title="Toggle fullscreen"&gt;&lt;/button&gt;
+ &lt;button class="pswp__button pswp__button--zoom" title="Zoom in/out"&gt;&lt;/button&gt;
  
  
- &lt;div class="pswp__preloader">
- &lt;div class="pswp__preloader__icn">
- &lt;div class="pswp__preloader__cut">
- &lt;div class="pswp__preloader__donut">&lt;/div>
- &lt;/div>
- &lt;/div>
- &lt;/div>
- &lt;/div>
- &lt;div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
- &lt;div class="pswp__share-tooltip">&lt;/div>
- &lt;/div>
- &lt;button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
- &lt;/button>
- &lt;button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
- &lt;/button>
- &lt;div class="pswp__caption">
- &lt;div class="pswp__caption__center">&lt;/div>
- &lt;/div>
- &lt;/div>
- &lt;/div>
-&lt;/div>
-&lt;/p></description></item></channel></rss>
+ &lt;div class="pswp__preloader"&gt;
+ &lt;div class="pswp__preloader__icn"&gt;
+ &lt;div class="pswp__preloader__cut"&gt;
+ &lt;div class="pswp__preloader__donut"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"&gt;
+ &lt;div class="pswp__share-tooltip"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"&gt;
+ &lt;/button&gt;
+ &lt;button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"&gt;
+ &lt;/button&gt;
+ &lt;div class="pswp__caption"&gt;
+ &lt;div class="pswp__caption__center"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+&lt;/p&gt;</description></item></channel></rss>

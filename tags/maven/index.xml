@@ -1,79 +1,79 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Maven on Pi4J</title><link>https://pi4j.com/tags/maven/</link><description>Recent content in Maven on Pi4J</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 15 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://pi4j.com/tags/maven/index.xml" rel="self" type="application/rss+xml"/><item><title>Install Java and Tools</title><link>https://pi4j.com/prepare/install-java/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/prepare/install-java/</guid><description>&lt;p>Our Raspberry Pi has started for the first time and we are now ready to add some Java to it!&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Maven on Pi4J</title><link>https://pi4j.com/tags/maven/</link><description>Recent content in Maven on Pi4J</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 15 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://pi4j.com/tags/maven/index.xml" rel="self" type="application/rss+xml"/><item><title>Install Java and Tools</title><link>https://pi4j.com/prepare/install-java/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/prepare/install-java/</guid><description>&lt;p&gt;Our Raspberry Pi has started for the first time and we are now ready to add some Java to it!&lt;/p&gt;
 
-&lt;div class="notices tip" >&lt;p>As described on the previous page &amp;ldquo;The First Boot&amp;rdquo;, a script can be executed that will do all this at once: &lt;code>curl -sL https://raw.githubusercontent.com/Pi4J/pi4j-os/main/script/prepare-for-java.sh | bash&lt;/code>.&lt;/p>
-&lt;/div>
+&lt;div class="notices tip" &gt;&lt;p&gt;As described on the previous page &amp;ldquo;The First Boot&amp;rdquo;, a script can be executed that will do all this at once: &lt;code&gt;curl -sL https://raw.githubusercontent.com/Pi4J/pi4j-os/main/script/prepare-for-java.sh | bash&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
 
-&lt;h2 id="add-missing-dependencies">Add Missing Dependencies&lt;/h2>
-&lt;p>Let&amp;rsquo;s start with some helper tools that will be useful later.&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>$ sudo apt install -y i2c-tools vim git java-common libxi6 libxrender1 libxtst6
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
-&lt;li>&lt;code>i2c-tools&lt;/code>: Tool to help you with I2C commands.&lt;/li>
-&lt;li>&lt;code>vim&lt;/code>: Text editor like &lt;code>nano&lt;/code>, preferred by some, hated by others ;-)&lt;/li>
-&lt;li>&lt;code>git&lt;/code>: Tool to interact with a Git repository, like GitHub.&lt;/li>
-&lt;li>&lt;code>java-common libxi6 libxrender1 libxtst6&lt;/code>: Dependencies of the JDK Debian package.&lt;/li>
-&lt;/ul>
-&lt;h2 id="install-java">Install Java&lt;/h2>
-&lt;p>There are many ways you can install Java. The easiest way to make Java available for both normal use and as root user (&lt;code>sudo&lt;/code>), is the following approach which downloads one of the many distributions that are available.&lt;/p></description></item><item><title>Developing on a remote PC</title><link>https://pi4j.com/getting-started/developing-on-a-remote-pc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/getting-started/developing-on-a-remote-pc/</guid><description>&lt;div class="notices tip" >&lt;p>GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-maven-archetype" target="_blank" rel="noopener">https://github.com/Pi4J/pi4j-maven-archetype&lt;/a>&lt;/p>
-&lt;/div>
+&lt;h2 id="add-missing-dependencies"&gt;Add Missing Dependencies&lt;/h2&gt;
+&lt;p&gt;Let&amp;rsquo;s start with some helper tools that will be useful later.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;$ sudo apt install -y i2c-tools vim git java-common libxi6 libxrender1 libxtst6
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;i2c-tools&lt;/code&gt;: Tool to help you with I2C commands.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;vim&lt;/code&gt;: Text editor like &lt;code&gt;nano&lt;/code&gt;, preferred by some, hated by others ;-)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git&lt;/code&gt;: Tool to interact with a Git repository, like GitHub.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;java-common libxi6 libxrender1 libxtst6&lt;/code&gt;: Dependencies of the JDK Debian package.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="install-java"&gt;Install Java&lt;/h2&gt;
+&lt;p&gt;There are many ways you can install Java. The easiest way to make Java available for both normal use and as root user (&lt;code&gt;sudo&lt;/code&gt;), is the following approach which downloads one of the many distributions that are available.&lt;/p&gt;</description></item><item><title>Developing on a remote PC</title><link>https://pi4j.com/getting-started/developing-on-a-remote-pc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/getting-started/developing-on-a-remote-pc/</guid><description>&lt;div class="notices tip" &gt;&lt;p&gt;GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-maven-archetype" target="_blank" rel="noopener"&gt;https://github.com/Pi4J/pi4j-maven-archetype&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
 
-&lt;h2 id="developing-java-programs-using-a-remote-pc-workstation">Developing Java Programs Using a Remote PC Workstation&lt;/h2>
-&lt;p>Writing your Java program, compiling and running it directly on the Raspberry Pi board
+&lt;h2 id="developing-java-programs-using-a-remote-pc-workstation"&gt;Developing Java Programs Using a Remote PC Workstation&lt;/h2&gt;
+&lt;p&gt;Writing your Java program, compiling and running it directly on the Raspberry Pi board
 as shown in the previous chapter is perfectly fine, of course,
 but there is an alternative way to arrange your developing laboratory, using a normal
-desktop computer as Remote Developing Workstation (RDW).&lt;/p>
-&lt;p>This &lt;a href="https://github.com/Pi4J/pi4j-maven-archetype" title="raspimaven-archetype" target="_blank" rel="noopener">Maven Archetype&lt;/a> will give you
+desktop computer as Remote Developing Workstation (RDW).&lt;/p&gt;
+&lt;p&gt;This &lt;a href="https://github.com/Pi4J/pi4j-maven-archetype" title="raspimaven-archetype" target="_blank" rel="noopener"&gt;Maven Archetype&lt;/a&gt; will give you
 a tool to generate Pi4J V2+ skeleton Java projects. You can use it for your next Pi4j project and you will be able
 to develop your program on the remote workstation (RDW), compile them, transmit the executable
-code on the target Pi board and run it. You can also start a remote debugging session.&lt;/p></description></item><item><title>Minimal example application</title><link>https://pi4j.com/getting-started/minimal-example-application/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/getting-started/minimal-example-application/</guid><description>&lt;div class="notices tip" >&lt;p>GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-example-minimal" target="_blank" rel="noopener">https://github.com/Pi4J/pi4j-example-minimal&lt;/a>&lt;/p>
-&lt;/div>
+code on the target Pi board and run it. You can also start a remote debugging session.&lt;/p&gt;</description></item><item><title>Minimal example application</title><link>https://pi4j.com/getting-started/minimal-example-application/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/getting-started/minimal-example-application/</guid><description>&lt;div class="notices tip" &gt;&lt;p&gt;GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-example-minimal" target="_blank" rel="noopener"&gt;https://github.com/Pi4J/pi4j-example-minimal&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
 
-&lt;p>In the &lt;a href="https://github.com/Pi4J/pi4j-example-minimal" target="_blank" rel="noopener">&amp;ldquo;pi4j-example-minimal&amp;rdquo; GitHub project&lt;/a> you can
+&lt;p&gt;In the &lt;a href="https://github.com/Pi4J/pi4j-example-minimal" target="_blank" rel="noopener"&gt;&amp;ldquo;pi4j-example-minimal&amp;rdquo; GitHub project&lt;/a&gt; you can
 find a project which contains the minimal code to control a digital input and output with Pi4J. The project is further
 described on this page. The application will toggle an LED on/off and each time you press the button, the toggling
-speed increases. When you have pushed the button 5 times, the application stops.&lt;/p>
+speed increases. When you have pushed the button 5 times, the application stops.&lt;/p&gt;
 
  &lt;div
- style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+ style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
  &lt;iframe
  src="https://player.vimeo.com/video/525570174?dnt=0"
- style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allow="fullscreen">
- &lt;/iframe>
- &lt;/div>
+ style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allow="fullscreen"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;
 
-&lt;h2 id="wiring">Wiring&lt;/h2>
-&lt;p>This minimal example application uses this wiring:&lt;/p></description></item><item><title>User interface with JavaFX</title><link>https://pi4j.com/getting-started/user-interface-with-javafx/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/getting-started/user-interface-with-javafx/</guid><description>&lt;div class="notices tip" >&lt;p>GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-example-javafx" target="_blank" rel="noopener">https://github.com/Pi4J/pi4j-example-javafx&lt;/a>&lt;/p>
-&lt;/div>
+&lt;h2 id="wiring"&gt;Wiring&lt;/h2&gt;
+&lt;p&gt;This minimal example application uses this wiring:&lt;/p&gt;</description></item><item><title>User interface with JavaFX</title><link>https://pi4j.com/getting-started/user-interface-with-javafx/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/getting-started/user-interface-with-javafx/</guid><description>&lt;div class="notices tip" &gt;&lt;p&gt;GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-example-javafx" target="_blank" rel="noopener"&gt;https://github.com/Pi4J/pi4j-example-javafx&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
 
-&lt;p>JavaFX is a framework to create user interfaces for desktop (Windows, Mac, Linux) and mobile phones. JavaFX is
-an opensource project which is documented on &lt;a href="https://openjfx.io/" target="_blank" rel="noopener">openjfx.io&lt;/a> and the sources are available
-in &lt;a href="https://github.com/openjdk/jfx" target="_blank" rel="noopener">this GitHub project&lt;/a>.&lt;/p>
-&lt;p>The main goal of Java has always been to be able to create applications which are &lt;strong>&amp;ldquo;write once, run everywhere&amp;rdquo;&lt;/strong>.
-JavaFX promises the same for Graphical User Interface applications.&lt;/p>
-&lt;p>&lt;a href="https://gluonhq.com/" target="_blank" rel="noopener">Gluon&lt;/a> is the main maintainer of the OpenJFX project and offers commercial support to
-companies who want to use JavaFX in critical applications. They also provide &lt;a href="https://gluonhq.com/products/" target="_blank" rel="noopener">tools to build and compile Java
-code to native applications for all platforms&lt;/a>.&lt;/p></description></item><item><title>JavaFX GUI and MVC template</title><link>https://pi4j.com/getting-started/javafx-mvc-template/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/getting-started/javafx-mvc-template/</guid><description>&lt;div class="notices tip" >&lt;p>GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-template-javafx" target="_blank" rel="noopener">https://github.com/Pi4J/pi4j-template-javafx&lt;/a>&lt;/p>
-&lt;/div>
+&lt;p&gt;JavaFX is a framework to create user interfaces for desktop (Windows, Mac, Linux) and mobile phones. JavaFX is
+an opensource project which is documented on &lt;a href="https://openjfx.io/" target="_blank" rel="noopener"&gt;openjfx.io&lt;/a&gt; and the sources are available
+in &lt;a href="https://github.com/openjdk/jfx" target="_blank" rel="noopener"&gt;this GitHub project&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The main goal of Java has always been to be able to create applications which are &lt;strong&gt;&amp;ldquo;write once, run everywhere&amp;rdquo;&lt;/strong&gt;.
+JavaFX promises the same for Graphical User Interface applications.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://gluonhq.com/" target="_blank" rel="noopener"&gt;Gluon&lt;/a&gt; is the main maintainer of the OpenJFX project and offers commercial support to
+companies who want to use JavaFX in critical applications. They also provide &lt;a href="https://gluonhq.com/products/" target="_blank" rel="noopener"&gt;tools to build and compile Java
+code to native applications for all platforms&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>JavaFX GUI and MVC template</title><link>https://pi4j.com/getting-started/javafx-mvc-template/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/getting-started/javafx-mvc-template/</guid><description>&lt;div class="notices tip" &gt;&lt;p&gt;GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-template-javafx" target="_blank" rel="noopener"&gt;https://github.com/Pi4J/pi4j-template-javafx&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
 
-&lt;p>The &lt;a href="https://www.fhnw.ch" target="_blank" rel="noopener">FHNW University&lt;/a> created a template project which is now part of the Pi4J example repositories.&lt;/p>
-&lt;p>The goal of this project is to:&lt;/p>
-&lt;ul>
-&lt;li>Provide a clear step-by-step how to prepare your Raspberry Pi&lt;/li>
-&lt;li>Provide multiple test and start applications&lt;/li>
-&lt;li>Explain the use of a MVC-model (Model-View-Controller) to clearly split data, actions and user interface&lt;/li>
-&lt;li>Explain the use of JUnit test&lt;/li>
-&lt;/ul>
-&lt;h2 id="sources-and-info">Sources and Info&lt;/h2>
-&lt;p>Please check the README of the sources of the project for a full description of the setup process of the Raspberry Pi
-and to fully understand the example applications and the MVC-model. This page is only intended to give you a quick overview.&lt;/p></description></item><item><title>Build Java modules with Maven</title><link>https://pi4j.com/documentation/building/modules-maven/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/building/modules-maven/</guid><description>&lt;div class="notices tip" >&lt;p>GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-example-minimal" target="_blank" rel="noopener">https://github.com/Pi4J/pi4j-example-minimal&lt;/a>&lt;/p>
-&lt;/div>
+&lt;p&gt;The &lt;a href="https://www.fhnw.ch" target="_blank" rel="noopener"&gt;FHNW University&lt;/a&gt; created a template project which is now part of the Pi4J example repositories.&lt;/p&gt;
+&lt;p&gt;The goal of this project is to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Provide a clear step-by-step how to prepare your Raspberry Pi&lt;/li&gt;
+&lt;li&gt;Provide multiple test and start applications&lt;/li&gt;
+&lt;li&gt;Explain the use of a MVC-model (Model-View-Controller) to clearly split data, actions and user interface&lt;/li&gt;
+&lt;li&gt;Explain the use of JUnit test&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="sources-and-info"&gt;Sources and Info&lt;/h2&gt;
+&lt;p&gt;Please check the README of the sources of the project for a full description of the setup process of the Raspberry Pi
+and to fully understand the example applications and the MVC-model. This page is only intended to give you a quick overview.&lt;/p&gt;</description></item><item><title>Build Java modules with Maven</title><link>https://pi4j.com/documentation/building/modules-maven/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/building/modules-maven/</guid><description>&lt;div class="notices tip" &gt;&lt;p&gt;GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-example-minimal" target="_blank" rel="noopener"&gt;https://github.com/Pi4J/pi4j-example-minimal&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
 
-&lt;p>Because the Pi4J V2+ project follows the modular approach of Java, the functionality of the framework has been split into
-different modules, each with their own responsibility.&lt;/p>
-&lt;p>The easiest way to start a new project, is to copy one of the example projects which include a full Maven pom.xml-file
-with all the required steps and configurations to build the project with all its modules into the &lt;code>target/distribution&lt;/code>
-directory.&lt;/p></description></item><item><title>Pi4J presentation for Miami JUG</title><link>https://pi4j.com/blog/2025/20250115-miami-jug/</link><pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate><guid>https://pi4j.com/blog/2025/20250115-miami-jug/</guid><description>&lt;p>2025-01-15 by Frank Delporte&lt;/p>
-&lt;p>Frank Delporte was invited by the Miami JVM Group to present his journey into Java development on the Raspberry Pi. This video contains the part of the presentation that introduces Pi4J, some of its history, and its current state. We also look at a basic and more extended example, with a demo of a Vaadin and Spring Boot application controlling several electronic components.&lt;/p>
-&lt;p>This is the 30&amp;rsquo; version about Pi4J:&lt;/p></description></item><item><title>Pi4J in Floss Weekly</title><link>https://pi4j.com/blog/2024/20241114-floss-weekly-podcast/</link><pubDate>Thu, 14 Nov 2024 00:00:00 +0000</pubDate><guid>https://pi4j.com/blog/2024/20241114-floss-weekly-podcast/</guid><description>&lt;p>2024-11-14 by Frank Delporte&lt;/p>
-&lt;p>Frank Delporte was a guest on the Floss Weekly podcast. He talked with Jonathan Bennett and David Ruggles about the Pi4J Project, the friendly Java libraries for the Raspberry Pi that expose GPIO, SPI, I2C, and other IO interfaces. Why would anyone want to use Java for the Pi? And what’s changed since the project started? You can find it in your favorite podcast app or watch the video below.&lt;/p></description></item><item><title>Maven Downloads</title><link>https://pi4j.com/blog/2024/20241104-download-stats/</link><pubDate>Mon, 04 Nov 2024 00:00:00 +0000</pubDate><guid>https://pi4j.com/blog/2024/20241104-download-stats/</guid><description>&lt;p>2024-11-04 by Frank Delporte&lt;/p>
-&lt;p>As an open-source project it&amp;rsquo;s very difficult to understand how much it&amp;rsquo;s used &amp;ldquo;in the wild&amp;rdquo;. The only stats we have, are the number of downloads from the Maven repository. So end of October I made a few screenshots to share here with the statistics including September 2024.&lt;/p>
-&lt;p>These are the numbers for all Pi4J libraries combined. Is this much? I have no clue as I can&amp;rsquo;t compare it with a similar project. ;-)&lt;/p></description></item></channel></rss>
+&lt;p&gt;Because the Pi4J V2+ project follows the modular approach of Java, the functionality of the framework has been split into
+different modules, each with their own responsibility.&lt;/p&gt;
+&lt;p&gt;The easiest way to start a new project, is to copy one of the example projects which include a full Maven pom.xml-file
+with all the required steps and configurations to build the project with all its modules into the &lt;code&gt;target/distribution&lt;/code&gt;
+directory.&lt;/p&gt;</description></item><item><title>Pi4J presentation for Miami JUG</title><link>https://pi4j.com/blog/2025/20250115-miami-jug/</link><pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate><guid>https://pi4j.com/blog/2025/20250115-miami-jug/</guid><description>&lt;p&gt;2025-01-15 by Frank Delporte&lt;/p&gt;
+&lt;p&gt;Frank Delporte was invited by the Miami JVM Group to present his journey into Java development on the Raspberry Pi. This video contains the part of the presentation that introduces Pi4J, some of its history, and its current state. We also look at a basic and more extended example, with a demo of a Vaadin and Spring Boot application controlling several electronic components.&lt;/p&gt;
+&lt;p&gt;This is the 30&amp;rsquo; version about Pi4J:&lt;/p&gt;</description></item><item><title>Pi4J in Floss Weekly</title><link>https://pi4j.com/blog/2024/20241114-floss-weekly-podcast/</link><pubDate>Thu, 14 Nov 2024 00:00:00 +0000</pubDate><guid>https://pi4j.com/blog/2024/20241114-floss-weekly-podcast/</guid><description>&lt;p&gt;2024-11-14 by Frank Delporte&lt;/p&gt;
+&lt;p&gt;Frank Delporte was a guest on the Floss Weekly podcast. He talked with Jonathan Bennett and David Ruggles about the Pi4J Project, the friendly Java libraries for the Raspberry Pi that expose GPIO, SPI, I2C, and other IO interfaces. Why would anyone want to use Java for the Pi? And what’s changed since the project started? You can find it in your favorite podcast app or watch the video below.&lt;/p&gt;</description></item><item><title>Maven Downloads</title><link>https://pi4j.com/blog/2024/20241104-download-stats/</link><pubDate>Mon, 04 Nov 2024 00:00:00 +0000</pubDate><guid>https://pi4j.com/blog/2024/20241104-download-stats/</guid><description>&lt;p&gt;2024-11-04 by Frank Delporte&lt;/p&gt;
+&lt;p&gt;As an open-source project it&amp;rsquo;s very difficult to understand how much it&amp;rsquo;s used &amp;ldquo;in the wild&amp;rdquo;. The only stats we have, are the number of downloads from the Maven repository. So end of October I made a few screenshots to share here with the statistics including September 2024.&lt;/p&gt;
+&lt;p&gt;These are the numbers for all Pi4J libraries combined. Is this much? I have no clue as I can&amp;rsquo;t compare it with a similar project. ;-)&lt;/p&gt;</description></item></channel></rss>

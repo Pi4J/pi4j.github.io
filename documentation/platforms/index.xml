@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Choosing a Platform on Pi4J</title><link>https://pi4j.com/documentation/platforms/</link><description>Recent content in Choosing a Platform on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://pi4j.com/documentation/platforms/index.xml" rel="self" type="application/rss+xml"/><item><title>Raspberry Pi</title><link>https://pi4j.com/documentation/platforms/raspberry-pi/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/platforms/raspberry-pi/</guid><description>&lt;p>Pi4J was designed for the Raspberry Pi, so this is the only supported platform (at this moment), although the architecture of the project allows other platforms to be added.&lt;/p>
-&lt;p>Add this dependency to include the Raspberry Pi Platform Plugin.&lt;/p>
-&lt;pre tabindex="0">&lt;code> &amp;lt;dependency&amp;gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Choosing a Platform on Pi4J</title><link>https://pi4j.com/documentation/platforms/</link><description>Recent content in Choosing a Platform on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://pi4j.com/documentation/platforms/index.xml" rel="self" type="application/rss+xml"/><item><title>Raspberry Pi</title><link>https://pi4j.com/documentation/platforms/raspberry-pi/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/platforms/raspberry-pi/</guid><description>&lt;p&gt;Pi4J was designed for the Raspberry Pi, so this is the only supported platform (at this moment), although the architecture of the project allows other platforms to be added.&lt;/p&gt;
+&lt;p&gt;Add this dependency to include the Raspberry Pi Platform Plugin.&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt; &amp;lt;dependency&amp;gt;
  &amp;lt;groupId&amp;gt;com.pi4j&amp;lt;/groupId&amp;gt;
  &amp;lt;artifactId&amp;gt;pi4j-plugin-raspberrypi&amp;lt;/artifactId&amp;gt;
  &amp;lt;version&amp;gt;${pi4j.version}&amp;lt;/version&amp;gt;
  &amp;lt;/dependency&amp;gt;
-&lt;/code>&lt;/pre></description></item></channel></rss>
+&lt;/code&gt;&lt;/pre&gt;</description></item></channel></rss>
