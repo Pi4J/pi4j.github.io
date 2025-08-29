@@ -7,7 +7,7 @@ tags: ["Video"]
 
 **20250828 - Live Stream with Catherine Edelveis (CyberJAR) and Frank Delporte**
 
-{{< youtube axbx2kTuJf0 >}}
+{{< youtube Rmmwm6GZ98I >}}
 
 Java on a tiny board? JavaFX on touchscreens? In this session, Catherine is joined by Frank Delporte, Java Champion and author of 'Getting started with Java on Raspberry Pi,' to explore how JavaFX fits into modern IoT/embedded workflows on Raspberry Pi.
 
