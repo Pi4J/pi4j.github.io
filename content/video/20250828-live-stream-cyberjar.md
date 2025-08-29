@@ -55,6 +55,14 @@ Java on Raspberry Pi
     * https://webtechie.be/post/2024-07-22-javafx-nodes-versus-canvas/
     * https://github.com/Pi4J/pi4j-jbang/blob/main/HelloJavaFXWorld.java
 
+JavaFX
+
+* Download directly from Gluon: https://gluonhq.com/products/javafx/
+* Scene Builder: https://gluonhq.com/products/scene-builder/
+* Trinity by Sean Phillips: https://www.youtube.com/playlist?list=PLrMR7Y6k6mkDVfYpqrqvaxoti4E2tJXhW
+* JavaFX In Action interviews: https://webtechie.be/tags/jfx-in-action/
+* JavaFX 3D history: https://webtechie.be/post/2020-10-27-javafx-3d-on-raspberrypi/
+
 Drum screen
 * https://webtechie.be/post/2020-03-30-drumbooth-controller-with-java-javafx-raspberrypi-arduino/
 
