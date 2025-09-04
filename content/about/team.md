@@ -19,7 +19,7 @@ Read more about [Robert Savage in this interview on Foojay.io](https://foojay.io
 
 <img src="/assets/about/team/frank-delporte-xs.jpg" style="float: left; margin-right: 15px; margin: 0 15px 10px 0; max-height: 150px;">
 
-**Project organization, Documenter, Developer**
+**Project Organization, Documenter, Developer**
 
 Java and Raspberry Pi-enthousiast, [blogger on webtechie.be](https://webtechie.be/) and author of the book ["Getting Started with Java on Raspberry Pi"](https://webtechie.be/books/). Technical writer at [Azul](https://www.azul.com/). Lead coach [CoderDojo](https://www.coderdojobelgium.be) in Ieper, Belgium. Software developer with more than 25 years of experience in video, multimedia, technical project management, digital signage and (web) programming. I'm a strong believer in the power and fun of Java on the Raspberry Pi. My goal is to make it as easy as possible to get started for new and experienced Java developers who want to start there first hardware experiment. That was the reason I wrote a book about this subject and share my experiments on my blog and GitHub. Pi4J V2 brings a lot of improvements to an already great project, and - just one example - the use of the BCM pin numbers will make it even a lot easier to use the GPIO's. That's why I join this great team to assist in delivering this V2 and extend it further so we can bring even more Java to the Raspberry Pi.        
 
@@ -61,7 +61,7 @@ Read more about [Tom Aarts in this interview](https://pi4j.com/blog/2024/2024042
 
 <img src="/assets/about/team/muhammad.jpg" style="float: left; margin: 0 15px 10px 0; max-width: 125px; max-height: 150px;">
 
-**Developer, Kotlin DSL**
+**Developer, Created the Kotlin DSL**
 
 I'm a Software Engineer at [Instabug](https://www.instabug.com/), Writer & Blogger at [The Upside-Down Trees](https://blog.mhashim6.me) & [The Unhappy Folk](https://blog.unhappyfolk.org). I go by *"Timeless, Placeless"* As it better reflects the crafts I do; my art and interests; and my life. I've joined the team to bring Kotlin to Pi4J; The project that brought the JVM to the Raspberry Pi.
 
