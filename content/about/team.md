@@ -76,3 +76,11 @@ Muhammad has written about his [Pi4J Kotlin implementations on Foojay.io](https:
 Alexander, student worker at Max Planck Institute for Informatics, [personal website](https://alexander.liggesmeyer.net/), created the GpioD Provider for release 2.5.0 to make Pi4J compatible with the Raspberry Pi 5. He also loves drinking cocktails with the [CocktailPi](https://pi4j.com/featured-projects/cocktail-maker-by-alex9849/) as a result. 
 
 Read more about [Alexander Liggesmeyer in this interview on Pi4J.com](https://pi4j.com/blog/2024/20240318_interview_alexander_liggesmeyer/).
+
+<h3 style="clear: both;"><a href="https://www.linkedin.com/in/nick-gritsenko/" target="_blank">Nick Gritsenko (aka DigitalSmile)</a></h3>
+
+<img src="/assets/about/team/nick.jpg" style="float: left; margin: 0 15px 10px 0; max-width: 125px; max-height: 150px;">
+
+**Developer, Created the FFM API-Based Plugin for Pi4J V4**
+
+Started my career as a novice developer in corporate universe, I was passionate about technologies and how they can help people around the world. Then tried myself out in a startup field as a fractional technical leader and CTO where I realized that small things can really change how people live. Right now I am helping Yandex build and run software in data centers to make technologies even better and more accessible for everyone. I really like space exploration, heavy music and build small things with embedded computers and SoC.
