@@ -47,7 +47,7 @@ Together with his students, Dieter created the [CrowPi example implementations](
 
 Read more about [Dieter Holz in this interview on Foojay.io](https://foojay.io/today/java-in-education-combining-java-with-raspberry-pi-and-the-pi4j-library/).
 
-<h3 style="clear: both;">Thomas Aarts (aka Tom)</h3>
+<h3 style="clear: both;"><a href="https://www.linkedin.com/in/tom-aarts-70b12488/" target="_blank">Thomas Aarts (aka Tom)</a></h3>
 
 <img src="/assets/about/team/tom.jpg" style="float: left; margin: 0 15px 10px 0; max-width: 125px; max-height: 150px;">
 
