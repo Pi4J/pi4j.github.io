@@ -27,13 +27,12 @@ $ sudo apt install -y i2c-tools vim git java-common libxi6 libxrender1 libxtst6
 
 There are many ways you can install Java. The easiest way to make Java available for both normal use and as root user (`sudo`), is the following approach which downloads one of the many distributions that are available. 
 
-With the following commands you can get Java 21 installed. Starting from Pi4J V3, this is the minimal required version. If you are using a previous version of Pi4J, you can still use Java 11.
+With the following commands you can get Java 25 installed. Starting from Pi4J V4, this is the minimal required version. For Pi4J V3, the minimal Java version is 21. If you are using a previous version of Pi4J, you can still use Java 11.
 
 ```shell
-$ cd ~/Downloads
-$ wget https://cdn.azul.com/zulu/bin/zulu21.38.21-ca-jdk21.0.5-linux_arm64.deb
-$ sudo dpkg -i zulu21.38.21-ca-jdk21.0.5-linux_arm64.deb
-$ rm zulu21.38.21-ca-jdk21.0.5-linux_arm64.deb
+$ wget https://cdn.azul.com/zulu/bin/zulu25.28.85-ca-fx-jdk25.0.0-linux_arm64.deb
+$ sudo dpkg -i zulu25.28.85-ca-fx-jdk25.0.0-linux_arm64.deb
+$ rm zulu25.28.85-ca-fx-jdk25.0.0-linux_arm64.deb
 ```
 
 {{% notice warning %}}
@@ -46,17 +45,17 @@ Now you should be able to check the Java version with the following command:
 
 ```shell
 $ java -version
-openjdk version "21.0.5" 2024-10-15 LTS
-OpenJDK Runtime Environment Zulu21.38+21-CA (build 21.0.5+11-LTS)
-OpenJDK 64-Bit Server VM Zulu21.38+21-CA (build 21.0.5+11-LTS, mixed mode, sharing)
+openjdk version "25" 2025-09-16 LTS
+OpenJDK Runtime Environment Zulu25.28+85-CA (build 25+36-LTS)
+OpenJDK 64-Bit Server VM Zulu25.28+85-CA (build 25+36-LTS, mixed mode, sharing)
 ```
 
 ## Install JavaFX
 
 If you want to use JavaFX on your Raspberry Pi, you have a few choices:
 
-* Install a JDK with JavaFX included from a download, e.g. [Azul Zulu](https://www.azul.com/downloads/?version=java-21-lts&os=debian&package=jdk-fx#zulu).
-* Install a JDK with JavaFX included with SDKMAN, e.g. with `sdk install java 21.0.5.fx-zulu`.
+* Install a JDK with JavaFX included from a download, e.g. [Azul Zulu](https://www.azul.com/downloads/?version=java-25&os=debian&package=jdk-fx#zulu).
+* Install a JDK with JavaFX included with SDKMAN, e.g. with `sdk install java 225.fx-zulu`.
 * Use a script to download the JavaFX runtime from Gluon, e.g. from the [GitHub project pi4j-example-javafx](https://github.com/Pi4J/pi4j-example-javafx/tree/main) > `download_openjfx.bat` or `download_openjfx.sh` script.
 
 ## Install SDKMAN, Maven, and JBang
@@ -79,17 +78,17 @@ sdk update
 # Checked the installed versions
 $ sdk version
 SDKMAN!
-script: 5.18.2
-native: 0.4.6
+script: 5.20.0
+native: 0.7.4 (linux aarch64)
 
 $ mvn -v
-Apache Maven 3.9.9 (8e8579a9e76f7d015ee5ec7bfcdc97d260186937)
-Maven home: /home/pi4j/.sdkman/candidates/maven/current
-Java version: 21.0.5, vendor: Azul Systems, Inc., runtime: /usr/lib/jvm/zulu-21-arm64
+Apache Maven 3.9.10 (5f519b97e944483d878815739f519b2eade0a91d)
+Maven home: /home/frank/.sdkman/candidates/maven/current
+Java version: 25, vendor: Azul Systems, Inc., runtime: /usr/lib/jvm/zulu-fx-25-arm64
 Default locale: en_GB, platform encoding: UTF-8
-OS name: "linux", version: "6.6.51+rpt-rpi-v8", arch: "aarch64", family: "unix"
+OS name: "linux", version: "6.12.34+rpt-rpi-2712", arch: "aarch64", family: "unix"
 
 $ jbang --version
-0.119.0
+0.131.0
 ```
 
