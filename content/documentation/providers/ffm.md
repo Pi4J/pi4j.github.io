@@ -8,9 +8,12 @@ The FFM plugin provider was added in Pi4J 4.0.0 based on the Foreign Function & 
 
 Providers in the GpioD plugin:
 
-* gpiod-digital-input
-* gpiod-digital-output
-* ...
+* ffm-digital-input
+* ffm-digital-output
+* ffm-i2c
+* ffm-pwm
+* ffm-serial
+* ffm-spi
 
 ## Supported Operating System Versions
 
