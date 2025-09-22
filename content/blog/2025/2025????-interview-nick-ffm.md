@@ -1,7 +1,7 @@
 ---
 title: "Interview Nick Gritsenko"
 date: 2025-01-15
-tags: ["Maven"]
+tags: ["FFM API"]
 ---
 
 2025-09-17 by Frank Delporte
