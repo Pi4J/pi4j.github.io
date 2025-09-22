@@ -55,7 +55,7 @@ OpenJDK 64-Bit Server VM Zulu25.28+85-CA (build 25+36-LTS, mixed mode, sharing)
 If you want to use JavaFX on your Raspberry Pi, you have a few choices:
 
 * Install a JDK with JavaFX included from a download, e.g. [Azul Zulu](https://www.azul.com/downloads/?version=java-25&os=debian&package=jdk-fx#zulu).
-* Install a JDK with JavaFX included with SDKMAN, e.g. with `sdk install java 225.fx-zulu`.
+* Install a JDK with JavaFX included with SDKMAN, e.g. with `sdk install java 25.fx-zulu`.
 * Use a script to download the JavaFX runtime from Gluon, e.g. from the [GitHub project pi4j-example-javafx](https://github.com/Pi4J/pi4j-example-javafx/tree/main) > `download_openjfx.bat` or `download_openjfx.sh` script.
 
 ## Install SDKMAN, Maven, and JBang
