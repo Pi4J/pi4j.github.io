@@ -11,7 +11,7 @@ Requires Java 21, see [What's New in V3](/about/info-v3/) for more info.
 
 ### 2025-09-23 - V3.0.3
 
-Work is ongoing to extend Pi4J with a plugin based on FFM API (Foreign Function & Memory API). To make this possible, some changes have been made to the core code in preparation for this new plugin. 
+Work is ongoing to extend Pi4J with a plugin based on the FFM API (Foreign Function & Memory API). To make this possible, some changes have been made to the core code in preparation for this new plugin. And of course more improvements and bug fixes... 
 
 * Board models: Added CM5 Lite board codes.
 * Replace Nexus Staging plugin with Central Publishing plugin.
