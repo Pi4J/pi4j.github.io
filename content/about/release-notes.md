@@ -9,6 +9,31 @@ All releases of Pi4J V2+ are listed on [github.com/Pi4J/pi4j/releases](https://g
 
 Requires Java 21, see [What's New in V3](/about/info-v3/) for more info.
 
+### 2025-09-23 - V3.0.3
+
+Work is ongoing to extend Pi4J with a plugin based on the FFM API (Foreign Function & Memory API). To make this possible, some changes have been made to the core code in preparation for this new plugin. And of course more improvements and bug fixes... 
+
+* Board models: Added CM5 Lite board codes.
+* Replace Nexus Staging plugin with Central Publishing plugin.
+* Refactored `Registry` to use `IOType` for managing addresses, ensuring better segregation of address spaces between IO types. Updated related methods and internal data structures accordingly.
+* Introduced the ability to shutdown and unregister IO instances using the instance itself, complementing the existing ID-based method. Updated related methods, tests, and documentation to reflect the new functionality.
+* Ensure proper removal of IO instance during shutdown in DefaultRuntimeRegistry.
+* PWM IO Change Float to Integer and remove float related conversions.
+* Gate digital output event creation on listener / binding presence.
+* Move PWM chip detection to BoardInfo to make it usable for all plugins.
+* Unit test improvements.
+* LinuxFS plugin:
+  * I2C: Improvements in `registerRead`.
+  * SPI: SPI write now supports larger buffers by creating multi ioctl spi writes.
+  * PWM: When the RP1 chip is found, PWM provider will use the RP1 architected address of PWM0 to determine the correct pwmChipx to use. This change will effect Raspberry Pi 5 and Compute Module 5 using updated kernel.
+* GpioD plugin:
+  * Introduced a volatile `running` flag to properly manage the lifecycle of the input listener thread. Enhanced shutdown logic to ensure threads are safely and consistently terminated. Fix for [Issue #478](https://github.com/Pi4J/pi4j/issues/478).
+  * Make GpioLine Closeable.
+
+Thanks to contributions by [@IAmNickNack](https://github.com/IAmNickNack), [@stefanhaustein](https://github.com/stefanhaustein), [@taartspi](https://github.com/taartspi), [@eitch](https://github.com/eitch), [@fdelporte](https://github.com/fdelporte).
+
+All changes: https://github.com/Pi4J/pi4j/compare/3.0.2...3.0.3
+
 ### 2025-05-20 - V3.0.2
 
 * Board model can now be forced to allow the use of Pi4J on other/unrecognized boards. See [Overriding the Detected Board](/documentation/board-info/#overriding-the-detected-board) for more info.
