@@ -30,7 +30,7 @@ Work is ongoing to extend Pi4J with a plugin based on FFM API (Foreign Function 
   * Introduced a volatile `running` flag to properly manage the lifecycle of the input listener thread. Enhanced shutdown logic to ensure threads are safely and consistently terminated. Fix for [Issue #478](https://github.com/Pi4J/pi4j/issues/478).
   * Make GpioLine Closeable.
 
-Thanks to contributions by [@IAmNickNack](https://github.com/IAmNickNack), []@stefanhaustein(https://github.com/stefanhaustein), [@taartspi](https://github.com/taartspi), [@eitch](https://github.com/eitch), [@fdelporte](https://github.com/fdelporte).
+Thanks to contributions by [@IAmNickNack](https://github.com/IAmNickNack), [@stefanhaustein](https://github.com/stefanhaustein), [@taartspi](https://github.com/taartspi), [@eitch](https://github.com/eitch), [@fdelporte](https://github.com/fdelporte).
 
 All changes: https://github.com/Pi4J/pi4j/compare/3.0.2...3.0.3
 
