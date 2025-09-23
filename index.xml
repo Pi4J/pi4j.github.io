@@ -302,15 +302,33 @@ This scheme was incompatibility with other pin diagrams and pin numbering used b
 &lt;p&gt;This drawing shows the different numbers for WiringPi and BCM in a 40-pins Raspberry Pi header:&lt;/p&gt;</description></item><item><title>Release Notes</title><link>https://pi4j.com/about/release-notes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/about/release-notes/</guid><description>&lt;p&gt;All releases of Pi4J V2+ are listed on &lt;a href="https://github.com/Pi4J/pi4j/releases" target="_blank" rel="noopener"&gt;github.com/Pi4J/pi4j/releases&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id="v3"&gt;V3&lt;/h2&gt;
 &lt;p&gt;Requires Java 21, see &lt;a href="https://pi4j.com/about/info-v3/"&gt;What&amp;rsquo;s New in V3&lt;/a&gt; for more info.&lt;/p&gt;
-&lt;h3 id="2025-05-20---v302"&gt;2025-05-20 - V3.0.2&lt;/h3&gt;
+&lt;h3 id="2025-09-23---v303"&gt;2025-09-23 - V3.0.3&lt;/h3&gt;
+&lt;p&gt;Work is ongoing to extend Pi4J with a plugin based on the FFM API (Foreign Function &amp;amp; Memory API). To make this possible, some changes have been made to the core code in preparation for this new plugin. And of course more improvements and bug fixes&amp;hellip;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Board model can now be forced to allow the use of Pi4J on other/unrecognized boards. See &lt;a href="https://pi4j.com/documentation/board-info/#overriding-the-detected-board"&gt;Overriding the Detected Board&lt;/a&gt; for more info.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;BoardInfoHelper.usesRP1()&lt;/code&gt; has been improved as more boards use this RP1 (5, 500, Compute 5), and even more are expected in the future.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/Pi4J/pi4j/issues/455" target="_blank" rel="noopener"&gt;Issue #455&lt;/a&gt;: GpioDDigitalInput may never start monitoring line events. Fixed by simplifying and improving the wait for the input listener loop to exit on shutdown.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://apidia.net/mvn/com.pi4j/pi4j" target="_blank" rel="noopener"&gt;APIdia badge and link&lt;/a&gt; added to README.md&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/Pi4J/pi4j/pull/461" target="_blank" rel="noopener"&gt;Pull request #461&lt;/a&gt;: Removal in the core code of the SpiChipSelect to enforce a PiGpio limitation of the values 0, 1, or 2.&lt;/li&gt;
+&lt;li&gt;Board models: Added CM5 Lite board codes.&lt;/li&gt;
+&lt;li&gt;Replace Nexus Staging plugin with Central Publishing plugin.&lt;/li&gt;
+&lt;li&gt;Refactored &lt;code&gt;Registry&lt;/code&gt; to use &lt;code&gt;IOType&lt;/code&gt; for managing addresses, ensuring better segregation of address spaces between IO types. Updated related methods and internal data structures accordingly.&lt;/li&gt;
+&lt;li&gt;Introduced the ability to shutdown and unregister IO instances using the instance itself, complementing the existing ID-based method. Updated related methods, tests, and documentation to reflect the new functionality.&lt;/li&gt;
+&lt;li&gt;Ensure proper removal of IO instance during shutdown in DefaultRuntimeRegistry.&lt;/li&gt;
+&lt;li&gt;PWM IO Change Float to Integer and remove float related conversions.&lt;/li&gt;
+&lt;li&gt;Gate digital output event creation on listener / binding presence.&lt;/li&gt;
+&lt;li&gt;Move PWM chip detection to BoardInfo to make it usable for all plugins.&lt;/li&gt;
+&lt;li&gt;Unit test improvements.&lt;/li&gt;
+&lt;li&gt;LinuxFS plugin:
+&lt;ul&gt;
+&lt;li&gt;I2C: Improvements in &lt;code&gt;registerRead&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;SPI: SPI write now supports larger buffers by creating multi ioctl spi writes.&lt;/li&gt;
+&lt;li&gt;PWM: When the RP1 chip is found, PWM provider will use the RP1 architected address of PWM0 to determine the correct pwmChipx to use. This change will effect Raspberry Pi 5 and Compute Module 5 using updated kernel.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Thanks to contributions by &lt;a href="https://github.com/ylexus" target="_blank" rel="noopener"&gt;@ylexus&lt;/a&gt;, &lt;a href="https://github.com/taartspi" target="_blank" rel="noopener"&gt;@taartspi&lt;/a&gt;, &lt;a href="https://github.com/eitch" target="_blank" rel="noopener"&gt;@eitch&lt;/a&gt;, &lt;a href="https://github.com/fdelporte" target="_blank" rel="noopener"&gt;@fdelporte&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Developing on a remote PC</title><link>https://pi4j.com/getting-started/developing-on-a-remote-pc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/getting-started/developing-on-a-remote-pc/</guid><description>&lt;div class="notices tip" &gt;&lt;p&gt;GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-maven-archetype" target="_blank" rel="noopener"&gt;https://github.com/Pi4J/pi4j-maven-archetype&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;GpioD plugin:
+&lt;ul&gt;
+&lt;li&gt;Introduced a volatile &lt;code&gt;running&lt;/code&gt; flag to properly manage the lifecycle of the input listener thread. Enhanced shutdown logic to ensure threads are safely and consistently terminated. Fix for &lt;a href="https://github.com/Pi4J/pi4j/issues/478" target="_blank" rel="noopener"&gt;Issue #478&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Make GpioLine Closeable.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Thanks to contributions by &lt;a href="https://github.com/IAmNickNack" target="_blank" rel="noopener"&gt;@IAmNickNack&lt;/a&gt;, &lt;a href="https://github.com/stefanhaustein" target="_blank" rel="noopener"&gt;@stefanhaustein&lt;/a&gt;, &lt;a href="https://github.com/taartspi" target="_blank" rel="noopener"&gt;@taartspi&lt;/a&gt;, &lt;a href="https://github.com/eitch" target="_blank" rel="noopener"&gt;@eitch&lt;/a&gt;, &lt;a href="https://github.com/fdelporte" target="_blank" rel="noopener"&gt;@fdelporte&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Developing on a remote PC</title><link>https://pi4j.com/getting-started/developing-on-a-remote-pc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/getting-started/developing-on-a-remote-pc/</guid><description>&lt;div class="notices tip" &gt;&lt;p&gt;GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-maven-archetype" target="_blank" rel="noopener"&gt;https://github.com/Pi4J/pi4j-maven-archetype&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;h2 id="developing-java-programs-using-a-remote-pc-workstation"&gt;Developing Java Programs Using a Remote PC Workstation&lt;/h2&gt;
