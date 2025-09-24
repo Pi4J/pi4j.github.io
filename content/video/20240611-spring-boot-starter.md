@@ -1,5 +1,6 @@
 ---
 title: '2024 Spring Boot Starter'
+date: 2024-06-11
 tags: ["Video"]
 ---
 
