@@ -29,7 +29,7 @@ for the fans of a regular computer.&lt;/p&gt;
 &lt;p&gt;With PWM, it is possible to control a component such as a motor no longer purely
 binary, i.e. off (0% power) or on (100% power), but to control them almost at will.
 The functionality of PWM works in such a way that the component is switched off and
-on again and again within a certain period of time.&lt;/p&gt;</description></item><item><title>RPi5 PWM Fails with NoSuchFileException</title><link>https://pi4j.com/blog/2025/20250811-rpi5-pwm-not-working/</link><pubDate>Mon, 11 Aug 2025 00:00:00 +0000</pubDate><guid>https://pi4j.com/blog/2025/20250811-rpi5-pwm-not-working/</guid><description>&lt;p&gt;2025-08-11, by Tom Aarts&lt;/p&gt;
+on again and again within a certain period of time.&lt;/p&gt;</description></item><item><title>RPi5 PWM NoSuchFileException</title><link>https://pi4j.com/blog/2025/20250811-rpi5-pwm-not-working/</link><pubDate>Mon, 11 Aug 2025 00:00:00 +0000</pubDate><guid>https://pi4j.com/blog/2025/20250811-rpi5-pwm-not-working/</guid><description>&lt;p&gt;2025-08-11, by Tom Aarts&lt;/p&gt;
 &lt;p&gt;On the Pi5, Pi kernel updates may result in failing PWM. The
 exception details will state &lt;code&gt;/sys/class/pwm/pwmchip2/npwm was not found&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;A kernel code update (6.12) resulted in the objects within &lt;code&gt;/sys/class/pwm&lt;/code&gt; being numbered differently. It is most likely the PWM is using &lt;code&gt;/sys/class/pwm/pwmchip0&lt;/code&gt;.&lt;/p&gt;
