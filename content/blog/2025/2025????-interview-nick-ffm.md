@@ -26,25 +26,42 @@ tags: ["FFM API"]
 
 **Frank:** Can you explain what the FFM API is for readers who haven't heard of it?
 
-**Nick:** The Foreign Function & Memory API is part of Project Panama, which actually started way back in 2014. The big difference between FFM and traditional approaches like JNI, JNA, or JNR is huge: **you don't need to know C or C++**. As Java developers, why should we have to become C++ experts just to talk to native code?
+**Nick:** The Foreign Function & Memory API is part of the [OpenJDK Project Panama](https://openjdk.org/projects/panama/), which actually started way back in 2014. The big difference between FFM and traditional approaches like JNI, JNA, or JNR is huge: **you don't need to know C or C++**. As Java developers, why should we have to become C++ experts just to talk to native code?
 
 The traditional approaches have two main problems. First, writing production-ready C++ code requires deep expertise - you can't learn that from some "C++ in 21 days" book. Second, all those abstraction layers create serious runtime overhead with multiple layers the JVM has to handle.
 
 **Frank:** How is FFM different?
 
-**Nick:** With FFM, you stay in pure Java. Not a single line of C or C++ in your application. You just describe C structures using Java, and FFM handles the conversion. Since it's pure Java bytecode, the JIT compiler can optimize it properly, so you can use it safely in high-load Spring applications.
+**Nick:** With FFM, you stay in pure Java. Not a single line of C or C++ in your application. You describe C structures using Java, and FFM handles the conversion. Since it's pure Java bytecode, the JIT compiler can optimize it properly, so you can use it safely in, for example, high-load Spring applications.
 
 ### How it Works with Pi4J
 
 **Frank:** How does this work in practice?
 
-**Nick:** If you look at the GPIO package structures I've created, they're Java representations of the C structures that describe how GPIO functionality works in Linux. You're building the same model that represents the C world, but in Java terms.
+**Nick:** If you look, for example, at the [sources of the GPIO package structures](https://github.com/Pi4J/pi4j/tree/develop/plugins/pi4j-plugin-ffm/src/main/java/com/pi4j/plugin/ffm/common/gpio/structs) I've created, they're Java representations of the C structures that describe how GPIO functionality works in Linux. You're building the same model that represents the C world, but in Java terms.
 
 When you want to change a digital output state, you're calling `ioctl` directly from Java to the kernel. FFM automatically handles converting between Java objects and the native C world.
 
 **Frank:** What about performance?
 
-**Nick:** I've done measurements comparing the FFM implementation with existing Pi4J approaches. The results look promising, though we need to retest with JDK 25 and across all the providers we support. The performance improvements come from removing those abstraction layers and letting the JIT compiler optimize the bytecode.
+**Nick:** I've done measurements comparing the FFM implementation with existing Pi4J approaches. The results are impressive, as the removal of all the steps inbetween with JNI and JNA shows a big difference between the "old" implementation and the FFM plugin. Removing the abstraction layers brings big performance improvements.
+
+```text
+Benchmark                                                  Mode  Cnt     Score    Error  Units
+GPIOPerformanceTest.testFFMInputRoundTrip                  avgt    5     0.173 ±  0.003  ms/op
+GPIOPerformanceTest.testGpioDInputRoundTrip                avgt    5    10.537 ±  6.196  ms/op
+GPIOPerformanceTest.testLinuxFsInputRoundTrip              avgt    5   111.781 ± 42.199  ms/op
+
+Benchmark                                                  Mode  Cnt     Score    Error  Units
+GPIOPerformanceTest.testFFMInputWithListenerRoundTrip      avgt    5     1.594 ±  5.830  ms/op
+GPIOPerformanceTest.testGpioDInputWithListenerRoundTrip    avgt    5     9.015 ± 12.139  ms/op
+GPIOPerformanceTest.testLinuxFsInputWithListenerRoundTrip  avgt    5   110.115 ± 18.796  ms/op
+
+Benchmark                                                  Mode  Cnt     Score    Error  Units
+GPIOPerformanceTest.testFFMOutputRoundTrip                 avgt    5     0.042 ±  0.001  ms/op
+GPIOPerformanceTest.testGpioDOutputRoundTrip               avgt    5     0.110 ±  0.002  ms/op
+GPIOPerformanceTest.testLinuxFsOutputRoundTrip             avgt    5   108.306 ± 12.490  ms/op
+```
 
 ### Challenges
 
@@ -70,18 +87,16 @@ The goal is making Pi4J truly platform-agnostic while keeping the ease of use Ja
 
 **Nick:** The FFM learning curve isn't as steep as you might think. Once you understand the byte mathematics and how to map structures between Java and native worlds, it becomes straightforward - though I won't say it's just "copy and paste"!
 
-I'd say about 70-80% of my time was spent understanding how FFM works. Once that clicked in my brain, development accelerated significantly.
+I'd say about 70-80% of my time was spent understanding how FFM works. Once that clicked in my brain, development speeded up significantly.
 
 ### Getting Involved
 
 **Frank:** How can the community help?
 
-**Nick:** Testing is crucial. I've been working with a Raspberry Pi 5, and basic functionality like digital outputs works well. But we need testing across all providers to identify corner cases that only show up in real-world usage. Contributors like Tom, who's retired and has time to test with all sorts of components, are invaluable.
-
-We also need feedback from developers trying different hardware platforms. The more diverse our testing, the more robust the implementation becomes.
+**Nick:** Testing is crucial. I've been working with a Raspberry Pi 5, and basic functionality like digital outputs works well. But we need testing across all providers to identify corner cases that only show up in real-world usage. We also need feedback from developers trying different hardware platforms. The more diverse our testing, the more robust the implementation becomes.
 
 ---
 
 *Nick's work integrating Java 22's FFM API represents a big step forward for Pi4J, potentially opening doors to a much broader ecosystem of single-board computers and IoT devices. Try it out and let us know how it works!*
 
-*Want to learn more about Pi4J or contribute? Check out the [GitHub repository](https://github.com/Pi4J/pi4j-v2) or visit the [Pi4J website](https://www.pi4j.com).*
+*Want to learn more about Pi4J or contribute? Check out the [GitHub repository](https://github.com/Pi4J/pi4j) or visit the [Pi4J website](https://www.pi4j.com).*
