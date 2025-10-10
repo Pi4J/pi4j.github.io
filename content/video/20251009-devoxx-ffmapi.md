@@ -1,6 +1,7 @@
 ---
 title: '2025 Devoxx Talk FFM API'
-tags: ["Video"]
+date: 2025-10-09
+tags: ["Video", "FFM", "CrowPi", "Digital Input", "Digital Output"]
 ---
 
 ## The Wait is Over: Foreign Function & Memory FFM API brings modern Java to the Raspberry Pi
