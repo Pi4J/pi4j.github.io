@@ -1,5 +1,6 @@
 ---
 title: '2021 Electronics on RPi'
+date: 2021-02-11
 tags: ["Video"]
 ---
 

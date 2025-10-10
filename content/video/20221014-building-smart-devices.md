@@ -1,5 +1,6 @@
 ---
 title: '2022 Building Smart Devices'
+date: 2021-10-14
 tags: ["Video"]
 ---
 

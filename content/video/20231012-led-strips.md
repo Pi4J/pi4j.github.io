@@ -1,6 +1,7 @@
 ---
 title: '2023 LED strips with JBang'
-tags: ["Video", "JBang", "LED Strip", "Pixelblaze"]
+date: 2023-10-12
+tags: ["Video", "JBang", "LED Strip", "Pixelblaze", "Live Coding"]
 ---
 
 ## Having fun with LED strips with Java on the Raspberry Pi

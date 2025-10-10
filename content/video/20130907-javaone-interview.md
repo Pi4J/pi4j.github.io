@@ -1,5 +1,6 @@
 ---
 title: '2013 JavaOne Interview'
+date: 2013-09-07
 tags: ["Video"]
 ---
 

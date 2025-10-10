@@ -1,5 +1,5 @@
 ---
-title: "RPi5 PWM Fails with NoSuchFileException"
+title: "RPi5 PWM NoSuchFileException"
 date: 2025-08-11
 tags: ["PWM", "LinuxFS"]
 ---
