@@ -4,9 +4,14 @@ weight: 172
 tags: ["IntelliJ IDEA"]
 ---
 
-IntelliJ IDEA is the most-used IDE for Java development. Unfortunately, it is not available for ARM devices so we can't use it directly on a Raspberry Pi.
+IntelliJ IDEA is the most-used IDE for Java development. It's also available for ARM devices but has [high minimum requirements](https://www.jetbrains.com/help/idea/prerequisites.html#min_requirements), so you'll need a Raspberry Pi 5:
 
-But you can use IntelliJ IDEA to develop on a remote machine (Windows, Linux, or macOS) with code on the Raspberry Pi. Make sure you have the Remote Development Gateway plugin enabled as described on [Connect to a remote server from IntelliJ IDEA](https://www.jetbrains.com/help/idea/remote-development-starting-page.html) and [Install JetBrains Gateway﻿](https://www.jetbrains.com/help/idea/jetbrains-gateway.html).
+* 4 vCPUs, either x86_64 or arm64 architecture. Also, higher clock frequency is preferred to higher core count.
+* 8 GB RAM.
+
+## Remote Development with IntelliJ IDEA
+
+You can use IntelliJ IDEA to develop on a remote machine (Windows, Linux, or macOS) with code on the Raspberry Pi. Make sure you have the Remote Development Gateway plugin enabled as described on [Connect to a remote server from IntelliJ IDEA](https://www.jetbrains.com/help/idea/remote-development-starting-page.html) and [Install JetBrains Gateway﻿](https://www.jetbrains.com/help/idea/jetbrains-gateway.html).
 
 1. Go to "File" > "Remote Development".
 ![01-toolbar.png](/assets/documentation/intellij/01-toolbar.png)
