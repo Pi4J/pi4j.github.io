@@ -50,5 +50,5 @@ Maven home: /usr/share/maven
 
 ## Visual Studio Code
 
-Please check [Prepare a Raspberry Pi > Install Visual Studio Code](/prepare/install-vsc-ide) for more info if you want to develop Java code directly on the Raspberry Pi.
+Please check [Install Visual Studio Code](/documentation/development/install-vsc-ide) for more info if you want to develop Java code directly on the Raspberry Pi.
 
