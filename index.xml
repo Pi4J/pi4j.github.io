@@ -282,7 +282,7 @@ course important to be aware of the correct numbering to not connect components 
  &lt;figcaption&gt;
  &lt;p&gt;Breadboard&lt;/p&gt;</description></item><item><title>Java Development</title><link>https://pi4j.com/getting-started/java-development-on-the-raspberry-pi-with-vsc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/getting-started/java-development-on-the-raspberry-pi-with-vsc/</guid><description>&lt;h2 id="java-on-the-raspberry-pi"&gt;Java on the Raspberry Pi&lt;/h2&gt;
 
-&lt;div class="notices warning" &gt;&lt;p&gt;Please check the &lt;a href="https://pi4j.com/prepare/install-java/"&gt;Prepare a Raspberry Pi&lt;/a&gt; and &lt;a href="https://pi4j.com/prepare/install-java/"&gt;Install Java and Tools&lt;/a&gt; instructions.&lt;/p&gt;
+&lt;div class="notices info" &gt;&lt;p&gt;Please check the &lt;a href="https://pi4j.com/prepare/install-java/"&gt;Prepare a Raspberry Pi&lt;/a&gt; and &lt;a href="https://pi4j.com/prepare/install-java/"&gt;Install Java and Tools&lt;/a&gt; instructions.&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;p&gt;You need Java 21 or newer to use Pi4J V3+. On a board with ARMv7 or ARMv8 you will get this result:&lt;/p&gt;
