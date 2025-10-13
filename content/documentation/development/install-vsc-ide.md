@@ -1,6 +1,6 @@
 ---
 title: Install Visual Studio Code
-weight: 19
+weight: 171
 tags: ["Visual Studio Code"]
 ---
 

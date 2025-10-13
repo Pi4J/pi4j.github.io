@@ -1,6 +1,6 @@
 ---
 title: Using Maven Archetype
-weight: 172
+weight: 173
 tags: ["Maven"]
 ---
 
