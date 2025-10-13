@@ -69,7 +69,7 @@ Model		: Raspberry Pi Model B Plus Rev 1.2
 
 ### Running Java 21+ on Raspberry Pi Zero 2
 
-Because of changes in OpenJDK 21 (and newer), Java applications had problems on the Raspberry Pi Zero 2, 64-bit OS, with previous releases, see blog post [Java 21+ Not Working on Zero 2](/blog/2025/20250625-java-21-not-working-on-zero-2/). If you see one of the following errors, upgrade to Zulu 21 based on OpenJDK 21.0.8 (released on July 15, 2025) or Zulu 25 based on OpenJDK 25.0.0 (released on September 16, 2025). In these versions, the problem is fixed, as described in the blog post [Java 21+ Working OK on RPi Zero 2](/blog/2025/20251013-java-working-on-raspberry-pi-zero-2/).
+Because of changes in OpenJDK 21 (and newer), Java applications had problems on the Raspberry Pi Zero 2, 64-bit OS, with previous releases, see blog post [Java 21+ Not Working on Zero 2](/blog/2025/20250625-java-21-not-working-on-zero-2/). If you see one of the following errors, upgrade to Zulu 21 based on OpenJDK 21.0.8 (released on July 15, 2025) or Zulu 25 based on OpenJDK 25.0.0 (released on September 16, 2025). In these versions, the problem is fixed, as described in the blog post [Java 21+ Working on RPi Zero 2](/blog/2025/20251013-java-working-on-raspberry-pi-zero-2/).
 
 ```bash
 $ java HelloWorld.java
