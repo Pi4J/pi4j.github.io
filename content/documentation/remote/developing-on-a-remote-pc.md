@@ -1,6 +1,6 @@
 ---
-title: Remote Development Maven Archetype
-weight: 41
+title: Using Maven Archetype
+weight: 172
 tags: ["Maven"]
 ---
 

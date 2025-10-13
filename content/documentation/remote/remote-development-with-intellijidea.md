@@ -1,6 +1,6 @@
 ---
-title: Remote Development IntelliJ IDEA
-weight: 42
+title: Using IntelliJ IDEA
+weight: 171
 tags: ["IntelliJ IDEA"]
 ---
 
