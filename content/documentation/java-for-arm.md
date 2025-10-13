@@ -69,7 +69,7 @@ Model		: Raspberry Pi Model B Plus Rev 1.2
 
 ### Running Java 21+ on Raspberry Pi Zero 2
 
-Because of changes in OpenJDK 21 (and newer), Java applications have problems on the Raspberry Pi Zero 2, 64-bit OS. These are a few example error messages, but depending on your code, the message could be different:
+Because of changes in OpenJDK 21 (and newer), Java applications had problems on the Raspberry Pi Zero 2, 64-bit OS, with previous releases, see blog post [Java 21+ Not Working on Zero 2](/blog/2025/20250625-java-21-not-working-on-zero-2/). If you see one of the following errors, upgrade to Zulu 21 based on OpenJDK 21.0.8 (released on July 15, 2025) or Zulu 25 based on OpenJDK 25.0.0 (released on September 16, 2025). In these versions, the problem is fixed, as described in the blog post [Java 21+ Working OK on RPi Zero 2](/blog/2025/20251013-java-working-on-raspberry-pi-zero-2/).
 
 ```bash
 $ java HelloWorld.java
@@ -87,16 +87,12 @@ Exception in thread "main" java.lang.InternalError: Cannot find requested resour
 	...
 ```
 
-Until the root problem is fixed in OpenJDK, you can fix this problem by adding a few command-line options to disable the intrinsic that speeds up hash calculation. It contains a bug which only affects the ARM Cortex-A53 only. The code interpreter and JIT compiler are unaffected.
+If you can't upgrade to a newer release, you can fix this problem by adding a few command-line options to disable the intrinsic that speeds up hash calculation, as this contains a bug which only affects the ARM Cortex-A53. The code interpreter and JIT compiler are unaffected.
 
 ```bash
 java -XX:+UnlockDiagnosticVMOptions -XX:-UseVectorizedHashCodeIntrinsic HelloWorld.java
 Hello World
 ```
-
-This will be fixed in a future release, based on the info in this bug report: [[AArch64] Incorrect result of VectorizedHashCode intrinsic on Cortex-A53](https://bugs.openjdk.org/browse/JDK-8353237)
-
-To read more about this problem, check the blog post [Java 21+ Not Working on Zero 2](/blog/2025/20250625-java-21-not-working-on-zero-2/).
 
 ### Install Java 11 on ARMv6
 
