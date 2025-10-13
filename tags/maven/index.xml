@@ -60,7 +60,7 @@ and to fully understand the example applications and the MVC-model. This page is
 different modules, each with their own responsibility.&lt;/p&gt;
 &lt;p&gt;The easiest way to start a new project, is to copy one of the example projects which include a full Maven pom.xml-file
 with all the required steps and configurations to build the project with all its modules into the &lt;code&gt;target/distribution&lt;/code&gt;
-directory.&lt;/p&gt;</description></item><item><title>Using Maven Archetype</title><link>https://pi4j.com/documentation/remote/developing-on-a-remote-pc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/remote/developing-on-a-remote-pc/</guid><description>&lt;div class="notices tip" &gt;&lt;p&gt;GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-maven-archetype" target="_blank" rel="noopener"&gt;https://github.com/Pi4J/pi4j-maven-archetype&lt;/a&gt;&lt;/p&gt;
+directory.&lt;/p&gt;</description></item><item><title>Using Maven Archetype</title><link>https://pi4j.com/documentation/development/developing-on-a-remote-pc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/development/developing-on-a-remote-pc/</guid><description>&lt;div class="notices tip" &gt;&lt;p&gt;GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-maven-archetype" target="_blank" rel="noopener"&gt;https://github.com/Pi4J/pi4j-maven-archetype&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;h2 id="developing-java-programs-using-a-remote-pc-workstation"&gt;Developing Java Programs Using a Remote PC Workstation&lt;/h2&gt;
