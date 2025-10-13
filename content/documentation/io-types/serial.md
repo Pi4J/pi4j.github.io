@@ -2,6 +2,8 @@
 title: Serial (UART/RS232)
 weight: 250
 tags: ["Serial"]
+aliases:
+  - /documentation/io-examples/serial/
 ---
 
 {{% notice warning %}}
@@ -68,6 +70,33 @@ See Pi command `raspi-gpio funcs`.
 
 At the present time the PiGpio library supports only Parity *None* on any/all uarts. Any future additional UART 
 functionality within the PiGpio library will require changes within the Pi4J code base. 
+
+## Checking Serial Configuration
+
+You can check the Serial configuration of your Raspberry Pi with the following command, using [JBang](/prepare/install-java/#install-sdkman-maven-and-jbang) and a checker tool available in the [GitHub Pi4J OS repository](https://github.com/pi4J/pi4j-os). One or more checks are performed depending on the IO type checked by the tool. You will get a result like this, indicating if the check passed or failed, with more info about the expected and found result:
+
+```shell
+$ jbang https://github.com/pi4j/pi4j-os/blob/main/iochecks/IOChecker.java serial
+[jbang] Building jar for IOChecker.java...
+Results from Serial Detection
+
+	Configuration check for UART in config.txt
+		Status: PASS
+		Expected: 
+			dtparam=uart0=on
+		Result: 
+			Found in /boot/firmware/config.txt: dtparam=uart0=on
+
+	Checking serial device availability
+		Status: PASS
+		Expected: 
+			/dev/ttyS0 exists (readable, writable)
+		Result: 
+			/dev/ttyS0 not available
+			/dev/ttyAMA0 exists (readable, writable)
+			/dev/ttyUSB0 exists (readable, writable)
+			/dev/ttyACM0 not available
+```
 
 ## Code example
 

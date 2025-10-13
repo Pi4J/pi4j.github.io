@@ -151,7 +151,7 @@ All changes: https://github.com/Pi4J/pi4j/compare/2.6.0...2.6.1
 
 * New hardware PWM provider added to the GpioD plugin, see: 
   * [Blog: PWM Hardware Support on RPi5](https://pi4j.com/blog/2024/20240423_pwm_rpi5/).
-  * [Documentation: I/O Examples: Pulse Width Modulation (PWM)](https://pi4j.com/documentation/io-examples/pwm/).
+  * [Documentation: I/O Examples: Pulse Width Modulation (PWM)](https://pi4j.com/documentation/io-types/pwm/).
 * Various improvements in the I2C implementation in both core and plugins, see:
   * [Blog: Ongoing I2C Improvements](https://pi4j.com/blog/2024/20240418_i2c_improvements/).
 * Dependency bumps in the pom file, see [pull request #337](https://github.com/Pi4J/pi4j/pull/337).
