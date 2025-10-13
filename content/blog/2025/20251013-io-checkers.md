@@ -9,8 +9,13 @@ For some of the IO types (PWM, SPI,...), additional configurations are required.
 to validate. For that reason, an IO Checker tool has been created. It's part of the [Pi4J OS repository](https://github.com/Pi4J/pi4j-os/tree/main/iochecks) and can be executed directly from the GitHub file with JBang. This means it's very
 easo to use, but also to extend if other checks reveal to be helpful.
 
-To run the tool for all IO types, use: `jbang https://github.com/pi4j/pi4j-os/blob/main/iochecks/IOChecker.java`. Individual 
-checks can be executed by passing one or more check names as argument:
+To run the tool for all IO types, use:
+```shell
+jbang https://github.com/pi4j/pi4j-os/blob/main/iochecks/IOChecker.java
+```
+
+Individual checks can be executed by passing one or more check names as argument:
+
 * gpio
 * pwm
 * i2c
