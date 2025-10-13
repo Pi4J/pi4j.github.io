@@ -13,18 +13,7 @@
 &lt;li&gt;&lt;code&gt;java-common libxi6 libxrender1 libxtst6&lt;/code&gt;: Dependencies of the JDK Debian package.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="install-java"&gt;Install Java&lt;/h2&gt;
-&lt;p&gt;There are many ways you can install Java. The easiest way to make Java available for both normal use and as root user (&lt;code&gt;sudo&lt;/code&gt;), is the following approach which downloads one of the many distributions that are available.&lt;/p&gt;</description></item><item><title>Remote Development Maven Archetype</title><link>https://pi4j.com/documentation/remote/developing-on-a-remote-pc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/remote/developing-on-a-remote-pc/</guid><description>&lt;div class="notices tip" &gt;&lt;p&gt;GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-maven-archetype" target="_blank" rel="noopener"&gt;https://github.com/Pi4J/pi4j-maven-archetype&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;h2 id="developing-java-programs-using-a-remote-pc-workstation"&gt;Developing Java Programs Using a Remote PC Workstation&lt;/h2&gt;
-&lt;p&gt;Writing your Java program, compiling and running it directly on the Raspberry Pi board
-as shown in the previous chapter is perfectly fine, of course,
-but there is an alternative way to arrange your developing laboratory, using a normal
-desktop computer as Remote Developing Workstation (RDW).&lt;/p&gt;
-&lt;p&gt;This &lt;a href="https://github.com/Pi4J/pi4j-maven-archetype" title="raspimaven-archetype" target="_blank" rel="noopener"&gt;Maven Archetype&lt;/a&gt; will give you
-a tool to generate Pi4J V2+ skeleton Java projects. You can use it for your next Pi4j project and you will be able
-to develop your program on the remote workstation (RDW), compile them, transmit the executable
-code on the target Pi board and run it. You can also start a remote debugging session.&lt;/p&gt;</description></item><item><title>Minimal example application</title><link>https://pi4j.com/getting-started/minimal-example-application/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/getting-started/minimal-example-application/</guid><description>&lt;div class="notices tip" &gt;&lt;p&gt;GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-example-minimal" target="_blank" rel="noopener"&gt;https://github.com/Pi4J/pi4j-example-minimal&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;There are many ways you can install Java. The easiest way to make Java available for both normal use and as root user (&lt;code&gt;sudo&lt;/code&gt;), is the following approach which downloads one of the many distributions that are available.&lt;/p&gt;</description></item><item><title>Minimal example application</title><link>https://pi4j.com/getting-started/minimal-example-application/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/getting-started/minimal-example-application/</guid><description>&lt;div class="notices tip" &gt;&lt;p&gt;GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-example-minimal" target="_blank" rel="noopener"&gt;https://github.com/Pi4J/pi4j-example-minimal&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;p&gt;In the &lt;a href="https://github.com/Pi4J/pi4j-example-minimal" target="_blank" rel="noopener"&gt;&amp;ldquo;pi4j-example-minimal&amp;rdquo; GitHub project&lt;/a&gt; you can
@@ -71,7 +60,18 @@ and to fully understand the example applications and the MVC-model. This page is
 different modules, each with their own responsibility.&lt;/p&gt;
 &lt;p&gt;The easiest way to start a new project, is to copy one of the example projects which include a full Maven pom.xml-file
 with all the required steps and configurations to build the project with all its modules into the &lt;code&gt;target/distribution&lt;/code&gt;
-directory.&lt;/p&gt;</description></item><item><title>Pi4J presentation for Miami JUG</title><link>https://pi4j.com/blog/2025/20250115-miami-jug/</link><pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate><guid>https://pi4j.com/blog/2025/20250115-miami-jug/</guid><description>&lt;p&gt;2025-01-15 by Frank Delporte&lt;/p&gt;
+directory.&lt;/p&gt;</description></item><item><title>Using Maven Archetype</title><link>https://pi4j.com/documentation/remote/developing-on-a-remote-pc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/remote/developing-on-a-remote-pc/</guid><description>&lt;div class="notices tip" &gt;&lt;p&gt;GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-maven-archetype" target="_blank" rel="noopener"&gt;https://github.com/Pi4J/pi4j-maven-archetype&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h2 id="developing-java-programs-using-a-remote-pc-workstation"&gt;Developing Java Programs Using a Remote PC Workstation&lt;/h2&gt;
+&lt;p&gt;Writing your Java program, compiling and running it directly on the Raspberry Pi board
+as shown in the previous chapter is perfectly fine, of course,
+but there is an alternative way to arrange your developing laboratory, using a normal
+desktop computer as Remote Developing Workstation (RDW).&lt;/p&gt;
+&lt;p&gt;This &lt;a href="https://github.com/Pi4J/pi4j-maven-archetype" title="raspimaven-archetype" target="_blank" rel="noopener"&gt;Maven Archetype&lt;/a&gt; will give you
+a tool to generate Pi4J V2+ skeleton Java projects. You can use it for your next Pi4j project and you will be able
+to develop your program on the remote workstation (RDW), compile them, transmit the executable
+code on the target Pi board and run it. You can also start a remote debugging session.&lt;/p&gt;</description></item><item><title>Pi4J presentation for Miami JUG</title><link>https://pi4j.com/blog/2025/20250115-miami-jug/</link><pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate><guid>https://pi4j.com/blog/2025/20250115-miami-jug/</guid><description>&lt;p&gt;2025-01-15 by Frank Delporte&lt;/p&gt;
 &lt;p&gt;Frank Delporte was invited by the Miami JVM Group to present his journey into Java development on the Raspberry Pi. This video contains the part of the presentation that introduces Pi4J, some of its history, and its current state. We also look at a basic and more extended example, with a demo of a Vaadin and Spring Boot application controlling several electronic components.&lt;/p&gt;
 &lt;p&gt;This is the 30&amp;rsquo; version about Pi4J:&lt;/p&gt;</description></item><item><title>Pi4J in Floss Weekly</title><link>https://pi4j.com/blog/2024/20241114-floss-weekly-podcast/</link><pubDate>Thu, 14 Nov 2024 00:00:00 +0000</pubDate><guid>https://pi4j.com/blog/2024/20241114-floss-weekly-podcast/</guid><description>&lt;p&gt;2024-11-14 by Frank Delporte&lt;/p&gt;
 &lt;p&gt;Frank Delporte was a guest on the Floss Weekly podcast. He talked with Jonathan Bennett and David Ruggles about the Pi4J Project, the friendly Java libraries for the Raspberry Pi that expose GPIO, SPI, I2C, and other IO interfaces. Why would anyone want to use Java for the Pi? And what’s changed since the project started? You can find it in your favorite podcast app or watch the video below.&lt;/p&gt;</description></item><item><title>Maven Downloads</title><link>https://pi4j.com/blog/2024/20241104-download-stats/</link><pubDate>Mon, 04 Nov 2024 00:00:00 +0000</pubDate><guid>https://pi4j.com/blog/2024/20241104-download-stats/</guid><description>&lt;p&gt;2024-11-04 by Frank Delporte&lt;/p&gt;

@@ -328,34 +328,7 @@ This scheme was incompatibility with other pin diagrams and pin numbering used b
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Thanks to contributions by &lt;a href="https://github.com/IAmNickNack" target="_blank" rel="noopener"&gt;@IAmNickNack&lt;/a&gt;, &lt;a href="https://github.com/stefanhaustein" target="_blank" rel="noopener"&gt;@stefanhaustein&lt;/a&gt;, &lt;a href="https://github.com/taartspi" target="_blank" rel="noopener"&gt;@taartspi&lt;/a&gt;, &lt;a href="https://github.com/eitch" target="_blank" rel="noopener"&gt;@eitch&lt;/a&gt;, &lt;a href="https://github.com/fdelporte" target="_blank" rel="noopener"&gt;@fdelporte&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Remote Development Maven Archetype</title><link>https://pi4j.com/documentation/remote/developing-on-a-remote-pc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/remote/developing-on-a-remote-pc/</guid><description>&lt;div class="notices tip" &gt;&lt;p&gt;GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-maven-archetype" target="_blank" rel="noopener"&gt;https://github.com/Pi4J/pi4j-maven-archetype&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;h2 id="developing-java-programs-using-a-remote-pc-workstation"&gt;Developing Java Programs Using a Remote PC Workstation&lt;/h2&gt;
-&lt;p&gt;Writing your Java program, compiling and running it directly on the Raspberry Pi board
-as shown in the previous chapter is perfectly fine, of course,
-but there is an alternative way to arrange your developing laboratory, using a normal
-desktop computer as Remote Developing Workstation (RDW).&lt;/p&gt;
-&lt;p&gt;This &lt;a href="https://github.com/Pi4J/pi4j-maven-archetype" title="raspimaven-archetype" target="_blank" rel="noopener"&gt;Maven Archetype&lt;/a&gt; will give you
-a tool to generate Pi4J V2+ skeleton Java projects. You can use it for your next Pi4j project and you will be able
-to develop your program on the remote workstation (RDW), compile them, transmit the executable
-code on the target Pi board and run it. You can also start a remote debugging session.&lt;/p&gt;</description></item><item><title>Remote Development IntelliJ IDEA</title><link>https://pi4j.com/documentation/remote/remote-development-with-intellijidea/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/remote/remote-development-with-intellijidea/</guid><description>&lt;p&gt;IntelliJ IDEA is the most-used IDE for Java development. You can use it to develop on a remote machine with code on the Raspberry Pi. Make sure you have the Remote Development Gateway plugin enabled as described on &lt;a href="https://www.jetbrains.com/help/idea/remote-development-starting-page.html" target="_blank" rel="noopener"&gt;Connect to a remote server from IntelliJ IDEA&lt;/a&gt; and &lt;a href="https://www.jetbrains.com/help/idea/jetbrains-gateway.html" target="_blank" rel="noopener"&gt;Install JetBrains Gateway﻿&lt;/a&gt;.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Go to &amp;ldquo;File&amp;rdquo; &amp;gt; &amp;ldquo;Remote Development&amp;rdquo;.
-&lt;img src="https://pi4j.com/assets/documentation/intellij/01-toolbar.png" alt="01-toolbar.png"&gt;&lt;/li&gt;
-&lt;li&gt;Click &amp;ldquo;SSH Connection&amp;rdquo; &amp;gt; &amp;ldquo;New Connection&amp;rdquo;.
-&lt;img src="https://pi4j.com/assets/documentation/intellij/02-ssh.png" alt="02-ssh.png"&gt;&lt;/li&gt;
-&lt;li&gt;Fill in the username and hostname of your Raspberry Pi and click &amp;ldquo;Check Connection and Continue&amp;rdquo;.
-&lt;img src="https://pi4j.com/assets/documentation/intellij/03-connect.png" alt="03-connect.png"&gt;&lt;/li&gt;
-&lt;li&gt;Select the directory with the sources you want to edit.
-&lt;img src="https://pi4j.com/assets/documentation/intellij/04-directory.png" alt="04-directory.png"&gt;&lt;/li&gt;
-&lt;li&gt;Check the IDE version and directory and click &amp;ldquo;Download IDE and Connect&amp;rdquo;
-&lt;img src="https://pi4j.com/assets/documentation/intellij/05-confirm.png" alt="05-directory.png"&gt;&lt;/li&gt;
-&lt;li&gt;Wait till the IDE Gateway is downloaded and installed.
-&lt;img src="https://pi4j.com/assets/documentation/intellij/06-downloading.png" alt="06-downloading.png"&gt;&lt;/li&gt;
-&lt;li&gt;You can now from your PC work with the code located on the Raspberry Pi and run commands in the terminal.
-&lt;img src="https://pi4j.com/assets/documentation/intellij/07-ide.png" alt="07-ide.png"&gt;&lt;/li&gt;
-&lt;/ol&gt;</description></item><item><title>Pi4J Downloads</title><link>https://pi4j.com/about/download/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/about/download/</guid><description>&lt;p&gt;All downloads provided by the project can be found on &lt;a href="https://pi4j.com/download/" target="_blank" rel="noopener"&gt;pi4j.com/download&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Thanks to contributions by &lt;a href="https://github.com/IAmNickNack" target="_blank" rel="noopener"&gt;@IAmNickNack&lt;/a&gt;, &lt;a href="https://github.com/stefanhaustein" target="_blank" rel="noopener"&gt;@stefanhaustein&lt;/a&gt;, &lt;a href="https://github.com/taartspi" target="_blank" rel="noopener"&gt;@taartspi&lt;/a&gt;, &lt;a href="https://github.com/eitch" target="_blank" rel="noopener"&gt;@eitch&lt;/a&gt;, &lt;a href="https://github.com/fdelporte" target="_blank" rel="noopener"&gt;@fdelporte&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Pi4J Downloads</title><link>https://pi4j.com/about/download/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/about/download/</guid><description>&lt;p&gt;All downloads provided by the project can be found on &lt;a href="https://pi4j.com/download/" target="_blank" rel="noopener"&gt;pi4j.com/download&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The compiled artifacts (releases and snapshots) are available in the
 &lt;a href="https://oss.sonatype.org/index.html#nexus-search;gav~com.pi4j~~~~" target="_blank" rel="noopener"&gt;Sonatype Maven repository&lt;/a&gt;.&lt;/p&gt;
 &lt;iframe src="https://pi4j.com/download" style="width: 100%; height: 100vh;"&gt;&lt;/iframe&gt;</description></item><item><title>Minimal Kotlin Pi4J example</title><link>https://pi4j.com/kotlin/kotlin-dsl/minimal-kotlin-example/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/kotlin/kotlin-dsl/minimal-kotlin-example/</guid><description>&lt;div class="notices tip" &gt;&lt;p&gt;Full Example on GitHub: &lt;a href="https://github.com/Pi4J/pi4j-kotlin/blob/master/example/src/main/kotlin/MinimalExample.kt" target="_blank" rel="noopener"&gt;https://github.com/Pi4J/pi4j-kotlin/blob/master/example/src/main/kotlin/MinimalExample.kt&lt;/a&gt;&lt;/p&gt;
@@ -956,7 +929,23 @@ all the required files to build with Gradle.&lt;/p&gt;
  &lt;/div&gt;
 
 &lt;h2 id="intro"&gt;Intro&lt;/h2&gt;
-&lt;p&gt;This example is based on the &lt;a href="https://pi4j.com/examples/jbang/pixelblaze_output_expander/"&gt;Pixelblaze Output Expander (PBOE) JBang example&lt;/a&gt;. Make sure to check out the PBOE example, so you fully understand how to set up and use JBang, and connect and control a LED strip via a PBOE.&lt;/p&gt;</description></item><item><title>LED strip with a JavaFX UI</title><link>https://pi4j.com/examples/jbang/pixelblaze_output_expander_javafx/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/jbang/pixelblaze_output_expander_javafx/</guid><description>&lt;div class="notices tip" &gt;&lt;p&gt;GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-jbang/blob/main/PixelblazeOutputExpanderJavaFX.java" target="_blank" rel="noopener"&gt;github.com/Pi4J/pi4j-jbang &amp;gt; PixelblazeOutputExpanderJavaFX.java&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This example is based on the &lt;a href="https://pi4j.com/examples/jbang/pixelblaze_output_expander/"&gt;Pixelblaze Output Expander (PBOE) JBang example&lt;/a&gt;. Make sure to check out the PBOE example, so you fully understand how to set up and use JBang, and connect and control a LED strip via a PBOE.&lt;/p&gt;</description></item><item><title>Using IntelliJ IDEA</title><link>https://pi4j.com/documentation/remote/remote-development-with-intellijidea/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/remote/remote-development-with-intellijidea/</guid><description>&lt;p&gt;IntelliJ IDEA is the most-used IDE for Java development. You can use it to develop on a remote machine with code on the Raspberry Pi. Make sure you have the Remote Development Gateway plugin enabled as described on &lt;a href="https://www.jetbrains.com/help/idea/remote-development-starting-page.html" target="_blank" rel="noopener"&gt;Connect to a remote server from IntelliJ IDEA&lt;/a&gt; and &lt;a href="https://www.jetbrains.com/help/idea/jetbrains-gateway.html" target="_blank" rel="noopener"&gt;Install JetBrains Gateway﻿&lt;/a&gt;.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Go to &amp;ldquo;File&amp;rdquo; &amp;gt; &amp;ldquo;Remote Development&amp;rdquo;.
+&lt;img src="https://pi4j.com/assets/documentation/intellij/01-toolbar.png" alt="01-toolbar.png"&gt;&lt;/li&gt;
+&lt;li&gt;Click &amp;ldquo;SSH Connection&amp;rdquo; &amp;gt; &amp;ldquo;New Connection&amp;rdquo;.
+&lt;img src="https://pi4j.com/assets/documentation/intellij/02-ssh.png" alt="02-ssh.png"&gt;&lt;/li&gt;
+&lt;li&gt;Fill in the username and hostname of your Raspberry Pi and click &amp;ldquo;Check Connection and Continue&amp;rdquo;.
+&lt;img src="https://pi4j.com/assets/documentation/intellij/03-connect.png" alt="03-connect.png"&gt;&lt;/li&gt;
+&lt;li&gt;Select the directory with the sources you want to edit.
+&lt;img src="https://pi4j.com/assets/documentation/intellij/04-directory.png" alt="04-directory.png"&gt;&lt;/li&gt;
+&lt;li&gt;Check the IDE version and directory and click &amp;ldquo;Download IDE and Connect&amp;rdquo;
+&lt;img src="https://pi4j.com/assets/documentation/intellij/05-confirm.png" alt="05-directory.png"&gt;&lt;/li&gt;
+&lt;li&gt;Wait till the IDE Gateway is downloaded and installed.
+&lt;img src="https://pi4j.com/assets/documentation/intellij/06-downloading.png" alt="06-downloading.png"&gt;&lt;/li&gt;
+&lt;li&gt;You can now from your PC work with the code located on the Raspberry Pi and run commands in the terminal.
+&lt;img src="https://pi4j.com/assets/documentation/intellij/07-ide.png" alt="07-ide.png"&gt;&lt;/li&gt;
+&lt;/ol&gt;</description></item><item><title>LED strip with a JavaFX UI</title><link>https://pi4j.com/examples/jbang/pixelblaze_output_expander_javafx/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/jbang/pixelblaze_output_expander_javafx/</guid><description>&lt;div class="notices tip" &gt;&lt;p&gt;GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-jbang/blob/main/PixelblazeOutputExpanderJavaFX.java" target="_blank" rel="noopener"&gt;github.com/Pi4J/pi4j-jbang &amp;gt; PixelblazeOutputExpanderJavaFX.java&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;p&gt;We already know how to control a LED strip, so let&amp;rsquo;s add a JavaFX User Interface to control the colors on each of the LEDs on the strip.&lt;/p&gt;
@@ -1041,7 +1030,18 @@ all the required files to build with Gradle.&lt;/p&gt;
  &lt;/div&gt;
  &lt;/div&gt;
 &lt;/div&gt;
-&lt;/p&gt;</description></item><item><title>Digital Output (GPIO)</title><link>https://pi4j.com/documentation/io-types/digital-output/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/io-types/digital-output/</guid><description>&lt;p&gt;A digital output translates a false/true (or 0/1) to an output value of 0V or 3.3V. This
+&lt;/p&gt;</description></item><item><title>Using Maven Archetype</title><link>https://pi4j.com/documentation/remote/developing-on-a-remote-pc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/remote/developing-on-a-remote-pc/</guid><description>&lt;div class="notices tip" &gt;&lt;p&gt;GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-maven-archetype" target="_blank" rel="noopener"&gt;https://github.com/Pi4J/pi4j-maven-archetype&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h2 id="developing-java-programs-using-a-remote-pc-workstation"&gt;Developing Java Programs Using a Remote PC Workstation&lt;/h2&gt;
+&lt;p&gt;Writing your Java program, compiling and running it directly on the Raspberry Pi board
+as shown in the previous chapter is perfectly fine, of course,
+but there is an alternative way to arrange your developing laboratory, using a normal
+desktop computer as Remote Developing Workstation (RDW).&lt;/p&gt;
+&lt;p&gt;This &lt;a href="https://github.com/Pi4J/pi4j-maven-archetype" title="raspimaven-archetype" target="_blank" rel="noopener"&gt;Maven Archetype&lt;/a&gt; will give you
+a tool to generate Pi4J V2+ skeleton Java projects. You can use it for your next Pi4j project and you will be able
+to develop your program on the remote workstation (RDW), compile them, transmit the executable
+code on the target Pi board and run it. You can also start a remote debugging session.&lt;/p&gt;</description></item><item><title>Digital Output (GPIO)</title><link>https://pi4j.com/documentation/io-types/digital-output/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/io-types/digital-output/</guid><description>&lt;p&gt;A digital output translates a false/true (or 0/1) to an output value of 0V or 3.3V. This
 means you can control any type of device which works with max 3.3V to off or on. The most
 basic example is a LED. Always check which is the correct input voltage for your device!
 For a LED you will need to put a resistor with the correct value between the GPIO and the LED,
