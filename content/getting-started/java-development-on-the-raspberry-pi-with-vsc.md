@@ -1,5 +1,5 @@
 ---
-title: Java development with VSC
+title: Java Development
 weight: 40
 tags: ["Visual Studio Code"]
 ---
