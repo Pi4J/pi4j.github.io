@@ -1,9 +1,11 @@
 ---
-title: I/O Examples
+title: I/O Types
 weight: 120
+aliases:
+  - /documentation/io-examples
 ---
 
-Here you can find detailed examples for the different functionalities of Pi4J per I/O type.
+Here you can find detailed info and examples for the different functionalities of Pi4J per I/O type.
 
 {{% children %}}
 

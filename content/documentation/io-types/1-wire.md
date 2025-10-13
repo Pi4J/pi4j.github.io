@@ -2,6 +2,8 @@
 title: 1-Wire
 weight: 270
 tags: ["1-Wire"]
+aliases:
+  - /documentation/io-examples/1-wire/
 ---
 
 ## What is it?

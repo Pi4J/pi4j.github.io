@@ -2,6 +2,8 @@
 title: Inter-Integrated Circuit (I²C)
 weight: 230
 tags: ["I2C"]
+aliases:
+  - /documentation/io-examples/i2c/
 ---
 
 ## What is it?
@@ -63,6 +65,52 @@ root@rp5:~# i2cdetect -y 1
 70: -- -- -- -- -- -- -- --
 ```
 1 device found with address of 0x3f.
+
+## Checking I2C Configuration
+
+You can check the I2C configuration of your Raspberry Pi with the following command, using [JBang](/prepare/install-java/#install-sdkman-maven-and-jbang) and a checker tool available in the [GitHub Pi4J OS repository](https://github.com/pi4J/pi4j-os). One or more checks are performed depending on the IO type checked by the tool. You will get a result like this, indicating if the check passed or failed, with more info about the expected and found result:
+
+```shell
+$ jbang https://github.com/pi4j/pi4j-os/blob/main/iochecks/IOChecker.java i2c
+
+Results from I2C Detection
+
+	Configuration check for I2C in config.txt
+		Status: PASS
+		Expected: 
+			dtparam=i2c_arm=on
+		Result: 
+			Found in /boot/firmware/config.txt: dtparam=i2c_arm=on
+
+	Search for I2C in /proc/device-tree
+		Status: PASS
+		Expected: 
+			i2c device-tree entries with status=okay
+		Result: 
+			✗ i2c@7d005600 (status: disabled)
+			✓ i2c@7d508200 (status: okay)
+			✓ i2c@7d508280 (status: okay)
+			✗ i2c3_m4_agpio0_pins (status: unknown)
+
+	i2cdetect -l
+		Status: PASS
+		Expected: 
+			One or more devices, e.g. 'i2c-1' (I2C bus adapters detected by 'i2cdetect -l')
+		Result: 
+			1: Synopsys, DesignWare I2C adapter I2C adapter
+			13: 107d508200.i2c, I2C adapter
+			14: 107d508280.i2c, I2C adapter
+
+	i2cdetect -y 1
+		Status: PASS
+		Expected: 
+			One or more I2C used addresses detected on bus 1
+		Result: 
+			Found 3 used addres(ses) on bus 1: 0x21, 0x5C, 0x70
+
+	i2cdetect -y 13
+		... # Truncated for brevity
+```
 
 ## Transfer rates
 

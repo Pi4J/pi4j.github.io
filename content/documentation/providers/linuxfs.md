@@ -90,7 +90,7 @@ To use PWM with the LinuxFS provider, it's important to understand the config bu
 
 For instance, on a Raspberry Pi 5 with the `dtoverlay=pwm-2chan` setting in `config.txt`, a PWM connection on BCM 19 must be configured as `channel=3`. 
 
-See the [Pulse Width Modulation (PWM)](/documentation/io-examples/pwm/#linuxfs-provider-linuxfs-pwm) page on how to configure hardware PWM and which channels are available per board.
+See the [Pulse Width Modulation (PWM)](/documentation/io-types/pwm/#linuxfs-provider-linuxfs-pwm) page on how to configure hardware PWM and which channels are available per board.
 
 Example on how to use PWM with LinuxFS:
 

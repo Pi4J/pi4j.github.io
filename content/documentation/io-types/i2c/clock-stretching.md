@@ -2,6 +2,8 @@
 title: I²C Clock Stretching
 weight: 231
 tags: ["I2C"]
+aliases:
+  - /documentation/io-examples/i2c/clock-stretching/
 ---
 
 ## Clock Stretching
