@@ -135,7 +135,7 @@ electronics: components are inexpensive and easy to find on ebay or one of the m
  &lt;/div&gt;
  &lt;a href="https://pi4j.com/assets/examples/crowpi/electronics-starter-kit.jpg" itemprop="contentUrl"&gt;&lt;/a&gt;
  &lt;figcaption&gt;
- &lt;p&gt;Example electronics starter kit&lt;/p&gt;</description></item><item><title>Pulse Width Modulation (PWM)</title><link>https://pi4j.com/documentation/io-examples/pwm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/io-examples/pwm/</guid><description>&lt;h2 id="what-is-it"&gt;What is it?&lt;/h2&gt;
+ &lt;p&gt;Example electronics starter kit&lt;/p&gt;</description></item><item><title>Pulse Width Modulation (PWM)</title><link>https://pi4j.com/documentation/io-types/pwm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/io-types/pwm/</guid><description>&lt;h2 id="what-is-it"&gt;What is it?&lt;/h2&gt;
 &lt;p&gt;The abbreviation PWM stands for &amp;ldquo;Pulse Width Modulation&amp;rdquo; and is also often referred
 to in German as pulse width modulation or pulse duration modulation. This technology
 is used, among other things, to control servomotors and is also used, for example,

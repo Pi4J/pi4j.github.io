@@ -28,7 +28,7 @@ This implementation is developed/supported by a team separate of Pi4j. Pi4j is a
 
 &lt;h2 id="intro"&gt;Intro&lt;/h2&gt;
 
-&lt;div class="notices warning" &gt;&lt;p&gt;Before proceeding with this example, make sure that you have a Raspberry Pi prepared to execute Java code with JBang as &lt;a href="https://pi4j.com/examples/jbang/" target="_blank" rel="noopener"&gt;explained here&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Serial Peripheral Interface (SPI)</title><link>https://pi4j.com/documentation/io-examples/spi/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/io-examples/spi/</guid><description>&lt;h2 id="what-is-it"&gt;What is it?&lt;/h2&gt;
+&lt;div class="notices warning" &gt;&lt;p&gt;Before proceeding with this example, make sure that you have a Raspberry Pi prepared to execute Java code with JBang as &lt;a href="https://pi4j.com/examples/jbang/" target="_blank" rel="noopener"&gt;explained here&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Serial Peripheral Interface (SPI)</title><link>https://pi4j.com/documentation/io-types/spi/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/io-types/spi/</guid><description>&lt;h2 id="what-is-it"&gt;What is it?&lt;/h2&gt;
 &lt;p&gt;The Serial Peripheral Interface, abbreviated to SPI, is a bus system which enables
 communication between a main device (called “master”) and one or more secondary devices
 (called “slave”). A direct communication between all participants is not possible here,
