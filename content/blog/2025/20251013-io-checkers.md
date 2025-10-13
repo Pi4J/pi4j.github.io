@@ -4,6 +4,8 @@ date: 2025-10-13
 tags: ["PWM", "SPI", "I2C", "UART", "Serial", "GPIO", "Jbang"]
 ---
 
+2025-10-13, by Frank Delporte
+
 For some of the IO types (PWM, SPI,...), additional configurations are required. These are documented in 
 [I/O Types](/documentation/io-types/), but still, sometimes it's hard to remember what's required or difficult
 to validate. For that reason, an IO Checker tool has been created. It's part of the [Pi4J OS repository](https://github.com/Pi4J/pi4j-os/tree/main/iochecks) and can be executed directly from the GitHub file with JBang. This means it's very
