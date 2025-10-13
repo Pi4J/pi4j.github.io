@@ -6,7 +6,7 @@ tags: ["Visual Studio Code"]
 
 ## Java on the Raspberry Pi
 
-{{% notice warning %}}
+{{% notice info %}}
 Please check the [Prepare a Raspberry Pi](/prepare/install-java/) and [Install Java and Tools](/prepare/install-java/) instructions. 
 {{% /notice %}}
 
