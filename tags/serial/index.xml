@@ -16,6 +16,6 @@ This implementation is developed/supported by a team separate of Pi4j. Pi4j is a
 &lt;p&gt;Serial communication can be used to transfer data between different boards, devices, etc. Data is transfered bit-by-bit
 in a sequence, through a single wire from a transmitter (= TX) to a receiver (= RX). On the receiver side the bits are
 combined to bytes.&lt;/p&gt;</description></item><item><title>IO Checker Tool</title><link>https://pi4j.com/blog/2025/20251013-io-checkers/</link><pubDate>Mon, 13 Oct 2025 00:00:00 +0000</pubDate><guid>https://pi4j.com/blog/2025/20251013-io-checkers/</guid><description>&lt;p&gt;For some of the IO types (PWM, SPI,&amp;hellip;), additional configurations are required. These are documented in
-&lt;a href="https://pi4j.com/documentation/io-types/"&gt;I/O Types&lt;/a&gt;, but still, sometimes it&amp;rsquo;s hard to remember what&amp;rsquo;s required, or difficult
+&lt;a href="https://pi4j.com/documentation/io-types/"&gt;I/O Types&lt;/a&gt;, but still, sometimes it&amp;rsquo;s hard to remember what&amp;rsquo;s required or difficult
 to validate. For that reason, an IO Checker tool has been created. It&amp;rsquo;s part of the &lt;a href="https://github.com/Pi4J/pi4j-os/tree/main/iochecks" target="_blank" rel="noopener"&gt;Pi4J OS repository&lt;/a&gt; and can be executed directly from the GitHub file with JBang. This means it&amp;rsquo;s very
-easo to use, but also to extend if other checks reveal to be helpful.&lt;/p&gt;</description></item></channel></rss>
+easy to use, but also to extend if other checks reveal to be helpful.&lt;/p&gt;</description></item></channel></rss>
