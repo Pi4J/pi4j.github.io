@@ -2,6 +2,8 @@
 title: Serial Peripheral Interface (SPI)
 weight: 240
 tags: ["SPI", "MAX7219"]
+aliases:
+  - /documentation/io-examples/spi/
 ---
 
 ## What is it?
@@ -62,6 +64,40 @@ There is one interface that can be accessed in two ways:
 ```shell
 /dev/spidev0.0 drives CE0 Low
 /dev/spidev0.1 drives CE1 Low
+```
+
+## Checking SPI Configuration
+
+You can check the SPI configuration of your Raspberry Pi with the following command, using [JBang](/prepare/install-java/#install-sdkman-maven-and-jbang) and a checker tool available in the [GitHub Pi4J OS repository](https://github.com/pi4J/pi4j-os). One or more checks are performed depending on the IO type checked by the tool. You will get a result like this, indicating if the check passed or failed, with more info about the expected and found result:
+
+```shell
+$ jbang https://github.com/pi4j/pi4j-os/blob/main/iochecks/IOChecker.java spi
+
+Results from SPI Detection
+
+	Configuration check for SPI in config.txt
+		Status: PASS
+		Expected: 
+			dtparam=spi=on
+		Result: 
+			Found in /boot/firmware/config.txt: dtparam=spi=on
+
+	Search for SPI in /proc/device-tree
+		Status: PASS
+		Expected: 
+			spi device-tree entries with status=okay
+		Result: 
+			✗ spi10_cs_gpio1 (status: unknown)
+			✗ spi10_gpio2 (status: unknown)
+			✓ spi@7d004000 (status: okay)
+			✓ spidev@0 (status: okay)
+
+	ls -l /sys/bus/spi/devices
+		Status: PASS
+		Expected: 
+			One or more spiX.Y (X and Y = numbers)
+		Result: 
+			spi0.0 spi0.1 spi10.0
 ```
 
 ## Additional Information

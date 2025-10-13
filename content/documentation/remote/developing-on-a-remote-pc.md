@@ -1,6 +1,6 @@
 ---
-title: Developing on a remote PC
-weight: 45
+title: Using Maven Archetype
+weight: 172
 tags: ["Maven"]
 ---
 

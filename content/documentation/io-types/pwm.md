@@ -2,6 +2,8 @@
 title: Pulse Width Modulation (PWM)
 weight: 220
 tags: ["PWM", "CrowPi"]
+aliases:
+  - /documentation/io-examples/pwm/
 ---
 
 ## What is it?
@@ -69,6 +71,38 @@ If you need more than 2 PWM pins, use the software PWM functionality, it may be 
 fine for your application. If they are not good enough, then you will probably need a 
 PWM expander board/chip (controlled by I2C/SPI) to provide additional PWM support.
 
+## Checking PWM Configuration
+
+You can check the PWM configuration of your Raspberry Pi with the following command, using [JBang](/prepare/install-java/#install-sdkman-maven-and-jbang) and a checker tool available in the [GitHub Pi4J OS repository](https://github.com/pi4J/pi4j-os). One or more checks are performed depending on the IO type checked by the tool. You will get a result like this, indicating if the check passed or failed, with more info about the expected and found result:
+
+```shell
+$ jbang https://github.com/pi4j/pi4j-os/blob/main/iochecks/IOChecker.java pwm
+
+Results from PWM Detection
+
+	Configuration check for PWM in config.txt
+		Status: PASS
+		Expected: 
+			dtoverlay=pwm (or dtoverlay=pwm-2chan for 2-channel PWM)
+		Result: 
+			Found in /boot/firmware/config.txt: dtoverlay=pwm-2chan
+
+	ls -l /sys/class/pwm/
+		Status: PASS
+		Expected: 
+			One or more pwmchipX (X = number)
+		Result: 
+			pwmchip0
+
+	pinctrl | grep PWM
+		Status: PASS
+		Expected: 
+			GPIO line(s) with PWM function (e.g., GPIO18 = PWM0_CHAN2)
+		Result: 
+			18: a3    pd | lo // GPIO18 = PWM0_CHAN2
+			19: a3    pd | lo // GPIO19 = PWM0_CHAN3
+			45: op dh pd | hi // FAN_PWM/GPIO45 = output
+```
 
 ## Linuxfs Provider (linuxfs-pwm)
 
@@ -198,7 +232,6 @@ a component to control a buzzer with PWM.
 Of importance, this example executes on a Raspberry Pi4, the buildPwmConfig(Context pi4j, int address) example 
 code uses pigpio-pwm and the value passed for 'address' is the BCM pin number.
 
-
 ```java
 public class BuzzerComponent extends Component {
 
@@ -312,6 +345,5 @@ public class BuzzerComponent extends Component {
             .shutdown(0)
             .build();
   }
-
 }
 ```

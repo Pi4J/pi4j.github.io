@@ -2,6 +2,8 @@
 title: Digital Output (GPIO)
 weight: 200
 tags: ["Digital Output"]
+aliases:
+  - /documentation/io-examples/digital-output/
 ---
 
 A digital output translates a false/true (or 0/1) to an output value of 0V or 3.3V. This

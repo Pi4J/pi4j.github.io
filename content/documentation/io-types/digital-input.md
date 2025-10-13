@@ -2,6 +2,8 @@
 title: Digital Input (GPIO)
 weight: 210
 tags: ["Digital Input"]
+aliases:
+  - /documentation/io-examples/digital-input/
 ---
 
 Similar to a digital output pin, a digital input translates an input value of 0V or 3.3V to the value false/true. This
