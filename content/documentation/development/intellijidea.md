@@ -4,10 +4,11 @@ weight: 172
 tags: ["IntelliJ IDEA"]
 ---
 
-IntelliJ IDEA is the most-used IDE for Java development. It's also available for ARM devices but has [high minimum requirements](https://www.jetbrains.com/help/idea/prerequisites.html#min_requirements), so you'll need a Raspberry Pi 5:
+IntelliJ IDEA is the most-used IDE for Java development. It's also available for ARM devices but has [high minimum requirements](https://www.jetbrains.com/help/idea/prerequisites.html#min_requirements), so it's not a good fit to use on a Raspberry Pi:
 
 * 4 vCPUs, either x86_64 or arm64 architecture. Also, higher clock frequency is preferred to higher core count.
 * 8 GB RAM.
+* Not supported: _Single-board computers such as Raspberry Pi. To run your code on a Raspberry Pi, check out remote interpreters or remote debugging, and similar features._
 
 ## Remote Development with IntelliJ IDEA
 
