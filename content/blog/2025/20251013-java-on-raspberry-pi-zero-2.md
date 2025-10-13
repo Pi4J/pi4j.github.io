@@ -1,5 +1,5 @@
 ---
-title: "Java 21+ on RPi Zero 2"
+title: "Java 21+ Working OK on RPi Zero 2"
 date: 2025-10-13
 tags: ["Zero 2"]
 ---
