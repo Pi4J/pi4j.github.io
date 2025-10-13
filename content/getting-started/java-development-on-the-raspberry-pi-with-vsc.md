@@ -10,13 +10,13 @@ tags: ["Visual Studio Code"]
 Please check the [Prepare a Raspberry Pi](/prepare/install-java/) and [Install Java and Tools](/prepare/install-java/) instructions. 
 {{% /notice %}}
 
-You need Java 21 or newer to use Pi4J V3+. On a board with ARMv7 or ARMv8 you will get this result:
+You need Java 25 or newer to use Pi4J V4+. On a board with ARMv7 or ARMv8 you will get this result:
 
 ```shell
 $ java -version
-openjdk version "21.0.5" 2024-10-15 LTS
-OpenJDK Runtime Environment Zulu21.38+21-CA (build 21.0.5+11-LTS)
-OpenJDK 64-Bit Server VM Zulu21.38+21-CA (build 21.0.5+11-LTS, mixed mode, sharing)
+openjdk version "25" 2025-09-16 LTS
+OpenJDK Runtime Environment Zulu25.28+85-CA (build 25+36-LTS)
+OpenJDK 64-Bit Server VM Zulu25.28+85-CA (build 25+36-LTS, mixed mode, sharing)
 ```
 
 Keep in mind this version is **only compatible with ARMv7 or higher** and doesn't support all
