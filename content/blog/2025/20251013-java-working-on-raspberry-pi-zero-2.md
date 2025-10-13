@@ -32,7 +32,7 @@ java.lang.NoClassDefFoundError: com/sun/tools/javac/jvm/ClassReader$AttributeRea
 I also tried the previous version of Zulu 21 (based on OpenJDK 21.0.7, released on April 15, 2025). It has the same problem:
 
 ```shell
-$ sdk install java 21.0.8-zulu
+$ sdk install java 21.0.7-zulu
 
 $ java -version
 openjdk version "21.0.7" 2025-04-15 LTS
