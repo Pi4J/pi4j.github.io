@@ -73,6 +73,7 @@ You can check the Serial configuration of your Raspberry Pi with the following c
 
 ```shell
 $ jbang https://github.com/pi4j/pi4j-os/blob/main/iochecks/IOChecker.java serial
+
 [jbang] Building jar for IOChecker.java...
 Results from Serial Detection
 
@@ -92,6 +93,12 @@ Results from Serial Detection
 			/dev/ttyAMA0 exists (readable, writable)
 			/dev/ttyUSB0 exists (readable, writable)
 			/dev/ttyACM0 not available
+```
+
+If you have used the IOChecker before and want to make sure you are using the latest version, you need to clear the JBang cache:
+
+```shell
+$ jbang cache clear
 ```
 
 ## Code example

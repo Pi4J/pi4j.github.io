@@ -100,6 +100,12 @@ Results from SPI Detection
 			spi0.0 spi0.1 spi10.0
 ```
 
+If you have used the IOChecker before and want to make sure you are using the latest version, you need to clear the JBang cache:
+
+```shell
+$ jbang cache clear
+```
+
 ## Additional Information
 
 - [Wikipedia SPI](https://en.wikipedia.org/wiki/Serial_Peripheral_Interface)

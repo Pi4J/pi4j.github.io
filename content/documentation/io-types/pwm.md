@@ -104,6 +104,12 @@ Results from PWM Detection
 			45: op dh pd | hi // FAN_PWM/GPIO45 = output
 ```
 
+If you have used the IOChecker before and want to make sure you are using the latest version, you need to clear the JBang cache:
+
+```shell
+$ jbang cache clear
+```
+
 ## Linuxfs Provider (linuxfs-pwm)
 
 As of version 2.6.0 of Pi4J, `linuxfs-pwm` also supports hardware PWM on the Raspberry Pi 5. More information and an example implementation is available in the blog post [PWM Hardware Support on Raspberry Pi5](/blog/2024/20240423_pwm_rpi5/).
