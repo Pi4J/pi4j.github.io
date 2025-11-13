@@ -173,7 +173,7 @@ dtoverlay=pwm-2chan
 # GPIO 19 = channel 3
  
 [all]
-Dtoverlay=pwm-2chan,pin=12,func=4,pin2=13,func2=4
+dtoverlay=pwm-2chan,pin=12,func=4,pin2=13,func2=4
 # GPIO 12 = channel 0
 # GPIO 13 = channel 1
 ```
