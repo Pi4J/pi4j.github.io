@@ -9,6 +9,8 @@ All releases of Pi4J V2+ are listed on [github.com/Pi4J/pi4j/releases](https://g
 
 Requires Java 25, see [What's New in V4](/about/info-v4/) for more info.
 
+### 2025-XX-XX - V4.0.0
+
 ## V3
 
 Requires Java 21, see [What's New in V3](/about/info-v3/) for more info.
