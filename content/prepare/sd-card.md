@@ -6,7 +6,7 @@ weight: 16
 The SD card will hold the operating system. On the Raspberry Pi website, [on the download page, you can
 find the Imager tool](https://www.raspberrypi.org/software/). Select the version for your computer, download, and install it.
 
-![Imager download](/assets/getting-started/setup/website-download.png)
+![Imager download](/assets/prepare/setup/website-download.png)
 
 Start the Imager and follow these steps:
 
@@ -26,17 +26,18 @@ Start the Imager and follow these steps:
 1. You can now take the SD Card out of your computer, and put it in the Raspberry Pi
 
 {{< gallery >}}
-{{< figure link="/assets/getting-started/setup/imager-device.png" caption="Selecting the device" caption-position="center" caption-effect="fade" >}}
-{{< figure link="/assets/getting-started/setup/imager-os.png" caption="Selecting the operating system" caption-position="center" caption-effect="fade" >}}
-{{< figure link="/assets/getting-started/setup/imager-storage.png" caption="Selecting the SD card" caption-position="center" caption-effect="fade" >}}
-{{< figure link="/assets/getting-started/setup/imager-hostname.png" caption="Specify the hostname" caption-position="center" caption-effect="fade" >}}
-{{< figure link="/assets/getting-started/setup/imager-localisation.png" caption="Specify the localization settings" caption-position="center" caption-effect="fade" >}}
-{{< figure link="/assets/getting-started/setup/imager-wifi.png" caption="Specify the Wi-Fi settings" caption-position="center" caption-effect="fade" >}}
-{{< figure link="/assets/getting-started/setup/imager-ssh.png" caption="Enable SSH" caption-position="center" caption-effect="fade" >}}
-{{< figure link="/assets/getting-started/setup/imager-connect.png" caption="Enable Connect if needed" caption-position="center" caption-effect="fade" >}}
-{{< figure link="/assets/getting-started/setup/imager-write-check.png" caption="Double check before writing" caption-position="center" caption-effect="fade" >}}
-{{< figure link="/assets/getting-started/setup/imager-write-confirm.png" caption="Confirm to write" caption-position="center" caption-effect="fade" >}}
-{{< figure link="/assets/getting-started/setup/imager-writing.png" caption="Writing progress" caption-position="center" caption-effect="fade" >}}
-{{< figure link="/assets/getting-started/setup/imager-done.png" caption="Done" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/prepare/setup/imager-device.png" caption="Selecting the device" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/prepare/setup/imager-os.png" caption="Selecting the operating system" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/prepare/setup/imager-storage.png" caption="Selecting the SD card" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/prepare/setup/imager-hostname.png" caption="Specify the hostname" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/prepare/setup/imager-localisation.png" caption="Specify the localization settings" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/prepare/setup/imager-user.png" caption="Specify the user name and password" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/prepare/setup/imager-wifi.png" caption="Specify the Wi-Fi settings" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/prepare/setup/imager-ssh.png" caption="Enable SSH" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/prepare/setup/imager-connect.png" caption="Enable Connect if needed" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/prepare/setup/imager-write-check.png" caption="Double check before writing" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/prepare/setup/imager-write-confirm.png" caption="Confirm to write" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/prepare/setup/imager-writing.png" caption="Writing progress" caption-position="center" caption-effect="fade" >}}
+{{< figure link="/assets/prepare/setup/imager-done.png" caption="Done" caption-position="center" caption-effect="fade" >}}
 {{< /gallery >}}
 {{< load-photoswipe >}}
