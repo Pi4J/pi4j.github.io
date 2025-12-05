@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Prepare a Raspberry Pi on Pi4J</title><link>https://pi4j.com/prepare/</link><description>Recent content in Prepare a Raspberry Pi on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://pi4j.com/prepare/index.xml" rel="self" type="application/rss+xml"/><item><title>Write OS to SD card</title><link>https://pi4j.com/prepare/sd-card/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/prepare/sd-card/</guid><description>&lt;p&gt;The SD card will hold the operating system. On the Raspberry Pi website, &lt;a href="https://www.raspberrypi.org/software/" target="_blank" rel="noopener"&gt;on the download page, you can
 find the Imager tool&lt;/a&gt;. Select the version for your computer, download, and install it.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://pi4j.com/assets/getting-started/setup/website-download.png" alt="Imager download"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://pi4j.com/assets/prepare/setup/website-download.png" alt="Imager download"&gt;&lt;/p&gt;
 &lt;p&gt;Start the Imager and follow these steps:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Put the SD Card in your computer&lt;/li&gt;
@@ -27,10 +27,10 @@ find the Imager tool&lt;/a&gt;. Select the version for your computer, download, 
 &lt;link rel="stylesheet" href="https://pi4j.com/css/hugo-easy-gallery.css" /&gt;
 &lt;div class="box fancy-figure caption-position-center caption-effect-fade" &gt;
  &lt;figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"&gt;
- &lt;div class="img" style="background-image: url('/assets/getting-started/setup/imager-device.png');"&gt;
- &lt;img itemprop="thumbnail" src="https://pi4j.com/assets/getting-started/setup/imager-device.png" alt="Selecting the device"/&gt;
+ &lt;div class="img" style="background-image: url('/assets/prepare/setup/imager-device.png');"&gt;
+ &lt;img itemprop="thumbnail" src="https://pi4j.com/assets/prepare/setup/imager-device.png" alt="Selecting the device"/&gt;
  &lt;/div&gt;
- &lt;a href="https://pi4j.com/assets/getting-started/setup/imager-device.png" itemprop="contentUrl"&gt;&lt;/a&gt;
+ &lt;a href="https://pi4j.com/assets/prepare/setup/imager-device.png" itemprop="contentUrl"&gt;&lt;/a&gt;
  &lt;figcaption&gt;
  &lt;p&gt;Selecting the device&lt;/p&gt;</description></item><item><title>The First Boot</title><link>https://pi4j.com/prepare/first-boot/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/prepare/first-boot/</guid><description>&lt;p&gt;Put the SD Card with the operating system into the Raspberry Pi, connect a keyboard, mouse, and screen, and power it up!&lt;/p&gt;
 
