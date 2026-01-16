@@ -1,6 +1,7 @@
 ---
 title: "x86 vs ARM vs RISC-V"
 weight: 10
+canonical: https://webtechie.be/post/2026-01-07-x86-arm-riscv/
 ---
 
 This is an overview of the different processor types used in computers, so also in Single Board Computers (SBCs).
