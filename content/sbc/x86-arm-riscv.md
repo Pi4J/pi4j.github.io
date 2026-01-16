@@ -3,7 +3,7 @@ title: "x86 vs ARM vs RISC-V"
 weight: 10
 ---
 
-Let's compare the different types of processors used for these SBCs.
+This is an overview of the different processor types used in computers, so also in Single Board Computers (SBCs).
 
 ## ARM: Efficient by Design
 
