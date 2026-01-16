@@ -9,14 +9,4 @@
 &lt;li&gt;Some patience and time.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="difference-between-analog-and-digital-signals"&gt;Difference between Analog and Digital signals?&lt;/h2&gt;
-&lt;p&gt;&lt;img src="https://user-images.githubusercontent.com/60224159/157847529-3b46c3e9-8d39-428c-91a1-f3018cb9f9e3.png" alt="image"&gt;&lt;/p&gt;</description></item><item><title>Joystick Analog</title><link>https://pi4j.com/examples/components/joystickanalog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/components/joystickanalog/</guid><description>&lt;h3 id="description"&gt;Description&lt;/h3&gt;
-&lt;p&gt;The &lt;a href="https://github.com/Pi4J/pi4j-example-components/tree/main/src/main/java/com/pi4j/catalog/components/JoystickAnalog.java" target="_blank" rel="noopener"&gt;JoystickAnalog&lt;/a&gt; is a template class, that you can use in your own Java-project.
-The template class is created for an analog joystick, for example the KY-023, which consists of two potentiometers, one for the X-axis and one for the Y-axis. But any joystick with two potentiometers will meet the requirements.&lt;/p&gt;
-&lt;p&gt;The basic functions of the template class are:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;return of a normalized value, optionally between 0 and 1 or between -1 and 1, of the X-axis and the Y-axis&lt;/li&gt;
-&lt;li&gt;creation of simple events at a value change of the X-axis or the Y-axis, simple event handlers for button pressed, button depressed, while button is pressed&lt;/li&gt;
-&lt;li&gt;calibration of the center position of the joystick (center position 0.5 at a normalized value between 0 and 1, center position 0 at a normalized value between -1 and 1)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="layout"&gt;Layout&lt;/h3&gt;
-&lt;p&gt;&lt;img src="https://pi4j.com/assets/examples/components/components/Layout-JoystickAnalog.png" alt="Joystick Layout"&gt;&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;&lt;img src="https://user-images.githubusercontent.com/60224159/157847529-3b46c3e9-8d39-428c-91a1-f3018cb9f9e3.png" alt="image"&gt;&lt;/p&gt;</description></item></channel></rss>
