@@ -233,8 +233,7 @@ These two values can be controlled via the Pi4J library and are also used intern
 
 ### Code example
 
-The following example is an extract of the [CrowPi example project](../../examples/crowpi/crowpi-examples.md) which includes 
-a component to control a buzzer with PWM.
+The following example is an extract of a [CrowPi](/sbc/crowpi) example project that includes a component to control a buzzer with PWM.
 Of importance, this example executes on a Raspberry Pi4, the buildPwmConfig(Context pi4j, int address) example 
 code uses pigpio-pwm and the value passed for 'address' is the BCM pin number.
 

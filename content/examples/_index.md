@@ -10,12 +10,15 @@ In this section, we want to provide you example implementations of several devic
 
 ### Current code providers
 
-| Provider                 | Link                                                          |
-|:-------------------------|:--------------------------------------------------------------|
-| Pi4J                     | [JBang examples](/examples/jbang)                             |
-| FHNW University          | [Components](/examples/components)                            |
-| FHNW University          | [Electronics with CrowPi](/examples/crowpi)                   |
-| Community Implementation | [Community Implementation](/examples/communityimplementation) |
+| Provider                  | Link                                                                                                  |
+|:--------------------------|:------------------------------------------------------------------------------------------------------|
+| Pi4J JBang examples       | [JBang examples](/examples/jbang)                                                                     |
+| Pi4J Drivers library      | UNDER CONSTRUCTION                                                                                    |
+| Pi4J Drivers examples     | UNDER CONSTRUCTION                                                                                    |
+| Community Implementations | [Community Implementation](/examples/communityimplementation)                                         |
+| FHNW University           | [Component example implementations](https://gitlab.fhnw.ch/ip_12_preparation/pi4j-example-components) |
+| FHNW University           | [Electronics with CrowPi](https://gitlab.fhnw.ch/ip_12_preparation/pi4j-example-crowpi)               |
+                                   |
 
 
 ### Simple Implementation

@@ -1,9 +1,7 @@
 ---
-title: Electronics with CrowPi
-weight: 60
+title: Elecrow CrowPi
+weight: 20
 tags: ["CrowPi"]
-aliases:
-  - /examples/crowpi/
 ---
 
 The [CrowPi is an electronics starter kit in a laptop-housing](https://www.elecrow.com/crowpi.html).
