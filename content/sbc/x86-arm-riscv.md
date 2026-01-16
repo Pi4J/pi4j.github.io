@@ -50,13 +50,13 @@ Perhaps the most impressive proof that ARM can compete with x86 at the high-end 
 
 But the results were revolutionary! The M1 delivered performance that matched or exceeded Intel chips while using a fraction of the power. [An M1 Mac Mini draws just 39 watts at maximum load compared to 122 watts for the 2018 Intel-based Mac Mini with a 6-core Core i7](https://en.wikipedia.org/wiki/Apple_M1#Performance_and_efficiency). The secret is Apple's System-on-Chip design with Unified Memory Architecture, where the CPU, GPU, Neural Engine, and memory all share the same memory pool on a single chip. This tight integration, combined with ARM's efficient instruction set, allows the M-series to deliver desktop-class performance in fanless laptops. 
 
-Each time I need to use a Windows laptop, I'm overwhelmed by the fan noise and the heat coming out of it. My M1 MacBook Air, in contrast, seems to have no fan at all and is completely silent, even when compiling code or running multiple Java applications. This isn't just about comfort but is proof of ARM's power efficiency. 
+A common problem with Windows laptops is the fan noise and the heat coming out of it. An M1 MacBook Air, in contrast, seems to have no fan at all and is completely silent, even when compiling code or running multiple Java applications. This isn't just about comfort but is proof of ARM's power efficiency. 
 
 Apple's success with M-series chips has proven that ARM isn't just for mobile and embedded. It can go head-to-head with traditional desktop processors, and often wins on both performance and efficiency.
 
 ### Java on ARM
 
-What I love about ARM for Java development is the mature ecosystem. The JVM has been heavily optimized for ARM, and the Pi4J library (designed for the Raspberry Pi) works seamlessly because the hardware support is rock-solid.
+ARM for Java development is a mature ecosystem. The JVM has been heavily optimized for ARM, and the Pi4J library (designed for the Raspberry Pi) works seamlessly because the hardware support is rock-solid.
 
 The entire Java ecosystem (OpenJDK, popular frameworks, and build tools) works seamlessly on ARM instances, including Apple's M-series and AWS Graviton. This means the same ARM-optimized Java code you're running on your Raspberry Pi could theoretically scale all the way up to massive cloud deployments on AWS Graviton. The architecture that powers your 20-euro Raspberry Pi Zero 2 is the same one handling enterprise-scale workloads in data centers. That's the beauty of ARM's versatility. It ranges from microcontrollers, to smart phones, to embedded systems, to cloud infrastructure, all with consistent tooling and development practices.
 
@@ -108,7 +108,7 @@ The big advantage of RISC-V? Complete transparency and customization potential a
 
 ### Java on RISC-V
 
-As I mentioned at the start, one of my goals for 2025 is to dive deeper into Java on RISC-V. This is where things get really exciting, but also really experimental...
+This is where things get really exciting, but also really experimental...
 
 The good news is that Java officially supports RISC-V with the [OpenJDK RISC-V Port Project](https://wiki.openjdk.org/spaces/RISCVPort/overview) and the [sources on GitHub > openjdk > riscv-port](https://github.com/openjdk/riscv-port). Today, you can run Java on RISC-V hardware with:
 
@@ -119,11 +119,9 @@ The good news is that Java officially supports RISC-V with the [OpenJDK RISC-V P
 
 The port targets the RV64G configuration (64-bit RISC-V with the standard general-purpose extensions), and there's experimental support for vector operations (RVV) and compressed instructions (RVC). Builds for Ubuntu of Java 17, 21, and 25 are available from [Adoptium](https://adoptium.net/supported-platforms).
 
-I was not able to test this myself yet, but as you can see on the pictures at the beginning of this post, they are waiting right beside me to be powered on... :-)
-
 ### Performance and Ecosystem Maturity
 
-But let's be honest, as far as I understand, RISC-V is not yet competitive with ARM in terms of performance. The current RISC-V boards like the StarFive VisionFive 2 are significantly slower than equivalent ARM boards. We're talking 2-3x slower than a Raspberry Pi 4 running at the same clock speed. 
+But let's be honest, RISC-V is not yet competitive with ARM in terms of performance. The current RISC-V boards like the StarFive VisionFive 2 are significantly slower than equivalent ARM boards. We're talking 2-3x slower than a Raspberry Pi 4 running at the same clock speed. 
 
 As RISC-V is a community project, things evolve slower compared to Intel, AMD, ARM,...
 
