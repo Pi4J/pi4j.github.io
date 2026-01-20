@@ -28,7 +28,7 @@ The Pi4j project has evolved in all these years as the whole Java eco-system and
   * In 2.5.0, support for the Raspberry Pi 5 was added. Because of the new [GPIO chip RP1](https://www.raspberrypi.com/documentation/microcontrollers/rp1.html), a new GPIO Provider was needed. See the [this interview](/blog/2024/20240318_interview_alexander_liggesmeyer/).
 * [V3.X.X](/about/info-v3): Based on Pi4J 2.8.0 and Java 21.
   * Please [read this blog post for more info](/blog/2025/20250211-welcome-java-21/).
-* [V4.X.X](/about/info-v4): Based on Pi4J 3.0.3 and Java 25.
+* [V4.X.X](/about/info-v4): Based on Pi4J 3.0.3 and Java 25, introducing the [FFM plugin](/documentation/providers/ffm/).
     * Please [read this interview with Nick Gritsenko (aka DigitalSmile) for more info](/blog/2025/2025????-interview-nick-ffm/).
 
 ### Project Mission/Goals
