@@ -173,7 +173,7 @@ dtoverlay=pwm-2chan
 # GPIO 19 = channel 3
  
 [all]
-Dtoverlay=pwm-2chan,pin=12,func=4,pin2=13,func2=4
+dtoverlay=pwm-2chan,pin=12,func=4,pin2=13,func2=4
 # GPIO 12 = channel 0
 # GPIO 13 = channel 1
 ```
@@ -233,8 +233,7 @@ These two values can be controlled via the Pi4J library and are also used intern
 
 ### Code example
 
-The following example is an extract of the [CrowPi example project](../../examples/crowpi/crowpi-examples.md) which includes 
-a component to control a buzzer with PWM.
+The following example is an extract of a [CrowPi](/sbc/crowpi) example project that includes a component to control a buzzer with PWM.
 Of importance, this example executes on a Raspberry Pi4, the buildPwmConfig(Context pi4j, int address) example 
 code uses pigpio-pwm and the value passed for 'address' is the BCM pin number.
 
