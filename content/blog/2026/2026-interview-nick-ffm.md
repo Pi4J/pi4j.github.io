@@ -18,7 +18,7 @@ tags: ["FFM API"]
 
 **Frank:** Thanks for joining the Pi4J community! What's your background?
 
-**Nick:** I work at Yandex in the infrastructure department. One of my tasks is to monitor the evolutions in compuer infrastructure. We're actually discussing moving from classic x86/AMD64 systems to ARM or even RISC-V in our data centers. The hardware landscape is changing fast, and I think RISC-V will make serious progress in the next 10 years.
+**Nick:** I work at Yandex in the infrastructure department. One of my tasks is to monitor the evolutions in computer infrastructure. The hardware landscape is changing fast, and I think RISC-V will make serious progress in the next 10 years.
 
 **Frank:** What brought you to Pi4J?
 
@@ -30,7 +30,7 @@ tags: ["FFM API"]
 
 **Nick:** The Foreign Function & Memory API is part of the [OpenJDK Project Panama](https://openjdk.org/projects/panama/), which actually started way back in 2014. The big difference between FFM and traditional approaches like JNI, JNA, or JNR is huge: **you don't need to know C or C++**. As Java developers, why should we have to become C++ experts just to talk to native code?
 
-The traditional approaches have two main problems. First, writing production-ready C++ code requires deep expertise - you can't learn that from some "C++ in 21 days" book. Second, all those abstraction layers create serious runtime overhead with multiple layers the JVM has to handle.
+The traditional approaches have two main problems. First, writing production-ready C++ code requires deep expertise. You can't learn that from some "C++ in 21 days" book. Second, all those abstraction layers create serious runtime overhead with multiple layers the JVM has to handle.
 
 **Frank:** How is FFM different?
 
@@ -46,7 +46,7 @@ When you want to change a digital output state, you're calling `ioctl` directly 
 
 **Frank:** What about performance?
 
-**Nick:** I've done measurements comparing the FFM implementation with existing Pi4J approaches. The results are impressive, as the removal of all the steps inbetween with JNI and JNA shows a big difference between the "old" implementation and the FFM plugin. Removing the abstraction layers brings big performance improvements.
+**Nick:** I've done measurements comparing the FFM implementation with existing Pi4J approaches. The results are impressive, as the removal of all the steps in between, with JNI and JNA, shows a big difference between the "old" implementation and the FFM plugin. Removing the abstraction layers brings big performance improvements.
 
 ```text
 Benchmark                                                  Mode  Cnt     Score    Error  Units
@@ -69,11 +69,11 @@ GPIOPerformanceTest.testLinuxFsOutputRoundTrip             avgt    5   108.306 Â
 
 **Frank:** Are there any downsides to FFM?
 
-**Nick:** The main issue is crash handling. If something in the native code throws an exception, your entire JVM crashes - not just your application. This isn't unique to FFM though. The potential solution would be sandboxing, where native crashes wouldn't kill the whole JVM, but I haven't seen concrete plans for that yet.
+**Nick:** The main issue is crash handling. If something in the native code throws an exception, your entire JVM crashes, not just your application. This isn't unique to FFM, though. The potential solution would be sandboxing, where native crashes wouldn't kill the whole JVM, but I haven't seen concrete plans for that yet.
 
 **Frank:** How do you handle different hardware requirements?
 
-**Nick:** This is important - I'm strictly against putting any Raspberry Pi-specific code directly in the FFM implementation. Everything should go through plugins. Pi4J already has a plugin system for providers, but I think we should extend this to hardware-specific things... plugins for Raspberry Pi, Orange Pi, RISC-V chips, etc.
+**Nick:** This is important! I'm strictly against putting any Raspberry Pi-specific code directly in the FFM implementation. Everything should go through plugins. Pi4J already has a plugin system for providers, but I think we should extend this to hardware-specific things... plugins for Raspberry Pi, Orange Pi, RISC-V chips, etc.
 
 The beauty of FFM is that it works with any hardware running Linux. We're not abandoning Raspberry Pi, but we can expand to other platforms much easier. So we probably won't need to do any changes to Pi4J itself to have it working on other boards.
 
@@ -89,7 +89,7 @@ When the previous plugins would be removed from Pi4J, and only the FFM plugin wo
 
 **Frank:** Advice for developers who want to contribute?
 
-**Nick:** The FFM learning curve isn't as steep as you might think. Once you understand the byte mathematics and how to map structures between Java and native worlds, it becomes straightforward - though I won't say it's just "copy and paste"!
+**Nick:** The FFM learning curve isn't as steep as you might think. Once you understand the byte mathematics and how to map structures between Java and native worlds, it becomes straightforward, though I won't say it's just "copy and paste"!
 
 I'd say about 70-80% of my time was spent understanding how FFM works. Once that clicked in my brain, development speeded up significantly.
 
