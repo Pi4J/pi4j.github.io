@@ -1,6 +1,6 @@
 ---
 title: GpioD Provider
-weight: 91
+weight: 92
 tags: ["GpioD", "Digital Input", "Digital Output"]
 ---
 

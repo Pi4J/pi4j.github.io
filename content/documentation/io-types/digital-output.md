@@ -13,56 +13,40 @@ For a LED you will need to put a resistor with the correct value between the GPI
 you can find a lot of examples and calculators online, for example on
 [circuitdigest.com/calculators/led-resistor-calculator](https://circuitdigest.com/calculators/led-resistor-calculator).
 
-The following example shows the minimal code to configure the `DIGITAL_OUTPUT_PIN` pin number 
+The following example shows the minimal code to configure the `BCM_LED` pin number 
 as an output pin and change the state with different methods which are provided by the Pi4J library.
- This implementation will operate with a Pi4j default Provider.
-The default Provider is not a concrete implementation and therefore
-running this program will not access the GPIO Hardware and the Hardware state will not be modified.
-To access the Hardware a concrete Provider is required.
-See [Providers](/documentation/providers/)
-
-Examples of the various methods and approaches which can be used to provision the I/O needs [are available in the examples project](
-https://github.com/Pi4J/pi4j-examples/tree/master/src/main/java/com/pi4j/example/gpio/digital/output).
-
+This implementation will operate with a Pi4j [provider](/documentation/providers/) that accesses the GPIO hardware.
 
 ```java
+// Connect a LED to PIN 18 = BCM 24
+int BCM_LED = 24;
+
 // Initialize Pi4J with an auto context
 // An auto context includes AUTO-DETECT BINDINGS enabled
 // which will load all detected Pi4J extension libraries
 // (Platforms and Providers) in the class path
 var pi4j = Pi4J.newAutoContext();
 
-// create a digital output instance using the default digital output provider
-var output = pi4j.dout().create(DIGITAL_OUTPUT_PIN);
-output.config().shutdownState(DigitalState.HIGH);
+// Create a digital output config and object
+var ledConfig = DigitalOutput.newConfigBuilder(pi4j)
+    .id("led")
+    .name("LED Flasher")
+    .bcm(BCM_LED)
+    .shutdown(DigitalState.LOW)
+    .initial(DigitalState.LOW);
 
-// setup a digital output listener to listen for any state changes on the digital output
-output.addListener(System.out::println);
+var led = pi4j.create(ledConfig);
 
-// lets invoke some changes on the digital output
-output.state(DigitalState.HIGH)
-          .state(DigitalState.LOW)
-          .state(DigitalState.HIGH)
-          .state(DigitalState.LOW);
+// Lets invoke some changes on the digital output
+for (int i = 0; i < 10; i++) {
+    if (led.equals(DigitalState.HIGH)) {
+        led.low();
+    } else {
+        led.high();
+    }
+    Thread.sleep(500);
+}
 
-// lets toggle the digital output state a few times
-output.toggle()
-          .toggle()
-          .toggle();
-
-// another friendly method of setting output state
-output.high()
-          .low();
-
-// lets read the digital output state
-System.out.print("CURRENT DIGITAL OUTPUT [" + output + "] STATE IS [");
-System.out.println(output.state() + "]");
-
-// pulse to HIGH state for 3 seconds
-System.out.println("PULSING OUTPUT STATE TO HIGH FOR 3 SECONDS");
-output.pulse(3, TimeUnit.SECONDS, DigitalState.HIGH);
-System.out.println("PULSING OUTPUT STATE COMPLETE");
-
-// shutdown Pi4J
+// Shutdown Pi4J
 pi4j.shutdown();
 ``` 

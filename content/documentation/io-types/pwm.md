@@ -352,3 +352,7 @@ public class BuzzerComponent extends Component {
   }
 }
 ```
+
+## Read More
+
+* [DigiKey: The Role of Pulse Width Modulation in Electronics](https://www.digikey.com/en/articles/the-role-of-pulse-width-modulation-in-electronics)
