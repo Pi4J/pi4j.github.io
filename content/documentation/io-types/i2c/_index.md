@@ -103,13 +103,30 @@ Results from I2C Detection
 
 	i2cdetect -y 1
 		Status: PASS
-		Expected: 
+		Expected:
 			One or more I2C used addresses detected on bus 1
-		Result: 
-			Found 3 used addres(ses) on bus 1: 0x21, 0x5C, 0x70
+		Result:
+			Found 2 used addres(ses) on bus 1: 0x27, 0x77
+
+	Pi4J Drivers SensorDetector on bus 1
+		Status: PASS
+		Expected:
+			One or more I2C sensors on bus 1 were recognized by the Pi4J Drivers library
+		Result:
+			Bmx280Driver
+			 - Addresses: 0x76, 0x77
+			 - TEMPERATURE: 19.106588
+			 - PRESSURE: 97226.89
+			 - HUMIDITY: 71.65199
 
 	i2cdetect -y 13
 		... # Truncated for brevity
+```
+
+If you have used the IOChecker before and want to make sure you are using the latest version, you need to clear the JBang cache:
+
+```shell
+$ jbang cache clear
 ```
 
 ## Transfer rates

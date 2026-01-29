@@ -1,6 +1,6 @@
 ---
 title: Debugging Failures
-weight: 36
+weight: 37
 tags: ["Pi4J OS"]
 aliases:
   - /getting-started/crowpi/crowpi-os

@@ -104,6 +104,12 @@ Results from PWM Detection
 			45: op dh pd | hi // FAN_PWM/GPIO45 = output
 ```
 
+If you have used the IOChecker before and want to make sure you are using the latest version, you need to clear the JBang cache:
+
+```shell
+$ jbang cache clear
+```
+
 ## Linuxfs Provider (linuxfs-pwm)
 
 As of version 2.6.0 of Pi4J, `linuxfs-pwm` also supports hardware PWM on the Raspberry Pi 5. More information and an example implementation is available in the blog post [PWM Hardware Support on Raspberry Pi5](/blog/2024/20240423_pwm_rpi5/).
@@ -167,7 +173,7 @@ dtoverlay=pwm-2chan
 # GPIO 19 = channel 3
  
 [all]
-Dtoverlay=pwm-2chan,pin=12,func=4,pin2=13,func2=4
+dtoverlay=pwm-2chan,pin=12,func=4,pin2=13,func2=4
 # GPIO 12 = channel 0
 # GPIO 13 = channel 1
 ```
@@ -227,8 +233,7 @@ These two values can be controlled via the Pi4J library and are also used intern
 
 ### Code example
 
-The following example is an extract of the [CrowPi example project](../../examples/crowpi/crowpi-examples.md) which includes 
-a component to control a buzzer with PWM.
+The following example is an extract of a [CrowPi](/sbc/crowpi) example project that includes a component to control a buzzer with PWM.
 Of importance, this example executes on a Raspberry Pi4, the buildPwmConfig(Context pi4j, int address) example 
 code uses pigpio-pwm and the value passed for 'address' is the BCM pin number.
 

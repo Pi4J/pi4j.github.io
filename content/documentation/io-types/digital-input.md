@@ -37,7 +37,7 @@ var config = DigitalInput.newConfigBuilder(pi4j)
 
 var input = pi4j.din().create(config);
 ```  
-s
+
 Once an input has been initialized, a listener can be attached to execute code on state changes of the input.
 
 ```java

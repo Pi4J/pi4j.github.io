@@ -110,25 +110,25 @@ url = "https://github.com/Pi4J"
 weight = 10
 
 [[menu.shortcuts]]
-name = "<i class='fab more-tag fa-mastodon'></i> Mastodon @pi4j@foojay.social"
-identifier = "mastodon"
-url = "https://foojay.social/@pi4j"
+name = "<i class='fab more-tag fa-github'></i> Pi4J Discussions"
+identifier = "discussions"
+url = "https://github.com/Pi4J/pi4j/discussions"
 weight = 15
 
 [[menu.shortcuts]]
-name = "<i class='fab more-tag fa-linkedin'></i> LinkedIn @pi4j"
-identifier = "linkedin"
-url = "https://www.linkedin.com/company/pi4j/"
+name = "<i class='fab more-tag fa-mastodon'></i> Mastodon"
+identifier = "mastodon"
+url = "https://foojay.social/@pi4j"
 weight = 20
 
 [[menu.shortcuts]]
-name = "<i class='fab more-tag fa-github'></i> Pi4J V2 Discussions"
-identifier = "discussions"
-url = "https://github.com/Pi4J/pi4j/discussions"
+name = "<i class='fab more-tag fa-linkedin'></i> LinkedIn"
+identifier = "linkedin"
+url = "https://www.linkedin.com/company/pi4j/"
 weight = 30
 
 [[menu.shortcuts]]
 name = "<i class='fab more-tag fa-slack'></i> Join our Slack"
 identifier = "slack"
 url = "https://join.slack.com/t/pi4j/shared_invite/zt-1ttqt8wgj-E6t69qaLrNuCMPLiYnBCsg"
-weight = 35
+weight = 40
