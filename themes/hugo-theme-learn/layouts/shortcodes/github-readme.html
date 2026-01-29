@@ -1,0 +1,19 @@
+{{- $url := .Get 0 -}}
+{{- $rawURL := "" -}}
+
+{{- if strings.Contains $url "github.com" -}}
+    {{- $rawURL = replace $url "github.com" "raw.githubusercontent.com" -}}
+    {{- $rawURL = replace $rawURL "/blob/" "/" -}}
+{{- else -}}
+    {{- errorf "Invalid GitHub URL provided to github-readme shortcode: %s" $url -}}
+{{- end -}}
+
+{{- with try (resources.GetRemote $rawURL) -}}
+    {{- with .Err -}}
+        {{- errorf "Unable to fetch README from %s: %s" $rawURL . -}}
+    {{- else with .Value -}}
+        {{- .Content | markdownify -}}
+    {{- else -}}
+        {{- errorf "Unable to get remote resource %q" $rawURL -}}
+    {{- end -}}
+{{- end -}}
