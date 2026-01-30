@@ -12,6 +12,11 @@
     {{- with .Err -}}
         {{- errorf "Unable to fetch README from %s: %s" $rawURL . -}}
     {{- else with .Value -}}
+        <div class="notices info">
+            <p>
+                The content on this page was generated based on the content from <a href="{{ $url }}" target="_blank">{{ $url }}</a>.
+            </p>
+        </div>
         {{- .Content | markdownify -}}
     {{- else -}}
         {{- errorf "Unable to get remote resource %q" $rawURL -}}

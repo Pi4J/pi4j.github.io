@@ -13,6 +13,8 @@ Requires Java 25, see [What's New in V4](/about/info-v4/) for more info.
 
 This is a big one with almost 400 commits and 300+ files added/changed...! **Pi4J V4 introduces the new [FFM plugin](/documentation/provider/ffm) and bumps the Java version to 25**. The FFM plugin makes use of the now Foreign Function & Memory API (FFM) to access the GPIOs. The FFM API got introduced in Java 22 with [JEP 454](https://openjdk.org/jeps/454).
 
+This is also the first release of Pi4J that has been so extensively tested as it contains a complete new plugin (FFM) and a lot of the existing code has been refactored and improved. To simplify the testing process, an inexpensive hardware setup has been created to run automated "Smoke Tests" in combination with a [set of tests in the 'pi4j-test' module in the core project](https://github.com/Pi4J/pi4j/blob/develop/pi4j-test/src/main/java/com/pi4j/test/Main.java). This test is documented [on the page "Hardware Testing"](/architecture/about-the-code/hardware-testing/) and the goal is to have the same test setup for all core developers and is easy to create by anyone who wants to run these tests. Because these tests require hardward and must be run on a Raspberry Pi, they cannot be executed as unit tests.
+
 Some highlights of all the changes:
 
 * [Issue #454](https://github.com/Pi4J/pi4j/issues/454): Implement new FFM API approach. First big pull request: [#458](https://github.com/Pi4J/pi4j/pull/458) with more for further improving, finetuning, and testing.
