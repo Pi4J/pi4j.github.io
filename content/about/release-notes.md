@@ -11,13 +11,13 @@ Requires Java 25, see [What's New in V4](/about/info-v4/) for more info.
 
 ### 2026-02-20 - V4.0.0
 
-This is a big release with almost 400 commits and 300+ files added/changed...! **Pi4J V4 introduces the new [FFM plugin](/documentation/providers/ffm) and bumps the Java version to 25**. The FFM plugin makes use of the now Foreign Function & Memory API (FFM) to access the GPIOs. The FFM API got introduced in Java 22 with [JEP 454](https://openjdk.org/jeps/454).
+This is a big release with almost 400 commits and 300+ files added/changed...! **Pi4J V4 introduces the new [FFM plugin](/documentation/providers/ffm) and bumps the Java version to 25**. The FFM plugin makes uses the new Foreign Function & Memory API (FFM) to access the GPIOs. The FFM API was introduced in Java 22 with [JEP 454](https://openjdk.org/jeps/454).
 
-This is the most tested release of Pi4J yet! The `pi4j-test` module has been reworked by [@taartspi](https://github.com/taartspi) to provide a smoke test approach with a fixed hardware setup that uses, for instance, input GPIOs to validate output GPIOs and PWM. Check [Hardware Testing](/architecture/about-the-code/hardware-testing/) for more info and how to setup.
+This is the most tested release of Pi4J yet! The `pi4j-test` module has been reworked by [@taartspi](https://github.com/taartspi) to provide a smoke test approach with a fixed hardware setup that uses, for instance, input GPIOs to validate output GPIOs and PWM. Check [Hardware Testing](/architecture/about-the-code/hardware-testing/) for more info and how to set up.
 
 Some highlights of all the changes in this release:
 
-* [Issue #454](https://github.com/Pi4J/pi4j/issues/454): Implement new FFM API approach. First big pull request by [@DigitalSmile](https://github.com/DigitalSmile): [#458](https://github.com/Pi4J/pi4j/pull/458) with more for further improving, finetuning, and testing.
+* [Issue #454](https://github.com/Pi4J/pi4j/issues/454): Implement new FFM API approach. First big pull request by [@DigitalSmile](https://github.com/DigitalSmile): [#458](https://github.com/Pi4J/pi4j/pull/458) with more to further improve, finetune, and test.
 * Consistent use of `bcm`, `channel`, `bus`, `chip` when initializing an IO instead of the sometimes confusing `pin`or `address`. With related changes in the Pi4J registry to be able to correctly remove and reuse IO instances.
 * [Issue #478](https://github.com/Pi4J/pi4j/issues/478): Race condition in GpioDDigitalInput causes monitor thread to exit
 * BoardInfo: added CM5 Lite, and 500 Plus
@@ -26,7 +26,7 @@ Some highlights of all the changes in this release:
 * Rework of the [pi4j-test](https://github.com/Pi4J/pi4j/tree/develop/pi4j-test) module to provide an easy SmokeTest approach with a fixed hardware test setup.
 * Various LinuxFS plugin improvements.
 * Overall code fixes, improvements, new helper methods, cleanup, etc..
-* Complete removal of serial support, use jSerialComm instead of Pi4J for serial communication, as [explained here](https://www.pi4j.com/documentation/io-types/serial/).
+* Complete removal of serial support, use jSerialComm instead of Pi4J for serial communication, as [explained here](/documentation/io-types/serial/).
 
 Thanks to contributions by [@DigitalSmile](https://github.com/DigitalSmile), [@IAmNickNack](https://github.com/IAmNickNack), [@stefanhaustein](https://github.com/stefanhaustein), [@taartspi](https://github.com/taartspi), [@eitch](https://github.com/eitch), [@fdelporte](https://github.com/fdelporte).
 
