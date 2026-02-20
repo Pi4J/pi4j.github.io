@@ -7,7 +7,7 @@ You can build the project from sources available on [GitHub](https://github.com/
 
 * Checkout the `develop` branch of the [pi4j repository](https://github.com/Pi4J/pi4j).
 * Use a JDK version 25 or newer, e.g. `sdk use java 25.0.1-zulu`.
-* In the root of the `pi4j directory, run `mvn clean install`.
+* In the root of the `pi4j` directory, run `mvn clean install`.
 
 ```
 [INFO] Executed tasks

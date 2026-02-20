@@ -21,9 +21,12 @@ Current supported providers:
 * [FFM](/documentation/providers/ffm/)
   * Was introduced in Pi4J 4.0.0
   * Pro
-    * ...
+    * Doesn't need complex Docker-based builds of libraries
+    * Uses latest modern Java LTS version 25
+    * Simplifies code
+    * Can be used on other boards than Raspberry Pi
   * Contra
-    * ...
+    * Not found yet... ;-)
 * [GpioD](/documentation/providers/gpiod/)
   * Was introduced in Pi4J 2.5.0
   * Pro

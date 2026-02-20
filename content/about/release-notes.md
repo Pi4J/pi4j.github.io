@@ -9,9 +9,9 @@ All releases of Pi4J V2+ are listed on [github.com/Pi4J/pi4j/releases](https://g
 
 Requires Java 25, see [What's New in V4](/about/info-v4/) for more info.
 
-### 2025-02-20 - V4.0.0
+### 2026-02-20 - V4.0.0
 
-This is a big release with almost 400 commits and 300+ files added/changed...! **Pi4J V4 introduces the new [FFM plugin](/documentation/provider/ffm) and bumps the Java version to 25**. The FFM plugin makes use of the now Foreign Function & Memory API (FFM) to access the GPIOs. The FFM API got introduced in Java 22 with [JEP 454](https://openjdk.org/jeps/454).
+This is a big release with almost 400 commits and 300+ files added/changed...! **Pi4J V4 introduces the new [FFM plugin](/documentation/providers/ffm) and bumps the Java version to 25**. The FFM plugin makes use of the now Foreign Function & Memory API (FFM) to access the GPIOs. The FFM API got introduced in Java 22 with [JEP 454](https://openjdk.org/jeps/454).
 
 This is the most tested release of Pi4J yet! The `pi4j-test` module has been reworked by [@taartspi](https://github.com/taartspi) to provide a smoke test approach with a fixed hardware setup that uses, for instance, input GPIOs to validate output GPIOs and PWM. Check [Hardware Testing](/architecture/about-the-code/hardware-testing/) for more info and how to setup.
 

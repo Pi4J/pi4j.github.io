@@ -26,7 +26,7 @@ Providers in the FFM plugin:
    </dependency>
    ```
 
-When using FFM API functionality added to Java in version 22, you will be alerted at startup of the applicatoin with this message:
+When using FFM API functionality added to Java in version 22, you will be alerted at startup of the application with this message:
 
 ```text
 WARNING: A restricted method in java.lang.foreign.AddressLayout has been called
