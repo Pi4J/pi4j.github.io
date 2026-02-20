@@ -1,4 +1,29 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>FFM on Pi4J</title><link>https://pi4j.com/tags/ffm/</link><description>Recent content in FFM on Pi4J</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 09 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://pi4j.com/tags/ffm/index.xml" rel="self" type="application/rss+xml"/><item><title>2025 Devoxx Talk FFM API</title><link>https://pi4j.com/video/20251009-devoxx-ffmapi/</link><pubDate>Thu, 09 Oct 2025 00:00:00 +0000</pubDate><guid>https://pi4j.com/video/20251009-devoxx-ffmapi/</guid><description>&lt;h2 id="the-wait-is-over-foreign-function--memory-ffm-api-brings-modern-java-to-the-raspberry-pi"&gt;The Wait is Over: Foreign Function &amp;amp; Memory FFM API brings modern Java to the Raspberry Pi&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>FFM on Pi4J</title><link>https://pi4j.com/tags/ffm/</link><description>Recent content in FFM on Pi4J</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 09 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://pi4j.com/tags/ffm/index.xml" rel="self" type="application/rss+xml"/><item><title>FFM Provider</title><link>https://pi4j.com/documentation/providers/ffm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/providers/ffm/</guid><description>&lt;p&gt;The FFM plugin provider was added in Pi4J 4.0.0 based on the Foreign Function &amp;amp; Memory (FFM) API&lt;/p&gt;
+&lt;p&gt;Providers in the FFM plugin:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ffm-digital-input&lt;/li&gt;
+&lt;li&gt;ffm-digital-output&lt;/li&gt;
+&lt;li&gt;ffm-i2c&lt;/li&gt;
+&lt;li&gt;ffm-pwm&lt;/li&gt;
+&lt;li&gt;ffm-spi&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="quick-start"&gt;Quick Start&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Ensure you are running JDK25+&lt;/li&gt;
+&lt;li&gt;Add dependency to your maven/gradle
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-xml" data-lang="xml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;&amp;lt;dependency&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;&amp;lt;groupId&amp;gt;&lt;/span&gt;com.pi4j&lt;span style="color:#f92672"&gt;&amp;lt;/groupId&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;&amp;lt;artifactId&amp;gt;&lt;/span&gt;pi4j-ffm-plugin&lt;span style="color:#f92672"&gt;&amp;lt;/artifactId&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;&amp;lt;version&amp;gt;&lt;/span&gt;${pi4j.version}&lt;span style="color:#f92672"&gt;&amp;lt;/version&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;&amp;lt;/dependency&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;When using FFM API functionality added to Java in version 22, you will be alerted at startup of the applicatoin with this message:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-text" data-lang="text"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;WARNING: A restricted method in java.lang.foreign.AddressLayout has been called
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;WARNING: java.lang.foreign.AddressLayout::withTargetLayout has been called by ... in an unnamed module (file:...)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can either ignore this message, or add &lt;code&gt;--enable-native-access=com.pi4j.plugin.ffm&lt;/code&gt; to your run, or add &lt;code&gt;Enable-Native-Access: ALL-UNNAMED&lt;/code&gt; to the &lt;code&gt;MANIFEST.MF&lt;/code&gt; file in your project.&lt;/p&gt;</description></item><item><title>2025 Devoxx Talk FFM API</title><link>https://pi4j.com/video/20251009-devoxx-ffmapi/</link><pubDate>Thu, 09 Oct 2025 00:00:00 +0000</pubDate><guid>https://pi4j.com/video/20251009-devoxx-ffmapi/</guid><description>&lt;h2 id="the-wait-is-over-foreign-function--memory-ffm-api-brings-modern-java-to-the-raspberry-pi"&gt;The Wait is Over: Foreign Function &amp;amp; Memory FFM API brings modern Java to the Raspberry Pi&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;20251009 - Recording of the talk at Devoxx Belgium by Frank Delporte&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;All the links of the presentation are available &lt;a href="https://webtechie.be/post/2025-10-08-devoxx-talk-ffmapi-on-raspberrypi/" target="_blank" rel="noopener"&gt;on this blog post&lt;/a&gt;.&lt;/p&gt;
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;

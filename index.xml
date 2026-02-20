@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Welcome to Pi4J on Pi4J</title><link>https://pi4j.com/</link><description>Recent content in Welcome to Pi4J on Pi4J</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 13 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://pi4j.com/index.xml" rel="self" type="application/rss+xml"/><item><title>x86 vs ARM vs RISC-V</title><link>https://pi4j.com/sbc/x86-arm-riscv/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/sbc/x86-arm-riscv/</guid><description>&lt;p&gt;This is an overview of the different processor types used in computers, so also in Single Board Computers (SBCs).&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Welcome to Pi4J on Pi4J</title><link>https://pi4j.com/</link><description>Recent content in Welcome to Pi4J on Pi4J</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 20 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://pi4j.com/index.xml" rel="self" type="application/rss+xml"/><item><title>x86 vs ARM vs RISC-V</title><link>https://pi4j.com/sbc/x86-arm-riscv/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/sbc/x86-arm-riscv/</guid><description>&lt;p&gt;This is an overview of the different processor types used in computers, so also in Single Board Computers (SBCs).&lt;/p&gt;
 &lt;h2 id="arm-efficient-by-design"&gt;ARM: Efficient by Design&lt;/h2&gt;
 &lt;p&gt;&lt;a href="https://en.wikipedia.org/wiki/Arm_Holdings" target="_blank" rel="noopener"&gt;Arm Holdings plc&lt;/a&gt; (originally &amp;ldquo;Acorn RISC Machine&amp;rdquo;, later &amp;ldquo;Advanced RISC Machines&amp;rdquo;) is a British semiconductor and software design company. There primary business is the design of central processing unit (CPU) cores that implement the ARM architecture family of instruction sets. They don&amp;rsquo;t manufacture the chips, but design the architecture and license it to others. This means that an application written for a &lt;a href="https://en.wikipedia.org/wiki/Qualcomm_Snapdragon" target="_blank" rel="noopener"&gt;Qualcomm Snapdragon&lt;/a&gt; processor should also work on a &lt;a href="https://en.wikipedia.org/wiki/Exynos" target="_blank" rel="noopener"&gt;Samsung Exynos&lt;/a&gt; or &lt;a href="https://en.wikipedia.org/wiki/Apple_M1" target="_blank" rel="noopener"&gt;Apple&amp;rsquo;s M-series&lt;/a&gt; chip because they speak the same &amp;ldquo;ARM language&amp;rdquo;.&lt;/p&gt;</description></item><item><title>Basic Project Setup</title><link>https://pi4j.com/kotlin/kotlin-examples/getting-started/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/kotlin/kotlin-examples/getting-started/</guid><description>&lt;div class="notices note" &gt;&lt;p&gt;GITHUB PROJECT: &lt;a href="https://github.com/RoboticsLife/Lesson01-Gpio-Kotlin-Pi4J" target="_blank" rel="noopener"&gt;https://github.com/RoboticsLife/Lesson01-Gpio-Kotlin-Pi4J&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
@@ -58,7 +58,7 @@ find the Imager tool&lt;/a&gt;. Select the version for your computer, download, 
 
 &lt;h2 id="add-missing-dependencies"&gt;Add Missing Dependencies&lt;/h2&gt;
 &lt;p&gt;Let&amp;rsquo;s start with some helper tools that will be useful later.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;$ sudo apt install -y i2c-tools vim git java-common libxi6 libxrender1 libxtst6
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;$ sudo apt install -y i2c-tools vim git java-common libxi6 libxrender1 libxtst6
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;i2c-tools&lt;/code&gt;: Tool to help you with I2C commands.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;vim&lt;/code&gt;: Text editor like &lt;code&gt;nano&lt;/code&gt;, preferred by some, hated by others ;-)&lt;/li&gt;
@@ -66,15 +66,15 @@ find the Imager tool&lt;/a&gt;. Select the version for your computer, download, 
 &lt;li&gt;&lt;code&gt;java-common libxi6 libxrender1 libxtst6&lt;/code&gt;: Dependencies of the JDK Debian package.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="install-java"&gt;Install Java&lt;/h2&gt;
-&lt;p&gt;There are many ways you can install Java. The easiest way to make Java available for both normal use and as root user (&lt;code&gt;sudo&lt;/code&gt;), is the following approach which downloads one of the many distributions that are available.&lt;/p&gt;</description></item><item><title>Download/Install</title><link>https://pi4j.com/architecture/about-the-code/download-sources/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/architecture/about-the-code/download-sources/</guid><description>&lt;p&gt;You can build the project from sources available on &lt;a href="https://github.com/Pi4J/pi4j" target="_blank" rel="noopener"&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;There are many ways you can install Java. The easiest way to make Java available for both normal use and as root user (&lt;code&gt;sudo&lt;/code&gt;), is the following approach which downloads one of the many distributions that are available.&lt;/p&gt;</description></item><item><title>Download the Sources</title><link>https://pi4j.com/architecture/about-the-code/download-sources/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/architecture/about-the-code/download-sources/</guid><description>&lt;p&gt;You can build the project from sources available on &lt;a href="https://github.com/Pi4J/pi4j" target="_blank" rel="noopener"&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Checkout the project &lt;a href="https://github.com/Pi4J/pi4j" target="_blank" rel="noopener"&gt;pi4j&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Use a JDK version 21 or newer, e.g. &lt;code&gt;sdk use java 21.0.6-zulu&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;In the root of pi4j run &lt;code&gt;mvn clean install&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Checkout the &lt;code&gt;develop&lt;/code&gt; branch of the &lt;a href="https://github.com/Pi4J/pi4j" target="_blank" rel="noopener"&gt;pi4j repository&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Use a JDK version 25 or newer, e.g. &lt;code&gt;sdk use java 25.0.1-zulu&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;In the root of the &lt;code&gt;pi4j directory, run &lt;/code&gt;mvn clean install`.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;[INFO] Executed tasks
 [INFO] ------------------------------------------------------------------------
-[INFO] Reactor Summary for Pi4J :: Parent POM 2.0-SNAPSHOT:
+[INFO] Reactor Summary for Pi4J :: Parent POM 4.0.0-SNAPSHOT:
 [INFO] 
 [INFO] Pi4J :: Parent POM ................................. SUCCESS [ 0.972 s]
 [INFO] Pi4J :: DOCKER :: Docker Parent POM .............. SUCCESS [ 0.290 s]
@@ -91,26 +91,7 @@ find the Imager tool&lt;/a&gt;. Select the version for your computer, download, 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="example-application"&gt;Example application&lt;/h2&gt;
-&lt;h3 id="building-the-example-application"&gt;Building the example application&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Checkout the project &lt;a href="https://github.com/Pi4J/pi4j-demo-telegraph" target="_blank" rel="noopener"&gt;Pi4J V2+ - Telegraph Demo Project&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Select JDK 21, e.g. &lt;code&gt;sdk use java 21.0.6-zulu&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;In the root of pi4j-demo-telegraph run &lt;code&gt;mvn clean install&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Check the directory target\distribution &amp;ndash;&amp;gt; this contains all the files to be copied to the Raspberry Pi&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre tabindex="0"&gt;&lt;code&gt;/target/distribution/pi4j-core-2.0-SNAPSHOT.jar
-/target/distribution/pi4j-demo-telegraph-1.0-SNAPSHOT.jar
-/target/distribution/pi4j-library-pigpio-2.0-SNAPSHOT.jar
-/target/distribution/pi4j-plugin-pigpio-2.0-SNAPSHOT.jar
-/target/distribution/pi4j-plugin-raspberrypi-2.0-SNAPSHOT.jar
-/target/distribution/run.sh
-/target/distribution/slf4j-api-2.0.0-alpha0.jar
-/target/distribution/slf4j-simple-2.0.0-alpha0.jar
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id="running-on-the-raspberry-pi"&gt;Running on the Raspberry Pi&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;After copying all files from target/distribution to a Raspberry Pi, start &lt;code&gt;./run.sh&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Elecrow CrowPi</title><link>https://pi4j.com/sbc/crowpi/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/sbc/crowpi/</guid><description>&lt;p&gt;The &lt;a href="https://www.elecrow.com/crowpi.html" target="_blank" rel="noopener"&gt;CrowPi is an electronics starter kit in a laptop-housing&lt;/a&gt;.
+&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>Elecrow CrowPi</title><link>https://pi4j.com/sbc/crowpi/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/sbc/crowpi/</guid><description>&lt;p&gt;The &lt;a href="https://www.elecrow.com/crowpi.html" target="_blank" rel="noopener"&gt;CrowPi is an electronics starter kit in a laptop-housing&lt;/a&gt;.
 Of course, you can get any electronics starter kit for this purpose or buy separate components. That&amp;rsquo;s the fun of
 electronics: components are inexpensive and easy to find on ebay or one of the many web shops.&lt;/p&gt;
 &lt;p&gt;
@@ -196,7 +177,9 @@ electronics: components are inexpensive and easy to find on ebay or one of the m
 &lt;p&gt;Pi4J V2 brings with it many new features, and an entirely new architecture that focuses on
 extensibility, simplified integration and a modern Java API including the following:&lt;/p&gt;</description></item><item><title>What's New in V3</title><link>https://pi4j.com/about/info-v3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/about/info-v3/</guid><description>&lt;p&gt;Versions 3.0.1 is based on 2.8.0 (released in January 2025), but bumps the &lt;strong&gt;Java version to 21&lt;/strong&gt;!&lt;/p&gt;
 &lt;p&gt;We &lt;a href="https://github.com/Pi4J/pi4j/discussions/409" target="_blank" rel="noopener"&gt;asked our users&lt;/a&gt; which minimal Java version we should use, but there was no one clear answer, as expected ;-)&lt;/p&gt;
-&lt;p&gt;The current/latest Long Term Support (LTS) version of Java is version 21. So it makes sense to jump forward from 11 to 21. This will also prepare us for the next LTS, which will be Java 25 in September 2025. Bumping to the latest LTS makes it possible to make use of many newer Java language and runtime improvements, simplify parts of the code, etc.&lt;/p&gt;</description></item><item><title>Build Instructions</title><link>https://pi4j.com/architecture/about-the-code/build-instructions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/architecture/about-the-code/build-instructions/</guid><description>&lt;p&gt;Building the Pi4J Project is simple and requires minimal effort. Pi4J is primarily built using Apache Maven and Java 21.
+&lt;p&gt;The current/latest Long Term Support (LTS) version of Java is version 21. So it makes sense to jump forward from 11 to 21. This will also prepare us for the next LTS, which will be Java 25 in September 2025. Bumping to the latest LTS makes it possible to make use of many newer Java language and runtime improvements, simplify parts of the code, etc.&lt;/p&gt;</description></item><item><title>What's New in V4</title><link>https://pi4j.com/about/info-v4/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/about/info-v4/</guid><description>&lt;p&gt;Versions 4.0.0 is based on 3.0.3 (released on 2025-09-23), but bumps the &lt;strong&gt;Java version to 25&lt;/strong&gt; and has a new plugin that uses the Foreign Function &amp;amp; Memory (FFM) API. See the &lt;a href="https://pi4j.com/about/release-notes/"&gt;release notes&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="ffm-plugin"&gt;FFM Plugin&lt;/h2&gt;
+&lt;p&gt;The goal of this bump to V4 is to enable the use of the Foreign Function &amp;amp; Memory (FFM) API in Pi4J. This FFM API has been introduced in OpenJDK 22 and simplifies the use of native libraries in Java. And native libraries are &amp;ldquo;the heart&amp;rdquo; of the Pi4J project as they provide the connection between your Java code and the hardware.&lt;/p&gt;</description></item><item><title>Build Instructions</title><link>https://pi4j.com/architecture/about-the-code/build-instructions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/architecture/about-the-code/build-instructions/</guid><description>&lt;p&gt;Building the Pi4J Project is simple and requires minimal effort. Pi4J is primarily built using Apache Maven and Java 25.
 Pi4J can be built directly on your host computer or inside a Docker container where all toolchains and dependencies are
 already installed, configured and cached.&lt;/p&gt;
 
@@ -239,11 +222,11 @@ course important to be aware of the correct numbering to not connect components 
 &lt;div class="notices info" &gt;&lt;p&gt;Please check the &lt;a href="https://pi4j.com/prepare/install-java/"&gt;Prepare a Raspberry Pi&lt;/a&gt; and &lt;a href="https://pi4j.com/prepare/install-java/"&gt;Install Java and Tools&lt;/a&gt; instructions.&lt;/p&gt;
 &lt;/div&gt;
 
-&lt;p&gt;You need Java 21 or newer to use Pi4J V3+. On a board with ARMv7 or ARMv8 you will get this result:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;$ java -version
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;openjdk version &lt;span style="color:#e6db74"&gt;&amp;#34;21.0.5&amp;#34;&lt;/span&gt; 2024-10-15 LTS
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;OpenJDK Runtime Environment Zulu21.38+21-CA &lt;span style="color:#f92672"&gt;(&lt;/span&gt;build 21.0.5+11-LTS&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;OpenJDK 64-Bit Server VM Zulu21.38+21-CA &lt;span style="color:#f92672"&gt;(&lt;/span&gt;build 21.0.5+11-LTS, mixed mode, sharing&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
+&lt;p&gt;You need Java 25 or newer to use Pi4J V4+. On a board with ARMv7 or ARMv8 you will get this result:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;$ java -version
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;openjdk version &lt;span style="color:#e6db74"&gt;&amp;#34;25&amp;#34;&lt;/span&gt; 2025-09-16 LTS
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;OpenJDK Runtime Environment Zulu25.28+85-CA &lt;span style="color:#f92672"&gt;(&lt;/span&gt;build 25+36-LTS&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;OpenJDK 64-Bit Server VM Zulu25.28+85-CA &lt;span style="color:#f92672"&gt;(&lt;/span&gt;build 25+36-LTS, mixed mode, sharing&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Keep in mind this version is &lt;strong&gt;only compatible with ARMv7 or higher&lt;/strong&gt; and doesn&amp;rsquo;t support all
 Raspberry Pi board versions. If you have a Raspberry Pi A (version 3), B (version 2 or higher),
 or Compute (version 3 or higher), you are good to go! For all other boards, or if you get the error below,
@@ -258,35 +241,10 @@ you will need some additional steps that are described on &lt;a href="https://pi
 This scheme was incompatibility with other pin diagrams and pin numbering used by other development platforms and libraries.&lt;/p&gt;
 &lt;p&gt;As Pi4J V2+ is build as a &amp;ldquo;pass thru library&amp;rdquo;, and uses &lt;a href="http://abyz.me.uk/rpi/pigpio/index.html" target="_blank" rel="noopener"&gt;PiGpio&lt;/a&gt; and other tools as the underlying framework. The more well-known BCM numbering is being used now.&lt;/p&gt;
 &lt;p&gt;This drawing shows the different numbers for WiringPi and BCM in a 40-pins Raspberry Pi header:&lt;/p&gt;</description></item><item><title>Release Notes</title><link>https://pi4j.com/about/release-notes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/about/release-notes/</guid><description>&lt;p&gt;All releases of Pi4J V2+ are listed on &lt;a href="https://github.com/Pi4J/pi4j/releases" target="_blank" rel="noopener"&gt;github.com/Pi4J/pi4j/releases&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id="v3"&gt;V3&lt;/h2&gt;
-&lt;p&gt;Requires Java 21, see &lt;a href="https://pi4j.com/about/info-v3/"&gt;What&amp;rsquo;s New in V3&lt;/a&gt; for more info.&lt;/p&gt;
-&lt;h3 id="2025-09-23---v303"&gt;2025-09-23 - V3.0.3&lt;/h3&gt;
-&lt;p&gt;Work is ongoing to extend Pi4J with a plugin based on the FFM API (Foreign Function &amp;amp; Memory API). To make this possible, some changes have been made to the core code in preparation for this new plugin. And of course more improvements and bug fixes&amp;hellip;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Board models: Added CM5 Lite board codes.&lt;/li&gt;
-&lt;li&gt;Replace Nexus Staging plugin with Central Publishing plugin.&lt;/li&gt;
-&lt;li&gt;Refactored &lt;code&gt;Registry&lt;/code&gt; to use &lt;code&gt;IOType&lt;/code&gt; for managing addresses, ensuring better segregation of address spaces between IO types. Updated related methods and internal data structures accordingly.&lt;/li&gt;
-&lt;li&gt;Introduced the ability to shutdown and unregister IO instances using the instance itself, complementing the existing ID-based method. Updated related methods, tests, and documentation to reflect the new functionality.&lt;/li&gt;
-&lt;li&gt;Ensure proper removal of IO instance during shutdown in DefaultRuntimeRegistry.&lt;/li&gt;
-&lt;li&gt;PWM IO Change Float to Integer and remove float related conversions.&lt;/li&gt;
-&lt;li&gt;Gate digital output event creation on listener / binding presence.&lt;/li&gt;
-&lt;li&gt;Move PWM chip detection to BoardInfo to make it usable for all plugins.&lt;/li&gt;
-&lt;li&gt;Unit test improvements.&lt;/li&gt;
-&lt;li&gt;LinuxFS plugin:
-&lt;ul&gt;
-&lt;li&gt;I2C: Improvements in &lt;code&gt;registerRead&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;SPI: SPI write now supports larger buffers by creating multi ioctl spi writes.&lt;/li&gt;
-&lt;li&gt;PWM: When the RP1 chip is found, PWM provider will use the RP1 architected address of PWM0 to determine the correct pwmChipx to use. This change will effect Raspberry Pi 5 and Compute Module 5 using updated kernel.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;GpioD plugin:
-&lt;ul&gt;
-&lt;li&gt;Introduced a volatile &lt;code&gt;running&lt;/code&gt; flag to properly manage the lifecycle of the input listener thread. Enhanced shutdown logic to ensure threads are safely and consistently terminated. Fix for &lt;a href="https://github.com/Pi4J/pi4j/issues/478" target="_blank" rel="noopener"&gt;Issue #478&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Make GpioLine Closeable.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Thanks to contributions by &lt;a href="https://github.com/IAmNickNack" target="_blank" rel="noopener"&gt;@IAmNickNack&lt;/a&gt;, &lt;a href="https://github.com/stefanhaustein" target="_blank" rel="noopener"&gt;@stefanhaustein&lt;/a&gt;, &lt;a href="https://github.com/taartspi" target="_blank" rel="noopener"&gt;@taartspi&lt;/a&gt;, &lt;a href="https://github.com/eitch" target="_blank" rel="noopener"&gt;@eitch&lt;/a&gt;, &lt;a href="https://github.com/fdelporte" target="_blank" rel="noopener"&gt;@fdelporte&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Pi4J Downloads</title><link>https://pi4j.com/about/download/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/about/download/</guid><description>&lt;p&gt;All downloads provided by the project can be found on &lt;a href="https://pi4j.com/download/" target="_blank" rel="noopener"&gt;pi4j.com/download&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="v4"&gt;V4&lt;/h2&gt;
+&lt;p&gt;Requires Java 25, see &lt;a href="https://pi4j.com/about/info-v4/"&gt;What&amp;rsquo;s New in V4&lt;/a&gt; for more info.&lt;/p&gt;
+&lt;h3 id="2025-02-20---v400"&gt;2025-02-20 - V4.0.0&lt;/h3&gt;
+&lt;p&gt;This is a big release with almost 400 commits and 300+ files added/changed&amp;hellip;! &lt;strong&gt;Pi4J V4 introduces the new &lt;a href="https://pi4j.com/documentation/provider/ffm"&gt;FFM plugin&lt;/a&gt; and bumps the Java version to 25&lt;/strong&gt;. The FFM plugin makes use of the now Foreign Function &amp;amp; Memory API (FFM) to access the GPIOs. The FFM API got introduced in Java 22 with &lt;a href="https://openjdk.org/jeps/454" target="_blank" rel="noopener"&gt;JEP 454&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Pi4J Downloads</title><link>https://pi4j.com/about/download/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/about/download/</guid><description>&lt;p&gt;All downloads provided by the project can be found on &lt;a href="https://pi4j.com/download/" target="_blank" rel="noopener"&gt;pi4j.com/download&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The compiled artifacts (releases and snapshots) are available in the
 &lt;a href="https://oss.sonatype.org/index.html#nexus-search;gav~com.pi4j~~~~" target="_blank" rel="noopener"&gt;Sonatype Maven repository&lt;/a&gt;.&lt;/p&gt;
 &lt;iframe src="https://pi4j.com/download" style="width: 100%; height: 100vh;"&gt;&lt;/iframe&gt;</description></item><item><title>Minimal Kotlin Pi4J example</title><link>https://pi4j.com/kotlin/kotlin-dsl/minimal-kotlin-example/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/kotlin/kotlin-dsl/minimal-kotlin-example/</guid><description>&lt;div class="notices tip" &gt;&lt;p&gt;Full Example on GitHub: &lt;a href="https://github.com/Pi4J/pi4j-kotlin/blob/master/example/src/main/kotlin/MinimalExample.kt" target="_blank" rel="noopener"&gt;https://github.com/Pi4J/pi4j-kotlin/blob/master/example/src/main/kotlin/MinimalExample.kt&lt;/a&gt;&lt;/p&gt;
@@ -307,21 +265,21 @@ This scheme was incompatibility with other pin diagrams and pin numbering used b
 &lt;p&gt;To create a new Pi4J context, use the &lt;code&gt;pi4j&lt;/code&gt; function. It creates a new &lt;em&gt;auto&lt;/em&gt; &lt;code&gt;Context&lt;/code&gt; object and uses it as a
 receiver
 for your lambda:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-kotlin" data-lang="kotlin"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;pi4j {
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-kotlin" data-lang="kotlin"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;pi4j {
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;// You have access to a newly created auto context 
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; describe()
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You don&amp;rsquo;t need to call &lt;code&gt;shutdown()&lt;/code&gt;, it&amp;rsquo;s called automatically at the end of the block.&lt;br&gt;
 You can think of the &lt;code&gt;pi4j&lt;/code&gt; block as your entire routine/ program.&lt;/p&gt;</description></item><item><title>Coroutines Support</title><link>https://pi4j.com/kotlin/kotlin-dsl/coroutines/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/kotlin/kotlin-dsl/coroutines/</guid><description>&lt;h2 id="pi4jasync"&gt;pi4jAsync&lt;/h2&gt;
 &lt;p&gt;Same with the &lt;code&gt;pi4j&lt;/code&gt; DSL, you can create a pi4j block to execute within a &lt;code&gt;CoroutineScope&lt;/code&gt; using the &lt;code&gt;pi4jAsync&lt;/code&gt; DSL.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-kotlin" data-lang="kotlin"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;pi4jAsync {
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-kotlin" data-lang="kotlin"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;pi4jAsync {
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; delay(&lt;span style="color:#ae81ff"&gt;100&lt;/span&gt;) &lt;span style="color:#75715e"&gt;// suspended call
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; describe()
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Inside &lt;code&gt;pi4jAsync&lt;/code&gt; you have access to a newly created auto context and you can run your code in the provided &lt;code&gt;CoroutineScope&lt;/code&gt;.&lt;/p&gt;
 &lt;h2 id="custom-coroutinescope"&gt;Custom CoroutineScope&lt;/h2&gt;
 &lt;p&gt;You can also use a custom &lt;code&gt;CoroutineScope&lt;/code&gt; instance.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-kotlin" data-lang="kotlin"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;pi4jAsync(CoroutineScope(&lt;span style="color:#a6e22e"&gt;Dispatchers&lt;/span&gt;.Default)) {
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-kotlin" data-lang="kotlin"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;pi4jAsync(CoroutineScope(&lt;span style="color:#a6e22e"&gt;Dispatchers&lt;/span&gt;.Default)) {
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; delay(&lt;span style="color:#ae81ff"&gt;100&lt;/span&gt;) &lt;span style="color:#75715e"&gt;// suspended call
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; describe()
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
@@ -332,18 +290,18 @@ You can think of the &lt;code&gt;pi4j&lt;/code&gt; block as your entire routine/
 
 &lt;h2 id="installation"&gt;Installation&lt;/h2&gt;
 &lt;p&gt;Add LinuxFs dependency&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-kotlin" data-lang="kotlin"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;dependencies {
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-kotlin" data-lang="kotlin"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;dependencies {
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; implementation(&lt;span style="color:#e6db74"&gt;&amp;#34;com.pi4j:pi4j-plugin-linuxfs:2.3.0&amp;#34;&lt;/span&gt;)
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="ic-dsl"&gt;I²C DSL&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-kotlin" data-lang="kotlin"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;i2c(&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;, &lt;span style="color:#ae81ff"&gt;0x3f&lt;/span&gt;) {
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-kotlin" data-lang="kotlin"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;i2c(&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;, &lt;span style="color:#ae81ff"&gt;0x3f&lt;/span&gt;) {
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; id(&lt;span style="color:#e6db74"&gt;&amp;#34;TCA9534&amp;#34;&lt;/span&gt;)
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; linuxFsI2CProvider()
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}.use { tca9534Dev &lt;span style="color:#f92672"&gt;-&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;// use here. Will auto close
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="writing"&gt;Writing&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-kotlin" data-lang="kotlin"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-kotlin" data-lang="kotlin"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;i2c(&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;, &lt;span style="color:#ae81ff"&gt;0x3f&lt;/span&gt;) {
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; id(&lt;span style="color:#e6db74"&gt;&amp;#34;TCA9534&amp;#34;&lt;/span&gt;)
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; linuxFsI2CProvider()
@@ -363,14 +321,14 @@ You can think of the &lt;code&gt;pi4j&lt;/code&gt; block as your entire routine/
 &lt;li&gt;CTRL+ALT+O: Optimize imports&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Hardware testing</title><link>https://pi4j.com/architecture/about-the-code/hardware-testing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/architecture/about-the-code/hardware-testing/</guid><description>&lt;div class="notices warning" &gt;&lt;p&gt;This is an experimental project which will need a lot of love&amp;hellip; The new Raspberry
-Pi Pico with a lot of GPIOs for a very low price, seems even to be a better fit for this project compared to the
-Arduino Due&amp;hellip; To be further investigated!&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;To minimize the required time and efforts to test a new release, V2+ aims to include an automated test which performs
-I/O testing on each I/O interface on each model of RPi. Ideally this would happen as part of the unit testing sequence
-for each code commit or at least as part of the release cycle.&lt;/p&gt;</description></item><item><title>Java for ARMv6/7/8</title><link>https://pi4j.com/documentation/java-for-arm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/java-for-arm/</guid><description>&lt;p&gt;You can choose from a long list of Java versions and distributions if you use the 64-bit version of the Raspberry Pi Operating System. But this 64-bit OS is only available for Raspberry Pi board versions with an &lt;strong&gt;ARMv7 or ARMv8&lt;/strong&gt; processor.&lt;/p&gt;
+&lt;/ul&gt;</description></item><item><title>Hardware Testing</title><link>https://pi4j.com/architecture/about-the-code/hardware-testing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/architecture/about-the-code/hardware-testing/</guid><description>&lt;div class="notices info"&gt;
+ &lt;p&gt;
+ The content on this page was generated based on the content from &lt;a href="https://github.com/Pi4J/pi4j/blob/develop/pi4j-test/README.md" target="_blank"&gt;https://github.com/Pi4J/pi4j/blob/develop/pi4j-test/README.md&lt;/a&gt;.
+ &lt;/p&gt;
+ &lt;/div&gt;&lt;h1 id="pi4j-smoke-test"&gt;Pi4J Smoke Test&lt;/h1&gt;
+&lt;p&gt;Testing the full Pi4J library is hard because it requires real hardware devices to validate all interactions. This test project is intended to provide a simple way to verify that the Pi4J library is working correctly on a Raspberry Pi with a few simple devices.&lt;/p&gt;
+&lt;h2 id="main-test"&gt;Main Test&lt;/h2&gt;
+&lt;p&gt;The &lt;code&gt;src/main/java/com/pi4j/test/Main.java&lt;/code&gt; class verifies that the providers can be loaded and used. The use is very basic, but just enough to know it worked.&lt;/p&gt;</description></item><item><title>Java for ARMv6/7/8</title><link>https://pi4j.com/documentation/java-for-arm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/java-for-arm/</guid><description>&lt;p&gt;You can choose from a long list of Java versions and distributions if you use the 64-bit version of the Raspberry Pi Operating System. But this 64-bit OS is only available for Raspberry Pi board versions with an &lt;strong&gt;ARMv7 or ARMv8&lt;/strong&gt; processor.&lt;/p&gt;
 &lt;h2 id="board-versions"&gt;Board versions&lt;/h2&gt;
 &lt;h3 id="with-armv6-processor"&gt;With ARMv6 processor&lt;/h3&gt;
 &lt;ul&gt;
@@ -437,11 +395,11 @@ instead of separate Java modules.&lt;/p&gt;</description></item><item><title>Ser
 
 &lt;h2 id="installation"&gt;Installation&lt;/h2&gt;
 &lt;p&gt;Add PiGPIO dependency&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-kotlin" data-lang="kotlin"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;dependencies {
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-kotlin" data-lang="kotlin"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;dependencies {
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; implementation(&lt;span style="color:#e6db74"&gt;&amp;#34;com.pi4j:pi4j-plugin-pigpio:2.3.0&amp;#34;&lt;/span&gt;)
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="serial-dsl"&gt;Serial DSL&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-kotlin" data-lang="kotlin"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;serial(&lt;span style="color:#e6db74"&gt;&amp;#34;/dev/ttyS0&amp;#34;&lt;/span&gt;) {
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-kotlin" data-lang="kotlin"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;serial(&lt;span style="color:#e6db74"&gt;&amp;#34;/dev/ttyS0&amp;#34;&lt;/span&gt;) {
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; use_9600_N81()
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; dataBits_8()
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; parity(&lt;span style="color:#a6e22e"&gt;Parity&lt;/span&gt;.NONE)
@@ -456,7 +414,7 @@ instead of separate Java modules.&lt;/p&gt;</description></item><item><title>Ser
 &lt;div class="notices info" &gt;&lt;p&gt;This is the Kotlin DSL version of the same &lt;a href="https://pi4j.com/documentation/io-examples/serial#code-example"&gt;Serial example here&lt;/a&gt;, but leveraging the Kotlin DSL&lt;/p&gt;
 &lt;/div&gt;
 
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-kotlin" data-lang="kotlin"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-kotlin" data-lang="kotlin"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;serial(&lt;span style="color:#e6db74"&gt;&amp;#34;/dev/ttyS0&amp;#34;&lt;/span&gt;) {
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;// ..
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}.&lt;span style="color:#66d9ef"&gt;open&lt;/span&gt; {
@@ -527,13 +485,13 @@ Resources, Orders and Activities. The fields are mapped as Parameter objects, of
  &lt;a href="https://pi4j.com/assets/featured-projects/strolch/IMG_20200430_153450.jpg" itemprop="contentUrl"&gt;&lt;/a&gt;
  &lt;figcaption&gt;
  &lt;p&gt;Conveyors for containers filled by a dispensing robot&lt;/p&gt;</description></item><item><title>Logging with SLF4J</title><link>https://pi4j.com/documentation/logging/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/logging/</guid><description>&lt;p&gt;Pi4J uses SLF4J for logging. To include it in your project, add this Maven dependency:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-xml" data-lang="xml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;&amp;lt;dependency&amp;gt;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-xml" data-lang="xml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;&amp;lt;dependency&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;&amp;lt;groupId&amp;gt;&lt;/span&gt;org.slf4j&lt;span style="color:#f92672"&gt;&amp;lt;/groupId&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;&amp;lt;artifactId&amp;gt;&lt;/span&gt;slf4j-simple&lt;span style="color:#f92672"&gt;&amp;lt;/artifactId&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;&amp;lt;version&amp;gt;&lt;/span&gt;2.0.0-alpha0&lt;span style="color:#f92672"&gt;&amp;lt;/version&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;&amp;lt;/dependency&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;There are different ways to configure the logging output, as described on &lt;a href="http://www.slf4j.org/manual.html" target="_blank" rel="noopener"&gt;the SLF4J website&lt;/a&gt;, but the shortest is probably with this property in your main-method:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-java" data-lang="java"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;public&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;static&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;void&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;main&lt;/span&gt;(String&lt;span style="color:#f92672"&gt;[]&lt;/span&gt; args) &lt;span style="color:#66d9ef"&gt;throws&lt;/span&gt; Exception {
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-java" data-lang="java"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;public&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;static&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;void&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;main&lt;/span&gt;(String&lt;span style="color:#f92672"&gt;[]&lt;/span&gt; args) &lt;span style="color:#66d9ef"&gt;throws&lt;/span&gt; Exception {
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;// Configure default logging level, accept a log level as the first program argument&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; System.&lt;span style="color:#a6e22e"&gt;setProperty&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;org.slf4j.simpleLogger.defaultLogLevel&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;INFO&amp;#34;&lt;/span&gt;);
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 
@@ -721,7 +679,32 @@ The JavaFX application is using Direct Rendering Mode (DRM) to be visualized. An
 &lt;/ul&gt;
 &lt;h2 id="sources-and-info"&gt;Sources and Info&lt;/h2&gt;
 &lt;p&gt;Please check the README of the sources of the project for a full description of the setup process of the Raspberry Pi
-and to fully understand the example applications and the MVC-model. This page is only intended to give you a quick overview.&lt;/p&gt;</description></item><item><title>GpioD Provider</title><link>https://pi4j.com/documentation/providers/gpiod/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/providers/gpiod/</guid><description>&lt;p&gt;The GpioD plugin provider was added in Pi4J 2.5.0 to be able to support the Raspberry Pi 5 with the new &lt;a href="https://www.raspberrypi.com/documentation/microcontrollers/rp1.html" target="_blank" rel="noopener"&gt;GPIO chip RP1&lt;/a&gt;.&lt;/p&gt;
+and to fully understand the example applications and the MVC-model. This page is only intended to give you a quick overview.&lt;/p&gt;</description></item><item><title>FFM Provider</title><link>https://pi4j.com/documentation/providers/ffm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/providers/ffm/</guid><description>&lt;p&gt;The FFM plugin provider was added in Pi4J 4.0.0 based on the Foreign Function &amp;amp; Memory (FFM) API&lt;/p&gt;
+&lt;p&gt;Providers in the FFM plugin:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ffm-digital-input&lt;/li&gt;
+&lt;li&gt;ffm-digital-output&lt;/li&gt;
+&lt;li&gt;ffm-i2c&lt;/li&gt;
+&lt;li&gt;ffm-pwm&lt;/li&gt;
+&lt;li&gt;ffm-spi&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="quick-start"&gt;Quick Start&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Ensure you are running JDK25+&lt;/li&gt;
+&lt;li&gt;Add dependency to your maven/gradle
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-xml" data-lang="xml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;&amp;lt;dependency&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;&amp;lt;groupId&amp;gt;&lt;/span&gt;com.pi4j&lt;span style="color:#f92672"&gt;&amp;lt;/groupId&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;&amp;lt;artifactId&amp;gt;&lt;/span&gt;pi4j-ffm-plugin&lt;span style="color:#f92672"&gt;&amp;lt;/artifactId&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;&amp;lt;version&amp;gt;&lt;/span&gt;${pi4j.version}&lt;span style="color:#f92672"&gt;&amp;lt;/version&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;&amp;lt;/dependency&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;When using FFM API functionality added to Java in version 22, you will be alerted at startup of the applicatoin with this message:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-text" data-lang="text"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;WARNING: A restricted method in java.lang.foreign.AddressLayout has been called
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;WARNING: java.lang.foreign.AddressLayout::withTargetLayout has been called by ... in an unnamed module (file:...)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can either ignore this message, or add &lt;code&gt;--enable-native-access=com.pi4j.plugin.ffm&lt;/code&gt; to your run, or add &lt;code&gt;Enable-Native-Access: ALL-UNNAMED&lt;/code&gt; to the &lt;code&gt;MANIFEST.MF&lt;/code&gt; file in your project.&lt;/p&gt;</description></item><item><title>GpioD Provider</title><link>https://pi4j.com/documentation/providers/gpiod/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/providers/gpiod/</guid><description>&lt;p&gt;The GpioD plugin provider was added in Pi4J 2.5.0 to be able to support the Raspberry Pi 5 with the new &lt;a href="https://www.raspberrypi.com/documentation/microcontrollers/rp1.html" target="_blank" rel="noopener"&gt;GPIO chip RP1&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Providers in the GpioD plugin:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;gpiod-digital-input&lt;/li&gt;
@@ -733,7 +716,7 @@ and to fully understand the example applications and the MVC-model. This page is
 &lt;/div&gt;
 
 &lt;p&gt;If you get an error at startup with the following content, your OS is outdated for the GpioD implementation used in Pi4J:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;UNDERLYING EXCEPTION: &lt;span style="color:#f92672"&gt;[&lt;/span&gt;java.lang.UnsatisfiedLinkError&lt;span style="color:#f92672"&gt;]=&lt;/span&gt;/tmp/libgpiod368899536808039438.so: /lib/aarch64-linux-gnu/libc.so.6: version &lt;span style="color:#e6db74"&gt;`&lt;/span&gt;GLIBC_2.33&lt;span style="color:#960050;background-color:#1e0010"&gt;&amp;#39;&lt;/span&gt; not found &lt;span style="color:#f92672"&gt;(&lt;/span&gt;required by /tmp/libgpiod368899536808039438.so&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;UNDERLYING EXCEPTION: &lt;span style="color:#f92672"&gt;[&lt;/span&gt;java.lang.UnsatisfiedLinkError&lt;span style="color:#f92672"&gt;]=&lt;/span&gt;/tmp/libgpiod368899536808039438.so: /lib/aarch64-linux-gnu/libc.so.6: version &lt;span style="color:#e6db74"&gt;`&lt;/span&gt;GLIBC_2.33&lt;span style="color:#960050;background-color:#1e0010"&gt;&amp;#39;&lt;/span&gt; not found &lt;span style="color:#f92672"&gt;(&lt;/span&gt;required by /tmp/libgpiod368899536808039438.so&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="dependencies"&gt;Dependencies&lt;/h2&gt;
 &lt;p&gt;To use the GpioD provider include the following dependencies:&lt;/p&gt;</description></item><item><title>LinuxFS Provider</title><link>https://pi4j.com/documentation/providers/linuxfs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/providers/linuxfs/</guid><description>&lt;p&gt;The current implementation of the LinuxFS plugin implements a file based I2C, SPI, and PWM provider. The file based I2C provider opens
 &lt;code&gt;/dev/i2c-1&lt;/code&gt; using a &lt;code&gt;RandomAccessFile&lt;/code&gt; to perform I2C reads and writes. The file based PWM provider opens
@@ -756,7 +739,7 @@ and to fully understand the example applications and the MVC-model. This page is
 &lt;/ul&gt;
 &lt;p&gt;To use the LinuxFS provider include the following dependencies:&lt;/p&gt;</description></item><item><title>PiGpio Provider</title><link>https://pi4j.com/documentation/providers/pigpio/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/providers/pigpio/</guid><description>&lt;p&gt;The current implementation of the PiGpio exposes the GPIO functions available on the Raspberry Pi (see Note Pi5 below).
 This implementation is developed/supported by a team separate of Pi4j. Pi4j is a consumer of that PiGpio work.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Pi5 At the present time the PiGpio implementation does not support the new Pi5 board. 
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Pi5 At the present time the PiGpio implementation does not support the new Pi5 board. 
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;- This new Pi5 RP1 chip will require a large development effort. There is no known plan &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; this develoment. 
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Providers in the PiGpio plugin:&lt;/p&gt;</description></item><item><title>Using Board Info</title><link>https://pi4j.com/documentation/board-info/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/board-info/</guid><description>&lt;div class="notices tip" &gt;&lt;p&gt;GITHUB Sources of BoardInfoHelper.java and the data model: &lt;a href="https://github.com/Pi4J/pi4j/blob/develop/pi4j-core/src/main/java/com/pi4j/boardinfo/util/BoardInfoHelper.java" target="_blank" rel="noopener"&gt;pi4j/pi4j-core/src/main/java/com/pi4j/boardinfo/util/BoardInfoHelper.java&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
@@ -794,17 +777,20 @@ a chip maybe available mounted on a small circuit board where connection to the 
 requires only jumpers. But even this simple means has limits as connecting several
 chips when using a Pi case and maybe a cooling fan creates problems. In addition
 some chips are only available as a socket device where a 4-28 pin socket is
-required. This next section demonstrates &amp;lsquo;a&amp;rsquo; way these limits can be overcome.&lt;/p&gt;</description></item><item><title>BMP280 Sensor</title><link>https://pi4j.com/examples/communityimplementation/bmp280/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/communityimplementation/bmp280/</guid><description>&lt;h3 id="description"&gt;Description&lt;/h3&gt;
-&lt;p&gt;The BMP280 is a Pressure and temperature sensor accessed via I2C or SPI. The BMP280
-is a simple device that requires the connection of few wires to operate.
-Because of this simplicity the device can serve as a very easy project for initial Pi and
-Pi4j usage. This document will explain the more simple means to connect the sensor and
-access the device with existing software requiring no coding. The document will
-also explain minimal coding required to allow greater flexibility.&lt;/p&gt;</description></item><item><title>I/O Registry</title><link>https://pi4j.com/documentation/registry/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/registry/</guid><description>&lt;p&gt;An additional V2+ feature is an I/O registry where all I/O instances that have been created can be maintained, managed, re-accessed, etc. As the library keeps track of all the created I/O instances, they become publicly accessible through a registry where users can interrogate, iterate, identify and access all created I/O instances that Pi4J is managing.&lt;/p&gt;
+required. This next section demonstrates &amp;lsquo;a&amp;rsquo; way these limits can be overcome.&lt;/p&gt;</description></item><item><title>BMP280 Sensor</title><link>https://pi4j.com/examples/communityimplementation/bmp280/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/communityimplementation/bmp280/</guid><description>&lt;div class="notices info"&gt;
+ &lt;p&gt;
+ The content on this page was generated based on the content from &lt;a href="https://github.com/Pi4J/pi4j-example-devices/blob/master/src/main/java/com/pi4j/devices/bmp280/README.md" target="_blank"&gt;https://github.com/Pi4J/pi4j-example-devices/blob/master/src/main/java/com/pi4j/devices/bmp280/README.md&lt;/a&gt;.
+ &lt;/p&gt;
+ &lt;/div&gt;&lt;h1 id="pi4j_v2-temperaturesensor"&gt;Pi4J_V2-TemperatureSensor&lt;/h1&gt;
+&lt;p&gt;Implement Temperature/Pressure BMP280&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.digikey.com/en/datasheets/bosch-sensortec/bosch-sensortec-bst-bmp280-ds001-19" target="_blank" rel="noopener"&gt;https://www.digikey.com/en/datasheets/bosch-sensortec/bosch-sensortec-bst-bmp280-ds001-19&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The I2C example program has the assumption the BMP280 is connected to Pi bus 1, and the device is factory configured to
+operate as device address 0x77. If these assumptions are not possible, the bus and device address value can be passed
+as parms. Or modify the BMP280I2cExample program to use your specific bus and device address.&lt;/p&gt;</description></item><item><title>I/O Registry</title><link>https://pi4j.com/documentation/registry/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/registry/</guid><description>&lt;p&gt;An additional V2+ feature is an I/O registry where all I/O instances that have been created can be maintained, managed, re-accessed, etc. As the library keeps track of all the created I/O instances, they become publicly accessible through a registry where users can interrogate, iterate, identify and access all created I/O instances that Pi4J is managing.&lt;/p&gt;
 &lt;p&gt;This is very useful for add-ons/plugins that want to provide runtime information about the state of all I/O, for example a web app illustrating the current state of I/O.&lt;/p&gt;</description></item><item><title>Shutdown (cleanup)</title><link>https://pi4j.com/documentation/shutdown/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/shutdown/</guid><description>&lt;p&gt;Pi4J has a &lt;code&gt;shutdown&lt;/code&gt; method that can be used for two different purposes.&lt;/p&gt;
 &lt;h2 id="end-of-application"&gt;End Of Application&lt;/h2&gt;
 &lt;p&gt;At the end of our application, the context needs to be shutdown to release the I/O and clean up the used resources.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-java" data-lang="java"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;#&lt;/span&gt; Start of program
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-java" data-lang="java"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;#&lt;/span&gt; Start of program
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;var&lt;/span&gt; pi4j &lt;span style="color:#f92672"&gt;=&lt;/span&gt; Pi4J.&lt;span style="color:#a6e22e"&gt;newAutoContext&lt;/span&gt;();
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;#&lt;/span&gt; YOUR CODE GOES HERE
@@ -846,7 +832,7 @@ also explain minimal coding required to allow greater flexibility.&lt;/p&gt;</de
 Pi4J.&lt;/p&gt;
 &lt;h2 id="java-release"&gt;Java release&lt;/h2&gt;
 &lt;p&gt;Any Java release over 21 is enough, check it with this command:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;$ java -version
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;$ java -version
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;openjdk version &lt;span style="color:#e6db74"&gt;&amp;#34;21.0.1&amp;#34;&lt;/span&gt; 2023-10-17 LTS
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;OpenJDK Runtime Environment Zulu21.30+15-CA &lt;span style="color:#f92672"&gt;(&lt;/span&gt;build 21.0.1+12-LTS&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;OpenJDK 64-Bit Server VM Zulu21.30+15-CA &lt;span style="color:#f92672"&gt;(&lt;/span&gt;build 21.0.1+12-LTS, mixed mode, sharing&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
@@ -997,10 +983,7 @@ means you can control any type of device which works with max 3.3V to off or on.
 basic example is a LED. Always check which is the correct input voltage for your device!
 For a LED you will need to put a resistor with the correct value between the GPIO and the LED,
 you can find a lot of examples and calculators online, for example on
-&lt;a href="https://circuitdigest.com/calculators/led-resistor-calculator" target="_blank" rel="noopener"&gt;circuitdigest.com/calculators/led-resistor-calculator&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Digital Input (GPIO)</title><link>https://pi4j.com/documentation/io-types/digital-input/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/io-types/digital-input/</guid><description>&lt;p&gt;Similar to a digital output pin, a digital input translates an input value of 0V or 3.3V to the value false/true. This
-means any type of device which can toggle between 3.3V and 0V, can generate an input value to the Raspberry Pi. Here the
-most basic example is a toggle button. If you use other components, always check which is the voltage provided by the device.
-Or if you use a power pin from the Raspberry Pi itself, to use a 3.3V pin and not a 5V pin.&lt;/p&gt;</description></item><item><title>Pulse Width Modulation (PWM)</title><link>https://pi4j.com/documentation/io-types/pwm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/io-types/pwm/</guid><description>&lt;h2 id="what-is-it"&gt;What is it?&lt;/h2&gt;
+&lt;a href="https://circuitdigest.com/calculators/led-resistor-calculator" target="_blank" rel="noopener"&gt;circuitdigest.com/calculators/led-resistor-calculator&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Digital Input (GPIO)</title><link>https://pi4j.com/documentation/io-types/digital-input/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/io-types/digital-input/</guid><description>&lt;p&gt;Similar to a digital output pin, a digital input translates an input value of 0V or 3.3V to the value false/true. This means any type of device which can toggle between 3.3V and 0V, can generate an input value to the Raspberry Pi. The most basic example is a toggle button. If you use other components, always check the voltage provided by the device. Or if you use a power pin from the Raspberry Pi itself, use a 3.3V pin and not a 5V pin.&lt;/p&gt;</description></item><item><title>Pulse Width Modulation (PWM)</title><link>https://pi4j.com/documentation/io-types/pwm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/io-types/pwm/</guid><description>&lt;h2 id="what-is-it"&gt;What is it?&lt;/h2&gt;
 &lt;p&gt;The abbreviation PWM stands for &amp;ldquo;Pulse Width Modulation&amp;rdquo; and is also often referred
 to in German as pulse width modulation or pulse duration modulation. This technology
 is used, among other things, to control servomotors and is also used, for example,
@@ -1028,11 +1011,8 @@ much more the master can choose at any time with which slave he would like to ex
 &lt;p&gt;In order to address only one slave, a total of 3 signal lines are required, two of which
 are used for bidirectional data transmission and one as a clock generator for serial
 transmission. If further slaves are to be addressed, additional signal lines are required
-depending on the desired topology.&lt;/p&gt;</description></item><item><title>Serial (UART/RS232)</title><link>https://pi4j.com/documentation/io-types/serial/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/io-types/serial/</guid><description>&lt;div class="notices warning" &gt;&lt;p&gt;As of version 3 of the Pi4J library, the serial methods have been marked as deprecated, and we advise to use the &lt;a href="https://fazecast.github.io/jSerialComm/" target="_blank" rel="noopener"&gt;jSerialComm library&lt;/a&gt;, as discussed in &lt;a href="https://github.com/Pi4J/pi4j/discussions/308" target="_blank" rel="noopener"&gt;#308: Remove serial support from Pi4J?&lt;/a&gt;. The example code below is still applicable, but serial support will be fully removed in later versions of Pi4J.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;
-&lt;div class="notices tip" &gt;&lt;p&gt;GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/SerialGps_App.java" target="_blank" rel="noopener"&gt;https://github.com/Pi4J/pi4j-example-components/blob/main/src/main/java/com/pi4j/catalog/applications/SerialGps_App.java&lt;/a&gt;&lt;/p&gt;
+depending on the desired topology.&lt;/p&gt;</description></item><item><title>Serial (UART/RS232)</title><link>https://pi4j.com/documentation/io-types/serial/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/io-types/serial/</guid><description>&lt;p&gt;&lt;strong&gt;
+&lt;div class="notices warning" &gt;&lt;p&gt;Serial support got deprecated in V3 of the Pi4J library, and completely removed in V4. We advise using the &lt;a href="https://fazecast.github.io/jSerialComm/" target="_blank" rel="noopener"&gt;jSerialComm library&lt;/a&gt; for this purpose.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id="what-is-it"&gt;What is it?&lt;/h2&gt;
@@ -1047,7 +1027,13 @@ combined to bytes.&lt;/p&gt;</description></item><item><title>1-Wire</title><lin
 
 &lt;p&gt;The Pi4J logo has been designed by &lt;a href="https://twitter.com/hansolo_" target="_blank" rel="noopener"&gt;Gerrit Grunwald&lt;/a&gt; and is nicely combines a raspberry pie
 with &lt;a href="https://www.oracle.com/java/duke.html" target="_blank" rel="noopener"&gt;Duke, the Java Masqot&lt;/a&gt;.&lt;/p&gt;
-&lt;img src="https://pi4j.com/assets/pi4j-logo.png" style="width: 400px; height: 400px;" /&gt;</description></item><item><title>IO Checker Tool</title><link>https://pi4j.com/blog/2025/20251013-io-checkers/</link><pubDate>Mon, 13 Oct 2025 00:00:00 +0000</pubDate><guid>https://pi4j.com/blog/2025/20251013-io-checkers/</guid><description>&lt;p&gt;2025-10-13, by Frank Delporte&lt;/p&gt;
+&lt;img src="https://pi4j.com/assets/pi4j-logo.png" style="width: 400px; height: 400px;" /&gt;</description></item><item><title>Interview Nick Gritsenko</title><link>https://pi4j.com/blog/2026/2026-interview-nick-ffm/</link><pubDate>Fri, 20 Feb 2026 00:00:00 +0000</pubDate><guid>https://pi4j.com/blog/2026/2026-interview-nick-ffm/</guid><description>&lt;p&gt;2026-02-20 by Frank Delporte&lt;/p&gt;
+&lt;h2 id="pi4j-goes-beyond-raspberry-pi-with-java-22s-ffm-api"&gt;Pi4J Goes Beyond Raspberry Pi with Java 22&amp;rsquo;s FFM API&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Nick Gritsenko (aka &lt;a href="https://www.linkedin.com/in/nick-gritsenko/" target="_blank" rel="noopener"&gt;DigitalSmile&lt;/a&gt;) joined the Pi4J project recently with an interesting plugin that uses Java 22&amp;rsquo;s Foreign Function &amp;amp; Memory API. His work could open up Pi4J to run on a significantly wider range of hardware than just Raspberry Pi.&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id="about-nick"&gt;About Nick&lt;/h3&gt;
+&lt;img src="https://pi4j.com/assets/about/team/nick.jpg" style="float: left; margin: 0 15px 10px 0; max-width: 200px; max-height: 250px;"&gt;
+&lt;p&gt;&lt;strong&gt;Frank:&lt;/strong&gt; Thanks for joining the Pi4J community! What&amp;rsquo;s your background?&lt;/p&gt;</description></item><item><title>IO Checker Tool</title><link>https://pi4j.com/blog/2025/20251013-io-checkers/</link><pubDate>Mon, 13 Oct 2025 00:00:00 +0000</pubDate><guid>https://pi4j.com/blog/2025/20251013-io-checkers/</guid><description>&lt;p&gt;2025-10-13, by Frank Delporte&lt;/p&gt;
 &lt;p&gt;For some of the IO types (PWM, SPI,&amp;hellip;), additional configurations are required. These are documented in
 &lt;a href="https://pi4j.com/documentation/io-types/"&gt;I/O Types&lt;/a&gt;, but still, sometimes it&amp;rsquo;s hard to remember what&amp;rsquo;s required or difficult
 to validate. For that reason, an IO Checker tool has been created. It&amp;rsquo;s part of the &lt;a href="https://github.com/Pi4J/pi4j-os/tree/main/iochecks" target="_blank" rel="noopener"&gt;Pi4J OS repository&lt;/a&gt; and can be executed directly from the GitHub file with JBang. This means it&amp;rsquo;s very
@@ -1074,7 +1060,7 @@ easy to use, but also to extend if other checks prove helpful.&lt;/p&gt;</descri
 exception details will state &lt;code&gt;/sys/class/pwm/pwmchip2/npwm was not found&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;A kernel code update (6.12) resulted in the objects within &lt;code&gt;/sys/class/pwm&lt;/code&gt; being numbered differently. It is most likely the PWM is using &lt;code&gt;/sys/class/pwm/pwmchip0&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Until a proper fix is available, the following change to your application should resolve this error:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-java" data-lang="java"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;// Add imports&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-java" data-lang="java"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;// Add imports&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;import&lt;/span&gt; com.pi4j.plugin.linuxfs.provider.pwm.LinuxFsPwmProvider;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;import&lt;/span&gt; com.pi4j.plugin.linuxfs.provider.pwm.LinuxFsPwmProviderImpl;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
@@ -1101,7 +1087,7 @@ exception details will state &lt;code&gt;/sys/class/pwm/pwmchip2/npwm was not fo
 &lt;p&gt;These are the numbers for all Pi4J libraries combined. Is this much? I have no clue as I can&amp;rsquo;t compare it with a similar project. ;-)&lt;/p&gt;</description></item><item><title>Signed versus unsigned values</title><link>https://pi4j.com/blog/2024/20240927-bits-bytes-signed-unsigned/</link><pubDate>Fri, 27 Sep 2024 00:00:00 +0000</pubDate><guid>https://pi4j.com/blog/2024/20240927-bits-bytes-signed-unsigned/</guid><description>&lt;p&gt;2024-09-27, by Frank Delporte&lt;/p&gt;
 &lt;p&gt;When using bits and bytes to control electronic components, the conversion from a byte to, e.g., logging output can be a bit confusing as Java uses signed values. This means a byte value has a range of -128 till 127, while you would expect 0 (0x00) till 255 (0xFF).&lt;/p&gt;
 &lt;p&gt;For example, the hex value &lt;code&gt;0x8F&lt;/code&gt; (&lt;code&gt;10001111&lt;/code&gt;) is handled like this:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-java" data-lang="java"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;var&lt;/span&gt; b &lt;span style="color:#f92672"&gt;=&lt;/span&gt; (&lt;span style="color:#66d9ef"&gt;byte&lt;/span&gt;) Integer.&lt;span style="color:#a6e22e"&gt;parseInt&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;10001111&amp;#34;&lt;/span&gt;, 2);
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-java" data-lang="java"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;var&lt;/span&gt; b &lt;span style="color:#f92672"&gt;=&lt;/span&gt; (&lt;span style="color:#66d9ef"&gt;byte&lt;/span&gt;) Integer.&lt;span style="color:#a6e22e"&gt;parseInt&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;10001111&amp;#34;&lt;/span&gt;, 2);
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;System.&lt;span style="color:#a6e22e"&gt;out&lt;/span&gt;.&lt;span style="color:#a6e22e"&gt;println&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;Byte value 10001111: &amp;#34;&lt;/span&gt; &lt;span style="color:#f92672"&gt;+&lt;/span&gt; b);
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;// Output&lt;/span&gt;
@@ -1197,7 +1183,7 @@ exception details will state &lt;code&gt;/sys/class/pwm/pwmchip2/npwm was not fo
  &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/Z_eI7DfDMjI?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
  &lt;/div&gt;
 
-&lt;p&gt;Live interview with Robert Savage, creator of Pi4J, a Java framework for doing physical computing with Raspberry Pi and Java.&lt;/p&gt;</description></item><item><title>Annotated provisioning</title><link>https://pi4j.com/architecture/advanced/annotated-provisioning/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/architecture/advanced/annotated-provisioning/</guid><description>&lt;div class="notices warning" &gt;&lt;p&gt;To simplify the initial V2 version, the DI implementation has be removed so it could be
+&lt;p&gt;Live interview with Robert Savage, creator of Pi4J, a Java framework for doing physical computing with Raspberry Pi and Java.&lt;/p&gt;</description></item><item><title>Annotated provisioning</title><link>https://pi4j.com/architecture/future-ideas/annotated-provisioning/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/architecture/future-ideas/annotated-provisioning/</guid><description>&lt;div class="notices warning" &gt;&lt;p&gt;To simplify the initial V2 version, the DI implementation has be removed so it could be
 refactored and extended later. It is still available in the branch
 &lt;a href="https://github.com/Pi4J/pi4j/tree/feature/%2322-annotations" target="_blank" rel="noopener"&gt;#22-annotations&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
@@ -1205,7 +1191,7 @@ refactored and extended later. It is still available in the branch
 &lt;p&gt;Next to the declarative approach, Java annotations are available for the configuration of I/O provisioning instead
 of the hard-coded approach offered in V1.&lt;/p&gt;
 &lt;p&gt;This implementation still needs to be further fine-tuned and unified somehow to make things cleaner and more
-straightforward, but would provide a way to initialize a I/O for instance like this:&lt;/p&gt;</description></item><item><title>Dependency injection</title><link>https://pi4j.com/architecture/advanced/dependency-injection/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/architecture/advanced/dependency-injection/</guid><description>&lt;div class="notices warning" &gt;&lt;p&gt;To simplify the initial V2 version, the DI implementation has be removed so it could be
+straightforward, but would provide a way to initialize a I/O for instance like this:&lt;/p&gt;</description></item><item><title>Dependency injection</title><link>https://pi4j.com/architecture/future-ideas/dependency-injection/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/architecture/future-ideas/dependency-injection/</guid><description>&lt;div class="notices warning" &gt;&lt;p&gt;To simplify the initial V2 version, the DI implementation has be removed so it could be
 refactored and extended later. It is still available in the branch
 &lt;a href="https://github.com/Pi4J/pi4j/tree/feature/%2322-annotations" target="_blank" rel="noopener"&gt;#22-annotations&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
@@ -1227,11 +1213,12 @@ Edge cases such as the following may require customization of the runtime to dea
  &amp;lt;artifactId&amp;gt;pi4j-plugin-raspberrypi&amp;lt;/artifactId&amp;gt;
  &amp;lt;version&amp;gt;${pi4j.version}&amp;lt;/version&amp;gt;
  &amp;lt;/dependency&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>Remote support</title><link>https://pi4j.com/architecture/advanced/remote-support/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/architecture/advanced/remote-support/</guid><description>&lt;p&gt;One of the big features on the wish-list for V2+: native support for remote I/O capability. Predominantly to support
-the ability for a user to perform development work on their desktop/laptop and be able to run their project with
-remote support slaving the I/O to a daemon running on the Raspberry Pi (or other supported SBC).&lt;/p&gt;
-
-&lt;div class="notices warning" &gt;&lt;p&gt;TO BE DECIDED: the V2+ codebase does support this currently by using the PiGpio daemon.&lt;br&gt;
+&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>Remote support</title><link>https://pi4j.com/architecture/future-ideas/remote-support/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/architecture/future-ideas/remote-support/</guid><description>&lt;div class="notices warning" &gt;&lt;p&gt;TO BE DECIDED: the V2+ codebase does support this currently by using the PiGpio daemon.&lt;br&gt;
 This may be an OK place to start for the first release, but a separate Pi4J daemon may be ideal for a long term
 solution to capture some of the edge cases and provide remote I/O capability no matter which underlying I/O library
-is being used.&lt;/p&gt;</description></item></channel></rss>
+is being used.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;One of the big features on the wish-list for V2+: native support for remote I/O capability. Predominantly to support
+the ability for a user to perform development work on their desktop/laptop and be able to run their project with
+remote support slaving the I/O to a daemon running on the Raspberry Pi (or other supported SBC).&lt;/p&gt;</description></item></channel></rss>

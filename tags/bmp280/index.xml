@@ -122,13 +122,16 @@ to this list.&lt;/p&gt;
  &lt;td style="text-align: left"&gt;&lt;a href="https://github.com/Pi4J/pi4j-example-devices" target="_blank" rel="noopener"&gt;github.com/Pi4J/pi4j-example-devices&lt;/a&gt;&lt;/td&gt;
  &lt;/tr&gt;
  &lt;/tbody&gt;
-&lt;/table&gt;</description></item><item><title>BMP280 Sensor</title><link>https://pi4j.com/examples/communityimplementation/bmp280/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/communityimplementation/bmp280/</guid><description>&lt;h3 id="description"&gt;Description&lt;/h3&gt;
-&lt;p&gt;The BMP280 is a Pressure and temperature sensor accessed via I2C or SPI. The BMP280
-is a simple device that requires the connection of few wires to operate.
-Because of this simplicity the device can serve as a very easy project for initial Pi and
-Pi4j usage. This document will explain the more simple means to connect the sensor and
-access the device with existing software requiring no coding. The document will
-also explain minimal coding required to allow greater flexibility.&lt;/p&gt;</description></item><item><title>BME280 Sensor</title><link>https://pi4j.com/examples/jbang/bme280_temperature_humidity_pressure/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/jbang/bme280_temperature_humidity_pressure/</guid><description>&lt;h2 id="bme280-sensor-temp-humidity-pressure-via-pi4j-i2c-and-jbang"&gt;BME280 Sensor (temp, humidity, pressure) via Pi4J, I2C, and JBang&lt;/h2&gt;
+&lt;/table&gt;</description></item><item><title>BMP280 Sensor</title><link>https://pi4j.com/examples/communityimplementation/bmp280/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/communityimplementation/bmp280/</guid><description>&lt;div class="notices info"&gt;
+ &lt;p&gt;
+ The content on this page was generated based on the content from &lt;a href="https://github.com/Pi4J/pi4j-example-devices/blob/master/src/main/java/com/pi4j/devices/bmp280/README.md" target="_blank"&gt;https://github.com/Pi4J/pi4j-example-devices/blob/master/src/main/java/com/pi4j/devices/bmp280/README.md&lt;/a&gt;.
+ &lt;/p&gt;
+ &lt;/div&gt;&lt;h1 id="pi4j_v2-temperaturesensor"&gt;Pi4J_V2-TemperatureSensor&lt;/h1&gt;
+&lt;p&gt;Implement Temperature/Pressure BMP280&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.digikey.com/en/datasheets/bosch-sensortec/bosch-sensortec-bst-bmp280-ds001-19" target="_blank" rel="noopener"&gt;https://www.digikey.com/en/datasheets/bosch-sensortec/bosch-sensortec-bst-bmp280-ds001-19&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The I2C example program has the assumption the BMP280 is connected to Pi bus 1, and the device is factory configured to
+operate as device address 0x77. If these assumptions are not possible, the bus and device address value can be passed
+as parms. Or modify the BMP280I2cExample program to use your specific bus and device address.&lt;/p&gt;</description></item><item><title>BME280 Sensor</title><link>https://pi4j.com/examples/jbang/bme280_temperature_humidity_pressure/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/jbang/bme280_temperature_humidity_pressure/</guid><description>&lt;h2 id="bme280-sensor-temp-humidity-pressure-via-pi4j-i2c-and-jbang"&gt;BME280 Sensor (temp, humidity, pressure) via Pi4J, I2C, and JBang&lt;/h2&gt;
 
 &lt;div class="notices tip" &gt;&lt;p&gt;GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-jbang/blob/main/Pi4JTempHumPressI2C.java" target="_blank" rel="noopener"&gt;github.com/Pi4J/pi4j-jbang &amp;gt; Pi4JTempHumPressI2C.java&lt;/a&gt; and &lt;a href="https://github.com/Pi4J/pi4j-jbang/blob/main/Pi4JTempHumPressSpi.java" target="_blank" rel="noopener"&gt;github.com/Pi4J/pi4j-jbang &amp;gt; Pi4JTempHumPressSpi.java&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;

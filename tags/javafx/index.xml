@@ -5,7 +5,7 @@
 
 &lt;h2 id="add-missing-dependencies"&gt;Add Missing Dependencies&lt;/h2&gt;
 &lt;p&gt;Let&amp;rsquo;s start with some helper tools that will be useful later.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;$ sudo apt install -y i2c-tools vim git java-common libxi6 libxrender1 libxtst6
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;$ sudo apt install -y i2c-tools vim git java-common libxi6 libxrender1 libxtst6
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;i2c-tools&lt;/code&gt;: Tool to help you with I2C commands.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;vim&lt;/code&gt;: Text editor like &lt;code&gt;nano&lt;/code&gt;, preferred by some, hated by others ;-)&lt;/li&gt;

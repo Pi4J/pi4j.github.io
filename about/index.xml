@@ -39,36 +39,13 @@
 &lt;p&gt;Pi4J V2 brings with it many new features, and an entirely new architecture that focuses on
 extensibility, simplified integration and a modern Java API including the following:&lt;/p&gt;</description></item><item><title>What's New in V3</title><link>https://pi4j.com/about/info-v3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/about/info-v3/</guid><description>&lt;p&gt;Versions 3.0.1 is based on 2.8.0 (released in January 2025), but bumps the &lt;strong&gt;Java version to 21&lt;/strong&gt;!&lt;/p&gt;
 &lt;p&gt;We &lt;a href="https://github.com/Pi4J/pi4j/discussions/409" target="_blank" rel="noopener"&gt;asked our users&lt;/a&gt; which minimal Java version we should use, but there was no one clear answer, as expected ;-)&lt;/p&gt;
-&lt;p&gt;The current/latest Long Term Support (LTS) version of Java is version 21. So it makes sense to jump forward from 11 to 21. This will also prepare us for the next LTS, which will be Java 25 in September 2025. Bumping to the latest LTS makes it possible to make use of many newer Java language and runtime improvements, simplify parts of the code, etc.&lt;/p&gt;</description></item><item><title>Release Notes</title><link>https://pi4j.com/about/release-notes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/about/release-notes/</guid><description>&lt;p&gt;All releases of Pi4J V2+ are listed on &lt;a href="https://github.com/Pi4J/pi4j/releases" target="_blank" rel="noopener"&gt;github.com/Pi4J/pi4j/releases&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id="v3"&gt;V3&lt;/h2&gt;
-&lt;p&gt;Requires Java 21, see &lt;a href="https://pi4j.com/about/info-v3/"&gt;What&amp;rsquo;s New in V3&lt;/a&gt; for more info.&lt;/p&gt;
-&lt;h3 id="2025-09-23---v303"&gt;2025-09-23 - V3.0.3&lt;/h3&gt;
-&lt;p&gt;Work is ongoing to extend Pi4J with a plugin based on the FFM API (Foreign Function &amp;amp; Memory API). To make this possible, some changes have been made to the core code in preparation for this new plugin. And of course more improvements and bug fixes&amp;hellip;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Board models: Added CM5 Lite board codes.&lt;/li&gt;
-&lt;li&gt;Replace Nexus Staging plugin with Central Publishing plugin.&lt;/li&gt;
-&lt;li&gt;Refactored &lt;code&gt;Registry&lt;/code&gt; to use &lt;code&gt;IOType&lt;/code&gt; for managing addresses, ensuring better segregation of address spaces between IO types. Updated related methods and internal data structures accordingly.&lt;/li&gt;
-&lt;li&gt;Introduced the ability to shutdown and unregister IO instances using the instance itself, complementing the existing ID-based method. Updated related methods, tests, and documentation to reflect the new functionality.&lt;/li&gt;
-&lt;li&gt;Ensure proper removal of IO instance during shutdown in DefaultRuntimeRegistry.&lt;/li&gt;
-&lt;li&gt;PWM IO Change Float to Integer and remove float related conversions.&lt;/li&gt;
-&lt;li&gt;Gate digital output event creation on listener / binding presence.&lt;/li&gt;
-&lt;li&gt;Move PWM chip detection to BoardInfo to make it usable for all plugins.&lt;/li&gt;
-&lt;li&gt;Unit test improvements.&lt;/li&gt;
-&lt;li&gt;LinuxFS plugin:
-&lt;ul&gt;
-&lt;li&gt;I2C: Improvements in &lt;code&gt;registerRead&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;SPI: SPI write now supports larger buffers by creating multi ioctl spi writes.&lt;/li&gt;
-&lt;li&gt;PWM: When the RP1 chip is found, PWM provider will use the RP1 architected address of PWM0 to determine the correct pwmChipx to use. This change will effect Raspberry Pi 5 and Compute Module 5 using updated kernel.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;GpioD plugin:
-&lt;ul&gt;
-&lt;li&gt;Introduced a volatile &lt;code&gt;running&lt;/code&gt; flag to properly manage the lifecycle of the input listener thread. Enhanced shutdown logic to ensure threads are safely and consistently terminated. Fix for &lt;a href="https://github.com/Pi4J/pi4j/issues/478" target="_blank" rel="noopener"&gt;Issue #478&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Make GpioLine Closeable.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Thanks to contributions by &lt;a href="https://github.com/IAmNickNack" target="_blank" rel="noopener"&gt;@IAmNickNack&lt;/a&gt;, &lt;a href="https://github.com/stefanhaustein" target="_blank" rel="noopener"&gt;@stefanhaustein&lt;/a&gt;, &lt;a href="https://github.com/taartspi" target="_blank" rel="noopener"&gt;@taartspi&lt;/a&gt;, &lt;a href="https://github.com/eitch" target="_blank" rel="noopener"&gt;@eitch&lt;/a&gt;, &lt;a href="https://github.com/fdelporte" target="_blank" rel="noopener"&gt;@fdelporte&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Pi4J Downloads</title><link>https://pi4j.com/about/download/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/about/download/</guid><description>&lt;p&gt;All downloads provided by the project can be found on &lt;a href="https://pi4j.com/download/" target="_blank" rel="noopener"&gt;pi4j.com/download&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The current/latest Long Term Support (LTS) version of Java is version 21. So it makes sense to jump forward from 11 to 21. This will also prepare us for the next LTS, which will be Java 25 in September 2025. Bumping to the latest LTS makes it possible to make use of many newer Java language and runtime improvements, simplify parts of the code, etc.&lt;/p&gt;</description></item><item><title>What's New in V4</title><link>https://pi4j.com/about/info-v4/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/about/info-v4/</guid><description>&lt;p&gt;Versions 4.0.0 is based on 3.0.3 (released on 2025-09-23), but bumps the &lt;strong&gt;Java version to 25&lt;/strong&gt; and has a new plugin that uses the Foreign Function &amp;amp; Memory (FFM) API. See the &lt;a href="https://pi4j.com/about/release-notes/"&gt;release notes&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="ffm-plugin"&gt;FFM Plugin&lt;/h2&gt;
+&lt;p&gt;The goal of this bump to V4 is to enable the use of the Foreign Function &amp;amp; Memory (FFM) API in Pi4J. This FFM API has been introduced in OpenJDK 22 and simplifies the use of native libraries in Java. And native libraries are &amp;ldquo;the heart&amp;rdquo; of the Pi4J project as they provide the connection between your Java code and the hardware.&lt;/p&gt;</description></item><item><title>Release Notes</title><link>https://pi4j.com/about/release-notes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/about/release-notes/</guid><description>&lt;p&gt;All releases of Pi4J V2+ are listed on &lt;a href="https://github.com/Pi4J/pi4j/releases" target="_blank" rel="noopener"&gt;github.com/Pi4J/pi4j/releases&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="v4"&gt;V4&lt;/h2&gt;
+&lt;p&gt;Requires Java 25, see &lt;a href="https://pi4j.com/about/info-v4/"&gt;What&amp;rsquo;s New in V4&lt;/a&gt; for more info.&lt;/p&gt;
+&lt;h3 id="2025-02-20---v400"&gt;2025-02-20 - V4.0.0&lt;/h3&gt;
+&lt;p&gt;This is a big release with almost 400 commits and 300+ files added/changed&amp;hellip;! &lt;strong&gt;Pi4J V4 introduces the new &lt;a href="https://pi4j.com/documentation/provider/ffm"&gt;FFM plugin&lt;/a&gt; and bumps the Java version to 25&lt;/strong&gt;. The FFM plugin makes use of the now Foreign Function &amp;amp; Memory API (FFM) to access the GPIOs. The FFM API got introduced in Java 22 with &lt;a href="https://openjdk.org/jeps/454" target="_blank" rel="noopener"&gt;JEP 454&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Pi4J Downloads</title><link>https://pi4j.com/about/download/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/about/download/</guid><description>&lt;p&gt;All downloads provided by the project can be found on &lt;a href="https://pi4j.com/download/" target="_blank" rel="noopener"&gt;pi4j.com/download&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The compiled artifacts (releases and snapshots) are available in the
 &lt;a href="https://oss.sonatype.org/index.html#nexus-search;gav~com.pi4j~~~~" target="_blank" rel="noopener"&gt;Sonatype Maven repository&lt;/a&gt;.&lt;/p&gt;
 &lt;iframe src="https://pi4j.com/download" style="width: 100%; height: 100vh;"&gt;&lt;/iframe&gt;</description></item><item><title>License (Open Source)</title><link>https://pi4j.com/about/license/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/about/license/</guid><description>&lt;p&gt;The Pi4J Version 2.0 project is distributed and licensed under the &lt;strong&gt;Apache License, Version 2.0&lt;/strong&gt; license

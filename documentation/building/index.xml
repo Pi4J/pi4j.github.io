@@ -4,7 +4,7 @@
 Pi4J.&lt;/p&gt;
 &lt;h2 id="java-release"&gt;Java release&lt;/h2&gt;
 &lt;p&gt;Any Java release over 21 is enough, check it with this command:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;$ java -version
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;$ java -version
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;openjdk version &lt;span style="color:#e6db74"&gt;&amp;#34;21.0.1&amp;#34;&lt;/span&gt; 2023-10-17 LTS
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;OpenJDK Runtime Environment Zulu21.30+15-CA &lt;span style="color:#f92672"&gt;(&lt;/span&gt;build 21.0.1+12-LTS&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;OpenJDK 64-Bit Server VM Zulu21.30+15-CA &lt;span style="color:#f92672"&gt;(&lt;/span&gt;build 21.0.1+12-LTS, mixed mode, sharing&lt;span style="color:#f92672"&gt;)&lt;/span&gt;

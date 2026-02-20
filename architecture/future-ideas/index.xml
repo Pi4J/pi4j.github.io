@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ideas For The Future on Pi4J</title><link>https://pi4j.com/architecture/future-ideas/</link><description>Recent content in Ideas For The Future on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://pi4j.com/architecture/future-ideas/index.xml" rel="self" type="application/rss+xml"/><item><title>Annotated provisioning</title><link>https://pi4j.com/architecture/future-ideas/annotated-provisioning/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/architecture/future-ideas/annotated-provisioning/</guid><description>&lt;div class="notices warning" &gt;&lt;p&gt;To simplify the initial V2 version, the DI implementation has be removed so it could be
+refactored and extended later. It is still available in the branch
+&lt;a href="https://github.com/Pi4J/pi4j/tree/feature/%2322-annotations" target="_blank" rel="noopener"&gt;#22-annotations&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Next to the declarative approach, Java annotations are available for the configuration of I/O provisioning instead
+of the hard-coded approach offered in V1.&lt;/p&gt;
+&lt;p&gt;This implementation still needs to be further fine-tuned and unified somehow to make things cleaner and more
+straightforward, but would provide a way to initialize a I/O for instance like this:&lt;/p&gt;</description></item><item><title>Dependency injection</title><link>https://pi4j.com/architecture/future-ideas/dependency-injection/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/architecture/future-ideas/dependency-injection/</guid><description>&lt;div class="notices warning" &gt;&lt;p&gt;To simplify the initial V2 version, the DI implementation has be removed so it could be
+refactored and extended later. It is still available in the branch
+&lt;a href="https://github.com/Pi4J/pi4j/tree/feature/%2322-annotations" target="_blank" rel="noopener"&gt;#22-annotations&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Along with the annotated I/O configuration the ability to support I/O provisioning via dependency injection also
+makes a lot of sense. There is some basic brute-force stuff working but this needs more work to make this a compatible
+implementation for Spring or CDI.&lt;/p&gt;</description></item><item><title>Remote support</title><link>https://pi4j.com/architecture/future-ideas/remote-support/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/architecture/future-ideas/remote-support/</guid><description>&lt;div class="notices warning" &gt;&lt;p&gt;TO BE DECIDED: the V2+ codebase does support this currently by using the PiGpio daemon.&lt;br&gt;
+This may be an OK place to start for the first release, but a separate Pi4J daemon may be ideal for a long term
+solution to capture some of the edge cases and provide remote I/O capability no matter which underlying I/O library
+is being used.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;One of the big features on the wish-list for V2+: native support for remote I/O capability. Predominantly to support
+the ability for a user to perform development work on their desktop/laptop and be able to run their project with
+remote support slaving the I/O to a daemon running on the Raspberry Pi (or other supported SBC).&lt;/p&gt;</description></item></channel></rss>

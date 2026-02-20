@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Project source structure on Pi4J</title><link>https://pi4j.com/architecture/about-the-code/</link><description>Recent content in Project source structure on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://pi4j.com/architecture/about-the-code/index.xml" rel="self" type="application/rss+xml"/><item><title>Download/Install</title><link>https://pi4j.com/architecture/about-the-code/download-sources/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/architecture/about-the-code/download-sources/</guid><description>&lt;p&gt;You can build the project from sources available on &lt;a href="https://github.com/Pi4J/pi4j" target="_blank" rel="noopener"&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Project source structure on Pi4J</title><link>https://pi4j.com/architecture/about-the-code/</link><description>Recent content in Project source structure on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://pi4j.com/architecture/about-the-code/index.xml" rel="self" type="application/rss+xml"/><item><title>Download the Sources</title><link>https://pi4j.com/architecture/about-the-code/download-sources/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/architecture/about-the-code/download-sources/</guid><description>&lt;p&gt;You can build the project from sources available on &lt;a href="https://github.com/Pi4J/pi4j" target="_blank" rel="noopener"&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Checkout the project &lt;a href="https://github.com/Pi4J/pi4j" target="_blank" rel="noopener"&gt;pi4j&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Use a JDK version 21 or newer, e.g. &lt;code&gt;sdk use java 21.0.6-zulu&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;In the root of pi4j run &lt;code&gt;mvn clean install&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Checkout the &lt;code&gt;develop&lt;/code&gt; branch of the &lt;a href="https://github.com/Pi4J/pi4j" target="_blank" rel="noopener"&gt;pi4j repository&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Use a JDK version 25 or newer, e.g. &lt;code&gt;sdk use java 25.0.1-zulu&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;In the root of the &lt;code&gt;pi4j directory, run &lt;/code&gt;mvn clean install`.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;[INFO] Executed tasks
 [INFO] ------------------------------------------------------------------------
-[INFO] Reactor Summary for Pi4J :: Parent POM 2.0-SNAPSHOT:
+[INFO] Reactor Summary for Pi4J :: Parent POM 4.0.0-SNAPSHOT:
 [INFO] 
 [INFO] Pi4J :: Parent POM ................................. SUCCESS [ 0.972 s]
 [INFO] Pi4J :: DOCKER :: Docker Parent POM .............. SUCCESS [ 0.290 s]
@@ -23,26 +23,7 @@
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="example-application"&gt;Example application&lt;/h2&gt;
-&lt;h3 id="building-the-example-application"&gt;Building the example application&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Checkout the project &lt;a href="https://github.com/Pi4J/pi4j-demo-telegraph" target="_blank" rel="noopener"&gt;Pi4J V2+ - Telegraph Demo Project&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Select JDK 21, e.g. &lt;code&gt;sdk use java 21.0.6-zulu&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;In the root of pi4j-demo-telegraph run &lt;code&gt;mvn clean install&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Check the directory target\distribution &amp;ndash;&amp;gt; this contains all the files to be copied to the Raspberry Pi&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre tabindex="0"&gt;&lt;code&gt;/target/distribution/pi4j-core-2.0-SNAPSHOT.jar
-/target/distribution/pi4j-demo-telegraph-1.0-SNAPSHOT.jar
-/target/distribution/pi4j-library-pigpio-2.0-SNAPSHOT.jar
-/target/distribution/pi4j-plugin-pigpio-2.0-SNAPSHOT.jar
-/target/distribution/pi4j-plugin-raspberrypi-2.0-SNAPSHOT.jar
-/target/distribution/run.sh
-/target/distribution/slf4j-api-2.0.0-alpha0.jar
-/target/distribution/slf4j-simple-2.0.0-alpha0.jar
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id="running-on-the-raspberry-pi"&gt;Running on the Raspberry Pi&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;After copying all files from target/distribution to a Raspberry Pi, start &lt;code&gt;./run.sh&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Build Instructions</title><link>https://pi4j.com/architecture/about-the-code/build-instructions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/architecture/about-the-code/build-instructions/</guid><description>&lt;p&gt;Building the Pi4J Project is simple and requires minimal effort. Pi4J is primarily built using Apache Maven and Java 21.
+&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>Build Instructions</title><link>https://pi4j.com/architecture/about-the-code/build-instructions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/architecture/about-the-code/build-instructions/</guid><description>&lt;p&gt;Building the Pi4J Project is simple and requires minimal effort. Pi4J is primarily built using Apache Maven and Java 25.
 Pi4J can be built directly on your host computer or inside a Docker container where all toolchains and dependencies are
 already installed, configured and cached.&lt;/p&gt;
 
@@ -70,11 +51,11 @@ already installed, configured and cached.&lt;/p&gt;
 &lt;li&gt;CTRL+ALT+O: Optimize imports&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Hardware testing</title><link>https://pi4j.com/architecture/about-the-code/hardware-testing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/architecture/about-the-code/hardware-testing/</guid><description>&lt;div class="notices warning" &gt;&lt;p&gt;This is an experimental project which will need a lot of love&amp;hellip; The new Raspberry
-Pi Pico with a lot of GPIOs for a very low price, seems even to be a better fit for this project compared to the
-Arduino Due&amp;hellip; To be further investigated!&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;To minimize the required time and efforts to test a new release, V2+ aims to include an automated test which performs
-I/O testing on each I/O interface on each model of RPi. Ideally this would happen as part of the unit testing sequence
-for each code commit or at least as part of the release cycle.&lt;/p&gt;</description></item></channel></rss>
+&lt;/ul&gt;</description></item><item><title>Hardware Testing</title><link>https://pi4j.com/architecture/about-the-code/hardware-testing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/architecture/about-the-code/hardware-testing/</guid><description>&lt;div class="notices info"&gt;
+ &lt;p&gt;
+ The content on this page was generated based on the content from &lt;a href="https://github.com/Pi4J/pi4j/blob/develop/pi4j-test/README.md" target="_blank"&gt;https://github.com/Pi4J/pi4j/blob/develop/pi4j-test/README.md&lt;/a&gt;.
+ &lt;/p&gt;
+ &lt;/div&gt;&lt;h1 id="pi4j-smoke-test"&gt;Pi4J Smoke Test&lt;/h1&gt;
+&lt;p&gt;Testing the full Pi4J library is hard because it requires real hardware devices to validate all interactions. This test project is intended to provide a simple way to verify that the Pi4J library is working correctly on a Raspberry Pi with a few simple devices.&lt;/p&gt;
+&lt;h2 id="main-test"&gt;Main Test&lt;/h2&gt;
+&lt;p&gt;The &lt;code&gt;src/main/java/com/pi4j/test/Main.java&lt;/code&gt; class verifies that the providers can be loaded and used. The use is very basic, but just enough to know it worked.&lt;/p&gt;</description></item></channel></rss>

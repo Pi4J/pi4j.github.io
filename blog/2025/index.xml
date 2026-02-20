@@ -8,7 +8,7 @@ easy to use, but also to extend if other checks prove helpful.&lt;/p&gt;</descri
 exception details will state &lt;code&gt;/sys/class/pwm/pwmchip2/npwm was not found&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;A kernel code update (6.12) resulted in the objects within &lt;code&gt;/sys/class/pwm&lt;/code&gt; being numbered differently. It is most likely the PWM is using &lt;code&gt;/sys/class/pwm/pwmchip0&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Until a proper fix is available, the following change to your application should resolve this error:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-java" data-lang="java"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;// Add imports&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-java" data-lang="java"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;// Add imports&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;import&lt;/span&gt; com.pi4j.plugin.linuxfs.provider.pwm.LinuxFsPwmProvider;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;import&lt;/span&gt; com.pi4j.plugin.linuxfs.provider.pwm.LinuxFsPwmProviderImpl;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;

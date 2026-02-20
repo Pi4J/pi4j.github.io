@@ -1,4 +1,29 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Choosing an I/O Provider on Pi4J</title><link>https://pi4j.com/documentation/providers/</link><description>Recent content in Choosing an I/O Provider on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://pi4j.com/documentation/providers/index.xml" rel="self" type="application/rss+xml"/><item><title>GpioD Provider</title><link>https://pi4j.com/documentation/providers/gpiod/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/providers/gpiod/</guid><description>&lt;p&gt;The GpioD plugin provider was added in Pi4J 2.5.0 to be able to support the Raspberry Pi 5 with the new &lt;a href="https://www.raspberrypi.com/documentation/microcontrollers/rp1.html" target="_blank" rel="noopener"&gt;GPIO chip RP1&lt;/a&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Choosing an I/O Provider on Pi4J</title><link>https://pi4j.com/documentation/providers/</link><description>Recent content in Choosing an I/O Provider on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://pi4j.com/documentation/providers/index.xml" rel="self" type="application/rss+xml"/><item><title>FFM Provider</title><link>https://pi4j.com/documentation/providers/ffm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/providers/ffm/</guid><description>&lt;p&gt;The FFM plugin provider was added in Pi4J 4.0.0 based on the Foreign Function &amp;amp; Memory (FFM) API&lt;/p&gt;
+&lt;p&gt;Providers in the FFM plugin:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ffm-digital-input&lt;/li&gt;
+&lt;li&gt;ffm-digital-output&lt;/li&gt;
+&lt;li&gt;ffm-i2c&lt;/li&gt;
+&lt;li&gt;ffm-pwm&lt;/li&gt;
+&lt;li&gt;ffm-spi&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="quick-start"&gt;Quick Start&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Ensure you are running JDK25+&lt;/li&gt;
+&lt;li&gt;Add dependency to your maven/gradle
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-xml" data-lang="xml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;&amp;lt;dependency&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;&amp;lt;groupId&amp;gt;&lt;/span&gt;com.pi4j&lt;span style="color:#f92672"&gt;&amp;lt;/groupId&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;&amp;lt;artifactId&amp;gt;&lt;/span&gt;pi4j-ffm-plugin&lt;span style="color:#f92672"&gt;&amp;lt;/artifactId&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;&amp;lt;version&amp;gt;&lt;/span&gt;${pi4j.version}&lt;span style="color:#f92672"&gt;&amp;lt;/version&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;&amp;lt;/dependency&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;When using FFM API functionality added to Java in version 22, you will be alerted at startup of the applicatoin with this message:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-text" data-lang="text"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;WARNING: A restricted method in java.lang.foreign.AddressLayout has been called
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;WARNING: java.lang.foreign.AddressLayout::withTargetLayout has been called by ... in an unnamed module (file:...)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can either ignore this message, or add &lt;code&gt;--enable-native-access=com.pi4j.plugin.ffm&lt;/code&gt; to your run, or add &lt;code&gt;Enable-Native-Access: ALL-UNNAMED&lt;/code&gt; to the &lt;code&gt;MANIFEST.MF&lt;/code&gt; file in your project.&lt;/p&gt;</description></item><item><title>GpioD Provider</title><link>https://pi4j.com/documentation/providers/gpiod/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/providers/gpiod/</guid><description>&lt;p&gt;The GpioD plugin provider was added in Pi4J 2.5.0 to be able to support the Raspberry Pi 5 with the new &lt;a href="https://www.raspberrypi.com/documentation/microcontrollers/rp1.html" target="_blank" rel="noopener"&gt;GPIO chip RP1&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Providers in the GpioD plugin:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;gpiod-digital-input&lt;/li&gt;
@@ -10,7 +35,7 @@
 &lt;/div&gt;
 
 &lt;p&gt;If you get an error at startup with the following content, your OS is outdated for the GpioD implementation used in Pi4J:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;UNDERLYING EXCEPTION: &lt;span style="color:#f92672"&gt;[&lt;/span&gt;java.lang.UnsatisfiedLinkError&lt;span style="color:#f92672"&gt;]=&lt;/span&gt;/tmp/libgpiod368899536808039438.so: /lib/aarch64-linux-gnu/libc.so.6: version &lt;span style="color:#e6db74"&gt;`&lt;/span&gt;GLIBC_2.33&lt;span style="color:#960050;background-color:#1e0010"&gt;&amp;#39;&lt;/span&gt; not found &lt;span style="color:#f92672"&gt;(&lt;/span&gt;required by /tmp/libgpiod368899536808039438.so&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;UNDERLYING EXCEPTION: &lt;span style="color:#f92672"&gt;[&lt;/span&gt;java.lang.UnsatisfiedLinkError&lt;span style="color:#f92672"&gt;]=&lt;/span&gt;/tmp/libgpiod368899536808039438.so: /lib/aarch64-linux-gnu/libc.so.6: version &lt;span style="color:#e6db74"&gt;`&lt;/span&gt;GLIBC_2.33&lt;span style="color:#960050;background-color:#1e0010"&gt;&amp;#39;&lt;/span&gt; not found &lt;span style="color:#f92672"&gt;(&lt;/span&gt;required by /tmp/libgpiod368899536808039438.so&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="dependencies"&gt;Dependencies&lt;/h2&gt;
 &lt;p&gt;To use the GpioD provider include the following dependencies:&lt;/p&gt;</description></item><item><title>LinuxFS Provider</title><link>https://pi4j.com/documentation/providers/linuxfs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/providers/linuxfs/</guid><description>&lt;p&gt;The current implementation of the LinuxFS plugin implements a file based I2C, SPI, and PWM provider. The file based I2C provider opens
 &lt;code&gt;/dev/i2c-1&lt;/code&gt; using a &lt;code&gt;RandomAccessFile&lt;/code&gt; to perform I2C reads and writes. The file based PWM provider opens
@@ -33,6 +58,6 @@
 &lt;/ul&gt;
 &lt;p&gt;To use the LinuxFS provider include the following dependencies:&lt;/p&gt;</description></item><item><title>PiGpio Provider</title><link>https://pi4j.com/documentation/providers/pigpio/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/providers/pigpio/</guid><description>&lt;p&gt;The current implementation of the PiGpio exposes the GPIO functions available on the Raspberry Pi (see Note Pi5 below).
 This implementation is developed/supported by a team separate of Pi4j. Pi4j is a consumer of that PiGpio work.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Pi5 At the present time the PiGpio implementation does not support the new Pi5 board. 
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Pi5 At the present time the PiGpio implementation does not support the new Pi5 board. 
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;- This new Pi5 RP1 chip will require a large development effort. There is no known plan &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; this develoment. 
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Providers in the PiGpio plugin:&lt;/p&gt;</description></item></channel></rss>
