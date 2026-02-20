@@ -2,7 +2,7 @@
 &lt;ul&gt;
 &lt;li&gt;Checkout the &lt;code&gt;develop&lt;/code&gt; branch of the &lt;a href="https://github.com/Pi4J/pi4j" target="_blank" rel="noopener"&gt;pi4j repository&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;Use a JDK version 25 or newer, e.g. &lt;code&gt;sdk use java 25.0.1-zulu&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;In the root of the &lt;code&gt;pi4j directory, run &lt;/code&gt;mvn clean install`.&lt;/li&gt;
+&lt;li&gt;In the root of the &lt;code&gt;pi4j&lt;/code&gt; directory, run &lt;code&gt;mvn clean install&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;[INFO] Executed tasks
 [INFO] ------------------------------------------------------------------------

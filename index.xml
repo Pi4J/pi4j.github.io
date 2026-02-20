@@ -70,7 +70,7 @@ find the Imager tool&lt;/a&gt;. Select the version for your computer, download, 
 &lt;ul&gt;
 &lt;li&gt;Checkout the &lt;code&gt;develop&lt;/code&gt; branch of the &lt;a href="https://github.com/Pi4J/pi4j" target="_blank" rel="noopener"&gt;pi4j repository&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;Use a JDK version 25 or newer, e.g. &lt;code&gt;sdk use java 25.0.1-zulu&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;In the root of the &lt;code&gt;pi4j directory, run &lt;/code&gt;mvn clean install`.&lt;/li&gt;
+&lt;li&gt;In the root of the &lt;code&gt;pi4j&lt;/code&gt; directory, run &lt;code&gt;mvn clean install&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;[INFO] Executed tasks
 [INFO] ------------------------------------------------------------------------
@@ -243,8 +243,8 @@ This scheme was incompatibility with other pin diagrams and pin numbering used b
 &lt;p&gt;This drawing shows the different numbers for WiringPi and BCM in a 40-pins Raspberry Pi header:&lt;/p&gt;</description></item><item><title>Release Notes</title><link>https://pi4j.com/about/release-notes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/about/release-notes/</guid><description>&lt;p&gt;All releases of Pi4J V2+ are listed on &lt;a href="https://github.com/Pi4J/pi4j/releases" target="_blank" rel="noopener"&gt;github.com/Pi4J/pi4j/releases&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id="v4"&gt;V4&lt;/h2&gt;
 &lt;p&gt;Requires Java 25, see &lt;a href="https://pi4j.com/about/info-v4/"&gt;What&amp;rsquo;s New in V4&lt;/a&gt; for more info.&lt;/p&gt;
-&lt;h3 id="2025-02-20---v400"&gt;2025-02-20 - V4.0.0&lt;/h3&gt;
-&lt;p&gt;This is a big release with almost 400 commits and 300+ files added/changed&amp;hellip;! &lt;strong&gt;Pi4J V4 introduces the new &lt;a href="https://pi4j.com/documentation/provider/ffm"&gt;FFM plugin&lt;/a&gt; and bumps the Java version to 25&lt;/strong&gt;. The FFM plugin makes use of the now Foreign Function &amp;amp; Memory API (FFM) to access the GPIOs. The FFM API got introduced in Java 22 with &lt;a href="https://openjdk.org/jeps/454" target="_blank" rel="noopener"&gt;JEP 454&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Pi4J Downloads</title><link>https://pi4j.com/about/download/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/about/download/</guid><description>&lt;p&gt;All downloads provided by the project can be found on &lt;a href="https://pi4j.com/download/" target="_blank" rel="noopener"&gt;pi4j.com/download&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id="2026-02-20---v400"&gt;2026-02-20 - V4.0.0&lt;/h3&gt;
+&lt;p&gt;This is a big release with almost 400 commits and 300+ files added/changed&amp;hellip;! &lt;strong&gt;Pi4J V4 introduces the new &lt;a href="https://pi4j.com/documentation/providers/ffm"&gt;FFM plugin&lt;/a&gt; and bumps the Java version to 25&lt;/strong&gt;. The FFM plugin makes use of the now Foreign Function &amp;amp; Memory API (FFM) to access the GPIOs. The FFM API got introduced in Java 22 with &lt;a href="https://openjdk.org/jeps/454" target="_blank" rel="noopener"&gt;JEP 454&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Pi4J Downloads</title><link>https://pi4j.com/about/download/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/about/download/</guid><description>&lt;p&gt;All downloads provided by the project can be found on &lt;a href="https://pi4j.com/download/" target="_blank" rel="noopener"&gt;pi4j.com/download&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The compiled artifacts (releases and snapshots) are available in the
 &lt;a href="https://oss.sonatype.org/index.html#nexus-search;gav~com.pi4j~~~~" target="_blank" rel="noopener"&gt;Sonatype Maven repository&lt;/a&gt;.&lt;/p&gt;
 &lt;iframe src="https://pi4j.com/download" style="width: 100%; height: 100vh;"&gt;&lt;/iframe&gt;</description></item><item><title>Minimal Kotlin Pi4J example</title><link>https://pi4j.com/kotlin/kotlin-dsl/minimal-kotlin-example/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/kotlin/kotlin-dsl/minimal-kotlin-example/</guid><description>&lt;div class="notices tip" &gt;&lt;p&gt;Full Example on GitHub: &lt;a href="https://github.com/Pi4J/pi4j-kotlin/blob/master/example/src/main/kotlin/MinimalExample.kt" target="_blank" rel="noopener"&gt;https://github.com/Pi4J/pi4j-kotlin/blob/master/example/src/main/kotlin/MinimalExample.kt&lt;/a&gt;&lt;/p&gt;
@@ -699,7 +699,7 @@ and to fully understand the example applications and the MVC-model. This page is
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;&amp;lt;/dependency&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;When using FFM API functionality added to Java in version 22, you will be alerted at startup of the applicatoin with this message:&lt;/p&gt;
+&lt;p&gt;When using FFM API functionality added to Java in version 22, you will be alerted at startup of the application with this message:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-text" data-lang="text"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;WARNING: A restricted method in java.lang.foreign.AddressLayout has been called
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;WARNING: java.lang.foreign.AddressLayout::withTargetLayout has been called by ... in an unnamed module (file:...)
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
