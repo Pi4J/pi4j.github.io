@@ -10,7 +10,7 @@ Versions 4.0.0 is based on 3.0.3 (released on 2025-09-23), but bumps the **Java 
 
 The goal of this bump to V4 is to enable the use of the Foreign Function & Memory (FFM) API in Pi4J. This FFM API has been introduced in OpenJDK 22 and simplifies the use of native libraries in Java. And native libraries are "the heart" of the Pi4J project as they provide the connection between your Java code and the hardware.
 
-Thanks to the contributions by [Nick Gritsenko (aka DigitalSmile)](https://github.com/DigitalSmile) in [pull request #458](https://github.com/Pi4J/pi4j/pull/458), a complete new plugin got added to Pi4J. Read more about the work by Nick in this [interview](/blog/2025/2025????-interview-nick-ffm/).
+Thanks to the contributions by [Nick Gritsenko (aka DigitalSmile)](https://github.com/DigitalSmile) in [pull request #458](https://github.com/Pi4J/pi4j/pull/458), a complete new plugin got added to Pi4J. Read more about the work by Nick in this [interview](/blog/2026/2026-interview-nick-ffm/).
 
 ## Sources
 
