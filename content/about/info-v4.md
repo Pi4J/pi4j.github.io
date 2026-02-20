@@ -4,7 +4,7 @@ weight: 23
 tags: ["FFM API"]
 ---
 
-Versions 4.0.0 is based on 3.0.3 (released on 2025-09-23), but bumps the **Java version to 25** and has a new plugin that uses the Foreign Function & Memory (FFM) API. See the [release notes](/about/release-notes/???).
+Versions 4.0.0 is based on 3.0.3 (released on 2025-09-23), but bumps the **Java version to 25** and has a new plugin that uses the Foreign Function & Memory (FFM) API. See the [release notes](/about/release-notes/).
 
 ## FFM Plugin
 

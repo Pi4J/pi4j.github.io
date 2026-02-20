@@ -1,10 +1,10 @@
 ---
 title: "Interview Nick Gritsenko"
-date: 2026-01-01
+date: 2026-02-20
 tags: ["FFM API"]
 ---
 
-2026-??-?? by Frank Delporte
+2026-02-20 by Frank Delporte
 
 ## Pi4J Goes Beyond Raspberry Pi with Java 22's FFM API
 
