@@ -26,6 +26,8 @@ As [described on their website](https://www.jbang.dev/):
 
 *JBang lets you do all this!*
 
+This is also a very nice and detailed blog post about JBang: [What is JBang? The Complete Guide to Java Scripting](https://blog.marcnuri.com/jbang-introduction).
+
 ## Get Started with JBang on Raspberry Pi
 
 ### Prerequisites

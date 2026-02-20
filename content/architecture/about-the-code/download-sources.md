@@ -1,18 +1,18 @@
 ---
-title: Download/Install
+title: Download the Sources
 weight: 20
 ---
 
 You can build the project from sources available on [GitHub](https://github.com/Pi4J/pi4j).
 
-* Checkout the project [pi4j](https://github.com/Pi4J/pi4j)
-* Use a JDK version 21 or newer, e.g. `sdk use java 21.0.6-zulu`
-* In the root of pi4j run `mvn clean install`
+* Checkout the `develop` branch of the [pi4j repository](https://github.com/Pi4J/pi4j).
+* Use a JDK version 25 or newer, e.g. `sdk use java 25.0.1-zulu`.
+* In the root of the `pi4j directory, run `mvn clean install`.
 
 ```
 [INFO] Executed tasks
 [INFO] ------------------------------------------------------------------------
-[INFO] Reactor Summary for Pi4J :: Parent POM 2.0-SNAPSHOT:
+[INFO] Reactor Summary for Pi4J :: Parent POM 4.0.0-SNAPSHOT:
 [INFO] 
 [INFO] Pi4J :: Parent POM ................................. SUCCESS [  0.972 s]
 [INFO] Pi4J :: DOCKER   :: Docker Parent POM .............. SUCCESS [  0.290 s]
@@ -30,27 +30,3 @@ You can build the project from sources available on [GitHub](https://github.com/
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
 ```
-
-## Example application
-
-### Building the example application
-
-* Checkout the project [Pi4J V2+ - Telegraph Demo Project](https://github.com/Pi4J/pi4j-demo-telegraph)
-* Select JDK 21, e.g. `sdk use java 21.0.6-zulu`
-* In the root of pi4j-demo-telegraph run `mvn clean install`
-* Check the directory target\distribution --> this contains all the files to be copied to the Raspberry Pi
-
-```
-/target/distribution/pi4j-core-2.0-SNAPSHOT.jar
-/target/distribution/pi4j-demo-telegraph-1.0-SNAPSHOT.jar
-/target/distribution/pi4j-library-pigpio-2.0-SNAPSHOT.jar
-/target/distribution/pi4j-plugin-pigpio-2.0-SNAPSHOT.jar
-/target/distribution/pi4j-plugin-raspberrypi-2.0-SNAPSHOT.jar
-/target/distribution/run.sh
-/target/distribution/slf4j-api-2.0.0-alpha0.jar
-/target/distribution/slf4j-simple-2.0.0-alpha0.jar
-```
-
-### Running on the Raspberry Pi
-
-* After copying all files from target/distribution to a Raspberry Pi, start `./run.sh`

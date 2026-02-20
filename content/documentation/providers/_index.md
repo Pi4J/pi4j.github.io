@@ -18,6 +18,12 @@ expressly requested when creating the Context.  [See Create Context](../create-c
 
 Current supported providers:
 
+* [FFM](/documentation/providers/ffm/)
+  * Was introduced in Pi4J 4.0.0
+  * Pro
+    * ...
+  * Contra
+    * ...
 * [GpioD](/documentation/providers/gpiod/)
   * Was introduced in Pi4J 2.5.0
   * Pro
