@@ -37,6 +37,29 @@ WARNING: Restricted methods will be blocked in a future release unless native ac
 
 You can either ignore this message, or add `--enable-native-access=com.pi4j.plugin.ffm` to your run, or add `Enable-Native-Access: ALL-UNNAMED` to the `MANIFEST.MF` file in your project.
 
+## Implementation notes
+
+### I2C
+
+The FFM plugin supports three types of I2C implementations:
+
+* `I2CImplementation.DIRECT`: default option when you don't specify any I2C implementation.
+* `I2CImplementation.FILE`
+* `I2CImplementation.SMBUS`
+
+```java
+var i2cConfig = I2C.newConfigBuilder(pi4j)
+        .bus(I2C_BUS)
+        .device(I2C_DEVICE)
+        .i2cImplementation(I2CImplementation.DIRECT)
+        .build();
+var i2c = pi4j.create(i2cConfig);
+```
+
+### PWM
+
+Only hardware PWM is supported in V4.0.0.
+
 ## Dependencies and Permissions
 
 Since FFM provider does not rely on third-party native code and handles all the work between the JVM and Linux kernel, we have to be very cautious with permissions given to the user, and a correct device setup.

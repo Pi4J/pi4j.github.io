@@ -1,6 +1,6 @@
 ---
 title: The Pi4J Logo
-weight: 999
+weight: 998
 ---
 
 {{% notice tip %}}
