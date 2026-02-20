@@ -4,19 +4,11 @@ weight: 90
 tags: ["GpioD", "LinuxFS", "PiGpio"]
 ---
 
-Providers are extensible service modules responsible for the concrete implementation of a specific I/O type.
-The providers also allow to separate the internal logic of the Pi4J core from the concrete implementation of the board
-on which they are used.
+Providers are extensible service modules responsible for the concrete implementation of a specific I/O type. The providers also allow separating the internal logic of the Pi4J core from the concrete implementation of the board on which they are used.
 
-Pi4J 2.0 - 2.4: Multiple providers for the same I/O type can be loaded into a Pi4J context concurrently. For example a 
-"RaspberryPi-DigitalInputProvider" and "GertBoard-DigitalInputProvider" could both be loaded and both providing digital 
-inputs at the same time.
+As of Pi4J 2.5 multiple providers for the same I/O type is no longer supported. During the Context initialization it will ensure only a single provider for an I/O type is loaded. In addition, the Mock Providers are not loaded unless expressly requested when creating the Context. [See Create Context](../create-context/)
 
-As of Pi4J 2.5 multiple providers for the same I/O type is no longer supported. During the Context initialization it will
-ensure only a single provider for an I/O type is loaded. In addition the Mock Providers are not loaded unless 
-expressly requested when creating the Context.  [See Create Context](../create-context/)
-
-Current supported providers:
+## Available Providers
 
 * [FFM](/documentation/providers/ffm/)
   * Was introduced in Pi4J 4.0.0
@@ -51,19 +43,9 @@ Current supported providers:
     * Needs to run as `sudo`
     * 03/22/2024 Does not support Raspberry Pi 5
 
-Possible future providers:
-* Pi5 SPI, under construction. 
-* Pi5 Serial. At present the intent is no Pi4j Serial provider on Pi5. As an alternative see [jSerialComm](http://fazecast.github.io/jSerialComm/).
-* RemoteProvider to control the I/O from a remote device e.g. through websockets
+## Check Loaded Providers
 
-Pi4J 2.5 Provider not found
-* Pi4J 2.5 ensuring a single provider for an I/O type is loaded may result in the provider your code references not being 
-found because it was replaced by a higher priority provider.
-If you encounter this case, you can remove the unwanted provider plugin from your pom.xml file dependencies. Then after a clean 
-and rebuild of your program the unwanted provider will no longer be loaded.
- 
-
-* PrettyPrint loaded providers. After creating the Context the following code will print the currently loaded provider for each I/O type.
+After creating the `Context` the following code will print the currently loaded provider for each I/O type.
 ```
     System.out.println("-------------------------------------------------");
     System.out.println("PI4J PROVIDERS");
