@@ -1,7 +1,7 @@
 ---
 title: Pi4J Kotlin DSL
 description: "Pi4J Kotlin DSL & API Example & Documentation"
-weight: 45
+weight: 46
 ---
 
 Pi4J-Kotlin (aka Pi4K) is an implementation on top of Pi4J to facilitate the development of Kotlin applications for the Raspberry Pi that can interact with the GPIOs.

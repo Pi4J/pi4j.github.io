@@ -11,11 +11,11 @@ One of the main similarities between Java and Kotlin is their ability to run on 
 
 ### Kotlin DSL: Simplifying Development
 
-Kotlin stands out from Java due to its Domain Specific Language (DSL) capabilities. The Pi4J-Kotlin library provides a set of DSLs that simplify the development process by providing cleaner, easier-to-read APIs. These DSLs are inlined at compile-time, eliminating any runtime overhead.
+Kotlin stands out from Java due to its Domain Specific Language (DSL) capabilities. The [Pi4J-Kotlin library](https://github.com/Pi4J/pi4j-kotlin/) is created by [Muhammad Hashim](https://www.linkedin.com/in/mhashim6/) and provides a set of DSLs that simplify the development process by providing cleaner, easier-to-read APIs. These DSLs are inlined at compile-time, eliminating any runtime overhead.
 
 ### Kotlin Examples
 
-Thanks to the examples created by [Oleksandr Neiko](https://www.linkedin.com/in/alexander-neiko/), a full set of Pi4J + Kotlin examples are available.
+Thanks to the examples created by [Oleksandr Neiko](https://www.linkedin.com/in/alexander-neiko/), a full set of [Pi4J + Kotlin examples](/kotlin/kotlin-examples/) are available with a video and code examples on GitHub.
 
 ## Read More
 
