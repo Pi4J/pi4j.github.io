@@ -53,8 +53,8 @@ After these steps, you can continue to the [Getting Started with Pi4J](/getting-
 
 ## Pi4J OS
 
-In the past, we had our own Pi4J OS, based on Raspberry Pi OS with some extra preparations to make it easier to use with Pi4J. But because it became incompatible with the Raspberry Pi 5 and was difficult to maintain, we no longer will update that Pi4J OS.
+In the past, we had our own Pi4J OS, based on Raspberry Pi OS with some extra preparations to make it easier to use with Pi4J. But because it became incompatible with the Raspberry Pi 5 and was difficult to maintain, we don't provide a "full OS" anymore. The repository `pi4j-os` has been reworked and now contains scripts that make it easier to prepare a Raspberry Pi or other single-board computers for Java development and Pi4J.
 
 {{% notice tip %}}
-You can still find it on GitHub: [https://github.com/Pi4J/pi4j-os](https://github.com/Pi4J/pi4j-os)
+Check the info in the README in the repository at [github.com/Pi4J/pi4j-os](https://github.com/Pi4J/pi4j-os).
 {{% /notice %}}

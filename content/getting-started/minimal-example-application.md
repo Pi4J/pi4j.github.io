@@ -73,8 +73,8 @@ make the versions easy to update, we add those numbers as properties.
 ```xml
 <properties>
     <!-- DEPENDENCIES VERSIONS -->
-    <slf4j.version>2.0.16</slf4j.version>
-    <pi4j.version>2.7.0</pi4j.version>
+    <slf4j.version>2.0.17</slf4j.version>
+    <pi4j.version>4.0.0</pi4j.version>
 </properties>
 ``` 
   
@@ -82,6 +82,7 @@ These are the dependencies we need:
 
 ```xml
 <dependencies>
+    <!-- Logging -->
     <dependency>
         <groupId>org.slf4j</groupId>
         <artifactId>slf4j-api</artifactId>
@@ -93,22 +94,17 @@ These are the dependencies we need:
         <version>${slf4j.version}</version>
     </dependency>
 
-    <!-- include Pi4J Core -->
+    <!-- Include Pi4J Core -->
     <dependency>
         <groupId>com.pi4j</groupId>
         <artifactId>pi4j-core</artifactId>
         <version>${pi4j.version}</version>
     </dependency>
 
-    <!-- include Pi4J Plugins (Platforms and I/O Providers) -->
+    <!-- Include Pi4J Plugin (Platforms and I/O Providers) -->
     <dependency>
         <groupId>com.pi4j</groupId>
-        <artifactId>pi4j-plugin-raspberrypi</artifactId>
-        <version>${pi4j.version}</version>
-    </dependency>
-    <dependency>
-        <groupId>com.pi4j</groupId>
-        <artifactId>pi4j-plugin-gpiod</artifactId>
+        <artifactId>pi4j-plugin-ffm</artifactId>
         <version>${pi4j.version}</version>
     </dependency>
 </dependencies>
@@ -205,9 +201,9 @@ pi4j.shutdown();
 
 ```shell
 $ java -version
-openjdk version "17.0.7" 2023-04-18
-OpenJDK Runtime Environment (build 17.0.7+7-Debian-1deb11u1)
-OpenJDK 64-Bit Server VM (build 17.0.7+7-Debian-1deb11u1, mixed mode, sharing)
+openjdk version "25" 2025-09-16 LTS
+OpenJDK Runtime Environment Zulu25.28+85-CA (build 25+36-LTS)
+OpenJDK 64-Bit Server VM Zulu25.28+85-CA (build 25+36-LTS, mixed mode, sharing)
 ``` 
 
 * Download the project from GitHub and build it:
@@ -224,14 +220,12 @@ $ ./mvnw clean package
 $ cd target/distribution
 $ ls -l
 total 644
--rw-r--r-- 1 pi pi 344544 Oct 21 08:07 pi4j-core-2.7.0.jar
+-rw-r--r-- 1 pi pi 344544 Oct 21 08:07 pi4j-core-4.0.0.jar
 -rw-r--r-- 1 pi pi   7134 Oct 21 08:08 pi4j-example-minimal-0.0.1.jar
--rw-r--r-- 1 pi pi 158997 Oct 21 08:07 pi4j-library-gpiod-2.7.0.jar
--rw-r--r-- 1 pi pi  22633 Oct 21 08:07 pi4j-plugin-gpiod-2.7.0.jar
--rw-r--r-- 1 pi pi  28051 Oct 21 08:07 pi4j-plugin-raspberrypi-2.7.0.jar
+-rw-r--r-- 1 pi pi  22633 Oct 21 08:07 pi4j-plugin-ffm-4.0.0.jar
 -rwxr-xr-x 1 pi pi    101 Oct 21 08:08 run.sh
--rw-r--r-- 1 pi pi  69435 Oct 21 08:07 slf4j-api-2.0.16.jar
--rw-r--r-- 1 pi pi  15704 Oct 21 08:07 slf4j-simple-2.0.16.jar
+-rw-r--r-- 1 pi pi  69435 Oct 21 08:07 slf4j-api-2.0.17.jar
+-rw-r--r-- 1 pi pi  15704 Oct 21 08:07 slf4j-simple-2.0.17.jar
 ```
 
 * Start the application with the provided `run.sh` script:
