@@ -31,11 +31,11 @@ The Pi4j project has evolved in all these years as the whole Java eco-system and
 * [V4.X.X](/about/info-v4): Based on Pi4J 3.0.3 and Java 25, introducing the [FFM plugin](/documentation/providers/ffm/).
     * Please [read this interview with Nick Gritsenko (aka DigitalSmile) for more info](/blog/2026/2026-interview-nick-ffm/).
 
+In February 2026, Pi4J was accepted into the [Commonhaus Foundation](https://www.commonhaus.org/) to ensure the continuity of the project. Read more about it in [this blog post](/blog/2026/20260227-pi4j-commonhaus).
+
 ### Project Mission/Goals
 
-**The Pi4J Project's** mission is to provide a **rich and powerful, yet simple to use, 
-Java-friendly API library** enabling programmatic access to the low-level hardware I/O 
-capabilities of embedded platforms such as the Raspberry Pi.
+**The Pi4J Project's** mission is to provide a **rich and powerful, yet simple to use, Java-friendly API library** enabling programmatic access to the low-level hardware I/O capabilities of embedded platforms such as the Raspberry Pi.
 
 ![](/assets/about/home/pi4j-overview.jpg)
 
