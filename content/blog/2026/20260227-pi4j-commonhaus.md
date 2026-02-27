@@ -11,7 +11,7 @@ Open source software is built on passion, time, and dedication. But passion alon
 
 ## Pi4J, Born Out of Curiosity
 
-Pi4J started in 2012, when Robert Savage discovered the Raspberry Pi. He saw the same thing many of us did: a tiny, affordable computer with enormous potential. But what he also noticed was the lack of a proper Java library to interact with the GPIO pins and hardware interfaces of the board.
+[Pi4J started in 2012, when Robert Savage discovered the Raspberry Pi](https://foojay.io/today/interviews-with-robert-savage-and-johan-vos-on-the-state-of-java-on-raspberry-pi/). He saw the same thing many of us did: a tiny, affordable computer with enormous potential. But what he also noticed was the lack of a proper Java library to interact with the GPIO pins and hardware interfaces of the board.
 
 So he built one. Pi4J ("Pi for Java") was born, and it quickly became the go-to library for Java developers who wanted to connect their code to buttons, LEDs, sensors, displays, relays, and virtually anything else you can wire up to those 40 little pins.
 
