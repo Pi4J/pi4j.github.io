@@ -10,6 +10,10 @@ As of Pi4J 2.5 multiple providers for the same I/O type is no longer supported. 
 
 ## Available Providers
 
+**{{% notice warning %}}
+We plan to remove the GpioD, LinuxFS, PiGpio providers in a next release (4.1.0?) to simplify the Pi4J codebase, remove Docker native builds of libraries, and simplify the build process. Starting from Pi4J V4 we ask you to use the FFM provider and let us know if you have any issues by [creating a ticket](https://github.com/Pi4J/pi4j/issues) or [starting a discussion](https://github.com/Pi4J/pi4j/discussions).
+{{% /notice %}}**
+
 * [FFM](/documentation/providers/ffm/)
   * Was introduced in Pi4J 4.0.0
   * Pro
