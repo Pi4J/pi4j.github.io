@@ -12,6 +12,8 @@ The goal of this bump to V4 is to enable the use of the Foreign Function & Memor
 
 Thanks to the contributions by [Nick Gritsenko (aka DigitalSmile)](https://github.com/DigitalSmile) in [pull request #458](https://github.com/Pi4J/pi4j/pull/458), a complete new plugin got added to Pi4J. Read more about the work by Nick in this [interview](/blog/2026/2026-interview-nick-ffm/).
 
+{{< youtube 4elclflGac8 >}}
+
 ## Sources
 
 The Pi4J V4 source code is available in this GitHub repository: [`pi4j/pi4j` GitHub Repository](https://github.com/Pi4J/pi4j)

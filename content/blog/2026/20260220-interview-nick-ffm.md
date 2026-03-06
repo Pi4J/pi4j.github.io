@@ -10,6 +10,8 @@ tags: ["FFM API"]
 
 *Nick Gritsenko (aka [DigitalSmile](https://www.linkedin.com/in/nick-gritsenko/)) joined the Pi4J project recently with an interesting plugin that uses Java 22's Foreign Function & Memory API. His work could open up Pi4J to run on a significantly wider range of hardware than just Raspberry Pi.*
 
+{{< youtube 4elclflGac8 >}}
+
 ---
 
 ### About Nick
