@@ -14,7 +14,7 @@ Live stream with Matti Tahvonen and Frank Delporte with the smell of smoked food
 
 Matti is not just a Vaadin expert, he's also been tinkering with hardware, thermometers, servo motors, and even sunset timelapse systems on a Raspberry Pi. So expect a conversation that goes from low-level Java APIs all the way to flames, temperatures, and camera angles.
 
-Grab a coffee (or whatever you pair with BBQ), and let's get into it!
+Grab a coffee (or whatever you pair with BBQ), and enjoy!
 
 * [GitHub j-smoker](https://github.com/mstahv/j-smoker/)
 * [GitHub boot2vm](https://github.com/mstahv/boot2vm)
