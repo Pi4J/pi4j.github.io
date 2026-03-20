@@ -18,7 +18,7 @@ Grab a coffee (or whatever you pair with BBQ), and let's get into it!
 
 * [GitHub j-smoker](https://github.com/mstahv/j-smoker/)
 * [GitHub boot2vm](https://github.com/mstahv/boot2vm)
-* [gitHub heisala-jetty](https://github.com/mstahv/heisala-jetty)
+* [GitHub heisala-jetty](https://github.com/mstahv/heisala-jetty)
 * [GitHub pi4j](https://github.com/Pi4J/pi4j)
 * [GitHub pi4j-drivers](https://github.com/Pi4J/pi4j-drivers/)
 * [GitHub pi4j-jbang](https://github.com/Pi4J/pi4j-jbang)
