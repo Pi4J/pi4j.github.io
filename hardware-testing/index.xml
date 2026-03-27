@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hardware Testing on Pi4J</title><link>https://pi4j.com/hardware-testing/</link><description>Recent content in Hardware Testing on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://pi4j.com/hardware-testing/index.xml" rel="self" type="application/rss+xml"/><item><title>Pi4J Smoke Test</title><link>https://pi4j.com/hardware-testing/hardware-testing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/hardware-testing/hardware-testing/</guid><description>&lt;div class="notices info"&gt;
+ &lt;p&gt;
+ The content on this page was generated based on the content from &lt;a href="https://github.com/Pi4J/pi4j/blob/develop/pi4j-test/README.md" target="_blank"&gt;https://github.com/Pi4J/pi4j/blob/develop/pi4j-test/README.md&lt;/a&gt;.
+ &lt;/p&gt;
+ &lt;/div&gt;&lt;p&gt;Testing the full Pi4J library is hard because it requires real hardware devices to validate all interactions. This test project is intended to provide a simple way to verify that the Pi4J library is working correctly on a Raspberry Pi with a few simple devices.&lt;/p&gt;
+&lt;h2 id="main-test"&gt;Main Test&lt;/h2&gt;
+&lt;p&gt;The &lt;code&gt;src/main/java/com/pi4j/test/Main.java&lt;/code&gt; class verifies that the providers can be loaded and used. The use is very basic, but just enough to know it worked.&lt;/p&gt;</description></item></channel></rss>

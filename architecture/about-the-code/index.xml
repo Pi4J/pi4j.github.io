@@ -51,11 +51,4 @@ already installed, configured and cached.&lt;/p&gt;
 &lt;li&gt;CTRL+ALT+O: Optimize imports&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Hardware Testing</title><link>https://pi4j.com/architecture/about-the-code/hardware-testing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/architecture/about-the-code/hardware-testing/</guid><description>&lt;div class="notices info"&gt;
- &lt;p&gt;
- The content on this page was generated based on the content from &lt;a href="https://github.com/Pi4J/pi4j/blob/develop/pi4j-test/README.md" target="_blank"&gt;https://github.com/Pi4J/pi4j/blob/develop/pi4j-test/README.md&lt;/a&gt;.
- &lt;/p&gt;
- &lt;/div&gt;&lt;h1 id="pi4j-smoke-test"&gt;Pi4J Smoke Test&lt;/h1&gt;
-&lt;p&gt;Testing the full Pi4J library is hard because it requires real hardware devices to validate all interactions. This test project is intended to provide a simple way to verify that the Pi4J library is working correctly on a Raspberry Pi with a few simple devices.&lt;/p&gt;
-&lt;h2 id="main-test"&gt;Main Test&lt;/h2&gt;
-&lt;p&gt;The &lt;code&gt;src/main/java/com/pi4j/test/Main.java&lt;/code&gt; class verifies that the providers can be loaded and used. The use is very basic, but just enough to know it worked.&lt;/p&gt;</description></item></channel></rss>
+&lt;/ul&gt;</description></item></channel></rss>
