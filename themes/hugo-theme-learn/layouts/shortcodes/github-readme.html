@@ -17,7 +17,9 @@
                 The content on this page was generated based on the content from <a href="{{ $url }}" target="_blank">{{ $url }}</a>.
             </p>
         </div>
-        {{- .Content | markdownify -}}
+        {{- $content := .Content -}}
+        {{- $contentWithoutH1 := replaceRE "(?m)^#\\s+.+\\r?\\n?" "" $content 1 -}}
+        {{- $contentWithoutH1 | markdownify -}}
     {{- else -}}
         {{- errorf "Unable to get remote resource %q" $rawURL -}}
     {{- end -}}
