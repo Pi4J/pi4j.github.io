@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Vaadin on Pi4J</title><link>https://pi4j.com/tags/vaadin/</link><description>Recent content in Vaadin on Pi4J</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 19 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://pi4j.com/tags/vaadin/index.xml" rel="self" type="application/rss+xml"/><item><title>2026 Smoking Food with Pi4J</title><link>https://pi4j.com/video/20260319-live-stream-food-smoker/</link><pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate><guid>https://pi4j.com/video/20260319-live-stream-food-smoker/</guid><description>&lt;h2 id="lets-smoke-some-food-with-pi4j-vaadin-and-quarkus"&gt;Let&amp;rsquo;s smoke some food with Pi4J, Vaadin, and Quarkus&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;20260319 - Live Stream&lt;/strong&gt;&lt;/p&gt;
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/fN1N8r1xy6I?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
- &lt;/div&gt;
-
+ &lt;iframe
+ allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+ allowfullscreen="allowfullscreen"
+ loading="eager"
+ referrerpolicy="strict-origin-when-cross-origin"
+ src="https://www.youtube.com/embed/fN1N8r1xy6I?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0"
+ style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;"
+ title="YouTube video"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 &lt;p&gt;Live stream with Matti Tahvonen and Frank Delporte with the smell of smoked food and fresh Java code! Matti from the Vaadin team shows a project that started as a Raspberry Pi side project and turned into a full-blown IoT application. He has built a smoker controller — yes, an actual BBQ smoker — with Pi4J V4, Vaadin for the UI, and Quarkus on the backend. So we can now officially say that Pi4J V4 has been smoke-tested in production&amp;hellip;&lt;/p&gt;</description></item><item><title>2025 Live Coding: Vaadin</title><link>https://pi4j.com/video/20250924-live-coding-vaadin/</link><pubDate>Wed, 24 Sep 2025 00:00:00 +0000</pubDate><guid>https://pi4j.com/video/20250924-live-coding-vaadin/</guid><description>&lt;h2 id="live-stream-coding"&gt;Live Stream Coding&lt;/h2&gt;
 &lt;h3 id="improving-the-vaadinspringpi4j-demo-application-with-matti-tahvonen"&gt;Improving the Vaadin+Spring+Pi4J demo application with Matti Tahvonen&lt;/h3&gt;
 &lt;p&gt;2025-09-24, by Frank Delporte&lt;/p&gt;

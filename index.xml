@@ -195,9 +195,15 @@ course important to be aware of the correct numbering to not connect components 
 &lt;h2 id="breadboard"&gt;Breadboard&lt;/h2&gt;
 &lt;p&gt;A breadboard is the basic for each experiment. It allows you to easily connect several components to each other and the Raspberry Pi. Here is a video that explains the basics of breadboards:&lt;/p&gt;
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/6WReFkfrUIk?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
- &lt;/div&gt;
-
+ &lt;iframe
+ allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+ allowfullscreen="allowfullscreen"
+ loading="eager"
+ referrerpolicy="strict-origin-when-cross-origin"
+ src="https://www.youtube.com/embed/6WReFkfrUIk?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0"
+ style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;"
+ title="YouTube video"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 &lt;p&gt;
 
 
@@ -267,7 +273,7 @@ for your lambda:&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You don&amp;rsquo;t need to call &lt;code&gt;shutdown()&lt;/code&gt;, it&amp;rsquo;s called automatically at the end of the block.&lt;br&gt;
 You can think of the &lt;code&gt;pi4j&lt;/code&gt; block as your entire routine/ program.&lt;/p&gt;</description></item><item><title>Kotlin Examples</title><link>https://pi4j.com/kotlin/kotlin-examples/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/kotlin/kotlin-examples/</guid><description>&lt;p&gt;Examples created by &lt;a href="https://www.linkedin.com/in/alexander-neiko/" target="_blank" rel="noopener"&gt;Oleksandr Neiko&lt;/a&gt;. All the videos are available in &lt;a href="https://www.youtube.com/watch?v=SkpH_MdL6hc&amp;amp;list=PLNosCXSunX6m3UdIO1FtVWh3oc3EHEJQq" target="_blank" rel="noopener"&gt;this YouTube playlist&lt;/a&gt; and the &lt;a href="https://github.com/RoboticsLife" target="_blank" rel="noopener"&gt;sources on GitHub&lt;/a&gt;.&lt;/p&gt;
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
- &lt;iframe src="https://www.youtube.com/embed/videoseries?list=PLNosCXSunX6m3UdIO1FtVWh3oc3EHEJQq" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"&gt;&lt;/iframe&gt;
+ &lt;iframe src="https://www.youtube.com/embed/videoseries?list=PLNosCXSunX6m3UdIO1FtVWh3oc3EHEJQq&amp;autoplay=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Playlist"&gt;&lt;/iframe&gt;
 &lt;/div&gt;</description></item><item><title>Coroutines Support</title><link>https://pi4j.com/kotlin/kotlin-dsl/coroutines/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/kotlin/kotlin-dsl/coroutines/</guid><description>&lt;h2 id="pi4jasync"&gt;pi4jAsync&lt;/h2&gt;
 &lt;p&gt;Same with the &lt;code&gt;pi4j&lt;/code&gt; DSL, you can create a pi4j block to execute within a &lt;code&gt;CoroutineScope&lt;/code&gt; using the &lt;code&gt;pi4jAsync&lt;/code&gt; DSL.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-kotlin" data-lang="kotlin"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;pi4jAsync {
@@ -441,9 +447,15 @@ instead of separate Java modules.&lt;/p&gt;</description></item><item><title>Ser
 
 &lt;p&gt;This project by &lt;strong&gt;Mihai Buleandra&lt;/strong&gt;, uses Spring Boot to create a simple wired alarm system. Most examples on this website use Maven, but this project is a nice example of how to configure a Gradle project to use Pi4J. Mihai also uses Thymeleaf and Bootstrap for the web user interface, that has live updates showing the state of the alarm system.&lt;/p&gt;
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/xRUWgISEngM?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
- &lt;/div&gt;
-
+ &lt;iframe
+ allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+ allowfullscreen="allowfullscreen"
+ loading="eager"
+ referrerpolicy="strict-origin-when-cross-origin"
+ src="https://www.youtube.com/embed/xRUWgISEngM?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0"
+ style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;"
+ title="YouTube video"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 &lt;p&gt;The alarm system makes use of Java&amp;rsquo;s multithreading capabilities, as it&amp;rsquo;s based on a non-blocking Finite State Machine. This means each state runs in its own thread allowing the web interface to not block while waiting for different operations. Multi-threaded reusable Java drivers for the Raspberry Pi are implemented using the Pi4J library for the keypad, Passive Infrared sensor (PIR), LED and Buzzer.
 Keypad driver includes debounce implementation also.&lt;/p&gt;</description></item><item><title>SmartCoop</title><link>https://pi4j.com/featured-projects/smartcoop/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/featured-projects/smartcoop/</guid><description>&lt;div class="notices tip" &gt;&lt;p&gt;PROJECT WEBSITE: &lt;a href="https://www.smartcoop.tech" target="_blank" rel="noopener"&gt;smartcoop.tech&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
@@ -805,9 +817,15 @@ as parms. Or modify the BMP280I2cExample program to use your specific bus and de
 
 &lt;p&gt;This example is explained in the following video:&lt;/p&gt;
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/BXOqXuh50KI?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
- &lt;/div&gt;
-
+ &lt;iframe
+ allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+ allowfullscreen="allowfullscreen"
+ loading="eager"
+ referrerpolicy="strict-origin-when-cross-origin"
+ src="https://www.youtube.com/embed/BXOqXuh50KI?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0"
+ style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;"
+ title="YouTube video"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 &lt;h2 id="intro"&gt;Intro&lt;/h2&gt;
 
 &lt;div class="notices warning" &gt;&lt;p&gt;Before proceeding with this example, make sure that you have a Raspberry Pi prepared to execute Java code with JBang as &lt;a href="https://pi4j.com/examples/jbang/" target="_blank" rel="noopener"&gt;explained here&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>BME280 Sensor</title><link>https://pi4j.com/examples/jbang/bme280_temperature_humidity_pressure/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/jbang/bme280_temperature_humidity_pressure/</guid><description>&lt;h2 id="bme280-sensor-temp-humidity-pressure-via-pi4j-i2c-and-jbang"&gt;BME280 Sensor (temp, humidity, pressure) via Pi4J, I2C, and JBang&lt;/h2&gt;
@@ -859,9 +877,15 @@ all the required files to build with Gradle.&lt;/p&gt;
 &lt;p&gt;A LED strip doesn&amp;rsquo;t only exist as a single strip, the same system is also used in a LED matrix. In this example, we will control such a &lt;a href="https://www.amazon.nl/dp/B0B81R484Z" target="_blank" rel="noopener"&gt;8*32 LED matrix&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Full LED strip code walkthrough, and additional info in this live session with Robert (aka Eitch) and Frank:&lt;/p&gt;
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/eToIXACqSuY?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
- &lt;/div&gt;
-
+ &lt;iframe
+ allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+ allowfullscreen="allowfullscreen"
+ loading="eager"
+ referrerpolicy="strict-origin-when-cross-origin"
+ src="https://www.youtube.com/embed/eToIXACqSuY?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0"
+ style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;"
+ title="YouTube video"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 &lt;h2 id="intro"&gt;Intro&lt;/h2&gt;
 &lt;p&gt;This example is based on the &lt;a href="https://pi4j.com/examples/jbang/pixelblaze_output_expander/"&gt;Pixelblaze Output Expander (PBOE) JBang example&lt;/a&gt;. Make sure to check out the PBOE example, so you fully understand how to set up and use JBang, and connect and control a LED strip via a PBOE.&lt;/p&gt;</description></item><item><title>Install Visual Studio Code</title><link>https://pi4j.com/documentation/development/install-vsc-ide/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/documentation/development/install-vsc-ide/</guid><description>&lt;p&gt;You can develop Java applications on any computer and transfer the code or the compiled JAR-file to a Raspberry Pi to execute it. But Raspberry Pi 4 and 5 are definitely powerful enough to run an Integrated Development Environment (IDE)!&lt;/p&gt;
 &lt;h2 id="visual-studio-code"&gt;Visual Studio Code&lt;/h2&gt;
@@ -1020,30 +1044,54 @@ with &lt;a href="https://www.oracle.com/java/duke.html" target="_blank" rel="noo
 &lt;img src="https://pi4j.com/assets/pi4j-logo.png" style="width: 400px; height: 400px;" /&gt;</description></item><item><title>2026 Pi4J Smoke Tests with Pi4J</title><link>https://pi4j.com/video/20260330-tom-aarts-hardware-testing/</link><pubDate>Mon, 30 Mar 2026 00:00:00 +0000</pubDate><guid>https://pi4j.com/video/20260330-tom-aarts-hardware-testing/</guid><description>&lt;h2 id="validating-pi4j-v4-on-real-hardware-catching-bugs-and-exploring-the-ikalogic-logic-analyser"&gt;Validating Pi4J V4 on real hardware, catching bugs, and exploring the Ikalogic logic analyser&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;20260330 - Video with Tom Aarts&lt;/strong&gt;&lt;/p&gt;
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/uy3oWn9iIWs?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
- &lt;/div&gt;
-
+ &lt;iframe
+ allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+ allowfullscreen="allowfullscreen"
+ loading="eager"
+ referrerpolicy="strict-origin-when-cross-origin"
+ src="https://www.youtube.com/embed/uy3oWn9iIWs?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0"
+ style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;"
+ title="YouTube video"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 &lt;p&gt;Pi4J contributor Tom Aarts joins Frank Delporte for a hands-on session focused on hardware testing in Pi4J V4. Tom has been a long-time contributor to the Pi4J ecosystem. He added example devices, improved core code by finding gaps through real-world usage, and most recently designed the Pi4J Smoke Test hardware setup that makes integration testing on real Raspberry Pi hardware practical and repeatable.&lt;/p&gt;</description></item><item><title>2026 Smoking Food with Pi4J</title><link>https://pi4j.com/video/20260319-live-stream-food-smoker/</link><pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate><guid>https://pi4j.com/video/20260319-live-stream-food-smoker/</guid><description>&lt;h2 id="lets-smoke-some-food-with-pi4j-vaadin-and-quarkus"&gt;Let&amp;rsquo;s smoke some food with Pi4J, Vaadin, and Quarkus&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;20260319 - Live Stream&lt;/strong&gt;&lt;/p&gt;
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/fN1N8r1xy6I?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
- &lt;/div&gt;
-
+ &lt;iframe
+ allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+ allowfullscreen="allowfullscreen"
+ loading="eager"
+ referrerpolicy="strict-origin-when-cross-origin"
+ src="https://www.youtube.com/embed/fN1N8r1xy6I?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0"
+ style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;"
+ title="YouTube video"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 &lt;p&gt;Live stream with Matti Tahvonen and Frank Delporte with the smell of smoked food and fresh Java code! Matti from the Vaadin team shows a project that started as a Raspberry Pi side project and turned into a full-blown IoT application. He has built a smoker controller — yes, an actual BBQ smoker — with Pi4J V4, Vaadin for the UI, and Quarkus on the backend. So we can now officially say that Pi4J V4 has been smoke-tested in production&amp;hellip;&lt;/p&gt;</description></item><item><title>2026 Introducing Pi4J V4 FFM</title><link>https://pi4j.com/video/20260306-live-stream-v4-nick/</link><pubDate>Fri, 06 Mar 2026 00:00:00 +0000</pubDate><guid>https://pi4j.com/video/20260306-live-stream-v4-nick/</guid><description>&lt;h2 id="controlling-electronics-with-java-25-and-the-ffm-api-using-pi4j-v4"&gt;Controlling Electronics with Java 25 and the FFM API using Pi4J V4&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;20260306 - Live Stream&lt;/strong&gt;&lt;/p&gt;
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/4elclflGac8?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
- &lt;/div&gt;
-
+ &lt;iframe
+ allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+ allowfullscreen="allowfullscreen"
+ loading="eager"
+ referrerpolicy="strict-origin-when-cross-origin"
+ src="https://www.youtube.com/embed/4elclflGac8?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0"
+ style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;"
+ title="YouTube video"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 &lt;p&gt;Live stream with Nick Gritsenko and Frank Delporte about the Foreign Function and Memory (FFM) API that got introduced in Java 22, and how it was used to create a new plugin for the Pi4J library. This will help to bring electronics programming with Java to many more boards and help to simplify the Pi4J project.&lt;/p&gt;</description></item><item><title>Pi4J Joins Commonhaus</title><link>https://pi4j.com/blog/2026/20260227-pi4j-commonhaus/</link><pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate><guid>https://pi4j.com/blog/2026/20260227-pi4j-commonhaus/</guid><description>&lt;p&gt;2026-02-27 by Frank Delporte&lt;/p&gt;
 &lt;h2 id="pi4j-joins-the-commonhaus-foundation-securing-the-future-of-java-on-single-board-computers"&gt;Pi4J Joins the Commonhaus Foundation: Securing the Future of Java on Single-Board Computers&lt;/h2&gt;
 &lt;p&gt;Open source software is built on passion, time, and dedication. But passion alone doesn&amp;rsquo;t guarantee the long-term survival of a project. Maintainers move on, life changes, priorities shift, and sometimes a beloved project simply fades away. Something we want to avoid for the &lt;a href="https://www.pi4j.com/" target="_blank" rel="noopener"&gt;Pi4J project&lt;/a&gt;. So I&amp;rsquo;m very happy that I can share that on February 26, Pi4J got accepted into the &lt;a href="https://www.commonhaus.org/" target="_blank" rel="noopener"&gt;Commonhaus Foundation&lt;/a&gt;. This is a major step to make sure that this Java library, used by many developers in all kinds of projects, can continue to exist and grow.&lt;/p&gt;</description></item><item><title>Interview Nick Gritsenko</title><link>https://pi4j.com/blog/2026/20260220-interview-nick-ffm/</link><pubDate>Fri, 20 Feb 2026 00:00:00 +0000</pubDate><guid>https://pi4j.com/blog/2026/20260220-interview-nick-ffm/</guid><description>&lt;p&gt;2026-02-20 by Frank Delporte&lt;/p&gt;
 &lt;h2 id="pi4j-goes-beyond-raspberry-pi-with-java-22s-ffm-api"&gt;Pi4J Goes Beyond Raspberry Pi with Java 22&amp;rsquo;s FFM API&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;Nick Gritsenko (aka &lt;a href="https://www.linkedin.com/in/nick-gritsenko/" target="_blank" rel="noopener"&gt;DigitalSmile&lt;/a&gt;) joined the Pi4J project recently with an interesting plugin that uses Java 22&amp;rsquo;s Foreign Function &amp;amp; Memory API. His work could open up Pi4J to run on a significantly wider range of hardware than just Raspberry Pi.&lt;/em&gt;&lt;/p&gt;
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/4elclflGac8?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
- &lt;/div&gt;
-
+ &lt;iframe
+ allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+ allowfullscreen="allowfullscreen"
+ loading="eager"
+ referrerpolicy="strict-origin-when-cross-origin"
+ src="https://www.youtube.com/embed/4elclflGac8?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0"
+ style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;"
+ title="YouTube video"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 &lt;hr&gt;
 &lt;h3 id="about-nick"&gt;About Nick&lt;/h3&gt;
 &lt;img src="https://pi4j.com/assets/about/team/nick.jpg" style="float: left; margin: 0 15px 10px 0; max-width: 200px; max-height: 250px;"&gt;
@@ -1056,9 +1104,15 @@ easy to use, but also to extend if other checks prove helpful.&lt;/p&gt;</descri
 &lt;p&gt;&lt;strong&gt;20251009 - Recording of the talk at Devoxx Belgium by Frank Delporte&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;All the links of the presentation are available &lt;a href="https://webtechie.be/post/2025-10-08-devoxx-talk-ffmapi-on-raspberrypi/" target="_blank" rel="noopener"&gt;on this blog post&lt;/a&gt;.&lt;/p&gt;
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/2BcWWWkb8ac?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
- &lt;/div&gt;
-
+ &lt;iframe
+ allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+ allowfullscreen="allowfullscreen"
+ loading="eager"
+ referrerpolicy="strict-origin-when-cross-origin"
+ src="https://www.youtube.com/embed/2BcWWWkb8ac?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0"
+ style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;"
+ title="YouTube video"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 &lt;p&gt;Since 2012, Pi4J has enabled Java to control electronic components connected to the Raspberry Pi&amp;rsquo;s GPIO pins. However, both Java and the Raspberry Pi have evolved significantly since then. Supporting new hardware has been a challenge, requiring multiple implementations in the Pi4J library with complex code based on the Java Native Interface (JNI) and Java Native Access (JNA).&lt;/p&gt;</description></item><item><title>2025 Live Coding: Vaadin</title><link>https://pi4j.com/video/20250924-live-coding-vaadin/</link><pubDate>Wed, 24 Sep 2025 00:00:00 +0000</pubDate><guid>https://pi4j.com/video/20250924-live-coding-vaadin/</guid><description>&lt;h2 id="live-stream-coding"&gt;Live Stream Coding&lt;/h2&gt;
 &lt;h3 id="improving-the-vaadinspringpi4j-demo-application-with-matti-tahvonen"&gt;Improving the Vaadin+Spring+Pi4J demo application with Matti Tahvonen&lt;/h3&gt;
 &lt;p&gt;2025-09-24, by Frank Delporte&lt;/p&gt;
@@ -1066,9 +1120,15 @@ easy to use, but also to extend if other checks prove helpful.&lt;/p&gt;</descri
 &lt;p&gt;(Sorry for the hiccups in the first minutes, the network connection dropped a few times&amp;hellip;)&lt;/p&gt;</description></item><item><title>2025 Live Stream CyberJAR</title><link>https://pi4j.com/video/20250828-live-stream-cyberjar/</link><pubDate>Thu, 28 Aug 2025 00:00:00 +0000</pubDate><guid>https://pi4j.com/video/20250828-live-stream-cyberjar/</guid><description>&lt;h2 id="chatting-about-java-javafx-and-experiments-on-the-raspberry-pi"&gt;Chatting about Java, JavaFX, and Experiments on the Raspberry Pi&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;20250828 - Live Stream with Catherine Edelveis (CyberJAR) and Frank Delporte&lt;/strong&gt;&lt;/p&gt;
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/Rmmwm6GZ98I?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
- &lt;/div&gt;
-
+ &lt;iframe
+ allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+ allowfullscreen="allowfullscreen"
+ loading="eager"
+ referrerpolicy="strict-origin-when-cross-origin"
+ src="https://www.youtube.com/embed/Rmmwm6GZ98I?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0"
+ style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;"
+ title="YouTube video"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 &lt;p&gt;Java on a tiny board? JavaFX on touchscreens? In this session, Catherine is joined by Frank Delporte, Java Champion and author of &amp;lsquo;Getting started with Java on Raspberry Pi,&amp;rsquo; to explore how JavaFX fits into modern IoT/embedded workflows on Raspberry Pi.&lt;/p&gt;</description></item><item><title>RPi5 PWM NoSuchFileException</title><link>https://pi4j.com/blog/2025/20250811-rpi5-pwm-not-working/</link><pubDate>Mon, 11 Aug 2025 00:00:00 +0000</pubDate><guid>https://pi4j.com/blog/2025/20250811-rpi5-pwm-not-working/</guid><description>&lt;p&gt;2025-08-11, by Tom Aarts&lt;/p&gt;
 &lt;p&gt;On the Pi5, Pi kernel updates may result in failing PWM. The
 exception details will state &lt;code&gt;/sys/class/pwm/pwmchip2/npwm was not found&lt;/code&gt;.&lt;/p&gt;
@@ -1109,9 +1169,15 @@ exception details will state &lt;code&gt;/sys/class/pwm/pwmchip2/npwm was not fo
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can use &lt;code&gt;Byte.toUnsignedInt(b)&lt;/code&gt; to get the expected, unsigned value:&lt;/p&gt;</description></item><item><title>2024 Spring Boot Starter</title><link>https://pi4j.com/video/20240611-spring-boot-starter/</link><pubDate>Tue, 11 Jun 2024 00:00:00 +0000</pubDate><guid>https://pi4j.com/video/20240611-spring-boot-starter/</guid><description>&lt;h2 id="pi4j-spring-boot-starter"&gt;Pi4J Spring Boot Starter&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;20240611 - Live Stream with DaShaun Carter and Frank Delporte&lt;/strong&gt;&lt;/p&gt;
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/I62IviQLNts?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
- &lt;/div&gt;
-
+ &lt;iframe
+ allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+ allowfullscreen="allowfullscreen"
+ loading="eager"
+ referrerpolicy="strict-origin-when-cross-origin"
+ src="https://www.youtube.com/embed/I62IviQLNts?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0"
+ style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;"
+ title="YouTube video"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 &lt;p&gt;Creating a Spring Boot Starter to use Pi4J in a Spring Boot application.&lt;/p&gt;</description></item><item><title>Bosch sensor gas measurement</title><link>https://pi4j.com/blog/2024/20240517_bosch_sensor_gas_measurement/</link><pubDate>Fri, 17 May 2024 00:00:00 +0000</pubDate><guid>https://pi4j.com/blog/2024/20240517_bosch_sensor_gas_measurement/</guid><description>&lt;p&gt;2024-05-17, by Frank Delporte&lt;/p&gt;
 &lt;p&gt;Bosch has several sensors which are extremely small to measure temperature, humidity, pressure, and gas. We also have several example implementations documented on the Pi4J website:&lt;/p&gt;
 &lt;ul&gt;
@@ -1138,16 +1204,28 @@ exception details will state &lt;code&gt;/sys/class/pwm/pwmchip2/npwm was not fo
 &lt;p&gt;Today, &lt;a href="https://pi4j.com/about/release-notes/"&gt;version 2.5.0 of Pi4J got released with many changes, fixes and improvements&lt;/a&gt;. The most important one being support for the &lt;a href="https://www.raspberrypi.com/products/raspberry-pi-5/" target="_blank" rel="noopener"&gt;Raspberry Pi 5&lt;/a&gt;. Short after the release of this new board, &lt;a href="https://github.com/Pi4J/pi4j/issues/321" target="_blank" rel="noopener"&gt;several issues were raised on GitHub&lt;/a&gt; as Pi4J was not compatible. The Raspberry Pi 5 uses a completely new way to interact with the GPIOs: the &lt;a href="https://www.raspberrypi.com/documentation/microcontrollers/rp1.html" target="_blank" rel="noopener"&gt;RP1 chip&lt;/a&gt;. Thanks to this chip, GPIO, SPI, I2C, USB, ethernet,&amp;hellip; are seperated from the SoC to make it easier to develop newer boards. But this new approach wasn&amp;rsquo;t supported by the PiGpio library used in Pi4J V2&amp;hellip; Until Alexander Liggesmeyer took up the challenge to find a solution!&lt;/p&gt;</description></item><item><title>2023 LED strips with JBang</title><link>https://pi4j.com/video/20231012-led-strips/</link><pubDate>Thu, 12 Oct 2023 00:00:00 +0000</pubDate><guid>https://pi4j.com/video/20231012-led-strips/</guid><description>&lt;h2 id="having-fun-with-led-strips-with-java-on-the-raspberry-pi"&gt;Having fun with LED strips with Java on the Raspberry Pi&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;20231012 - Live Stream&lt;/strong&gt;&lt;/p&gt;
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/eToIXACqSuY?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
- &lt;/div&gt;
-
+ &lt;iframe
+ allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+ allowfullscreen="allowfullscreen"
+ loading="eager"
+ referrerpolicy="strict-origin-when-cross-origin"
+ src="https://www.youtube.com/embed/eToIXACqSuY?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0"
+ style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;"
+ title="YouTube video"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 &lt;p&gt;Frank Delporte and Robert von Burg (aka Eitch) take a look at examples using JBang and Pixelblaze, which are described on the Pi4J website at &lt;a href="https://www.pi4j.com/examples/jbang/pixelblaze_output_expander/" target="_blank" rel="noopener"&gt;https://www.pi4j.com/examples/jbang/pixelblaze_output_expander/&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;This was our first live stream using restream.io to see if we could create tutorials like this. This went smoothly for the first 44 minutes, and then I lost connection with Robert. But luckily, at that time, we had already explained almost everything we wanted to tell ;-)&lt;/p&gt;</description></item><item><title>2023 Vaadin WebUI</title><link>https://pi4j.com/video/20230822-vaadin-webui/</link><pubDate>Tue, 22 Aug 2023 00:00:00 +0000</pubDate><guid>https://pi4j.com/video/20230822-vaadin-webui/</guid><description>&lt;h2 id="controlling-electronics-with-java-and-pi4j-through-a-web-interface"&gt;Controlling Electronics with Java and Pi4J through a web interface&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;20230822 - J-Spring, The Netherlands&lt;/strong&gt;&lt;/p&gt;
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/FXKsBKKB_Xg?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
- &lt;/div&gt;
-
+ &lt;iframe
+ allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+ allowfullscreen="allowfullscreen"
+ loading="eager"
+ referrerpolicy="strict-origin-when-cross-origin"
+ src="https://www.youtube.com/embed/FXKsBKKB_Xg?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0"
+ style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;"
+ title="YouTube video"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 &lt;p&gt;Java is not only the server language running on heavy machines! You can do amazing stuff with it on a small single-board computer and gain new knowledge simultaneously, like controlling electronic components and different communication protocols.&lt;/p&gt;</description></item><item><title>LED strip with Pi4J and JBang</title><link>https://pi4j.com/blog/2022/20221128_led_strip_with_jbang/</link><pubDate>Mon, 28 Nov 2022 00:00:00 +0000</pubDate><guid>https://pi4j.com/blog/2022/20221128_led_strip_with_jbang/</guid><description>&lt;p&gt;2022-11-28, by Robert von Burg&lt;/p&gt;
 &lt;h2 id="intro"&gt;Intro&lt;/h2&gt;
 &lt;p&gt;In an earlier post, JBang and Pi4J were used to control a LED and button connected to a Raspberry Pi.&lt;/p&gt;
@@ -1175,15 +1253,27 @@ exception details will state &lt;code&gt;/sys/class/pwm/pwmchip2/npwm was not fo
 &lt;h3 id="an-intro-to-pi4j-by-frank-delporte"&gt;An intro to Pi4J by Frank Delporte&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;20121014 - Devoxx Belgium&lt;/strong&gt;&lt;/p&gt;
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/lnV0Hn2tias?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
- &lt;/div&gt;
-
+ &lt;iframe
+ allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+ allowfullscreen="allowfullscreen"
+ loading="eager"
+ referrerpolicy="strict-origin-when-cross-origin"
+ src="https://www.youtube.com/embed/lnV0Hn2tias?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0"
+ style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;"
+ title="YouTube video"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 &lt;p&gt;A Raspberry Pi is a full Linux PC with a small form factor and a low price of between 6 and 95€. And of course, you can run Java on it. The same kind of JVM applications you know, love, and use on heavy machines can also be used on the Raspberry Pi. &amp;ldquo;Write once, run everywhere&amp;rdquo;? Ah yes, that&amp;rsquo;s the promise of Java! But this small board has some additional possibilities you will not find on that fancy server you are running somewhere in the cloud.&lt;/p&gt;</description></item><item><title>2021 Electronics on RPi</title><link>https://pi4j.com/video/20210211-electronics-on-rpi/</link><pubDate>Thu, 11 Feb 2021 00:00:00 +0000</pubDate><guid>https://pi4j.com/video/20210211-electronics-on-rpi/</guid><description>&lt;h2 id="java-javafx-and-electronics-programming-on-the-raspberry-pi"&gt;Java, JavaFX, and electronics programming on the Raspberry Pi&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;20210211 - PL JUGs United, Online&lt;/strong&gt;&lt;/p&gt;
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/J_Nigj0MfFk?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
- &lt;/div&gt;
-
+ &lt;iframe
+ allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+ allowfullscreen="allowfullscreen"
+ loading="eager"
+ referrerpolicy="strict-origin-when-cross-origin"
+ src="https://www.youtube.com/embed/J_Nigj0MfFk?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0"
+ style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;"
+ title="YouTube video"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 &lt;p&gt;Java, JavaFX and a Raspberry Pi are an ideal combination for any project where you want to connect software and hardware (LEDs, buttons, sensors&amp;hellip;) with a beautiful, easy-to-use user interface. In this talk, we will go through the process of building some example Java applications which use electronic components connected to a Raspberry Pi.&lt;/p&gt;</description></item><item><title>2021 Future of Java on RPi</title><link>https://pi4j.com/video/20210207-future-of-java-on-rpi/</link><pubDate>Sun, 07 Feb 2021 00:00:00 +0000</pubDate><guid>https://pi4j.com/video/20210207-future-of-java-on-rpi/</guid><description>&lt;h2 id="the-future-of-java-on-raspberry-pi"&gt;The Future of Java on Raspberry Pi&lt;/h2&gt;
 &lt;h3 id="java-javafx-raspberry-pi-and-electronics"&gt;Java, JavaFX, Raspberry Pi and Electronics&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;20210207 - Fosdem “Friends of OpenJDK devroom”, Online&lt;/strong&gt;&lt;/p&gt;
@@ -1194,9 +1284,15 @@ exception details will state &lt;code&gt;/sys/class/pwm/pwmchip2/npwm was not fo
 &lt;p&gt;Java on the Raspberry Pi is still a controversial topic, but recent evolutions of both the JDK and OpenJFX have proven they are a perfect match! In this talk we will look into some examples and discuss what could be the next steps.&lt;/p&gt;</description></item><item><title>2013 JavaOne Interview</title><link>https://pi4j.com/video/20130907-javaone-interview/</link><pubDate>Sat, 07 Sep 2013 00:00:00 +0000</pubDate><guid>https://pi4j.com/video/20130907-javaone-interview/</guid><description>&lt;h2 id="javaone-interview-with-robert-savage"&gt;JavaOne Interview with Robert Savage&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;20130907 - Live Interview&lt;/strong&gt;&lt;/p&gt;
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/Z_eI7DfDMjI?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
- &lt;/div&gt;
-
+ &lt;iframe
+ allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+ allowfullscreen="allowfullscreen"
+ loading="eager"
+ referrerpolicy="strict-origin-when-cross-origin"
+ src="https://www.youtube.com/embed/Z_eI7DfDMjI?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0"
+ style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;"
+ title="YouTube video"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 &lt;p&gt;Live interview with Robert Savage, creator of Pi4J, a Java framework for doing physical computing with Raspberry Pi and Java.&lt;/p&gt;</description></item><item><title>Annotated provisioning</title><link>https://pi4j.com/architecture/future-ideas/annotated-provisioning/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/architecture/future-ideas/annotated-provisioning/</guid><description>&lt;div class="notices warning" &gt;&lt;p&gt;To simplify the initial V2 version, the DI implementation has be removed so it could be
 refactored and extended later. It is still available in the branch
 &lt;a href="https://github.com/Pi4J/pi4j/tree/feature/%2322-annotations" target="_blank" rel="noopener"&gt;#22-annotations&lt;/a&gt;&lt;/p&gt;

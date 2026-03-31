@@ -3,9 +3,15 @@
 
 &lt;p&gt;This project by &lt;strong&gt;Mihai Buleandra&lt;/strong&gt;, uses Spring Boot to create a simple wired alarm system. Most examples on this website use Maven, but this project is a nice example of how to configure a Gradle project to use Pi4J. Mihai also uses Thymeleaf and Bootstrap for the web user interface, that has live updates showing the state of the alarm system.&lt;/p&gt;
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/xRUWgISEngM?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
- &lt;/div&gt;
-
+ &lt;iframe
+ allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+ allowfullscreen="allowfullscreen"
+ loading="eager"
+ referrerpolicy="strict-origin-when-cross-origin"
+ src="https://www.youtube.com/embed/xRUWgISEngM?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0"
+ style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;"
+ title="YouTube video"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 &lt;p&gt;The alarm system makes use of Java&amp;rsquo;s multithreading capabilities, as it&amp;rsquo;s based on a non-blocking Finite State Machine. This means each state runs in its own thread allowing the web interface to not block while waiting for different operations. Multi-threaded reusable Java drivers for the Raspberry Pi are implemented using the Pi4J library for the keypad, Passive Infrared sensor (PIR), LED and Buzzer.
 Keypad driver includes debounce implementation also.&lt;/p&gt;</description></item><item><title>SmartCoop</title><link>https://pi4j.com/featured-projects/smartcoop/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/featured-projects/smartcoop/</guid><description>&lt;div class="notices tip" &gt;&lt;p&gt;PROJECT WEBSITE: &lt;a href="https://www.smartcoop.tech" target="_blank" rel="noopener"&gt;smartcoop.tech&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;

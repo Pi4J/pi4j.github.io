@@ -4,9 +4,15 @@
 &lt;h2 id="pi4j-goes-beyond-raspberry-pi-with-java-22s-ffm-api"&gt;Pi4J Goes Beyond Raspberry Pi with Java 22&amp;rsquo;s FFM API&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;Nick Gritsenko (aka &lt;a href="https://www.linkedin.com/in/nick-gritsenko/" target="_blank" rel="noopener"&gt;DigitalSmile&lt;/a&gt;) joined the Pi4J project recently with an interesting plugin that uses Java 22&amp;rsquo;s Foreign Function &amp;amp; Memory API. His work could open up Pi4J to run on a significantly wider range of hardware than just Raspberry Pi.&lt;/em&gt;&lt;/p&gt;
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/4elclflGac8?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
- &lt;/div&gt;
-
+ &lt;iframe
+ allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+ allowfullscreen="allowfullscreen"
+ loading="eager"
+ referrerpolicy="strict-origin-when-cross-origin"
+ src="https://www.youtube.com/embed/4elclflGac8?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0"
+ style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;"
+ title="YouTube video"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 &lt;hr&gt;
 &lt;h3 id="about-nick"&gt;About Nick&lt;/h3&gt;
 &lt;img src="https://pi4j.com/assets/about/team/nick.jpg" style="float: left; margin: 0 15px 10px 0; max-width: 200px; max-height: 250px;"&gt;

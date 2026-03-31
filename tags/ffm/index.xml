@@ -26,26 +26,50 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can either ignore this message, or add &lt;code&gt;--enable-native-access=com.pi4j.plugin.ffm&lt;/code&gt; to your run, or add &lt;code&gt;Enable-Native-Access: ALL-UNNAMED&lt;/code&gt; to the &lt;code&gt;MANIFEST.MF&lt;/code&gt; file in your project.&lt;/p&gt;</description></item><item><title>2026 Pi4J Smoke Tests with Pi4J</title><link>https://pi4j.com/video/20260330-tom-aarts-hardware-testing/</link><pubDate>Mon, 30 Mar 2026 00:00:00 +0000</pubDate><guid>https://pi4j.com/video/20260330-tom-aarts-hardware-testing/</guid><description>&lt;h2 id="validating-pi4j-v4-on-real-hardware-catching-bugs-and-exploring-the-ikalogic-logic-analyser"&gt;Validating Pi4J V4 on real hardware, catching bugs, and exploring the Ikalogic logic analyser&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;20260330 - Video with Tom Aarts&lt;/strong&gt;&lt;/p&gt;
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/uy3oWn9iIWs?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
- &lt;/div&gt;
-
+ &lt;iframe
+ allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+ allowfullscreen="allowfullscreen"
+ loading="eager"
+ referrerpolicy="strict-origin-when-cross-origin"
+ src="https://www.youtube.com/embed/uy3oWn9iIWs?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0"
+ style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;"
+ title="YouTube video"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 &lt;p&gt;Pi4J contributor Tom Aarts joins Frank Delporte for a hands-on session focused on hardware testing in Pi4J V4. Tom has been a long-time contributor to the Pi4J ecosystem. He added example devices, improved core code by finding gaps through real-world usage, and most recently designed the Pi4J Smoke Test hardware setup that makes integration testing on real Raspberry Pi hardware practical and repeatable.&lt;/p&gt;</description></item><item><title>2026 Smoking Food with Pi4J</title><link>https://pi4j.com/video/20260319-live-stream-food-smoker/</link><pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate><guid>https://pi4j.com/video/20260319-live-stream-food-smoker/</guid><description>&lt;h2 id="lets-smoke-some-food-with-pi4j-vaadin-and-quarkus"&gt;Let&amp;rsquo;s smoke some food with Pi4J, Vaadin, and Quarkus&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;20260319 - Live Stream&lt;/strong&gt;&lt;/p&gt;
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/fN1N8r1xy6I?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
- &lt;/div&gt;
-
+ &lt;iframe
+ allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+ allowfullscreen="allowfullscreen"
+ loading="eager"
+ referrerpolicy="strict-origin-when-cross-origin"
+ src="https://www.youtube.com/embed/fN1N8r1xy6I?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0"
+ style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;"
+ title="YouTube video"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 &lt;p&gt;Live stream with Matti Tahvonen and Frank Delporte with the smell of smoked food and fresh Java code! Matti from the Vaadin team shows a project that started as a Raspberry Pi side project and turned into a full-blown IoT application. He has built a smoker controller — yes, an actual BBQ smoker — with Pi4J V4, Vaadin for the UI, and Quarkus on the backend. So we can now officially say that Pi4J V4 has been smoke-tested in production&amp;hellip;&lt;/p&gt;</description></item><item><title>2026 Introducing Pi4J V4 FFM</title><link>https://pi4j.com/video/20260306-live-stream-v4-nick/</link><pubDate>Fri, 06 Mar 2026 00:00:00 +0000</pubDate><guid>https://pi4j.com/video/20260306-live-stream-v4-nick/</guid><description>&lt;h2 id="controlling-electronics-with-java-25-and-the-ffm-api-using-pi4j-v4"&gt;Controlling Electronics with Java 25 and the FFM API using Pi4J V4&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;20260306 - Live Stream&lt;/strong&gt;&lt;/p&gt;
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/4elclflGac8?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
- &lt;/div&gt;
-
+ &lt;iframe
+ allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+ allowfullscreen="allowfullscreen"
+ loading="eager"
+ referrerpolicy="strict-origin-when-cross-origin"
+ src="https://www.youtube.com/embed/4elclflGac8?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0"
+ style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;"
+ title="YouTube video"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 &lt;p&gt;Live stream with Nick Gritsenko and Frank Delporte about the Foreign Function and Memory (FFM) API that got introduced in Java 22, and how it was used to create a new plugin for the Pi4J library. This will help to bring electronics programming with Java to many more boards and help to simplify the Pi4J project.&lt;/p&gt;</description></item><item><title>2025 Devoxx Talk FFM API</title><link>https://pi4j.com/video/20251009-devoxx-ffmapi/</link><pubDate>Thu, 09 Oct 2025 00:00:00 +0000</pubDate><guid>https://pi4j.com/video/20251009-devoxx-ffmapi/</guid><description>&lt;h2 id="the-wait-is-over-foreign-function--memory-ffm-api-brings-modern-java-to-the-raspberry-pi"&gt;The Wait is Over: Foreign Function &amp;amp; Memory FFM API brings modern Java to the Raspberry Pi&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;20251009 - Recording of the talk at Devoxx Belgium by Frank Delporte&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;All the links of the presentation are available &lt;a href="https://webtechie.be/post/2025-10-08-devoxx-talk-ffmapi-on-raspberrypi/" target="_blank" rel="noopener"&gt;on this blog post&lt;/a&gt;.&lt;/p&gt;
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/2BcWWWkb8ac?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
- &lt;/div&gt;
-
+ &lt;iframe
+ allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+ allowfullscreen="allowfullscreen"
+ loading="eager"
+ referrerpolicy="strict-origin-when-cross-origin"
+ src="https://www.youtube.com/embed/2BcWWWkb8ac?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0"
+ style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;"
+ title="YouTube video"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 &lt;p&gt;Since 2012, Pi4J has enabled Java to control electronic components connected to the Raspberry Pi&amp;rsquo;s GPIO pins. However, both Java and the Raspberry Pi have evolved significantly since then. Supporting new hardware has been a challenge, requiring multiple implementations in the Pi4J library with complex code based on the Java Native Interface (JNI) and Java Native Access (JNA).&lt;/p&gt;</description></item></channel></rss>
