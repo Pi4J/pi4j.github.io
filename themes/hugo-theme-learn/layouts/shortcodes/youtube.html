@@ -1,0 +1,39 @@
+{{- $pc := .Page.Site.Config.Privacy.YouTube -}}
+{{- if not $pc.Disable -}}
+{{- $ytHost := cond $pc.PrivacyEnhanced "www.youtube-nocookie.com" "www.youtube.com" -}}
+{{- $id := "" -}}
+{{- $class := "" -}}
+{{- $title := "YouTube video" -}}
+{{- $autoplay := "0" -}}
+{{- $controls := "1" -}}
+{{- $end := "0" -}}
+{{- $loop := "0" -}}
+{{- $mute := "0" -}}
+{{- $start := "0" -}}
+{{- if .IsNamedParams -}}
+  {{- $id = .Get "id" -}}
+  {{- $class = .Get "class" | default "" -}}
+  {{- $title = .Get "title" | default "YouTube video" -}}
+  {{- $autoplay = cond (eq (printf "%v" (.Get "autoplay" | default false)) "true") "1" "0" -}}
+  {{- $controls = cond (eq (printf "%v" (.Get "controls" | default true)) "true") "1" "0" -}}
+  {{- $end = printf "%v" (.Get "end" | default 0) -}}
+  {{- $loop = cond (eq (printf "%v" (.Get "loop" | default false)) "true") "1" "0" -}}
+  {{- $mute = cond (eq (printf "%v" (.Get "mute" | default false)) "true") "1" "0" -}}
+  {{- $start = printf "%v" (.Get "start" | default 0) -}}
+{{- else -}}
+  {{- $id = .Get 0 -}}
+  {{- $class = .Get 1 | default "" -}}
+  {{- $title = .Get 2 | default "YouTube video" -}}
+{{- end -}}
+<div {{ with $class }}class="{{ . }}"{{ else }}style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"{{ end }}>
+  <iframe
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen="allowfullscreen"
+    loading="eager"
+    referrerpolicy="strict-origin-when-cross-origin"
+    src="https://{{ $ytHost }}/embed/{{ $id }}?autoplay={{ $autoplay }}&amp;controls={{ $controls }}&amp;end={{ $end }}&amp;loop={{ $loop }}&amp;mute={{ $mute }}&amp;start={{ $start }}{{ if eq $loop "1" }}&amp;playlist={{ $id }}{{ end }}"
+    {{ if not $class }}style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;"{{ end }}
+    title="{{ $title }}"></iframe>
+</div>
+{{- end -}}
+
