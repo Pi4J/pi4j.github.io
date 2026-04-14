@@ -9,6 +9,23 @@ All releases of Pi4J V2+ are listed on [github.com/Pi4J/pi4j/releases](https://g
 
 Requires Java 25, see [What's New in V4](/about/info-v4/) for more info.
 
+### 2026-04-14 - V4.0.1
+
+This is a bug fix release, mainly related to the new FFM plugin introduced in V4.0.0.
+
+* Add FFM to the distribution module.
+* Improvements in the one-time generation of BuildInfo within ContextBuilder.
+* Wiring and README updates related to the smoke tests in the `pi4j-test` module.
+* @DigitalSmile added as author in the parent `pom.xml`.
+* Fix for [issue #620](https://github.com/Pi4J/pi4j/issues/620): shutdown sequence to close the file descriptor as the last step.
+* Fix for [issue #622](https://github.com/Pi4J/pi4j/issues/622): 5th and following inputs don't trigger event listeners in ffm-plugin.
+* Fix GPIO listener missing RISING events when timestamp LSB is zero.
+* Shell script added to run the smoketest in `pi4j-test/assets/runSmoketest.sh`.
+
+Thanks to contributions by [@DigitalSmile](https://github.com/DigitalSmile), [@taartspi](https://github.com/taartspi), [@eitch](https://github.com/eitch), [@fdelporte](https://github.com/fdelporte), detailed bug investigations by [@relaxmax01](https://github.com/relaxmax01) and [@DieterHolz](https://github.com/DieterHolz), and assistance from Copilot.
+
+Detailed list of all the changes: https://github.com/Pi4J/pi4j/compare/4.0.0...4.0.1
+
 ### 2026-02-20 - V4.0.0
 
 This is a big release with almost 400 commits and 300+ files added/changed...! **Pi4J V4 introduces the new [FFM plugin](/documentation/providers/ffm) and bumps the Java version to 25**. The FFM plugin makes uses the new Foreign Function & Memory API (FFM) to access the GPIOs. The FFM API was introduced in Java 22 with [JEP 454](https://openjdk.org/jeps/454).
