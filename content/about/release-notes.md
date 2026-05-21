@@ -53,6 +53,15 @@ Detailed list of all the changes: https://github.com/Pi4J/pi4j/compare/3.0.3...4
 
 Requires Java 21, see [What's New in V3](/about/info-v3/) for more info.
 
+### 2026-05-21 - V3.0.4
+
+* Backport of the fix for [#527](https://github.com/Pi4J/pi4j/pull/527) to the 3.x branch: Fix SPI send loop bounds
+* Remove unused Arrays import in LinuxFsSpi.
+
+Thanks to contributions by [@mpilone](https://github.com/mpilone), [@eitch](https://github.com/eitch).
+
+Detailed list of all the changes: https://github.com/Pi4J/pi4j/compare/3.0.3...3.0.4
+
 ### 2025-09-23 - V3.0.3
 
 Work is ongoing to extend Pi4J with a plugin based on the FFM API (Foreign Function & Memory API). To make this possible, some changes have been made to the core code in preparation for this new plugin. And of course more improvements and bug fixes... 
