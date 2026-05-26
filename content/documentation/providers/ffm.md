@@ -21,7 +21,7 @@ Providers in the FFM plugin:
    ```xml
    <dependency>
        <groupId>com.pi4j</groupId>
-       <artifactId>pi4j-ffm-plugin</artifactId>
+       <artifactId>pi4j-plugin-ffm</artifactId>
        <version>${pi4j.version}</version>
    </dependency>
    ```
