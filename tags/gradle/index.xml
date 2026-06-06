@@ -6,13 +6,13 @@ find a project which contains the minimal code to control a digital input and ou
 described on this page. The application will toggle an LED on/off and each time you press the button, the toggling
 speed increases. When you have pushed the button 5 times, the application stops.&lt;/p&gt;
 
- &lt;div
- style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
- &lt;iframe
- src="https://player.vimeo.com/video/525570174?dnt=0"
- style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allow="fullscreen"&gt;
- &lt;/iframe&gt;
- &lt;/div&gt;
+			&lt;div
+					style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
+				&lt;iframe
+					src="https://player.vimeo.com/video/525570174?dnt=0"
+						style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allow="fullscreen"&gt;
+				&lt;/iframe&gt;
+			&lt;/div&gt;
 
 &lt;h2 id="wiring"&gt;Wiring&lt;/h2&gt;
 &lt;p&gt;This minimal example application uses this wiring:&lt;/p&gt;</description></item><item><title>Spring Boot Alarm System</title><link>https://pi4j.com/featured-projects/spring-boot-alarm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/featured-projects/spring-boot-alarm/</guid><description>&lt;div class="notices tip" &gt;&lt;p&gt;GITHUB PROJECT: &lt;a href="https://github.com/bmike2047/springboot-rpi-alarm-system" target="_blank" rel="noopener"&gt;github.com/bmike2047/springboot-rpi-alarm-system&lt;/a&gt;&lt;/p&gt;
