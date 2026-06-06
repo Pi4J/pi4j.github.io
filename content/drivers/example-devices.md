@@ -1,17 +1,17 @@
 ---
-title: 'Example Devices'
+title: 'Example Implementations'
 weight: 20
 tags: ["1602A", "ADS1256", "BME280", "BMP280", "DAC8552", "DHT22", "IS31FL3731", "MCP23008", "MCP23017", "MCP3008", "MCP4725", "MPL3115A2", "NeoPixel", "SN74HC595", "SSD1306", "TCA9548", "VL53L0X"]
 ---
 
-The [pi4j-example-devices](https://github.com/Pi4J/pi4j-example-devices) repository contains complete example applications that use the Pi4J Drivers library. Each example shows how to wire up a specific component and use the corresponding driver in a Java application.
+The [pi4j-examples](https://github.com/Pi4J/pi4j-examples) repository contains complete example applications that use the Pi4J Drivers library. Each example shows how to wire up a specific component and use the corresponding driver in a Java application.
 
 ## Getting the examples
 
 Clone the repository to your Raspberry Pi or development machine:
 
 ```shell
-git clone https://github.com/Pi4J/pi4j-example-devices
+git clone https://github.com/Pi4J/pi4j-examples
 ```
 
 Each subdirectory contains a self-contained Maven project for a specific device.
@@ -45,5 +45,5 @@ Each subdirectory contains a self-contained Maven project for a specific device.
 
 ## Contributing
 
-Found a device not yet covered? Contributions are welcome. Open an issue or pull request in [github.com/Pi4J/pi4j-example-devices](https://github.com/Pi4J/pi4j-example-devices) to share your implementation with the community.
+Found a device not yet covered? Contributions are welcome. Open an issue or pull request in [github.com/Pi4J/pi4j-examples](https://github.com/Pi4J/pi4j-examples) to share your implementation with the community.
 

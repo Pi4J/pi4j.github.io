@@ -10,7 +10,7 @@ This library contains driver implementations for various electronic components, 
 Available on GitHub:
 
 * The [sources of this library in `pi4j-drivers`](https://github.com/pi4j/pi4j-drivers).
-* [Example implementations in `pi4j-example-devices`](https://github.com/Pi4J/pi4j-example-devices/).
+* [Example implementations in `pi4j-examples`](https://github.com/Pi4J/pi4j-examples/).
 
 MORE INFO AFTER THE RELEASE OF Pi4J V4.
 

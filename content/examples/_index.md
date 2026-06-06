@@ -14,7 +14,7 @@ In this section, we want to provide you example implementations of several devic
 |:--------------------------|:------------------------------------------------------------------------------------------------------|
 | Pi4J JBang examples       | [JBang examples](/examples/jbang)                                                                     |
 | Pi4J Drivers library      | [Pi4J Drivers](/drivers/)                                                                             |
-| Pi4J Drivers examples     | [Example Devices](/drivers/example-devices/)                                                          |
+| Pi4J (Drivers) examples   | [Example Devices](/drivers/examples/)                                                          |
 | Community Implementations | [Community Implementation](/examples/communityimplementation)                                         |
 | FHNW University           | [Component example implementations](https://gitlab.fhnw.ch/ip_12_preparation/pi4j-example-components) |
 | FHNW University           | [Electronics with CrowPi](https://gitlab.fhnw.ch/ip_12_preparation/pi4j-example-crowpi)               |

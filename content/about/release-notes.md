@@ -144,7 +144,7 @@ Requires Java 11, see [What's New in V2](/about/info-v2/) for more info.
 
 Thanks to contributions by [@mpilone](https://github.com/mpilone), [@cniesen](https://github.com/cniesen), [@geerlingguy](https://github.com/geerlingguy), [@dariuszzbyrad](https://github.com/dariuszzbyrad), [@taartspi](https://github.com/taartspi), [@eitch](https://github.com/eitch), [@fdelporte](https://github.com/fdelporte).
 
-Special thanks to [Dariusz Zbyrad](https://github.com/dariuszzbyrad) for joining the project and improving the Maven builds with a wrapper for more consistency, for example, in the [pi4j-example-devices repository](https://github.com/Pi4J/pi4j-example-devices), and other contributions. And also special thanks to [Mike Pilone](https://github.com/mpilone) for the initial work for LinuxFS SPI.
+Special thanks to [Dariusz Zbyrad](https://github.com/dariuszzbyrad) for joining the project and improving the Maven builds with a wrapper for more consistency, for example, in the [pi4j-examples repository](https://github.com/Pi4J/pi4j-examples), and other contributions. And also special thanks to [Mike Pilone](https://github.com/mpilone) for the initial work for LinuxFS SPI.
 
 All changes: https://github.com/Pi4J/pi4j/compare/2.7.0...2.8.0
 

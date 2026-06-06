@@ -25,4 +25,4 @@ We also talk about the upcoming Pi4J drivers library, Tom's planned example rewo
 * [Bug fix: PR #623](https://github.com/Pi4J/pi4j/pull/623)
 * [Ikalogic SE254 logic analyser](https://ikalogic.com/logic-analyzers/se254/intro/)
 * [Ikalogic ScanaStudio software](https://ikalogic.com/logic-analyzers/se254/software/)
-* [Pi4J example devices (Tom's repository)](https://github.com/Pi4J/pi4j-example-devices)
+* [Pi4J examples (Tom's repository)](https://github.com/Pi4J/pi4j-examples)

@@ -22,7 +22,7 @@ Read the full context in the [Pi4J V1 release notes](/about/info-v1/) and the [r
 
 ## A new community-driven drivers library
 
-The gap left by removing the device library did not go unnoticed. Over the years, community members built their own device implementations and shared them in the [pi4j-example-devices](https://github.com/Pi4J/pi4j-example-devices) repository. That work became the foundation for a proper solution.
+The gap left by removing the device library did not go unnoticed. Over the years, community members built their own device implementations and shared them in the [pi4j-examples](https://github.com/Pi4J/pi4j-examples) repository. That work became the foundation for a proper solution.
 
 The result is the **Pi4J Drivers library**: a standalone Maven library, maintained separately from the Pi4J core, that provides drivers for a growing set of components. Keeping it separate means:
 

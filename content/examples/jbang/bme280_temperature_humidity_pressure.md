@@ -401,7 +401,7 @@ Once again, JBang proves to be the perfect companion to experiment with Pi4J and
 
 The following sources have been used for this example:
 
-* [Pi4J_V2-TemperatureSensor example code by Tom Aarts](https://github.com/Pi4J/pi4j-example-devices/blob/master/src/main/java/com/pi4j/devices/bmp280/README.md)
+* [Pi4J_V2-TemperatureSensor example code by Tom Aarts](https://github.com/Pi4J/pi4j-examples/blob/master/src/main/java/com/pi4j/devices/bmp280/README.md)
 * [Bosch BMP280 Data Sheet](https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bmp280-ds001.pdf)
 * [Bosch BME280 Data Sheet](https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bme280-ds002.pdf)
 * [Bosch example code on GitHub](https://github.com/boschsensortec/BME280_driver/tree/master)
