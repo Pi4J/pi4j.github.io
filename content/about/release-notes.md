@@ -5,6 +5,8 @@ weight: 40
 
 All releases of Pi4J V2+ are listed on [github.com/Pi4J/pi4j/releases](https://github.com/Pi4J/pi4j/releases).
 
+For the release notes of the drivers library, check [Pi4J Drivers Release Notes](/drivers/drivers-release-notes/)
+
 ## V4
 
 Requires Java 25, see [What's New in V4](/about/info-v4/) for more info.
@@ -55,7 +57,7 @@ Requires Java 21, see [What's New in V3](/about/info-v3/) for more info.
 
 ### 2026-05-21 - V3.0.4
 
-* Backport of the fix for [#527](https://github.com/Pi4J/pi4j/pull/527) to the 3.x branch: Fix SPI send loop bounds
+* Backport of the fix for [#527](https://github.com/Pi4J/pi4j/pull/527) to the 3.x branch: Fix SPI send loop bounds.
 * Remove unused Arrays import in LinuxFsSpi.
 
 Thanks to contributions by [@mpilone](https://github.com/mpilone), [@eitch](https://github.com/eitch).

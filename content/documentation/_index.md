@@ -1,5 +1,5 @@
 ---
-title: 'Documentation'
+title: 'Pi4J Documentation'
 weight: 30
 ---
 
@@ -15,6 +15,6 @@ find multiple examples to get you started.{{% /notice %}}
 
 {{% notice note %}}In that case you'll find more information in the [Architecture/Design](/architecture/) section.{{% /notice %}}
 
-## Table of contents of the "Documentation" section
+## Table of contents of the "Pi4J Documentation" section
 
 {{% children depth="3" %}}
