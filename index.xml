@@ -384,19 +384,14 @@ This scheme was incompatibility with other pin diagrams and pin numbering used b
 &lt;p&gt;For the release notes of the drivers library, check &lt;a href="https://pi4j.com/drivers/drivers-release-notes/"&gt;Pi4J Drivers Release Notes&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="v4"&gt;V4&lt;/h2&gt;
 &lt;p&gt;Requires Java 25, see &lt;a href="https://pi4j.com/about/info-v4/"&gt;What&amp;rsquo;s New in V4&lt;/a&gt; for more info.&lt;/p&gt;
-&lt;h3 id="2026-04-14---v401"&gt;2026-04-14 - V4.0.1&lt;/h3&gt;
-&lt;p&gt;This is a bug fix release, mainly related to the new FFM plugin introduced in V4.0.0.&lt;/p&gt;
+&lt;h3 id="2026-06-08---v402"&gt;2026-06-08 - V4.0.2&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Add FFM to the distribution module.&lt;/li&gt;
-&lt;li&gt;Improvements in the one-time generation of BuildInfo within ContextBuilder.&lt;/li&gt;
-&lt;li&gt;Wiring and README updates related to the smoke tests in the &lt;code&gt;pi4j-test&lt;/code&gt; module.&lt;/li&gt;
-&lt;li&gt;@DigitalSmile added as author in the parent &lt;code&gt;pom.xml&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Fix for &lt;a href="https://github.com/Pi4J/pi4j/issues/620" target="_blank" rel="noopener"&gt;issue #620&lt;/a&gt;: shutdown sequence to close the file descriptor as the last step.&lt;/li&gt;
-&lt;li&gt;Fix for &lt;a href="https://github.com/Pi4J/pi4j/issues/622" target="_blank" rel="noopener"&gt;issue #622&lt;/a&gt;: 5th and following inputs don&amp;rsquo;t trigger event listeners in ffm-plugin.&lt;/li&gt;
-&lt;li&gt;Fix GPIO listener missing RISING events when timestamp LSB is zero.&lt;/li&gt;
-&lt;li&gt;Shell script added to run the smoketest in &lt;code&gt;pi4j-test/assets/runSmoketest.sh&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Pull request &lt;a href="https://github.com/Pi4J/pi4j/pull/630" target="_blank" rel="noopener"&gt;#630&lt;/a&gt;, issue &lt;a href="https://github.com/Pi4J/pi4j/issues/628" target="_blank" rel="noopener"&gt;#628&lt;/a&gt;: Fix OutOfMemory in FFM: use per-call Arena.ofConfined() instead of global Arena.ofAuto().&lt;/li&gt;
+&lt;li&gt;Add &lt;code&gt;@deprecated(since, forRemoval)&lt;/code&gt; to &lt;code&gt;allocateCapturedState()&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Thanks to contributions by &lt;a href="https://github.com/DigitalSmile" target="_blank" rel="noopener"&gt;@DigitalSmile&lt;/a&gt;, &lt;a href="https://github.com/taartspi" target="_blank" rel="noopener"&gt;@taartspi&lt;/a&gt;, &lt;a href="https://github.com/eitch" target="_blank" rel="noopener"&gt;@eitch&lt;/a&gt;, &lt;a href="https://github.com/fdelporte" target="_blank" rel="noopener"&gt;@fdelporte&lt;/a&gt;, detailed bug investigations by &lt;a href="https://github.com/relaxmax01" target="_blank" rel="noopener"&gt;@relaxmax01&lt;/a&gt; and &lt;a href="https://github.com/DieterHolz" target="_blank" rel="noopener"&gt;@DieterHolz&lt;/a&gt;, and assistance from Copilot.&lt;/p&gt;</description></item><item><title>Pi4J Downloads</title><link>https://pi4j.com/about/download/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/about/download/</guid><description>&lt;p&gt;All downloads provided by the project can be found on &lt;a href="https://pi4j.com/download/" target="_blank" rel="noopener"&gt;pi4j.com/download&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Detailed list of all the changes: &lt;a href="https://github.com/Pi4J/pi4j/compare/4.0.1...4.0.2" target="_blank" rel="noopener"&gt;https://github.com/Pi4J/pi4j/compare/4.0.1...4.0.2&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="2026-04-14---v401"&gt;2026-04-14 - V4.0.1&lt;/h3&gt;
+&lt;p&gt;This is a bug fix release, mainly related to the new FFM plugin introduced in V4.0.0.&lt;/p&gt;</description></item><item><title>Pi4J Downloads</title><link>https://pi4j.com/about/download/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/about/download/</guid><description>&lt;p&gt;All downloads provided by the project can be found on &lt;a href="https://pi4j.com/download/" target="_blank" rel="noopener"&gt;pi4j.com/download&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The compiled artifacts (releases and snapshots) are available in the
 &lt;a href="https://central.sonatype.com/search?namespace=com.pi4j" target="_blank" rel="noopener"&gt;Maven Central Repository&lt;/a&gt;.&lt;/p&gt;
 &lt;iframe src="https://pi4j.com/download" style="width: 100%; height: 100vh;"&gt;&lt;/iframe&gt;</description></item><item><title>Minimal Kotlin Pi4J example</title><link>https://pi4j.com/kotlin/kotlin-dsl/minimal-kotlin-example/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/kotlin/kotlin-dsl/minimal-kotlin-example/</guid><description>&lt;div class="notices tip" &gt;&lt;p&gt;Full Example on GitHub: &lt;a href="https://github.com/Pi4J/pi4j-kotlin/blob/master/example/src/main/kotlin/MinimalExample.kt" target="_blank" rel="noopener"&gt;https://github.com/Pi4J/pi4j-kotlin/blob/master/example/src/main/kotlin/MinimalExample.kt&lt;/a&gt;&lt;/p&gt;
