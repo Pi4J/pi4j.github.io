@@ -11,6 +11,13 @@ For the release notes of the drivers library, check [Pi4J Drivers Release Notes]
 
 Requires Java 25, see [What's New in V4](/about/info-v4/) for more info.
 
+### 2026-06-08 - V4.0.2
+
+* Pull request [#630](https://github.com/Pi4J/pi4j/pull/630), issue [#628](https://github.com/Pi4J/pi4j/issues/628): Fix OutOfMemory in FFM: use per-call Arena.ofConfined() instead of global Arena.ofAuto().
+* Add `@deprecated(since, forRemoval)` to `allocateCapturedState()`.
+ 
+Detailed list of all the changes: https://github.com/Pi4J/pi4j/compare/4.0.1...4.0.2
+
 ### 2026-04-14 - V4.0.1
 
 This is a bug fix release, mainly related to the new FFM plugin introduced in V4.0.0.
