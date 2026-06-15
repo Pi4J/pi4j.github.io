@@ -37,5 +37,5 @@ In February 2026, **Pi4J was accepted into the [Commonhaus Foundation](https://w
 
 **The Pi4J Project's** mission is to provide a **rich and powerful, yet simple to use, Java-friendly API library** enabling programmatic access to the low-level hardware I/O capabilities of embedded platforms such as the Raspberry Pi.
 
-![](/assets/about/home/pi4j-overview.jpg)
+![](/assets/about/home/pi4j-v4-overview.jpg)
 
