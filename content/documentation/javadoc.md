@@ -7,4 +7,4 @@ The source code of the Pi4J library is documented with JavaDoc. If you use the l
 
 Thanks to APIdia, this documentation is also available online on [apidia.net/mvn/com.pi4j/pi4j](https://apidia.net/mvn/com.pi4j/pi4j).
 
-![APIdia website](/assets/documentation/apidia.png)
+<iframe src="https://apidia.net/mvn/com.pi4j/pi4j/" style="width: 100%; height: 100vh; border: none;"></iframe>
