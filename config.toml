@@ -21,7 +21,7 @@ home = ["HTML", "RSS", "JSON"]
   # Author of the site, will be used in meta information
   author = "Pi4J"
   # Description of the site, will be used in meta information
-  description = "Java IO Library for the Raspberry Pi"
+  description = "Pi4J is an open-source Java library for the Raspberry Pi and other Single Board Computers, with access to GPIO, I2C, SPI, and PWM via the FFM API to integrate electronic components in your Java applications."
   # Shows a checkmark for visited pages on the menu
   showVisitedLinks = false
   # Disable search function. It will hide search bar
