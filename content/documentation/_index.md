@@ -1,5 +1,5 @@
 ---
-title: 'Pi4J Documentation'
+title: 'Technical Documentation'
 weight: 30
 ---
 
