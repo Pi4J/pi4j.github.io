@@ -9,6 +9,6 @@ The drivers library is a **community-maintained, separate library** that provide
 
 ## More information
 
-* [History](/drivers/history/): Why drivers were removed from the core and how the separate library came to exist.
 * [Release Notes](/drivers/drivers-release-notes/): All releases of the Pi4J Drivers library.
+* [History](/drivers/history/): Why drivers were removed from the core and how the separate library came to exist.
 * [Example Devices](/drivers/example-devices/): Example implementations based on the Pi4J Drivers library.
