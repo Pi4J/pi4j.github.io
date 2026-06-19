@@ -1,6 +1,6 @@
 ---
 title: 'Drivers Release Notes'
-weight: 10
+weight: 20
 ---
 
 All releases of the Pi4J Drivers library are listed on [github.com/Pi4J/pi4j-drivers/releases](https://github.com/Pi4J/pi4j-drivers/releases).

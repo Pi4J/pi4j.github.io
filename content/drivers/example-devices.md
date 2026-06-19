@@ -1,6 +1,6 @@
 ---
 title: 'Example Implementations'
-weight: 20
+weight: 40
 tags: ["1602A", "ADS1256", "BME280", "BMP280", "DAC8552", "DHT22", "IS31FL3731", "MCP23008", "MCP23017", "MCP3008", "MCP4725", "MPL3115A2", "NeoPixel", "SN74HC595", "SSD1306", "TCA9548", "VL53L0X"]
 ---
 
