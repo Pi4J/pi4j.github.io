@@ -158,8 +158,19 @@
   padding: 2px 9px;
 }
 
+.pi4j-card__excerpt {
+  font-size: .85rem;
+  color: var(--p4j-muted);
+  line-height: 1.4;
+}
+
 /* ---- Intro / why ---- */
 .pi4j-intro { margin-top: 40px; padding-top: 8px; }
+
+/* ---- Section overview pages (blog / video / featured projects) ---- */
+.pi4j-overview__title { font-size: 1.9rem; margin: 0 0 .6rem; color: var(--p4j-ink); }
+.pi4j-overview__intro { margin-bottom: 26px; }
+.pi4j-overview .pi4j-cards { margin-top: 8px; }
 
 @media (max-width: 800px) {
   .pi4j-cards { grid-template-columns: 1fr 1fr; }
