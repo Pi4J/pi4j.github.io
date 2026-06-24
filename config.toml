@@ -51,7 +51,11 @@ home = ["HTML", "RSS", "JSON"]
   # Change default color scheme with a variant one. Can be "red", "blue", "green".
   themeVariant = "blue"
   # Provide a list of custom css files to load relative from the `static/` folder in the site root.
-  # custom_css = ["css/foo.css", "css/bar.css"]
+  custom_css = ["css/home.css"]
+  # Latest release shown in the homepage release banner. Bump these on each release.
+  latestVersion = "V4.0.2"
+  latestVersionDate = "2026-06-08"
+  latestVersionNote = "Built on Java 25, with the new Foreign Function & Memory (FFM) plugin replacing native JNI calls."
   # Change the title separator. Default to "::".
   titleSeparator = " - "
 

@@ -1,7 +1,7 @@
 ---
 title: "Quarkus Pi4J Extension"
 date: 2026-06-23
-tags: ["Quarkus", "Extension"]
+tags: ["Quarkus"]
 ---
 
 2026-06-23 by Igor De Souza

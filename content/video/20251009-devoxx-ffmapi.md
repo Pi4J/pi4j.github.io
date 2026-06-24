@@ -1,6 +1,7 @@
 ---
 title: '2025 Devoxx Talk FFM API'
 date: 2025-10-09
+youtube: 2BcWWWkb8ac
 tags: ["Video", "FFM", "CrowPi", "Digital Input", "Digital Output"]
 ---
 

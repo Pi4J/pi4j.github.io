@@ -1,0 +1,101 @@
+{{ partial "header.html" . }}
+<span id="sidebar-toggle-span">
+<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fas fa-bars"></i> navigation</a>
+</span>
+
+<div class="pi4j-home">
+
+  {{/* ---------------- Hero ---------------- */}}
+  <section class="pi4j-hero">
+    <div class="pi4j-hero__art">
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+      <lottie-player src="{{ "assets/pi4j-logo.json" | relURL }}" background="transparent" speed="1" loop autoplay></lottie-player>
+    </div>
+    <div class="pi4j-hero__body">
+      <h1>Java I/O for the Raspberry Pi &amp; other SBCs</h1>
+      <p>A friendly, object-oriented API to access GPIO, I2C, SPI, PWM and Serial &mdash; so you can focus on your application logic, not the native layer.</p>
+      <div class="pi4j-cta">
+        <a class="pi4j-btn pi4j-btn--primary" href="{{ "getting-started/" | relURL }}">Get started</a>
+        <a class="pi4j-btn pi4j-btn--ghost" href="{{ "documentation/" | relURL }}">Documentation</a>
+        <a class="pi4j-btn pi4j-btn--ghost" href="{{ "examples/" | relURL }}">Examples</a>
+        <a class="pi4j-btn pi4j-btn--ghost" href="https://github.com/Pi4J/pi4j" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  {{/* ---------------- Latest release banner ---------------- */}}
+  {{ with .Site.Params.latestVersion }}
+  <section class="pi4j-release">
+    <span class="pi4j-release__rocket">🚀</span>
+    <div class="pi4j-release__main">
+      <div class="pi4j-release__text">
+        <strong>Latest release: {{ . }}</strong>{{ with $.Site.Params.latestVersionDate }} &middot; {{ . }}{{ end }}
+        {{ with $.Site.Params.latestVersionNote }}<span class="pi4j-release__note">{{ . }}</span>{{ end }}
+      </div>
+      <div class="pi4j-release__links">
+        <a href="{{ "about/release-notes/" | relURL }}">Release notes →</a>
+        <a href="{{ "about/info-v4/" | relURL }}">What's new in V4 →</a>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  {{/* ---------------- Latest blog posts ---------------- */}}
+  {{ $posts := first 6 (where .Site.RegularPages "Section" "blog") }}
+  {{ with $posts }}
+  <section class="pi4j-section">
+    <div class="pi4j-section__head">
+      <h2>Latest from the blog</h2>
+      <a class="pi4j-section__more" href="{{ "blog/" | relURL }}">All posts →</a>
+    </div>
+    <div class="pi4j-cards">
+      {{ range . }}
+      <a class="pi4j-card" href="{{ .RelPermalink }}">
+        <div class="pi4j-card__body">
+          <span class="pi4j-card__date">{{ .Date.Format "2 Jan 2006" }}</span>
+          <span class="pi4j-card__title">{{ .Title }}</span>
+          {{ with .Params.tags }}
+          <span class="pi4j-card__tags">
+            {{ range first 3 . }}<span class="pi4j-card__tag">{{ . }}</span>{{ end }}
+          </span>
+          {{ end }}
+        </div>
+      </a>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+  {{/* ---------------- Latest videos ---------------- */}}
+  {{ $videos := first 3 (where .Site.RegularPages "Section" "video") }}
+  {{ with $videos }}
+  <section class="pi4j-section">
+    <div class="pi4j-section__head">
+      <h2>Latest videos</h2>
+      <a class="pi4j-section__more" href="{{ "video/" | relURL }}">All videos →</a>
+    </div>
+    <div class="pi4j-cards">
+      {{ range . }}
+      <a class="pi4j-card" href="{{ .RelPermalink }}">
+        <div class="pi4j-card__thumb"{{ with .Params.youtube }} style="background-image:url('https://img.youtube.com/vi/{{ . }}/hqdefault.jpg')"{{ end }}>
+          <span class="pi4j-card__play"><i class="fab fa-youtube"></i></span>
+        </div>
+        <div class="pi4j-card__body">
+          <span class="pi4j-card__date">{{ .Date.Format "2 Jan 2006" }}</span>
+          <span class="pi4j-card__title">{{ .Title }}</span>
+        </div>
+      </a>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+  {{/* ---------------- Intro / why (from content/_index.md) ---------------- */}}
+  {{ with .Content }}
+  <section class="pi4j-intro">
+    {{ . }}
+  </section>
+  {{ end }}
+
+</div>
+{{ partial "footer.html" . }}

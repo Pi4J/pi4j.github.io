@@ -1,6 +1,7 @@
 ---
 title: "2025 Live Coding: Vaadin"
 date: 2025-09-24
+youtube: gtcXnA3endo
 tags: ["Video", "Vaadin", "Spring", "CrowPi", "Live Coding"]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Hardware Testing
 weight: 38
-tags: ["Pi4J OS"]
+tags: ["Hardware Testing"]
 aliases:
   - /architecture/about-the-code/hardware-testing/
 ---

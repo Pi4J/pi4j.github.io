@@ -1,0 +1,174 @@
+/* ------------------------------------------------------------------
+   Pi4J homepage redesign
+   Scoped under .pi4j-home so it never leaks into documentation pages.
+   ------------------------------------------------------------------ */
+
+.pi4j-home {
+  --p4j-accent: #1C90F3;      /* matches the docs theme link blue */
+  --p4j-accent-dark: #167ad0;
+  --p4j-ink: #1c1c1c;
+  --p4j-muted: #6b7280;
+  --p4j-border: #e5e7eb;
+  --p4j-bg-soft: #f7f8fa;
+  max-width: 1080px;
+}
+
+.pi4j-home a { text-decoration: none; }
+
+/* ---- Hero ---- */
+.pi4j-hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 24px;
+  padding: 0 0 24px;
+  border-bottom: 1px solid var(--p4j-border);
+}
+.pi4j-hero__art {
+  flex: 0 0 220px;
+  max-width: 220px;
+}
+.pi4j-hero__art img { width: 100%; height: auto; }
+.pi4j-hero__art lottie-player { width: 220px; height: 220px; margin: -20px 0; }
+.pi4j-hero__body { flex: 1 1 360px; }
+.pi4j-hero__body h1 {
+  font-size: 2rem;
+  line-height: 1.15;
+  margin: 0 0 .5rem;
+  color: var(--p4j-ink);
+}
+.pi4j-hero__body p {
+  font-size: 1.05rem;
+  color: var(--p4j-muted);
+  margin: 0 0 1.1rem;
+}
+
+/* ---- Buttons ---- */
+.pi4j-cta { display: flex; flex-wrap: wrap; gap: 12px; }
+.pi4j-btn {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: .95rem;
+  border: 1px solid var(--p4j-accent);
+  transition: transform .08s ease, box-shadow .15s ease;
+}
+.pi4j-btn--primary { background: var(--p4j-accent); color: #fff; }
+.pi4j-btn--primary:hover { background: var(--p4j-accent-dark); color: #fff; }
+.pi4j-btn--ghost { background: #fff; color: var(--p4j-accent); }
+.pi4j-btn--ghost:hover { background: var(--p4j-bg-soft); }
+.pi4j-btn:hover { transform: translateY(-1px); }
+
+/* ---- Release banner ---- */
+.pi4j-release {
+  --p4j-green: #2e7d32;
+  --p4j-green-dark: #1b5e20;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  gap: 14px;
+  margin: 26px 0;
+  padding: 16px 20px;
+  background: linear-gradient(90deg, #f3faf4 0%, #e7f4e8 100%);
+  border: 1px solid #c8e6c9;
+  border-left: 5px solid var(--p4j-green);
+  border-radius: 10px;
+}
+.pi4j-release__rocket { font-size: 1.6rem; line-height: 1.4; }
+.pi4j-release__main { flex: 1 1 auto; }
+.pi4j-release__text strong { color: var(--p4j-green-dark); }
+.pi4j-release__text .pi4j-release__note {
+  display: block;
+  color: var(--p4j-muted);
+  font-size: .92rem;
+  margin-top: 2px;
+}
+.pi4j-release__links { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 8px; }
+.pi4j-release__links a {
+  font-weight: 600;
+  color: var(--p4j-green);
+  font-size: .92rem;
+}
+.pi4j-release__links a:hover { color: var(--p4j-green-dark); }
+
+/* ---- Section headers ---- */
+.pi4j-section { margin: 36px 0 8px; }
+.pi4j-section__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+.pi4j-section__head h2 { margin: 0; font-size: 1.4rem; color: var(--p4j-ink); }
+.pi4j-section__more { font-weight: 600; color: var(--p4j-accent); font-size: .9rem; }
+.pi4j-section__more:hover { color: var(--p4j-accent-dark); }
+
+/* ---- Card grid ---- */
+.pi4j-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+.pi4j-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--p4j-border);
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+  transition: transform .1s ease, box-shadow .15s ease;
+}
+.pi4j-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 22px rgba(0,0,0,.08);
+}
+.pi4j-card__thumb {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  background: #000 center/cover no-repeat;
+}
+.pi4j-card__play {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 2.4rem;
+  text-shadow: 0 2px 8px rgba(0,0,0,.6);
+  opacity: .9;
+}
+.pi4j-card__body { padding: 14px 16px 16px; display: flex; flex-direction: column; gap: 6px; flex: 1; }
+.pi4j-card__date { font-size: .78rem; color: var(--p4j-muted); }
+.pi4j-card__title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--p4j-ink);
+  line-height: 1.3;
+}
+.pi4j-card:hover .pi4j-card__title { color: var(--p4j-accent); }
+.pi4j-card__tags { margin-top: auto; display: flex; flex-wrap: wrap; gap: 6px; padding-top: 6px; }
+.pi4j-card__tag {
+  font-size: .72rem;
+  color: var(--p4j-muted);
+  background: var(--p4j-bg-soft);
+  border: 1px solid var(--p4j-border);
+  border-radius: 999px;
+  padding: 2px 9px;
+}
+
+/* ---- Intro / why ---- */
+.pi4j-intro { margin-top: 40px; padding-top: 8px; }
+
+@media (max-width: 800px) {
+  .pi4j-cards { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 560px) {
+  .pi4j-cards { grid-template-columns: 1fr; }
+  .pi4j-hero__body h1 { font-size: 1.6rem; }
+}
+
+@media (max-width: 1000px) {
+  .pi4j-hero__art { display: none; }
+}

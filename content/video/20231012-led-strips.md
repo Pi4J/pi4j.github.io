@@ -1,6 +1,7 @@
 ---
 title: '2023 LED strips with JBang'
 date: 2023-10-12
+youtube: eToIXACqSuY
 tags: ["Video", "JBang", "LED Strip", "Pixelblaze", "Live Coding"]
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: '2023 Vaadin WebUI'
 date: 2023-08-22
+youtube: FXKsBKKB_Xg
 tags: ["Video"]
 ---
 

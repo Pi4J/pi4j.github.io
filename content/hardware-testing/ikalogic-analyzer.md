@@ -1,6 +1,6 @@
 ---
 title: 'Ikalogic Analyser'
-tags: ["PWM", "SPI", "Ikalogic"]
+tags: ["PWM", "SPI", "Ikalogic", "Hardware Testing"]
 ---
 
 When your Pi4J code passes the smoke tests but something still feels off, or when you're implementing support for a new sensor and you're not sure whether you're sending the right commands, a logic analyser is the tool that lets you see exactly what is happening on the wire.

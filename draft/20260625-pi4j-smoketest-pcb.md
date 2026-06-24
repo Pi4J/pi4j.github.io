@@ -1,8 +1,7 @@
 ---
 title: "Smoke test PCB for Pi4J"
-date: 2026-02-27
-tags: ["Commonhaus"]
-canonical: https://webtechie.be/post/2026-02-27-pi4j-commonhaus/
+date: 2026-06-25
+tags: ["Hardware Testing"]
 ---
 
 2026-06-25 by Frank Delporte

@@ -1,6 +1,7 @@
 ---
 title: '2026 Pi4J Smoke Tests with Pi4J'
 date: 2026-03-30
+youtube: uy3oWn9iIWs
 tags: ["Video", "FFM", "Ikalogic"]
 ---
 
