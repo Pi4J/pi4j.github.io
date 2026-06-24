@@ -1,0 +1,25 @@
+{{ partial "header.html" . }}
+<span id="sidebar-toggle-span">
+<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fas fa-bars"></i> navigation</a>
+</span>
+
+<div class="pi4j-home pi4j-overview">
+  {{ with .Content }}<div class="pi4j-overview__intro">{{ . }}</div>{{ end }}
+
+  <div class="pi4j-cards">
+    {{ range (where .Site.RegularPages "Section" "featured-projects").ByWeight }}
+    <a class="pi4j-card" href="{{ .RelPermalink }}">
+      <div class="pi4j-card__body">
+        <span class="pi4j-card__title">{{ .Title }}</span>
+        {{ with .Summary }}<span class="pi4j-card__excerpt">{{ . | plainify | truncate 150 }}</span>{{ end }}
+        {{ with .Params.tags }}
+        <span class="pi4j-card__tags">
+          {{ range first 4 . }}<span class="pi4j-card__tag">{{ . }}</span>{{ end }}
+        </span>
+        {{ end }}
+      </div>
+    </a>
+    {{ end }}
+  </div>
+</div>
+{{ partial "footer.html" . }}
