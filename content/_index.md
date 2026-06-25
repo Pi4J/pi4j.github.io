@@ -1,5 +1,5 @@
 ---
-title: Welcome to Pi4J
+title: Java I/O for Raspberry Pi & Single Board Computers
 ---
 
 ### Why Pi4J?
