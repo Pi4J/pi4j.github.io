@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Video on Pi4J</title><link>https://pi4j.com/tags/video/</link><description>Recent content in Video on Pi4J</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 30 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://pi4j.com/tags/video/index.xml" rel="self" type="application/rss+xml"/><item><title>2026 Pi4J Smoke Tests with Pi4J</title><link>https://pi4j.com/video/20260330-tom-aarts-hardware-testing/</link><pubDate>Mon, 30 Mar 2026 00:00:00 +0000</pubDate><guid>https://pi4j.com/video/20260330-tom-aarts-hardware-testing/</guid><description>&lt;h2 id="validating-pi4j-v4-on-real-hardware-catching-bugs-and-exploring-the-ikalogic-logic-analyser"&gt;Validating Pi4J V4 on real hardware, catching bugs, and exploring the Ikalogic logic analyser&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Video on Pi4J</title><link>https://pi4j.com/tags/video/</link><description>Recent content in Video on Pi4J</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 25 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://pi4j.com/tags/video/index.xml" rel="self" type="application/rss+xml"/><item><title>2026 Designing a Smoke Test PCB for Pi4J</title><link>https://pi4j.com/video/20260625-smoketest-pcb/</link><pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate><guid>https://pi4j.com/video/20260625-smoketest-pcb/</guid><description>&lt;h2 id="from-breadboard-chaos-to-a-real-pcb-designing-the-pi4j-smoke-test-board"&gt;From breadboard chaos to a real PCB: designing the Pi4J smoke test board&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;20260625 - Video with Frank Delporte&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
+ &lt;iframe
+ allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+ allowfullscreen="allowfullscreen"
+ loading="eager"
+ referrerpolicy="strict-origin-when-cross-origin"
+ src="https://www.youtube.com/embed/q7SGdxQnMVc?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0"
+ style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;"
+ title="YouTube video"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;p&gt;Testing a Java I/O library properly means testing it on real hardware. For Pi4J that means running the smoke test: a setup with two BMP/BME280 sensors and a tangle of GPIO-to-GPIO jumper wires that has to be rebuilt by hand every session. This video tells the story of board number &lt;code&gt;0001&lt;/code&gt;: turning that breadboard setup into a proper PCB.&lt;/p&gt;</description></item><item><title>2026 Pi4J Smoke Tests with Pi4J</title><link>https://pi4j.com/video/20260330-tom-aarts-hardware-testing/</link><pubDate>Mon, 30 Mar 2026 00:00:00 +0000</pubDate><guid>https://pi4j.com/video/20260330-tom-aarts-hardware-testing/</guid><description>&lt;h2 id="validating-pi4j-v4-on-real-hardware-catching-bugs-and-exploring-the-ikalogic-logic-analyser"&gt;Validating Pi4J V4 on real hardware, catching bugs, and exploring the Ikalogic logic analyser&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;20260330 - Video with Tom Aarts&lt;/strong&gt;&lt;/p&gt;
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
  &lt;iframe
