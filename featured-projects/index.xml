@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Featured Projects on Pi4J</title><link>https://pi4j.com/featured-projects/</link><description>Recent content in Featured Projects on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://pi4j.com/featured-projects/index.xml" rel="self" type="application/rss+xml"/><item><title>Spring Boot Alarm System</title><link>https://pi4j.com/featured-projects/spring-boot-alarm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/featured-projects/spring-boot-alarm/</guid><description>&lt;div class="notices tip" &gt;&lt;p&gt;GITHUB PROJECT: &lt;a href="https://github.com/bmike2047/springboot-rpi-alarm-system" target="_blank" rel="noopener"&gt;github.com/bmike2047/springboot-rpi-alarm-system&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Featured Projects on Pi4J</title><link>https://www.pi4j.com/featured-projects/</link><description>Recent content in Featured Projects on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://www.pi4j.com/featured-projects/index.xml" rel="self" type="application/rss+xml"/><item><title>Spring Boot Alarm System</title><link>https://www.pi4j.com/featured-projects/spring-boot-alarm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.pi4j.com/featured-projects/spring-boot-alarm/</guid><description>&lt;div class="notices tip" &gt;&lt;p&gt;GITHUB PROJECT: &lt;a href="https://github.com/bmike2047/springboot-rpi-alarm-system" target="_blank" rel="noopener"&gt;github.com/bmike2047/springboot-rpi-alarm-system&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;p&gt;This project by &lt;strong&gt;Mihai Buleandra&lt;/strong&gt;, uses Spring Boot to create a simple wired alarm system. Most examples on this website use Maven, but this project is a nice example of how to configure a Gradle project to use Pi4J. Mihai also uses Thymeleaf and Bootstrap for the web user interface, that has live updates showing the state of the alarm system.&lt;/p&gt;
@@ -13,20 +13,20 @@
  title="YouTube video"&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 &lt;p&gt;The alarm system makes use of Java&amp;rsquo;s multithreading capabilities, as it&amp;rsquo;s based on a non-blocking Finite State Machine. This means each state runs in its own thread allowing the web interface to not block while waiting for different operations. Multi-threaded reusable Java drivers for the Raspberry Pi are implemented using the Pi4J library for the keypad, Passive Infrared sensor (PIR), LED and Buzzer.
-Keypad driver includes debounce implementation also.&lt;/p&gt;</description></item><item><title>SmartCoop</title><link>https://pi4j.com/featured-projects/smartcoop/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/featured-projects/smartcoop/</guid><description>&lt;div class="notices tip" &gt;&lt;p&gt;PROJECT WEBSITE: &lt;a href="https://www.smartcoop.tech" target="_blank" rel="noopener"&gt;smartcoop.tech&lt;/a&gt;&lt;/p&gt;
+Keypad driver includes debounce implementation also.&lt;/p&gt;</description></item><item><title>SmartCoop</title><link>https://www.pi4j.com/featured-projects/smartcoop/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.pi4j.com/featured-projects/smartcoop/</guid><description>&lt;div class="notices tip" &gt;&lt;p&gt;PROJECT WEBSITE: &lt;a href="https://www.smartcoop.tech" target="_blank" rel="noopener"&gt;smartcoop.tech&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 
-&lt;p&gt;&lt;strong&gt;Dave Duncanson&lt;/strong&gt;, an ex Royal Australian Airforce (RAAF) electronics technician and embedded software developer, created the &lt;strong&gt;SmartCoop&lt;/strong&gt;. It&amp;rsquo;s a fully automated Chicken Coop Controller solution which uses a Raspberry Pi and a ESP32-S3 Processor located on a custom designed Surface Mount Designed (SMD) PCB. The goal of this project was to significantly reduce the amount of regular and routine tasks required to keep a small flock (~30) of chickens on a hobby farm located in NSW just outside of Canberra Australia.&lt;/p&gt;</description></item><item><title>Binary Clock</title><link>https://pi4j.com/featured-projects/binary-clock/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/featured-projects/binary-clock/</guid><description>&lt;div class="notices tip" &gt;&lt;p&gt;GITHUB PROJECT: &lt;a href="https://github.com/taartspi/pi4j-binary-clock" target="_blank" rel="noopener"&gt;github.com/taartspi/pi4j-binary-clock&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Dave Duncanson&lt;/strong&gt;, an ex Royal Australian Airforce (RAAF) electronics technician and embedded software developer, created the &lt;strong&gt;SmartCoop&lt;/strong&gt;. It&amp;rsquo;s a fully automated Chicken Coop Controller solution which uses a Raspberry Pi and a ESP32-S3 Processor located on a custom designed Surface Mount Designed (SMD) PCB. The goal of this project was to significantly reduce the amount of regular and routine tasks required to keep a small flock (~30) of chickens on a hobby farm located in NSW just outside of Canberra Australia.&lt;/p&gt;</description></item><item><title>Binary Clock</title><link>https://www.pi4j.com/featured-projects/binary-clock/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.pi4j.com/featured-projects/binary-clock/</guid><description>&lt;div class="notices tip" &gt;&lt;p&gt;GITHUB PROJECT: &lt;a href="https://github.com/taartspi/pi4j-binary-clock" target="_blank" rel="noopener"&gt;github.com/taartspi/pi4j-binary-clock&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;p&gt;This project by &lt;strong&gt;Tom Aarts&lt;/strong&gt; (published on May 15, 2024), is a binary clock created with LEDs on a breadboard. In the video below you see it incrementing to the next minute and hour. What you see is the Hour Minute and Second displayed in BCD (Binary Coded Decimal):&lt;/p&gt;
 &lt;video controls width="800"&gt;
- &lt;source src="https://pi4j.com/assets/featured-projects/binaryclock/binaryclock.mp4" /&gt;
+ &lt;source src="https://www.pi4j.com/assets/featured-projects/binaryclock/binaryclock.mp4" /&gt;
 &lt;/video&gt;
 &lt;p&gt;Design document describing the LED PCF8575 connections, and the Java implementation that drives the clock LEDs.
 Note: there are two PCF8575 IC used in this design. This IC is used as it can provide the current flow to
 directly control the LED. Alternative IC like the MCP23017 with less current capability would require a NPN
-transistor in the circuit.&lt;/p&gt;</description></item><item><title>Soft real time PLC</title><link>https://pi4j.com/featured-projects/soft-real-time-plc-written-in-strolch/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/featured-projects/soft-real-time-plc-written-in-strolch/</guid><description>&lt;p&gt;Strolch is a framework for developing Software which has a different approach compared to Spring and other similar types of
+transistor in the circuit.&lt;/p&gt;</description></item><item><title>Soft real time PLC</title><link>https://www.pi4j.com/featured-projects/soft-real-time-plc-written-in-strolch/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.pi4j.com/featured-projects/soft-real-time-plc-written-in-strolch/</guid><description>&lt;p&gt;Strolch is a framework for developing Software which has a different approach compared to Spring and other similar types of
 Java frameworks, as the model is defined as an abstract model, where you always have the same three types of objects:
 Resources, Orders and Activities. The fields are mapped as Parameter objects, of which the important primitives are available.&lt;/p&gt;
 &lt;p&gt;
@@ -35,26 +35,26 @@ Resources, Orders and Activities. The fields are mapped as Parameter objects, of
 &lt;div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery"&gt;
 	 
 
-&lt;link rel="stylesheet" href="https://pi4j.com/css/hugo-easy-gallery.css" /&gt;
+&lt;link rel="stylesheet" href="https://www.pi4j.com/css/hugo-easy-gallery.css" /&gt;
 &lt;div class="box fancy-figure caption-position-center caption-effect-fade" &gt;
  &lt;figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"&gt;
  &lt;div class="img" style="background-image: url('/assets/featured-projects/strolch/IMG_20200430_153450.jpg');"&gt;
- &lt;img itemprop="thumbnail" src="https://pi4j.com/assets/featured-projects/strolch/IMG_20200430_153450.jpg" alt="Conveyors for containers filled by a dispensing robot"/&gt;
+ &lt;img itemprop="thumbnail" src="https://www.pi4j.com/assets/featured-projects/strolch/IMG_20200430_153450.jpg" alt="Conveyors for containers filled by a dispensing robot"/&gt;
  &lt;/div&gt;
- &lt;a href="https://pi4j.com/assets/featured-projects/strolch/IMG_20200430_153450.jpg" itemprop="contentUrl"&gt;&lt;/a&gt;
+ &lt;a href="https://www.pi4j.com/assets/featured-projects/strolch/IMG_20200430_153450.jpg" itemprop="contentUrl"&gt;&lt;/a&gt;
  &lt;figcaption&gt;
- &lt;p&gt;Conveyors for containers filled by a dispensing robot&lt;/p&gt;</description></item><item><title>PiJukeBox</title><link>https://pi4j.com/featured-projects/pijukebox-by-daniel-martensson/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/featured-projects/pijukebox-by-daniel-martensson/</guid><description>&lt;p&gt;&lt;img src="https://pi4j.com/assets/featured-projects/pijukebox/Radio.jpg?width=250px" alt=""&gt;&lt;/p&gt;
+ &lt;p&gt;Conveyors for containers filled by a dispensing robot&lt;/p&gt;</description></item><item><title>PiJukeBox</title><link>https://www.pi4j.com/featured-projects/pijukebox-by-daniel-martensson/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.pi4j.com/featured-projects/pijukebox-by-daniel-martensson/</guid><description>&lt;p&gt;&lt;img src="https://www.pi4j.com/assets/featured-projects/pijukebox/Radio.jpg?width=250px" alt=""&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Daniel Mårtensson&lt;/strong&gt; used Java and Pi4J to turn an old Centrum U68 from 1940 into a MP3 player. The reason is because short wave,
 middle wave and long wave is today obsolete and not being used or sended today in Sweden. Also the electronics
 inside was a mess and very dangerous because it runs on both AC/DC current and all the wires began to lose their isolators.&lt;/p&gt;
 &lt;p&gt;Features: autoplaying next song, 60 songs included, volume tuning, song select, low power consumption, works with
-old Raspberry Pi&amp;rsquo;s, terminal based.&lt;/p&gt;</description></item><item><title>CocktailPi</title><link>https://pi4j.com/featured-projects/cocktail-maker-by-alex9849/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/featured-projects/cocktail-maker-by-alex9849/</guid><description>&lt;p&gt;The CocktailPi is a cocktail mixing machine by &lt;strong&gt;Alexander Liggesmeyer&lt;/strong&gt;. It can
+old Raspberry Pi&amp;rsquo;s, terminal based.&lt;/p&gt;</description></item><item><title>CocktailPi</title><link>https://www.pi4j.com/featured-projects/cocktail-maker-by-alex9849/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.pi4j.com/featured-projects/cocktail-maker-by-alex9849/</guid><description>&lt;p&gt;The CocktailPi is a cocktail mixing machine by &lt;strong&gt;Alexander Liggesmeyer&lt;/strong&gt;. It can
 control as many pumps as the RaspberryPi provides GPIO pins. For every pump that gets added to the system, the user has
 to provide the amount of time that that pump needs to pump one centiliter in milliseconds. The machine uses peristaltic
 pumps. So that number is perfectly accurate. The flow rate won&amp;rsquo;t vary over time. It uses a relay board for closing the
 electronic circuit for all pumps. This allows to power the pumps with more than 5V. The relay board is connected to the
 Pi which controls the board with Pi4J V1. The backend-application is written in Java (Spring boot). The frontend is
-written with VueJS.&lt;/p&gt;</description></item><item><title>Didier the street artist robot</title><link>https://pi4j.com/featured-projects/street-artist-robot/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/featured-projects/street-artist-robot/</guid><description>&lt;p&gt;Meet &lt;a href="https://duvam.net/didier/" target="_blank" rel="noopener"&gt;&amp;ldquo;Didier&amp;rdquo;&lt;/a&gt; the street artist robot, a project by &lt;a href="https://duvam.net/contact/" target="_blank" rel="noopener"&gt;&lt;strong&gt;Duvam&lt;/strong&gt;&lt;/a&gt;.
+written with VueJS.&lt;/p&gt;</description></item><item><title>Didier the street artist robot</title><link>https://www.pi4j.com/featured-projects/street-artist-robot/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.pi4j.com/featured-projects/street-artist-robot/</guid><description>&lt;p&gt;Meet &lt;a href="https://duvam.net/didier/" target="_blank" rel="noopener"&gt;&amp;ldquo;Didier&amp;rdquo;&lt;/a&gt; the street artist robot, a project by &lt;a href="https://duvam.net/contact/" target="_blank" rel="noopener"&gt;&lt;strong&gt;Duvam&lt;/strong&gt;&lt;/a&gt;.
 The sources are shared on &lt;a href="https://github.com/duvamduvam/didier-java" target="_blank" rel="noopener"&gt;github.com/duvamduvam/didier-java&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;
 
@@ -62,13 +62,13 @@ The sources are shared on &lt;a href="https://github.com/duvamduvam/didier-java"
 &lt;div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery"&gt;
 	 
 
-&lt;link rel="stylesheet" href="https://pi4j.com/css/hugo-easy-gallery.css" /&gt;
+&lt;link rel="stylesheet" href="https://www.pi4j.com/css/hugo-easy-gallery.css" /&gt;
 &lt;div class="box fancy-figure caption-position-center caption-effect-fade" &gt;
  &lt;figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"&gt;
  &lt;div class="img" style="background-image: url('/assets/featured-projects/didier/IMG_20210831_125559-small.jpg');"&gt;
- &lt;img itemprop="thumbnail" src="https://pi4j.com/assets/featured-projects/didier/IMG_20210831_125559-small.jpg" /&gt;
+ &lt;img itemprop="thumbnail" src="https://www.pi4j.com/assets/featured-projects/didier/IMG_20210831_125559-small.jpg" /&gt;
  &lt;/div&gt;
- &lt;a href="https://pi4j.com/assets/featured-projects/didier/IMG_20210831_125559-small.jpg" itemprop="contentUrl"&gt;&lt;/a&gt;
+ &lt;a href="https://www.pi4j.com/assets/featured-projects/didier/IMG_20210831_125559-small.jpg" itemprop="contentUrl"&gt;&lt;/a&gt;
  &lt;/figure&gt;
 &lt;/div&gt;
 
@@ -77,9 +77,9 @@ The sources are shared on &lt;a href="https://github.com/duvamduvam/didier-java"
 &lt;div class="box fancy-figure caption-position-center caption-effect-fade" &gt;
  &lt;figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"&gt;
  &lt;div class="img" style="background-image: url('/assets/featured-projects/didier/IMG_20210831_125615-small.jpg');"&gt;
- &lt;img itemprop="thumbnail" src="https://pi4j.com/assets/featured-projects/didier/IMG_20210831_125615-small.jpg" /&gt;
+ &lt;img itemprop="thumbnail" src="https://www.pi4j.com/assets/featured-projects/didier/IMG_20210831_125615-small.jpg" /&gt;
  &lt;/div&gt;
- &lt;a href="https://pi4j.com/assets/featured-projects/didier/IMG_20210831_125615-small.jpg" itemprop="contentUrl"&gt;&lt;/a&gt;
+ &lt;a href="https://www.pi4j.com/assets/featured-projects/didier/IMG_20210831_125615-small.jpg" itemprop="contentUrl"&gt;&lt;/a&gt;
  &lt;/figure&gt;
 &lt;/div&gt;
 
@@ -88,9 +88,9 @@ The sources are shared on &lt;a href="https://github.com/duvamduvam/didier-java"
 &lt;div class="box fancy-figure caption-position-center caption-effect-fade" &gt;
  &lt;figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"&gt;
  &lt;div class="img" style="background-image: url('/assets/featured-projects/didier/IMG_20210920_083431-small.jpg');"&gt;
- &lt;img itemprop="thumbnail" src="https://pi4j.com/assets/featured-projects/didier/IMG_20210920_083431-small.jpg" /&gt;
+ &lt;img itemprop="thumbnail" src="https://www.pi4j.com/assets/featured-projects/didier/IMG_20210920_083431-small.jpg" /&gt;
  &lt;/div&gt;
- &lt;a href="https://pi4j.com/assets/featured-projects/didier/IMG_20210920_083431-small.jpg" itemprop="contentUrl"&gt;&lt;/a&gt;
+ &lt;a href="https://www.pi4j.com/assets/featured-projects/didier/IMG_20210920_083431-small.jpg" itemprop="contentUrl"&gt;&lt;/a&gt;
  &lt;/figure&gt;
 &lt;/div&gt;
 
@@ -104,7 +104,7 @@ The sources are shared on &lt;a href="https://github.com/duvamduvam/didier-java"
  
 
 
-&lt;script src="https://pi4j.com/js/load-photoswipe.js"&gt;&lt;/script&gt;
+&lt;script src="https://www.pi4j.com/js/load-photoswipe.js"&gt;&lt;/script&gt;
 
 
 &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" /&gt;
@@ -156,7 +156,7 @@ The sources are shared on &lt;a href="https://github.com/duvamduvam/didier-java"
  &lt;/div&gt;
  &lt;/div&gt;
 &lt;/div&gt;
-&lt;/p&gt;</description></item><item><title>JMonkeyEngine with Joystick</title><link>https://pi4j.com/featured-projects/joystick-game/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/featured-projects/joystick-game/</guid><description>&lt;p&gt;&lt;a href="https://github.com/pavly-gerges" target="_blank" rel="noopener"&gt;&lt;strong&gt;Pavl G.&lt;/strong&gt;&lt;/a&gt; created a Java Gradle library to control a car in a &lt;a href="https://jmonkeyengine.org/" target="_blank" rel="noopener"&gt;JMonkeyEngine&lt;/a&gt; game with an arduino joystick module connected to a Raspberry Pi4 model B, using GPIO digital pins and SPI interfacing through MCP3008 ADC (Analog~Digital Converter).&lt;/p&gt;
+&lt;/p&gt;</description></item><item><title>JMonkeyEngine with Joystick</title><link>https://www.pi4j.com/featured-projects/joystick-game/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.pi4j.com/featured-projects/joystick-game/</guid><description>&lt;p&gt;&lt;a href="https://github.com/pavly-gerges" target="_blank" rel="noopener"&gt;&lt;strong&gt;Pavl G.&lt;/strong&gt;&lt;/a&gt; created a Java Gradle library to control a car in a &lt;a href="https://jmonkeyengine.org/" target="_blank" rel="noopener"&gt;JMonkeyEngine&lt;/a&gt; game with an arduino joystick module connected to a Raspberry Pi4 model B, using GPIO digital pins and SPI interfacing through MCP3008 ADC (Analog~Digital Converter).&lt;/p&gt;
 &lt;h2 id="requirements"&gt;Requirements&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Raspberry Pi with arm processor (pi3, pi4, piZero) with a working java8 (preferred).&lt;/li&gt;
@@ -167,7 +167,7 @@ The sources are shared on &lt;a href="https://github.com/duvamduvam/didier-java"
 &lt;li&gt;Some patience and time.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="difference-between-analog-and-digital-signals"&gt;Difference between Analog and Digital signals?&lt;/h2&gt;
-&lt;p&gt;&lt;img src="https://user-images.githubusercontent.com/60224159/157847529-3b46c3e9-8d39-428c-91a1-f3018cb9f9e3.png" alt="image"&gt;&lt;/p&gt;</description></item><item><title>Sensor drivers</title><link>https://pi4j.com/featured-projects/sensor-drivers/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/featured-projects/sensor-drivers/</guid><description>&lt;p&gt;In case you want to read the data from various I2C sensors connected to Raspberry Pi
+&lt;p&gt;&lt;img src="https://user-images.githubusercontent.com/60224159/157847529-3b46c3e9-8d39-428c-91a1-f3018cb9f9e3.png" alt="image"&gt;&lt;/p&gt;</description></item><item><title>Sensor drivers</title><link>https://www.pi4j.com/featured-projects/sensor-drivers/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.pi4j.com/featured-projects/sensor-drivers/</guid><description>&lt;p&gt;In case you want to read the data from various I2C sensors connected to Raspberry Pi
 the difficult part is usually writing a piece of code which talks to the I2C sensor.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://github.com/jveverka/rpi-projects/tree/pi4j-v2/rpi-drivers" target="_blank" rel="noopener"&gt;rpi-drivers&lt;/a&gt;
 is a Java library by &lt;strong&gt;Juraj Veverka&lt;/strong&gt; implementing simple APIs and communication code for some

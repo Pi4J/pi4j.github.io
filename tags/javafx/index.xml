@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>JavaFX on Pi4J</title><link>https://pi4j.com/tags/javafx/</link><description>Recent content in JavaFX on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://pi4j.com/tags/javafx/index.xml" rel="self" type="application/rss+xml"/><item><title>Install Java and Tools</title><link>https://pi4j.com/prepare/install-java/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/prepare/install-java/</guid><description>&lt;p&gt;Our Raspberry Pi has started for the first time and we are now ready to add some Java to it!&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>JavaFX on Pi4J</title><link>https://www.pi4j.com/tags/javafx/</link><description>Recent content in JavaFX on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://www.pi4j.com/tags/javafx/index.xml" rel="self" type="application/rss+xml"/><item><title>Install Java and Tools</title><link>https://www.pi4j.com/prepare/install-java/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.pi4j.com/prepare/install-java/</guid><description>&lt;p&gt;Our Raspberry Pi has started for the first time and we are now ready to add some Java to it!&lt;/p&gt;
 
 &lt;div class="notices tip" &gt;&lt;p&gt;As described on the previous page &amp;ldquo;The First Boot&amp;rdquo;, a script can be executed that will do all this at once: &lt;code&gt;curl -sL https://raw.githubusercontent.com/Pi4J/pi4j-os/main/script/prepare-for-java.sh | bash&lt;/code&gt;.&lt;/p&gt;
 &lt;/div&gt;
@@ -13,7 +13,7 @@
 &lt;li&gt;&lt;code&gt;java-common libxi6 libxrender1 libxtst6&lt;/code&gt;: Dependencies of the JDK Debian package.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="install-java"&gt;Install Java&lt;/h2&gt;
-&lt;p&gt;There are many ways you can install Java. The easiest way to make Java available for both normal use and as root user (&lt;code&gt;sudo&lt;/code&gt;), is the following approach which downloads one of the many distributions that are available.&lt;/p&gt;</description></item><item><title>User interface with JavaFX</title><link>https://pi4j.com/getting-started/user-interface-with-javafx/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/getting-started/user-interface-with-javafx/</guid><description>&lt;div class="notices tip" &gt;&lt;p&gt;GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-example-javafx" target="_blank" rel="noopener"&gt;https://github.com/Pi4J/pi4j-example-javafx&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;There are many ways you can install Java. The easiest way to make Java available for both normal use and as root user (&lt;code&gt;sudo&lt;/code&gt;), is the following approach which downloads one of the many distributions that are available.&lt;/p&gt;</description></item><item><title>User interface with JavaFX</title><link>https://www.pi4j.com/getting-started/user-interface-with-javafx/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.pi4j.com/getting-started/user-interface-with-javafx/</guid><description>&lt;div class="notices tip" &gt;&lt;p&gt;GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-example-javafx" target="_blank" rel="noopener"&gt;https://github.com/Pi4J/pi4j-example-javafx&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;p&gt;JavaFX is a framework to create user interfaces for desktop (Windows, Mac, Linux) and mobile phones. JavaFX is
@@ -23,15 +23,15 @@ in &lt;a href="https://github.com/openjdk/jfx" target="_blank" rel="noopener"&gt
 JavaFX promises the same for Graphical User Interface applications.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://gluonhq.com/" target="_blank" rel="noopener"&gt;Gluon&lt;/a&gt; is the main maintainer of the OpenJFX project and offers commercial support to
 companies who want to use JavaFX in critical applications. They also provide &lt;a href="https://gluonhq.com/products/" target="_blank" rel="noopener"&gt;tools to build and compile Java
-code to native applications for all platforms&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Game development with FXGL</title><link>https://pi4j.com/getting-started/fxgl/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/getting-started/fxgl/</guid><description>&lt;div class="notices tip" &gt;&lt;p&gt;GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-example-fxgl" target="_blank" rel="noopener"&gt;https://github.com/Pi4J/pi4j-example-fxgl&lt;/a&gt;&lt;/p&gt;
+code to native applications for all platforms&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Game development with FXGL</title><link>https://www.pi4j.com/getting-started/fxgl/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.pi4j.com/getting-started/fxgl/</guid><description>&lt;div class="notices tip" &gt;&lt;p&gt;GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-example-fxgl" target="_blank" rel="noopener"&gt;https://github.com/Pi4J/pi4j-example-fxgl&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 
-&lt;p&gt;As described on &lt;a href="https://pi4j.com/getting-started/user-interface-with-javafx/"&gt;the previous page&lt;/a&gt; you can use JavaFX to build
+&lt;p&gt;As described on &lt;a href="https://www.pi4j.com/getting-started/user-interface-with-javafx/"&gt;the previous page&lt;/a&gt; you can use JavaFX to build
 user interfaces which behave exactly the same on your PC and Raspberry Pi. Let&amp;rsquo;s go a step further and make
 a game with an &amp;ldquo;Arcade&amp;rdquo; controller.&lt;/p&gt;
 &lt;p&gt;For this project, we will be using &lt;a href="https://github.com/AlmasB/FXGL" target="_blank" rel="noopener"&gt;FXGL&lt;/a&gt;, an opensource library on top of
 JavaFX to build games.&lt;/p&gt;
-&lt;p&gt;The image of the crowpi project has every prerequisite installed to work with javaFX/FXGL&lt;/p&gt;</description></item><item><title>JavaFX GUI and MVC template</title><link>https://pi4j.com/getting-started/javafx-mvc-template/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/getting-started/javafx-mvc-template/</guid><description>&lt;div class="notices tip" &gt;&lt;p&gt;GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-template-javafx" target="_blank" rel="noopener"&gt;https://github.com/Pi4J/pi4j-template-javafx&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The image of the crowpi project has every prerequisite installed to work with javaFX/FXGL&lt;/p&gt;</description></item><item><title>JavaFX GUI and MVC template</title><link>https://www.pi4j.com/getting-started/javafx-mvc-template/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.pi4j.com/getting-started/javafx-mvc-template/</guid><description>&lt;div class="notices tip" &gt;&lt;p&gt;GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-template-javafx" target="_blank" rel="noopener"&gt;https://github.com/Pi4J/pi4j-template-javafx&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;p&gt;The &lt;a href="https://www.fhnw.ch" target="_blank" rel="noopener"&gt;FHNW University&lt;/a&gt; created a template project which is now part of the Pi4J example repositories.&lt;/p&gt;
@@ -44,7 +44,7 @@ JavaFX to build games.&lt;/p&gt;
 &lt;/ul&gt;
 &lt;h2 id="sources-and-info"&gt;Sources and Info&lt;/h2&gt;
 &lt;p&gt;Please check the README of the sources of the project for a full description of the setup process of the Raspberry Pi
-and to fully understand the example applications and the MVC-model. This page is only intended to give you a quick overview.&lt;/p&gt;</description></item><item><title>LED strip with a JavaFX UI</title><link>https://pi4j.com/examples/jbang/pixelblaze_output_expander_javafx/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/jbang/pixelblaze_output_expander_javafx/</guid><description>&lt;div class="notices tip" &gt;&lt;p&gt;GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-jbang/blob/main/PixelblazeOutputExpanderJavaFX.java" target="_blank" rel="noopener"&gt;github.com/Pi4J/pi4j-jbang &amp;gt; PixelblazeOutputExpanderJavaFX.java&lt;/a&gt;&lt;/p&gt;
+and to fully understand the example applications and the MVC-model. This page is only intended to give you a quick overview.&lt;/p&gt;</description></item><item><title>LED strip with a JavaFX UI</title><link>https://www.pi4j.com/examples/jbang/pixelblaze_output_expander_javafx/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.pi4j.com/examples/jbang/pixelblaze_output_expander_javafx/</guid><description>&lt;div class="notices tip" &gt;&lt;p&gt;GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-jbang/blob/main/PixelblazeOutputExpanderJavaFX.java" target="_blank" rel="noopener"&gt;github.com/Pi4J/pi4j-jbang &amp;gt; PixelblazeOutputExpanderJavaFX.java&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;p&gt;We already know how to control a LED strip, so let&amp;rsquo;s add a JavaFX User Interface to control the colors on each of the LEDs on the strip.&lt;/p&gt;
@@ -54,13 +54,13 @@ and to fully understand the example applications and the MVC-model. This page is
 &lt;div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery"&gt;
 	 
 
-&lt;link rel="stylesheet" href="https://pi4j.com/css/hugo-easy-gallery.css" /&gt;
+&lt;link rel="stylesheet" href="https://www.pi4j.com/css/hugo-easy-gallery.css" /&gt;
 &lt;div class="box fancy-figure caption-position-center caption-effect-fade" &gt;
  &lt;figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"&gt;
  &lt;div class="img" style="background-image: url('/assets/examples/jbang/pixelblaze/javafx-ui.png');"&gt;
- &lt;img itemprop="thumbnail" src="https://pi4j.com/assets/examples/jbang/pixelblaze/javafx-ui.png" alt="Demo of the JavaFX UI"/&gt;
+ &lt;img itemprop="thumbnail" src="https://www.pi4j.com/assets/examples/jbang/pixelblaze/javafx-ui.png" alt="Demo of the JavaFX UI"/&gt;
  &lt;/div&gt;
- &lt;a href="https://pi4j.com/assets/examples/jbang/pixelblaze/javafx-ui.png" itemprop="contentUrl"&gt;&lt;/a&gt;
+ &lt;a href="https://www.pi4j.com/assets/examples/jbang/pixelblaze/javafx-ui.png" itemprop="contentUrl"&gt;&lt;/a&gt;
  &lt;figcaption&gt;
  &lt;p&gt;Demo of the JavaFX UI&lt;/p&gt;
  &lt;/figcaption&gt;
@@ -77,7 +77,7 @@ and to fully understand the example applications and the MVC-model. This page is
  
 
 
-&lt;script src="https://pi4j.com/js/load-photoswipe.js"&gt;&lt;/script&gt;
+&lt;script src="https://www.pi4j.com/js/load-photoswipe.js"&gt;&lt;/script&gt;
 
 
 &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" /&gt;

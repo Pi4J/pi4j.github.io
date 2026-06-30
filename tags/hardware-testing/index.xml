@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hardware Testing on Pi4J</title><link>https://pi4j.com/tags/hardware-testing/</link><description>Recent content in Hardware Testing on Pi4J</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 25 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://pi4j.com/tags/hardware-testing/index.xml" rel="self" type="application/rss+xml"/><item><title>Pi4J Smoke Test</title><link>https://pi4j.com/hardware-testing/hardware-testing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/hardware-testing/hardware-testing/</guid><description>&lt;div class="notices info"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hardware Testing on Pi4J</title><link>https://www.pi4j.com/tags/hardware-testing/</link><description>Recent content in Hardware Testing on Pi4J</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 25 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://www.pi4j.com/tags/hardware-testing/index.xml" rel="self" type="application/rss+xml"/><item><title>Pi4J Smoke Test</title><link>https://www.pi4j.com/hardware-testing/hardware-testing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.pi4j.com/hardware-testing/hardware-testing/</guid><description>&lt;div class="notices info"&gt;
  &lt;p&gt;
  The content on this page was generated based on the content from &lt;a href="https://github.com/Pi4J/pi4j/blob/develop/pi4j-test/README.md" target="_blank"&gt;https://github.com/Pi4J/pi4j/blob/develop/pi4j-test/README.md&lt;/a&gt;.
  &lt;/p&gt;
  &lt;/div&gt;&lt;p&gt;Testing the full Pi4J library is hard because it requires real hardware devices to validate all interactions. This test project is intended to provide a simple way to verify that the Pi4J library is working correctly on a Raspberry Pi with a few simple devices.&lt;/p&gt;
 &lt;h2 id="main-test"&gt;Main Test&lt;/h2&gt;
-&lt;p&gt;The &lt;code&gt;src/main/java/com/pi4j/test/Main.java&lt;/code&gt; class verifies that the providers can be loaded and used. The use is very basic, but just enough to know it worked.&lt;/p&gt;</description></item><item><title>Smoke Test PCB</title><link>https://pi4j.com/hardware-testing/smoke-test-pcb/</link><pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate><guid>https://pi4j.com/hardware-testing/smoke-test-pcb/</guid><description>&lt;p&gt;Running the &lt;a href="https://www.pi4j.com/hardware-testing/hardware-testing/" target="_blank" rel="noopener"&gt;Pi4J Smoke Test&lt;/a&gt; on a breadboard works, but it is fragile: every time the setup is rebuilt, a wire ends up in the wrong column, a jumper is not fully seated, or a sensor falls over. To make the smoke test fast and repeatable, and easy to hand to a contributor, we designed a dedicated PCB that turns the whole wiring table into a single board.&lt;/p&gt;
-&lt;p&gt;The full story of how the board was designed is described in &lt;a href="https://www.pi4j.com/blog/2026/20260625-pi4j-smoketest-pcb/" target="_blank" rel="noopener"&gt;this blog post&lt;/a&gt; and the accompanying &lt;a href="https://www.pi4j.com/video/20260625-smoketest-pcb/" target="_blank" rel="noopener"&gt;video&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Hardware Testing</title><link>https://pi4j.com/hardware-testing/</link><pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate><guid>https://pi4j.com/hardware-testing/</guid><description>&lt;p&gt;Testing hardware interactions can be tricky, especially when you want to automate tests or run them in environments where the actual hardware is not available. In this section, we will explore strategies and tools for testing Pi4J applications that interact with hardware components.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;src/main/java/com/pi4j/test/Main.java&lt;/code&gt; class verifies that the providers can be loaded and used. The use is very basic, but just enough to know it worked.&lt;/p&gt;</description></item><item><title>Smoke Test PCB</title><link>https://www.pi4j.com/hardware-testing/smoke-test-pcb/</link><pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate><guid>https://www.pi4j.com/hardware-testing/smoke-test-pcb/</guid><description>&lt;p&gt;Running the &lt;a href="https://www.pi4j.com/hardware-testing/hardware-testing/" target="_blank" rel="noopener"&gt;Pi4J Smoke Test&lt;/a&gt; on a breadboard works, but it is fragile: every time the setup is rebuilt, a wire ends up in the wrong column, a jumper is not fully seated, or a sensor falls over. To make the smoke test fast and repeatable, and easy to hand to a contributor, we designed a dedicated PCB that turns the whole wiring table into a single board.&lt;/p&gt;
+&lt;p&gt;The full story of how the board was designed is described in &lt;a href="https://www.pi4j.com/blog/2026/20260625-pi4j-smoketest-pcb/" target="_blank" rel="noopener"&gt;this blog post&lt;/a&gt; and the accompanying &lt;a href="https://www.pi4j.com/video/20260625-smoketest-pcb/" target="_blank" rel="noopener"&gt;video&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Hardware Testing</title><link>https://www.pi4j.com/hardware-testing/</link><pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate><guid>https://www.pi4j.com/hardware-testing/</guid><description>&lt;p&gt;Testing hardware interactions can be tricky, especially when you want to automate tests or run them in environments where the actual hardware is not available. In this section, we will explore strategies and tools for testing Pi4J applications that interact with hardware components.&lt;/p&gt;
 
 
 
@@ -29,7 +29,7 @@
 			
 				
 &lt;li&gt;
-&lt;a href="https://pi4j.com/hardware-testing/hardware-testing/" &gt;Pi4J Smoke Test&lt;/a&gt;
+&lt;a href="https://www.pi4j.com/hardware-testing/hardware-testing/" &gt;Pi4J Smoke Test&lt;/a&gt;
 &lt;/li&gt;
 				
 
@@ -63,7 +63,7 @@
 			
 				
 &lt;li&gt;
-&lt;a href="https://pi4j.com/hardware-testing/smoke-test-pcb/" &gt;Smoke Test PCB&lt;/a&gt;
+&lt;a href="https://www.pi4j.com/hardware-testing/smoke-test-pcb/" &gt;Smoke Test PCB&lt;/a&gt;
 &lt;/li&gt;
 				
 
@@ -97,7 +97,7 @@
 			
 				
 &lt;li&gt;
-&lt;a href="https://pi4j.com/hardware-testing/ikalogic-analyzer/" &gt;Ikalogic Analyser&lt;/a&gt;
+&lt;a href="https://www.pi4j.com/hardware-testing/ikalogic-analyzer/" &gt;Ikalogic Analyser&lt;/a&gt;
 &lt;/li&gt;
 				
 
@@ -141,7 +141,7 @@
  src="https://www.youtube.com/embed/uy3oWn9iIWs?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0"
  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;"
  title="YouTube video"&gt;&lt;/iframe&gt;
-&lt;/div&gt;</description></item><item><title>2026 Designing a Smoke Test PCB for Pi4J</title><link>https://pi4j.com/video/20260625-smoketest-pcb/</link><pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate><guid>https://pi4j.com/video/20260625-smoketest-pcb/</guid><description>&lt;h2 id="from-breadboard-chaos-to-a-real-pcb-designing-the-pi4j-smoke-test-board"&gt;From breadboard chaos to a real PCB: designing the Pi4J smoke test board&lt;/h2&gt;
+&lt;/div&gt;</description></item><item><title>2026 Designing a Smoke Test PCB for Pi4J</title><link>https://www.pi4j.com/video/20260625-smoketest-pcb/</link><pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate><guid>https://www.pi4j.com/video/20260625-smoketest-pcb/</guid><description>&lt;h2 id="from-breadboard-chaos-to-a-real-pcb-designing-the-pi4j-smoke-test-board"&gt;From breadboard chaos to a real PCB: designing the Pi4J smoke test board&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;20260625 - Video with Frank Delporte&lt;/strong&gt;&lt;/p&gt;
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
  &lt;iframe
@@ -153,7 +153,7 @@
  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;"
  title="YouTube video"&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-&lt;p&gt;Testing a Java I/O library properly means testing it on real hardware. For Pi4J that means running the smoke test: a setup with two BMP/BME280 sensors and a tangle of GPIO-to-GPIO jumper wires that has to be rebuilt by hand every session. This video tells the story of board number &lt;code&gt;0001&lt;/code&gt;: turning that breadboard setup into a proper PCB.&lt;/p&gt;</description></item><item><title>Smoke test PCB for Pi4J</title><link>https://pi4j.com/blog/2026/20260625-pi4j-smoketest-pcb/</link><pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate><guid>https://pi4j.com/blog/2026/20260625-pi4j-smoketest-pcb/</guid><description>&lt;p&gt;2026-06-25 by Frank Delporte&lt;/p&gt;
+&lt;p&gt;Testing a Java I/O library properly means testing it on real hardware. For Pi4J that means running the smoke test: a setup with two BMP/BME280 sensors and a tangle of GPIO-to-GPIO jumper wires that has to be rebuilt by hand every session. This video tells the story of board number &lt;code&gt;0001&lt;/code&gt;: turning that breadboard setup into a proper PCB.&lt;/p&gt;</description></item><item><title>Smoke test PCB for Pi4J</title><link>https://www.pi4j.com/blog/2026/20260625-pi4j-smoketest-pcb/</link><pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate><guid>https://www.pi4j.com/blog/2026/20260625-pi4j-smoketest-pcb/</guid><description>&lt;p&gt;2026-06-25 by Frank Delporte&lt;/p&gt;
 &lt;h2 id="from-breadboard-chaos-to-a-real-pcb-designing-the-pi4j-smoke-test-board"&gt;From breadboard chaos to a real PCB: designing the Pi4J smoke test board&lt;/h2&gt;
-&lt;p&gt;Testing a Java I/O library properly means testing it on real hardware: no mocks, no stubs, just actual pins doing actual things. For Pi4J that means running the &lt;a href="https://www.pi4j.com/hardware-testing/hardware-testing/" target="_blank" rel="noopener"&gt;smoke test&lt;/a&gt;, a setup with two BMP/BME280 sensors and a tangle of GPIO-to-GPIO jumper wires that has to be rebuilt by hand every session. That last part is what finally pushed us to design a proper PCB.&lt;/p&gt;</description></item><item><title>Ikalogic Analyser</title><link>https://pi4j.com/hardware-testing/ikalogic-analyzer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/hardware-testing/ikalogic-analyzer/</guid><description>&lt;p&gt;When your Pi4J code passes the smoke tests but something still feels off, or when you&amp;rsquo;re implementing support for a new sensor and you&amp;rsquo;re not sure whether you&amp;rsquo;re sending the right commands, a logic analyser is the tool that lets you see exactly what is happening on the wire.&lt;/p&gt;
+&lt;p&gt;Testing a Java I/O library properly means testing it on real hardware: no mocks, no stubs, just actual pins doing actual things. For Pi4J that means running the &lt;a href="https://www.pi4j.com/hardware-testing/hardware-testing/" target="_blank" rel="noopener"&gt;smoke test&lt;/a&gt;, a setup with two BMP/BME280 sensors and a tangle of GPIO-to-GPIO jumper wires that has to be rebuilt by hand every session. That last part is what finally pushed us to design a proper PCB.&lt;/p&gt;</description></item><item><title>Ikalogic Analyser</title><link>https://www.pi4j.com/hardware-testing/ikalogic-analyzer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.pi4j.com/hardware-testing/ikalogic-analyzer/</guid><description>&lt;p&gt;When your Pi4J code passes the smoke tests but something still feels off, or when you&amp;rsquo;re implementing support for a new sensor and you&amp;rsquo;re not sure whether you&amp;rsquo;re sending the right commands, a logic analyser is the tool that lets you see exactly what is happening on the wire.&lt;/p&gt;
 &lt;p&gt;This page describes how to use the &lt;a href="https://ikalogic.com/logic-analyzers/se254/intro/" target="_blank" rel="noopener"&gt;Ikalogic SE254&lt;/a&gt; alongside the Pi4J Smoke Test setup to visualize and validate your GPIO signals.&lt;/p&gt;</description></item></channel></rss>

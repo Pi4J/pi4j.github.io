@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pi4J Kotlin DSL on Pi4J</title><link>https://pi4j.com/kotlin/kotlin-dsl/</link><description>Recent content in Pi4J Kotlin DSL on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://pi4j.com/kotlin/kotlin-dsl/index.xml" rel="self" type="application/rss+xml"/><item><title>Minimal Kotlin Pi4J example</title><link>https://pi4j.com/kotlin/kotlin-dsl/minimal-kotlin-example/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/kotlin/kotlin-dsl/minimal-kotlin-example/</guid><description>&lt;div class="notices tip" &gt;&lt;p&gt;Full Example on GitHub: &lt;a href="https://github.com/Pi4J/pi4j-kotlin/blob/master/example/src/main/kotlin/MinimalExample.kt" target="_blank" rel="noopener"&gt;https://github.com/Pi4J/pi4j-kotlin/blob/master/example/src/main/kotlin/MinimalExample.kt&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pi4J Kotlin DSL on Pi4J</title><link>https://www.pi4j.com/kotlin/kotlin-dsl/</link><description>Recent content in Pi4J Kotlin DSL on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://www.pi4j.com/kotlin/kotlin-dsl/index.xml" rel="self" type="application/rss+xml"/><item><title>Minimal Kotlin Pi4J example</title><link>https://www.pi4j.com/kotlin/kotlin-dsl/minimal-kotlin-example/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.pi4j.com/kotlin/kotlin-dsl/minimal-kotlin-example/</guid><description>&lt;div class="notices tip" &gt;&lt;p&gt;Full Example on GitHub: &lt;a href="https://github.com/Pi4J/pi4j-kotlin/blob/master/example/src/main/kotlin/MinimalExample.kt" target="_blank" rel="noopener"&gt;https://github.com/Pi4J/pi4j-kotlin/blob/master/example/src/main/kotlin/MinimalExample.kt&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 
 
@@ -6,9 +6,9 @@
 &lt;/div&gt;
 
 &lt;p&gt;This is a minimal working example, make sure to check it out from the link above for the full introduction and comments.&lt;/p&gt;
-&lt;p&gt;It does exactly the same functionality of the Minimal Example &lt;a href="https://pi4j.com/getting-started/minimal-example-application/"&gt;using the Java API&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;It does exactly the same functionality of the Minimal Example &lt;a href="https://www.pi4j.com/getting-started/minimal-example-application/"&gt;using the Java API&lt;/a&gt;:&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;The application will toggle an LED on/off and each time you press the button, the toggling speed increases. When you have pushed the button 5 times, the application stops.&lt;/p&gt;</description></item><item><title>Kotlin API &amp; DSL Documentation</title><link>https://pi4j.com/kotlin/kotlin-dsl/kotlin-api-docs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/kotlin/kotlin-dsl/kotlin-api-docs/</guid><description>&lt;div class="notices info" &gt;&lt;p&gt;Here you can find the provided APIs and the dead-simple DSLs of the Kotlin package.&lt;/p&gt;
+&lt;p&gt;The application will toggle an LED on/off and each time you press the button, the toggling speed increases. When you have pushed the button 5 times, the application stops.&lt;/p&gt;</description></item><item><title>Kotlin API &amp; DSL Documentation</title><link>https://www.pi4j.com/kotlin/kotlin-dsl/kotlin-api-docs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.pi4j.com/kotlin/kotlin-dsl/kotlin-api-docs/</guid><description>&lt;div class="notices info" &gt;&lt;p&gt;Here you can find the provided APIs and the dead-simple DSLs of the Kotlin package.&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;h2 id="components"&gt;Components&lt;/h2&gt;
@@ -21,7 +21,7 @@ for your lambda:&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; describe()
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You don&amp;rsquo;t need to call &lt;code&gt;shutdown()&lt;/code&gt;, it&amp;rsquo;s called automatically at the end of the block.&lt;br&gt;
-You can think of the &lt;code&gt;pi4j&lt;/code&gt; block as your entire routine/ program.&lt;/p&gt;</description></item><item><title>Coroutines Support</title><link>https://pi4j.com/kotlin/kotlin-dsl/coroutines/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/kotlin/kotlin-dsl/coroutines/</guid><description>&lt;h2 id="pi4jasync"&gt;pi4jAsync&lt;/h2&gt;
+You can think of the &lt;code&gt;pi4j&lt;/code&gt; block as your entire routine/ program.&lt;/p&gt;</description></item><item><title>Coroutines Support</title><link>https://www.pi4j.com/kotlin/kotlin-dsl/coroutines/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.pi4j.com/kotlin/kotlin-dsl/coroutines/</guid><description>&lt;h2 id="pi4jasync"&gt;pi4jAsync&lt;/h2&gt;
 &lt;p&gt;Same with the &lt;code&gt;pi4j&lt;/code&gt; DSL, you can create a pi4j block to execute within a &lt;code&gt;CoroutineScope&lt;/code&gt; using the &lt;code&gt;pi4jAsync&lt;/code&gt; DSL.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-kotlin" data-lang="kotlin"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;pi4jAsync {
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; delay(&lt;span style="color:#ae81ff"&gt;100&lt;/span&gt;) &lt;span style="color:#75715e"&gt;// suspended call
@@ -36,7 +36,7 @@ You can think of the &lt;code&gt;pi4j&lt;/code&gt; block as your entire routine/
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="minimal-example-with-coroutines"&gt;Minimal Example with Coroutines&lt;/h2&gt;
 
-&lt;div class="notices info" &gt;&lt;p&gt;This is a the same as the &lt;a href="https://pi4j.com/kotlin/minimal-kotlin-example/"&gt;minimal example&lt;/a&gt;, but leveraging Kotlin&amp;rsquo;s Coroutines&lt;/p&gt;</description></item><item><title>I²C Kotlin DSL</title><link>https://pi4j.com/kotlin/kotlin-dsl/i2c/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/kotlin/kotlin-dsl/i2c/</guid><description>&lt;div class="notices info" &gt;&lt;p&gt;Feel free to checkout the &lt;a href="https://pi4j.com/documentation/io-examples/i2c/"&gt;Pi4J docs on I²C&lt;/a&gt;&lt;/p&gt;
+&lt;div class="notices info" &gt;&lt;p&gt;This is a the same as the &lt;a href="https://www.pi4j.com/kotlin/minimal-kotlin-example/"&gt;minimal example&lt;/a&gt;, but leveraging Kotlin&amp;rsquo;s Coroutines&lt;/p&gt;</description></item><item><title>I²C Kotlin DSL</title><link>https://www.pi4j.com/kotlin/kotlin-dsl/i2c/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.pi4j.com/kotlin/kotlin-dsl/i2c/</guid><description>&lt;div class="notices info" &gt;&lt;p&gt;Feel free to checkout the &lt;a href="https://www.pi4j.com/documentation/io-examples/i2c/"&gt;Pi4J docs on I²C&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;h2 id="installation"&gt;Installation&lt;/h2&gt;
@@ -61,7 +61,7 @@ You can think of the &lt;code&gt;pi4j&lt;/code&gt; block as your entire routine/
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="minimal-ic-example"&gt;Minimal I²C Example&lt;/h2&gt;
 
-&lt;div class="notices info" &gt;&lt;p&gt;This is the Kotlin DSL version of the same &lt;a href="https://pi4j.com/documentation/io-examples/i2c#code-example"&gt;I²C example here&lt;/a&gt;, but leveraging the Kotlin DSL&lt;/p&gt;</description></item><item><title>Serial Kotlin DSL</title><link>https://pi4j.com/kotlin/kotlin-dsl/serial/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/kotlin/kotlin-dsl/serial/</guid><description>&lt;div class="notices tip" &gt;&lt;p&gt;Feel free to checkout the &lt;a href="https://pi4j.com/documentation/io-examples/serial/"&gt;Pi4J docs on Serial&lt;/a&gt;&lt;/p&gt;
+&lt;div class="notices info" &gt;&lt;p&gt;This is the Kotlin DSL version of the same &lt;a href="https://www.pi4j.com/documentation/io-examples/i2c#code-example"&gt;I²C example here&lt;/a&gt;, but leveraging the Kotlin DSL&lt;/p&gt;</description></item><item><title>Serial Kotlin DSL</title><link>https://www.pi4j.com/kotlin/kotlin-dsl/serial/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.pi4j.com/kotlin/kotlin-dsl/serial/</guid><description>&lt;div class="notices tip" &gt;&lt;p&gt;Feel free to checkout the &lt;a href="https://www.pi4j.com/documentation/io-examples/serial/"&gt;Pi4J docs on Serial&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;h2 id="installation"&gt;Installation&lt;/h2&gt;
@@ -82,7 +82,7 @@ You can think of the &lt;code&gt;pi4j&lt;/code&gt; block as your entire routine/
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="minimal-serial-example"&gt;Minimal Serial Example&lt;/h2&gt;
 
-&lt;div class="notices info" &gt;&lt;p&gt;This is the Kotlin DSL version of the same &lt;a href="https://pi4j.com/documentation/io-examples/serial#code-example"&gt;Serial example here&lt;/a&gt;, but leveraging the Kotlin DSL&lt;/p&gt;
+&lt;div class="notices info" &gt;&lt;p&gt;This is the Kotlin DSL version of the same &lt;a href="https://www.pi4j.com/documentation/io-examples/serial#code-example"&gt;Serial example here&lt;/a&gt;, but leveraging the Kotlin DSL&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-kotlin" data-lang="kotlin"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;

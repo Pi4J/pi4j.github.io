@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SDKMAN on Pi4J</title><link>https://pi4j.com/tags/sdkman/</link><description>Recent content in SDKMAN on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://pi4j.com/tags/sdkman/index.xml" rel="self" type="application/rss+xml"/><item><title>Install Java and Tools</title><link>https://pi4j.com/prepare/install-java/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/prepare/install-java/</guid><description>&lt;p&gt;Our Raspberry Pi has started for the first time and we are now ready to add some Java to it!&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SDKMAN on Pi4J</title><link>https://www.pi4j.com/tags/sdkman/</link><description>Recent content in SDKMAN on Pi4J</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://www.pi4j.com/tags/sdkman/index.xml" rel="self" type="application/rss+xml"/><item><title>Install Java and Tools</title><link>https://www.pi4j.com/prepare/install-java/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.pi4j.com/prepare/install-java/</guid><description>&lt;p&gt;Our Raspberry Pi has started for the first time and we are now ready to add some Java to it!&lt;/p&gt;
 
 &lt;div class="notices tip" &gt;&lt;p&gt;As described on the previous page &amp;ldquo;The First Boot&amp;rdquo;, a script can be executed that will do all this at once: &lt;code&gt;curl -sL https://raw.githubusercontent.com/Pi4J/pi4j-os/main/script/prepare-for-java.sh | bash&lt;/code&gt;.&lt;/p&gt;
 &lt;/div&gt;
@@ -13,7 +13,7 @@
 &lt;li&gt;&lt;code&gt;java-common libxi6 libxrender1 libxtst6&lt;/code&gt;: Dependencies of the JDK Debian package.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="install-java"&gt;Install Java&lt;/h2&gt;
-&lt;p&gt;There are many ways you can install Java. The easiest way to make Java available for both normal use and as root user (&lt;code&gt;sudo&lt;/code&gt;), is the following approach which downloads one of the many distributions that are available.&lt;/p&gt;</description></item><item><title>LED strip with a JavaFX UI</title><link>https://pi4j.com/examples/jbang/pixelblaze_output_expander_javafx/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pi4j.com/examples/jbang/pixelblaze_output_expander_javafx/</guid><description>&lt;div class="notices tip" &gt;&lt;p&gt;GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-jbang/blob/main/PixelblazeOutputExpanderJavaFX.java" target="_blank" rel="noopener"&gt;github.com/Pi4J/pi4j-jbang &amp;gt; PixelblazeOutputExpanderJavaFX.java&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;There are many ways you can install Java. The easiest way to make Java available for both normal use and as root user (&lt;code&gt;sudo&lt;/code&gt;), is the following approach which downloads one of the many distributions that are available.&lt;/p&gt;</description></item><item><title>LED strip with a JavaFX UI</title><link>https://www.pi4j.com/examples/jbang/pixelblaze_output_expander_javafx/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.pi4j.com/examples/jbang/pixelblaze_output_expander_javafx/</guid><description>&lt;div class="notices tip" &gt;&lt;p&gt;GITHUB PROJECT: &lt;a href="https://github.com/Pi4J/pi4j-jbang/blob/main/PixelblazeOutputExpanderJavaFX.java" target="_blank" rel="noopener"&gt;github.com/Pi4J/pi4j-jbang &amp;gt; PixelblazeOutputExpanderJavaFX.java&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;p&gt;We already know how to control a LED strip, so let&amp;rsquo;s add a JavaFX User Interface to control the colors on each of the LEDs on the strip.&lt;/p&gt;
@@ -23,13 +23,13 @@
 &lt;div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery"&gt;
 	 
 
-&lt;link rel="stylesheet" href="https://pi4j.com/css/hugo-easy-gallery.css" /&gt;
+&lt;link rel="stylesheet" href="https://www.pi4j.com/css/hugo-easy-gallery.css" /&gt;
 &lt;div class="box fancy-figure caption-position-center caption-effect-fade" &gt;
  &lt;figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"&gt;
  &lt;div class="img" style="background-image: url('/assets/examples/jbang/pixelblaze/javafx-ui.png');"&gt;
- &lt;img itemprop="thumbnail" src="https://pi4j.com/assets/examples/jbang/pixelblaze/javafx-ui.png" alt="Demo of the JavaFX UI"/&gt;
+ &lt;img itemprop="thumbnail" src="https://www.pi4j.com/assets/examples/jbang/pixelblaze/javafx-ui.png" alt="Demo of the JavaFX UI"/&gt;
  &lt;/div&gt;
- &lt;a href="https://pi4j.com/assets/examples/jbang/pixelblaze/javafx-ui.png" itemprop="contentUrl"&gt;&lt;/a&gt;
+ &lt;a href="https://www.pi4j.com/assets/examples/jbang/pixelblaze/javafx-ui.png" itemprop="contentUrl"&gt;&lt;/a&gt;
  &lt;figcaption&gt;
  &lt;p&gt;Demo of the JavaFX UI&lt;/p&gt;
  &lt;/figcaption&gt;
@@ -46,7 +46,7 @@
  
 
 
-&lt;script src="https://pi4j.com/js/load-photoswipe.js"&gt;&lt;/script&gt;
+&lt;script src="https://www.pi4j.com/js/load-photoswipe.js"&gt;&lt;/script&gt;
 
 
 &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" /&gt;
