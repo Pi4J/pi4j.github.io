@@ -1,0 +1,101 @@
+{{/*
+  Site-level override of the theme's custom-header.html.
+  Keeps the original DocSearch styling and adds SEO / social metadata:
+  canonical, robots, Open Graph, Twitter cards and JSON-LD structured data.
+*/}}
+
+{{/* ---------- Shared values ---------- */}}
+{{- $title := printf "%s %s %s" .Title (default "-" .Site.Params.titleSeparator) .Site.Title -}}
+{{- if .IsHome }}{{ $title = printf "%s %s %s" .Site.Title (default "-" .Site.Params.titleSeparator) .Title }}{{ end -}}
+{{- $desc := .Site.Params.description -}}
+{{- if .Description }}{{ $desc = .Description }}{{ else if .IsHome }}{{ $desc = .Site.Params.description }}{{ else if .Summary }}{{ $desc = (.Summary | plainify | truncate 200) }}{{ end -}}
+{{- $desc = $desc | replaceRE "\\s+" " " | strings.TrimSpace -}}
+{{- $ogImage := .Site.Params.ogImage -}}
+{{- with .Params.images }}{{ $ogImage = index . 0 }}{{ else }}{{ with .Params.image }}{{ $ogImage = . }}{{ end }}{{ end -}}
+{{- $ogImageURL := $ogImage | absURL -}}
+{{- $ogType := "website" -}}
+{{- if .IsPage }}{{ $ogType = "article" }}{{ end -}}
+
+{{/* ---------- Canonical & robots ---------- */}}
+{{- if not (isset .Params "canonical") }}
+<link rel="canonical" href="{{ .Permalink }}" />
+{{- end }}
+<meta name="robots" content="index, follow, max-image-preview:large" />
+
+{{/* ---------- Open Graph ---------- */}}
+<meta property="og:title" content="{{ $title }}" />
+<meta property="og:description" content="{{ $desc }}" />
+<meta property="og:type" content="{{ $ogType }}" />
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:site_name" content="{{ .Site.Title }}" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:image" content="{{ $ogImageURL }}" />
+<meta property="og:image:alt" content="{{ .Site.Title }} - Java I/O library for Raspberry Pi" />
+{{- if eq $ogImage .Site.Params.ogImage }}
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+{{- end }}
+{{- if .IsPage }}
+{{- with .Date }}<meta property="article:published_time" content="{{ .Format "2006-01-02T15:04:05Z07:00" }}" />{{ end }}
+{{- with .Lastmod }}<meta property="article:modified_time" content="{{ .Format "2006-01-02T15:04:05Z07:00" }}" />{{ end }}
+{{- end }}
+
+{{/* ---------- Twitter card ---------- */}}
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{{ $title }}" />
+<meta name="twitter:description" content="{{ $desc }}" />
+<meta name="twitter:image" content="{{ $ogImageURL }}" />
+
+{{/* ---------- JSON-LD structured data ---------- */}}
+{{- $links := slice }}
+{{- with .Site.Params.github }}{{ $links = $links | append . }}{{ end }}
+{{- with .Site.Params.linkedin }}{{ $links = $links | append . }}{{ end }}
+{{- with .Site.Params.mastodon }}{{ $links = $links | append . }}{{ end }}
+{{- $org := dict
+  "@context" "https://schema.org"
+  "@type" "Organization"
+  "name" "Pi4J"
+  "url" .Site.BaseURL
+  "logo" ("assets/pi4j-logo.png" | absURL)
+  "description" .Site.Params.description
+  "sameAs" $links }}
+<script type="application/ld+json">{{ $org | jsonify (dict "indent" "  ") | safeJS }}</script>
+{{- $website := dict
+  "@context" "https://schema.org"
+  "@type" "WebSite"
+  "name" .Site.Title
+  "url" .Site.BaseURL
+  "description" .Site.Params.description
+  "publisher" (dict "@type" "Organization" "name" "Pi4J") }}
+<script type="application/ld+json">{{ $website | jsonify (dict "indent" "  ") | safeJS }}</script>
+{{- if .IsHome }}
+{{- $app := dict
+  "@context" "https://schema.org"
+  "@type" "SoftwareApplication"
+  "name" "Pi4J"
+  "url" .Site.BaseURL
+  "description" .Site.Params.description
+  "applicationCategory" "DeveloperApplication"
+  "operatingSystem" "Raspberry Pi OS, Linux"
+  "programmingLanguage" "Java"
+  "image" $ogImageURL
+  "license" "https://github.com/Pi4J/pi4j/blob/master/LICENSE"
+  "offers" (dict "@type" "Offer" "price" "0" "priceCurrency" "USD") }}
+{{- with .Site.Params.latestVersion }}{{ $app = merge $app (dict "softwareVersion" .) }}{{ end }}
+<script type="application/ld+json">{{ $app | jsonify (dict "indent" "  ") | safeJS }}</script>
+{{- end }}
+
+{{/* ---------- Original DocSearch styling (preserved from theme) ---------- */}}
+<style>
+    .DocSearch {
+        width: 90%;
+    }
+
+    #docsearch-input {
+        border: none;
+        padding-top: 15px;
+        margin: 0 0 0 10px;
+        padding: 0;
+        background: none;
+    }
+</style>

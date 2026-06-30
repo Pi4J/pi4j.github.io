@@ -1,4 +1,4 @@
-baseURL = "https://pi4j.com/"
+baseURL = "https://www.pi4j.com/"
 languageCode = "en-us"
 title = "Pi4J"
 theme = "hugo-theme-learn"
@@ -58,6 +58,12 @@ home = ["HTML", "RSS", "JSON"]
   latestVersionNote = "Built on Java 25, with the new Foreign Function & Memory (FFM) plugin replacing native JNI calls."
   # Change the title separator. Default to "::".
   titleSeparator = " - "
+  # Default image used for social sharing cards (Open Graph / Twitter). Relative to the site root.
+  ogImage = "assets/og-image.png"
+  # Social handles used in structured data and Twitter card meta.
+  linkedin = "https://www.linkedin.com/company/pi4j/"
+  mastodon = "https://foojay.social/@pi4j"
+  github = "https://github.com/Pi4J"
 
 [imaging]
     # Default resample filter used for resizing. Default is Box,
