@@ -1,5 +1,5 @@
 ---
-title: "Pi4J Drivers: Simplifying Sensor and Hardware Integration in Java"
+title: "Intro Pi4J Drivers"
 date: 2026-06-24
 tags: ["Drivers"]
 ---
