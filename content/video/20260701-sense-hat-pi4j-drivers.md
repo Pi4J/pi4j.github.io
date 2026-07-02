@@ -7,7 +7,7 @@ tags: ["Video", "Drivers"]
 
 ## Using the Raspberry Pi Sense HAT with Pi4J Drivers
 
-**20260701 - Video with Igor De Souza**
+**20260701 - Video by Igor De Souza**
 
 {{< youtube w7xxDu7lJPE >}}
 
