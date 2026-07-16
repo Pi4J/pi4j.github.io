@@ -60,6 +60,38 @@ var i2c = pi4j.create(i2cConfig);
 
 Only hardware PWM is supported in V4.0.0.
 
+### GPIO Chip Selection
+
+On Raspberry Pi boards, `/dev/gpiochip0` is the single controller behind the 40-pin header, so the FFM plugin uses it by default. Many other SBCs (for example Allwinner- or Rockchip-based boards) expose multiple `gpiochip` devices, and the header pins are not necessarily on `gpiochip0`.
+
+You can list the available chips and their line count with:
+
+```shell
+gpiodetect
+```
+
+or inspect line usage in detail with:
+
+```shell
+gpioinfo
+```
+
+To target a chip other than `gpiochip0`, set it with `.bus()` on the config builder — the value is appended to `/dev/gpiochip`, so `.bus(1)` targets `/dev/gpiochip1`:
+
+```java
+var ledConfig = DigitalOutput.newConfigBuilder(pi4j)
+    .id("led")
+    .name("LED Flasher")
+    .bus(1)
+    .bcm(GPIO_LINE_OFFSET)
+    .shutdown(DigitalState.LOW)
+    .initial(DigitalState.LOW);
+```
+
+{{% notice tip %}}
+Despite its name, `.bcm()` is simply the line offset on the selected chip — it is not tied to Raspberry Pi's BCM numbering. On non-Raspberry-Pi boards, find the correct offset for your physical pin using the board's pinout documentation, then verify it with `libgpiod`'s `gpioset`/`gpioget` tools before wiring it into your Pi4J code. See [Using Pi4J on other brands](/sbc/using-pi4j-on-other-brands/) for a worked example.
+{{% /notice %}}
+
 ## Dependencies and Permissions
 
 Since FFM provider does not rely on third-party native code and handles all the work between the JVM and Linux kernel, we have to be very cautious with permissions given to the user, and a correct device setup.
