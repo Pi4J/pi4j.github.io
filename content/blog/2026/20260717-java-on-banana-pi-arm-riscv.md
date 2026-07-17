@@ -1,5 +1,5 @@
 ---
-title: "Java on Banana Pi"
+title: "Pi4J on Banana Pi"
 date: 2026-07-17
 tags: ["FFM", "GPIO", "Allwinner", "Banana Pi", "RISC-V"]
 ---
