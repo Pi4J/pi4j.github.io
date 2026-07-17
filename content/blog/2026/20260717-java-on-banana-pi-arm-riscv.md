@@ -1,10 +1,12 @@
 ---
-title: "Java on Banana Pi ARM and RISC-V, Plus a Blinking LED with Pi4J"
+title: "Java on Banana Pi"
 date: 2026-07-17
 tags: ["FFM", "GPIO", "Allwinner", "Banana Pi", "RISC-V"]
 ---
 
 2026-07-17, by Frank Delporte
+
+## Java on Banana Pi ARM and RISC-V, Plus a Blinking LED with Pi4J
 
 In a new post on my blog, I tried out Java on two Banana Pi boards that step outside the usual Raspberry Pi comfort zone: the **BPI-M4 Zero**, an ARM board built around the Allwinner H618 (four Cortex-A53 cores at 1.5GHz, 4GB RAM), and the **BPI-F3**, an industrial RISC-V board powered by SpacemiT's eight-core K1 SoC. Both keep the familiar 40-pin, Raspberry-Pi-compatible header, but under the hood they are a different world entirely.
 
