@@ -158,6 +158,6 @@ As a Java developer working with embedded systems, here's what matters:
   - Higher power consumption means active cooling often required
 * RISC-V
   * OpenJDK support is improving but still experimental
-  * Not sure yet if Pi4J works on RISC-V
+  * [RISC-V support is expected in Pi4J V5](/blog/2026/20260720-riscv-support-pi4j-v5/)
   * Great for contributing to open-source JVM development
   * Exciting to experiment with new hardware platforms
