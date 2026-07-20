@@ -4,7 +4,7 @@ date: 2026-07-17
 tags: ["FFM", "GPIO", "Allwinner", "Banana Pi", "RISC-V"]
 ---
 
-2026-07-17, by Frank Delporte
+2026-07-17 by Frank Delporte
 
 ## Java on Banana Pi ARM and RISC-V, Plus a Blinking LED with Pi4J
 

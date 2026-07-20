@@ -4,7 +4,7 @@ date: 2026-07-20
 tags: ["FFM", "RISC-V", "GPIO", "I2C"]
 ---
 
-2026-07-20
+2026-07-20, by Nick Gritsenko 
 
 ## RISC-V Support Landing in Pi4J V5
 
