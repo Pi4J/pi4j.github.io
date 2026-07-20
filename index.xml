@@ -403,7 +403,17 @@ This scheme was incompatibility with other pin diagrams and pin numbering used b
 &lt;/ul&gt;
 &lt;p&gt;Detailed list of all the changes: &lt;a href="https://github.com/Pi4J/pi4j/compare/4.0.1...4.0.2" target="_blank" rel="noopener"&gt;https://github.com/Pi4J/pi4j/compare/4.0.1...4.0.2&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id="2026-04-14---v401"&gt;2026-04-14 - V4.0.1&lt;/h3&gt;
-&lt;p&gt;This is a bug fix release, mainly related to the new FFM plugin introduced in V4.0.0.&lt;/p&gt;</description></item><item><title>Pi4J Downloads</title><link>https://www.pi4j.com/about/download/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.pi4j.com/about/download/</guid><description>&lt;p&gt;All downloads provided by the project can be found on &lt;a href="https://pi4j.com/download/" target="_blank" rel="noopener"&gt;pi4j.com/download&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This is a bug fix release, mainly related to the new FFM plugin introduced in V4.0.0.&lt;/p&gt;</description></item><item><title>Setting up Pi4J for RISC-V</title><link>https://www.pi4j.com/sbc/riscv/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.pi4j.com/sbc/riscv/</guid><description>&lt;p&gt;&lt;a href="https://en.wikipedia.org/wiki/RISC-V" target="_blank" rel="noopener"&gt;RISC-V&lt;/a&gt; is an open, royalty-free instruction set architecture, and boards built around it are becoming more common as alternatives to ARM-based SBCs. This page collects what&amp;rsquo;s needed to get Java and Pi4J running on RISC-V hardware.&lt;/p&gt;
+
+&lt;div class="notices warning" &gt;&lt;p&gt;This page is a work in progress. Expect more tested boards and details in the near future&amp;hellip;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h2 id="tested-boards"&gt;Tested boards&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="https://milkv.io/docs" target="_blank" rel="noopener"&gt;Milk-V Mars&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="installing-jdk-25"&gt;Installing JDK 25+&lt;/h2&gt;
+&lt;p&gt;There aren&amp;rsquo;t many builds of Java for the RISC-V architecture yet, so we recommend installing it from the &lt;a href="https://adoptium.net/temurin/releases" target="_blank" rel="noopener"&gt;Adoptium project&lt;/a&gt;:&lt;/p&gt;</description></item><item><title>Pi4J Downloads</title><link>https://www.pi4j.com/about/download/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.pi4j.com/about/download/</guid><description>&lt;p&gt;All downloads provided by the project can be found on &lt;a href="https://pi4j.com/download/" target="_blank" rel="noopener"&gt;pi4j.com/download&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The compiled artifacts (releases and snapshots) are available in the
 &lt;a href="https://central.sonatype.com/search?namespace=com.pi4j" target="_blank" rel="noopener"&gt;Maven Central Repository&lt;/a&gt;.&lt;/p&gt;
 &lt;iframe src="https://pi4j.com/download" style="width: 100%; height: 100vh;"&gt;&lt;/iframe&gt;</description></item><item><title>Minimal Kotlin Pi4J example</title><link>https://www.pi4j.com/kotlin/kotlin-dsl/minimal-kotlin-example/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.pi4j.com/kotlin/kotlin-dsl/minimal-kotlin-example/</guid><description>&lt;div class="notices tip" &gt;&lt;p&gt;Full Example on GitHub: &lt;a href="https://github.com/Pi4J/pi4j-kotlin/blob/master/example/src/main/kotlin/MinimalExample.kt" target="_blank" rel="noopener"&gt;https://github.com/Pi4J/pi4j-kotlin/blob/master/example/src/main/kotlin/MinimalExample.kt&lt;/a&gt;&lt;/p&gt;

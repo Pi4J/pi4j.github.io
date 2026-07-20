@@ -46,4 +46,14 @@ electronics: components are inexpensive and easy to find on ebay or one of the m
  &lt;a href="https://www.pi4j.com/assets/examples/crowpi/electronics-starter-kit.jpg" itemprop="contentUrl"&gt;&lt;/a&gt;
  &lt;figcaption&gt;
  &lt;p&gt;Example electronics starter kit&lt;/p&gt;</description></item><item><title>Using Pi4J on Other Brands</title><link>https://www.pi4j.com/sbc/using-pi4j-on-other-brands/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.pi4j.com/sbc/using-pi4j-on-other-brands/</guid><description>&lt;p&gt;Pi4J started with, and is best documented for, the Raspberry Pi. On a Raspberry Pi, the GPIO numbers you pass to Pi4J match the SoC&amp;rsquo;s own &amp;ldquo;BCM&amp;rdquo; numbering directly, so pin 16 on the header is BCM 23 as you can see in the GPIO header for, for instance, the &lt;a href="https://api.pi4j.com/board-information/MODEL_5_B" target="_blank" rel="noopener"&gt;Raspberry Pi 5&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Many other SBCs (Banana Pi, Orange Pi, and other Allwinner- or Rockchip-based boards) use a different SoC with its own GPIO controller and numbering scheme, even when the board physically matches the Raspberry Pi&amp;rsquo;s header layout. This page walks through the general process of finding the right GPIO addressing for such a board, using a Banana Pi M4 Zero (Allwinner H618) as an example.&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;Many other SBCs (Banana Pi, Orange Pi, and other Allwinner- or Rockchip-based boards) use a different SoC with its own GPIO controller and numbering scheme, even when the board physically matches the Raspberry Pi&amp;rsquo;s header layout. This page walks through the general process of finding the right GPIO addressing for such a board, using a Banana Pi M4 Zero (Allwinner H618) as an example.&lt;/p&gt;</description></item><item><title>Setting up Pi4J for RISC-V</title><link>https://www.pi4j.com/sbc/riscv/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.pi4j.com/sbc/riscv/</guid><description>&lt;p&gt;&lt;a href="https://en.wikipedia.org/wiki/RISC-V" target="_blank" rel="noopener"&gt;RISC-V&lt;/a&gt; is an open, royalty-free instruction set architecture, and boards built around it are becoming more common as alternatives to ARM-based SBCs. This page collects what&amp;rsquo;s needed to get Java and Pi4J running on RISC-V hardware.&lt;/p&gt;
+
+&lt;div class="notices warning" &gt;&lt;p&gt;This page is a work in progress. Expect more tested boards and details in the near future&amp;hellip;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h2 id="tested-boards"&gt;Tested boards&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="https://milkv.io/docs" target="_blank" rel="noopener"&gt;Milk-V Mars&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="installing-jdk-25"&gt;Installing JDK 25+&lt;/h2&gt;
+&lt;p&gt;There aren&amp;rsquo;t many builds of Java for the RISC-V architecture yet, so we recommend installing it from the &lt;a href="https://adoptium.net/temurin/releases" target="_blank" rel="noopener"&gt;Adoptium project&lt;/a&gt;:&lt;/p&gt;</description></item></channel></rss>
