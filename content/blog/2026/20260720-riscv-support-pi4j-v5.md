@@ -1,5 +1,5 @@
 ---
-title: "RISC-V Support Landing in Pi4J V5"
+title: "RISC-V in Pi4J V5"
 date: 2026-07-20
 tags: ["FFM", "RISC-V", "GPIO", "I2C"]
 ---
