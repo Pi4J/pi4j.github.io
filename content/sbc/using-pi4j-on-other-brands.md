@@ -41,6 +41,10 @@ gpiochip1 - 288 lines:
     ...
 ```
 
+{{% notice note %}}
+This "which `gpiochip` is it" step isn't universal — it depends on the SoC family. NVIDIA's Tegra chips, as used on the Jetson Nano, expose the entire 40-pin header on a single `gpiochip0`, so there's no chip to hunt for. The tradeoff is a messier offset formula: Tegra ports use `port_index × 8 + line_number` instead of Allwinner's `bank_index × 32 + pin`, with ports named `A`, `B`, ... but also two-letter ports like `AA`, `BB`, `CC`, `DD` on some boards, and the port/pin-to-Linux-line mapping is scattered across pinmux tables, the `Jetson.GPIO` source, and forum posts rather than one authoritative reference. See [Pi4J on NVIDIA](/blog/2026/20260720-pi4j-nvidia-jetson-nano/) for a working Jetson Nano example.
+{{% /notice %}}
+
 ## 3. Compute the line offset
 
 Each bank's index (A=0, B=1, C=2, ... I=8) times 32, plus the pin number within the bank, gives the absolute line offset on the chip. For `PI15` with `I=8`: `8 × 32 + 15 = 271`.
