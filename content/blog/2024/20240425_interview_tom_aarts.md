@@ -2,6 +2,7 @@
 title: "Interview Tom Aarts"
 date: 2024-04-25
 tags: ["Interview", "Pi4J"]
+description: "An interview with Tom Aarts, the Pi4J contributor behind the pi4j-example-devices repository and the Raspberry Pi 5 PWM fixes."
 ---
 
 2024-04-25, by Frank Delporte

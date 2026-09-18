@@ -2,6 +2,7 @@
 title: "Pi4J on Banana Pi"
 date: 2026-07-17
 tags: ["FFM", "GPIO", "Allwinner", "Banana Pi", "RISC-V"]
+description: "Frank Delporte tests Java and Pi4J on two Banana Pi boards, an ARM-based BPI-M4 Zero and a RISC-V BPI-F3, including a blinking-LED demo."
 ---
 
 2026-07-17 by Frank Delporte

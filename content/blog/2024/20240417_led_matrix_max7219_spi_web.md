@@ -2,6 +2,7 @@
 title: "LED Matrix with SPI MAX7219"
 date: 2024-04-17
 tags: ["Pi4J", "SPI", "MAX7219", "BME280"]
+description: "A Spring Boot-based Pi4J project drives a MAX7219 SPI LED matrix, contributed as a starting point for a Raspberry Pi weather station."
 ---
 
 2024-04-18, by Frank Delporte

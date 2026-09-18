@@ -3,6 +3,7 @@ title: "Pi4J Joins Commonhaus"
 date: 2026-02-27
 tags: ["Commonhaus"]
 canonical: https://webtechie.be/post/2026-02-27-pi4j-commonhaus/
+description: "Pi4J joins the Commonhaus Foundation, securing long-term governance and sustainability for the open-source Java library for the Raspberry Pi and other SBCs."
 ---
 
 2026-02-27 by Frank Delporte

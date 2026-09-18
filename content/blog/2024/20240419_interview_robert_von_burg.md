@@ -2,6 +2,7 @@
 title: "Interview Robert von Burg"
 date: 2024-04-19
 tags: ["Interview", "Pi4J"]
+description: "An interview with Robert von Burg (Eitch), the main maintainer of Pi4J V2, on his background and work keeping the project's releases on track."
 ---
 
 2024-04-19, by Frank Delporte

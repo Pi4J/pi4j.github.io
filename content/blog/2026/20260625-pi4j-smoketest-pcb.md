@@ -3,6 +3,7 @@ title: "Smoke test PCB for Pi4J"
 date: 2026-06-25
 tags: ["Hardware Testing"]
 canonical: https://webtechie.be/post/2026-06-25-pi4j-smoketest-pcb/
+description: "Frank Delporte turns Pi4J's breadboard smoke test into a custom PCB, from EasyEDA schematic to a JLCPCB build that passed on a Raspberry Pi 5."
 ---
 
 2026-06-25 by Frank Delporte

@@ -1,0 +1,7 @@
+{{/*
+  Site-level override of the theme's meta.html.
+  Reuses the same per-page description as og:description/twitter:description
+  (see seo-description.html) instead of always serving the site-wide string.
+*/}}
+<meta name="description" content="{{ partial "seo-description.html" . }}">
+{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}

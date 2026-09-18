@@ -2,6 +2,7 @@
 title: "Ongoing I2C Improvements"
 date: 2024-04-18
 tags: ["Pi4J", "I2C"]
+description: "Robert von Burg's in-progress I2C improvements for Pi4J: atomic execute and writeRead methods, plus fixes for device-close and first-read bugs."
 ---
 
 2024-04-17, by Frank Delporte

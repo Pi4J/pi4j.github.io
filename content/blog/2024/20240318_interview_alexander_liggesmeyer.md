@@ -2,6 +2,7 @@
 title: "Alexander Liggesmeyer and RPi5"
 date: 2024-03-18
 tags: ["Interview", "Pi4J"]
+description: "An interview with Alexander Liggesmeyer, who added Raspberry Pi 5 RP1 chip support to Pi4J after the board's release left the library incompatible."
 ---
 
 2024-03-18, by Frank Delporte

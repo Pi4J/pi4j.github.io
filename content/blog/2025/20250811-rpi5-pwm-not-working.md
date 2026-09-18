@@ -2,6 +2,7 @@
 title: "RPi5 PWM NoSuchFileException"
 date: 2025-08-11
 tags: ["PWM", "LinuxFS"]
+description: "A Raspberry Pi 5 kernel update renumbers PWM chips and breaks Pi4J's PWM support; here's the code change to point at the new pwmchip0 path."
 ---
 
 2025-08-11, by Tom Aarts

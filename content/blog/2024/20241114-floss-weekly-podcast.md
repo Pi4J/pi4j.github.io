@@ -2,6 +2,7 @@
 title: "Pi4J in Floss Weekly"
 date: 2024-11-14
 tags: ["Maven"]
+description: "Frank Delporte joins the Floss Weekly podcast to talk about the Pi4J project and using Java to control GPIO, SPI, and I2C on the Raspberry Pi."
 ---
 
 2024-11-14 by Frank Delporte

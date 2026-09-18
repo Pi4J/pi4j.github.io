@@ -2,6 +2,7 @@
 title: "Quarkus Pi4J Extension"
 date: 2026-06-23
 tags: ["Quarkus"]
+description: "The Quarkus Pi4J extension brings CDI-managed hardware access to Raspberry Pi apps, with automatic Context setup, externalized GPIO config, and health monitoring."
 ---
 
 2026-06-23 by Igor De Souza

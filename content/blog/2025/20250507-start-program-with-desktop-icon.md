@@ -2,6 +2,7 @@
 title: "Starting with a Desktop Icon"
 date: 2025-05-07
 tags: ["UI"]
+description: "Fixing a 'Java not found' error when launching a Pi4J application from a Raspberry Pi desktop icon, by setting JAVA_HOME and PATH in the launcher context."
 ---
 
 2025-05-07 by Frank Delporte

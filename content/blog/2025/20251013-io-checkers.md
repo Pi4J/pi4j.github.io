@@ -2,6 +2,7 @@
 title: "IO Checker Tool"
 date: 2025-10-13
 tags: ["PWM", "SPI", "I2C", "UART", "Serial", "GPIO", "Jbang"]
+description: "A JBang-based IO Checker tool for Pi4J validates PWM, SPI, I2C, UART, and GPIO configuration on a Raspberry Pi with a single command."
 ---
 
 2025-10-13, by Frank Delporte

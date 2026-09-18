@@ -1,0 +1,15 @@
+{{/*
+  Shared per-page SEO description, used for both meta[name=description]
+  and og:description/twitter:description so they never drift apart.
+  Falls back to the site-wide description when a page has none of its own.
+*/}}
+{{- $desc := .Site.Params.description -}}
+{{- if .Description -}}
+  {{- $desc = .Description -}}
+{{- else if .IsHome -}}
+  {{- $desc = .Site.Params.description -}}
+{{- else if .Summary -}}
+  {{- $desc = .Summary | plainify | htmlUnescape | truncate 200 -}}
+{{- end -}}
+{{- $desc = $desc | replaceRE "\\s+" " " | strings.TrimSpace -}}
+{{- return $desc -}}

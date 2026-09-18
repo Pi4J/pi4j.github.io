@@ -2,6 +2,7 @@
 title: "Java 21+ Not Working on Zero 2"
 date: 2025-06-25
 tags: ["Zero 2"]
+description: "Java 21 and 24 fail to run at all on the Raspberry Pi Zero 2, while Java 17 works fine — investigating what's different about its Cortex-A53 processor."
 ---
 
 2025-06-25 by Frank Delporte

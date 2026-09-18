@@ -2,6 +2,7 @@
 title: LED strip with Pi4J and JBang
 date: 2022-11-28
 canonical: https://foojay.io/today/controlling-a-led-strip-with-pi4j-and-jbang/
+description: "Robert von Burg controls an I2C LED strip from a custom PCB using Pi4J and JBang, building on an earlier single-LED and button example."
 ---
 
 2022-11-28, by Robert von Burg

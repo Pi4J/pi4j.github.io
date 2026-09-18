@@ -2,6 +2,7 @@
 title: Kotlin on the Raspberry Pi
 date: 2022-11-17
 canonical: https://foojay.io/today/kotlin-on-the-raspberrypi-pi4j-kotlin/
+description: "Pi4J-Kotlin brings a Kotlin DSL to the Pi4J V2+ API, letting Raspberry Pi developers write more concise GPIO, I2C, and SPI code."
 ---
 
 2022-11-17, by Muhammad Hashim

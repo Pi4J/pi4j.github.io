@@ -2,6 +2,7 @@
 title: "Intro Pi4J Drivers"
 date: 2026-06-24
 tags: ["Drivers"]
+description: "Pi4J Drivers reaches a stable 1.0.0 release, offering pre-built, tested Java drivers for common sensors and I/O components so you skip the low-level I2C/SPI code."
 ---
 
 2026-06-25 by Igor De Souza

@@ -2,6 +2,7 @@
 title: "Pi4J on NVIDIA"
 date: 2026-07-20
 tags: ["GPIO", "Jetson Nano", "Tegra"]
+description: "Igor De Souza gets Pi4J blinking an LED on an NVIDIA Jetson Nano, working out Tegra's GPIO offset formula for boards outside the Raspberry Pi family."
 ---
 
 2026-07-20 by Igor De Souza

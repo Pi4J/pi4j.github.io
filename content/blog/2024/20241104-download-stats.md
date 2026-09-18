@@ -2,6 +2,7 @@
 title: "Maven Downloads"
 date: 2024-11-04
 tags: ["Maven"]
+description: "A look at Pi4J's Maven download statistics through September 2024, including adoption speed for new releases and the share of Kotlin users."
 ---
 
 2024-11-04 by Frank Delporte

@@ -2,6 +2,7 @@
 title: Getting Started Template
 date: 2022-01-13
 canonical: https://foojay.io/today/template-to-get-started-with-pi4j-and-javafx-on-raspberry-pi/
+description: "A JavaFX and MVC starter template for Pi4J on the Raspberry Pi, built by Dieter Holz and Robert von Burg to get new projects up and running fast."
 ---
 
 2022-01-13, by Frank Delporte

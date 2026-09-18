@@ -2,6 +2,7 @@
 title: "Java 21+ Working on RPi Zero 2"
 date: 2025-10-13
 tags: ["Zero 2"]
+description: "Revisiting the OpenJDK JIT bug that broke Java on the Raspberry Pi Zero 2's Cortex-A53 processor, and checking whether the latest OpenJDK 21 and 25 releases fix it."
 ---
 
 2025-10-13, by Frank Delporte

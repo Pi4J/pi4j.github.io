@@ -2,6 +2,7 @@
 title: "Sense HAT with Pi4J"
 date: 2026-07-01
 tags: ["Drivers"]
+description: "Igor De Souza shows how Pi4J Drivers gives Java developers a clean API for the Raspberry Pi Sense HAT's LED matrix and environmental, motion, and joystick sensors."
 ---
 
 2026-07-01 by Igor De Souza

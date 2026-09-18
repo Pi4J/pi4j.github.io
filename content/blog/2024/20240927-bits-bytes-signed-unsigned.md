@@ -2,6 +2,7 @@
 title: "Signed versus unsigned values"
 date: 2024-09-27
 tags: ["Signed", "Unsigned"]
+description: "Why a Pi4J byte value can print as a negative number, and how to use Byte.toUnsignedInt to get the 0-255 range you expect from hardware."
 ---
 
 2024-09-27, by Frank Delporte

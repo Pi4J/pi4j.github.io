@@ -2,6 +2,7 @@
 title: "Interview Nick Gritsenko"
 date: 2026-02-20
 tags: ["FFM API"]
+description: "An interview with Nick Gritsenko on the FFM API plugin he built for Pi4J, opening the library up to hardware beyond the Raspberry Pi."
 ---
 
 2026-02-20 by Frank Delporte

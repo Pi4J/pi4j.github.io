@@ -2,6 +2,7 @@
 title: "RISC-V in Pi4J V5"
 date: 2026-07-20
 tags: ["FFM", "RISC-V", "GPIO", "I2C"]
+description: "RISC-V support lands in Pi4J's FFM provider ahead of the 5.0.0 release, replacing hardcoded architecture paths with a linker-based native library lookup."
 ---
 
 2026-07-20, by Nick Gritsenko 

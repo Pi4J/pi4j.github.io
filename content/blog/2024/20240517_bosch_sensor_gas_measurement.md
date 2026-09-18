@@ -2,6 +2,7 @@
 title: "Bosch sensor gas measurement"
 date: 2024-05-17
 tags: ["BME280", "BMP280", "BME680", "BME688"]
+description: "An overview of Pi4J example implementations for Bosch's BME280, BMP280, BME680, and BME688 sensors, plus notes on their gas measurement quirks."
 ---
 
 2024-05-17, by Frank Delporte
