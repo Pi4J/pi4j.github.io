@@ -1,5 +1,6 @@
 ---
-title: '2026 Designing a Smoke Test PCB for Pi4J'
+title: 'From Breadboard Chaos to a Real PCB: Designing the Pi4J Smoke Test Board'
+linkTitle: '2026 Smoke Test PCB'
 date: 2026-06-25
 youtube: q7SGdxQnMVc
 tags: ["Video", "Hardware Testing"]

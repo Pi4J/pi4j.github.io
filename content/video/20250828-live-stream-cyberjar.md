@@ -1,5 +1,6 @@
 ---
-title: '2025 Live Stream CyberJAR'
+title: 'Chatting about Java, JavaFX, and Experiments on the Raspberry Pi'
+linkTitle: '2025 Live Stream CyberJAR'
 date: 2025-08-28
 youtube: Rmmwm6GZ98I
 tags: ["Video"]

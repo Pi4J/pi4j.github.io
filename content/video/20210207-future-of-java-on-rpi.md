@@ -1,5 +1,6 @@
 ---
-title: '2021 Future of Java on RPi'
+title: 'The Future of Java on Raspberry Pi'
+linkTitle: '2021 Future of Java on RPi'
 date: 2021-02-07
 tags: ["Video"]
 ---

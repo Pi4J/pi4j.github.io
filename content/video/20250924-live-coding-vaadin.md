@@ -1,5 +1,6 @@
 ---
-title: "2025 Live Coding: Vaadin"
+title: "Improving the Vaadin+Spring+Pi4J Demo Application with Matti Tahvonen"
+linkTitle: "2025 Live Coding: Vaadin"
 date: 2025-09-24
 youtube: gtcXnA3endo
 tags: ["Video", "Vaadin", "Spring", "CrowPi", "Live Coding"]

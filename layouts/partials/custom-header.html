@@ -82,6 +82,25 @@
 {{- with .Site.Params.latestVersion }}{{ $app = merge $app (dict "softwareVersion" .) }}{{ end }}
 <script type="application/ld+json">{{ $app | jsonify (dict "indent" "  ") | safeJS }}</script>
 {{- end }}
+{{- if and .IsPage (eq .Section "blog") }}
+{{- $publisher := dict
+  "@type" "Organization"
+  "name" "Pi4J"
+  "logo" (dict "@type" "ImageObject" "url" ("assets/pi4j-logo.png" | absURL)) }}
+{{- $post := dict
+  "@context" "https://schema.org"
+  "@type" "BlogPosting"
+  "headline" (.Title | truncate 110)
+  "description" $desc
+  "url" .Permalink
+  "mainEntityOfPage" (dict "@type" "WebPage" "@id" .Permalink)
+  "datePublished" (.Date.Format "2006-01-02T15:04:05Z07:00")
+  "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00")
+  "image" $ogImageURL
+  "author" (dict "@type" "Organization" "name" "Pi4J")
+  "publisher" $publisher }}
+<script type="application/ld+json">{{ $post | jsonify (dict "indent" "  ") | safeJS }}</script>
+{{- end }}
 
 {{/* ---------- Original DocSearch styling (preserved from theme) ---------- */}}
 <style>

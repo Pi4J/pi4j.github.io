@@ -1,5 +1,6 @@
 ---
-title: '2023 Vaadin WebUI'
+title: 'Controlling Electronics with Java and Pi4J through a Web Interface'
+linkTitle: '2023 Vaadin WebUI'
 date: 2023-08-22
 youtube: FXKsBKKB_Xg
 tags: ["Video"]

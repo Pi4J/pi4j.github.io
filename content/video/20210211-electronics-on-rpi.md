@@ -1,5 +1,6 @@
 ---
-title: '2021 Electronics on RPi'
+title: 'Java, JavaFX, and Electronics Programming on the Raspberry Pi'
+linkTitle: '2021 Electronics on RPi'
 date: 2021-02-11
 youtube: J_Nigj0MfFk
 tags: ["Video"]

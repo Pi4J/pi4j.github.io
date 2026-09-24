@@ -1,5 +1,6 @@
 ---
-title: '2026 Smoking Food with Pi4J'
+title: "Let's Smoke Some Food with Pi4J, Vaadin, and Quarkus"
+linkTitle: '2026 Smoking Food with Pi4J'
 date: 2026-03-19
 youtube: fN1N8r1xy6I
 tags: ["Video", "FFM", "Vaadin"]

@@ -1,5 +1,6 @@
 ---
-title: '2026 Introducing Pi4J V4 FFM'
+title: 'Controlling Electronics with Java 25 and the FFM API using Pi4J V4'
+linkTitle: '2026 Introducing Pi4J V4 FFM'
 date: 2026-03-06
 youtube: 4elclflGac8
 tags: ["Video", "FFM"]

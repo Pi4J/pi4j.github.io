@@ -1,5 +1,6 @@
 ---
-title: '2026 Pi4J Smoke Tests with Pi4J'
+title: 'Validating Pi4J V4 on Real Hardware with the Ikalogic Logic Analyser'
+linkTitle: '2026 Pi4J Smoke Tests'
 date: 2026-03-30
 youtube: uy3oWn9iIWs
 tags: ["Video", "FFM", "Ikalogic"]

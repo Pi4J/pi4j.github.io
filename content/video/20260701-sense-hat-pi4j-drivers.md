@@ -1,5 +1,6 @@
 ---
-title: '2026 Sense HAT with Pi4J'
+title: 'Using the Raspberry Pi Sense HAT with Pi4J Drivers'
+linkTitle: '2026 Sense HAT with Pi4J'
 date: 2026-07-01
 youtube: w7xxDu7lJPE
 tags: ["Video", "Drivers"]

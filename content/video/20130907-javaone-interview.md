@@ -1,5 +1,6 @@
 ---
-title: '2013 JavaOne Interview'
+title: 'JavaOne Interview with Robert Savage'
+linkTitle: '2013 JavaOne Interview'
 date: 2013-09-07
 youtube: Z_eI7DfDMjI
 tags: ["Video"]
