@@ -19,7 +19,17 @@ The Pi4J Drivers library is available on [Maven Central](https://central.sonatyp
 - **SCD4x autodetection**: Added autodetection support to the SCD4x driver.
 - **General cleanup**: Disabled hardware-dependent tests so the build doesn't fail off-device, added a JFrame-based utility for developing on standard hardware before moving to specialized hardware, fixed an `attachDriver` issue, and updated README/contributing documentation.
 
-Thank you to [@stefanhaustein](https://github.com/stefanhaustein), [@taartspi](https://github.com/taartspi), [@mstahv](https://github.com/mstahv), [@mores](https://github.com/mores), and [@igfasouza](https://github.com/igfasouza)!
+Thank you to:
+
+- Frank Delporte ([@FDelporte](https://github.com/FDelporte))
+- Igor Souza ([@igfasouza](https://github.com/igfasouza))
+- Matti Tahvonen ([@mstahv](https://github.com/mstahv))
+- Robert von Burg ([@eitch](https://github.com/eitch))
+- Stefan Haustein [@stefanhaustein](https://github.com/stefanhaustein)
+- Stephen More [@mores](https://github.com/mores
+- Tom Aarts ([@taartspi](https://github.com/taartspi))
+- Copilot Autofix powered by AI
+- GitHub
 
 Detailed list of all changes: https://github.com/Pi4J/pi4j-drivers/compare/v1.1.0...v1.2.0
 
