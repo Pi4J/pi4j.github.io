@@ -31,7 +31,7 @@ Thank you to:
 - Copilot Autofix powered by AI
 - GitHub
 
-Detailed list of all changes: https://github.com/Pi4J/pi4j-drivers/compare/v1.1.0...v1.2.0
+Detailed list of all changes is available on  https://github.com/Pi4J/pi4j-drivers/compare/v1.1.0...v1.2.0 and https://github.com/Pi4J/pi4j-drivers/releases/tag/v1.2.0.
 
 ### 2026-07-02 - V1.1.0
 
