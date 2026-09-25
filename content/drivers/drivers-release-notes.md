@@ -25,8 +25,8 @@ Thank you to:
 - Igor Souza ([@igfasouza](https://github.com/igfasouza))
 - Matti Tahvonen ([@mstahv](https://github.com/mstahv))
 - Robert von Burg ([@eitch](https://github.com/eitch))
-- Stefan Haustein [@stefanhaustein](https://github.com/stefanhaustein)
-- Stephen More [@mores](https://github.com/mores
+- Stefan Haustein ([@stefanhaustein](https://github.com/stefanhaustein))
+- Stephen More ([@mores](https://github.com/mores))
 - Tom Aarts ([@taartspi](https://github.com/taartspi))
 - Copilot Autofix powered by AI
 - GitHub
