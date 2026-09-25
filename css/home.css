@@ -61,6 +61,8 @@
 .pi4j-btn:hover { transform: translateY(-1px); }
 
 /* ---- Release banner ---- */
+.pi4j-release-group { display: flex; flex-direction: column; gap: 14px; margin: 26px 0; }
+.pi4j-release-group .pi4j-release { margin: 0; }
 .pi4j-release {
   --p4j-green: #2e7d32;
   --p4j-green-dark: #1b5e20;
