@@ -1,7 +1,7 @@
 ---
 title: Choosing an I/O Provider
 weight: 90
-tags: ["GpioD", "LinuxFS", "PiGpio"]
+tags: ["FFM", "Mock"]
 ---
 
 Providers are extensible service modules responsible for the concrete implementation of a specific I/O type. The providers also allow separating the internal logic of the Pi4J core from the concrete implementation of the board on which they are used.
@@ -10,12 +10,12 @@ As of Pi4J 2.5 multiple providers for the same I/O type is no longer supported. 
 
 ## Available Providers
 
-**{{% notice warning %}}
-We plan to remove the GpioD, LinuxFS, PiGpio providers in a next release (4.1.0?) to simplify the Pi4J codebase, remove Docker native builds of libraries, and simplify the build process. Starting from Pi4J V4 we ask you to use the FFM provider and let us know if you have any issues by [creating a ticket](https://github.com/Pi4J/pi4j/issues) or [starting a discussion](https://github.com/Pi4J/pi4j/discussions).
+**{{% notice info %}}
+Starting from Pi4J V5, [FFM](/documentation/providers/ffm/) is the only provider for real hardware, complemented by the [Mock](/documentation/providers/mock/) provider for testing. All other providers (GpioD, LinuxFS, PiGpio) have been removed. See below for details.
 {{% /notice %}}**
 
 * [FFM](/documentation/providers/ffm/)
-  * Was introduced in Pi4J 4.0.0
+  * The provider for real hardware, introduced in Pi4J 4.0.0
   * Pro
     * Doesn't need complex Docker-based builds of libraries
     * Uses latest modern Java LTS version 25
@@ -23,29 +23,9 @@ We plan to remove the GpioD, LinuxFS, PiGpio providers in a next release (4.1.0?
     * Can be used on other boards than Raspberry Pi
   * Contra
     * Not found yet... ;-)
-* [GpioD](/documentation/providers/gpiod/)
-  * Was introduced in Pi4J 2.5.0
-  * Pro
-    * Works on Raspberry Pi 5
-    * Doesn't need sudo
-    * Supports DigitalInput and DigitalOutput
-* [LinuxFS](/documentation/providers/linuxfs/)
-  * Pro
-    * Works on Raspberry Pi 5
-    * Generic for any SoC supporting LinuxFS
-    * Supports I2C, SPI, and PWM Hardware
-    * Doesn't need `sudo`
-  * Contra
-    * Doesn't provide serial and SPI 
-    * DigitalInput and DigitalOutput under construction
-    * Latency (? - still to be tested)
-* [PiGpio](/documentation/providers/pigpio/)
-  * Pro
-    * Provides all types of communication: DigitalInput, DigitalOutput, PWM, I2C, SPI, Serial
-    * Can be used remotely
-  * Contra
-    * Needs to run as `sudo`
-    * 03/22/2024 Does not support Raspberry Pi 5
+* [Mock](/documentation/providers/mock/)
+  * Used for unit and integration testing without real hardware
+  * Not loaded automatically on a Raspberry Pi; use `autoDetectMockPlugins()` or the Alternate Context Creation shown on the [Create Context](../create-context/) page
 
 ## Check Loaded Providers
 
@@ -57,3 +37,11 @@ After creating the `Context` the following code will print the currently loaded 
     pi4j.providers().describe().print(System.out);
     System.out.println("-------------------------------------------------");
 ```
+
+## Related to functionality existing in V4, but no longer included in V5
+
+Pi4J V5 removed the GpioD, LinuxFS and PiGpio providers to simplify the codebase, drop the Docker-based native builds, and simplify the build process. If you are upgrading from V4, migrate your code to the [FFM provider](/documentation/providers/ffm/).
+
+* [GpioD](/documentation/providers/gpiod/) — was introduced in Pi4J 2.5.0, supported DigitalInput and DigitalOutput
+* [LinuxFS](/documentation/providers/linuxfs/) — supported I2C, SPI, and PWM Hardware
+* [PiGpio](/documentation/providers/pigpio/) — supported DigitalInput, DigitalOutput, PWM, I2C, SPI, Serial

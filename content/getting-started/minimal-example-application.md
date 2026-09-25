@@ -67,14 +67,14 @@ gradlew.bat build
 
 For the Maven approach, a pom.xml file defines all the dependencies, and the build process.
 
-In this project we will be using slf4 for logging, pi4j-core and the pi4j-plugins for the Raspberry Pi and PiGPIO. To 
+In this project we will be using slf4 for logging, pi4j-core and the pi4j-plugin-ffm plugin. To 
 make the versions easy to update, we add those numbers as properties. 
 
 ```xml
 <properties>
     <!-- DEPENDENCIES VERSIONS -->
     <slf4j.version>2.0.17</slf4j.version>
-    <pi4j.version>4.0.0</pi4j.version>
+    <pi4j.version>5.0.0</pi4j.version>
 </properties>
 ``` 
   
@@ -170,7 +170,7 @@ private static final int PIN_BUTTON = 24; // PIN 18 = BCM 24
 var buttonConfig = DigitalInput.newConfigBuilder(pi4j)
         .id("button")
         .name("Press button")
-        .address(PIN_BUTTON)
+        .bcm(PIN_BUTTON)
         .pull(PullResistance.PULL_DOWN)
         .debounce(3000L);
 
@@ -197,7 +197,7 @@ pi4j.shutdown();
 ## Steps to Run on Your Raspberry Pi
 
 * Attach a LED and button as shown in the image above
-* Use a recent Raspbian OS image which has Java 17 or newer. To check if you have the correct Java version in the terminal:
+* Use a recent Raspberry Pi OS image which has Java 25 or newer. To check if you have the correct Java version in the terminal:
 
 ```shell
 $ java -version

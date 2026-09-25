@@ -30,13 +30,11 @@ provided run.sh script:
 $ cd target/distribution
 $ ls -l
 total 644
--rw-r--r-- 1 pi pi 364456 Jun 19 10:04 pi4j-core-2.0-SNAPSHOT.jar
+-rw-r--r-- 1 pi pi 364456 Jun 19 10:04 pi4j-core-5.0.0.jar
 -rw-r--r-- 1 pi pi   7243 Jun 19 10:04 pi4j-example-minimal-0.0.1.jar
--rw-r--r-- 1 pi pi 142461 Jun 19 10:04 pi4j-library-pigpio-2.0-SNAPSHOT.jar
--rw-r--r-- 1 pi pi  37302 Jun 19 10:04 pi4j-plugin-pigpio-2.0-SNAPSHOT.jar
--rw-r--r-- 1 pi pi  26917 Jun 19 10:04 pi4j-plugin-raspberrypi-2.0-SNAPSHOT.jar
+-rw-r--r-- 1 pi pi  37302 Jun 19 10:04 pi4j-plugin-ffm-5.0.0.jar
 -rwxr-xr-x 1 pi pi    101 Jun 19 10:04 run.sh
--rw-r--r-- 1 pi pi  52173 Jun 19 10:04 slf4j-api-2.0.0-alpha0.jar
--rw-r--r-- 1 pi pi  15372 Jun 19 10:04 slf4j-simple-2.0.0-alpha0.jar
+-rw-r--r-- 1 pi pi  52173 Jun 19 10:04 slf4j-api-2.0.17.jar
+-rw-r--r-- 1 pi pi  15372 Jun 19 10:04 slf4j-simple-2.0.17.jar
 $ sudo ./run.sh
 ``` 

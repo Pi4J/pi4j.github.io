@@ -153,25 +153,13 @@ Feel free to check the [Kotlin DSL for I²C](/kotlin/i2c/)
 The following code shows setting the pins on a TCA 9534 which can be found on 
 ["Sequent Microsystems"](https://www.kickstarter.com/projects/279405789/4-relays-for-raspberry-pi-8-level-stackable-10a-250v-each)
 
-To use the LinuxFS provider, which provides I2C, add the proper dependency:
-
-```xml
-
-<dependency>
-    <groupId>com.pi4j</groupId>
-    <artifactId>pi4j-plugin-linuxfs</artifactId>
-    <version>${pi4j.version}</version>
-</dependency>
-```
-
-Now we can use the following example:
+This example uses the [FFM provider](/documentation/providers/ffm/), so make sure the `pi4j-plugin-ffm` dependency is added to your project.
 
 ```java
 import com.pi4j.Pi4J;
 import com.pi4j.context.Context;
 import com.pi4j.io.i2c.I2C;
 import com.pi4j.io.i2c.I2CConfig;
-import com.pi4j.io.i2c.I2CProvider;
 
 public class SimpleTca9534I2cTest {
 
@@ -181,9 +169,8 @@ public class SimpleTca9534I2cTest {
 	public static void main(String[] args) throws Exception {
 
 		Context pi4j = Pi4J.newAutoContext();
-		I2CProvider i2CProvider = pi4j.provider("linuxfs-i2c");
 		I2CConfig i2cConfig = I2C.newConfigBuilder(pi4j).id("TCA9534").bus(1).device(0x3f).build();
-		try (I2C tca9534Dev = i2CProvider.create(i2cConfig)) {
+		try (I2C tca9534Dev = pi4j.create(i2cConfig)) {
 
 			int config = tca9534Dev.readRegister(TCA9534_REG_ADDR_CFG);
 			if (config < 0)

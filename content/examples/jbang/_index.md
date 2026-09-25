@@ -57,7 +57,7 @@ The [Pi4J JBang project on GitHub](https://github.com/Pi4J/pi4j-jbang) contains 
 
 To tell JBang that it must handle the file as a Java application and do some upfront preparation work, the first line in each file is: `///usr/bin/env jbang "$0" "$@" ; exit $?`.
 
-When an application needs dependencies, they are defined inside the file itself in a line starting with `//DEPS`. For instance, to use the Pi4J Core library: `//DEPS com.pi4j:pi4j-core:2.3.0`.
+When an application needs dependencies, they are defined inside the file itself in a line starting with `//DEPS`. For instance, to use the Pi4J Core library: `//DEPS com.pi4j:pi4j-core:5.0.0`.
 
 Each of the provided examples contains more information about the wiring inside the file itself and are also explained here on the Pi4J website.
 

@@ -8,6 +8,10 @@ Pi4J-Kotlin (aka Pi4K) is an implementation on top of Pi4J to facilitate the dev
 
 Kotlin makes extensive use of Domain Specific Language (DSL) to provide APIs that are cleaner, easier to read, and more structured. The DSLs provided here on top of Pi4J make it very easy to use this library in a Kotlin application. These Kotlin DSLs don't introduce added runtime overhead of a new layer when used. DSL builders are always inlined on Compile-Time.
 
+{{% notice warning %}}
+The [pi4j-kotlin](https://github.com/Pi4J/pi4j-kotlin) library has not yet been updated for Pi4J V5: it still targets the removed PiGpio/LinuxFS providers (and a since-removed Serial I/O type). The examples on this and the following pages reflect that older state and will not build against `pi4j-core` V5 as-is. Check the [pi4j-kotlin GitHub project](https://github.com/Pi4J/pi4j-kotlin) for the latest status before relying on it in a V5 project.
+{{% /notice %}}
+
 ### Installation
 Install the Pi4J dependency and `pi4j-ktx` in your app's `build.gradle.ktx` file:
 ``` kotlin

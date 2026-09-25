@@ -58,7 +58,7 @@ var i2c = pi4j.create(i2cConfig);
 
 ### PWM
 
-Only hardware PWM is supported in V4.0.0.
+Only hardware PWM is currently supported. Software PWM is being considered for a future release — see [pi4j#556](https://github.com/Pi4J/pi4j/issues/556).
 
 ### GPIO Chip Selection
 
@@ -90,6 +90,10 @@ var ledConfig = DigitalOutput.newConfigBuilder(pi4j)
 
 {{% notice tip %}}
 Despite its name, `.bcm()` is simply the line offset on the selected chip — it is not tied to Raspberry Pi's BCM numbering. On non-Raspberry-Pi boards, find the correct offset for your physical pin using the board's pinout documentation, then verify it with `libgpiod`'s `gpioset`/`gpioget` tools before wiring it into your Pi4J code. See [Using Pi4J on other brands](/sbc/using-pi4j-on-other-brands/) for a worked example.
+{{% /notice %}}
+
+{{% notice warning %}}
+Pi4J does not validate that the line offset you pass to `.bcm()` corresponds to a physical pin on your board's header — an out-of-range value can cause unexpected behavior instead of a clear error. See [Pin numbering](/documentation/pin-numbering/) for details.
 {{% /notice %}}
 
 ## Dependencies and Permissions
