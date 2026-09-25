@@ -113,15 +113,17 @@ In some cases, you may want to overrule the detected board:
 Since V3.0.2, you can overrule the detected board in the `BoardInfoHelper` singleton. Make sure to do this before the Pi4J context is initialized, so the correct plugins are loaded.
 
 ```java
-// With default GpioD chip
 BoardInfoHelper.current().setBoardModel(BoardModel.GENERIC);
 var pi4j = Pi4J.newAutoContext();
+```
 
-// Or if you want to use a specific chip name
-BoardInfoHelper.current().setBoardModel(BoardModel.GENERIC);
-var pi4j = Pi4J.newContextBuilder()
-    .add(GpioDDigitalInputProvider.newInstance())
-    .setGpioChipName("gpiochip2")
+If your board exposes the header pins on a `gpiochip` other than the default `gpiochip0`, set it per I/O config with `.bus()` on the [FFM provider](/documentation/providers/ffm/#gpio-chip-selection), for instance:
+
+```java
+var ledConfig = DigitalOutput.newConfigBuilder(pi4j)
+    .id("led")
+    .bus(2)
+    .bcm(GPIO_LINE_OFFSET)
     .build();
 ```
 

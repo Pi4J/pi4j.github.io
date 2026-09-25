@@ -18,60 +18,11 @@ binary, i.e. off (0% power) or on (100% power), but to control them almost at wi
 The functionality of PWM works in such a way that the component is switched off and 
 on again and again within a certain period of time.
 
-## Pigpio Provider (pigpio-pwm)
+## FFM Provider (ffm-pwm)
 
-### Software vs. Hardware
+The [FFM provider](/documentation/providers/ffm/) currently supports hardware PWM only, addressed through the Linux `/sys/class/pwm/pwmchipN` sysfs interface. Instead of a BCM pin number, a hardware PWM output is addressed with a `chip` and `channel` number, which depend on your board and the `dtoverlay` configured in `config.txt`.
 
-When using the pigpio-pwm provider two different types of PWM are available on the Raspberry Pi, specifically a software 
-and a hardware implementation. Both basically offer the same options, but the software
-version cannot achieve precise or particularly fast frequencies. When using the linuxfs-pwm provider only 
-hardware PWM is available.
-
-### Software PWM limitation
-
-The reason for this is that in the software implementation for each individual cycle 
-(on / off) a new control command must be transmitted from the JVM (Java Virtual Machine) 
-to the corresponding component, while in the hardware implementation of the Raspberry Pi 
-notices the desired frequency and regulates it independently directly on the board.
-
-The Raspberry Pi supports 2 hardware based PWM channels. You can access these two channels
-via 2 separate sets of 4 GPIO header pins, but still limited to only 2 channels 
-(2 unique PWM timing configurations).
-
-### PWM GPIOs
-
-The same PWM channel is available on multiple GPIOs.
-The latest frequency and dutycycle setting will be used by all GPIO which share a PWM channel.
-
-The GPIO must be one of the following:
-
-```
-12  PWM channel 0  All models but A and B
-13  PWM channel 1  All models but A and B
-18  PWM channel 0  All models
-19  PWM channel 1  All models but A and B
-
-40  PWM channel 0  Compute module only
-41  PWM channel 1  Compute module only
-45  PWM channel 1  Compute module only
-52  PWM channel 0  Compute module only
-53  PWM channel 1  Compute module only
-```
-The GPIO number in the above chart is supplied as the buildPwmConfig config value ```address```.
-
-As Pi4J is using PiGPIO "under the hood", you can take advantage of the additional 
-PWM functionalities of it. PiGPIO is providing **additional (soft) PWM support to any 
-of the GPIO pins (0-31) and its using some hardware timing technique to optimize 
-performance** --- but its not the same as the actual hardware PWM pins natively on the 
-RaspberryPi. In the Pi4J API, we call this "Software" PWM and you would need to set 
-```.pwmType(PwmType.SOFTWARE)```. We consider this software-based PWM because its being 
-provided at a software layer, in this case by the PIGPIO library.
-
-If you need more than 2 PWM pins, use the software PWM functionality, it may be perfectly 
-fine for your application. If they are not good enough, then you will probably need a 
-PWM expander board/chip (controlled by I2C/SPI) to provide additional PWM support.
-
-## Checking PWM Configuration
+### Checking PWM Configuration
 
 You can check the PWM configuration of your Raspberry Pi with the following command, using [JBang](/prepare/install-java/#install-sdkman-maven-and-jbang) and a checker tool available in the [GitHub Pi4J OS repository](https://github.com/pi4J/pi4j-os). One or more checks are performed depending on the IO type checked by the tool. You will get a result like this, indicating if the check passed or failed, with more info about the expected and found result:
 
@@ -110,22 +61,13 @@ If you have used the IOChecker before and want to make sure you are using the la
 $ jbang cache clear
 ```
 
-## Linuxfs Provider (linuxfs-pwm)
-
-As of version 2.6.0 of Pi4J, `linuxfs-pwm` also supports hardware PWM on the Raspberry Pi 5. More information and an example implementation is available in the blog post [PWM Hardware Support on Raspberry Pi5](/blog/2024/20240423_pwm_rpi5/).
-
-### Hardware only
-
-Only hardware PWM is supported.
-
 ### PWM GPIOs
-The channel number in the following charts are supplied as the buildPwmConfig config value ```address```.
 
-The user must modify `config.txt` to enable PWM. 
+The user must modify `config.txt` to enable PWM.
 
 * Raspberry OS Bullseye: `/boot/config.txt`
-* Raspberry OS Bookworm  `/boot/firmware/config.txt` 
- 
+* Raspberry OS Bookworm: `/boot/firmware/config.txt`
+
 To take effect after file modification the Raspberry Pi must be rebooted.
 
 #### Raspberry Pi 4
@@ -179,7 +121,7 @@ dtoverlay=pwm-2chan,pin=12,func=4,pin2=13,func2=4
 ```
 
 The statement added to `config.txt` will determine which GPIOs will exhibit the PWM behavior.
-The channel number in the above charts are supplied as the `buildPwmConfig` value for the `address`.
+The channel number in the above charts is supplied as the `channel()` value on the PWM config builder (see the code example below), and the `pwmchipN` number is supplied as `chip()`.
 
 You can test the PWM channels in the terminal like this:
 
@@ -217,7 +159,8 @@ For the technical control of a component with PWM, two values must be defined:
   A value of 50% means that within one cycle the component is switched on exactly half 
   the time and then switched off. A value of 25%, on the other hand, would mean that 
   the component is switched on only a quarter of the time and the component remains 
-  switched off for the remaining three quarters of the cycle.
+  switched off for the remaining three quarters of the cycle. As of Pi4J V5, the duty cycle 
+  is a `double` (instead of an `int`), so fractional percentages such as `12.5` are supported.
 * Frequency: This value defines how often per second a cycle (on / off) takes place for 
   this component and is usually specified in the unit Hertz (Hz). With a value of 10Hz, 
   the component would alternate 10 times between being switched on and switched off in 
@@ -233,9 +176,7 @@ These two values can be controlled via the Pi4J library and are also used intern
 
 ### Code example
 
-The following example is an extract of a [CrowPi](/sbc/crowpi) example project that includes a component to control a buzzer with PWM.
-Of importance, this example executes on a Raspberry Pi4, the buildPwmConfig(Context pi4j, int address) example 
-code uses pigpio-pwm and the value passed for 'address' is the BCM pin number.
+The following example is an extract of a [CrowPi](/sbc/crowpi) example project that includes a component to control a buzzer with PWM, using the `ffm-pwm` provider. Of importance, the `buildPwmConfig(Context pi4j, int chip, int channel)` example code addresses the hardware PWM output by its `chip`/`channel` pair (see [PWM GPIOs](#pwm-gpios) above for how to find these for your board), and the duty cycle passed to `pwm.on(...)` is a `double`.
 
 ```java
 public class BuzzerComponent extends Component {
@@ -243,13 +184,14 @@ public class BuzzerComponent extends Component {
     protected final Pwm pwm;
 
     /**
-     * Creates a new buzzer component with a custom BCM pin.
+     * Creates a new buzzer component on the given PWM chip/channel.
      *
      * @param pi4j    Pi4J context
-     * @param address Custom BCM pin address
+     * @param chip    PWM chip number
+     * @param channel PWM channel number
      */
-    public BuzzerComponent(Context pi4j, int address) {
-        this.pwm = pi4j.create(buildPwmConfig(pi4j, address));
+    public BuzzerComponent(Context pi4j, int chip, int channel) {
+        this.pwm = pi4j.create(buildPwmConfig(pi4j, chip, channel));
     }
 
     /**
@@ -259,7 +201,7 @@ public class BuzzerComponent extends Component {
      *
      * @param frequency Frequency in Hz
      */
-    public void playTone(int frequency) {
+    public void playTone(double frequency) {
         playTone(frequency, 0);
     }
 
@@ -272,11 +214,11 @@ public class BuzzerComponent extends Component {
      * @param frequency Frequency in Hz
      * @param duration  Duration in milliseconds
      */
-    public void playTone(int frequency, int duration) {
+    public void playTone(double frequency, int duration) {
         if (frequency > 0) {
             // Activate the PWM with a duty cycle of 50% and the given frequency in Hz.
             // This causes the buzzer to be on for half of the time during each cycle, resulting in the desired frequency.
-            pwm.on(50, frequency);
+            pwm.on(50.0, frequency);
 
             // If the duration is larger than zero, the tone should be automatically stopped after the given duration.
             if (duration > 0) {
@@ -316,43 +258,110 @@ public class BuzzerComponent extends Component {
     }
 
     /**
-     * Builds a new PWM configuration for the buzzer using pigpio-pwm
+     * Builds a new PWM configuration for the buzzer using ffm-pwm
      *
      * @param pi4j    Pi4J context
-     * @param address BCM pin address
+     * @param chip    PWM chip number
+     * @param channel PWM channel number
      * @return PWM configuration
      */
-    protected static PwmConfig buildPwmConfig(Context pi4j, int address) {
+    protected static PwmConfig buildPwmConfig(Context pi4j, int chip, int channel) {
         return Pwm.newConfigBuilder(pi4j)
-            .id("BCM" + address)
+            .id("PWMChip" + chip + "Channel" + channel)
             .name("Buzzer")
-            .address(address)
+            .chip(chip)
+            .channel(channel)
             .pwmType(PwmType.HARDWARE)
-            .provider("pigpio-pwm")
-            .initial(0)
-            .shutdown(0)
+            .initial(0.0)
+            .shutdown(0.0)
             .build();
     }
-    
-    /**  Builds a new PWM configuration for the buzzer using linuxfs-pwm
-    * @param pi4j    Pi4J context
-    * @param channel Channel
-    * @return PWM configuration
-    */
-    protected static PwmConfig buildPwmConfig(Context pi4j, int channel) {
-        return Pwm.newConfigBuilder(pi4j)
-            .id("Channel" + channel)
-            .name("Buzzer")
-            .address(channel)
-            .pwmType(PwmType.HARDWARE)
-            .provider("linuxfs-pwm")
-            .initial(0)
-            .shutdown(0)
-            .build();
-  }
 }
 ```
 
 ## Read More
 
 * [DigiKey: The Role of Pulse Width Modulation in Electronics](https://www.digikey.com/en/articles/the-role-of-pulse-width-modulation-in-electronics)
+
+## Related to functionality existing in V4, but no longer included in V5
+
+### Pigpio Provider (pigpio-pwm)
+
+#### Software vs. Hardware
+
+When using the pigpio-pwm provider two different types of PWM are available on the Raspberry Pi, specifically a software 
+and a hardware implementation. Both basically offer the same options, but the software
+version cannot achieve precise or particularly fast frequencies. When using the linuxfs-pwm provider only 
+hardware PWM is available.
+
+#### Software PWM limitation
+
+The reason for this is that in the software implementation for each individual cycle 
+(on / off) a new control command must be transmitted from the JVM (Java Virtual Machine) 
+to the corresponding component, while in the hardware implementation of the Raspberry Pi 
+notices the desired frequency and regulates it independently directly on the board.
+
+The Raspberry Pi supports 2 hardware based PWM channels. You can access these two channels
+via 2 separate sets of 4 GPIO header pins, but still limited to only 2 channels 
+(2 unique PWM timing configurations).
+
+#### PWM GPIOs (pigpio)
+
+The same PWM channel is available on multiple GPIOs.
+The latest frequency and dutycycle setting will be used by all GPIO which share a PWM channel.
+
+The GPIO must be one of the following:
+
+```
+12  PWM channel 0  All models but A and B
+13  PWM channel 1  All models but A and B
+18  PWM channel 0  All models
+19  PWM channel 1  All models but A and B
+
+40  PWM channel 0  Compute module only
+41  PWM channel 1  Compute module only
+45  PWM channel 1  Compute module only
+52  PWM channel 0  Compute module only
+53  PWM channel 1  Compute module only
+```
+The GPIO number in the above chart was supplied as the buildPwmConfig config value ```address```.
+
+As Pi4J was using PiGPIO "under the hood", you could take advantage of the additional 
+PWM functionalities of it. PiGPIO provided **additional (soft) PWM support to any 
+of the GPIO pins (0-31) and its using some hardware timing technique to optimize 
+performance** --- but its not the same as the actual hardware PWM pins natively on the 
+RaspberryPi. In the Pi4J API, this was called "Software" PWM and would need to set 
+```.pwmType(PwmType.SOFTWARE)```. This was considered software-based PWM because it was being 
+provided at a software layer, in this case by the PIGPIO library.
+
+If you needed more than 2 PWM pins, the software PWM functionality was an option, or a
+PWM expander board/chip (controlled by I2C/SPI) to provide additional PWM support.
+
+### Linuxfs Provider (linuxfs-pwm)
+
+As of version 2.6.0 of Pi4J, `linuxfs-pwm` also supported hardware PWM on the Raspberry Pi 5. More information and an example implementation is available in the blog post [PWM Hardware Support on Raspberry Pi5](/blog/2024/20240423_pwm_rpi5/).
+
+Only hardware PWM was supported. The channel number was supplied as the buildPwmConfig config value ```address```.
+
+Example on how PWM was used with LinuxFS:
+
+```java
+/**
+ * Builds a new PWM configuration for the buzzer
+ *
+ * @param pi4j    Pi4J context
+ * @param channel Channel number of the PWM
+ * @return PWM configuration
+ */
+protected static PwmConfig buildPwmConfig(Context pi4j, int channel) {
+    return Pwm.newConfigBuilder(pi4j)
+        .id("PWMChannel" + channel)
+        .name("Buzzer")
+        .address(channel)
+        .pwmType(PwmType.HARDWARE)
+        .provider("linuxfs-pwm")
+        .initial(0)
+        .shutdown(0)
+        .build();
+}
+```

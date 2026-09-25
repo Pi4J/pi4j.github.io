@@ -1,8 +1,12 @@
 ---
 title: LinuxFS Provider
-weight: 93
+weight: 192
 tags: ["LinuxFS", "PWM", "I2C"]
 ---
+
+{{% notice warning %}}
+**Removed in Pi4J V5.** Related to functionality existing in V4, but no longer included in V5. Use the [FFM provider](/documentation/providers/ffm/) instead. The information below is kept for reference for users still on Pi4J V4.
+{{% /notice %}}
 
 The current implementation of the LinuxFS plugin implements a file based I2C, SPI, and PWM provider. The file based I2C provider opens 
 `/dev/i2c-1` using a `RandomAccessFile` to perform I2C reads and writes. The file based PWM provider opens

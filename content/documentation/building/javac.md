@@ -114,48 +114,26 @@ If everything is OK the output must be something similar to this, depending on y
 [main] INFO com.pi4j.Pi4J - New auto context
 [main] INFO com.pi4j.Pi4J - New context builder
 
-[main] INFO com.pi4j.platform.impl.DefaultRuntimePlatforms - adding platform to managed platform map [id=raspberrypi; name=RaspberryPi Platform; priority=5; class=com.pi4j.plugin.raspberrypi.platform.RaspberryPiPlatform]
-[main] INFO com.pi4j.util.Console - --------------------
-[main] INFO com.pi4j.util.Console - |  Pi4J PLATFORMS  |
-[main] INFO com.pi4j.util.Console - --------------------
-PLATFORMS: [1] "Pi4J Runtime Platforms" <com.pi4j.platform.impl.DefaultPlatforms> 
-??PLATFORM: "RaspberryPi Platform" {raspberrypi} <com.pi4j.plugin.raspberrypi.platform.RaspberryPiPlatform> {Pi4J Platform for the RaspberryPi series of products.} 
-[main] INFO com.pi4j.util.Console - 
-[main] INFO com.pi4j.util.Console - ---------------------------
-[main] INFO com.pi4j.util.Console - |  Pi4J DEFAULT PLATFORM  |
-[main] INFO com.pi4j.util.Console - ---------------------------
-PLATFORM: "RaspberryPi Platform" {raspberrypi} <com.pi4j.plugin.raspberrypi.platform.RaspberryPiPlatform> {Pi4J Platform for the RaspberryPi series of products.} 
-[main] INFO com.pi4j.util.Console - 
 [main] INFO com.pi4j.util.Console - --------------------
 [main] INFO com.pi4j.util.Console - |  Pi4J PROVIDERS  |
 [main] INFO com.pi4j.util.Console - --------------------
-PROVIDERS: [12] "I/O Providers" <com.pi4j.provider.impl.DefaultProviders> 
-??DIGITAL_INPUT: [2] <com.pi4j.io.gpio.digital.DigitalInputProvider> 
-? ??PROVIDER: "RaspberryPi Digital Input (GPIO) Provider" {raspberrypi-digital-input} <com.pi4j.plugin.raspberrypi.provider.gpio.digital.RpiDigitalInputProviderImpl> {com.pi4j.plugin.raspberrypi.provider.gpio.digital.RpiDigitalInputProviderImpl} 
-? ??PROVIDER: "PiGpio Digital Input (GPIO) Provider" {pigpio-digital-input} <com.pi4j.plugin.pigpio.provider.gpio.digital.PiGpioDigitalInputProviderImpl> {com.pi4j.plugin.pigpio.provider.gpio.digital.PiGpioDigitalInputProviderImpl} 
-??SERIAL: [2] <com.pi4j.io.serial.SerialProvider> 
-? ??PROVIDER: "RaspberryPi Serial Provider" {raspberrypi-serial} <com.pi4j.plugin.raspberrypi.provider.serial.RpiSerialProviderImpl> {com.pi4j.plugin.raspberrypi.provider.serial.RpiSerialProviderImpl} 
-? ??PROVIDER: "PiGpio Serial Provider" {pigpio-serial} <com.pi4j.plugin.pigpio.provider.serial.PiGpioSerialProviderImpl> {com.pi4j.plugin.pigpio.provider.serial.PiGpioSerialProviderImpl} 
-??PWM: [2] <com.pi4j.io.pwm.PwmProvider> 
-? ??PROVIDER: "PiGpio PWM Provider" {pigpio-pwm} <com.pi4j.plugin.pigpio.provider.pwm.PiGpioPwmProviderImpl> {com.pi4j.plugin.pigpio.provider.pwm.PiGpioPwmProviderImpl} 
-? ??PROVIDER: "RaspberryPi PWM Provider" {raspberrypi-pwm} <com.pi4j.plugin.raspberrypi.provider.pwm.RpiPwmProviderImpl> {com.pi4j.plugin.raspberrypi.provider.pwm.RpiPwmProviderImpl} 
-??I2C: [2] <com.pi4j.io.i2c.I2CProvider> 
-? ??PROVIDER: "PiGpio I2C Provider" {pigpio-i2c} <com.pi4j.plugin.pigpio.provider.i2c.PiGpioI2CProviderImpl> {com.pi4j.plugin.pigpio.provider.i2c.PiGpioI2CProviderImpl} 
-? ??PROVIDER: "RaspberryPi I2C Provider" {raspberrypi-i2c} <com.pi4j.plugin.raspberrypi.provider.i2c.RpiI2CProviderImpl> {com.pi4j.plugin.raspberrypi.provider.i2c.RpiI2CProviderImpl} 
-??ANALOG_OUTPUT: [0] <com.pi4j.io.gpio.analog.AnalogOutputProvider> 
-??SPI: [2] <com.pi4j.io.spi.SpiProvider> 
-? ??PROVIDER: "PiGpio SPI Provider" {pigpio-spi} <com.pi4j.plugin.pigpio.provider.spi.PiGpioSpiProviderImpl> {com.pi4j.plugin.pigpio.provider.spi.PiGpioSpiProviderImpl} 
-? ??PROVIDER: "RaspberryPi SPI Provider" {raspberrypi-spi} <com.pi4j.plugin.raspberrypi.provider.spi.RpiSpiProviderImpl> {com.pi4j.plugin.raspberrypi.provider.spi.RpiSpiProviderImpl} 
-??DIGITAL_OUTPUT: [2] <com.pi4j.io.gpio.digital.DigitalOutputProvider> 
-? ??PROVIDER: "RaspberryPi Digital Output (GPIO) Provider" {raspberrypi-digital-output} <com.pi4j.plugin.raspberrypi.provider.gpio.digital.RpiDigitalOutputProviderImpl> {com.pi4j.plugin.raspberrypi.provider.gpio.digital.RpiDigitalOutputProviderImpl} 
-? ??PROVIDER: "PiGpio Digital Output (GPIO) Provider" {pigpio-digital-output} <com.pi4j.plugin.pigpio.provider.gpio.digital.PiGpioDigitalOutputProviderImpl> {com.pi4j.plugin.pigpio.provider.gpio.digital.PiGpioDigitalOutputProviderImpl} 
-??ANALOG_INPUT: [0] <com.pi4j.io.gpio.analog.AnalogInputProvider> 
+PROVIDERS: [5] "I/O Providers" <com.pi4j.provider.impl.DefaultProviders> 
+??DIGITAL_INPUT: [1] <com.pi4j.io.gpio.digital.DigitalInputProvider> 
+? ??PROVIDER: "FFM Digital Input (GPIO) Provider" {ffm-digital-input} <com.pi4j.plugin.ffm.providers.gpio.FFMDigitalInputProviderImpl> 
+??PWM: [1] <com.pi4j.io.pwm.PwmProvider> 
+? ??PROVIDER: "FFM PWM Provider" {ffm-pwm} <com.pi4j.plugin.ffm.providers.pwm.FFMPwmProviderImpl> 
+??I2C: [1] <com.pi4j.io.i2c.I2CProvider> 
+? ??PROVIDER: "FFM I2C Provider" {ffm-i2c} <com.pi4j.plugin.ffm.providers.i2c.FFMI2CProviderImpl> 
+??SPI: [1] <com.pi4j.io.spi.SpiProvider> 
+? ??PROVIDER: "FFM SPI Provider" {ffm-spi} <com.pi4j.plugin.ffm.providers.spi.FFMSpiProviderImpl> 
+??DIGITAL_OUTPUT: [1] <com.pi4j.io.gpio.digital.DigitalOutputProvider> 
+? ??PROVIDER: "FFM Digital Output (GPIO) Provider" {ffm-digital-output} <com.pi4j.plugin.ffm.providers.gpio.FFMDigitalOutputProviderImpl> 
 [main] INFO com.pi4j.util.Console - 
 [main] INFO com.pi4j.util.Console - -------------------
 [main] INFO com.pi4j.util.Console - |  Pi4J REGISTRY  |
 [main] INFO com.pi4j.util.Console - -------------------
 REGISTRY: [1] "I/O Registered Instances" <com.pi4j.registry.impl.DefaultRegistry> 
-??IO: "DOUT-1" {my-digital-output-1} <com.pi4j.plugin.raspberrypi.provider.gpio.digital.RpiDigitalOutput> {DOUT-1} 
+??IO: "DOUT-1" {my-digital-output-1} <com.pi4j.plugin.ffm.providers.gpio.FFMDigitalOutput> {DOUT-1} 
 [main] INFO com.pi4j.util.Console - 
 ```
 

@@ -33,7 +33,7 @@ var button = pi4j.din().create(INTEGER_PIN_ADDRESS, STRING_ID, STRING_NAME, STRI
 var buttonConfig = DigitalInput.newConfigBuilder(pi4j)
         .id("button")
         .name("Press button")
-        .address(PIN_BUTTON)
+        .bcm(PIN_BUTTON)
         .pull(PullResistance.PULL_DOWN)
         .debounce(3000L);
 var button = pi4j.create(buttonConfig);
@@ -56,7 +56,7 @@ var led = pi4j.digitalOutput().create(INTEGER_PIN_ADDRESS);
 var ledConfig = DigitalOutput.newConfigBuilder(pi4j)
         .id("my-dout")
         .name("My LED")
-        .address(PIN_LED)
+        .bcm(PIN_LED)
         .shutdown(DigitalState.LOW)
         .initial(DigitalState.HIGH);
 var led = pi4j.create(ledConfig);
@@ -126,10 +126,9 @@ a `describe()` or `toString()` operation on Pi4J objects.
 var config = DigitalOutput.newConfigBuilder(pi4j)
     .id("my-dout")
     .name("My Digital Output")
-    .address(GPIO_PIN)
+    .bcm(GPIO_PIN)
     .shutdown(DigitalState.LOW)
-    .initial(DigitalState.HIGH)
-    .provider("linuxfs-digital-output");
+    .initial(DigitalState.HIGH);
 
 // Create digital output I/O instance using configuration
 var output = pi4j.create(config);
@@ -140,21 +139,20 @@ output.describe().print(System.out);
 ----
 
 // ... CONSOLE OUTPUT
-// > IO: "My Digital Output" {my-dout} <com.pi4j.plugin.linuxfs.provider.gpio.digital.LinuxFsDigitalOutput> {DOUT-26} 
+// > IO: "My Digital Output" {my-dout} <com.pi4j.plugin.ffm.providers.gpio.FFMDigitalOutput> {DOUT-26} 
 ```
 
 ## Reuse the config 
 
-The config object can be reused to create multiple GPIOs by overriding the `address` (and `id` if used) for each I/O instance:
+The config object can be reused to create multiple GPIOs by overriding the `bcm` (and `id` if used) for each I/O instance:
 
 ```java
 var config = DigitalOutput.newConfigBuilder(pi4j)
-        .provider("linuxfs-digital-output")
         .shutdown(DigitalState.LOW)
         .initial(DigitalState.LOW);
 
-var pin0 = pi4j.create(config.address(0).id("my-led"));
-var pin1 = pi4j.create(config.address(1).id("my-relay"));
-var pin2 = pi4j.create(config.address(2).id("my-lock"));
-var pin3 = pi4j.create(config.address(3).id("my-pump"));
+var pin0 = pi4j.create(config.bcm(0).id("my-led"));
+var pin1 = pi4j.create(config.bcm(1).id("my-relay"));
+var pin2 = pi4j.create(config.bcm(2).id("my-lock"));
+var pin3 = pi4j.create(config.bcm(3).id("my-pump"));
 ```

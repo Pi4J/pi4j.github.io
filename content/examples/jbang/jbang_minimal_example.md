@@ -16,7 +16,7 @@ GITHUB PROJECT: [github.com/Pi4J/pi4j-jbang > Pi4JMinimalExample.java](https://g
 Before proceeding with this example, make sure that you have a Raspberry Pi prepared to execute Java code with JBang as [explained here](https://pi4j.com/examples/jbang/).
 {{% /notice %}}
 
-The following example is based on the ["Minimal example application"](http://localhost:49905/getting-started/minimal-example-application/), and uses the same wiring with a button and LED. By using JBang we can run this project with a single file without the need of a full Maven or Gradle project, or compiling the Java code.
+The following example is based on the ["Minimal example application"](/getting-started/minimal-example-application/), and uses the same wiring with a button and LED. By using JBang we can run this project with a single file without the need of a full Maven or Gradle project, or compiling the Java code.
 
 ![Wiring of a LED and button for the minimal example application](/assets/getting-started/minimal/led-button_bb.png)
 
@@ -29,9 +29,8 @@ Create a new file Pi4JMinimalExample.java with the following content:
 
 //DEPS org.slf4j:slf4j-api:1.7.35
 //DEPS org.slf4j:slf4j-simple:1.7.35
-//DEPS com.pi4j:pi4j-core:2.3.0
-//DEPS com.pi4j:pi4j-plugin-raspberrypi:2.3.0
-//DEPS com.pi4j:pi4j-plugin-pigpio:2.3.0
+//DEPS com.pi4j:pi4j-core:5.0.0
+//DEPS com.pi4j:pi4j-plugin-ffm:5.0.0
 
 import com.pi4j.Pi4J;
 import com.pi4j.io.gpio.digital.DigitalInput;
@@ -58,19 +57,17 @@ public class Pi4JMinimalExample {
         var ledConfig = DigitalOutput.newConfigBuilder(pi4j)
                 .id("led")
                 .name("LED Flasher")
-                .address(PIN_LED)
+                .bcm(PIN_LED)
                 .shutdown(DigitalState.LOW)
-                .initial(DigitalState.LOW)
-                .provider("pigpio-digital-output");
+                .initial(DigitalState.LOW);
         var led = pi4j.create(ledConfig);
 
         var buttonConfig = DigitalInput.newConfigBuilder(pi4j)
                 .id("button")
                 .name("Press button")
-                .address(PIN_BUTTON)
+                .bcm(PIN_BUTTON)
                 .pull(PullResistance.PULL_DOWN)
-                .debounce(3000L)
-                .provider("pigpio-digital-input");
+                .debounce(3000L);
         var button = pi4j.create(buttonConfig);
         button.addListener(e -> {
             if (e.state() == DigitalState.LOW) {
@@ -97,17 +94,16 @@ public class Pi4JMinimalExample {
 
 ## Running the Application
 
-Because this example uses the PiGpio plugin, we need to execute it with `sudo`:
+This example uses the [FFM provider](/documentation/providers/ffm/), which does not need `sudo` — see [Dependencies and Permissions](/documentation/providers/ffm/#dependencies-and-permissions) to set up the correct GPIO permissions instead.
 
 Without the need of any further configuration, installation, dependency download, or compiling, we should now be able to run this code with:
 
 ```shell
-$  sudo `which jbang` Pi4JMinimalExample.java
+$ jbang Pi4JMinimalExample.java
 
-Downloading JDK 11. Be patient, this can take several minutes...
+Downloading JDK 25. Be patient, this can take several minutes...
 [main] INFO com.pi4j.Pi4J - New auto context
 [main] INFO com.pi4j.Pi4J - New context builder
-[main] INFO com.pi4j.platform.impl.DefaultRuntimePlatforms - adding platform to managed platform map [id=raspberrypi; name=RaspberryPi Platform; priority=5; class=com.pi4j.plugin.raspberrypi.platform.RaspberryPiPlatform]
 [main] INFO com.pi4j.util.Console - LED high
 [main] INFO com.pi4j.util.Console - LED low
 [main] INFO com.pi4j.util.Console - LED low

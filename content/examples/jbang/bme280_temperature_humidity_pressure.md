@@ -131,9 +131,8 @@ Then we can define the dependencies and imports.
 ```java
 //DEPS org.slf4j:slf4j-api:1.7.35
 //DEPS org.slf4j:slf4j-simple:1.7.35
-//DEPS com.pi4j:pi4j-core:2.3.0
-//DEPS com.pi4j:pi4j-plugin-raspberrypi:2.3.0
-//DEPS com.pi4j:pi4j-plugin-linuxfs:2.3.0
+//DEPS com.pi4j:pi4j-core:5.0.0
+//DEPS com.pi4j:pi4j-plugin-ffm:5.0.0
 ```
 
 Then we can define the imports as we would do in any Java file:
@@ -143,7 +142,6 @@ import com.pi4j.Pi4J;
 import com.pi4j.util.Console;
 import com.pi4j.io.i2c.I2C;
 import com.pi4j.io.i2c.I2CConfig;
-import com.pi4j.io.i2c.I2CProvider;
 import java.text.DecimalFormat;
 ```
 
@@ -154,10 +152,8 @@ import java.text.DecimalFormat;
 
 //DEPS org.slf4j:slf4j-api:1.7.35
 //DEPS org.slf4j:slf4j-simple:1.7.35
-//DEPS com.pi4j:pi4j-core:2.3.0
-//DEPS com.pi4j:pi4j-plugin-raspberrypi:2.3.0
-//DEPS com.pi4j:pi4j-plugin-linuxfs:2.3.0
-//DEPS com.pi4j:pi4j-plugin-pigpio:2.3.0
+//DEPS com.pi4j:pi4j-core:5.0.0
+//DEPS com.pi4j:pi4j-plugin-ffm:5.0.0
 ```
 
 Then we can define the imports as we would do in any Java file:
@@ -189,7 +185,6 @@ The main method initializes the sensor, and loops 10 times to the process of res
 
         // Initialize I2C
         console.println("Initializing the sensor via I2C");
-        I2CProvider i2CProvider = pi4j.provider("linuxfs-i2c");
         I2CConfig i2cConfig = I2C.newConfigBuilder(pi4j)
                 .id("BME280")
                 .bus(I2C_BUS)
@@ -197,7 +192,7 @@ The main method initializes the sensor, and loops 10 times to the process of res
                 .build();
 
         // Read values 10 times
-        try (I2C bme280 = i2CProvider.create(i2cConfig)) {   
+        try (I2C bme280 = pi4j.create(i2cConfig)) {   
             for (int counter = 0; counter < 10; counter++) {
                 console.println("**************************************");
                 console.println("Reading values, loop " + (counter + 1));
@@ -243,10 +238,9 @@ The main method initializes the sensor, and loops 10 times to the process of res
         var csGpioConfig = DigitalOutput.newConfigBuilder(pi4j)
                 .id("CS_pin")
                 .name("CS")
-                .address(csPin)
+                .bcm(csPin)
                 .shutdown(DigitalState.HIGH)
-                .initial(DigitalState.HIGH)
-                .provider("pigpio-digital-output");
+                .initial(DigitalState.HIGH);
         csGpio = pi4j.create(csGpioConfig);
 
         var spiConfig = Spi.newConfigBuilder(pi4j)
@@ -256,7 +250,6 @@ The main method initializes the sensor, and loops 10 times to the process of res
                 .chipSelect(chipSelect)
                 .baud(Spi.DEFAULT_BAUD)
                 .mode(SpiMode.MODE_0)
-                .provider("pigpio-spi")
                 .build();
         spi = pi4j.create(spiConfig);
 
@@ -325,7 +318,7 @@ Because JBang can download the dependencies and compile the code, we just need t
 
 ### Running the I2C Application
 
-The I2C example uses the LinuxFS plugin of Pi4J. This means it can be executed without the need to use `sudo`:
+This example uses the [FFM provider](/documentation/providers/ffm/), which does not need `sudo` — see [Dependencies and Permissions](/documentation/providers/ffm/#dependencies-and-permissions) to set up the correct GPIO permissions instead:
 
 ```shell
 $ jbang Pi4JTempHumPressI2C.java
@@ -333,15 +326,12 @@ $ jbang Pi4JTempHumPressI2C.java
 [jbang] Resolving dependencies...
 [jbang]    org.slf4j:slf4j-api:1.7.35
 [jbang]    org.slf4j:slf4j-simple:1.7.35
-[jbang]    com.pi4j:pi4j-core:2.3.0
-[jbang]    com.pi4j:pi4j-plugin-raspberrypi:2.3.0
-[jbang]    com.pi4j:pi4j-plugin-pigpio:2.3.0
-[jbang]    com.pi4j:pi4j-plugin-linuxfs:2.3.0
+[jbang]    com.pi4j:pi4j-core:5.0.0
+[jbang]    com.pi4j:pi4j-plugin-ffm:5.0.0
 [jbang] Dependencies resolved
 [jbang] Building jar...
 [main] INFO com.pi4j.Pi4J - New auto context
 [main] INFO com.pi4j.Pi4J - New context builder
-[main] INFO com.pi4j.platform.impl.DefaultRuntimePlatforms - adding platform to managed platform map [id=raspberrypi; name=RaspberryPi Platform; priority=5; class=com.pi4j.plugin.raspberrypi.platform.RaspberryPiPlatform]
 [main] INFO com.pi4j.util.Console - Initializing the sensor via I2C
 [main] INFO com.pi4j.util.Console - **************************************
 [main] INFO com.pi4j.util.Console - Temperature: 21.287 °C
@@ -359,24 +349,20 @@ $ jbang Pi4JTempHumPressI2C.java
 
 ### Running the SPI Application
 
-As the PiGpio plugin is used, this example application must be executed with `sudo`:
+This example uses the [FFM provider](/documentation/providers/ffm/), which does not need `sudo` — see [Dependencies and Permissions](/documentation/providers/ffm/#dependencies-and-permissions) to set up the correct GPIO permissions instead:
 
 ```shell
-$ sudo `which jbang` Pi4JTempHumPressSpi.java
+$ jbang Pi4JTempHumPressSpi.java
 
 [jbang] Resolving dependencies...
 [jbang]    org.slf4j:slf4j-api:1.7.35
 [jbang]    org.slf4j:slf4j-simple:1.7.35
-[jbang]    com.pi4j:pi4j-core:2.3.0
-[jbang]    com.pi4j:pi4j-plugin-raspberrypi:2.3.0
-[jbang]    com.pi4j:pi4j-plugin-pigpio:2.3.0
-[jbang]    com.pi4j:pi4j-plugin-linuxfs:2.3.0
-[jbang]    com.pi4j:pi4j-plugin-pigpio:2.3.0
+[jbang]    com.pi4j:pi4j-core:5.0.0
+[jbang]    com.pi4j:pi4j-plugin-ffm:5.0.0
 [jbang] Dependencies resolved
 [jbang] Building jar...
 [main] INFO com.pi4j.Pi4J - New auto context
 [main] INFO com.pi4j.Pi4J - New context builder
-[main] INFO com.pi4j.platform.impl.DefaultRuntimePlatforms - adding platform to managed platform map [id=raspberrypi; name=RaspberryPi Platform; priority=5; class=com.pi4j.plugin.raspberrypi.platform.RaspberryPiPlatform]
 [main] INFO com.pi4j.util.Console - Initializing the sensor via SPI
 [main] INFO com.pi4j.util.Console - **************************************
 [main] INFO com.pi4j.util.Console - Reading values, loop 1
