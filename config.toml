@@ -52,10 +52,6 @@ home = ["HTML", "RSS", "JSON"]
   themeVariant = "blue"
   # Provide a list of custom css files to load relative from the `static/` folder in the site root.
   custom_css = ["css/home.css"]
-  # Latest release shown in the homepage release banner. Bump these on each release.
-  latestVersion = "V4.0.2"
-  latestVersionDate = "2026-06-08"
-  latestVersionNote = "Built on Java 25, with the new Foreign Function & Memory (FFM) plugin replacing native JNI calls."
   # Change the title separator. Default to "::".
   titleSeparator = " - "
   # Default image used for social sharing cards (Open Graph / Twitter). Relative to the site root.
@@ -64,6 +60,31 @@ home = ["HTML", "RSS", "JSON"]
   linkedin = "https://www.linkedin.com/company/pi4j/"
   mastodon = "https://foojay.social/@pi4j"
   github = "https://github.com/Pi4J"
+
+# Latest releases shown in the homepage release banner. Bump the relevant block on each release.
+[params.release.pi4j]
+  title = "Pi4J"
+  version = "V4.0.2"
+  date = "2026-06-08"
+  note = "Built on Java 25, with the new Foreign Function & Memory (FFM) plugin replacing native JNI calls."
+
+  [[params.release.pi4j.links]]
+    label = "Release notes"
+    url = "about/release-notes/"
+
+  [[params.release.pi4j.links]]
+    label = "What's new in V4"
+    url = "about/info-v4/"
+
+[params.release.drivers]
+  title = "Pi4J Drivers"
+  version = "V1.2.0"
+  date = "2026-09-25"
+  note = "New ePaper display drivers, partial display updates, new DAC/ADC drivers, and more."
+
+  [[params.release.drivers.links]]
+    label = "Release notes"
+    url = "drivers/drivers-release-notes/"
 
 [imaging]
     # Default resample filter used for resizing. Default is Box,

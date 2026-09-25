@@ -24,19 +24,24 @@
   </section>
 
   {{/* ---------------- Latest release banner ---------------- */}}
-  {{ with .Site.Params.latestVersion }}
-  <section class="pi4j-release">
-    <span class="pi4j-release__rocket">🚀</span>
-    <div class="pi4j-release__main">
-      <div class="pi4j-release__text">
-        <strong>Latest release: {{ . }}</strong>{{ with $.Site.Params.latestVersionDate }} &middot; {{ . }}{{ end }}
-        {{ with $.Site.Params.latestVersionNote }}<span class="pi4j-release__note">{{ . }}</span>{{ end }}
-      </div>
-      <div class="pi4j-release__links">
-        <a href="{{ "about/release-notes/" | relURL }}">Release notes →</a>
-        <a href="{{ "about/info-v4/" | relURL }}">What's new in V4 →</a>
+  {{ with .Site.Params.release }}
+  <section class="pi4j-release-group">
+    {{ range (slice .pi4j .drivers) }}
+    {{ with . }}
+    <div class="pi4j-release">
+      <span class="pi4j-release__rocket">🚀</span>
+      <div class="pi4j-release__main">
+        <div class="pi4j-release__text">
+          <strong>{{ with .title }}{{ . }} {{ end }}latest release: {{ .version }}</strong>{{ with .date }} &middot; {{ . }}{{ end }}
+          {{ with .note }}<span class="pi4j-release__note">{{ . }}</span>{{ end }}
+        </div>
+        <div class="pi4j-release__links">
+          {{ range .links }}<a href="{{ .url | relURL }}">{{ .label }} →</a>{{ end }}
+        </div>
       </div>
     </div>
+    {{ end }}
+    {{ end }}
   </section>
   {{ end }}
 

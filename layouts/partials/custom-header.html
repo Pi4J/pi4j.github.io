@@ -79,7 +79,7 @@
   "image" $ogImageURL
   "license" "https://github.com/Pi4J/pi4j/blob/master/LICENSE"
   "offers" (dict "@type" "Offer" "price" "0" "priceCurrency" "USD") }}
-{{- with .Site.Params.latestVersion }}{{ $app = merge $app (dict "softwareVersion" .) }}{{ end }}
+{{- with .Site.Params.release.pi4j.version }}{{ $app = merge $app (dict "softwareVersion" .) }}{{ end }}
 <script type="application/ld+json">{{ $app | jsonify (dict "indent" "  ") | safeJS }}</script>
 {{- end }}
 {{- if and .IsPage (eq .Section "blog") }}
