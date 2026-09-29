@@ -13,24 +13,25 @@ The [pi4j-kotlin](https://github.com/Pi4J/pi4j-kotlin) library has not yet been 
 {{% /notice %}}
 
 ### Installation
+
 Install the Pi4J dependency and `pi4j-ktx` in your app's `build.gradle.ktx` file:
+
 ``` kotlin
 dependencies {
     implementation("com.pi4j:pi4j-ktx:2.4.0") // Kotlin DSL
-    implementation("com.pi4j:pi4j-core:2.3.0")
-    implementation("com.pi4j:pi4j-plugin-raspberrypi:2.3.0")
-    implementation("com.pi4j:pi4j-plugin-pigpio:2.3.0")
+    implementation("com.pi4j:pi4j-core:4.0.1")
+    implementation("com.pi4j:pi4j-plugin-ffm:4.0.1")
 }
 ```
 
 If you want to use the [Console DSL](kotlin-api-docs/#console) to [log with SLF4J](/documentation/logging/), add the dependency:
 
 ``` kotlin
-implementation("org.slf4j:slf4j-api:1.7.32")
-implementation("org.slf4j:slf4j-simple:1.7.32")
+implementation("org.slf4j:slf4j-api:2.0.17")
+implementation("org.slf4j:slf4j-simple:2.0.17")
 ```
 
 ### GitHub projects:
 
-* Kotlin Interface & DSL for Pi4J V2: [Pi4J-Kotlin](https://github.com/Pi4J/pi4j-kotlin)  
+* Kotlin Interface & DSL for Pi4J V4: [Pi4J-Kotlin](https://github.com/Pi4J/pi4j-kotlin)  
 * For Pi4J V1 Kotlin Bindings, check [Pi4K](https://github.com/mhashim6/Pi4K)

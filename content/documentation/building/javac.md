@@ -13,13 +13,10 @@ Pi4J.
 
 ## Java release
 
-Any Java release over 21 is enough, check it with this command:
+Any Java release over 25 is enough, check it with this command:
 
 ```shell
 $ java -version
-openjdk version "21.0.1" 2023-10-17 LTS
-OpenJDK Runtime Environment Zulu21.30+15-CA (build 21.0.1+12-LTS)
-OpenJDK 64-Bit Server VM Zulu21.30+15-CA (build 21.0.1+12-LTS, mixed mode, sharing)
 ```
 
 ## PI4J jar files

@@ -54,6 +54,7 @@ $ mvn clean package
 
 ``` shell
 $ cd target/distribution
+
 $ ls -l
 total 644
 -rw-r--r-- 1 pi pi 364456 Jun 19 10:04 pi4j-core-5.0.0.jar
@@ -61,9 +62,10 @@ total 644
 -rw-r--r-- 1 pi pi  37302 Jun 19 10:04 pi4j-plugin-ffm-5.0.0.jar
 -rwxr-xr-x 1 pi pi    101 Jun 19 10:04 run.sh
 -rwxr-xr-x 1 pi pi    101 Jun 19 10:04 run-kiosk.sh
--rw-r--r-- 1 pi pi  52173 Jun 19 10:04 slf4j-api-2.0.0-alpha0.jar
--rw-r--r-- 1 pi pi  15372 Jun 19 10:04 slf4j-simple-2.0.0-alpha0.jar
-$ sudo ./run.sh
+-rw-r--r-- 1 pi pi  52173 Jun 19 10:04 slf4j-api-2.0.17.jar
+-rw-r--r-- 1 pi pi  15372 Jun 19 10:04 slf4j-simple-2.0.17.jar
+
+$ ./run.sh
 ``` 
 
 {{% notice note %}}
@@ -83,6 +85,7 @@ To make use of the picade controls for existing FXGL project we provide an inter
 #### Integrate piMapping
 
 The code for the piMapper is found in the example [snake game](https://github.com/Pi4J/pi4j-example-fxgl).
+
 #### Update Game 
   
 Change your Game from “extend GameApplication” to “extend PicadeGameApplication”
@@ -103,6 +106,7 @@ onKeyDown(KeyCode.G, () -> player.getComponent(SnakeHeadComponent.class).log());
 ```
 
 ### GPIO
+
 * The Enum PicadeControl handles the the gpio numbers for the connected controls. [pinout.xyz](https://pinout.xyz/pinout/picade_hat) 
 ``` java
 PIN_JOYSTICK_UP(12),
@@ -121,11 +125,11 @@ PIN_BUTTON_1(5);
 #!/usr/bin/env bash
 java \
   -Dglass.platform=gtk \
-  -Djava.library.path=/opt/javafx-sdk-17/lib \
+  -Djava.library.path=/opt/javafx-sdk-25/lib \
   -Dmonocle.platform.traceConfig=false \
   -Dprism.verbose=false \
   -Djavafx.verbose=false \
-  --module-path .:/opt/javafx-sdk-17/lib \
+  --module-path .:/opt/javafx-sdk-25/lib \
   --add-modules javafx.controls \
   --module com.pi4j.example/com.pi4j.example.FxglExample $@
 ```
