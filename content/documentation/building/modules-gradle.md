@@ -12,7 +12,7 @@ The Pi4J project itself uses Maven and most example projects also use this build
 you can start with a copy of the ["Minimal example application"](/getting-started/minimal-example-application/) which includes
 all the required files to build with Gradle.
 
-Use Gradle version 6.6 (or later) and Java 25 OpenJDK (or later). The Gradle wrapper is used as described on 
+Use a Gradle version that supports Java 25 (or later) and Java 25 OpenJDK (or later).
 [docs.gradle.org](https://docs.gradle.org/current/userguide/gradle_wrapper.html). The Gradle configuration file 
 [build.gradle-file](https://github.com/Pi4J/pi4j-example-minimal/blob/master/build.gradle) is included in the sources.
 
