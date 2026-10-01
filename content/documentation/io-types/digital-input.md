@@ -19,14 +19,15 @@ provided by the Pi4J library. This implementation will operate with a Pi4j [prov
 int BCM_BUTTON = 22;
 
 var inputConfig = DigitalInput.newConfigBuilder(pi4j)
-    .id("button")
-    .name("Press button")
     .bcm(BCM_BUTTON)
     .pull(PullResistance.PULL_DOWN)
     .debounce(3_000L);
 
 var input = pi4j.create(inputConfig);
 ```  
+
+The config builder also accepts optional settings such as `id`, `name` and `description`, which are explained on
+["Building an I/O Instance"](/documentation/build-io/).
 
 Once an input has been initialized, a listener can be attached to execute code on state changes of the input.
 

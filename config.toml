@@ -64,9 +64,9 @@ home = ["HTML", "RSS", "JSON"]
 # Latest releases shown in the homepage release banner. Bump the relevant block on each release.
 [params.release.pi4j]
   title = "Pi4J"
-  version = "V4.0.2"
-  date = "2026-06-08"
-  note = "Built on Java 25, with the new Foreign Function & Memory (FFM) plugin replacing native JNI calls."
+  version = "V5.0.0"
+  date = "2026-??-??"
+  note = "Built on Java 25, FFM-only plugin, major refactoring, simplification, and improvements of the core libraries."
 
   [[params.release.pi4j.links]]
     label = "Release notes"

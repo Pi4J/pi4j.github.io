@@ -1,8 +1,12 @@
 ---
 title: PiGpio Provider
-weight: 95
+weight: 195
 tags: ["PiGpio", "PWM", "I2C", "SPI", "Serial", "Digital Input", "Digital Output"]
 ---
+
+{{% notice warning %}}
+**Removed in Pi4J V5.** Related to functionality existing in V4, but no longer included in V5. Use the [FFM provider](/documentation/providers/ffm/) instead. The information below is kept for reference for users still on Pi4J V4.
+{{% /notice %}}
 
 The current implementation of the PiGpio exposes the GPIO functions available on the Raspberry Pi (see Note Pi5 below). 
 This implementation is developed/supported by a team separate of Pi4j.  Pi4j is a consumer of that PiGpio work.
