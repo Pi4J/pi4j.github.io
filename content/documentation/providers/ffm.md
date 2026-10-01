@@ -80,8 +80,6 @@ To target a chip other than `gpiochip0`, set it with `.bus()` on the config buil
 
 ```java
 var ledConfig = DigitalOutput.newConfigBuilder(pi4j)
-    .id("led")
-    .name("LED Flasher")
     .bus(1)
     .bcm(GPIO_LINE_OFFSET)
     .shutdown(DigitalState.LOW)

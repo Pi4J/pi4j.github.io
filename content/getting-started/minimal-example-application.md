@@ -167,8 +167,6 @@ private static int pressCount = 0;
 private static final int PIN_BUTTON = 24; // PIN 18 = BCM 24
 
 var buttonConfig = DigitalInput.newConfigBuilder(pi4j)
-        .id("button")
-        .name("Press button")
         .bcm(PIN_BUTTON)
         .pull(PullResistance.PULL_DOWN)
         .debounce(3000L);

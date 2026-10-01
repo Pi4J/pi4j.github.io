@@ -121,7 +121,6 @@ If your board exposes the header pins on a `gpiochip` other than the default `gp
 
 ```java
 var ledConfig = DigitalOutput.newConfigBuilder(pi4j)
-    .id("led")
     .bus(2)
     .bcm(GPIO_LINE_OFFSET)
     .build();

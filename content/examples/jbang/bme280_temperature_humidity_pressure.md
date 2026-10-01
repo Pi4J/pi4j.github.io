@@ -186,7 +186,6 @@ The main method initializes the sensor, and loops 10 times to the process of res
         // Initialize I2C
         console.println("Initializing the sensor via I2C");
         I2CConfig i2cConfig = I2C.newConfigBuilder(pi4j)
-                .id("BME280")
                 .bus(I2C_BUS)
                 .device(I2C_ADDRESS)
                 .build();
@@ -220,9 +219,6 @@ The main method initializes the sensor, and loops 10 times to the process of res
 ```java
     private static final Console console = new Console(); // Pi4J Logger helper
 
-    private static final String SPI_PROVIDER_NAME = "BME280 SPI Provider";
-    private static final String SPI_PROVIDER_ID = "BME280-spi";
-
     private static final SpiChipSelect chipSelect = SpiChipSelect.CS_0;
     private static final SpiBus spiBus = SpiBus.BUS_0;
     private static final int csPin = 21; // BCM 21 = physical pin 40
@@ -236,16 +232,12 @@ The main method initializes the sensor, and loops 10 times to the process of res
         console.println("Initializing the sensor via SPI");
 
         var csGpioConfig = DigitalOutput.newConfigBuilder(pi4j)
-                .id("CS_pin")
-                .name("CS")
                 .bcm(csPin)
                 .shutdown(DigitalState.HIGH)
                 .initial(DigitalState.HIGH);
         csGpio = pi4j.create(csGpioConfig);
 
         var spiConfig = Spi.newConfigBuilder(pi4j)
-                .id(SPI_PROVIDER_ID)
-                .name(SPI_PROVIDER_NAME)
                 .bus(spiBus)
                 .chipSelect(chipSelect)
                 .baud(Spi.DEFAULT_BAUD)

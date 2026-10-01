@@ -169,7 +169,10 @@ public class SimpleTca9534I2cTest {
 	public static void main(String[] args) throws Exception {
 
 		Context pi4j = Pi4J.newAutoContext();
-		I2CConfig i2cConfig = I2C.newConfigBuilder(pi4j).id("TCA9534").bus(1).device(0x3f).build();
+		I2CConfig i2cConfig = I2C.newConfigBuilder(pi4j)
+                .bus(1)
+                .device(0x3f)
+                .build();
 		try (I2C tca9534Dev = pi4j.create(i2cConfig)) {
 
 			int config = tca9534Dev.readRegister(TCA9534_REG_ADDR_CFG);

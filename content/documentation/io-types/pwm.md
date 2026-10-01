@@ -267,8 +267,6 @@ public class BuzzerComponent extends Component {
      */
     protected static PwmConfig buildPwmConfig(Context pi4j, int chip, int channel) {
         return Pwm.newConfigBuilder(pi4j)
-            .id("PWMChip" + chip + "Channel" + channel)
-            .name("Buzzer")
             .chip(chip)
             .channel(channel)
             .pwmType(PwmType.HARDWARE)
@@ -355,8 +353,6 @@ Example on how PWM was used with LinuxFS:
  */
 protected static PwmConfig buildPwmConfig(Context pi4j, int channel) {
     return Pwm.newConfigBuilder(pi4j)
-        .id("PWMChannel" + channel)
-        .name("Buzzer")
         .address(channel)
         .pwmType(PwmType.HARDWARE)
         .provider("linuxfs-pwm")

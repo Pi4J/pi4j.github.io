@@ -29,8 +29,6 @@ var pi4j = Pi4J.newAutoContext();
 
 // Create a digital output config and object
 var ledConfig = DigitalOutput.newConfigBuilder(pi4j)
-    .id("led")
-    .name("LED Flasher")
     .bcm(BCM_LED)
     .shutdown(DigitalState.LOW)
     .initial(DigitalState.LOW);
@@ -50,3 +48,6 @@ for (int i = 0; i < 10; i++) {
 // Shutdown Pi4J
 pi4j.shutdown();
 ``` 
+
+The config builder also accepts optional settings such as `id`, `name` and `description`, which are explained on
+["Building an I/O Instance"](/documentation/build-io/).

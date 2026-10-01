@@ -84,6 +84,9 @@ var i2c = pi4j.i2c().create(i2cConfig);
 
 ## newConfigBuilder parameters
 
+Both `id` and `name` are optional, so most examples throughout this documentation leave them out to keep the
+code focused on the I/O type being demonstrated. Set them explicitly when you need the behavior described below.
+
 ### id
 
 The `id` field is used internally inside the Pi4J context/runtime to keep track of the instances. 

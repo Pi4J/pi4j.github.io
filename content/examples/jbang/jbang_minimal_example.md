@@ -55,16 +55,12 @@ public class Pi4JMinimalExample {
         var pi4j = Pi4J.newAutoContext();
 
         var ledConfig = DigitalOutput.newConfigBuilder(pi4j)
-                .id("led")
-                .name("LED Flasher")
                 .bcm(PIN_LED)
                 .shutdown(DigitalState.LOW)
                 .initial(DigitalState.LOW);
         var led = pi4j.create(ledConfig);
 
         var buttonConfig = DigitalInput.newConfigBuilder(pi4j)
-                .id("button")
-                .name("Press button")
                 .bcm(PIN_BUTTON)
                 .pull(PullResistance.PULL_DOWN)
                 .debounce(3000L);
