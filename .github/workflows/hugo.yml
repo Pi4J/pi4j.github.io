@@ -8,6 +8,10 @@ on:
     types: [groma-architecture-updated]
   workflow_dispatch: {}
 
+concurrency:
+  group: github-pages
+  cancel-in-progress: true
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
