@@ -30,7 +30,7 @@ jobs:
       - name: Export Groma architecture map
         working-directory: pi4j-src
         run: |
-          npm i -g groma.md
+          npm i -g groma.md@0.6.6
           groma export --url "https://www.pi4j.com/groma" "$GITHUB_WORKSPACE/static/groma"
 
       - name: Setup Hugo
