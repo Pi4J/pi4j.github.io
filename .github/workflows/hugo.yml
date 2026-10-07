@@ -21,7 +21,6 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: Pi4J/pi4j
-          ref: feature/groma-architecture-map  # TEMP: pre-merge validation only, reverted before merge
           path: pi4j-src
 
       - name: Export Groma architecture map
