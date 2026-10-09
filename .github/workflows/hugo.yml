@@ -4,6 +4,13 @@ on:
   push:
     branches:
       - main
+  repository_dispatch:
+    types: [groma-architecture-updated]
+  workflow_dispatch: {}
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: true
 
 jobs:
   deploy:
@@ -13,6 +20,18 @@ jobs:
         with:
           submodules: true  # Fetch Hugo themes (true or recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Checkout Pi4J (for its Groma architecture map)
+        uses: actions/checkout@v4
+        with:
+          repository: Pi4J/pi4j
+          path: pi4j-src
+
+      - name: Export Groma architecture map
+        working-directory: pi4j-src
+        run: |
+          npm i -g groma.md@0.6.6
+          groma export --url "https://www.pi4j.com/groma" "$GITHUB_WORKSPACE/static/groma"
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
