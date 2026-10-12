@@ -30,6 +30,10 @@ jobs:
       - name: Export Groma architecture map
         working-directory: pi4j-src
         run: |
+          if [ ! -f groma/index.md ]; then
+            echo "::warning::Pi4J/pi4j has no Groma map (groma/index.md) on its default branch; skipping export"
+            exit 0
+          fi
           npm i -g groma.md@0.6.6
           groma export --url "https://www.pi4j.com/groma" "$GITHUB_WORKSPACE/static/groma"
 
