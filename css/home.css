@@ -93,6 +93,13 @@
   font-size: .92rem;
 }
 .pi4j-release__links a:hover { color: var(--p4j-green-dark); }
+.pi4j-release--upcoming {
+  --p4j-green: #b26a00;
+  --p4j-green-dark: #7a4800;
+  background: linear-gradient(90deg, #fffaf0 0%, #fff3dc 100%);
+  border-color: #ffe0b2;
+  border-left-color: var(--p4j-green);
+}
 
 /* ---- Section headers ---- */
 .pi4j-section { margin: 36px 0 8px; }
