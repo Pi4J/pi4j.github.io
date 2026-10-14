@@ -42,6 +42,20 @@
     </div>
     {{ end }}
     {{ end }}
+    {{ with $.Site.Params.upcoming }}
+    <div class="pi4j-release pi4j-release--upcoming">
+      <span class="pi4j-release__rocket">🚧</span>
+      <div class="pi4j-release__main">
+        <div class="pi4j-release__text">
+          <strong>{{ .title }}</strong>
+          {{ with .note }}<span class="pi4j-release__note">{{ . }}</span>{{ end }}
+        </div>
+        <div class="pi4j-release__links">
+          {{ range .links }}<a href="{{ .url | relURL }}">{{ .label }} →</a>{{ end }}
+        </div>
+      </div>
+    </div>
+    {{ end }}
   </section>
   {{ end }}
 
