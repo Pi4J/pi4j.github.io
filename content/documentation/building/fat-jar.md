@@ -122,44 +122,31 @@ Thanks to the `maven-shade-plugin`, each Pi4J plugin that is part of the project
 `META-INF/services/com.pi4j.extension.Plugin`:
 
 ```
-com.pi4j.plugin.raspberrypi.RaspberryPiPlugin
-com.pi4j.plugin.pigpio.PiGpioPlugin
+com.pi4j.plugin.ffm.FFMPlugin
 ```
 
-When running this application we can indeed see the loaded platform and provider plugins in the logs:
+When running this application we can indeed see the loaded provider plugins in the logs:
 
 ```
-[main] INFO com.pi4j.util.Console - 
-[main] INFO com.pi4j.util.Console - ---------------------------
-[main] INFO com.pi4j.util.Console - |  Pi4J DEFAULT PLATFORM  |
-[main] INFO com.pi4j.util.Console - ---------------------------
-[main] INFO com.pi4j.util.Console - 
-PLATFORM: "RaspberryPi Platform" {raspberrypi} <com.pi4j.plugin.raspberrypi.platform.RaspberryPiPlatform> {Pi4J Platform for the RaspberryPi series of products.} 
 [main] INFO com.pi4j.util.Console - 
 [main] INFO com.pi4j.util.Console - --------------------
 [main] INFO com.pi4j.util.Console - |  Pi4J PROVIDERS  |
 [main] INFO com.pi4j.util.Console - --------------------
 [main] INFO com.pi4j.util.Console - 
-PROVIDERS: [12] "I/O Providers" <com.pi4j.provider.impl.DefaultProviders> 
-├─SPI: [2] <com.pi4j.io.spi.SpiProvider> 
-│ ├─PROVIDER: "PiGpio SPI Provider" {pigpio-spi} <com.pi4j.plugin.pigpio.provider.spi.PiGpioSpiProviderImpl> {com.pi4j.plugin.pigpio.provider.spi.PiGpioSpiProviderImpl} 
-│ └─PROVIDER: "RaspberryPi SPI Provider" {raspberrypi-spi} <com.pi4j.plugin.raspberrypi.provider.spi.RpiSpiProviderImpl> {com.pi4j.plugin.raspberrypi.provider.spi.RpiSpiProviderImpl} 
-├─ANALOG_INPUT: [0] <com.pi4j.io.gpio.analog.AnalogInputProvider> 
-├─SERIAL: [2] <com.pi4j.io.serial.SerialProvider> 
-│ ├─PROVIDER: "PiGpio Serial Provider" {pigpio-serial} <com.pi4j.plugin.pigpio.provider.serial.PiGpioSerialProviderImpl> {com.pi4j.plugin.pigpio.provider.serial.PiGpioSerialProviderImpl} 
-│ └─PROVIDER: "RaspberryPi Serial Provider" {raspberrypi-serial} <com.pi4j.plugin.raspberrypi.provider.serial.RpiSerialProviderImpl> {com.pi4j.plugin.raspberrypi.provider.serial.RpiSerialProviderImpl} 
-├─DIGITAL_INPUT: [2] <com.pi4j.io.gpio.digital.DigitalInputProvider> 
-│ ├─PROVIDER: "RaspberryPi Digital Input (GPIO) Provider" {raspberrypi-digital-input} <com.pi4j.plugin.raspberrypi.provider.gpio.digital.RpiDigitalInputProviderImpl> {com.pi4j.plugin.raspberrypi.provider.gpio.digital.RpiDigitalInputProviderImpl} 
-│ └─PROVIDER: "PiGpio Digital Input (GPIO) Provider" {pigpio-digital-input} <com.pi4j.plugin.pigpio.provider.gpio.digital.PiGpioDigitalInputProviderImpl> {com.pi4j.plugin.pigpio.provider.gpio.digital.PiGpioDigitalInputProviderImpl} 
-├─I2C: [2] <com.pi4j.io.i2c.I2CProvider> 
-│ ├─PROVIDER: "RaspberryPi I2C Provider" {raspberrypi-i2c} <com.pi4j.plugin.raspberrypi.provider.i2c.RpiI2CProviderImpl> {com.pi4j.plugin.raspberrypi.provider.i2c.RpiI2CProviderImpl} 
-│ └─PROVIDER: "PiGpio I2C Provider" {pigpio-i2c} <com.pi4j.plugin.pigpio.provider.i2c.PiGpioI2CProviderImpl> {com.pi4j.plugin.pigpio.provider.i2c.PiGpioI2CProviderImpl} 
-├─ANALOG_OUTPUT: [0] <com.pi4j.io.gpio.analog.AnalogOutputProvider> 
-├─DIGITAL_OUTPUT: [2] <com.pi4j.io.gpio.digital.DigitalOutputProvider> 
-│ ├─PROVIDER: "RaspberryPi Digital Output (GPIO) Provider" {raspberrypi-digital-output} <com.pi4j.plugin.raspberrypi.provider.gpio.digital.RpiDigitalOutputProviderImpl> {com.pi4j.plugin.raspberrypi.provider.gpio.digital.RpiDigitalOutputProviderImpl} 
-│ └─PROVIDER: "PiGpio Digital Output (GPIO) Provider" {pigpio-digital-output} <com.pi4j.plugin.pigpio.provider.gpio.digital.PiGpioDigitalOutputProviderImpl> {com.pi4j.plugin.pigpio.provider.gpio.digital.PiGpioDigitalOutputProviderImpl} 
-└─PWM: [2] <com.pi4j.io.pwm.PwmProvider> 
-  ├─PROVIDER: "RaspberryPi PWM Provider" {raspberrypi-pwm} <com.pi4j.plugin.raspberrypi.provider.pwm.RpiPwmProviderImpl> {com.pi4j.plugin.raspberrypi.provider.pwm.RpiPwmProviderImpl} 
-  └─PROVIDER: "PiGpio PWM Provider" {pigpio-pwm} <com.pi4j.plugin.pigpio.provider.pwm.PiGpioPwmProviderImpl> {com.pi4j.plugin.pigpio.provider.pwm.PiGpioPwmProviderImpl} 
+PROVIDERS: [5] "I/O Providers" <com.pi4j.provider.impl.DefaultProviders> 
+├─SPI: [1] <com.pi4j.io.spi.SpiProvider> 
+│ └─PROVIDER: "FFM SPI Provider" {ffm-spi} <com.pi4j.plugin.ffm.providers.spi.FFMSpiProviderImpl> 
+├─DIGITAL_INPUT: [1] <com.pi4j.io.gpio.digital.DigitalInputProvider> 
+│ └─PROVIDER: "FFM Digital Input (GPIO) Provider" {ffm-digital-input} <com.pi4j.plugin.ffm.providers.gpio.FFMDigitalInputProviderImpl> 
+├─I2C: [1] <com.pi4j.io.i2c.I2CProvider> 
+│ └─PROVIDER: "FFM I2C Provider" {ffm-i2c} <com.pi4j.plugin.ffm.providers.i2c.FFMI2CProviderImpl> 
+├─DIGITAL_OUTPUT: [1] <com.pi4j.io.gpio.digital.DigitalOutputProvider> 
+│ └─PROVIDER: "FFM Digital Output (GPIO) Provider" {ffm-digital-output} <com.pi4j.plugin.ffm.providers.gpio.FFMDigitalOutputProviderImpl> 
+└─PWM: [1] <com.pi4j.io.pwm.PwmProvider> 
+  └─PROVIDER: "FFM PWM Provider" {ffm-pwm} <com.pi4j.plugin.ffm.providers.pwm.FFMPwmProviderImpl> 
 [main] INFO com.pi4j.util.Console - 
 ```
+
+{{% notice tip %}}
+Add the `pi4j-plugin-mock` dependency (and use `autoDetectMockPlugins()`, see [Mock Provider](/documentation/providers/mock/)) if you also want to see the Mock providers listed here.
+{{% /notice %}}

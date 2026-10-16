@@ -20,8 +20,8 @@ allowing users to customize the context configuration.
 ### Automatic
 An auto context includes AUTO-DETECT BINDINGS enabled which will load all detected Pi4J extension libraries 
 (Platforms and Providers) in the class path.
-Note: Starting with 2.5.0-SNAPSHOT the Mock providers are not loaded. If the Mock providers are required see 
-Alternate Context Creation With Mock Providers.
+Note: on a Raspberry Pi, the [Mock providers](../providers/mock/) are not loaded automatically. If the Mock providers are required see 
+Alternate Context Creation With Mock Providers below.
 
 ``` java
 var pi4j = Pi4J.newAutoContext();
@@ -33,16 +33,11 @@ context, for example when you want to use your own providers, use mocked instanc
 
 ``` java
 Context pi4j = Pi4J.newContextBuilder()
-   .add(new MockPlatform())
-   .add(MockAnalogInputProvider.newInstance(),
-      MockAnalogOutputProvider.newInstance(),
-      MockSpiProvider.newInstance(),
+   .add(MockSpiProvider.newInstance(),
       MockPwmProvider.newInstance(),
-      MockSerialProvider.newInstance(),
       MockI2CProvider.newInstance(),
       MockDigitalInputProvider.newInstance(),
       MockDigitalOutputProvider.newInstance())
-   .add(new MyCustomADCProvider(/* implements AnalogInputProvider, id="my-adc-prov" */))
    .add(new MyCustomSPIProvider(/* implements SpiProvider, id="my-spi-prov" */))
    .build();
 ```
