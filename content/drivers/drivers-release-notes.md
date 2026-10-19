@@ -9,7 +9,7 @@ The Pi4J Drivers library is available on [Maven Central](https://central.sonatyp
 
 ### 2026-09-25 - V1.2.0
 
-- **New ePaper display drivers**: Added a generic SSD1780 driver, a driver for the Waveshare 2.7 inch ePaper display hat v2, and a driver for the Waveshare 13.3 inch b/w 960x680 ePaper display.
+- **New ePaper display drivers**: Added a generic SSD1680 driver, a driver for the Waveshare 2.7 inch ePaper display hat v2, and a driver for the Waveshare 13.3 inch b/w 960x680 ePaper display.
 - **Partial display updates**: Added support for partial screen updates to the SSD1680 and Waveshare 2.7 inch v2 drivers, fixed reverse destination calculations for devices whose screen doesn't match the full buffer, and clarified display placement limitations.
 - **Character/graphics display improvements**: Added `GraphicsTextAnimator` for scrolling text (with cleanup and daemon-thread wiring into SenseHat), added display mirroring support, and pulled cursor management up into the `CharacterDisplay` interface.
 - **New DAC/ADC drivers**: Added a `DigitalAnalogConverter` interface and reworked the MCP49xx drivers around it, added the MCP4725, MCP4921/MCP4922, and MCP4728 DAC drivers, added TI ADS111x and NAU7802 ADC drivers, and split `Mcp300xDriver` into 10-bit and 12-bit subclasses.

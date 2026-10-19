@@ -13,7 +13,7 @@ description: "Pi4J Drivers V1.2.0 adds new ePaper display drivers with partial-u
 
 ### What's new
 
-- **New ePaper display drivers**: a generic SSD1780 driver, a driver for the Waveshare 2.7 inch ePaper display hat v2, and a driver for the Waveshare 13.3 inch b/w 960x680 ePaper display.
+- **New ePaper display drivers**: a generic SSD1680 driver, a driver for the Waveshare 2.7 inch ePaper display hat v2, and a driver for the Waveshare 13.3 inch b/w 960x680 ePaper display.
 - **Partial display updates**: support for partial screen updates on the SSD1680 and Waveshare 2.7 inch v2 drivers, along with fixes to reverse destination calculations and clarified display placement limitations.
 - **Character/graphics display improvements**: a new `GraphicsTextAnimator` for scrolling text, display mirroring support, and cursor management pulled up into the `CharacterDisplay` interface.
 - **New DAC/ADC drivers**: a `DigitalAnalogConverter` interface with reworked MCP49xx drivers, new MCP4725, MCP4921/MCP4922, and MCP4728 DAC drivers, new TI ADS111x and NAU7802 ADC drivers, and `Mcp300xDriver` split into 10-bit and 12-bit subclasses.
