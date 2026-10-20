@@ -86,6 +86,14 @@ home = ["HTML", "RSS", "JSON"]
     label = "Release notes"
     url = "drivers/drivers-release-notes/"
 
+[params.upcoming]
+  title = "Pi4J V5.0.0 is in progress"
+  note = "A leaner core with a big API cleanup, parallel ports, RISC-V support, and better board detection. No release date yet, snapshots are available."
+
+  [[params.upcoming.links]]
+    label = "Read about the ongoing changes"
+    url = "blog/2026/20261014-pi4j-v5-work-in-progress/"
+
 [imaging]
     # Default resample filter used for resizing. Default is Box,
     # a simple and fast averaging filter appropriate for downscaling.
