@@ -41,10 +41,9 @@ You can either ignore this message, or add `--enable-native-access=com.pi4j.plug
 
 ### I2C
 
-The FFM plugin supports three types of I2C implementations:
+The FFM plugin supports two types of I2C implementations:
 
 * `I2CImplementation.DIRECT`: default option when you don't specify any I2C implementation.
-* `I2CImplementation.FILE`
 * `I2CImplementation.SMBUS`
 
 ```java
