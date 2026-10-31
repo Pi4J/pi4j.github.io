@@ -1,1 +1,1 @@
-globalThis.dispatchEvent(new CustomEvent("groma:published-version", { detail: 1793297139018 }));
+globalThis.dispatchEvent(new CustomEvent("groma:published-version", { detail: 1793467085979 }));
