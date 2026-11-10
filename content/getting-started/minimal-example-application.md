@@ -28,9 +28,9 @@ so you can select the tool you prefer.
 
 ### Maven
 
-This project can be built with Apache Maven 3.6 (or later) and Java 17 OpenJDK (or later). These prerequisites must be 
+This project can be built with Apache Maven and Java 25 (or later). These prerequisites must be 
 installed prior to building this project as described on the previous pages. The following command can be used to 
-download all project dependencies and compile the Java module. You can build this project directly on a Raspberry Pi with Java 17+.
+download all project dependencies and compile the Java module. You can build this project directly on a Raspberry Pi with Java 25+.
 
 On Linux:
 
@@ -46,8 +46,7 @@ mvnw.bat clean package
 
 ### Gradle
 
-You can also use the Gradle Build Tool from these same sources. Use version 6.6 (or later) and Java 17 OpenJDK (or later). 
-The Gradle wrapper is used as described on [docs.gradle.org](https://docs.gradle.org/current/userguide/gradle_wrapper.html).
+You can also use the Gradle Build Tool from these same sources. The Gradle wrapper is used as described on [docs.gradle.org](https://docs.gradle.org/current/userguide/gradle_wrapper.html).
 The Gradle configuration file [build.gradle-file](https://github.com/Pi4J/pi4j-example-minimal/blob/master/build.gradle) 
 is included in the sources.
 
@@ -67,14 +66,14 @@ gradlew.bat build
 
 For the Maven approach, a pom.xml file defines all the dependencies, and the build process.
 
-In this project we will be using slf4 for logging, pi4j-core and the pi4j-plugins for the Raspberry Pi and PiGPIO. To 
+In this project we will be using slf4 for logging, pi4j-core and the pi4j-plugin-ffm plugin. To 
 make the versions easy to update, we add those numbers as properties. 
 
 ```xml
 <properties>
     <!-- DEPENDENCIES VERSIONS -->
     <slf4j.version>2.0.17</slf4j.version>
-    <pi4j.version>4.0.0</pi4j.version>
+    <pi4j.version>4.0.1</pi4j.version>
 </properties>
 ``` 
   
@@ -168,9 +167,7 @@ private static int pressCount = 0;
 private static final int PIN_BUTTON = 24; // PIN 18 = BCM 24
 
 var buttonConfig = DigitalInput.newConfigBuilder(pi4j)
-        .id("button")
-        .name("Press button")
-        .address(PIN_BUTTON)
+        .bcm(PIN_BUTTON)
         .pull(PullResistance.PULL_DOWN)
         .debounce(3000L);
 
@@ -197,7 +194,7 @@ pi4j.shutdown();
 ## Steps to Run on Your Raspberry Pi
 
 * Attach a LED and button as shown in the image above
-* Use a recent Raspbian OS image which has Java 17 or newer. To check if you have the correct Java version in the terminal:
+* Use a recent Raspberry Pi OS image which has Java 25 or newer. To check if you have the correct Java version in the terminal:
 
 ```shell
 $ java -version
@@ -220,9 +217,9 @@ $ ./mvnw clean package
 $ cd target/distribution
 $ ls -l
 total 644
--rw-r--r-- 1 pi pi 344544 Oct 21 08:07 pi4j-core-4.0.0.jar
--rw-r--r-- 1 pi pi   7134 Oct 21 08:08 pi4j-example-minimal-0.0.1.jar
--rw-r--r-- 1 pi pi  22633 Oct 21 08:07 pi4j-plugin-ffm-4.0.0.jar
+-rw-r--r-- 1 pi pi 368922 Oct 21 08:07 pi4j-core-4.0.1.jar
+-rw-r--r-- 1 pi pi   7102 Oct 21 08:08 pi4j-example-minimal-0.0.1.jar
+-rw-r--r-- 1 pi pi 157986 Oct 21 08:07 pi4j-plugin-ffm-4.0.1.jar
 -rwxr-xr-x 1 pi pi    101 Oct 21 08:08 run.sh
 -rw-r--r-- 1 pi pi  69435 Oct 21 08:07 slf4j-api-2.0.17.jar
 -rw-r--r-- 1 pi pi  15704 Oct 21 08:07 slf4j-simple-2.0.17.jar

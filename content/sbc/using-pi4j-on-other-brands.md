@@ -66,7 +66,7 @@ Once verified, use `.bus()` to select the chip and `.bcm()` for the line offset 
 private static final int GPIO_LED = 271;   // physical pin 16 = PI15 on gpiochip1
 
 var ledRed = pi4j.create(DigitalOutput.newConfigBuilder(pi4j)
-    .id("led").name("LED").bus(1).bcm(GPIO_LED)
+    .bus(1).bcm(GPIO_LED)
     .shutdown(DigitalState.LOW).initial(DigitalState.LOW));
 ```
 
