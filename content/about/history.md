@@ -8,7 +8,7 @@ weight: 5
 **The Pi4J Project** was started in **2012**, the same year the Raspberry Pi was introduced,
 as a tool to provide Java developers a simple and familiar object-oriented interface library
 to access the low-level I/O capabilities of the Raspberry Pi including **GPIO**, **I2C**,
-**SPI**, **PWM** and **Serial** communications.
+**SPI**, **PWM** and **Serial** communications (serial support was removed in V4).
 
 The Pi4J project has evolved over all these years as the whole Java eco-system and Raspberry Pi systems have been evolving. This resulted in the following main versions:
 

@@ -70,7 +70,7 @@ On this page we want to give you an overview of the projects which are part of t
 #### Pi4J LinuxFS Provider
 
 * /plugins/pi4j-plugin-linuxfs 
-* This plugin is intended to implement I/O Providers for Linux file system operations such as SERIAL, SPI, I2C and perhaps basic GPIO.  
+* This plugin is intended to implement I/O Providers for Linux file system operations such as SPI, I2C and perhaps basic GPIO.  
 * This plugin is mostly empty at this moment.
 * Goal is to have an I/O Provider which is totally independant of an underlying program.
 

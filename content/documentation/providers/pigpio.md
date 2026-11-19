@@ -1,7 +1,7 @@
 ---
 title: PiGpio Provider
 weight: 195
-tags: ["PiGpio", "PWM", "I2C", "SPI", "Serial", "Digital Input", "Digital Output"]
+tags: ["PiGpio", "PWM", "I2C", "SPI", "Digital Input", "Digital Output"]
 ---
 
 {{% notice warning %}}
@@ -23,7 +23,6 @@ Providers in the PiGpio plugin:
 * pigpio-pwm
 * pigpio-i2c
 * pigpio-spi
-* pigpio-serial
 
 {{% notice warning %}}
 Applications which use the PiGpio Provider, need to be started with `sudo` to be able to interface with the GPIOs.

@@ -62,7 +62,7 @@ var ledConfig = DigitalOutput.newConfigBuilder(pi4j)
 var led = pi4j.create(ledConfig);
 ``` 
 
-### PWM, SPI, I2C, Serial
+### PWM, SPI, I2C
 
 The same methodology is available for other types of I/O's:
 
@@ -71,7 +71,6 @@ The same methodology is available for other types of I/O's:
 var pwm = pi4j.pwm().create(INTEGER_PIN_ADDRESS);
 var spi = pi4.spi().create(STRING_ID);
 var i2c = pi4j.i2c().create(INTEGER_BUS, INTEGER_DEVICE);
-var serial = pi4j.serial().create(STRING_ID);
 
 // Or using the config builder, for example, I2C:
 var i2cConfig = I2C.newConfigBuilder(pi4j)
