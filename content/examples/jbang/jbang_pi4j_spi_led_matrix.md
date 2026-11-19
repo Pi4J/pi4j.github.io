@@ -54,13 +54,10 @@ public static void main(String[] args) throws Exception {
     console.println("Initializing the matrix via SPI");
 
     var spiConfig = Spi.newConfigBuilder(pi4j)
-        .id("Matrix SPI Provider")
-        .name("matrix-spi")
         .bus(SpiBus.BUS_0)
         .chipSelect(SpiChipSelect.CS_0)
         .baud(Spi.DEFAULT_BAUD)
         .mode(SpiMode.MODE_0)
-        .provider("pigpio-spi")
         .build();
     spi = pi4j.create(spiConfig);
 
@@ -108,23 +105,13 @@ public static void main(String[] args) throws Exception {
 
 ## Running the Application
 
-Because this example uses the PiGpio plugin, we need to execute it with `sudo`. Without the need of any further configuration, installation, dependency download, or compiling, we can now run this code with:
+This example uses the [FFM provider](/documentation/providers/ffm/), which does not need `sudo` — see [Dependencies and Permissions](/documentation/providers/ffm/#dependencies-and-permissions) to set up the correct GPIO permissions instead. Without the need of any further configuration, installation, dependency download, or compiling, we can now run this code with:
 
 ```shell
-$ sudo `which jbang` Pi4JLedMatrixSpi.java
+$ jbang Pi4JLedMatrixSpi.java
 
 [jbang] Resolving dependencies...
-[jbang]    org.slf4j:slf4j-api:1.7.35
-[jbang]    org.slf4j:slf4j-simple:1.7.35
-[jbang]    com.pi4j:pi4j-core:2.3.0
-[jbang]    com.pi4j:pi4j-plugin-raspberrypi:2.3.0
-[jbang]    com.pi4j:pi4j-plugin-linuxfs:2.3.0
-[jbang]    com.pi4j:pi4j-plugin-pigpio:2.3.0
-[jbang] Dependencies resolved
-[jbang] Building jar for Pi4JLedMatrixSpi.java...
-[main] INFO com.pi4j.Pi4J - New auto context
-[main] INFO com.pi4j.Pi4J - New context builder
-[main] INFO com.pi4j.platform.impl.DefaultRuntimePlatforms - adding platform to managed platform map [id=raspberrypi; name=RaspberryPi Platform; priority=5; class=com.pi4j.plugin.raspberrypi.platform.RaspberryPiPlatform]
+...
 [main] INFO com.pi4j.util.Console - Initializing the matrix via SPI
 Test mode all on
 Test mode all off

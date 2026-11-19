@@ -1,8 +1,12 @@
 ---
 title: LinuxFS Provider
-weight: 93
+weight: 192
 tags: ["LinuxFS", "PWM", "I2C"]
 ---
+
+{{% notice warning %}}
+**Removed in Pi4J V5.** Related to functionality existing in V4, but no longer included in V5. Use the [FFM provider](/documentation/providers/ffm/) instead. The information below is kept for reference for users still on Pi4J V4.
+{{% /notice %}}
 
 The current implementation of the LinuxFS plugin implements a file based I2C, SPI, and PWM provider. The file based I2C provider opens 
 `/dev/i2c-1` using a `RandomAccessFile` to perform I2C reads and writes. The file based PWM provider opens
@@ -48,7 +52,7 @@ Example on how to use I2C with LinuxFS:
 ``` java
 Context pi4j = Pi4J.newAutoContext();
 I2CProvider i2CProvider = pi4j.provider("linuxfs-i2c");
-I2CConfig i2cConfig = I2C.newConfigBuilder(pi4j).id("TCA9534").bus(1).device(0x3f).build();
+I2CConfig i2cConfig = I2C.newConfigBuilder(pi4j).bus(1).device(0x3f).build();
 
 try (I2C tca9534Dev = i2CProvider.create(i2cConfig)) {
 
@@ -72,8 +76,6 @@ The buffer size for this SPI implementation is 4096 bytes. This can be configure
 
 ```java
       var spiConfig = Spi.newConfigBuilder(pi4j)
-        .id(SPI_PROVIDER_ID)
-        .name(SPI_PROVIDER_NAME)
         .bus(spiBus)
         .chipSelect(chipSelect)
         .baud(Spi.DEFAULT_BAUD)
@@ -104,8 +106,6 @@ Example on how to use PWM with LinuxFS:
      */
     protected static PwmConfig buildPwmConfig(Context pi4j, int channel) {
         return Pwm.newConfigBuilder(pi4j)
-            .id("PWMChannel" + channel)
-            .name("Buzzer")
             .address(channel)
             .pwmType(PwmType.HARDWARE)
             .provider("linuxfs-pwm")

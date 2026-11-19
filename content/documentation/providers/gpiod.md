@@ -1,8 +1,12 @@
 ---
 title: GpioD Provider
-weight: 92
+weight: 190
 tags: ["GpioD", "Digital Input", "Digital Output"]
 ---
+
+{{% notice warning %}}
+**Removed in Pi4J V5.** Related to functionality existing in V4, but no longer included in V5. Use the [FFM provider](/documentation/providers/ffm/) instead. The information below is kept for reference for users still on Pi4J V4.
+{{% /notice %}}
 
 The GpioD plugin provider was added in Pi4J 2.5.0 to be able to support the Raspberry Pi 5 with the new [GPIO chip RP1](https://www.raspberrypi.com/documentation/microcontrollers/rp1.html).
 
