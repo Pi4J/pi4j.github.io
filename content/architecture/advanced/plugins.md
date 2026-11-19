@@ -26,7 +26,6 @@ module com.pi4j.plugin.raspberrypi {
     exports com.pi4j.plugin.raspberrypi.platform;
     exports com.pi4j.plugin.raspberrypi.provider.gpio.digital;
     exports com.pi4j.plugin.raspberrypi.provider.pwm;
-    exports com.pi4j.plugin.raspberrypi.provider.serial;
     exports com.pi4j.plugin.raspberrypi.provider.spi;
     exports com.pi4j.plugin.raspberrypi.provider.i2c;
 

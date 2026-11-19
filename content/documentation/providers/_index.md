@@ -36,12 +36,11 @@ We plan to remove the GpioD, LinuxFS, PiGpio providers in a next release (4.1.0?
     * Supports I2C, SPI, and PWM Hardware
     * Doesn't need `sudo`
   * Contra
-    * Doesn't provide serial and SPI 
     * DigitalInput and DigitalOutput under construction
     * Latency (? - still to be tested)
 * [PiGpio](/documentation/providers/pigpio/)
   * Pro
-    * Provides all types of communication: DigitalInput, DigitalOutput, PWM, I2C, SPI, Serial
+    * Provides all types of communication: DigitalInput, DigitalOutput, PWM, I2C, SPI
     * Can be used remotely
   * Contra
     * Needs to run as `sudo`

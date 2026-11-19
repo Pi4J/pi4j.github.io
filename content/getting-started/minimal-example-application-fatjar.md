@@ -84,11 +84,9 @@ PLATFORM: "RaspberryPi Platform" {raspberrypi} <com.pi4j.plugin.raspberrypi.plat
 [main] INFO com.pi4j.util.Console - |  Pi4J PROVIDERS  |
 [main] INFO com.pi4j.util.Console - --------------------
 [main] INFO com.pi4j.util.Console - 
-PROVIDERS: [6] "I/O Providers" <com.pi4j.provider.impl.DefaultProviders> 
+PROVIDERS: [5] "I/O Providers" <com.pi4j.provider.impl.DefaultProviders> 
     DIGITAL_INPUT: [1] <com.pi4j.io.gpio.digital.DigitalInputProvider> 
        PROVIDER: "GpioD Digital Input (GPIO) Provider" {gpiod-digital-input} <com.pi4j.plugin.gpiod.provider.gpio.digital.GpioDDigitalInputProviderImpl> {com.pi4j.plugin.gpiod.provider.gpio.digital.GpioDDigitalInputProviderImpl} 
-    SERIAL: [1] <com.pi4j.io.serial.SerialProvider> 
-       PROVIDER: "RaspberryPi Serial Provider" {raspberrypi-serial} <com.pi4j.plugin.raspberrypi.provider.serial.RpiSerialProviderImpl> {com.pi4j.plugin.raspberrypi.provider.serial.RpiSerialProviderImpl} 
     I2C: [1] <com.pi4j.io.i2c.I2CProvider> 
        PROVIDER: "RaspberryPi I2C Provider" {raspberrypi-i2c} <com.pi4j.plugin.raspberrypi.provider.i2c.RpiI2CProviderImpl> {com.pi4j.plugin.raspberrypi.provider.i2c.RpiI2CProviderImpl} 
     DIGITAL_OUTPUT: [1] <com.pi4j.io.gpio.digital.DigitalOutputProvider> 

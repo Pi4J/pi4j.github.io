@@ -140,14 +140,11 @@ PLATFORM: "RaspberryPi Platform" {raspberrypi} <com.pi4j.plugin.raspberrypi.plat
 [main] INFO com.pi4j.util.Console - |  Pi4J PROVIDERS  |
 [main] INFO com.pi4j.util.Console - --------------------
 [main] INFO com.pi4j.util.Console - 
-PROVIDERS: [12] "I/O Providers" <com.pi4j.provider.impl.DefaultProviders> 
+PROVIDERS: [10] "I/O Providers" <com.pi4j.provider.impl.DefaultProviders> 
 ├─SPI: [2] <com.pi4j.io.spi.SpiProvider> 
 │ ├─PROVIDER: "PiGpio SPI Provider" {pigpio-spi} <com.pi4j.plugin.pigpio.provider.spi.PiGpioSpiProviderImpl> {com.pi4j.plugin.pigpio.provider.spi.PiGpioSpiProviderImpl} 
 │ └─PROVIDER: "RaspberryPi SPI Provider" {raspberrypi-spi} <com.pi4j.plugin.raspberrypi.provider.spi.RpiSpiProviderImpl> {com.pi4j.plugin.raspberrypi.provider.spi.RpiSpiProviderImpl} 
 ├─ANALOG_INPUT: [0] <com.pi4j.io.gpio.analog.AnalogInputProvider> 
-├─SERIAL: [2] <com.pi4j.io.serial.SerialProvider> 
-│ ├─PROVIDER: "PiGpio Serial Provider" {pigpio-serial} <com.pi4j.plugin.pigpio.provider.serial.PiGpioSerialProviderImpl> {com.pi4j.plugin.pigpio.provider.serial.PiGpioSerialProviderImpl} 
-│ └─PROVIDER: "RaspberryPi Serial Provider" {raspberrypi-serial} <com.pi4j.plugin.raspberrypi.provider.serial.RpiSerialProviderImpl> {com.pi4j.plugin.raspberrypi.provider.serial.RpiSerialProviderImpl} 
 ├─DIGITAL_INPUT: [2] <com.pi4j.io.gpio.digital.DigitalInputProvider> 
 │ ├─PROVIDER: "RaspberryPi Digital Input (GPIO) Provider" {raspberrypi-digital-input} <com.pi4j.plugin.raspberrypi.provider.gpio.digital.RpiDigitalInputProviderImpl> {com.pi4j.plugin.raspberrypi.provider.gpio.digital.RpiDigitalInputProviderImpl} 
 │ └─PROVIDER: "PiGpio Digital Input (GPIO) Provider" {pigpio-digital-input} <com.pi4j.plugin.pigpio.provider.gpio.digital.PiGpioDigitalInputProviderImpl> {com.pi4j.plugin.pigpio.provider.gpio.digital.PiGpioDigitalInputProviderImpl} 
